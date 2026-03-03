@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Monitor - KRK & Surroundings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>✈️ Flight Monitor</h1>
+    <p>Tracking deals from Kraków (+300km) to AU, NZ, NA, BW, JP</p>
+    <div id="last-updated">Last Updated: Loading...</div>
+</header>
+
+<main>
+    <section id="config-panel">
+        <h2>⛭ Scoring Configuration</h2>
+        <div class="sliders-container">
+            <div class="slider-group">
+                <label for="w-price">Price Weight (<span id="val-price">0.5</span>)</label>
+                <input type="range" id="w-price" min="0" max="2" step="0.1" value="0.5">
+            </div>
+            <div class="slider-group">
+                <label for="w-duration">Duration Weight (<span id="val-duration">0.2</span>)</label>
+                <input type="range" id="w-duration" min="0" max="2" step="0.1" value="0.2">
+            </div>
+            <div class="slider-group">
+                <label for="w-distance">Distance KRK Weight (<span id="val-distance">0.1</span>)</label>
+                <input type="range" id="w-distance" min="0" max="2" step="0.1" value="0.1">
+            </div>
+            <div class="slider-group">
+                <label for="w-days">Days Off Weight (<span id="val-days">0.1</span>)</label>
+                <input type="range" id="w-days" min="0" max="2" step="0.1" value="0.1">
+            </div>
+            <div class="slider-group">
+                <label for="w-season">Seasonality Weight (<span id="val-season">0.1</span>)</label>
+                <input type="range" id="w-season" min="0" max="2" step="0.1" value="0.1">
+            </div>
+        </div>
+    </section>
+
+    <section id="results">
+        <h2>🔥 Best Deals</h2>
+        <div id="deals-grid" class="grid">
+            <!-- Cards injected here -->
+        </div>
+    </section>
+
+    <section id="history">
+        <h2>📈 Price History (Average per Country)</h2>
+        <canvas id="historyChart"></canvas>
+    </section>
+</main>
+
+<footer>
+    <p>Automated by GitHub Actions & Amadeus API</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
