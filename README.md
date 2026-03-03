@@ -7,7 +7,7 @@ A serverless flight monitoring system that tracks deals from Kraków (and surrou
 - **Automated Scanning**: Checks flight prices 4 times daily via GitHub Actions.
 - **Smart Scoring**: Ranks flights based on Price, Duration, Distance from KRK, Days Off Required, and Seasonality.
 - **Interactive Dashboard**: Static site hosted on GitHub Pages to view current best deals and price history.
-- **Email Alerts**: Instant notification when a "Super Deal" is found (Score < 3.5).
+- **Email Alerts**: Instant notification when a "Super Deal" is found (Score < 3.8).
 - **Configurable Weights**: Adjust scoring criteria on the dashboard to find *your* perfect flight.
 
 ## 🛠️ Setup Guide
@@ -15,7 +15,7 @@ A serverless flight monitoring system that tracks deals from Kraków (and surrou
 ### 1. Prerequisites
 
 - A GitHub account.
-- [Kiwi.com Tequila](https://tequila.kiwi.com/) account (Free Tier: 2,000 requests per day).
+- [Amadeus for Developers](https://developers.amadeus.com/) account (Free tier: 2,000 requests per month).
 - A Gmail account for sending alerts (requires App Password).
 
 ### 2. Installation
@@ -26,14 +26,15 @@ A serverless flight monitoring system that tracks deals from Kraków (and surrou
     cd flight-monitor
     ```
 
-2.  **Install Python Dependencies** (for local testing):
+2.  **Install Python Dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
 3.  **Configure Secrets in GitHub**:
     Go to `Settings` > `Secrets and variables` > `Actions` and add the following:
-    - `KIWI_API_KEY`: Your Tequila API Key.
+    - `AMADEUS_API_KEY`: Your Amadeus API Key.
+    - `AMADEUS_API_SECRET`: Your Amadeus API Secret.
     - `EMAIL_PASSWORD`: Your Gmail App Password.
 
 ### 3. Deployment
@@ -41,8 +42,8 @@ A serverless flight monitoring system that tracks deals from Kraków (and surrou
 1.  Push the code to your GitHub repository.
 2.  Go to `Settings` > `Pages`.
 3.  Source: **Deploy from a branch**.
-4.  Branch: `main` (or `master`), Folder: `/frontend`.
-5.  Save. Your dashboard will be live at `https://<your-username>.github.io/<repo-name>/`.
+4.  Branch: `main` / Folder: `/frontend`.
+5.  Save.
 
 ### 4. Local Usage
 
@@ -50,29 +51,21 @@ To run the scraper locally:
 
 ```bash
 # Set env vars (PowerShell example)
-$env:KIWI_API_KEY="your_key"
-# $env:EMAIL_PASSWORD="optional"
+$env:AMADEUS_API_KEY="your_key"
+$env:AMADEUS_API_SECRET="your_secret"
 
 # Run the script
 python -m backend.main
 ```
-This will update `data/flights.json`. Open `frontend/index.html` in your browser to see the results.
 
 ## 🧮 How Scoring Works
 
 Lower score is better.
 - **Price**: Normalized against 1000 PLN.
 - **Duration**: Penalty for deviating from ideal 8-day trip.
-- **Distance**: Penalty for flying from airports far from KRK (e.g., PRG is penalized more than KTW).
-- **Days Off**: Counts workdays consumed by the trip (weekends/holidays are free).
+- **Distance**: Penalty for flying from airports far from KRK.
+- **Days Off**: Counts workdays consumed by the trip.
 - **Seasonality**: Bonus for flying during the destination's peak season.
-
-## 🔮 Future Improvements
-
-1.  **Multi-City/Open Jaw**: Support for arriving in one city and departing from another.
-2.  **Calendar View**: A visual calendar showing cheapest dates for a selected destination.
-3.  **User Subscriptions**: Integrate a serverless function (e.g., AWS Lambda or Google Cloud Functions) to allow other users to subscribe to alerts via a form.
-4.  **Route Visualization**: Map view of the flight path using Leaflet.js.
 
 ## 📄 License
 
