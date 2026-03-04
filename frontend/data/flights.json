@@ -1,5 +1,447 @@
 {
-  "last_updated": "2026-03-03T12:00:00",
-  "current_best": [],
-  "history": []
+  "last_updated": "2026-03-04T01:59:02.782454",
+  "current_best": [
+    {
+      "id": "mock-1470",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "SYD",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.5,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-8334",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "AKL",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.5,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-8208",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "WDH",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.5,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-4475",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "GBE",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.5,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-5498",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "TYO",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.5,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-8334",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "TYO",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.5,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-8019",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "SYD",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.8,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-3303",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "AKL",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.8,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-9445",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "WDH",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.8,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-3002",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "GBE",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.8,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-9216",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "TYO",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.8,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-4633",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "TYO",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 2.8,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "mock-8456",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "SYD",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 3.0,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "mock-6706",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "AKL",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 3.0,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "mock-1394",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "WDH",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 3.0,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "mock-7818",
+      "source": "Mock",
+      "origin": "KRK",
+      "destination": "GBE",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 3.0,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 0,
+        "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "mock-9310",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "SYD",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 3.3,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "mock-9649",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "AKL",
+      "departure_date": "2026-05-08",
+      "return_date": "2026-05-16",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 3.3,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "mock-3465",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "WDH",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 3.3,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "mock-9648",
+      "source": "Mock",
+      "origin": "WAW",
+      "destination": "GBE",
+      "departure_date": "2026-03-06",
+      "return_date": "2026-03-14",
+      "airline": "LO",
+      "price": 3800.0,
+      "currency": "PLN",
+      "link": "#",
+      "score": 3.3,
+      "score_breakdown": {
+        "price_raw": 3800.0,
+        "price_component": 1.9,
+        "days_off": 6,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": false
+      }
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-03-04",
+      "stats": {
+        "AU": {
+          "avg": 3800.0
+        },
+        "NZ": {
+          "avg": 3800.0
+        },
+        "NA": {
+          "avg": 3800.0
+        },
+        "BW": {
+          "avg": 3800.0
+        },
+        "JP": {
+          "avg": 3800.0
+        }
+      }
+    }
+  ]
 }
