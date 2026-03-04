@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-03-04T01:59:02.782454",
+  "last_updated": "2026-03-04T06:46:17.670878",
   "current_best": [
     {
-      "id": "mock-1470",
+      "id": "mock-1055",
       "source": "Mock",
       "origin": "KRK",
       "destination": "SYD",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "id": "mock-8334",
+      "id": "mock-8450",
       "source": "Mock",
       "origin": "KRK",
       "destination": "AKL",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "id": "mock-8208",
+      "id": "mock-7950",
       "source": "Mock",
       "origin": "KRK",
       "destination": "WDH",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "mock-4475",
+      "id": "mock-4845",
       "source": "Mock",
       "origin": "KRK",
       "destination": "GBE",
@@ -86,7 +86,7 @@
       }
     },
     {
-      "id": "mock-5498",
+      "id": "mock-4709",
       "source": "Mock",
       "origin": "KRK",
       "destination": "TYO",
@@ -107,7 +107,7 @@
       }
     },
     {
-      "id": "mock-8334",
+      "id": "mock-5036",
       "source": "Mock",
       "origin": "KRK",
       "destination": "TYO",
@@ -128,7 +128,7 @@
       }
     },
     {
-      "id": "mock-8019",
+      "id": "mock-6233",
       "source": "Mock",
       "origin": "WAW",
       "destination": "SYD",
@@ -149,7 +149,7 @@
       }
     },
     {
-      "id": "mock-3303",
+      "id": "mock-5752",
       "source": "Mock",
       "origin": "WAW",
       "destination": "AKL",
@@ -170,7 +170,7 @@
       }
     },
     {
-      "id": "mock-9445",
+      "id": "mock-2004",
       "source": "Mock",
       "origin": "WAW",
       "destination": "WDH",
@@ -191,7 +191,7 @@
       }
     },
     {
-      "id": "mock-3002",
+      "id": "mock-6477",
       "source": "Mock",
       "origin": "WAW",
       "destination": "GBE",
@@ -212,7 +212,7 @@
       }
     },
     {
-      "id": "mock-9216",
+      "id": "mock-8491",
       "source": "Mock",
       "origin": "WAW",
       "destination": "TYO",
@@ -233,7 +233,7 @@
       }
     },
     {
-      "id": "mock-4633",
+      "id": "mock-2760",
       "source": "Mock",
       "origin": "WAW",
       "destination": "TYO",
@@ -254,7 +254,7 @@
       }
     },
     {
-      "id": "mock-8456",
+      "id": "mock-4160",
       "source": "Mock",
       "origin": "KRK",
       "destination": "SYD",
@@ -275,7 +275,7 @@
       }
     },
     {
-      "id": "mock-6706",
+      "id": "mock-5992",
       "source": "Mock",
       "origin": "KRK",
       "destination": "AKL",
@@ -296,7 +296,7 @@
       }
     },
     {
-      "id": "mock-1394",
+      "id": "mock-9455",
       "source": "Mock",
       "origin": "KRK",
       "destination": "WDH",
@@ -317,7 +317,7 @@
       }
     },
     {
-      "id": "mock-7818",
+      "id": "mock-2677",
       "source": "Mock",
       "origin": "KRK",
       "destination": "GBE",
@@ -338,7 +338,7 @@
       }
     },
     {
-      "id": "mock-9310",
+      "id": "mock-9563",
       "source": "Mock",
       "origin": "WAW",
       "destination": "SYD",
@@ -359,7 +359,7 @@
       }
     },
     {
-      "id": "mock-9649",
+      "id": "mock-5639",
       "source": "Mock",
       "origin": "WAW",
       "destination": "AKL",
@@ -380,7 +380,7 @@
       }
     },
     {
-      "id": "mock-3465",
+      "id": "mock-6710",
       "source": "Mock",
       "origin": "WAW",
       "destination": "WDH",
@@ -401,7 +401,7 @@
       }
     },
     {
-      "id": "mock-9648",
+      "id": "mock-6629",
       "source": "Mock",
       "origin": "WAW",
       "destination": "GBE",
@@ -423,6 +423,26 @@
     }
   ],
   "history": [
+    {
+      "date": "2026-03-04",
+      "stats": {
+        "AU": {
+          "avg": 3800.0
+        },
+        "NZ": {
+          "avg": 3800.0
+        },
+        "NA": {
+          "avg": 3800.0
+        },
+        "BW": {
+          "avg": 3800.0
+        },
+        "JP": {
+          "avg": 3800.0
+        }
+      }
+    },
     {
       "date": "2026-03-04",
       "stats": {
