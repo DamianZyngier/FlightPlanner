@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-08T06:41:58.497699",
+  "last_updated": "2026-03-08T12:47:53.113217",
   "current_best": [
     {
       "id": "mock-9334",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "id": "mock-9989",
+      "id": "mock-2515",
       "source": "Mock",
       "origin": "KRK",
       "destination": "WDH",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "mock-5485",
+      "id": "mock-5800",
       "source": "Mock",
       "origin": "KRK",
       "destination": "GBE",
@@ -107,7 +107,7 @@
       }
     },
     {
-      "id": "mock-1752",
+      "id": "mock-4180",
       "source": "Mock",
       "origin": "KRK",
       "destination": "TYO",
@@ -128,7 +128,7 @@
       }
     },
     {
-      "id": "mock-1891",
+      "id": "mock-4852",
       "source": "Mock",
       "origin": "KRK",
       "destination": "SYD",
@@ -149,7 +149,7 @@
       }
     },
     {
-      "id": "mock-5730",
+      "id": "mock-4724",
       "source": "Mock",
       "origin": "KRK",
       "destination": "AKL",
@@ -170,7 +170,7 @@
       }
     },
     {
-      "id": "mock-3005",
+      "id": "mock-9970",
       "source": "Mock",
       "origin": "KRK",
       "destination": "TYO",
@@ -233,7 +233,7 @@
       }
     },
     {
-      "id": "mock-9304",
+      "id": "mock-4269",
       "source": "Mock",
       "origin": "WAW",
       "destination": "WDH",
@@ -254,7 +254,7 @@
       }
     },
     {
-      "id": "mock-2983",
+      "id": "mock-6644",
       "source": "Mock",
       "origin": "WAW",
       "destination": "GBE",
@@ -296,7 +296,7 @@
       }
     },
     {
-      "id": "mock-2275",
+      "id": "mock-6754",
       "source": "Mock",
       "origin": "WAW",
       "destination": "TYO",
@@ -317,7 +317,7 @@
       }
     },
     {
-      "id": "mock-8125",
+      "id": "mock-9249",
       "source": "Mock",
       "origin": "WAW",
       "destination": "SYD",
@@ -338,7 +338,7 @@
       }
     },
     {
-      "id": "mock-2089",
+      "id": "mock-5601",
       "source": "Mock",
       "origin": "WAW",
       "destination": "AKL",
@@ -359,7 +359,7 @@
       }
     },
     {
-      "id": "mock-3292",
+      "id": "mock-5511",
       "source": "Mock",
       "origin": "WAW",
       "destination": "TYO",
@@ -380,7 +380,7 @@
       }
     },
     {
-      "id": "mock-6025",
+      "id": "mock-8142",
       "source": "Mock",
       "origin": "KRK",
       "destination": "SYD",
@@ -401,7 +401,7 @@
       }
     },
     {
-      "id": "mock-2247",
+      "id": "mock-3594",
       "source": "Mock",
       "origin": "KRK",
       "destination": "AKL",
@@ -464,7 +464,7 @@
       }
     },
     {
-      "id": "mock-2524",
+      "id": "mock-5946",
       "source": "Mock",
       "origin": "KRK",
       "destination": "WDH",
@@ -485,7 +485,7 @@
       }
     },
     {
-      "id": "mock-4206",
+      "id": "mock-9293",
       "source": "Mock",
       "origin": "KRK",
       "destination": "GBE",
@@ -506,7 +506,7 @@
       }
     },
     {
-      "id": "mock-2270",
+      "id": "mock-5909",
       "source": "Mock",
       "origin": "WAW",
       "destination": "SYD",
@@ -527,7 +527,7 @@
       }
     },
     {
-      "id": "mock-7943",
+      "id": "mock-2256",
       "source": "Mock",
       "origin": "WAW",
       "destination": "AKL",
@@ -590,7 +590,7 @@
       }
     },
     {
-      "id": "mock-1231",
+      "id": "mock-4742",
       "source": "Mock",
       "origin": "WAW",
       "destination": "WDH",
@@ -611,7 +611,7 @@
       }
     },
     {
-      "id": "mock-8064",
+      "id": "mock-7155",
       "source": "Mock",
       "origin": "WAW",
       "destination": "GBE",
@@ -935,6 +935,26 @@
     },
     {
       "date": "2026-03-07",
+      "stats": {
+        "AU": {
+          "avg": 3800.0
+        },
+        "NZ": {
+          "avg": 3800.0
+        },
+        "NA": {
+          "avg": 3800.0
+        },
+        "BW": {
+          "avg": 3800.0
+        },
+        "JP": {
+          "avg": 3800.0
+        }
+      }
+    },
+    {
+      "date": "2026-03-08",
       "stats": {
         "AU": {
           "avg": 3800.0
