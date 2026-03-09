@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T19:15:19.449041",
+  "last_updated": "2026-03-09T22:10:00.944358",
   "current_best": [
     {
       "id": "tp-cheap-KRK-HAN-2026-03-18T06:50:00+01:00",
@@ -79,12 +79,12 @@
       "departure_date": "2026-06-03",
       "return_date": "2026-06-11",
       "airline": "DE",
-      "price": 2429.0,
+      "price": 2435.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BUD%20on%202026-06-03%20through%202026-06-11&curr=PLN",
-      "score": 59.6,
+      "score": 59.5,
       "score_breakdown": {
-        "price_raw": 2429.0,
+        "price_raw": 2435.0,
         "days_off": 6,
         "holiday_count": 1,
         "dist_km": 400,
@@ -171,12 +171,12 @@
       "departure_date": "2026-08-24",
       "return_date": "2026-09-07",
       "airline": "LW",
-      "price": 2535.0,
+      "price": 2541.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20WAW%20on%202026-08-24%20through%202026-09-07&curr=PLN",
-      "score": 56.4,
+      "score": 56.3,
       "score_breakdown": {
-        "price_raw": 2535.0,
+        "price_raw": 2541.0,
         "days_off": 11,
         "holiday_count": 0,
         "dist_km": 300,
@@ -263,12 +263,12 @@
       "departure_date": "2026-04-20",
       "return_date": "2026-05-13",
       "airline": "LO",
-      "price": 2542.0,
+      "price": 2548.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20KRK%20on%202026-04-20%20through%202026-05-13&curr=PLN",
       "score": 53.3,
       "score_breakdown": {
-        "price_raw": 2542.0,
+        "price_raw": 2548.0,
         "days_off": 17,
         "holiday_count": 2,
         "dist_km": 0,
@@ -516,12 +516,12 @@
       "departure_date": "2026-12-01",
       "return_date": "2026-12-14",
       "airline": "LH",
-      "price": 3134.0,
+      "price": 3141.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20WAW%20on%202026-12-01%20through%202026-12-14&curr=PLN",
-      "score": 51.4,
+      "score": 51.3,
       "score_breakdown": {
-        "price_raw": 3134.0,
+        "price_raw": 3141.0,
         "days_off": 10,
         "holiday_count": 0,
         "dist_km": 300,
@@ -539,12 +539,12 @@
       "departure_date": "2026-11-07",
       "return_date": "2026-11-23",
       "airline": "FZ",
-      "price": 2789.0,
+      "price": 2797.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20KRK%20on%202026-11-07%20through%202026-11-23&curr=PLN",
-      "score": 51.3,
+      "score": 51.2,
       "score_breakdown": {
-        "price_raw": 2789.0,
+        "price_raw": 2797.0,
         "days_off": 10,
         "holiday_count": 1,
         "dist_km": 0,
@@ -574,29 +574,6 @@
         "in_season": false,
         "duration_days": 10,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-BTS-HKT-2026-05-22T23:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BTS",
-      "destination": "HKT",
-      "departure_date": "2026-05-22",
-      "return_date": "2026-05-26",
-      "airline": "FR",
-      "price": 2747.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BTS%20on%202026-05-22%20through%202026-05-26&curr=PLN",
-      "score": 51.1,
-      "score_breakdown": {
-        "price_raw": 2747.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "dist_km": 450,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 1
       }
     },
     {
@@ -631,12 +608,12 @@
       "departure_date": "2026-05-12",
       "return_date": "2026-05-19",
       "airline": "ET",
-      "price": 2415.0,
+      "price": 2420.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20VIE%20on%202026-05-12%20through%202026-05-19&curr=PLN",
       "score": 50.7,
       "score_breakdown": {
-        "price_raw": 2415.0,
+        "price_raw": 2420.0,
         "days_off": 6,
         "holiday_count": 0,
         "dist_km": 460,
@@ -654,12 +631,12 @@
       "departure_date": "2026-07-09",
       "return_date": "2026-07-19",
       "airline": "OS",
-      "price": 3258.0,
+      "price": 3266.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20VIE%20on%202026-07-09%20through%202026-07-19&curr=PLN",
-      "score": 50.7,
+      "score": 50.6,
       "score_breakdown": {
-        "price_raw": 3258.0,
+        "price_raw": 3266.0,
         "days_off": 7,
         "holiday_count": 0,
         "dist_km": 460,
@@ -677,12 +654,12 @@
       "departure_date": "2026-04-10",
       "return_date": "2026-04-24",
       "airline": "PC",
-      "price": 2636.0,
+      "price": 2642.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BER%20on%202026-04-10%20through%202026-04-24&curr=PLN",
       "score": 50.5,
       "score_breakdown": {
-        "price_raw": 2636.0,
+        "price_raw": 2642.0,
         "days_off": 11,
         "holiday_count": 0,
         "dist_km": 600,
@@ -746,12 +723,12 @@
       "departure_date": "2026-04-20",
       "return_date": "2026-05-04",
       "airline": "FR",
-      "price": 2779.0,
+      "price": 2786.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20PRG%20on%202026-04-20%20through%202026-05-04&curr=PLN",
       "score": 50.3,
       "score_breakdown": {
-        "price_raw": 2779.0,
+        "price_raw": 2786.0,
         "days_off": 10,
         "holiday_count": 2,
         "dist_km": 540,
@@ -907,16 +884,39 @@
       "departure_date": "2026-05-03",
       "return_date": "2026-06-03",
       "airline": "FM",
-      "price": 2218.0,
+      "price": 2223.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-05-03%20through%202026-06-03&curr=PLN",
-      "score": 49.4,
+      "score": 49.3,
       "score_breakdown": {
-        "price_raw": 2218.0,
+        "price_raw": 2223.0,
         "days_off": 22,
         "holiday_count": 2,
         "dist_km": 400,
         "in_season": false,
+        "duration_days": 31,
+        "efficiency": 9
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-MNL-2026-03-22T10:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "MNL",
+      "departure_date": "2026-03-22",
+      "return_date": "2026-04-22",
+      "airline": "EY",
+      "price": 2906.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20PRG%20on%202026-03-22%20through%202026-04-22&curr=PLN",
+      "score": 49.3,
+      "score_breakdown": {
+        "price_raw": 2906.0,
+        "days_off": 22,
+        "holiday_count": 2,
+        "dist_km": 540,
+        "in_season": true,
         "duration_days": 31,
         "efficiency": 9
       }
@@ -1022,41 +1022,18 @@
       "departure_date": "2026-09-21",
       "return_date": "2026-10-10",
       "airline": "LO",
-      "price": 2497.0,
+      "price": 2503.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20WAW%20on%202026-09-21%20through%202026-10-10&curr=PLN",
-      "score": 48.7,
+      "score": 48.6,
       "score_breakdown": {
-        "price_raw": 2497.0,
+        "price_raw": 2503.0,
         "days_off": 15,
         "holiday_count": 0,
         "dist_km": 300,
         "in_season": false,
         "duration_days": 19,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-MNL-2026-05-18T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "MNL",
-      "departure_date": "2026-05-18",
-      "return_date": "2026-06-06",
-      "airline": "EY",
-      "price": 2987.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20PRG%20on%202026-05-18%20through%202026-06-06&curr=PLN",
-      "score": 48.6,
-      "score_breakdown": {
-        "price_raw": 2987.0,
-        "days_off": 14,
-        "holiday_count": 1,
-        "dist_km": 540,
-        "in_season": true,
-        "duration_days": 19,
-        "efficiency": 5
       }
     },
     {
@@ -1091,12 +1068,12 @@
       "departure_date": "2026-06-11",
       "return_date": "2026-07-16",
       "airline": "KL",
-      "price": 2567.0,
+      "price": 2573.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20WAW%20on%202026-06-11%20through%202026-07-16&curr=PLN",
       "score": 48.1,
       "score_breakdown": {
-        "price_raw": 2567.0,
+        "price_raw": 2573.0,
         "days_off": 26,
         "holiday_count": 0,
         "dist_km": 300,
@@ -1129,6 +1106,29 @@
       }
     },
     {
+      "id": "tp-cheap-WAW-SGN-2026-11-17T07:45:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "SGN",
+      "departure_date": "2026-11-17",
+      "return_date": "2026-12-04",
+      "airline": "LO",
+      "price": 2631.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20WAW%20on%202026-11-17%20through%202026-12-04&curr=PLN",
+      "score": 47.6,
+      "score_breakdown": {
+        "price_raw": 2631.0,
+        "days_off": 14,
+        "holiday_count": 0,
+        "dist_km": 300,
+        "in_season": false,
+        "duration_days": 17,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-BUD-SYD-2026-03-23T19:55:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1137,12 +1137,12 @@
       "departure_date": "2026-03-23",
       "return_date": "2026-03-27",
       "airline": "MU",
-      "price": 3990.0,
+      "price": 3999.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20BUD%20on%202026-03-23%20through%202026-03-27&curr=PLN",
-      "score": 47.6,
+      "score": 47.5,
       "score_breakdown": {
-        "price_raw": 3990.0,
+        "price_raw": 3999.0,
         "days_off": 5,
         "holiday_count": 0,
         "dist_km": 400,
@@ -1557,368 +1557,40 @@
       "date": "2026-03-09",
       "stats": {
         "AU": {
-          "avg": 4595.44
+          "avg": 4597.44
         },
         "BW": {
           "avg": 4747.0
         },
         "CA": {
-          "avg": 2804.42
+          "avg": 2806.67
         },
         "JP": {
           "avg": 3561.5
         },
         "MY": {
-          "avg": 2758.29
+          "avg": 2759.14
         },
         "NA": {
-          "avg": 3518.0
+          "avg": 3586.0
         },
         "NZ": {
-          "avg": 5836.2
+          "avg": 6150.45
         },
         "PE": {
-          "avg": 4882.7
+          "avg": 4885.1
         },
         "PH": {
-          "avg": 3353.64
+          "avg": 3301.3
         },
         "TH": {
-          "avg": 2765.84
+          "avg": 2785.63
         },
         "VN": {
-          "avg": 3165.86
+          "avg": 3212.05
         },
         "ZA": {
-          "avg": 3160.27
-        }
-      }
-    },
-    {
-      "date": "2026-03-09",
-      "stats": {
-        "AU": {
-          "avg": 4595.44
-        },
-        "BW": {
-          "avg": 4747.0
-        },
-        "CA": {
-          "avg": 2804.42
-        },
-        "JP": {
-          "avg": 3561.5
-        },
-        "MY": {
-          "avg": 2758.29
-        },
-        "NA": {
-          "avg": 3518.0
-        },
-        "NZ": {
-          "avg": 5836.2
-        },
-        "PE": {
-          "avg": 4882.7
-        },
-        "PH": {
-          "avg": 3353.64
-        },
-        "TH": {
-          "avg": 2765.84
-        },
-        "VN": {
-          "avg": 3165.86
-        },
-        "ZA": {
-          "avg": 3160.27
-        }
-      }
-    },
-    {
-      "date": "2026-03-09",
-      "stats": {
-        "AU": {
-          "avg": 4595.44
-        },
-        "BW": {
-          "avg": 4747.0
-        },
-        "CA": {
-          "avg": 2804.42
-        },
-        "JP": {
-          "avg": 3561.5
-        },
-        "MY": {
-          "avg": 2758.29
-        },
-        "NA": {
-          "avg": 3518.0
-        },
-        "NZ": {
-          "avg": 5836.2
-        },
-        "PE": {
-          "avg": 4882.7
-        },
-        "PH": {
-          "avg": 3353.64
-        },
-        "TH": {
-          "avg": 2765.84
-        },
-        "VN": {
-          "avg": 3165.86
-        },
-        "ZA": {
-          "avg": 3160.27
-        }
-      }
-    },
-    {
-      "date": "2026-03-09",
-      "stats": {
-        "AU": {
-          "avg": 4595.44
-        },
-        "BW": {
-          "avg": 4747.0
-        },
-        "CA": {
-          "avg": 2804.42
-        },
-        "JP": {
-          "avg": 3561.5
-        },
-        "MY": {
-          "avg": 2758.29
-        },
-        "NA": {
-          "avg": 3518.0
-        },
-        "NZ": {
-          "avg": 5836.2
-        },
-        "PE": {
-          "avg": 4882.7
-        },
-        "PH": {
-          "avg": 3353.64
-        },
-        "TH": {
-          "avg": 2765.84
-        },
-        "VN": {
-          "avg": 3165.86
-        },
-        "ZA": {
-          "avg": 3160.27
-        }
-      }
-    },
-    {
-      "date": "2026-03-09",
-      "stats": {
-        "AU": {
-          "avg": 4595.44
-        },
-        "BW": {
-          "avg": 4747.0
-        },
-        "CA": {
-          "avg": 2804.42
-        },
-        "JP": {
-          "avg": 3561.5
-        },
-        "MY": {
-          "avg": 2758.29
-        },
-        "NA": {
-          "avg": 3518.0
-        },
-        "NZ": {
-          "avg": 5836.2
-        },
-        "PE": {
-          "avg": 4882.7
-        },
-        "PH": {
-          "avg": 3353.64
-        },
-        "TH": {
-          "avg": 2765.84
-        },
-        "VN": {
-          "avg": 3165.86
-        },
-        "ZA": {
-          "avg": 3160.27
-        }
-      }
-    },
-    {
-      "date": "2026-03-09",
-      "stats": {
-        "AU": {
-          "avg": 4595.44
-        },
-        "BW": {
-          "avg": 4747.0
-        },
-        "CA": {
-          "avg": 2804.42
-        },
-        "JP": {
-          "avg": 3561.5
-        },
-        "MY": {
-          "avg": 2758.29
-        },
-        "NA": {
-          "avg": 3518.0
-        },
-        "NZ": {
-          "avg": 5836.2
-        },
-        "PE": {
-          "avg": 4882.7
-        },
-        "PH": {
-          "avg": 3353.64
-        },
-        "TH": {
-          "avg": 2765.84
-        },
-        "VN": {
-          "avg": 3165.86
-        },
-        "ZA": {
-          "avg": 3160.27
-        }
-      }
-    },
-    {
-      "date": "2026-03-09",
-      "stats": {
-        "AU": {
-          "avg": 4595.44
-        },
-        "BW": {
-          "avg": 4747.0
-        },
-        "CA": {
-          "avg": 2804.42
-        },
-        "JP": {
-          "avg": 3561.5
-        },
-        "MY": {
-          "avg": 2758.29
-        },
-        "NA": {
-          "avg": 3518.0
-        },
-        "NZ": {
-          "avg": 5836.2
-        },
-        "PE": {
-          "avg": 4882.7
-        },
-        "PH": {
-          "avg": 3353.64
-        },
-        "TH": {
-          "avg": 2765.84
-        },
-        "VN": {
-          "avg": 3165.86
-        },
-        "ZA": {
-          "avg": 3160.27
-        }
-      }
-    },
-    {
-      "date": "2026-03-09",
-      "stats": {
-        "AU": {
-          "avg": 4595.44
-        },
-        "BW": {
-          "avg": 4747.0
-        },
-        "CA": {
-          "avg": 2804.42
-        },
-        "JP": {
-          "avg": 3561.5
-        },
-        "MY": {
-          "avg": 2758.29
-        },
-        "NA": {
-          "avg": 3518.0
-        },
-        "NZ": {
-          "avg": 5836.2
-        },
-        "PE": {
-          "avg": 4882.7
-        },
-        "PH": {
-          "avg": 3353.64
-        },
-        "TH": {
-          "avg": 2765.84
-        },
-        "VN": {
-          "avg": 3165.86
-        },
-        "ZA": {
-          "avg": 3160.27
-        }
-      }
-    },
-    {
-      "date": "2026-03-09",
-      "stats": {
-        "AU": {
-          "avg": 4595.44
-        },
-        "BW": {
-          "avg": 4747.0
-        },
-        "CA": {
-          "avg": 2804.42
-        },
-        "JP": {
-          "avg": 3561.5
-        },
-        "MY": {
-          "avg": 2758.29
-        },
-        "NA": {
-          "avg": 3518.0
-        },
-        "NZ": {
-          "avg": 5836.2
-        },
-        "PE": {
-          "avg": 4882.7
-        },
-        "PH": {
-          "avg": 3353.64
-        },
-        "TH": {
-          "avg": 2765.84
-        },
-        "VN": {
-          "avg": 3165.86
-        },
-        "ZA": {
-          "avg": 3160.27
+          "avg": 3161.82
         }
       }
     }
