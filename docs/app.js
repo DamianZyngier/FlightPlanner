@@ -78,7 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
         "AKL": "Auckland", "CHC": "Christchurch", "WLG": "Wellington",
         "WDH": "Windhoek", "GBE": "Gaborone", "MUB": "Maun",
         "TYO": "Tokyo", "KIX": "Osaka", "FUK": "Fukuoka",
-        "HND": "Tokyo Haneda", "NRT": "Tokyo Narita"
+        "HND": "Tokyo Haneda", "NRT": "Tokyo Narita",
+        "LIM": "Lima", "CUZ": "Cusco",
+        "SID": "Sal", "RAI": "Praia", "BVC": "Boa Vista",
+        "YYZ": "Toronto", "YVR": "Vancouver", "YUL": "Montreal", "YYC": "Calgary"
     };
 
     function getAirportDisplay(code) {

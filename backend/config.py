@@ -22,6 +22,9 @@ DESTINATIONS = {
     "NA": ["WDH"],                      # Namibia (Windhoek)
     "BW": ["GBE", "MUB"],               # Botswana (Gaborone, Maun)
     "JP": ["TYO", "KIX", "FUK"],        # Japan (Tokyo, Osaka, Fukuoka)
+    "PE": ["LIM", "CUZ"],               # Peru (Lima, Cusco)
+    "CV": ["SID", "RAI", "BVC"],        # Cape Verde (Sal, Praia, Boa Vista)
+    "CA": ["YYZ", "YVR", "YUL", "YYC"]  # Canada (Toronto, Vancouver, Montreal, Calgary)
 }
 
 # Peak Seasons (approximate months for best weather)
@@ -31,7 +34,10 @@ PEAK_SEASONS = {
     "NZ": [12, 1, 2, 3],            # Summer
     "NA": [5, 6, 7, 8, 9, 10],      # Dry Season (safari)
     "BW": [5, 6, 7, 8, 9, 10],      # Dry Season (safari)
-    "JP": [3, 4, 5, 10, 11]         # Cherry Blossom / Autumn
+    "JP": [3, 4, 5, 10, 11],        # Cherry Blossom / Autumn
+    "PE": [5, 6, 7, 8, 9],          # Dry Season (Andes)
+    "CV": [11, 12, 1, 2, 3, 4, 5, 6], # Pleasant weather
+    "CA": [6, 7, 8, 9]              # Summer/Early Autumn
 }
 
 # Polish Public Holidays (2026-2027)
@@ -74,32 +80,16 @@ DEFAULT_WEIGHTS = {
 
 # Airport to City mapping for UI display
 AIRPORT_NAMES = {
-    "KRK": "Kraków",
-    "KTW": "Katowice",
-    "OSR": "Ostrava",
-    "RZE": "Rzeszów",
-    "WAW": "Warsaw Chopin",
-    "WMI": "Warsaw Modlin",
-    "BUD": "Budapest",
-    "BTS": "Bratislava",
-    "VIE": "Vienna",
-    "PRG": "Prague",
-    "BER": "Berlin",
-    "SYD": "Sydney",
-    "MEL": "Melbourne",
-    "BNE": "Brisbane",
-    "PER": "Perth",
-    "AKL": "Auckland",
-    "CHC": "Christchurch",
-    "WLG": "Wellington",
-    "WDH": "Windhoek",
-    "GBE": "Gaborone",
-    "MUB": "Maun",
-    "TYO": "Tokyo",
-    "KIX": "Osaka",
-    "FUK": "Fukuoka",
-    "HND": "Tokyo Haneda",
-    "NRT": "Tokyo Narita"
+    "KRK": "Kraków", "KTW": "Katowice", "OSR": "Ostrava", "RZE": "Rzeszów",
+    "WAW": "Warsaw Chopin", "WMI": "Warsaw Modlin", "BUD": "Budapest",
+    "BTS": "Bratislava", "VIE": "Vienna", "PRG": "Prague", "BER": "Berlin",
+    "SYD": "Sydney", "MEL": "Melbourne", "BNE": "Brisbane", "PER": "Perth",
+    "AKL": "Auckland", "CHC": "Christchurch", "WLG": "Wellington",
+    "WDH": "Windhoek", "GBE": "Gaborone", "MUB": "Maun",
+    "TYO": "Tokyo", "KIX": "Osaka", "FUK": "Fukuoka", "HND": "Tokyo Haneda", "NRT": "Tokyo Narita",
+    "LIM": "Lima", "CUZ": "Cusco",
+    "SID": "Sal", "RAI": "Praia", "BVC": "Boa Vista",
+    "YYZ": "Toronto", "YVR": "Vancouver", "YUL": "Montreal", "YYC": "Calgary"
 }
 
 # Email Config
