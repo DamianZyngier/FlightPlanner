@@ -54,11 +54,9 @@ class FlightPlanner {
 
     populateSuggestions() {
         let html = '';
-        // Add countries
         Object.entries(DATA_MAP.COUNTRIES).forEach(([code, name]) => {
             html += `<option value="${name} (${code})">Country</option>`;
         });
-        // Add specific airports
         Object.entries(DATA_MAP.AIRPORTS).forEach(([code, name]) => {
             html += `<option value="${code}: ${name}">Airport</option>`;
         });
@@ -73,7 +71,6 @@ class FlightPlanner {
             this.renderOriginList();
             this.renderDashboard();
         };
-        // Also handle enter key on input
         this.els.autoInput.onkeypress = (e) => {
             if (e.key === 'Enter') this.addFromSmartInput();
         };
@@ -120,30 +117,24 @@ class FlightPlanner {
 
         let countryCode = '', airportCode = '';
 
-        // Case 1: "Mexico (MX)" -> Selected a country
         if (val.includes('(') && val.includes(')')) {
             countryCode = val.split('(')[1].split(')')[0].toUpperCase();
             airportCode = '-'; 
         } 
-        // Case 2: "JFK: John F. Kennedy" -> Selected an airport
         else if (val.includes(':')) {
             airportCode = val.split(':')[0].trim().toUpperCase();
-            countryCode = 'INTL'; // Default bucket for direct airport additions
+            countryCode = 'INTL'; 
         }
-        // Case 3: Typed name or code manually
         else {
             const upper = val.toUpperCase();
-            // Check if it's a known country code
             if (DATA_MAP.COUNTRIES[upper]) {
                 countryCode = upper;
                 airportCode = '-';
             } 
-            // Check if it's a known airport code
             else if (DATA_MAP.AIRPORTS[upper] || upper.length === 3) {
                 airportCode = upper;
                 countryCode = 'INTL';
             }
-            // Search by country name
             else {
                 const foundEntry = Object.entries(DATA_MAP.COUNTRIES).find(([code, name]) => name.toLowerCase() === val.toLowerCase());
                 if (foundEntry) {
@@ -155,16 +146,9 @@ class FlightPlanner {
 
         if (countryCode) {
             if (!this.data.config.DESTINATIONS[countryCode]) this.data.config.DESTINATIONS[countryCode] = [];
-            
-            // If it's a country-wide scan, we don't add specific codes
             if (airportCode !== '-' && !this.data.config.DESTINATIONS[countryCode].includes(airportCode)) {
                 this.data.config.DESTINATIONS[countryCode].push(airportCode);
-            } else if (airportCode === '-') {
-                // If it's a country, maybe just add a placeholder or handle in backend.
-                // For now, let's just use the country code as key and keep empty list if no airports
-                if (!this.data.config.DESTINATIONS[countryCode]) this.data.config.DESTINATIONS[countryCode] = [];
             }
-
             await this.saveConfig();
             this.renderDestinations();
             this.els.autoInput.value = '';
@@ -235,12 +219,12 @@ class FlightPlanner {
 
         return `
             <div class="card">
-                <div class="score-tag ${this.getScoreClass(f.score)}">${f.score}% Match</div>
                 <div class="card-top">
                     <div class="card-dest">${this.getName(f.destination)}</div>
                     <div class="card-price">${f.price} ${f.currency}</div>
                 </div>
                 ${itin}
+                <div class="score-tag ${this.getScoreClass(f.score)}">${Math.round(f.score)}% Match</div>
                 <div class="card-details">
                     <div class="row"><span>From</span> <span>${this.getName(f.origin)}</span></div>
                     <div class="row"><span>Airline</span> <span>${f.airline}</span></div>
