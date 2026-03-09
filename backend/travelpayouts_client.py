@@ -1,6 +1,7 @@
 import os
 import requests
 from datetime import datetime, date
+from backend.utils import generate_google_flights_link
 
 class TravelpayoutsClient:
     def __init__(self):
@@ -95,17 +96,19 @@ class TravelpayoutsClient:
         results = []
         for dest, offers in data.items():
             for idx, offer in offers.items():
+                dep_date = offer['departure_at'].split('T')[0]
+                ret_date = offer.get('return_at', '').split('T')[0] if offer.get('return_at') else None
                 results.append({
                     "id": f"tp-cheap-{origin}-{dest}-{offer['departure_at']}",
                     "source": "Travelpayouts-Cheap",
                     "origin": origin,
                     "destination": dest,
-                    "departure_date": offer['departure_at'].split('T')[0],
-                    "return_date": offer.get('return_at', '').split('T')[0] if offer.get('return_at') else None,
+                    "departure_date": dep_date,
+                    "return_date": ret_date,
                     "airline": offer['airline'],
                     "price": float(offer['price']),
                     "currency": "PLN",
-                    "link": f"https://www.google.com/travel/flights?q=Flights%20to%20{dest}%20from%20{origin}"
+                    "link": generate_google_flights_link(origin, dest, dep_date, ret_date)
                 })
         return results
 
@@ -115,16 +118,18 @@ class TravelpayoutsClient:
         """
         results = []
         for offer in data:
+            dep_date = offer['departure_at'].split('T')[0]
+            ret_date = offer.get('return_date')
             results.append({
                 "id": f"tp-latest-{offer['origin']}-{offer['destination']}-{offer['departure_at']}",
                 "source": "Travelpayouts-Latest",
                 "origin": offer['origin'],
                 "destination": offer['destination'],
-                "departure_date": offer['departure_at'].split('T')[0],
-                "return_date": offer.get('return_date'),
+                "departure_date": dep_date,
+                "return_date": ret_date,
                 "airline": offer.get('gate'), # Gate/Airline
                 "price": float(offer['value']),
                 "currency": "PLN",
-                "link": f"https://www.google.com/travel/flights?q=Flights%20to%20{offer['destination']}%20from%20{offer['origin']}"
+                "link": generate_google_flights_link(offer['origin'], offer['destination'], dep_date, ret_date)
             })
         return results

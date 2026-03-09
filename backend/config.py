@@ -72,6 +72,36 @@ DEFAULT_WEIGHTS = {
     "seasonality": 0.1
 }
 
+# Airport to City mapping for UI display
+AIRPORT_NAMES = {
+    "KRK": "Kraków",
+    "KTW": "Katowice",
+    "OSR": "Ostrava",
+    "RZE": "Rzeszów",
+    "WAW": "Warsaw Chopin",
+    "WMI": "Warsaw Modlin",
+    "BUD": "Budapest",
+    "BTS": "Bratislava",
+    "VIE": "Vienna",
+    "PRG": "Prague",
+    "BER": "Berlin",
+    "SYD": "Sydney",
+    "MEL": "Melbourne",
+    "BNE": "Brisbane",
+    "PER": "Perth",
+    "AKL": "Auckland",
+    "CHC": "Christchurch",
+    "WLG": "Wellington",
+    "WDH": "Windhoek",
+    "GBE": "Gaborone",
+    "MUB": "Maun",
+    "TYO": "Tokyo",
+    "KIX": "Osaka",
+    "FUK": "Fukuoka",
+    "HND": "Tokyo Haneda",
+    "NRT": "Tokyo Narita"
+}
+
 # Email Config
 EMAIL_SENDER = "zyngi23@gmail.com"  # The user's email is both sender (via SMTP) and receiver
 EMAIL_RECEIVER = "zyngi23@gmail.com"

@@ -1,4 +1,5 @@
 from datetime import date, timedelta
+import urllib.parse
 from backend.config import HOLIDAYS
 
 def calculate_days_off(start_date: date, end_date: date) -> int:
@@ -18,3 +19,14 @@ def calculate_days_off(start_date: date, end_date: date) -> int:
             days_off_needed += 1
         current_date += timedelta(days=1)
     return days_off_needed
+
+def generate_google_flights_link(origin, destination, dep_date, ret_date):
+    """
+    Generates a functional Google Flights search link.
+    """
+    base = "https://www.google.com/travel/flights?q="
+    query = f"Flights to {destination} from {origin} on {dep_date}"
+    if ret_date:
+        query += f" returning {ret_date}"
+    
+    return base + urllib.parse.quote(query)

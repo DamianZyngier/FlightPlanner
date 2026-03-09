@@ -70,6 +70,21 @@ document.addEventListener('DOMContentLoaded', () => {
         return parseFloat(final_score.toFixed(2));
     }
 
+    const AIRPORT_NAMES = {
+        "KRK": "Kraków", "KTW": "Katowice", "OSR": "Ostrava", "RZE": "Rzeszów",
+        "WAW": "Warsaw Chopin", "WMI": "Warsaw Modlin", "BUD": "Budapest",
+        "BTS": "Bratislava", "VIE": "Vienna", "PRG": "Prague", "BER": "Berlin",
+        "SYD": "Sydney", "MEL": "Melbourne", "BNE": "Brisbane", "PER": "Perth",
+        "AKL": "Auckland", "CHC": "Christchurch", "WLG": "Wellington",
+        "WDH": "Windhoek", "GBE": "Gaborone", "MUB": "Maun",
+        "TYO": "Tokyo", "KIX": "Osaka", "FUK": "Fukuoka",
+        "HND": "Tokyo Haneda", "NRT": "Tokyo Narita"
+    };
+
+    function getAirportDisplay(code) {
+        return AIRPORT_NAMES[code] ? `${AIRPORT_NAMES[code]} (${code})` : code;
+    }
+
     function renderFlights() {
         if (!flightData || !flightData.current_best) return;
 
@@ -97,16 +112,17 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <div class="score-badge">Score: ${f.ui_score}</div>
                 <div class="card-header">
-                    <span class="destination">${f.destination}</span>
+                    <span class="destination">${getAirportDisplay(f.destination)}</span>
                     <span class="price">${f.price} ${f.currency}</span>
                 </div>
                 <div class="details">
-                    <div><strong>From:</strong> ${f.origin}</div>
+                    <div><strong>From:</strong> ${getAirportDisplay(f.origin)}</div>
                     <div><strong>Date:</strong> ${f.departure_date}</div>
                     <div><strong>Return:</strong> ${f.return_date}</div>
                     <div><strong>Airline:</strong> ${f.airline}</div>
                     <div><strong>Days Off:</strong> ${f.score_breakdown.days_off}</div>
                     <div><strong>Duration:</strong> ${f.score_breakdown.duration_days} days</div>
+                    <div style="font-size: 0.8em; color: #777; margin-top: 5px;">Source: ${f.source}</div>
                 </div>
                 <a href="${f.link}" target="_blank" class="book-btn">Check Deal</a>
             `;
