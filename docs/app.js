@@ -1,5 +1,5 @@
 /**
- * Flight Planner Pro - Multi-View Dashboard (Added Price Filter)
+ * Flight Planner Pro - Multi-View Dashboard (Added Sorting)
  */
 
 const DATA_MAP = {
@@ -27,7 +27,8 @@ class FlightPlanner {
             viewName: q('current-view-name'), addBtn: q('add-dest-btn'), autoInput: q('dest-autocomplete'),
             suggestions: q('dest-suggestions'), originList: q('included-origins'),
             wPrice: q('w-price'), wDist: q('w-dist'), wWeather: q('w-weather'),
-            vWPrice: q('val-w-price'), vWDist: q('val-w-dist'), vWWeather: q('val-w-weather')
+            vWPrice: q('val-w-price'), vWDist: q('val-w-dist'), vWWeather: q('val-w-weather'),
+            sortBy: q('sort-by')
         };
     }
 
@@ -79,6 +80,11 @@ class FlightPlanner {
                 this.renderDashboard();
             };
         });
+
+        this.els.sortBy.onchange = () => {
+            this.saveConfigLocally();
+            this.renderDashboard();
+        };
     }
 
     async loadConfig() {
@@ -95,6 +101,7 @@ class FlightPlanner {
                 this.els.wDist.value = s.w_dist ?? 0.5;
                 this.els.wWeather.value = s.w_weather ?? 0.5;
                 this.currentView = s.last_view ?? 'longhaul';
+                this.els.sortBy.value = s.sort_by ?? 'score';
                 
                 this.els.valDistKrk.innerText = this.els.originDist.value;
                 this.els.valMaxPrice.innerText = this.els.filterPrice.value;
@@ -122,7 +129,8 @@ class FlightPlanner {
             w_price: parseFloat(this.els.wPrice.value),
             w_dist: parseFloat(this.els.wDist.value),
             w_weather: parseFloat(this.els.wWeather.value),
-            last_view: this.currentView
+            last_view: this.currentView,
+            sort_by: this.els.sortBy.value
         };
         await fetch('/api/config', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(this.data.config) });
     }
@@ -177,6 +185,7 @@ class FlightPlanner {
         const maxPrice = parseInt(this.els.filterPrice.value);
         const minD = parseInt(this.els.minDur.value);
         const maxD = parseInt(this.els.maxDur.value);
+        const sortBy = this.els.sortBy.value;
         const w = { p: parseFloat(this.els.wPrice.value), d: parseFloat(this.els.wDist.value), we: parseFloat(this.els.wWeather.value) };
 
         let filtered = this.data.flights.current_best.filter(f => !f.is_mock && f.price <= maxPrice);
@@ -204,7 +213,13 @@ class FlightPlanner {
             const w_s = bd.in_season ? 100 : 20;
             const final = (p_s*w.p + d_s*w.d + w_s*w.we) / (w.p + w.d + w.we);
             return { ...f, ui_score: Math.round(final) };
-        }).sort((a, b) => b.ui_score - a.ui_score);
+        });
+
+        if (sortBy === 'price') {
+            rescored.sort((a, b) => a.price - b.price);
+        } else {
+            rescored.sort((a, b) => b.ui_score - a.ui_score);
+        }
 
         this.els.totalRoutes.innerText = rescored.length;
         this.els.bestPrice.innerText = rescored.length ? `${rescored[0].price} ${rescored[0].currency}` : "--";

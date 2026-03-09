@@ -186,7 +186,7 @@
     "max_dur": 30,
     "w_price": 1,
     "w_dist": 0.5,
-    "w_weather": 0.5,
+    "w_weather": 0.2,
     "last_view": "longhaul"
   },
   "USE_AMADEUS": false
