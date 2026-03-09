@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Planner Pro</title>
+    <title>Flight Planner Pro | Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/@tabler/icons@latest/dist/tabler-icons.min.js"></script>
 </head>
 <body>
 
 <div class="app-layout">
     <aside class="sidebar">
         <div class="sidebar-brand">
-            <span class="icon">✈️</span>
-            <h1>Flight Planner</h1>
+            <i class="ti ti-plane-tilt accent-color" style="font-size: 1.8rem; color: var(--accent);"></i>
+            <h1>FlightPlanner<span style="color: var(--accent);">Pro</span></h1>
         </div>
 
         <nav class="view-tabs">
-            <button class="nav-tab active" data-view="longhaul">🌎 World Explorer</button>
-            <button class="nav-tab" data-view="citybreak">🍺 Kraków Weekend</button>
+            <button class="nav-tab active" data-view="longhaul">World Explorer</button>
+            <button class="nav-tab" data-view="citybreak">Kraków Weekend</button>
         </nav>
         
         <div class="sidebar-section">
-            <label class="section-label">Route Filters</label>
+            <label class="section-label">Main Filters</label>
+            
             <div class="range-container">
                 <p class="help-text">Max Distance from KRK</p>
                 <div class="range-row">
@@ -32,16 +34,16 @@
                 <div id="included-origins" class="origin-list"></div>
             </div>
 
-            <div class="range-container" style="margin-top: 1rem;">
-                <p class="help-text">Max Price (PLN)</p>
+            <div class="range-container">
+                <p class="help-text">Budget (PLN)</p>
                 <div class="range-row">
                     <input type="range" id="filter-price" min="500" max="15000" step="100" value="8000">
                     <span class="range-val"><span id="val-max-price">8000</span></span>
                 </div>
             </div>
 
-            <div class="range-container" style="margin-top: 1rem;">
-                <p class="help-text">Trip Duration (Min - Max Days)</p>
+            <div class="range-container">
+                <p class="help-text">Trip Duration (Days)</p>
                 <div class="range-row">
                     <input type="range" id="min-duration" min="1" max="30" step="1" value="1">
                     <span class="range-val"><span id="val-min-dur">1</span>d</span>
@@ -54,33 +56,17 @@
         </div>
 
         <div class="sidebar-section">
-            <label class="section-label">Importance (Weights)</label>
+            <label class="section-label">Algorithm Weights</label>
             <div class="range-container">
-                <p class="help-text">Low Price</p>
+                <p class="help-text">Price Sensitivity</p>
                 <div class="range-row">
                     <input type="range" id="w-price" min="0" max="2" step="0.1" value="1.0">
-                    <span class="range-val" id="val-w-price">1.0</span>
                 </div>
             </div>
             <div class="range-container">
-                <p class="help-text">Origin Distance</p>
+                <p class="help-text">Distance Penalty</p>
                 <div class="range-row">
                     <input type="range" id="w-dist" min="0" max="2" step="0.1" value="0.5">
-                    <span class="range-val" id="val-w-dist">0.5</span>
-                </div>
-            </div>
-            <div class="range-container">
-                <p class="help-text">Peak Season Importance</p>
-                <div class="range-row">
-                    <input type="range" id="w-weather" min="0" max="2" step="0.1" value="0.5">
-                    <span class="range-val" id="val-w-weather">0.5</span>
-                </div>
-            </div>
-            <div class="range-container">
-                <p class="help-text">Trip Efficiency (Duration vs Days Off)</p>
-                <div class="range-row">
-                    <input type="range" id="w-eff" min="0" max="2" step="0.1" value="0.5">
-                    <span class="range-val" id="val-w-eff">0.5</span>
                 </div>
             </div>
         </div>
@@ -88,7 +74,7 @@
         <div class="sidebar-section">
             <label class="section-label">Destinations</label>
             <div class="smart-input">
-                <input type="text" id="dest-autocomplete" list="dest-suggestions" placeholder="Add country/city...">
+                <input type="text" id="dest-autocomplete" list="dest-suggestions" placeholder="Add country or city...">
                 <datalist id="dest-suggestions"></datalist>
                 <button id="add-dest-btn" class="btn-primary-sm">Add</button>
             </div>
@@ -96,7 +82,7 @@
         </div>
 
         <div class="sidebar-footer">
-            <button id="scan-btn" class="btn-primary" style="margin-bottom: 1rem; width: 100%;">🚀 Run Global Scan</button>
+            <button id="scan-btn" class="btn-primary" style="width: 100%;">🚀 Run Global Scan</button>
             <div id="last-updated">Updating...</div>
         </div>
     </aside>
@@ -104,28 +90,30 @@
     <main class="main-content">
         <header class="top-nav">
             <div class="metric">
-                <span class="metric-label">Best Match</span>
+                <span class="metric-label">Best Opportunity</span>
                 <span id="stat-best-price" class="metric-value">--</span>
             </div>
             <div class="metric">
-                <span class="metric-label">Results</span>
+                <span class="metric-label">Global Deals</span>
                 <span id="stat-total-routes" class="metric-value">--</span>
             </div>
             <div class="metric">
-                <span class="metric-label">View</span>
-                <span class="metric-value" id="current-view-name">Long-Haul</span>
+                <span class="metric-label">Active View</span>
+                <span class="metric-value" id="current-view-name" style="color: var(--accent);">World Explorer</span>
             </div>
         </header>
 
         <div class="view-container">
             <section class="section-deals">
-                <div class="section-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                    <h2>Live Opportunities</h2>
+                <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
+                    <div>
+                        <h2 style="margin-bottom: 0.25rem;">Live Flight Opportunities</h2>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; font-weight: 500;">Real-time analysis based on your custom scoring algorithm</p>
+                    </div>
                     <div class="sort-control">
-                        <label for="sort-by" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Sortuj wg:</label>
-                        <select id="sort-by" style="padding: 0.4rem; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; outline: none; cursor: pointer; color: var(--text-primary);">
-                            <option value="score">Najlepszy wybór</option>
-                            <option value="price">Najniższa cena</option>
+                        <select id="sort-by" style="padding: 0.6rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-strong); font-size: 0.85rem; font-weight: 600; outline: none; cursor: pointer; color: var(--text-secondary); background: white;">
+                            <option value="score">Sort by: AI Match Score</option>
+                            <option value="price">Sort by: Lowest Price</option>
                         </select>
                     </div>
                 </div>
@@ -133,7 +121,8 @@
             </section>
 
             <section class="section-analytics">
-                <h2>Price Trends</h2>
+                <h2 style="margin-bottom: 0.5rem;">Market Trends</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem; font-weight: 500; margin-bottom: 2rem;">Average flight prices over time for your tracked regions</p>
                 <div class="chart-wrapper">
                     <canvas id="historyChart"></canvas>
                 </div>
@@ -144,5 +133,11 @@
 
 <script src="data_map.js"></script>
 <script src="app.js"></script>
+<script>
+    // Initialize Tabler Icons
+    if (window.tabler) {
+        tabler.replace();
+    }
+</script>
 </body>
 </html>
