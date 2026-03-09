@@ -107,6 +107,12 @@ class FlightPlanner {
                 if (this.els.valMinDur) this.els.valMinDur.innerText = this.els.minDur?.value || 1;
                 if (this.els.valMaxDur) this.els.valMaxDur.innerText = this.els.maxDur?.value || 30;
                 
+                // Weights labels
+                if (this.els.vWPrice) this.els.vWPrice.innerText = this.els.wPrice?.value || 1.0;
+                if (this.els.vWDist) this.els.vWDist.innerText = this.els.wDist?.value || 0.5;
+                if (this.els.vWWeather) this.els.vWWeather.innerText = this.els.wWeather?.value || 0.5;
+                if (this.els.vWEff) this.els.vWEff.innerText = this.els.wEff?.value || 0.5;
+                
                 document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.dataset.view === this.currentView));
                 if (this.els.viewName) this.els.viewName.innerText = this.currentView === 'longhaul' ? 'World Explorer' : 'Kraków Weekend';
             }
