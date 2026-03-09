@@ -94,22 +94,34 @@ class TravelpayoutsClient:
         Normalizes v1/prices/cheap response data.
         """
         results = []
+        if not data or not isinstance(data, dict):
+            return results
+
         for dest, offers in data.items():
+            if not isinstance(offers, dict): continue
             for idx, offer in offers.items():
-                dep_date = offer['departure_at'].split('T')[0]
-                ret_date = offer.get('return_at', '').split('T')[0] if offer.get('return_at') else None
-                results.append({
-                    "id": f"tp-cheap-{origin}-{dest}-{offer['departure_at']}",
-                    "source": "Travelpayouts-Cheap",
-                    "origin": origin,
-                    "destination": dest,
-                    "departure_date": dep_date,
-                    "return_date": ret_date,
-                    "airline": offer['airline'],
-                    "price": float(offer['price']),
-                    "currency": "PLN",
-                    "link": generate_google_flights_link(origin, dest, dep_date, ret_date)
-                })
+                try:
+                    raw_dep = offer.get('departure_at') or offer.get('departure_date')
+                    if not raw_dep: continue
+                    
+                    dep_date = raw_dep.split('T')[0]
+                    ret_date = (offer.get('return_at') or offer.get('return_date', '')).split('T')[0] if (offer.get('return_at') or offer.get('return_date')) else None
+                    
+                    results.append({
+                        "id": f"tp-cheap-{origin}-{dest}-{raw_dep}",
+                        "source": "Travelpayouts-Cheap",
+                        "origin": origin,
+                        "destination": dest,
+                        "departure_date": dep_date,
+                        "return_date": ret_date,
+                        "airline": offer.get('airline', '??'),
+                        "price": float(offer.get('price', 0)),
+                        "currency": "PLN",
+                        "link": generate_google_flights_link(origin, dest, dep_date, ret_date)
+                    })
+                except Exception as e:
+                    print(f"Skipping cheap offer due to error: {e}")
+                    continue
         return results
 
     def normalize_latest_prices(self, data):
@@ -117,19 +129,34 @@ class TravelpayoutsClient:
         Normalizes v2/prices/latest response data.
         """
         results = []
+        if not data or not isinstance(data, list):
+            return results
+
         for offer in data:
-            dep_date = offer['departure_at'].split('T')[0]
-            ret_date = offer.get('return_date')
-            results.append({
-                "id": f"tp-latest-{offer['origin']}-{offer['destination']}-{offer['departure_at']}",
-                "source": "Travelpayouts-Latest",
-                "origin": offer['origin'],
-                "destination": offer['destination'],
-                "departure_date": dep_date,
-                "return_date": ret_date,
-                "airline": offer.get('gate'), # Gate/Airline
-                "price": float(offer['value']),
-                "currency": "PLN",
-                "link": generate_google_flights_link(offer['origin'], offer['destination'], dep_date, ret_date)
-            })
+            try:
+                # v2/latest can have 'departure_at' or 'departure_date'
+                raw_dep = offer.get('departure_at') or offer.get('departure_date')
+                if not raw_dep:
+                    continue
+
+                dep_date = raw_dep.split('T')[0]
+                ret_date = offer.get('return_date') or offer.get('return_at')
+                if ret_date and 'T' in ret_date:
+                    ret_date = ret_date.split('T')[0]
+
+                results.append({
+                    "id": f"tp-latest-{offer.get('origin')}-{offer.get('destination')}-{raw_dep}",
+                    "source": "Travelpayouts-Latest",
+                    "origin": offer.get('origin'),
+                    "destination": offer.get('destination'),
+                    "departure_date": dep_date,
+                    "return_date": ret_date,
+                    "airline": offer.get('gate') or offer.get('airline'),
+                    "price": float(offer.get('value') or offer.get('price', 0)),
+                    "currency": "PLN",
+                    "link": generate_google_flights_link(offer.get('origin'), offer.get('destination'), dep_date, ret_date)
+                })
+            except Exception as e:
+                print(f"Skipping latest offer due to error: {e}")
+                continue
         return results
