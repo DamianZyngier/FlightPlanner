@@ -54,9 +54,11 @@ class FlightPlanner {
 
     populateSuggestions() {
         let html = '';
+        // Add countries
         Object.entries(DATA_MAP.COUNTRIES).forEach(([code, name]) => {
             html += `<option value="${name} (${code})">Country</option>`;
         });
+        // Add specific airports
         Object.entries(DATA_MAP.AIRPORTS).forEach(([code, name]) => {
             html += `<option value="${code}: ${name}">Airport</option>`;
         });
@@ -70,6 +72,10 @@ class FlightPlanner {
             this.els.valDistKrk.innerText = e.target.value;
             this.renderOriginList();
             this.renderDashboard();
+        };
+        // Also handle enter key on input
+        this.els.autoInput.onkeypress = (e) => {
+            if (e.key === 'Enter') this.addFromSmartInput();
         };
     }
 
@@ -109,32 +115,61 @@ class FlightPlanner {
     }
 
     async addFromSmartInput() {
-        const val = this.els.autoInput.value;
+        const val = this.els.autoInput.value.trim();
         if (!val) return;
 
         let countryCode = '', airportCode = '';
 
-        if (val.includes('(')) {
-            countryCode = val.split('(')[1].replace(')', '').trim();
+        // Case 1: "Mexico (MX)" -> Selected a country
+        if (val.includes('(') && val.includes(')')) {
+            countryCode = val.split('(')[1].split(')')[0].toUpperCase();
             airportCode = '-'; 
         } 
+        // Case 2: "JFK: John F. Kennedy" -> Selected an airport
         else if (val.includes(':')) {
-            airportCode = val.split(':')[0].trim();
-            countryCode = 'INTL'; 
+            airportCode = val.split(':')[0].trim().toUpperCase();
+            countryCode = 'INTL'; // Default bucket for direct airport additions
         }
+        // Case 3: Typed name or code manually
         else {
-            airportCode = val.toUpperCase();
-            countryCode = 'INTL';
+            const upper = val.toUpperCase();
+            // Check if it's a known country code
+            if (DATA_MAP.COUNTRIES[upper]) {
+                countryCode = upper;
+                airportCode = '-';
+            } 
+            // Check if it's a known airport code
+            else if (DATA_MAP.AIRPORTS[upper] || upper.length === 3) {
+                airportCode = upper;
+                countryCode = 'INTL';
+            }
+            // Search by country name
+            else {
+                const foundEntry = Object.entries(DATA_MAP.COUNTRIES).find(([code, name]) => name.toLowerCase() === val.toLowerCase());
+                if (foundEntry) {
+                    countryCode = foundEntry[0];
+                    airportCode = '-';
+                }
+            }
         }
 
         if (countryCode) {
             if (!this.data.config.DESTINATIONS[countryCode]) this.data.config.DESTINATIONS[countryCode] = [];
+            
+            // If it's a country-wide scan, we don't add specific codes
             if (airportCode !== '-' && !this.data.config.DESTINATIONS[countryCode].includes(airportCode)) {
                 this.data.config.DESTINATIONS[countryCode].push(airportCode);
+            } else if (airportCode === '-') {
+                // If it's a country, maybe just add a placeholder or handle in backend.
+                // For now, let's just use the country code as key and keep empty list if no airports
+                if (!this.data.config.DESTINATIONS[countryCode]) this.data.config.DESTINATIONS[countryCode] = [];
             }
+
             await this.saveConfig();
             this.renderDestinations();
             this.els.autoInput.value = '';
+        } else {
+            alert("Could not identify country or airport. Please use the suggestions.");
         }
     }
 
@@ -218,19 +253,27 @@ class FlightPlanner {
 
     renderDestinations() {
         if (!this.data.config?.DESTINATIONS) return;
-        this.els.destList.innerHTML = Object.entries(this.data.config.DESTINATIONS).flatMap(([country, codes]) => 
-            codes.map(code => `
+        this.els.destList.innerHTML = Object.entries(this.data.config.DESTINATIONS).flatMap(([country, codes]) => {
+            const countryName = this.getName(country);
+            if (codes.length === 0) {
+                return [`<div class="tag"><span>${countryName} (Any)</span><span class="tag-remove" onclick="window.app.removeDest('${country}', null)">×</span></div>`];
+            }
+            return codes.map(code => `
                 <div class="tag">
-                    <span>${this.getName(country)}: <strong>${code}</strong></span>
+                    <span>${countryName}: <strong>${code}</strong></span>
                     <span class="tag-remove" onclick="window.app.removeDest('${country}', '${code}')">×</span>
                 </div>
-            `)
-        ).join('');
+            `);
+        }).join('');
     }
 
     async removeDest(c, code) {
-        this.data.config.DESTINATIONS[c] = this.data.config.DESTINATIONS[c].filter(x => x !== code);
-        if (!this.data.config.DESTINATIONS[c].length) delete this.data.config.DESTINATIONS[c];
+        if (!code) {
+            delete this.data.config.DESTINATIONS[c];
+        } else {
+            this.data.config.DESTINATIONS[c] = this.data.config.DESTINATIONS[c].filter(x => x !== code);
+            if (!this.data.config.DESTINATIONS[c].length) delete this.data.config.DESTINATIONS[c];
+        }
         await this.saveConfig();
         this.renderDestinations();
     }
@@ -238,7 +281,9 @@ class FlightPlanner {
     renderHistory() {
         const hist = this.data.flights.history;
         if (!hist?.length) return;
-        const ctx = document.getElementById('historyChart').getContext('2d');
+        const canvas = document.getElementById('historyChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
         const labels = hist.map(h => new Date(h.date).toLocaleDateString());
         const countries = [...new Set(hist.flatMap(h => Object.keys(h.stats || {})))];
 
