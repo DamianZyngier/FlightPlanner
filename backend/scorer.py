@@ -11,34 +11,37 @@ class FlightScorer:
         Calculates a composite score for a flight. 
         Higher is better (0-100).
         """
-        # 1. Price Score (Inverse)
-        # Assuming 2000 is 'amazing' (100 pts) and 8000 is 'expensive' (0 pts)
+        # 1. Price Score
         price = flight_data['price']
-        price_pts = max(0, min(100, 100 - (price - 2000) / 60))
+        price_pts = max(0, min(100, 100 - (price - 1500) / 60))
 
-        # 2. Distance Score (Closer to KRK is better)
+        # 2. Distance Score
         dist_km = ORIGINS.get(flight_data['origin'], 600)
         dist_pts = max(0, min(100, 100 - (dist_km / 6)))
 
-        # 3. Days Off (Fewer days off is better)
+        # 3. Days Off
         dep_date = datetime.strptime(flight_data['departure_date'], "%Y-%m-%d").date()
-        ret_date = datetime.strptime(flight_data['return_date'], "%Y-%m-%d").date()
+        ret_date = datetime.strptime(flight_data['return_date'], "%Y-%m-%d").date() if flight_data.get('return_date') else dep_date
         days_off = calculate_days_off(dep_date, ret_date)
-        # 0 days off = 100 pts, 10 days off = 0 pts
         days_pts = max(0, min(100, 100 - (days_off * 10)))
 
         # 4. Seasonality
         dest_code = flight_data['destination']
         country_code = self._get_country_code(dest_code)
         month = dep_date.month
-        
         in_season = False
         if country_code and country_code in PEAK_SEASONS:
             if month in PEAK_SEASONS[country_code]:
                 in_season = True
-        
         season_pts = 100 if in_season else 20
 
+        # Duration logic
+        # Travelpayouts duration is in minutes. Amadeus is ISO string.
+        # We'll normalize to Days for the breakdown.
+        duration_days = 0
+        if flight_data.get('return_date'):
+            duration_days = (ret_date - dep_date).days
+        
         # Weighted Sum
         final_score = (
             price_pts * self.weights.get('price', 0.5) +
@@ -52,7 +55,8 @@ class FlightScorer:
             "price_raw": price,
             "days_off": days_off,
             "dist_km": dist_km,
-            "in_season": in_season
+            "in_season": in_season,
+            "duration_days": duration_days
         }
         return flight_data
 

@@ -1,11 +1,16 @@
 /**
- * Flight Planner Pro - Multi-View Dashboard (Added Sorting)
+ * Flight Planner Pro - Optimized Dashboard
  */
 
 const DATA_MAP = {
     "COUNTRIES": { "AF": "Afghanistan", "AL": "Albania", "DZ": "Algeria", "AD": "Andorra", "AO": "Angola", "AR": "Argentina", "AM": "Armenia", "AU": "Australia", "AT": "Austria", "AZ": "Azerbaijan", "BS": "Bahamas", "BH": "Bahrain", "BD": "Bangladesh", "BB": "Barbados", "BY": "Belarus", "BE": "Belgium", "BZ": "Belize", "BJ": "Benin", "BT": "Bhutan", "BO": "Bolivia", "BA": "Bosnia and Herzegovina", "BW": "Botswana", "BR": "Brazil", "BN": "Brunei", "BG": "Bulgaria", "BF": "Burkina Faso", "BI": "Burundi", "KH": "Cambodia", "CM": "Cameroon", "CA": "Canada", "CV": "Cape Verde", "CF": "Central African Republic", "TD": "Chad", "CL": "Chile", "CN": "China", "CO": "Colombia", "KM": "Comoros", "CG": "Congo", "CR": "Costa Rica", "HR": "Croatia", "CU": "Cuba", "CY": "Cyprus", "CZ": "Czech Republic", "DK": "Denmark", "DJ": "Djibouti", "DM": "Dominica", "DO": "Dominican Republic", "EC": "Ecuador", "EG": "Egypt", "SV": "El Salvador", "GQ": "Equatorial Guinea", "ER": "Eritrea", "EE": "Estonia", "ET": "Ethiopia", "FJ": "Fiji", "FI": "Finland", "FR": "France", "GA": "Gabon", "GM": "Gambia", "GE": "Georgia", "DE": "Germany", "GH": "Ghana", "GR": "Greece", "GD": "Grenada", "GT": "Guatemala", "GN": "Guinea", "GW": "Guinea-Bissau", "GY": "Guyana", "HT": "Haiti", "HN": "Honduras", "HU": "Hungary", "IS": "Iceland", "IN": "India", "ID": "Indonesia", "IR": "Iran", "IQ": "Iraq", "IE": "Ireland", "IL": "Israel", "IT": "Italy", "JM": "Jamaica", "JP": "Japan", "JO": "Jordan", "KZ": "Kazakhstan", "KE": "Kenya", "KI": "Kiribati", "KP": "North Korea", "KR": "South Korea", "KW": "Kuwait", "KG": "Kyrgyzstan", "LA": "Laos", "LV": "Latvia", "LB": "Lebanon", "LS": "Lesotho", "LR": "Liberia", "LY": "Libya", "LI": "Liechtenstein", "LT": "Lithuania", "LU": "Luxembourg", "MK": "North Macedonia", "MG": "Madagascar", "MW": "Malawi", "MY": "Malaysia", "MV": "Maldives", "ML": "Mali", "MT": "Malta", "MH": "Marshall Islands", "MR": "Mauritania", "MU": "Mauritius", "MX": "Mexico", "FM": "Micronesia", "MD": "Moldova", "MC": "Monaco", "MN": "Mongolia", "ME": "Montenegro", "MA": "Morocco", "MZ": "Mozambique", "MM": "Myanmar", "NA": "Namibia", "NR": "Nauru", "NP": "Nepal", "NL": "Netherlands", "NZ": "New Zealand", "NI": "Nicaragua", "NE": "Niger", "NG": "Nigeria", "NO": "Norway", "OM": "Oman", "PK": "Pakistan", "PW": "Palau", "PA": "Panama", "PG": "Papua New Guinea", "PY": "Paraguay", "PE": "Peru", "PH": "Philippines", "PL": "Poland", "PT": "Portugal", "QA": "Qatar", "RO": "Romania", "RU": "Russia", "RW": "Rwanda", "KN": "Saint Kitts and Nevis", "LC": "Saint Lucia", "VC": "Saint Vincent and the Grenadines", "WS": "Samoa", "SM": "San Marino", "ST": "Sao Tome and Principe", "SA": "Saudi Arabia", "SN": "Senegal", "RS": "Serbia", "SC": "Seychelles", "SL": "Sierra Leone", "SG": "Singapore", "SK": "Slovakia", "SI": "Slovenia", "SB": "Solomon Islands", "SO": "Somalia", "ZA": "South Africa", "ES": "Spain", "LK": "Sri Lanka", "SD": "Sudan", "SR": "Suriname", "SZ": "Eswatini", "SE": "Sweden", "CH": "Switzerland", "SY": "Syria", "TW": "Taiwan", "TJ": "Tajikistan", "TZ": "Tanzania", "TH": "Thailand", "TL": "Timor-Leste", "TG": "Togo", "TO": "Tonga", "TT": "Trinidad and Tobago", "TN": "Tunisia", "TR": "Turkey", "TM": "Turkmenistan", "TV": "Tuvalu", "UG": "Uganda", "UA": "Ukraine", "AE": "United Arab Emirates", "GB": "United Kingdom", "US": "United States", "UY": "Uruguay", "UZ": "Uzbekistan", "VU": "Vanuatu", "VA": "Vatican City", "VE": "Venezuela", "VN": "Vietnam", "YE": "Yemen", "ZM": "Zambia", "ZW": "Zimbabwe" },
     "AIRPORTS": { "KRK": "Kraków John Paul II", "WAW": "Warsaw Chopin", "WMI": "Warsaw Modlin", "KTW": "Katowice", "BER": "Berlin Brandenburg", "PRG": "Prague Václav Havel", "VIE": "Vienna Intl", "BUD": "Budapest Ferenc Liszt", "SYD": "Sydney", "AKL": "Auckland", "TYO": "Tokyo", "BKK": "Bangkok", "SGN": "Ho Chi Minh", "LIM": "Lima", "JNB": "Johannesburg", "CPT": "Cape Town" },
-    "AIRLINES": { "LO": "LOT Polish Airlines", "LH": "Lufthansa", "LX": "Swiss", "OS": "Austrian", "AF": "Air France", "KL": "KLM", "TK": "Turkish", "EK": "Emirates", "QR": "Qatar", "AY": "Finnair", "FR": "Ryanair", "W6": "Wizz Air", "BA": "British Airways" }
+    "AIRLINES": { 
+        "LO": "LOT Polish Airlines", "LH": "Lufthansa", "LX": "Swiss", "OS": "Austrian Airlines", "AF": "Air France", 
+        "KL": "KLM", "TK": "Turkish Airlines", "EK": "Emirates", "QR": "Qatar Airways", "AY": "Finnair", 
+        "FR": "Ryanair", "W6": "Wizz Air", "BA": "British Airways", "CA": "Air China", "FZ": "flydubai", 
+        "EY": "Etihad Airways", "EI": "Aer Lingus", "VF": "Valuair" 
+    }
 };
 
 class FlightPlanner {
@@ -81,10 +86,7 @@ class FlightPlanner {
             };
         });
 
-        this.els.sortBy.onchange = () => {
-            this.saveConfigLocally();
-            this.renderDashboard();
-        };
+        this.els.sortBy.onchange = () => { this.saveConfigLocally(); this.renderDashboard(); };
     }
 
     async loadConfig() {
@@ -111,9 +113,7 @@ class FlightPlanner {
                 if (this.els.vWDist) this.els.vWDist.innerText = this.els.wDist.value;
                 if (this.els.vWWeather) this.els.vWWeather.innerText = this.els.wWeather.value;
                 
-                document.querySelectorAll('.nav-tab').forEach(b => {
-                    b.classList.toggle('active', b.dataset.view === this.currentView);
-                });
+                document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.dataset.view === this.currentView));
                 this.els.viewName.innerText = this.currentView === 'longhaul' ? 'World Explorer' : 'Kraków Weekend';
             }
         } catch (e) { console.error(e); }
@@ -151,6 +151,21 @@ class FlightPlanner {
         finally { this.els.scanBtn.disabled = false; this.els.scanBtn.innerText = "🚀 Run Global Scan"; }
     }
 
+    async triggerPrecisionScan(origin, dest, dep, ret, btn) {
+        btn.disabled = true; btn.innerText = "⏳ Precision Checking...";
+        try {
+            const r = await fetch('/api/precision', { 
+                method: 'POST', 
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ origin, destination: dest, departure_date: dep, return_date: ret })
+            });
+            const res = await r.json();
+            if (res.status === 'success') { await this.loadFlights(); }
+            else { alert("Precision Scan failed: " + (res.message || "Unknown error")); }
+        } catch (e) { alert("Error connecting to precision engine."); }
+        finally { btn.disabled = false; }
+    }
+
     async addFromSmartInput() {
         const val = this.els.autoInput.value.trim(); if (!val) return;
         let c = '', a = '';
@@ -174,7 +189,7 @@ class FlightPlanner {
         const html = Object.entries(this.data.config.ORIGINS || {})
             .filter(([c, d]) => d <= max)
             .sort((a,b) => a[1]-b[1])
-            .map(([c, d]) => `<span class="origin-tag" title="${this.getName(c)}">${this.getName(c)}</span>`)
+            .map(([c, d]) => `<span class="origin-tag" title="${this.getName(c)}">${c}</span>`)
             .join(' ');
         this.els.originList.innerHTML = html;
     }
@@ -201,13 +216,13 @@ class FlightPlanner {
         } else {
             filtered = filtered.filter(f => {
                 const dist = this.data.config.ORIGINS[f.origin] ?? 0;
-                const dur = f.score_breakdown?.duration_days || 8;
+                const dur = f.score_breakdown?.duration_days || 0;
                 return dist <= maxDist && dur >= minD && dur <= maxD;
             });
         }
 
         const rescored = filtered.map(f => {
-            const bd = f.score_breakdown;
+            const bd = f.score_breakdown || {};
             const p_s = max(0, 100 - (bd.price_raw - 1500)/60);
             const d_s = max(0, 100 - (bd.dist_km/6));
             const w_s = bd.in_season ? 100 : 20;
@@ -215,43 +230,48 @@ class FlightPlanner {
             return { ...f, ui_score: Math.round(final) };
         });
 
-        if (sortBy === 'price') {
-            rescored.sort((a, b) => a.price - b.price);
-        } else {
-            rescored.sort((a, b) => b.ui_score - a.ui_score);
-        }
+        if (sortBy === 'price') rescored.sort((a, b) => a.price - b.price);
+        else rescored.sort((a, b) => b.ui_score - a.ui_score);
 
         this.els.totalRoutes.innerText = rescored.length;
         this.els.bestPrice.innerText = rescored.length ? `${rescored[0].price} ${rescored[0].currency}` : "--";
-        this.els.dealsGrid.innerHTML = rescored.map(f => this.createCard(f)).join('');
+        this.els.dealsGrid.innerHTML = '';
+        rescored.forEach(f => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = this.createCardHtml(f);
+            const pBtn = card.querySelector('.btn-precision');
+            if (pBtn) {
+                pBtn.onclick = () => this.triggerPrecisionScan(f.origin, f.destination, f.departure_date, f.return_date, pBtn);
+            }
+            this.els.dealsGrid.appendChild(card);
+        });
         this.renderHistory();
     }
 
-    createCard(f) {
+    createCardHtml(f) {
         const bd = f.score_breakdown || {};
         const s = f.ui_score;
         const sCls = s > 80 ? 'score-excellent' : s > 60 ? 'score-good' : s > 40 ? 'score-fair' : 'score-poor';
-        const itin = f.duration_out ? `<div class="mini-itin"><div class="itin-main"><span class="itin-duration">${f.duration_out}</span><div class="itin-line"><div class="itin-dot" style="left:0"></div><div class="itin-dot" style="left:100%"></div></div></div><div class="itin-badge-list">${(f.layovers_out || []).map(l => `<span class="badge badge-${l.status}" title="${this.getName(l.airport)}">${l.airport}</span>`).join('')}</div></div>` : `<div class="mini-itin"><span class="itin-duration" style="color:var(--accent)">🔍 Precision Scan Required</span></div>`;
+        const itin = f.duration_out ? `<div class="mini-itin"><div class="itin-main"><span class="itin-duration">${f.duration_out}</span><div class="itin-line"><div class="itin-dot" style="left:0"></div><div class="itin-dot" style="left:100%"></div></div></div><div class="itin-badge-list">${(f.layovers_out || []).map(l => `<span class="badge badge-${l.status}" title="${this.getName(l.airport)}">${l.airport}</span>`).join('')}</div></div>` : `<div class="mini-itin"><button class="btn-book btn-precision" style="width:100%; font-size:0.75rem; padding:0.4rem; margin:0;">🔍 Precision Scan Details</button></div>`;
 
         return `
-            <div class="card">
-                <div class="card-top">
-                    <div class="card-dest">${this.getName(f.destination)}</div>
-                    <div class="card-price">${f.price} ${f.currency}</div>
-                </div>
-                ${itin}
-                <div class="score-tag ${sCls}">${s}% Match</div>
-                <div class="trip-highlight">
-                    <div class="highlight-item"><span class="highlight-label">Dates</span><span class="highlight-val">${f.departure_date} to ${f.return_date || '?'}</span></div>
-                    <div class="highlight-item"><span class="highlight-label">Days Off</span><span class="highlight-val">${bd.days_off || 0} Work Days</span></div>
-                </div>
-                <div class="card-details">
-                    <div class="row"><span>From</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div>
-                    <div class="row"><span>Airline</span> <span>${this.getAirline(f.airline)}</span></div>
-                    <div class="row"><span>Duration</span> <span>${bd.duration_days || '?'} Days</span></div>
-                </div>
-                <a href="${f.link}" target="_blank" class="btn-book">Open on Google Flights</a>
+            <div class="card-top">
+                <div class="card-dest">${this.getName(f.destination)}</div>
+                <div class="card-price">${f.price} ${f.currency}</div>
             </div>
+            ${itin}
+            <div class="score-tag ${sCls}">${s}% Match</div>
+            <div class="trip-highlight">
+                <div class="highlight-item"><span class="highlight-label">Dates</span><span class="highlight-val">${f.departure_date} to ${f.return_date || '?'}</span></div>
+                <div class="highlight-item"><span class="highlight-label">Days Off</span><span class="highlight-val">${bd.days_off || 0} Work Days</span></div>
+            </div>
+            <div class="card-details">
+                <div class="row"><span>From</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div>
+                <div class="row"><span>Airline</span> <span>${this.getAirline(f.airline)}</span></div>
+                <div class="row"><span>Duration</span> <span>${bd.duration_days || '?'} Days</span></div>
+            </div>
+            <a href="${f.link}" target="_blank" class="btn-book">Open on Google Flights</a>
         `;
     }
 
@@ -272,9 +292,7 @@ class FlightPlanner {
 
     renderHistory() {
         const hist = this.data.flights.history; if (!hist?.length) return;
-        const canvas = document.getElementById('historyChart');
-        if (!canvas) return;
-        const ctx = canvas.getContext('2d');
+        const ctx = document.getElementById('historyChart').getContext('2d');
         const labels = hist.map(h => new Date(h.date).toLocaleDateString());
         const countries = [...new Set(hist.flatMap(h => Object.keys(h.stats || {})))];
         const datasets = countries.map((c, i) => ({ label: this.getName(c), data: hist.map(h => h.stats?.[c]?.avg || null), borderColor: ['#3b82f6', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6'][i % 5], tension: 0.3, fill: false }));

@@ -187,7 +187,8 @@
     "w_price": 1,
     "w_dist": 0.5,
     "w_weather": 0.2,
-    "last_view": "longhaul"
+    "last_view": "longhaul",
+    "sort_by": "score"
   },
   "USE_AMADEUS": false
 }
