@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 from datetime import datetime, date
 from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
@@ -37,6 +38,37 @@ class FlightMonitor:
         except Exception as e:
             print(f"Error scanning origin {origin}: {e}")
             return []
+
+    def precision_scan(self, origin, destination, dep_date, ret_date):
+        """Performs a targeted Amadeus search and updates the flights database."""
+        print(f"Performing precision scan: {origin} -> {destination} ({dep_date} to {ret_date})")
+        try:
+            # Parse dates
+            d1 = datetime.strptime(dep_date, "%Y-%m-%d").date()
+            d2 = datetime.strptime(ret_date, "%Y-%m-%d").date()
+            
+            # Use Amadeus for high-precision data
+            refined = self.amadeus.search_flight_offers(origin, destination, d1, d2)
+            scored = [self.scorer.score_flight(rf) for rf in refined]
+            
+            if not scored:
+                print("No results found in precision scan.")
+                return False
+            
+            # Update data: merge with current_best
+            all_flights = self.data.get('current_best', []) + scored
+            
+            # Deduplicate (prefer Amadeus results which usually have more details)
+            unique = { (f['origin'], f['destination'], f['departure_date']): f for f in all_flights }.values()
+            self.data['current_best'] = sorted(unique, key=lambda x: x['score'], reverse=True)[:50]
+            self.data['last_updated'] = datetime.now().isoformat()
+            
+            save_json(FLIGHTS_PATH, self.data)
+            print(f"Precision scan complete. Added/Updated {len(scored)} options.")
+            return True
+        except Exception as e:
+            print(f"Precision scan failed: {e}")
+            return False
 
     def run(self):
         start_time = datetime.now()
@@ -88,4 +120,13 @@ class FlightMonitor:
         print(f"Scan complete in {duration.total_seconds():.1f}s. Found {len(all_flights)} options.")
 
 if __name__ == "__main__":
-    FlightMonitor().run()
+    monitor = FlightMonitor()
+    # Support command line args for targeted precision scan
+    if len(sys.argv) > 1 and sys.argv[1] == "--precision":
+        # Usage: python -m backend.main --precision KRK TYO 2026-05-10 2026-05-20
+        if len(sys.argv) == 6:
+            monitor.precision_scan(sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
+        else:
+            print("Usage: python -m backend.main --precision <origin> <dest> <dep> <ret>")
+    else:
+        monitor.run()

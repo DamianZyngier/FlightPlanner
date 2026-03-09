@@ -61,9 +61,24 @@ def trigger_scan():
 @app.route("/api/precision", methods=["POST"])
 def trigger_precision():
     req = request.json
-    # In a real app, this would trigger a more intensive search
-    # For now, we reuse the existing scan or return success if data exists
-    return jsonify({"status": "success", "message": "Precision data updated (simulated)"})
+    origin = req.get('origin')
+    dest = req.get('destination')
+    dep = req.get('departure_date')
+    ret = req.get('return_date')
+    
+    if not all([origin, dest, dep, ret]):
+        return jsonify({"status": "error", "message": "Missing parameters"}), 400
+
+    # Use 'py' on Windows if available, else sys.executable
+    py_exe = "py" if sys.platform == "win32" else sys.executable
+    success, output = run_command([py_exe, "-m", "backend.main", "--precision", origin, dest, dep, ret])
+    
+    if success:
+        if os.path.exists(FLIGHTS_PATH):
+            os.makedirs(os.path.dirname(DOCS_DATA_PATH), exist_ok=True)
+            shutil.copy2(FLIGHTS_PATH, DOCS_DATA_PATH)
+        return jsonify({"status": "success", "output": output})
+    return jsonify({"status": "error", "output": output}), 500
 
 if __name__ == "__main__":
     print("Flight Planner Pro starting...")
