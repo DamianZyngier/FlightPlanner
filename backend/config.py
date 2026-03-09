@@ -2,23 +2,35 @@ import json
 import os
 from datetime import date
 
-CONFIG_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "config.json")
+# Paths
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+CONFIG_PATH = os.path.join(DATA_DIR, "config.json")
+FLIGHTS_PATH = os.path.join(DATA_DIR, "flights.json")
+DOCS_DATA_PATH = os.path.join(BASE_DIR, "docs", "data", "flights.json")
 
 def load_config():
     if os.path.exists(CONFIG_PATH):
-        with open(CONFIG_PATH, "r") as f:
-            return json.load(f)
+        try:
+            with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error loading config: {e}")
     return {}
 
 config_data = load_config()
 
+# Settings
 ORIGINS = config_data.get("ORIGINS", {})
 DESTINATIONS = config_data.get("DESTINATIONS", {})
 PEAK_SEASONS = config_data.get("PEAK_SEASONS", {})
-DEFAULT_WEIGHTS = config_data.get("DEFAULT_WEIGHTS", {})
+DEFAULT_WEIGHTS = config_data.get("DEFAULT_WEIGHTS", {
+    "price": 0.5, "days_off": 0.2, "distance_krk": 0.1, "seasonality": 0.2
+})
 USE_AMADEUS = config_data.get("USE_AMADEUS", False)
 EMAIL_SENDER = config_data.get("EMAIL_SENDER", "")
 EMAIL_RECEIVER = config_data.get("EMAIL_RECEIVER", "")
+SETTINGS = config_data.get("SETTINGS", {})
 
 # Polish Public Holidays (2026-2027)
 HOLIDAYS = [

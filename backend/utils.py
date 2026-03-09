@@ -1,6 +1,25 @@
-from datetime import date, timedelta
+import json
+import os
 import urllib.parse
+from datetime import date, timedelta, datetime
 from backend.config import HOLIDAYS
+
+def load_json(path, default=None):
+    if os.path.exists(path):
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error loading JSON from {path}: {e}")
+    return default if default is not None else {}
+
+def save_json(path, data):
+    try:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error saving JSON to {path}: {e}")
 
 def calculate_days_off_detailed(start_date: date, end_date: date):
     """
@@ -36,7 +55,6 @@ def parse_amadeus_duration(duration_str):
     return f"{h or 0}h {m or 0}m"
 
 def get_layover_info(segments):
-    from datetime import datetime
     layovers = []
     for i in range(len(segments) - 1):
         try:

@@ -1,9 +1,7 @@
 import os
 import json
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from datetime import datetime, timedelta, date
+from datetime import datetime, date
+from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -11,89 +9,83 @@ load_dotenv()
 from backend.amadeus_client import FlightSearchClient
 from backend.travelpayouts_client import TravelpayoutsClient
 from backend.scorer import FlightScorer
-
-CONFIG_FILE = "data/config.json"
-DATA_FILE = "data/flights.json"
+from backend.config import CONFIG_PATH, FLIGHTS_PATH, USE_AMADEUS
+from backend.utils import load_json, save_json
 
 class FlightMonitor:
     def __init__(self):
-        self.config = self._load_json(CONFIG_FILE)
+        self.config = load_json(CONFIG_PATH)
         self.amadeus = FlightSearchClient()
         self.travelpayouts = TravelpayoutsClient()
         self.scorer = FlightScorer()
-        self.data = self._load_json(DATA_FILE, default={"current_best": [], "history": []})
+        self.data = load_json(FLIGHTS_PATH, default={"current_best": [], "history": []})
 
-    def _load_json(self, path, default=None):
-        if os.path.exists(path):
-            with open(path, 'r') as f:
-                try: return json.load(f)
-                except: return default or {}
-        return default or {}
-
-    def save_data(self):
-        os.makedirs("data", exist_ok=True)
-        with open(DATA_FILE, 'w') as f:
-            json.dump(self.data, f, indent=2)
-
-    def run(self):
-        print(f"[{datetime.now()}] Starting optimized scan...")
-        all_flights = []
-        
-        origins = self.config.get("ORIGINS", {})
-        destinations = self.config.get("DESTINATIONS", {})
-
-        # Phase 1: Travelpayouts Broad Scan
-        for origin in origins:
-            print(f"Searching from {origin}...")
+    def scan_origin(self, origin, destinations):
+        """Worker for ThreadPoolExecutor."""
+        print(f"Searching from {origin}...")
+        try:
             raw_data = self.travelpayouts.get_cheap_prices(origin)
             normalized = self.travelpayouts.normalize_cheap_prices(origin, raw_data)
             
+            origin_results = []
             for f in normalized:
                 # Flat check if destination is in any of our tracked lists
                 is_tracked = any(f['destination'] in codes for codes in destinations.values())
                 if is_tracked and f.get('return_date'):
-                    all_flights.append(self.scorer.score_flight(f))
+                    origin_results.append(self.scorer.score_flight(f))
+            return origin_results
+        except Exception as e:
+            print(f"Error scanning origin {origin}: {e}")
+            return []
+
+    def run(self):
+        start_time = datetime.now()
+        print(f"[{start_time}] Starting optimized parallel scan...")
+        
+        origins = self.config.get("ORIGINS", {})
+        destinations = self.config.get("DESTINATIONS", {})
+
+        # Phase 1: Travelpayouts Parallel Scan
+        all_flights = []
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = [executor.submit(self.scan_origin, o, destinations) for o in origins]
+            for future in futures:
+                all_flights.extend(future.result())
 
         # Phase 2: Amadeus Refinement (Optional)
-        if self.config.get("USE_AMADEUS", False):
+        if USE_AMADEUS:
             all_flights.sort(key=lambda x: x['score'], reverse=True)
             for deal in all_flights[:5]:
-                print(f"Refining {deal['origin']} -> {deal['destination']}...")
-                refined = self.amadeus.search_flight_offers(
-                    deal['origin'], deal['destination'],
-                    datetime.strptime(deal['departure_date'], "%Y-%m-%d").date(),
-                    datetime.strptime(deal['return_date'], "%Y-%m-%d").date()
-                )
-                all_flights.extend([self.scorer.score_flight(rf) for rf in refined])
+                try:
+                    print(f"Refining {deal['origin']} -> {deal['destination']}...")
+                    refined = self.amadeus.search_flight_offers(
+                        deal['origin'], deal['destination'],
+                        datetime.strptime(deal['departure_date'], "%Y-%m-%d").date(),
+                        datetime.strptime(deal['return_date'], "%Y-%m-%d").date()
+                    )
+                    all_flights.extend([self.scorer.score_flight(rf) for rf in refined])
+                except Exception as e:
+                    print(f"Amadeus refinement failed for {deal['destination']}: {e}")
 
-        # deduplicate and Update
+        # Deduplicate and Update
         unique = { (f['origin'], f['destination'], f['departure_date']): f for f in all_flights }.values()
         self.data['current_best'] = sorted(unique, key=lambda x: x['score'], reverse=True)[:50]
         self.data['last_updated'] = datetime.now().isoformat()
         
-        # History Stats (simplified)
+        # Update History Stats
         today_str = date.today().isoformat()
         stats = {}
         for country, codes in destinations.items():
             prices = [f['price'] for f in all_flights if f['destination'] in codes]
             if prices: stats[country] = {"avg": round(sum(prices)/len(prices), 2)}
         
-        # Update or append today's stats
-        updated_history = []
-        found_today = False
-        for entry in self.data.get('history', []):
-            if entry['date'] == today_str:
-                entry['stats'] = stats
-                found_today = True
-            updated_history.append(entry)
+        updated_history = [h for h in self.data.get('history', []) if h['date'] != today_str]
+        updated_history.append({"date": today_str, "stats": stats})
+        self.data['history'] = updated_history[-30:]
         
-        if not found_today:
-            updated_history.append({"date": today_str, "stats": stats})
-        
-        self.data['history'] = updated_history[-30:] # Keep last 30 runs
-        
-        self.save_data()
-        print(f"Scan complete. Found {len(all_flights)} options.")
+        save_json(FLIGHTS_PATH, self.data)
+        duration = datetime.now() - start_time
+        print(f"Scan complete in {duration.total_seconds():.1f}s. Found {len(all_flights)} options.")
 
 if __name__ == "__main__":
     FlightMonitor().run()
