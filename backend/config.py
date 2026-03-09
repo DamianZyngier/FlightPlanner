@@ -21,7 +21,12 @@ DESTINATIONS = {
     "NZ": ["AKL", "CHC", "WLG"],        # New Zealand
     "NA": ["WDH"],                      # Namibia (Windhoek)
     "BW": ["GBE", "MUB"],               # Botswana (Gaborone, Maun)
+    "ZA": ["JNB", "CPT", "DUR"],        # South Africa (Johannesburg, Cape Town, Durban)
     "JP": ["TYO", "KIX", "FUK"],        # Japan (Tokyo, Osaka, Fukuoka)
+    "TH": ["BKK", "HKT", "CNX"],        # Thailand (Bangkok, Phuket, Chiang Mai)
+    "MY": ["KUL", "BKI"],               # Malaysia (Kuala Lumpur, Kota Kinabalu)
+    "PH": ["MNL", "CEB"],               # Philippines (Manila, Cebu)
+    "VN": ["SGN", "HAN", "DAD"],        # Vietnam (Ho Chi Minh, Hanoi, Da Nang)
     "PE": ["LIM", "CUZ"],               # Peru (Lima, Cusco)
     "CV": ["SID", "RAI", "BVC"],        # Cape Verde (Sal, Praia, Boa Vista)
     "CA": ["YYZ", "YVR", "YUL", "YYC"]  # Canada (Toronto, Vancouver, Montreal, Calgary)
@@ -34,7 +39,12 @@ PEAK_SEASONS = {
     "NZ": [12, 1, 2, 3],            # Summer
     "NA": [5, 6, 7, 8, 9, 10],      # Dry Season (safari)
     "BW": [5, 6, 7, 8, 9, 10],      # Dry Season (safari)
+    "ZA": [11, 12, 1, 2, 3],        # Summer
     "JP": [3, 4, 5, 10, 11],        # Cherry Blossom / Autumn
+    "TH": [11, 12, 1, 2, 3],        # Dry Season
+    "MY": [1, 2, 3, 6, 7, 8],       # Dry-ish
+    "PH": [12, 1, 2, 3, 4, 5],      # Dry Season
+    "VN": [12, 1, 2, 3, 4],         # Dry Season
     "PE": [5, 6, 7, 8, 9],          # Dry Season (Andes)
     "CV": [11, 12, 1, 2, 3, 4, 5, 6], # Pleasant weather
     "CA": [6, 7, 8, 9]              # Summer/Early Autumn
@@ -86,7 +96,12 @@ AIRPORT_NAMES = {
     "SYD": "Sydney", "MEL": "Melbourne", "BNE": "Brisbane", "PER": "Perth",
     "AKL": "Auckland", "CHC": "Christchurch", "WLG": "Wellington",
     "WDH": "Windhoek", "GBE": "Gaborone", "MUB": "Maun",
+    "JNB": "Johannesburg", "CPT": "Cape Town", "DUR": "Durban",
     "TYO": "Tokyo", "KIX": "Osaka", "FUK": "Fukuoka", "HND": "Tokyo Haneda", "NRT": "Tokyo Narita",
+    "BKK": "Bangkok", "HKT": "Phuket", "CNX": "Chiang Mai",
+    "KUL": "Kuala Lumpur", "BKI": "Kota Kinabalu",
+    "MNL": "Manila", "CEB": "Cebu",
+    "SGN": "Ho Chi Minh City", "HAN": "Hanoi", "DAD": "Da Nang",
     "LIM": "Lima", "CUZ": "Cusco",
     "SID": "Sal", "RAI": "Praia", "BVC": "Boa Vista",
     "YYZ": "Toronto", "YVR": "Vancouver", "YUL": "Montreal", "YYC": "Calgary"

@@ -77,8 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "SYD": "Sydney", "MEL": "Melbourne", "BNE": "Brisbane", "PER": "Perth",
         "AKL": "Auckland", "CHC": "Christchurch", "WLG": "Wellington",
         "WDH": "Windhoek", "GBE": "Gaborone", "MUB": "Maun",
+        "JNB": "Johannesburg", "CPT": "Cape Town", "DUR": "Durban",
         "TYO": "Tokyo", "KIX": "Osaka", "FUK": "Fukuoka",
         "HND": "Tokyo Haneda", "NRT": "Tokyo Narita",
+        "BKK": "Bangkok", "HKT": "Phuket", "CNX": "Chiang Mai",
+        "KUL": "Kuala Lumpur", "BKI": "Kota Kinabalu",
+        "MNL": "Manila", "CEB": "Cebu",
+        "SGN": "Ho Chi Minh City", "HAN": "Hanoi", "DAD": "Da Nang",
         "LIM": "Lima", "CUZ": "Cusco",
         "SID": "Sal", "RAI": "Praia", "BVC": "Boa Vista",
         "YYZ": "Toronto", "YVR": "Vancouver", "YUL": "Montreal", "YYC": "Calgary"
