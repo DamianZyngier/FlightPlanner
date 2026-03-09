@@ -1,5 +1,5 @@
 /**
- * Flight Planner Pro - Multi-View Dashboard
+ * Flight Planner Pro - Multi-View Dashboard (Fixed & Optimized)
  */
 
 const DATA_MAP = {
@@ -50,7 +50,6 @@ class FlightPlanner {
         this.els.scanBtn.onclick = () => this.triggerScan();
         this.els.addBtn.onclick = () => this.addFromSmartInput();
         
-        // View Tabs
         document.querySelectorAll('.nav-tab').forEach(btn => {
             btn.onclick = () => {
                 document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
@@ -62,7 +61,6 @@ class FlightPlanner {
             };
         });
 
-        // Sliders
         const sliders = ['originDist', 'minDur', 'maxDur', 'wPrice', 'wDist', 'wWeather'];
         sliders.forEach(key => {
             this.els[key].oninput = (e) => {
@@ -72,7 +70,8 @@ class FlightPlanner {
                 else if (key === 'maxDur') this.els.valMaxDur.innerText = val;
                 else {
                     const id = 'val-w-' + key.replace('w', '').toLowerCase();
-                    document.getElementById(id).innerText = val;
+                    const el = document.getElementById(id);
+                    if (el) el.innerText = val;
                 }
                 this.saveConfigLocally();
                 this.renderDashboard();
@@ -94,13 +93,12 @@ class FlightPlanner {
                 this.els.wWeather.value = s.w_weather ?? 0.5;
                 this.currentView = s.last_view ?? 'longhaul';
                 
-                // Sync UI
                 this.els.valDistKrk.innerText = this.els.originDist.value;
                 this.els.valMinDur.innerText = this.els.minDur.value;
                 this.els.valMaxDur.innerText = this.els.maxDur.value;
-                this.els.vWPrice.innerText = this.els.wPrice.value;
-                this.els.vWDist.innerText = this.els.wDist.value;
-                this.els.vWWeather.innerText = this.els.wWeather.value;
+                if (this.els.vWPrice) this.els.vWPrice.innerText = this.els.wPrice.value;
+                if (this.els.vWDist) this.els.vWDist.innerText = this.els.wDist.value;
+                if (this.els.vWWeather) this.els.vWWeather.innerText = this.els.wWeather.value;
                 
                 document.querySelectorAll('.nav-tab').forEach(b => {
                     b.classList.toggle('active', b.dataset.view === this.currentView);
@@ -111,6 +109,7 @@ class FlightPlanner {
     }
 
     async saveConfigLocally() {
+        if (!this.data.config) return;
         this.data.config.SETTINGS = {
             origin_dist: parseInt(this.els.originDist.value),
             min_dur: parseInt(this.els.minDur.value),
@@ -146,6 +145,7 @@ class FlightPlanner {
         else if (val.includes(':')) { a = val.split(':')[0].trim().toUpperCase(); c = 'INTL'; }
         else { a = val.toUpperCase(); c = 'INTL'; }
         if (c) {
+            if (!this.data.config.DESTINATIONS) this.data.config.DESTINATIONS = {};
             if (!this.data.config.DESTINATIONS[c]) this.data.config.DESTINATIONS[c] = [];
             if (a !== '-' && !this.data.config.DESTINATIONS[c].includes(a)) this.data.config.DESTINATIONS[c].push(a);
             await this.saveConfigLocally(); this.renderDestinations(); this.els.autoInput.value = '';
@@ -156,17 +156,18 @@ class FlightPlanner {
     getAirline(c) { return DATA_MAP.AIRLINES[c] || c; }
 
     renderOriginList() {
+        if (!this.data.config) return;
         const max = parseInt(this.els.originDist.value);
         const html = Object.entries(this.data.config.ORIGINS || {})
             .filter(([c, d]) => d <= max)
             .sort((a,b) => a[1]-b[1])
-            .map(([c, d]) => `<span class="origin-tag" title="${this.getName(c)}">${c}</span>`)
-            .join('');
+            .map(([c, d]) => `<span class="origin-tag" title="${this.getName(c)}">${this.getName(c)}</span>`)
+            .join(' '); // Space added
         this.els.originList.innerHTML = html;
     }
 
     renderDashboard() {
-        if (!this.data.flights?.current_best) return;
+        if (!this.data.flights?.current_best || !this.data.config) return;
         const maxDist = parseInt(this.els.originDist.value);
         const minD = parseInt(this.els.minDur.value);
         const maxD = parseInt(this.els.maxDur.value);
@@ -176,11 +177,11 @@ class FlightPlanner {
 
         if (this.currentView === 'citybreak') {
             filtered = filtered.filter(f => {
-                const day = new Date(f.departure_date).getDay(); // 5 = Friday
+                const day = new Date(f.departure_date).getDay();
                 return f.origin === 'KRK' && 
                        (f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 4) &&
                        (f.score_breakdown?.days_off <= 2) &&
-                       (day === 4 || day === 5); // Thu or Fri
+                       (day === 4 || day === 5);
             });
         } else {
             filtered = filtered.filter(f => {
@@ -220,11 +221,11 @@ class FlightPlanner {
                 ${itin}
                 <div class="score-tag ${sCls}">${s}% Match</div>
                 <div class="trip-highlight">
-                    <div class="highlight-item"><span class="highlight-label">Trip Range</span><span class="highlight-val">${f.departure_date} - ${f.return_date}</span></div>
+                    <div class="highlight-item"><span class="highlight-label">Dates</span><span class="highlight-val">${f.departure_date} to ${f.return_date || '?'}</span></div>
                     <div class="highlight-item"><span class="highlight-label">Days Off</span><span class="highlight-val">${bd.days_off || 0} Work Days</span></div>
                 </div>
                 <div class="card-details">
-                    <div class="row"><span>From</span> <span>${this.getName(f.origin)}</span></div>
+                    <div class="row"><span>From</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div>
                     <div class="row"><span>Airline</span> <span>${this.getAirline(f.airline)}</span></div>
                     <div class="row"><span>Duration</span> <span>${bd.duration_days || '?'} Days</span></div>
                 </div>
@@ -250,7 +251,9 @@ class FlightPlanner {
 
     renderHistory() {
         const hist = this.data.flights.history; if (!hist?.length) return;
-        const ctx = document.getElementById('historyChart').getContext('2d');
+        const canvas = document.getElementById('historyChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
         const labels = hist.map(h => new Date(h.date).toLocaleDateString());
         const countries = [...new Set(hist.flatMap(h => Object.keys(h.stats || {})))];
         const datasets = countries.map((c, i) => ({ label: this.getName(c), data: hist.map(h => h.stats?.[c]?.avg || null), borderColor: ['#3b82f6', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6'][i % 5], tension: 0.3, fill: false }));
