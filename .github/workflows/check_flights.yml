@@ -41,13 +41,13 @@ jobs:
 
     - name: Update Frontend Data
       run: |
-        mkdir -p frontend/data
-        cp data/flights.json frontend/data/flights.json
+        mkdir -p docs/data
+        cp data/flights.json docs/data/flights.json
 
     - name: Commit and Push
       run: |
         git config --global user.name 'FlightBot'
         git config --global user.email 'flightbot@users.noreply.github.com'
-        git add data/flights.json frontend/data/flights.json
+        git add data/flights.json docs/data/flights.json
         git commit -m "Update flight data: $(date)" || exit 0
         git push

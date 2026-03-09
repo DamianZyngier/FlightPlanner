@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const DATA_URL = './data/flights.json'; // Assumes data is copied to frontend/data/
+    const DATA_URL = './data/flights.json'; // Assumes data is copied to docs/data/
     let flightData = null;
     let chartInstance = null;
 
