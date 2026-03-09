@@ -3,8 +3,15 @@
  */
 
 const DATA_MAP = {
-    "COUNTRIES": { "AF": "Afghanistan", "AL": "Albania", "DZ": "Algeria", "AD": "Andorra", "AO": "Angola", "AR": "Argentina", "AM": "Armenia", "AU": "Australia", "AT": "Austria", "AZ": "Azerbaijan", "BS": "Bahamas", "BH": "Bahrain", "BD": "Bangladesh", "BB": "Barbados", "BY": "Belarus", "BE": "Belgium", "BZ": "Belize", "BJ": "Benin", "BT": "Bhutan", "BO": "Bolivia", "BA": "Bosnia and Herzegovina", "BW": "Botswana", "BR": "Brazil", "BN": "Brunei", "BG": "Bulgaria", "BF": "Burkina Faso", "BI": "Burundi", "KH": "Cambodia", "CM": "Cameroon", "CA": "Canada", "CV": "Cape Verde", "CF": "Central African Republic", "TD": "Chad", "CL": "Chile", "CN": "China", "CO": "Colombia", "KM": "Comoros", "CG": "Congo", "CR": "Costa Rica", "HR": "Croatia", "CU": "Cuba", "CY": "Cyprus", "CZ": "Czech Republic", "DK": "Denmark", "DJ": "Djibouti", "DM": "Dominica", "DO": "Dominican Republic", "EC": "Ecuador", "EG": "Egypt", "SV": "El Salvador", "GQ": "Equatorial Guinea", "ER": "Eritrea", "EE": "Estonia", "ET": "Ethiopia", "FJ": "Fiji", "FI": "Finland", "FR": "France", "GA": "Gabon", "GM": "Gambia", "GE": "Georgia", "DE": "Germany", "GH": "Ghana", "GR": "Greece", "GD": "Grenada", "GT": "Guatemala", "GN": "Guinea", "GW": "Guinea-Bissau", "GY": "Guyana", "HT": "Haiti", "HN": "Honduras", "HU": "Hungary", "IS": "Iceland", "IN": "India", "ID": "Indonesia", "IR": "Iran", "IQ": "Iraq", "IE": "Ireland", "IL": "Israel", "IT": "Italy", "JM": "Jamaica", "JP": "Japan", "JO": "Jordan", "KZ": "Kazakhstan", "KE": "Kenya", "KI": "Kiribati", "KP": "North Korea", "KR": "South Korea", "KW": "Kuwait", "KG": "Kyrgyzstan", "LA": "Laos", "LV": "Latvia", "LB": "Lebanon", "LS": "Lesotho", "LR": "Liberia", "LY": "Libya", "LI": "Liechtenstein", "LT": "Lithuania", "LU": "Luxembourg", "MK": "North Macedonia", "MG": "Madagascar", "MW": "Malawi", "MY": "Malaysia", "MV": "Maldives", "ML": "Mali", "MT": "Malta", "MH": "Marshall Islands", "MR": "Mauritania", "MU": "Mauritius", "MX": "Mexico", "FM": "Micronesia", "MD": "Moldova", "MC": "Monaco", "MN": "Mongolia", "ME": "Montenegro", "MA": "Morocco", "MZ": "Mozambique", "MM": "Myanmar", "NA": "Namibia", "NR": "Nauru", "NP": "Nepal", "NL": "Netherlands", "NZ": "New Zealand", "NI": "Nicaragua", "NE": "Niger", "NG": "Nigeria", "NO": "Norway", "OM": "Oman", "PK": "Pakistan", "PW": "Palau", "PA": "Panama", "PG": "Papua New Guinea", "PY": "Paraguay", "PE": "Peru", "PH": "Philippines", "PL": "Poland", "PT": "Portugal", "QA": "Qatar", "RO": "Romania", "RU": "Russia", "RW": "Rwanda", "KN": "Saint Kitts and Nevis", "LC": "Saint Lucia", "VC": "Saint Vincent and the Grenadines", "WS": "Samoa", "SM": "San Marino", "ST": "Sao Tome and Principe", "SA": "Saudi Arabia", "SN": "Senegal", "RS": "Serbia", "SC": "Seychelles", "SL": "Sierra Leone", "SG": "Singapore", "SK": "Slovakia", "SI": "Slovenia", "SB": "Solomon Islands", "SO": "Somalia", "ZA": "South Africa", "ES": "Spain", "LK": "Sri Lanka", "SD": "Sudan", "SR": "Suriname", "SZ": "Eswatini", "SE": "Sweden", "CH": "Switzerland", "SY": "Syria", "TW": "Taiwan", "TJ": "Tajikistan", "TZ": "Tanzania", "TH": "Thailand", "TL": "Timor-Leste", "TG": "Togo", "TO": "Tonga", "TT": "Trinidad and Tobago", "TN": "Tunisia", "TR": "Turkey", "TM": "Turkmenistan", "TV": "Tuvalu", "UG": "Uganda", "UA": "Ukraine", "AE": "United Arab Emirates", "GB": "United Kingdom", "US": "United States", "UY": "Uruguay", "UZ": "Uzbekistan", "VU": "Vanuatu", "VA": "Vatican City", "VE": "Venezuela", "VN": "Vietnam", "YE": "Yemen", "ZM": "Zambia", "ZW": "Zimbabwe" },
-    "AIRPORTS": { "KRK": "Kraków John Paul II", "WAW": "Warsaw Chopin", "WMI": "Warsaw Modlin", "KTW": "Katowice", "BER": "Berlin Brandenburg", "PRG": "Prague Václav Havel", "VIE": "Vienna Intl", "BUD": "Budapest Ferenc Liszt", "SYD": "Sydney", "AKL": "Auckland", "TYO": "Tokyo", "BKK": "Bangkok", "SGN": "Ho Chi Minh", "LIM": "Lima", "JNB": "Johannesburg", "CPT": "Cape Town" },
+    "COUNTRIES": { "AF": "Afghanistan", "AL": "Albania", "DZ": "Algeria", "AD": "Andorra", "AO": "Angola", "AR": "Argentina", "AM": "Armenia", "AU": "Australia", "AT": "Austria", "AZ": "Azerbaijan", "BS": "Bahamas", "BH": "Bahrain", "BD": "Bangladesh", "BB": "Barbados", "BY": "Belarus", "BE": "Belgium", "BZ": "Belize", "BJ": "Benin", "BT": "Bhutan", "BO": "Bolivia", "BA": "Bosnia and Herzegovina", "BW": "Botswana", "BR": "Brazil", "BN": "Brunei", "BG": "Bulgaria", "BF": "Burkina Faso", "BI": "Burundi", "KH": "Cambodia", "CM": "Cameroon", "CA": "Canada", "CV": "Cape Verde", "CF": "Central African Republic", "TD": "Chad", "CL": "Chile", "CN": "China", "CO": "Colombia", "KM": "Comoros", "CG": "Congo", "CR": "Costa Rica", "HR": "Croatia", "CU": "Cuba", "CY": "Cyprus", "CZ": "Czech Republic", "DK": "Denmark", "DJ": "Djibouti", "DM": "Dominica", "DO": "Dominican Republic", "EC": "Ecuador", "EG": "Egypt", "SV": "El Salvador", "GQ": "Equatorial Guinea", "ER": "Eritrea", "EE": "Estonia", "ET": "Ethiopia", "FJ": "Fiji", "FI": "Finland", "FR": "France", "GA": "Gabon", "GM": "Gambia", "GE": "Georgia", "DE": "Germany", "GH": "Ghana", "GR": "Greece", "GD": "Grenada", "GT": "Guatemala", "GN": "Guinea", "GW": "Guinea-Bissau", "GY": "Guyana", "HT": "Haiti", "HN": "Honduras", "HU": "Hungary", "IS": "Iceland", "IN": "India", "ID": "Indonesia", "IR": "Iran", "IQ": "Iraq", "IE": "Ireland", "IL": "Israel", "IT": "Italy", "JM": "Jamaica", "JP": "Japan", "JO": "Jordan", "KZ": "Kazakhstan", "KE": "Kenya", "KI": "Kiribati", "KP": "North Korea", "KR": "South Korea", "KW": "Kuwait", "KG": "Kyrgyzstan", "LA": "LAos", "LV": "Latvia", "LB": "Lebanon", "LS": "Lesotho", "LR": "Liberia", "LY": "Libya", "LI": "Liechtenstein", "LT": "Lithuania", "LU": "Luxembourg", "MK": "North Macedonia", "MG": "Madagascar", "MW": "Malawi", "MY": "Malaysia", "MV": "Maldives", "ML": "Mali", "MT": "Malta", "MH": "Marshall Islands", "MR": "Mauritania", "MU": "Mauritius", "MX": "Mexico", "FM": "Micronesia", "MD": "Moldova", "MC": "Monaco", "MN": "Mongolia", "ME": "Montenegro", "MA": "Morocco", "MZ": "Mozambique", "MM": "Myanmar", "NA": "Namibia", "NR": "Nauru", "NP": "Nepal", "NL": "Netherlands", "NZ": "New Zealand", "NI": "Nicaragua", "NE": "Niger", "NG": "Nigeria", "NO": "Norway", "OM": "Oman", "PK": "Pakistan", "PW": "Palau", "PA": "Panama", "PG": "Papua New Guinea", "PY": "Paraguay", "PE": "Peru", "PH": "Philippines", "PL": "Poland", "PT": "Portugal", "QA": "Qatar", "RO": "Romania", "RU": "Russia", "RW": "Rwanda", "KN": "Saint Kitts and Nevis", "LC": "Saint Lucia", "VC": "Saint Vincent and the Grenadines", "WS": "Samoa", "SM": "San Marino", "ST": "Sao Tome and Principe", "SA": "Saudi Arabia", "SN": "Senegal", "RS": "Serbia", "SC": "Seychelles", "SL": "Sierra Leone", "SG": "Singapore", "SK": "Slovakia", "SI": "Slovenia", "SB": "Solomon Islands", "SO": "Somalia", "ZA": "South Africa", "ES": "Spain", "LK": "Sri Lanka", "SD": "Sudan", "SR": "Suriname", "SZ": "Eswatini", "SE": "Sweden", "CH": "Switzerland", "SY": "Syria", "TW": "Taiwan", "TJ": "Tajikistan", "TZ": "Tanzania", "TH": "Thailand", "TL": "Timor-Leste", "TG": "Togo", "TO": "Tonga", "TT": "Trinidad and Tobago", "TN": "Tunisia", "TR": "Turkey", "TM": "Turkmenistan", "TV": "Tuvalu", "UG": "Uganda", "UA": "Ukraine", "AE": "United Arab Emirates", "GB": "United Kingdom", "US": "United States", "UY": "Uruguay", "UZ": "Uzbekistan", "VU": "Vanuatu", "VA": "Vatican City", "VE": "Venezuela", "VN": "Vietnam", "YE": "Yemen", "ZM": "Zambia", "ZW": "Zimbabwe" },
+    "AIRPORTS": { 
+        "KRK": "Kraków", "WAW": "Warsaw Chopin", "WMI": "Warsaw Modlin", "KTW": "Katowice", 
+        "BER": "Berlin Brandenburg", "PRG": "Prague Václav Havel", "VIE": "Vienna Intl", 
+        "BUD": "Budapest Ferenc Liszt", "SYD": "Sydney", "AKL": "Auckland", "TYO": "Tokyo", 
+        "BKK": "Bangkok", "SGN": "Ho Chi Minh", "LIM": "Lima", "JNB": "Johannesburg", 
+        "CPT": "Cape Town", "RZE": "Rzeszów Jasionka", "OSR": "Ostrava Leoš Janáček", 
+        "BTS": "Bratislava M. R. Štefánik" 
+    },
     "AIRLINES": { 
         "LO": "LOT Polish Airlines", "LH": "Lufthansa", "LX": "Swiss", "OS": "Austrian Airlines", "AF": "Air France", 
         "KL": "KLM", "TK": "Turkish Airlines", "EK": "Emirates", "QR": "Qatar Airways", "AY": "Finnair", 
@@ -31,9 +38,9 @@ class FlightPlanner {
             bestPrice: q('stat-best-price'), totalRoutes: q('stat-total-routes'),
             viewName: q('current-view-name'), addBtn: q('add-dest-btn'), autoInput: q('dest-autocomplete'),
             suggestions: q('dest-suggestions'), originList: q('included-origins'),
-            wPrice: q('w-price'), wDist: q('w-dist'), wWeather: q('w-weather'),
-            vWPrice: q('val-w-price'), vWDist: q('val-w-dist'), vWWeather: q('val-w-weather'),
-            sortBy: q('sort-by')
+            wPrice: q('w-price'), wDist: q('w-dist'), wWeather: q('w-weather'), wEff: q('w-eff'),
+            vWPrice: q('val-w-price'), vWDist: q('val-w-dist'), vWWeather: q('val-w-weather'), vWEff: q('val-w-eff'),
+            sortBy: q('sort-by'), precisionStatus: q('precision-status')
         };
     }
 
@@ -68,7 +75,7 @@ class FlightPlanner {
             };
         });
 
-        const sliders = ['originDist', 'filterPrice', 'minDur', 'maxDur', 'wPrice', 'wDist', 'wWeather'];
+        const sliders = ['originDist', 'filterPrice', 'minDur', 'maxDur', 'wPrice', 'wDist', 'wWeather', 'wEff'];
         sliders.forEach(key => {
             this.els[key].oninput = (e) => {
                 const val = e.target.value;
@@ -102,6 +109,7 @@ class FlightPlanner {
                 this.els.wPrice.value = s.w_price ?? 1.0;
                 this.els.wDist.value = s.w_dist ?? 0.5;
                 this.els.wWeather.value = s.w_weather ?? 0.5;
+                this.els.wEff.value = s.w_eff ?? 0.5;
                 this.currentView = s.last_view ?? 'longhaul';
                 this.els.sortBy.value = s.sort_by ?? 'score';
                 
@@ -112,6 +120,7 @@ class FlightPlanner {
                 if (this.els.vWPrice) this.els.vWPrice.innerText = this.els.wPrice.value;
                 if (this.els.vWDist) this.els.vWDist.innerText = this.els.wDist.value;
                 if (this.els.vWWeather) this.els.vWWeather.innerText = this.els.wWeather.value;
+                if (this.els.vWEff) this.els.vWEff.innerText = this.els.wEff.value;
                 
                 document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.dataset.view === this.currentView));
                 this.els.viewName.innerText = this.currentView === 'longhaul' ? 'World Explorer' : 'Kraków Weekend';
@@ -129,6 +138,7 @@ class FlightPlanner {
             w_price: parseFloat(this.els.wPrice.value),
             w_dist: parseFloat(this.els.wDist.value),
             w_weather: parseFloat(this.els.wWeather.value),
+            w_eff: parseFloat(this.els.wEff.value),
             last_view: this.currentView,
             sort_by: this.els.sortBy.value
         };
@@ -152,7 +162,7 @@ class FlightPlanner {
     }
 
     async triggerPrecisionScan(origin, dest, dep, ret, btn) {
-        btn.disabled = true; btn.innerText = "⏳ Precision Checking...";
+        btn.disabled = true; btn.innerText = "⏳ Precision...";
         try {
             const r = await fetch('/api/precision', { 
                 method: 'POST', 
@@ -189,7 +199,10 @@ class FlightPlanner {
         const html = Object.entries(this.data.config.ORIGINS || {})
             .filter(([c, d]) => d <= max)
             .sort((a,b) => a[1]-b[1])
-            .map(([c, d]) => `<span class="origin-tag" title="${this.getName(c)}">${c}</span>`)
+            .map(([c, d]) => {
+                const name = this.getName(c);
+                return `<span class="origin-tag" title="${name}">${name} (${c})</span>`;
+            })
             .join(' ');
         this.els.originList.innerHTML = html;
     }
@@ -201,7 +214,12 @@ class FlightPlanner {
         const minD = parseInt(this.els.minDur.value);
         const maxD = parseInt(this.els.maxDur.value);
         const sortBy = this.els.sortBy.value;
-        const w = { p: parseFloat(this.els.wPrice.value), d: parseFloat(this.els.wDist.value), we: parseFloat(this.els.wWeather.value) };
+        const w = { 
+            p: parseFloat(this.els.wPrice.value), 
+            d: parseFloat(this.els.wDist.value), 
+            we: parseFloat(this.els.wWeather.value),
+            ef: parseFloat(this.els.wEff.value)
+        };
 
         let filtered = this.data.flights.current_best.filter(f => !f.is_mock && f.price <= maxPrice);
 
@@ -226,7 +244,10 @@ class FlightPlanner {
             const p_s = max(0, 100 - (bd.price_raw - 1500)/60);
             const d_s = max(0, 100 - (bd.dist_km/6));
             const w_s = bd.in_season ? 100 : 20;
-            const final = (p_s*w.p + d_s*w.d + w_s*w.we) / (w.p + w.d + w.we);
+            const e_s = max(0, min(100, (bd.efficiency || 0) * 15)); // Simple efficiency score
+            
+            const totalW = w.p + w.d + w.we + w.ef;
+            const final = (p_s*w.p + d_s*w.d + w_s*w.we + e_s*w.ef) / totalW;
             return { ...f, ui_score: Math.round(final) };
         });
 
@@ -241,9 +262,7 @@ class FlightPlanner {
             card.className = 'card';
             card.innerHTML = this.createCardHtml(f);
             const pBtn = card.querySelector('.btn-precision');
-            if (pBtn) {
-                pBtn.onclick = () => this.triggerPrecisionScan(f.origin, f.destination, f.departure_date, f.return_date, pBtn);
-            }
+            if (pBtn) pBtn.onclick = () => this.triggerPrecisionScan(f.origin, f.destination, f.departure_date, f.return_date, pBtn);
             this.els.dealsGrid.appendChild(card);
         });
         this.renderHistory();
@@ -263,13 +282,14 @@ class FlightPlanner {
             ${itin}
             <div class="score-tag ${sCls}">${s}% Match</div>
             <div class="trip-highlight">
-                <div class="highlight-item"><span class="highlight-label">Dates</span><span class="highlight-val">${f.departure_date} to ${f.return_date || '?'}</span></div>
-                <div class="highlight-item"><span class="highlight-label">Days Off</span><span class="highlight-val">${bd.days_off || 0} Work Days</span></div>
+                <div class="highlight-item"><span class="highlight-label">Dates</span><span class="highlight-val">${f.departure_date} - ${f.return_date || '?'}</span></div>
+                <div class="highlight-item"><span class="highlight-label">Holidays</span><span class="highlight-val">${bd.holiday_count || 0} Days</span></div>
             </div>
             <div class="card-details">
                 <div class="row"><span>From</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div>
                 <div class="row"><span>Airline</span> <span>${this.getAirline(f.airline)}</span></div>
-                <div class="row"><span>Duration</span> <span>${bd.duration_days || '?'} Days</span></div>
+                <div class="row"><span>Work Days Off</span> <span><strong>${bd.days_off || 0}</strong></span></div>
+                <div class="row"><span>Trip Duration</span> <span>${bd.duration_days || '?'} Days</span></div>
             </div>
             <a href="${f.link}" target="_blank" class="btn-book">Open on Google Flights</a>
         `;
@@ -292,7 +312,9 @@ class FlightPlanner {
 
     renderHistory() {
         const hist = this.data.flights.history; if (!hist?.length) return;
-        const ctx = document.getElementById('historyChart').getContext('2d');
+        const canvas = document.getElementById('historyChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
         const labels = hist.map(h => new Date(h.date).toLocaleDateString());
         const countries = [...new Set(hist.flatMap(h => Object.keys(h.stats || {})))];
         const datasets = countries.map((c, i) => ({ label: this.getName(c), data: hist.map(h => h.stats?.[c]?.avg || null), borderColor: ['#3b82f6', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6'][i % 5], tension: 0.3, fill: false }));
@@ -302,4 +324,5 @@ class FlightPlanner {
 }
 
 function max(a, b) { return a > b ? a : b; }
+function min(a, b) { return a < b ? a : b; }
 window.app = new FlightPlanner();
