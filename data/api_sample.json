@@ -1,0 +1,5423 @@
+{
+  "ABA": {
+    "3": {
+      "airline": "PC",
+      "departure_at": "2026-05-23T16:00:00+02:00",
+      "return_at": "2026-06-07T08:00:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3062,
+      "flight_number": 978,
+      "duration": 3950,
+      "duration_to": 750,
+      "duration_back": 755
+    }
+  },
+  "ABV": {
+    "3": {
+      "airline": "FR",
+      "departure_at": "2026-07-09T07:20:00+02:00",
+      "return_at": "2026-07-24T03:55:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3543,
+      "flight_number": 146,
+      "duration": 4600,
+      "duration_to": 734,
+      "duration_back": 560
+    }
+  },
+  "ACC": {
+    "1": {
+      "airline": "SN",
+      "departure_at": "2026-12-21T07:15:00+01:00",
+      "return_at": "2026-12-27T21:40:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3241,
+      "flight_number": 2592,
+      "duration": 2055,
+      "duration_to": 500,
+      "duration_back": 490
+    }
+  },
+  "ACE": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-04-21T07:45:00+02:00",
+      "return_at": "2026-04-28T21:55:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 461,
+      "flight_number": 5109,
+      "duration": 920,
+      "duration_to": 305,
+      "duration_back": 345
+    }
+  },
+  "ADD": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-04-06T15:10:00+02:00",
+      "return_at": "2026-05-06T00:40:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2271,
+      "flight_number": 1726,
+      "duration": 2625,
+      "duration_to": 500,
+      "duration_back": 510
+    }
+  },
+  "AER": {
+    "2": {
+      "airline": "W6",
+      "departure_at": "2026-04-08T08:20:00+02:00",
+      "return_at": "2026-04-24T13:40:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1234,
+      "flight_number": 7038,
+      "duration": 2445,
+      "duration_to": 350,
+      "duration_back": 300
+    }
+  },
+  "AGA": {
+    "1": {
+      "airline": "U2",
+      "departure_at": "2026-04-18T10:50:00+02:00",
+      "return_at": "2026-04-25T21:10:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 828,
+      "flight_number": 8630,
+      "duration": 1340,
+      "duration_to": 350,
+      "duration_back": 330
+    }
+  },
+  "AGP": {
+    "1": {
+      "airline": "LW",
+      "departure_at": "2026-04-14T18:05:00+02:00",
+      "return_at": "2026-04-18T05:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 391,
+      "flight_number": 110,
+      "duration": 2370,
+      "duration_to": 265,
+      "duration_back": 285
+    }
+  },
+  "AHO": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-06-05T22:20:00+02:00",
+      "return_at": "2026-06-12T19:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 648,
+      "flight_number": 132,
+      "duration": 2510,
+      "duration_to": 240,
+      "duration_back": 180
+    }
+  },
+  "AKL": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-10-01T10:40:00+02:00",
+      "return_at": "2026-10-07T11:15:00+13:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4634,
+      "flight_number": 1722,
+      "duration": 4280,
+      "duration_to": 1405,
+      "duration_back": 1550
+    }
+  },
+  "AKX": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-03-26T12:00:00+01:00",
+      "return_at": "2026-04-22T04:55:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1677,
+      "flight_number": 978,
+      "duration": 1520,
+      "duration_to": 410,
+      "duration_back": 440
+    }
+  },
+  "ALA": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-04-06T13:30:00+02:00",
+      "return_at": "2026-04-17T07:45:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1331,
+      "flight_number": 980,
+      "duration": 1460,
+      "duration_to": 480,
+      "duration_back": 545
+    }
+  },
+  "ALC": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-05-19T06:00:00+02:00",
+      "return_at": "2026-05-26T13:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 410,
+      "flight_number": 146,
+      "duration": 1910,
+      "duration_to": 270,
+      "duration_back": 225
+    }
+  },
+  "ALF": {
+    "1": {
+      "airline": "DY",
+      "departure_at": "2026-09-01T21:30:00+02:00",
+      "return_at": "2026-09-08T07:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 506,
+      "flight_number": 1109,
+      "duration": 3085,
+      "duration_to": 280,
+      "duration_back": 290
+    }
+  },
+  "ALY": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-03-22T12:00:00+01:00",
+      "return_at": "2026-04-03T02:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1870,
+      "flight_number": 978,
+      "duration": 1125,
+      "duration_to": 295,
+      "duration_back": 295
+    }
+  },
+  "AMS": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-13T22:10:00+02:00",
+      "return_at": "2026-04-18T21:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 570,
+      "flight_number": 216,
+      "duration": 1655,
+      "duration_to": 320,
+      "duration_back": 235
+    }
+  },
+  "ANK": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-04-27T18:50:00+02:00",
+      "return_at": "2026-05-11T06:40:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 606,
+      "flight_number": 5008,
+      "duration": 960,
+      "duration_to": 270,
+      "duration_back": 250
+    }
+  },
+  "ANU": {
+    "1": {
+      "airline": "DE",
+      "departure_at": "2026-03-17T06:50:00+01:00",
+      "return_at": "2026-03-31T16:20:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3575,
+      "flight_number": 4086,
+      "duration": 2375,
+      "duration_to": 655,
+      "duration_back": 810
+    }
+  },
+  "ARH": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-03-12T13:40:00+01:00",
+      "return_at": "2026-03-15T19:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1847,
+      "flight_number": 58,
+      "duration": 2765,
+      "duration_to": 550,
+      "duration_back": 545
+    }
+  },
+  "ASB": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-11-30T14:30:00+01:00",
+      "return_at": "2026-12-30T04:15:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3417,
+      "flight_number": 1726,
+      "duration": 1215,
+      "duration_to": 405,
+      "duration_back": 425
+    }
+  },
+  "ASW": {
+    "1": {
+      "airline": "MS",
+      "departure_at": "2026-11-14T14:55:00+01:00",
+      "return_at": "2026-11-26T05:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2378,
+      "flight_number": 732,
+      "duration": 1045,
+      "duration_to": 325,
+      "duration_back": 345
+    }
+  },
+  "ATH": {
+    "1": {
+      "airline": "W6",
+      "departure_at": "2026-05-06T08:20:00+02:00",
+      "return_at": "2026-05-07T09:35:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 473,
+      "flight_number": 7038,
+      "duration": 1275,
+      "duration_to": 210,
+      "duration_back": 220
+    }
+  },
+  "AUH": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-04-12T19:40:00+02:00",
+      "return_at": "2026-04-17T05:00:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1251,
+      "flight_number": 984,
+      "duration": 2570,
+      "duration_to": 435,
+      "duration_back": 460
+    }
+  },
+  "AUS": {
+    "1": {
+      "airline": "BA",
+      "departure_at": "2026-07-09T21:10:00+02:00",
+      "return_at": "2026-07-30T17:55:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2626,
+      "flight_number": 997,
+      "duration": 3385,
+      "duration_to": 730,
+      "duration_back": 850
+    }
+  },
+  "AYT": {
+    "0": {
+      "airline": "FH",
+      "departure_at": "2026-04-10T18:00:00+02:00",
+      "return_at": "2026-04-19T04:10:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 333,
+      "flight_number": 1282,
+      "duration": 420,
+      "duration_to": 205,
+      "duration_back": 215
+    }
+  },
+  "AZN": {
+    "2": {
+      "airline": "J2",
+      "departure_at": "2026-03-17T10:45:00+01:00",
+      "return_at": "2026-04-25T05:15:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3482,
+      "flight_number": 64,
+      "duration": 3410,
+      "duration_to": 730,
+      "duration_back": 795
+    }
+  },
+  "BAK": {
+    "1": {
+      "airline": "W6",
+      "departure_at": "2026-04-15T18:10:00+02:00",
+      "return_at": "2026-04-22T04:50:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 731,
+      "flight_number": 2318,
+      "duration": 1370,
+      "duration_to": 300,
+      "duration_back": 390
+    }
+  },
+  "BAX": {
+    "3": {
+      "airline": "LO",
+      "departure_at": "2026-07-11T07:45:00+02:00",
+      "return_at": "2026-08-01T08:25:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4119,
+      "flight_number": 392,
+      "duration": 4420,
+      "duration_to": 710,
+      "duration_back": 695
+    }
+  },
+  "BCN": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-21T06:00:00+02:00",
+      "return_at": "2026-04-24T19:10:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 296,
+      "flight_number": 226,
+      "duration": 980,
+      "duration_to": 225,
+      "duration_back": 160
+    }
+  },
+  "BDS": {
+    "3": {
+      "airline": "W6",
+      "departure_at": "2026-09-11T07:50:00+02:00",
+      "return_at": "2026-09-17T09:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1332,
+      "flight_number": 7038,
+      "duration": 3370,
+      "duration_to": 390,
+      "duration_back": 260
+    }
+  },
+  "BEG": {
+    "0": {
+      "airline": "W6",
+      "departure_at": "2026-04-20T18:50:00+02:00",
+      "return_at": "2026-04-22T16:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 324,
+      "flight_number": 4010,
+      "duration": 220,
+      "duration_to": 110,
+      "duration_back": 110
+    }
+  },
+  "BGO": {
+    "1": {
+      "airline": "DY",
+      "departure_at": "2026-06-01T21:00:00+02:00",
+      "return_at": "2026-06-08T20:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 546,
+      "flight_number": 1109,
+      "duration": 1410,
+      "duration_to": 155,
+      "duration_back": 150
+    }
+  },
+  "BGW": {
+    "1": {
+      "airline": "MS",
+      "departure_at": "2026-03-10T14:55:00+01:00",
+      "return_at": "2026-03-31T03:50:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1743,
+      "flight_number": 732,
+      "duration": 1145,
+      "duration_to": 365,
+      "duration_back": 360
+    }
+  },
+  "BHK": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-03-16T11:25:00+01:00",
+      "return_at": "2026-03-20T05:45:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3172,
+      "flight_number": 5008,
+      "duration": 4000,
+      "duration_to": 705,
+      "duration_back": 680
+    }
+  },
+  "BHX": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-04-03T21:30:00+02:00",
+      "return_at": "2026-04-06T06:15:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 659,
+      "flight_number": 6622,
+      "duration": 240,
+      "duration_to": 125,
+      "duration_back": 115
+    }
+  },
+  "BHZ": {
+    "3": {
+      "airline": "KL",
+      "departure_at": "2026-10-10T19:15:00+02:00",
+      "return_at": "2026-10-31T15:25:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4171,
+      "flight_number": 1782,
+      "duration": 4265,
+      "duration_to": 940,
+      "duration_back": 905
+    }
+  },
+  "BIA": {
+    "1": {
+      "airline": "U2",
+      "departure_at": "2026-08-10T06:50:00+02:00",
+      "return_at": "2026-08-17T16:05:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1496,
+      "flight_number": 5181,
+      "duration": 905,
+      "duration_to": 180,
+      "duration_back": 175
+    }
+  },
+  "BIO": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-06-19T22:20:00+02:00",
+      "return_at": "2026-06-23T19:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 511,
+      "flight_number": 132,
+      "duration": 1305,
+      "duration_to": 230,
+      "duration_back": 205
+    }
+  },
+  "BIQ": {
+    "1": {
+      "airline": "TO",
+      "departure_at": "2026-05-24T07:00:00+02:00",
+      "return_at": "2026-06-01T13:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 924,
+      "flight_number": 4071,
+      "duration": 2070,
+      "duration_to": 200,
+      "duration_back": 195
+    }
+  },
+  "BJS": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-04-26T21:10:00+02:00",
+      "return_at": "2026-05-09T02:50:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2362,
+      "flight_number": 196,
+      "duration": 2660,
+      "duration_to": 935,
+      "duration_back": 680
+    }
+  },
+  "BJV": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-06-16T12:30:00+02:00",
+      "return_at": "2026-06-24T03:35:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 551,
+      "flight_number": 58,
+      "duration": 910,
+      "duration_to": 255,
+      "duration_back": 260
+    }
+  },
+  "BKK": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-04-22T22:05:00+02:00",
+      "return_at": "2026-05-06T22:45:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2516,
+      "flight_number": 1174,
+      "duration": 4270,
+      "duration_to": 840,
+      "duration_back": 1010
+    }
+  },
+  "BLQ": {
+    "0": {
+      "airline": "MW",
+      "departure_at": "2026-04-17T10:05:00+02:00",
+      "return_at": "2026-04-19T08:10:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 392,
+      "flight_number": 136,
+      "duration": 210,
+      "duration_to": 105,
+      "duration_back": 105
+    }
+  },
+  "BLR": {
+    "2": {
+      "airline": "U2",
+      "departure_at": "2026-03-23T06:15:00+01:00",
+      "return_at": "2026-03-27T09:35:00+05:30",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2436,
+      "flight_number": 5187,
+      "duration": 3135,
+      "duration_to": 695,
+      "duration_back": 785
+    }
+  },
+  "BNI": {
+    "2": {
+      "airline": "QR",
+      "departure_at": "2026-07-09T16:30:00+02:00",
+      "return_at": "2026-07-24T08:20:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 7932,
+      "flight_number": 82,
+      "duration": 3745,
+      "duration_to": 835,
+      "duration_back": 850
+    }
+  },
+  "BOD": {
+    "1": {
+      "airline": "EW",
+      "departure_at": "2026-05-01T17:25:00+02:00",
+      "return_at": "2026-05-03T22:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 636,
+      "flight_number": 8426,
+      "duration": 1030,
+      "duration_to": 215,
+      "duration_back": 215
+    }
+  },
+  "BOG": {
+    "2": {
+      "airline": "AC",
+      "departure_at": "2026-07-11T07:00:00+02:00",
+      "return_at": "2026-08-08T09:00:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4807,
+      "flight_number": 6933,
+      "duration": 3480,
+      "duration_to": 950,
+      "duration_back": 915
+    }
+  },
+  "BOJ": {
+    "1": {
+      "airline": "W6",
+      "departure_at": "2026-06-18T12:10:00+02:00",
+      "return_at": "2026-07-02T19:15:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 737,
+      "flight_number": 2316,
+      "duration": 660,
+      "duration_to": 190,
+      "duration_back": 150
+    }
+  },
+  "BOM": {
+    "1": {
+      "airline": "KL",
+      "departure_at": "2026-08-12T09:05:00+02:00",
+      "return_at": "2026-10-10T01:20:00+05:30",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2271,
+      "flight_number": 1772,
+      "duration": 1671,
+      "duration_to": 611,
+      "duration_back": 675
+    }
+  },
+  "BRA": {
+    "2": {
+      "airline": "TP",
+      "departure_at": "2026-03-22T17:10:00+01:00",
+      "return_at": "2026-04-05T11:20:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 15075,
+      "flight_number": 533,
+      "duration": 5780,
+      "duration_to": 950,
+      "duration_back": 1020
+    }
+  },
+  "BRE": {
+    "1": {
+      "airline": "W4",
+      "departure_at": "2026-03-13T14:10:00+01:00",
+      "return_at": "2026-03-15T09:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1283,
+      "flight_number": 3976,
+      "duration": 3180,
+      "duration_to": 290,
+      "duration_back": 295
+    }
+  },
+  "BRI": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-18T12:50:00+02:00",
+      "return_at": "2026-04-21T13:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 400,
+      "flight_number": 3309,
+      "duration": 260,
+      "duration_to": 130,
+      "duration_back": 130
+    }
+  },
+  "BRS": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-21T10:10:00+01:00",
+      "return_at": "2026-03-25T18:10:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 541,
+      "flight_number": 3670,
+      "duration": 1480,
+      "duration_to": 210,
+      "duration_back": 335
+    }
+  },
+  "BRU": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-14T06:00:00+01:00",
+      "return_at": "2026-03-15T08:50:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 468,
+      "flight_number": 8840,
+      "duration": 2190,
+      "duration_to": 295,
+      "duration_back": 190
+    }
+  },
+  "BSZ": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-03-11T13:40:00+01:00",
+      "return_at": "2026-03-21T06:05:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1139,
+      "flight_number": 58,
+      "duration": 1330,
+      "duration_to": 480,
+      "duration_back": 520
+    }
+  },
+  "BTS": {
+    "0": {
+      "airline": "W6",
+      "departure_at": "2026-11-13T08:20:00+01:00",
+      "return_at": "2026-11-16T06:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 201,
+      "flight_number": 7038,
+      "duration": 150,
+      "duration_to": 75,
+      "duration_back": 75
+    }
+  },
+  "BUD": {
+    "0": {
+      "airline": "W6",
+      "departure_at": "2026-04-25T21:20:00+02:00",
+      "return_at": "2026-04-28T10:05:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 141,
+      "flight_number": 2318,
+      "duration": 180,
+      "duration_to": 90,
+      "duration_back": 90
+    }
+  },
+  "BUE": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-08-03T22:10:00+02:00",
+      "return_at": "2026-08-24T23:55:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4354,
+      "flight_number": 1219,
+      "duration": 5270,
+      "duration_to": 1380,
+      "duration_back": 1080
+    }
+  },
+  "BUH": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-24T12:45:00+02:00",
+      "return_at": "2026-04-27T06:10:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 200,
+      "flight_number": 314,
+      "duration": 265,
+      "duration_to": 130,
+      "duration_back": 135
+    }
+  },
+  "BUS": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-05-07T19:40:00+02:00",
+      "return_at": "2026-05-20T19:10:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1027,
+      "flight_number": 984,
+      "duration": 2385,
+      "duration_to": 275,
+      "duration_back": 300
+    }
+  },
+  "BVC": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-04-03T17:40:00+02:00",
+      "return_at": "2026-04-11T10:05:00-01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3165,
+      "flight_number": 2961,
+      "duration": 3210,
+      "duration_to": 540,
+      "duration_back": 630
+    }
+  },
+  "BWI": {
+    "1": {
+      "airline": "FI",
+      "departure_at": "2026-05-16T14:05:00+02:00",
+      "return_at": "2026-05-24T23:20:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2015,
+      "flight_number": 529,
+      "duration": 2590,
+      "duration_to": 610,
+      "duration_back": 565
+    }
+  },
+  "BZE": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-03-10T09:55:00+01:00",
+      "return_at": "2026-03-24T14:38:00-06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3055,
+      "flight_number": 7607,
+      "duration": 3229,
+      "duration_to": 959,
+      "duration_back": 814
+    }
+  },
+  "CAG": {
+    "2": {
+      "airline": "W6",
+      "departure_at": "2026-07-15T08:20:00+02:00",
+      "return_at": "2026-07-22T07:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 918,
+      "flight_number": 7038,
+      "duration": 2770,
+      "duration_to": 235,
+      "duration_back": 195
+    }
+  },
+  "CAI": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-05-25T13:30:00+02:00",
+      "return_at": "2026-06-03T04:15:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1191,
+      "flight_number": 980,
+      "duration": 1405,
+      "duration_to": 300,
+      "duration_back": 305
+    }
+  },
+  "CAN": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-05-04T14:45:00+02:00",
+      "return_at": "2026-05-08T01:35:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2572,
+      "flight_number": 1180,
+      "duration": 4835,
+      "duration_to": 895,
+      "duration_back": 1115
+    }
+  },
+  "CEB": {
+    "4": {
+      "airline": "MW",
+      "departure_at": "2026-03-21T15:45:00+01:00",
+      "return_at": "2026-03-26T03:05:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3817,
+      "flight_number": 8,
+      "duration": 4505,
+      "duration_to": 1210,
+      "duration_back": 1305
+    }
+  },
+  "CEK": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-03-15T18:40:00+01:00",
+      "return_at": "2026-03-27T05:35:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2191,
+      "flight_number": 986,
+      "duration": 4240,
+      "duration_to": 500,
+      "duration_back": 550
+    }
+  },
+  "CFU": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-06-27T17:05:00+02:00",
+      "return_at": "2026-07-01T18:50:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 415,
+      "flight_number": 5005,
+      "duration": 295,
+      "duration_to": 145,
+      "duration_back": 150
+    }
+  },
+  "CGN": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-03-25T21:20:00+01:00",
+      "return_at": "2026-03-27T20:50:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 456,
+      "flight_number": 15,
+      "duration": 135,
+      "duration_to": 65,
+      "duration_back": 70
+    }
+  },
+  "CHI": {
+    "1": {
+      "airline": "AA",
+      "departure_at": "2026-05-01T14:10:00+02:00",
+      "return_at": "2026-05-05T19:25:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1987,
+      "flight_number": 6665,
+      "duration": 2395,
+      "duration_to": 640,
+      "duration_back": 590
+    }
+  },
+  "CHQ": {
+    "2": {
+      "airline": "W4",
+      "departure_at": "2026-05-01T08:45:00+02:00",
+      "return_at": "2026-05-07T08:10:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 933,
+      "flight_number": 5148,
+      "duration": 1975,
+      "duration_to": 255,
+      "duration_back": 230
+    }
+  },
+  "CIT": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-03-25T12:15:00+01:00",
+      "return_at": "2026-03-31T05:05:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1489,
+      "flight_number": 5008,
+      "duration": 1630,
+      "duration_to": 465,
+      "duration_back": 520
+    }
+  },
+  "CKG": {
+    "3": {
+      "airline": "PC",
+      "departure_at": "2026-03-23T09:20:00+01:00",
+      "return_at": "2026-04-01T08:15:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3641,
+      "flight_number": 982,
+      "duration": 3545,
+      "duration_to": 840,
+      "duration_back": 1070
+    }
+  },
+  "CMB": {
+    "1": {
+      "airline": "EW",
+      "departure_at": "2026-04-09T22:15:00+02:00",
+      "return_at": "2026-04-23T15:00:00+05:30",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2317,
+      "flight_number": 1166,
+      "duration": 3160,
+      "duration_to": 660,
+      "duration_back": 825
+    }
+  },
+  "CMN": {
+    "1": {
+      "airline": "AF",
+      "departure_at": "2026-11-21T20:05:00+01:00",
+      "return_at": "2026-12-01T19:35:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 875,
+      "flight_number": 1535,
+      "duration": 1650,
+      "duration_to": 300,
+      "duration_back": 305
+    }
+  },
+  "COK": {
+    "1": {
+      "airline": "EW",
+      "departure_at": "2026-04-12T22:15:00+02:00",
+      "return_at": "2026-05-31T21:45:00+05:30",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2650,
+      "flight_number": 1166,
+      "duration": 2255,
+      "duration_to": 640,
+      "duration_back": 700
+    }
+  },
+  "COO": {
+    "1": {
+      "airline": "SN",
+      "departure_at": "2026-05-18T08:30:00+02:00",
+      "return_at": "2026-06-15T21:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2224,
+      "flight_number": 2580,
+      "duration": 1320,
+      "duration_to": 670,
+      "duration_back": 475
+    }
+  },
+  "COS": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-06-03T08:45:00+02:00",
+      "return_at": "2026-06-21T13:49:00-06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3285,
+      "flight_number": 173,
+      "duration": 1853,
+      "duration_to": 737,
+      "duration_back": 701
+    }
+  },
+  "COV": {
+    "0": {
+      "airline": "PC",
+      "departure_at": "2026-04-07T22:00:00+02:00",
+      "return_at": "2026-04-14T21:35:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 621,
+      "flight_number": 1616,
+      "duration": 925,
+      "duration_to": 205,
+      "duration_back": 275
+    }
+  },
+  "CPH": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-04-20T07:45:00+02:00",
+      "return_at": "2026-04-24T20:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 291,
+      "flight_number": 5261,
+      "duration": 130,
+      "duration_to": 65,
+      "duration_back": 65
+    }
+  },
+  "CPT": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-05-06T19:25:00+02:00",
+      "return_at": "2026-05-17T16:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2514,
+      "flight_number": 1724,
+      "duration": 2150,
+      "duration_to": 835,
+      "duration_back": 835
+    }
+  },
+  "CRK": {
+    "2": {
+      "airline": "QR",
+      "departure_at": "2026-03-21T15:15:00+01:00",
+      "return_at": "2026-03-26T10:10:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5129,
+      "flight_number": 82,
+      "duration": 4555,
+      "duration_to": 925,
+      "duration_back": 1060
+    }
+  },
+  "CRV": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-04-03T21:55:00+02:00",
+      "return_at": "2026-04-06T12:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1842,
+      "flight_number": 206,
+      "duration": 2500,
+      "duration_to": 275,
+      "duration_back": 375
+    }
+  },
+  "CTA": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-16T19:15:00+02:00",
+      "return_at": "2026-04-19T22:05:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 375,
+      "flight_number": 3311,
+      "duration": 1400,
+      "duration_to": 215,
+      "duration_back": 220
+    }
+  },
+  "CTG": {
+    "1": {
+      "airline": "KL",
+      "departure_at": "2026-06-25T19:15:00+02:00",
+      "return_at": "2026-07-02T18:05:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3747,
+      "flight_number": 1782,
+      "duration": 2460,
+      "duration_to": 920,
+      "duration_back": 660
+    }
+  },
+  "CTU": {
+    "2": {
+      "airline": "AF",
+      "departure_at": "2026-11-07T16:30:00+01:00",
+      "return_at": "2026-11-26T08:00:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2463,
+      "flight_number": 1235,
+      "duration": 3965,
+      "duration_to": 1010,
+      "duration_back": 945
+    }
+  },
+  "CUN": {
+    "2": {
+      "airline": "AA",
+      "departure_at": "2026-03-17T11:55:00+01:00",
+      "return_at": "2026-03-24T11:50:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2127,
+      "flight_number": 6777,
+      "duration": 2706,
+      "duration_to": 867,
+      "duration_back": 760
+    }
+  },
+  "CUZ": {
+    "2": {
+      "airline": "AF",
+      "departure_at": "2026-07-01T06:15:00+02:00",
+      "return_at": "2026-07-22T08:35:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 6484,
+      "flight_number": 1135,
+      "duration": 2920,
+      "duration_to": 950,
+      "duration_back": 950
+    }
+  },
+  "DAC": {
+    "1": {
+      "airline": "EW",
+      "departure_at": "2026-06-25T22:15:00+02:00",
+      "return_at": "2026-07-15T15:10:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2650,
+      "flight_number": 1166,
+      "duration": 4635,
+      "duration_to": 690,
+      "duration_back": 835
+    }
+  },
+  "DAD": {
+    "3": {
+      "airline": "VF",
+      "departure_at": "2026-09-11T12:30:00+02:00",
+      "return_at": "2026-09-27T08:55:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2727,
+      "flight_number": 58,
+      "duration": 5620,
+      "duration_to": 1170,
+      "duration_back": 1235
+    }
+  },
+  "DAR": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-08-01T22:10:00+02:00",
+      "return_at": "2026-09-05T21:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4758,
+      "flight_number": 1219,
+      "duration": 4790,
+      "duration_to": 895,
+      "duration_back": 745
+    }
+  },
+  "DBV": {
+    "1": {
+      "airline": "RK",
+      "departure_at": "2026-03-23T09:15:00+01:00",
+      "return_at": "2026-03-30T05:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 370,
+      "flight_number": 144,
+      "duration": 855,
+      "duration_to": 280,
+      "duration_back": 120
+    }
+  },
+  "DEL": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-04-16T12:30:00+02:00",
+      "return_at": "2026-05-22T04:15:00+05:30",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2001,
+      "flight_number": 58,
+      "duration": 4475,
+      "duration_to": 690,
+      "duration_back": 710
+    }
+  },
+  "DEN": {
+    "1": {
+      "airline": "LH",
+      "departure_at": "2026-06-02T08:50:00+02:00",
+      "return_at": "2026-06-08T17:50:00-06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2737,
+      "flight_number": 1929,
+      "duration": 1895,
+      "duration_to": 700,
+      "duration_back": 680
+    }
+  },
+  "DFW": {
+    "1": {
+      "airline": "BA",
+      "departure_at": "2026-03-16T10:15:00+01:00",
+      "return_at": "2026-03-23T19:45:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2516,
+      "flight_number": 973,
+      "duration": 1935,
+      "duration_to": 750,
+      "duration_back": 670
+    }
+  },
+  "DJE": {
+    "1": {
+      "airline": "U2",
+      "departure_at": "2026-04-02T06:00:00+02:00",
+      "return_at": "2026-04-05T07:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1713,
+      "flight_number": 5159,
+      "duration": 1605,
+      "duration_to": 280,
+      "duration_back": 290
+    }
+  },
+  "DLA": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-04-07T10:40:00+02:00",
+      "return_at": "2026-04-29T01:05:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2901,
+      "flight_number": 1722,
+      "duration": 1810,
+      "duration_to": 605,
+      "duration_back": 715
+    }
+  },
+  "DLM": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-04-29T16:35:00+02:00",
+      "return_at": "2026-05-05T22:05:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 500,
+      "flight_number": 60,
+      "duration": 1600,
+      "duration_to": 255,
+      "duration_back": 260
+    }
+  },
+  "DPS": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-06-01T08:20:00+02:00",
+      "return_at": "2026-06-20T11:15:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3039,
+      "flight_number": 196,
+      "duration": 3575,
+      "duration_to": 1100,
+      "duration_back": 1035
+    }
+  },
+  "DRS": {
+    "1": {
+      "airline": "EW",
+      "departure_at": "2026-05-04T19:50:00+02:00",
+      "return_at": "2026-05-12T08:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1199,
+      "flight_number": 9049,
+      "duration": 1200,
+      "duration_to": 130,
+      "duration_back": 140
+    }
+  },
+  "DTM": {
+    "1": {
+      "airline": "LO",
+      "departure_at": "2026-04-16T07:45:00+02:00",
+      "return_at": "2026-04-16T15:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1045,
+      "flight_number": 392,
+      "duration": 1345,
+      "duration_to": 180,
+      "duration_back": 295
+    }
+  },
+  "DUB": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-03-25T10:25:00+01:00",
+      "return_at": "2026-03-31T19:45:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 248,
+      "flight_number": 3670,
+      "duration": 280,
+      "duration_to": 145,
+      "duration_back": 135
+    }
+  },
+  "DUS": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-09-27T10:45:00+02:00",
+      "return_at": "2026-09-28T18:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 513,
+      "flight_number": 8042,
+      "duration": 135,
+      "duration_to": 65,
+      "duration_back": 70
+    }
+  },
+  "DVO": {
+    "4": {
+      "airline": "FR",
+      "departure_at": "2026-03-21T06:00:00+01:00",
+      "return_at": "2026-03-26T06:35:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3821,
+      "flight_number": 132,
+      "duration": 4510,
+      "duration_to": 1255,
+      "duration_back": 1220
+    }
+  },
+  "DXB": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-05-05T22:15:00+02:00",
+      "return_at": "2026-05-12T03:45:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 633,
+      "flight_number": 1166,
+      "duration": 1215,
+      "duration_to": 385,
+      "duration_back": 475
+    }
+  },
+  "DYU": {
+    "3": {
+      "airline": "LO",
+      "departure_at": "2026-03-19T11:25:00+01:00",
+      "return_at": "2026-03-22T03:25:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2257,
+      "flight_number": 388,
+      "duration": 4045,
+      "duration_to": 565,
+      "duration_back": 600
+    }
+  },
+  "EAP": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-03-19T07:45:00+01:00",
+      "return_at": "2026-03-24T21:10:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 308,
+      "flight_number": 5195,
+      "duration": 180,
+      "duration_to": 90,
+      "duration_back": 90
+    }
+  },
+  "EBB": {
+    "1": {
+      "airline": "MS",
+      "departure_at": "2026-07-11T15:45:00+02:00",
+      "return_at": "2026-07-25T04:20:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3295,
+      "flight_number": 732,
+      "duration": 1440,
+      "duration_to": 660,
+      "duration_back": 570
+    }
+  },
+  "EBL": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-03-15T15:25:00+01:00",
+      "return_at": "2026-03-27T03:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1158,
+      "flight_number": 980,
+      "duration": 1390,
+      "duration_to": 320,
+      "duration_back": 325
+    }
+  },
+  "ECN": {
+    "1": {
+      "airline": "XQ",
+      "departure_at": "2026-08-29T21:15:00+02:00",
+      "return_at": "2026-09-26T12:25:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 893,
+      "flight_number": 663,
+      "duration": 1110,
+      "duration_to": 260,
+      "duration_back": 275
+    }
+  },
+  "EDI": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-09-19T14:45:00+02:00",
+      "return_at": "2026-09-26T07:10:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 684,
+      "flight_number": 3262,
+      "duration": 1600,
+      "duration_to": 135,
+      "duration_back": 185
+    }
+  },
+  "EFL": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-07-09T21:15:00+02:00",
+      "return_at": "2026-07-16T09:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1249,
+      "flight_number": 144,
+      "duration": 2650,
+      "duration_to": 315,
+      "duration_back": 265
+    }
+  },
+  "EGS": {
+    "2": {
+      "airline": "LX",
+      "departure_at": "2026-04-01T20:40:00+02:00",
+      "return_at": "2026-04-08T09:05:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2415,
+      "flight_number": 979,
+      "duration": 2505,
+      "duration_to": 400,
+      "duration_back": 345
+    }
+  },
+  "EIN": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-05-01T21:45:00+02:00",
+      "return_at": "2026-05-03T10:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 664,
+      "flight_number": 146,
+      "duration": 1945,
+      "duration_to": 175,
+      "duration_back": 285
+    }
+  },
+  "ENU": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-07-09T15:10:00+02:00",
+      "return_at": "2026-07-24T13:25:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5420,
+      "flight_number": 1726,
+      "duration": 2455,
+      "duration_to": 800,
+      "duration_back": 795
+    }
+  },
+  "ERZ": {
+    "3": {
+      "airline": "W6",
+      "departure_at": "2026-04-26T07:50:00+02:00",
+      "return_at": "2026-05-16T22:20:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1107,
+      "flight_number": 7038,
+      "duration": 3325,
+      "duration_to": 375,
+      "duration_back": 315
+    }
+  },
+  "EVE": {
+    "1": {
+      "airline": "DY",
+      "departure_at": "2026-06-11T21:30:00+02:00",
+      "return_at": "2026-06-15T20:05:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 511,
+      "flight_number": 1109,
+      "duration": 1985,
+      "duration_to": 200,
+      "duration_back": 200
+    }
+  },
+  "EVN": {
+    "1": {
+      "airline": "W6",
+      "departure_at": "2026-04-13T08:20:00+02:00",
+      "return_at": "2026-04-16T05:30:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 517,
+      "flight_number": 7038,
+      "duration": 3995,
+      "duration_to": 280,
+      "duration_back": 305
+    }
+  },
+  "EZS": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-06-01T07:00:00+02:00",
+      "return_at": "2026-06-01T21:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1303,
+      "flight_number": 1728,
+      "duration": 1150,
+      "duration_to": 290,
+      "duration_back": 295
+    }
+  },
+  "FAE": {
+    "2": {
+      "airline": "KL",
+      "departure_at": "2026-05-21T12:10:00+02:00",
+      "return_at": "2026-05-26T14:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1758,
+      "flight_number": 1776,
+      "duration": 1675,
+      "duration_to": 275,
+      "duration_back": 265
+    }
+  },
+  "FAO": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-04-08T14:50:00+02:00",
+      "return_at": "2026-04-14T21:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 456,
+      "flight_number": 8692,
+      "duration": 1115,
+      "duration_to": 215,
+      "duration_back": 285
+    }
+  },
+  "FDF": {
+    "1": {
+      "airline": "AF",
+      "departure_at": "2026-05-22T06:15:00+02:00",
+      "return_at": "2026-05-31T20:35:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3012,
+      "flight_number": 1135,
+      "duration": 1750,
+      "duration_to": 645,
+      "duration_back": 605
+    }
+  },
+  "FDH": {
+    "2": {
+      "airline": "W6",
+      "departure_at": "2026-05-13T08:20:00+02:00",
+      "return_at": "2026-05-17T20:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 544,
+      "flight_number": 7038,
+      "duration": 2490,
+      "duration_to": 295,
+      "duration_back": 255
+    }
+  },
+  "FEG": {
+    "2": {
+      "airline": "J2",
+      "departure_at": "2026-03-17T10:45:00+01:00",
+      "return_at": "2026-04-25T13:00:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2616,
+      "flight_number": 64,
+      "duration": 2970,
+      "duration_to": 475,
+      "duration_back": 535
+    }
+  },
+  "FEZ": {
+    "1": {
+      "airline": "U2",
+      "departure_at": "2026-03-15T07:00:00+01:00",
+      "return_at": "2026-04-04T12:55:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1022,
+      "flight_number": 8628,
+      "duration": 2015,
+      "duration_to": 325,
+      "duration_back": 300
+    }
+  },
+  "FLL": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-04-17T07:45:00+02:00",
+      "return_at": "2026-05-03T07:00:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2595,
+      "flight_number": 207,
+      "duration": 2376,
+      "duration_to": 761,
+      "duration_back": 732
+    }
+  },
+  "FLN": {
+    "1": {
+      "airline": "TP",
+      "departure_at": "2026-03-17T17:10:00+01:00",
+      "return_at": "2026-04-17T06:40:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 6390,
+      "flight_number": 533,
+      "duration": 3920,
+      "duration_to": 895,
+      "duration_back": 855
+    }
+  },
+  "FLR": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-05-16T06:05:00+02:00",
+      "return_at": "2026-05-21T07:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 685,
+      "flight_number": 1576,
+      "duration": 1770,
+      "duration_to": 265,
+      "duration_back": 245
+    }
+  },
+  "FLW": {
+    "2": {
+      "airline": "TP",
+      "departure_at": "2026-07-20T17:20:00+02:00",
+      "return_at": "2026-07-26T10:00:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2530,
+      "flight_number": 533,
+      "duration": 1895,
+      "duration_to": 455,
+      "duration_back": 420
+    }
+  },
+  "FMM": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-03-11T06:20:00+01:00",
+      "return_at": "2026-03-18T13:45:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 760,
+      "flight_number": 177,
+      "duration": 3080,
+      "duration_to": 435,
+      "duration_back": 435
+    }
+  },
+  "FMO": {
+    "1": {
+      "airline": "LH",
+      "departure_at": "2026-03-09T18:55:00+01:00",
+      "return_at": "2026-03-10T20:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3149,
+      "flight_number": 1949,
+      "duration": 2645,
+      "duration_to": 140,
+      "duration_back": 420
+    }
+  },
+  "FNA": {
+    "1": {
+      "airline": "SN",
+      "departure_at": "2026-04-04T11:40:00+02:00",
+      "return_at": "2026-04-08T18:45:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5800,
+      "flight_number": 2582,
+      "duration": 3435,
+      "duration_to": 495,
+      "duration_back": 630
+    }
+  },
+  "FNC": {
+    "2": {
+      "airline": "MW",
+      "departure_at": "2026-04-21T06:05:00+02:00",
+      "return_at": "2026-04-28T17:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 618,
+      "flight_number": 3670,
+      "duration": 2180,
+      "duration_to": 435,
+      "duration_back": 345
+    }
+  },
+  "FRA": {
+    "0": {
+      "airline": "DE",
+      "departure_at": "2026-05-01T16:55:00+02:00",
+      "return_at": "2026-05-15T14:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 503,
+      "flight_number": 4086,
+      "duration": 135,
+      "duration_to": 70,
+      "duration_back": 65
+    }
+  },
+  "FUE": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-03-23T07:10:00+01:00",
+      "return_at": "2026-03-24T16:40:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 668,
+      "flight_number": 8180,
+      "duration": 1515,
+      "duration_to": 295,
+      "duration_back": 445
+    }
+  },
+  "GDN": {
+    "1": {
+      "airline": "DY",
+      "departure_at": "2026-05-05T21:30:00+02:00",
+      "return_at": "2026-06-04T21:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 508,
+      "flight_number": 1109,
+      "duration": 2095,
+      "duration_to": 185,
+      "duration_back": 185
+    }
+  },
+  "GDX": {
+    "3": {
+      "airline": "TK",
+      "departure_at": "2026-05-11T12:30:00+02:00",
+      "return_at": "2026-05-18T14:40:00+11:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3723,
+      "flight_number": 58,
+      "duration": 4630,
+      "duration_to": 950,
+      "duration_back": 930
+    }
+  },
+  "GLA": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-08-07T07:35:00+02:00",
+      "return_at": "2026-08-13T19:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 699,
+      "flight_number": 177,
+      "duration": 3105,
+      "duration_to": 205,
+      "duration_back": 195
+    }
+  },
+  "GNB": {
+    "1": {
+      "airline": "U2",
+      "departure_at": "2026-03-19T21:55:00+01:00",
+      "return_at": "2026-03-22T15:50:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 588,
+      "flight_number": 2202,
+      "duration": 1735,
+      "duration_to": 250,
+      "duration_back": 220
+    }
+  },
+  "GOA": {
+    "1": {
+      "airline": "W4",
+      "departure_at": "2026-05-22T08:45:00+02:00",
+      "return_at": "2026-05-26T13:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 621,
+      "flight_number": 5148,
+      "duration": 2775,
+      "duration_to": 250,
+      "duration_back": 320
+    }
+  },
+  "GOI": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-03-23T22:20:00+01:00",
+      "return_at": "2026-03-29T19:05:00+05:30",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3096,
+      "flight_number": 1174,
+      "duration": 4200,
+      "duration_to": 690,
+      "duration_back": 680
+    }
+  },
+  "GOJ": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-06-26T18:10:00+02:00",
+      "return_at": "2026-07-18T17:40:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2223,
+      "flight_number": 510,
+      "duration": 4105,
+      "duration_to": 515,
+      "duration_back": 610
+    }
+  },
+  "GOT": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-20T22:20:00+01:00",
+      "return_at": "2026-03-23T22:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 452,
+      "flight_number": 146,
+      "duration": 2215,
+      "duration_to": 225,
+      "duration_back": 225
+    }
+  },
+  "GRV": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-05-17T16:35:00+02:00",
+      "return_at": "2026-05-30T05:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1764,
+      "flight_number": 60,
+      "duration": 5855,
+      "duration_to": 315,
+      "duration_back": 445
+    }
+  },
+  "GRX": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-03-21T17:30:00+01:00",
+      "return_at": "2026-03-30T17:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 841,
+      "flight_number": 146,
+      "duration": 2550,
+      "duration_to": 350,
+      "duration_back": 245
+    }
+  },
+  "GUW": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-09-01T16:35:00+02:00",
+      "return_at": "2026-09-30T12:20:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1588,
+      "flight_number": 60,
+      "duration": 3790,
+      "duration_to": 380,
+      "duration_back": 645
+    }
+  },
+  "GVA": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-06-04T19:15:00+02:00",
+      "return_at": "2026-06-07T20:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 447,
+      "flight_number": 1590,
+      "duration": 205,
+      "duration_to": 105,
+      "duration_back": 100
+    }
+  },
+  "GZP": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-06-10T13:30:00+02:00",
+      "return_at": "2026-06-15T21:35:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 802,
+      "flight_number": 980,
+      "duration": 1325,
+      "duration_to": 250,
+      "duration_back": 260
+    }
+  },
+  "GZT": {
+    "0": {
+      "airline": "XQ",
+      "departure_at": "2026-05-25T21:45:00+02:00",
+      "return_at": "2026-06-02T08:25:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 711,
+      "flight_number": 1767,
+      "duration": 890,
+      "duration_to": 220,
+      "duration_back": 280
+    }
+  },
+  "HAK": {
+    "3": {
+      "airline": "PC",
+      "departure_at": "2026-10-03T08:40:00+02:00",
+      "return_at": "2026-10-13T16:20:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4827,
+      "flight_number": 982,
+      "duration": 2870,
+      "duration_to": 1090,
+      "duration_back": 1050
+    }
+  },
+  "HAN": {
+    "2": {
+      "airline": "U2",
+      "departure_at": "2026-06-03T06:20:00+02:00",
+      "return_at": "2026-06-13T18:45:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2748,
+      "flight_number": 8624,
+      "duration": 3805,
+      "duration_to": 1040,
+      "duration_back": 1035
+    }
+  },
+  "HAV": {
+    "2": {
+      "airline": "KL",
+      "departure_at": "2026-07-12T19:15:00+02:00",
+      "return_at": "2026-08-08T21:55:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3464,
+      "flight_number": 1782,
+      "duration": 2650,
+      "duration_to": 770,
+      "duration_back": 660
+    }
+  },
+  "HEL": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-04-17T18:25:00+02:00",
+      "return_at": "2026-04-21T13:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 541,
+      "flight_number": 8230,
+      "duration": 590,
+      "duration_to": 115,
+      "duration_back": 185
+    }
+  },
+  "HER": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-16T09:45:00+02:00",
+      "return_at": "2026-04-23T14:20:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 426,
+      "flight_number": 4335,
+      "duration": 380,
+      "duration_to": 190,
+      "duration_back": 190
+    }
+  },
+  "HGH": {
+    "2": {
+      "airline": "QR",
+      "departure_at": "2026-03-18T20:54:00+01:00",
+      "return_at": "2026-04-01T00:55:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3184,
+      "flight_number": 5644,
+      "duration": 3276,
+      "duration_to": 1193,
+      "duration_back": 955
+    }
+  },
+  "HIA": {
+    "4": {
+      "airline": "VF",
+      "departure_at": "2026-03-15T17:00:00+01:00",
+      "return_at": "2026-03-29T15:30:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4175,
+      "flight_number": 510,
+      "duration": 5375,
+      "duration_to": 1030,
+      "duration_back": 1085
+    }
+  },
+  "HKG": {
+    "1": {
+      "airline": "AY",
+      "departure_at": "2026-05-01T20:05:00+02:00",
+      "return_at": "2026-05-12T20:55:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2514,
+      "flight_number": 1438,
+      "duration": 2265,
+      "duration_to": 840,
+      "duration_back": 940
+    }
+  },
+  "HKT": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-04-22T22:05:00+02:00",
+      "return_at": "2026-05-05T11:10:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2641,
+      "flight_number": 1174,
+      "duration": 4075,
+      "duration_to": 860,
+      "duration_back": 935
+    }
+  },
+  "HNL": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-09-01T11:05:00+02:00",
+      "return_at": "2026-09-15T07:00:00-10:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4009,
+      "flight_number": 987,
+      "duration": 3475,
+      "duration_to": 1165,
+      "duration_back": 1033
+    }
+  },
+  "HOR": {
+    "1": {
+      "airline": "TP",
+      "departure_at": "2026-11-07T06:00:00+01:00",
+      "return_at": "2026-11-14T09:50:00-01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1410,
+      "flight_number": 8330,
+      "duration": 3235,
+      "duration_to": 395,
+      "duration_back": 400
+    }
+  },
+  "HOU": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-03-20T07:40:00+01:00",
+      "return_at": "2026-03-31T22:05:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2554,
+      "flight_number": 9214,
+      "duration": 2940,
+      "duration_to": 820,
+      "duration_back": 790
+    }
+  },
+  "HRB": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-04-16T10:45:00+02:00",
+      "return_at": "2026-05-05T22:20:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3355,
+      "flight_number": 179,
+      "duration": 2645,
+      "duration_to": 760,
+      "duration_back": 815
+    }
+  },
+  "HRG": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-03-12T12:00:00+01:00",
+      "return_at": "2026-03-25T02:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 677,
+      "flight_number": 978,
+      "duration": 1375,
+      "duration_to": 330,
+      "duration_back": 340
+    }
+  },
+  "IAS": {
+    "2": {
+      "airline": "MW",
+      "departure_at": "2026-04-14T19:10:00+02:00",
+      "return_at": "2026-04-16T06:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 638,
+      "flight_number": 2678,
+      "duration": 1990,
+      "duration_to": 360,
+      "duration_back": 250
+    }
+  },
+  "IBZ": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-08T16:00:00+02:00",
+      "return_at": "2026-04-12T23:15:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 581,
+      "flight_number": 208,
+      "duration": 820,
+      "duration_to": 175,
+      "duration_back": 255
+    }
+  },
+  "IGR": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-08-31T10:40:00+02:00",
+      "return_at": "2026-09-13T19:45:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4882,
+      "flight_number": 1722,
+      "duration": 5710,
+      "duration_to": 1365,
+      "duration_back": 1305
+    }
+  },
+  "IKT": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-07-02T13:30:00+02:00",
+      "return_at": "2026-07-17T19:05:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3758,
+      "flight_number": 980,
+      "duration": 3400,
+      "duration_to": 705,
+      "duration_back": 790
+    }
+  },
+  "IMP": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-07-23T22:10:00+02:00",
+      "return_at": "2026-08-22T04:00:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 7696,
+      "flight_number": 1219,
+      "duration": 4715,
+      "duration_to": 1160,
+      "duration_back": 1125
+    }
+  },
+  "INI": {
+    "1": {
+      "airline": "LX",
+      "departure_at": "2026-07-02T15:45:00+02:00",
+      "return_at": "2026-07-06T12:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 917,
+      "flight_number": 969,
+      "duration": 3390,
+      "duration_to": 200,
+      "duration_back": 265
+    }
+  },
+  "INN": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-14T09:50:00+01:00",
+      "return_at": "2026-03-18T16:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 868,
+      "flight_number": 1144,
+      "duration": 1515,
+      "duration_to": 260,
+      "duration_back": 230
+    }
+  },
+  "ISB": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-05-29T13:30:00+02:00",
+      "return_at": "2026-06-13T04:50:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2595,
+      "flight_number": 980,
+      "duration": 2205,
+      "duration_to": 610,
+      "duration_back": 775
+    }
+  },
+  "IST": {
+    "0": {
+      "airline": "VF",
+      "departure_at": "2026-04-13T16:35:00+02:00",
+      "return_at": "2026-04-24T13:35:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 285,
+      "flight_number": 60,
+      "duration": 355,
+      "duration_to": 175,
+      "duration_back": 180
+    }
+  },
+  "IZM": {
+    "0": {
+      "airline": "XQ",
+      "departure_at": "2026-04-20T14:30:00+02:00",
+      "return_at": "2026-04-23T21:45:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 516,
+      "flight_number": 947,
+      "duration": 1305,
+      "duration_to": 175,
+      "duration_back": 250
+    }
+  },
+  "JED": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-04-10T21:15:00+02:00",
+      "return_at": "2026-04-20T05:10:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1158,
+      "flight_number": 1158,
+      "duration": 1020,
+      "duration_to": 345,
+      "duration_back": 400
+    }
+  },
+  "JIB": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-05-30T10:40:00+02:00",
+      "return_at": "2026-06-27T23:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3176,
+      "flight_number": 1722,
+      "duration": 1450,
+      "duration_to": 490,
+      "duration_back": 485
+    }
+  },
+  "JKT": {
+    "3": {
+      "airline": "TK",
+      "departure_at": "2026-03-13T11:00:00+01:00",
+      "return_at": "2026-04-10T19:05:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3536,
+      "flight_number": 1722,
+      "duration": 4255,
+      "duration_to": 1170,
+      "duration_back": 1010
+    }
+  },
+  "JMK": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-05-09T06:00:00+02:00",
+      "return_at": "2026-05-13T20:45:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 802,
+      "flight_number": 144,
+      "duration": 2145,
+      "duration_to": 340,
+      "duration_back": 220
+    }
+  },
+  "JNB": {
+    "1": {
+      "airline": "KL",
+      "departure_at": "2026-04-22T19:15:00+02:00",
+      "return_at": "2026-05-12T23:15:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2253,
+      "flight_number": 1782,
+      "duration": 2425,
+      "duration_to": 730,
+      "duration_back": 745
+    }
+  },
+  "JNX": {
+    "2": {
+      "airline": "JU",
+      "departure_at": "2026-05-01T20:15:00+02:00",
+      "return_at": "2026-05-07T11:15:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1383,
+      "flight_number": 357,
+      "duration": 1325,
+      "duration_to": 245,
+      "duration_back": 220
+    }
+  },
+  "JRO": {
+    "1": {
+      "airline": "QR",
+      "departure_at": "2026-03-11T15:15:00+01:00",
+      "return_at": "2026-03-14T18:10:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3812,
+      "flight_number": 82,
+      "duration": 2675,
+      "duration_to": 840,
+      "duration_back": 685
+    }
+  },
+  "JTR": {
+    "2": {
+      "airline": "W4",
+      "departure_at": "2026-05-31T14:55:00+02:00",
+      "return_at": "2026-06-06T09:05:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 819,
+      "flight_number": 3976,
+      "duration": 3280,
+      "duration_to": 300,
+      "duration_back": 280
+    }
+  },
+  "KAN": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-07-09T21:10:00+02:00",
+      "return_at": "2026-07-24T13:35:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5721,
+      "flight_number": 997,
+      "duration": 3830,
+      "duration_to": 885,
+      "duration_back": 795
+    }
+  },
+  "KBL": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-05-23T16:35:00+02:00",
+      "return_at": "2026-06-19T17:10:00+04:30",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2885,
+      "flight_number": 60,
+      "duration": 2145,
+      "duration_to": 475,
+      "duration_back": 530
+    }
+  },
+  "KBV": {
+    "2": {
+      "airline": "EY",
+      "departure_at": "2026-08-09T16:40:00+02:00",
+      "return_at": "2026-08-23T19:20:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4085,
+      "flight_number": 1043,
+      "duration": 3810,
+      "duration_to": 865,
+      "duration_back": 890
+    }
+  },
+  "KGD": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-03-25T13:40:00+01:00",
+      "return_at": "2026-03-31T20:20:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1971,
+      "flight_number": 58,
+      "duration": 2160,
+      "duration_to": 590,
+      "duration_back": 530
+    }
+  },
+  "KGL": {
+    "1": {
+      "airline": "SN",
+      "departure_at": "2026-03-23T07:15:00+01:00",
+      "return_at": "2026-04-07T20:05:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2865,
+      "flight_number": 2592,
+      "duration": 1995,
+      "duration_to": 595,
+      "duration_back": 725
+    }
+  },
+  "KJA": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-04-25T19:40:00+02:00",
+      "return_at": "2026-05-09T07:40:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2762,
+      "flight_number": 984,
+      "duration": 3580,
+      "duration_to": 610,
+      "duration_back": 745
+    }
+  },
+  "KKN": {
+    "2": {
+      "airline": "SK",
+      "departure_at": "2026-04-03T21:25:00+02:00",
+      "return_at": "2026-04-11T09:40:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1872,
+      "flight_number": 1680,
+      "duration": 3635,
+      "duration_to": 260,
+      "duration_back": 275
+    }
+  },
+  "KLO": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-03-21T07:15:00+01:00",
+      "return_at": "2026-03-26T13:55:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5673,
+      "flight_number": 1150,
+      "duration": 4515,
+      "duration_to": 960,
+      "duration_back": 1140
+    }
+  },
+  "KLX": {
+    "1": {
+      "airline": "EW",
+      "departure_at": "2026-07-15T18:05:00+02:00",
+      "return_at": "2026-07-27T21:40:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1710,
+      "flight_number": 8762,
+      "duration": 1825,
+      "duration_to": 235,
+      "duration_back": 275
+    }
+  },
+  "KMG": {
+    "2": {
+      "airline": "DE",
+      "departure_at": "2026-03-18T06:50:00+01:00",
+      "return_at": "2026-04-01T06:55:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3849,
+      "flight_number": 4086,
+      "duration": 3400,
+      "duration_to": 1070,
+      "duration_back": 985
+    }
+  },
+  "KRK": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-23T06:00:00+01:00",
+      "return_at": "2026-03-27T20:25:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 441,
+      "flight_number": 6780,
+      "duration": 1665,
+      "duration_to": 190,
+      "duration_back": 215
+    }
+  },
+  "KRR": {
+    "2": {
+      "airline": "W6",
+      "departure_at": "2026-03-18T08:20:00+01:00",
+      "return_at": "2026-04-01T13:05:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1284,
+      "flight_number": 7038,
+      "duration": 2350,
+      "duration_to": 395,
+      "duration_back": 320
+    }
+  },
+  "KRS": {
+    "1": {
+      "airline": "DY",
+      "departure_at": "2026-09-11T09:45:00+02:00",
+      "return_at": "2026-09-20T17:05:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 528,
+      "flight_number": 1103,
+      "duration": 1390,
+      "duration_to": 150,
+      "duration_back": 145
+    }
+  },
+  "KSN": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-06-10T18:50:00+02:00",
+      "return_at": "2026-07-07T08:45:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1991,
+      "flight_number": 5008,
+      "duration": 2895,
+      "duration_to": 560,
+      "duration_back": 580
+    }
+  },
+  "KTI": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-10-01T15:20:00+02:00",
+      "return_at": "2026-10-31T07:35:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3727,
+      "flight_number": 2789,
+      "duration": 4205,
+      "duration_to": 990,
+      "duration_back": 1320
+    }
+  },
+  "KTM": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-04-16T07:05:00+02:00",
+      "return_at": "2026-05-03T08:45:00+05:45",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2553,
+      "flight_number": 1160,
+      "duration": 3830,
+      "duration_to": 690,
+      "duration_back": 725
+    }
+  },
+  "KTT": {
+    "1": {
+      "airline": "BT",
+      "departure_at": "2026-12-26T08:40:00+01:00",
+      "return_at": "2027-01-02T16:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1714,
+      "flight_number": 212,
+      "duration": 1995,
+      "duration_to": 220,
+      "duration_back": 225
+    }
+  },
+  "KUF": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-04-14T16:35:00+02:00",
+      "return_at": "2026-04-23T18:00:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1958,
+      "flight_number": 60,
+      "duration": 1910,
+      "duration_to": 530,
+      "duration_back": 585
+    }
+  },
+  "KUL": {
+    "1": {
+      "airline": "EW",
+      "departure_at": "2026-04-13T14:45:00+02:00",
+      "return_at": "2026-04-19T09:30:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2847,
+      "flight_number": 1180,
+      "duration": 3050,
+      "duration_to": 835,
+      "duration_back": 1010
+    }
+  },
+  "KUN": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-16T07:20:00+02:00",
+      "return_at": "2026-04-20T20:40:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 562,
+      "flight_number": 146,
+      "duration": 2025,
+      "duration_to": 265,
+      "duration_back": 150
+    }
+  },
+  "KUT": {
+    "0": {
+      "airline": "W6",
+      "departure_at": "2026-04-15T18:55:00+02:00",
+      "return_at": "2026-04-26T06:15:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 380,
+      "flight_number": 7910,
+      "duration": 475,
+      "duration_to": 230,
+      "duration_back": 245
+    }
+  },
+  "KZN": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-03-12T13:40:00+01:00",
+      "return_at": "2026-03-25T21:50:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1618,
+      "flight_number": 58,
+      "duration": 4060,
+      "duration_to": 450,
+      "duration_back": 550
+    }
+  },
+  "LAS": {
+    "1": {
+      "airline": "BA",
+      "departure_at": "2026-04-10T14:10:00+02:00",
+      "return_at": "2026-04-15T09:23:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2428,
+      "flight_number": 991,
+      "duration": 1927,
+      "duration_to": 770,
+      "duration_back": 847
+    }
+  },
+  "LAX": {
+    "1": {
+      "airline": "BA",
+      "departure_at": "2026-04-24T14:10:00+02:00",
+      "return_at": "2026-04-29T18:00:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1991,
+      "flight_number": 991,
+      "duration": 2785,
+      "duration_to": 795,
+      "duration_back": 765
+    }
+  },
+  "LCA": {
+    "1": {
+      "airline": "W6",
+      "departure_at": "2026-04-14T12:10:00+02:00",
+      "return_at": "2026-04-17T03:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 591,
+      "flight_number": 2316,
+      "duration": 2250,
+      "duration_to": 265,
+      "duration_back": 280
+    }
+  },
+  "LED": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-05-02T12:30:00+02:00",
+      "return_at": "2026-05-10T06:20:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1287,
+      "flight_number": 58,
+      "duration": 1275,
+      "duration_to": 410,
+      "duration_back": 415
+    }
+  },
+  "LEJ": {
+    "3": {
+      "airline": "W4",
+      "departure_at": "2026-05-25T14:55:00+02:00",
+      "return_at": "2026-06-01T17:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1337,
+      "flight_number": 3976,
+      "duration": 2810,
+      "duration_to": 490,
+      "duration_back": 315
+    }
+  },
+  "LHE": {
+    "1": {
+      "airline": "EW",
+      "departure_at": "2026-03-15T21:45:00+01:00",
+      "return_at": "2026-04-24T04:40:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3443,
+      "flight_number": 1166,
+      "duration": 2915,
+      "duration_to": 550,
+      "duration_back": 730
+    }
+  },
+  "LIM": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-04-25T09:30:00+02:00",
+      "return_at": "2026-05-16T22:18:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3982,
+      "flight_number": 148,
+      "duration": 3252,
+      "duration_to": 1000,
+      "duration_back": 1080
+    }
+  },
+  "LIS": {
+    "1": {
+      "airline": "MW",
+      "departure_at": "2026-04-14T06:05:00+02:00",
+      "return_at": "2026-04-24T21:40:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 416,
+      "flight_number": 3670,
+      "duration": 1510,
+      "duration_to": 310,
+      "duration_back": 270
+    }
+  },
+  "LJU": {
+    "1": {
+      "airline": "LO",
+      "departure_at": "2026-03-21T18:40:00+01:00",
+      "return_at": "2026-03-29T13:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 693,
+      "flight_number": 390,
+      "duration": 1395,
+      "duration_to": 165,
+      "duration_back": 175
+    }
+  },
+  "LON": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-17T21:45:00+02:00",
+      "return_at": "2026-04-20T07:15:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 205,
+      "flight_number": 146,
+      "duration": 215,
+      "duration_to": 110,
+      "duration_back": 105
+    }
+  },
+  "LOS": {
+    "1": {
+      "airline": "AF",
+      "departure_at": "2026-04-13T06:15:00+02:00",
+      "return_at": "2026-05-07T23:55:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2864,
+      "flight_number": 1135,
+      "duration": 1970,
+      "duration_to": 530,
+      "duration_back": 515
+    }
+  },
+  "LPA": {
+    "0": {
+      "airline": "MW",
+      "departure_at": "2026-03-18T07:05:00+01:00",
+      "return_at": "2026-03-30T11:10:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 586,
+      "flight_number": 2502,
+      "duration": 1750,
+      "duration_to": 315,
+      "duration_back": 545
+    }
+  },
+  "LPL": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-03-20T09:30:00+01:00",
+      "return_at": "2026-03-27T06:00:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 344,
+      "flight_number": 3496,
+      "duration": 245,
+      "duration_to": 130,
+      "duration_back": 115
+    }
+  },
+  "LUX": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-29T06:50:00+02:00",
+      "return_at": "2026-05-09T18:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 419,
+      "flight_number": 177,
+      "duration": 2515,
+      "duration_to": 185,
+      "duration_back": 185
+    }
+  },
+  "LXA": {
+    "4": {
+      "airline": "PC",
+      "departure_at": "2026-03-27T15:25:00+01:00",
+      "return_at": "2026-04-04T14:55:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4966,
+      "flight_number": 980,
+      "duration": 5825,
+      "duration_to": 995,
+      "duration_back": 970
+    }
+  },
+  "LXR": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-03-18T14:55:00+01:00",
+      "return_at": "2026-04-01T07:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2189,
+      "flight_number": 8212,
+      "duration": 3690,
+      "duration_to": 480,
+      "duration_back": 385
+    }
+  },
+  "LYR": {
+    "2": {
+      "airline": "SK",
+      "departure_at": "2026-05-25T10:05:00+02:00",
+      "return_at": "2026-05-31T15:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1156,
+      "flight_number": 1674,
+      "duration": 1590,
+      "duration_to": 305,
+      "duration_back": 270
+    }
+  },
+  "LYS": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-19T21:25:00+01:00",
+      "return_at": "2026-03-22T07:50:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 816,
+      "flight_number": 177,
+      "duration": 2280,
+      "duration_to": 210,
+      "duration_back": 210
+    }
+  },
+  "LZH": {
+    "2": {
+      "airline": "1Z",
+      "departure_at": "2026-03-18T16:30:00+01:00",
+      "return_at": "2026-04-22T22:45:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3521,
+      "flight_number": 1780,
+      "duration": 3155,
+      "duration_to": 905,
+      "duration_back": 1000
+    }
+  },
+  "MAD": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-15T06:05:00+02:00",
+      "return_at": "2026-04-17T22:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 366,
+      "flight_number": 2527,
+      "duration": 1525,
+      "duration_to": 195,
+      "duration_back": 250
+    }
+  },
+  "MAH": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-03-27T17:45:00+01:00",
+      "return_at": "2026-04-03T07:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1112,
+      "flight_number": 1148,
+      "duration": 2275,
+      "duration_to": 385,
+      "duration_back": 315
+    }
+  },
+  "MAN": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-30T16:00:00+02:00",
+      "return_at": "2026-05-03T06:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 419,
+      "flight_number": 1144,
+      "duration": 235,
+      "duration_to": 120,
+      "duration_back": 115
+    }
+  },
+  "MBA": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-07-01T13:00:00+02:00",
+      "return_at": "2026-07-11T03:05:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3237,
+      "flight_number": 1730,
+      "duration": 1680,
+      "duration_to": 620,
+      "duration_back": 610
+    }
+  },
+  "MCT": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-05-09T19:40:00+02:00",
+      "return_at": "2026-06-26T04:35:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1689,
+      "flight_number": 984,
+      "duration": 2380,
+      "duration_to": 455,
+      "duration_back": 480
+    }
+  },
+  "MCX": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-04-09T19:40:00+02:00",
+      "return_at": "2026-04-20T13:30:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1250,
+      "flight_number": 984,
+      "duration": 2790,
+      "duration_to": 330,
+      "duration_back": 365
+    }
+  },
+  "MDE": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-03T09:40:00+02:00",
+      "return_at": "2026-05-03T05:00:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3741,
+      "flight_number": 2527,
+      "duration": 2465,
+      "duration_to": 805,
+      "duration_back": 1034
+    }
+  },
+  "MED": {
+    "1": {
+      "airline": "QR",
+      "departure_at": "2026-03-10T21:40:00+01:00",
+      "return_at": "2026-03-19T04:50:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2534,
+      "flight_number": 84,
+      "duration": 2350,
+      "duration_to": 500,
+      "duration_back": 495
+    }
+  },
+  "MEL": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-04-11T22:10:00+02:00",
+      "return_at": "2026-04-25T21:35:00+10:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4243,
+      "flight_number": 1219,
+      "duration": 4870,
+      "duration_to": 1365,
+      "duration_back": 1430
+    }
+  },
+  "MEX": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-04-12T12:55:00+02:00",
+      "return_at": "2026-04-27T12:35:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2868,
+      "flight_number": 993,
+      "duration": 2820,
+      "duration_to": 902,
+      "duration_back": 846
+    }
+  },
+  "MGQ": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-05-30T13:00:00+02:00",
+      "return_at": "2026-06-26T09:45:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3652,
+      "flight_number": 1730,
+      "duration": 1870,
+      "duration_to": 590,
+      "duration_back": 600
+    }
+  },
+  "MHT": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-03-13T09:50:00+01:00",
+      "return_at": "2026-03-15T16:12:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3833,
+      "flight_number": 973,
+      "duration": 2122,
+      "duration_to": 818,
+      "duration_back": 645
+    }
+  },
+  "MIA": {
+    "1": {
+      "airline": "IB",
+      "departure_at": "2026-10-29T06:35:00+01:00",
+      "return_at": "2026-11-06T22:20:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2183,
+      "flight_number": 788,
+      "duration": 1950,
+      "duration_to": 810,
+      "duration_back": 640
+    }
+  },
+  "MIL": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-16T18:35:00+02:00",
+      "return_at": "2026-04-18T05:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 135,
+      "flight_number": 8,
+      "duration": 205,
+      "duration_to": 105,
+      "duration_back": 100
+    }
+  },
+  "MIR": {
+    "1": {
+      "airline": "LH",
+      "departure_at": "2026-05-12T20:45:00+02:00",
+      "return_at": "2026-05-19T08:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 869,
+      "flight_number": 201,
+      "duration": 1375,
+      "duration_to": 220,
+      "duration_back": 205
+    }
+  },
+  "MLA": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-12T21:50:00+02:00",
+      "return_at": "2026-04-15T14:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 429,
+      "flight_number": 9952,
+      "duration": 2655,
+      "duration_to": 215,
+      "duration_back": 290
+    }
+  },
+  "MLE": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-06-01T12:30:00+02:00",
+      "return_at": "2026-06-08T09:10:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3045,
+      "flight_number": 58,
+      "duration": 3315,
+      "duration_to": 715,
+      "duration_back": 735
+    }
+  },
+  "MMK": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-04-03T16:35:00+02:00",
+      "return_at": "2026-04-12T06:15:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2627,
+      "flight_number": 60,
+      "duration": 4650,
+      "duration_to": 520,
+      "duration_back": 525
+    }
+  },
+  "MNL": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-05-01T12:30:00+02:00",
+      "return_at": "2026-05-08T22:45:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1815,
+      "flight_number": 58,
+      "duration": 4130,
+      "duration_to": 1020,
+      "duration_back": 1085
+    }
+  },
+  "MOW": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-03-25T13:40:00+01:00",
+      "return_at": "2026-04-02T01:45:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 883,
+      "flight_number": 58,
+      "duration": 1655,
+      "duration_to": 435,
+      "duration_back": 495
+    }
+  },
+  "MPH": {
+    "3": {
+      "airline": "QR",
+      "departure_at": "2026-03-21T21:40:00+01:00",
+      "return_at": "2026-03-26T11:55:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5872,
+      "flight_number": 84,
+      "duration": 3875,
+      "duration_to": 1000,
+      "duration_back": 1280
+    }
+  },
+  "MPL": {
+    "1": {
+      "airline": "LX",
+      "departure_at": "2026-07-10T07:15:00+02:00",
+      "return_at": "2026-07-17T14:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 924,
+      "flight_number": 963,
+      "duration": 650,
+      "duration_to": 170,
+      "duration_back": 165
+    }
+  },
+  "MQF": {
+    "3": {
+      "airline": "JU",
+      "departure_at": "2026-07-12T20:15:00+02:00",
+      "return_at": "2026-07-25T21:30:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3843,
+      "flight_number": 357,
+      "duration": 4250,
+      "duration_to": 625,
+      "duration_back": 635
+    }
+  },
+  "MRS": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-13T22:20:00+01:00",
+      "return_at": "2026-03-21T06:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 490,
+      "flight_number": 146,
+      "duration": 795,
+      "duration_to": 230,
+      "duration_back": 130
+    }
+  },
+  "MRU": {
+    "1": {
+      "airline": "LH",
+      "departure_at": "2026-11-01T15:40:00+01:00",
+      "return_at": "2026-11-11T11:30:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3553,
+      "flight_number": 189,
+      "duration": 2030,
+      "duration_to": 895,
+      "duration_back": 775
+    }
+  },
+  "MRV": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-03-12T15:25:00+01:00",
+      "return_at": "2026-03-28T19:35:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1364,
+      "flight_number": 980,
+      "duration": 2480,
+      "duration_to": 365,
+      "duration_back": 410
+    }
+  },
+  "MSQ": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-05-14T19:40:00+02:00",
+      "return_at": "2026-05-17T10:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2000,
+      "flight_number": 984,
+      "duration": 3200,
+      "duration_to": 505,
+      "duration_back": 520
+    }
+  },
+  "MUC": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-15T08:00:00+02:00",
+      "return_at": "2026-04-17T21:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 583,
+      "flight_number": 2670,
+      "duration": 1370,
+      "duration_to": 175,
+      "duration_back": 230
+    }
+  },
+  "NAL": {
+    "3": {
+      "airline": "W6",
+      "departure_at": "2026-03-09T16:00:00+01:00",
+      "return_at": "2026-03-27T15:05:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4333,
+      "flight_number": 4740,
+      "duration": 2635,
+      "duration_to": 670,
+      "duration_back": 700
+    }
+  },
+  "NAP": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-11T07:50:00+02:00",
+      "return_at": "2026-04-18T07:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 468,
+      "flight_number": 2670,
+      "duration": 895,
+      "duration_to": 190,
+      "duration_back": 140
+    }
+  },
+  "NBO": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-05-20T07:00:00+02:00",
+      "return_at": "2026-05-24T03:10:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2211,
+      "flight_number": 1728,
+      "duration": 1765,
+      "duration_to": 585,
+      "duration_back": 570
+    }
+  },
+  "NCE": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-05-08T18:10:00+02:00",
+      "return_at": "2026-05-15T20:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 347,
+      "flight_number": 5145,
+      "duration": 250,
+      "duration_to": 125,
+      "duration_back": 125
+    }
+  },
+  "NCU": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-04-09T19:40:00+02:00",
+      "return_at": "2026-05-09T08:50:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2643,
+      "flight_number": 984,
+      "duration": 3955,
+      "duration_to": 630,
+      "duration_back": 480
+    }
+  },
+  "NGB": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-16T07:55:00+01:00",
+      "return_at": "2026-03-26T12:25:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2910,
+      "flight_number": 196,
+      "duration": 3190,
+      "duration_to": 750,
+      "duration_back": 825
+    }
+  },
+  "NHA": {
+    "2": {
+      "airline": "W6",
+      "departure_at": "2026-04-08T12:10:00+02:00",
+      "return_at": "2026-04-30T12:00:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3039,
+      "flight_number": 2316,
+      "duration": 4730,
+      "duration_to": 885,
+      "duration_back": 1010
+    }
+  },
+  "NNG": {
+    "2": {
+      "airline": "DE",
+      "departure_at": "2026-03-18T06:50:00+01:00",
+      "return_at": "2026-04-01T07:35:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3685,
+      "flight_number": 4086,
+      "duration": 2810,
+      "duration_to": 900,
+      "duration_back": 955
+    }
+  },
+  "NOZ": {
+    "3": {
+      "airline": "WX",
+      "departure_at": "2026-03-31T21:25:00+02:00",
+      "return_at": "2026-04-12T10:30:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2968,
+      "flight_number": 1680,
+      "duration": 5040,
+      "duration_to": 720,
+      "duration_back": 665
+    }
+  },
+  "NQZ": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-04-15T13:30:00+02:00",
+      "return_at": "2026-04-19T05:15:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1456,
+      "flight_number": 980,
+      "duration": 2555,
+      "duration_to": 460,
+      "duration_back": 625
+    }
+  },
+  "NTE": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-05-11T22:10:00+02:00",
+      "return_at": "2026-05-20T09:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 432,
+      "flight_number": 216,
+      "duration": 1685,
+      "duration_to": 275,
+      "duration_back": 190
+    }
+  },
+  "NUE": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-03-23T11:20:00+01:00",
+      "return_at": "2026-03-24T20:35:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 869,
+      "flight_number": 1148,
+      "duration": 1880,
+      "duration_to": 330,
+      "duration_back": 290
+    }
+  },
+  "NYC": {
+    "1": {
+      "airline": "EI",
+      "departure_at": "2026-10-08T10:40:00+02:00",
+      "return_at": "2026-10-24T16:55:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1450,
+      "flight_number": 333,
+      "duration": 2320,
+      "duration_to": 605,
+      "duration_back": 530
+    }
+  },
+  "OAK": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-05-16T06:40:00+02:00",
+      "return_at": "2026-05-20T08:30:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4702,
+      "flight_number": 999,
+      "duration": 2674,
+      "duration_to": 844,
+      "duration_back": 847
+    }
+  },
+  "OGG": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-08-31T07:45:00+02:00",
+      "return_at": "2026-09-13T22:00:00-10:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4055,
+      "flight_number": 207,
+      "duration": 3015,
+      "duration_to": 1080,
+      "duration_back": 1019
+    }
+  },
+  "OGZ": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-06-10T16:35:00+02:00",
+      "return_at": "2026-06-20T12:15:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1283,
+      "flight_number": 60,
+      "duration": 2930,
+      "duration_to": 325,
+      "duration_back": 345
+    }
+  },
+  "OLB": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-08-16T07:40:00+02:00",
+      "return_at": "2026-08-23T10:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 493,
+      "flight_number": 8844,
+      "duration": 285,
+      "duration_to": 145,
+      "duration_back": 140
+    }
+  },
+  "OMS": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-05-20T13:30:00+02:00",
+      "return_at": "2026-06-20T01:00:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1798,
+      "flight_number": 980,
+      "duration": 4405,
+      "duration_to": 625,
+      "duration_back": 650
+    }
+  },
+  "ONT": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-04-24T06:30:00+02:00",
+      "return_at": "2026-04-29T16:39:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2082,
+      "flight_number": 999,
+      "duration": 2178,
+      "duration_to": 863,
+      "duration_back": 871
+    }
+  },
+  "OPO": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-04-15T07:05:00+02:00",
+      "return_at": "2026-04-22T10:05:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 330,
+      "flight_number": 8600,
+      "duration": 385,
+      "duration_to": 195,
+      "duration_back": 190
+    }
+  },
+  "ORK": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-03T22:10:00+02:00",
+      "return_at": "2026-04-05T09:15:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1011,
+      "flight_number": 2377,
+      "duration": 1045,
+      "duration_to": 210,
+      "duration_back": 250
+    }
+  },
+  "ORL": {
+    "1": {
+      "airline": "FI",
+      "departure_at": "2026-04-14T14:05:00+02:00",
+      "return_at": "2026-05-07T22:00:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2367,
+      "flight_number": 529,
+      "duration": 2755,
+      "duration_to": 710,
+      "duration_back": 660
+    }
+  },
+  "OSA": {
+    "3": {
+      "airline": "FR",
+      "departure_at": "2026-05-25T08:20:00+02:00",
+      "return_at": "2026-06-22T07:40:00+09:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3196,
+      "flight_number": 196,
+      "duration": 3725,
+      "duration_to": 1040,
+      "duration_back": 1125
+    }
+  },
+  "OSL": {
+    "0": {
+      "airline": "DY",
+      "departure_at": "2026-04-17T21:00:00+02:00",
+      "return_at": "2026-04-19T07:20:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 309,
+      "flight_number": 1109,
+      "duration": 195,
+      "duration_to": 100,
+      "duration_back": 95
+    }
+  },
+  "OSR": {
+    "1": {
+      "airline": "LO",
+      "departure_at": "2026-05-27T11:20:00+02:00",
+      "return_at": "2026-05-31T14:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 833,
+      "flight_number": 388,
+      "duration": 600,
+      "duration_to": 135,
+      "duration_back": 135
+    }
+  },
+  "OSS": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-05-02T19:40:00+02:00",
+      "return_at": "2026-05-11T07:10:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1477,
+      "flight_number": 984,
+      "duration": 3750,
+      "duration_to": 455,
+      "duration_back": 515
+    }
+  },
+  "OUA": {
+    "1": {
+      "airline": "SN",
+      "departure_at": "2026-06-01T20:50:00+02:00",
+      "return_at": "2026-06-30T21:05:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1912,
+      "flight_number": 2590,
+      "duration": 2495,
+      "duration_to": 465,
+      "duration_back": 445
+    }
+  },
+  "OUL": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-03-19T14:35:00+01:00",
+      "return_at": "2026-03-31T05:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1064,
+      "flight_number": 4601,
+      "duration": 1545,
+      "duration_to": 240,
+      "duration_back": 190
+    }
+  },
+  "OVB": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-03-12T13:40:00+01:00",
+      "return_at": "2026-03-21T06:25:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2124,
+      "flight_number": 58,
+      "duration": 4430,
+      "duration_to": 685,
+      "duration_back": 730
+    }
+  },
+  "PAR": {
+    "0": {
+      "airline": "TO",
+      "departure_at": "2026-05-08T20:55:00+02:00",
+      "return_at": "2026-05-12T05:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 329,
+      "flight_number": 4069,
+      "duration": 1655,
+      "duration_to": 115,
+      "duration_back": 195
+    }
+  },
+  "PDL": {
+    "1": {
+      "airline": "TP",
+      "departure_at": "2026-06-27T06:00:00+02:00",
+      "return_at": "2026-07-04T19:35:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1240,
+      "flight_number": 535,
+      "duration": 2080,
+      "duration_to": 375,
+      "duration_back": 355
+    }
+  },
+  "PDX": {
+    "1": {
+      "airline": "FI",
+      "departure_at": "2026-04-13T14:05:00+02:00",
+      "return_at": "2026-05-18T15:30:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2149,
+      "flight_number": 529,
+      "duration": 1535,
+      "duration_to": 715,
+      "duration_back": 670
+    }
+  },
+  "PEE": {
+    "2": {
+      "airline": "J2",
+      "departure_at": "2026-04-19T11:35:00+02:00",
+      "return_at": "2026-05-09T06:10:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2206,
+      "flight_number": 64,
+      "duration": 4510,
+      "duration_to": 600,
+      "duration_back": 580
+    }
+  },
+  "PFO": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-14T06:00:00+02:00",
+      "return_at": "2026-04-21T20:20:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 544,
+      "flight_number": 353,
+      "duration": 925,
+      "duration_to": 215,
+      "duration_back": 270
+    }
+  },
+  "PHC": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-07-09T19:50:00+02:00",
+      "return_at": "2026-07-24T20:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4541,
+      "flight_number": 1953,
+      "duration": 2055,
+      "duration_to": 605,
+      "duration_back": 585
+    }
+  },
+  "PHX": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-03-12T12:10:00+01:00",
+      "return_at": "2026-03-16T14:30:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3453,
+      "flight_number": 977,
+      "duration": 2194,
+      "duration_to": 915,
+      "duration_back": 799
+    }
+  },
+  "PKC": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-03-10T18:10:00+01:00",
+      "return_at": "2026-03-16T16:15:00+12:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3490,
+      "flight_number": 986,
+      "duration": 4990,
+      "duration_to": 975,
+      "duration_back": 935
+    }
+  },
+  "PLQ": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-23T07:20:00+02:00",
+      "return_at": "2026-04-26T22:10:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 510,
+      "flight_number": 146,
+      "duration": 1195,
+      "duration_to": 255,
+      "duration_back": 255
+    }
+  },
+  "PMF": {
+    "1": {
+      "airline": "W4",
+      "departure_at": "2026-06-22T08:45:00+02:00",
+      "return_at": "2026-06-25T20:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 596,
+      "flight_number": 5148,
+      "duration": 555,
+      "duration_to": 240,
+      "duration_back": 105
+    }
+  },
+  "PMI": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-13T22:10:00+02:00",
+      "return_at": "2026-04-21T06:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 162,
+      "flight_number": 216,
+      "duration": 330,
+      "duration_to": 165,
+      "duration_back": 165
+    }
+  },
+  "PMO": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-09T19:15:00+02:00",
+      "return_at": "2026-04-12T21:40:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 461,
+      "flight_number": 3311,
+      "duration": 1340,
+      "duration_to": 210,
+      "duration_back": 200
+    }
+  },
+  "PMW": {
+    "3": {
+      "airline": "TP",
+      "departure_at": "2026-07-23T06:00:00+02:00",
+      "return_at": "2026-08-22T03:40:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 6827,
+      "flight_number": 535,
+      "duration": 3785,
+      "duration_to": 1065,
+      "duration_back": 1260
+    }
+  },
+  "POA": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-12-10T14:30:00+01:00",
+      "return_at": "2027-01-15T18:25:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4197,
+      "flight_number": 1726,
+      "duration": 3615,
+      "duration_to": 1100,
+      "duration_back": 1040
+    }
+  },
+  "POP": {
+    "2": {
+      "airline": "AY",
+      "departure_at": "2026-09-14T08:50:00+02:00",
+      "return_at": "2026-09-25T15:29:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4334,
+      "flight_number": 1432,
+      "duration": 3310,
+      "duration_to": 869,
+      "duration_back": 834
+    }
+  },
+  "POS": {
+    "1": {
+      "airline": "KL",
+      "departure_at": "2026-03-21T06:00:00+01:00",
+      "return_at": "2026-03-28T21:55:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2663,
+      "flight_number": 1770,
+      "duration": 1935,
+      "duration_to": 825,
+      "duration_back": 630
+    }
+  },
+  "PPS": {
+    "3": {
+      "airline": "TK",
+      "departure_at": "2026-04-13T12:30:00+02:00",
+      "return_at": "2026-04-19T19:50:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3121,
+      "flight_number": 58,
+      "duration": 6060,
+      "duration_to": 1110,
+      "duration_back": 1180
+    }
+  },
+  "PPT": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-05-19T08:15:00+02:00",
+      "return_at": "2026-05-29T23:45:00-10:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 6912,
+      "flight_number": 171,
+      "duration": 3620,
+      "duration_to": 1250,
+      "duration_back": 1230
+    }
+  },
+  "PQC": {
+    "4": {
+      "airline": "U2",
+      "departure_at": "2026-03-23T07:45:00+01:00",
+      "return_at": "2026-03-29T21:00:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4354,
+      "flight_number": 5261,
+      "duration": 4275,
+      "duration_to": 1020,
+      "duration_back": 1150
+    }
+  },
+  "PRG": {
+    "1": {
+      "airline": "LO",
+      "departure_at": "2026-06-09T07:45:00+02:00",
+      "return_at": "2026-06-10T09:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 673,
+      "flight_number": 392,
+      "duration": 1140,
+      "duration_to": 145,
+      "duration_back": 140
+    }
+  },
+  "PRN": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-03-14T09:25:00+01:00",
+      "return_at": "2026-03-21T08:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 647,
+      "flight_number": 982,
+      "duration": 1710,
+      "duration_to": 270,
+      "duration_back": 165
+    }
+  },
+  "PSA": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-11T17:10:00+02:00",
+      "return_at": "2026-04-14T16:40:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 266,
+      "flight_number": 9952,
+      "duration": 230,
+      "duration_to": 115,
+      "duration_back": 115
+    }
+  },
+  "PUJ": {
+    "2": {
+      "airline": "AC",
+      "departure_at": "2026-03-17T14:40:00+01:00",
+      "return_at": "2026-03-28T18:40:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2974,
+      "flight_number": 9537,
+      "duration": 5455,
+      "duration_to": 840,
+      "duration_back": 805
+    }
+  },
+  "PUQ": {
+    "4": {
+      "airline": "TP",
+      "departure_at": "2026-09-24T06:00:00+02:00",
+      "return_at": "2026-10-01T09:49:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5908,
+      "flight_number": 535,
+      "duration": 4959,
+      "duration_to": 1553,
+      "duration_back": 1415
+    }
+  },
+  "PUS": {
+    "2": {
+      "airline": "U2",
+      "departure_at": "2026-06-10T10:20:00+02:00",
+      "return_at": "2026-06-15T12:45:00+09:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2689,
+      "flight_number": 8630,
+      "duration": 4215,
+      "duration_to": 860,
+      "duration_back": 915
+    }
+  },
+  "PUY": {
+    "1": {
+      "airline": "LH",
+      "departure_at": "2026-07-15T06:20:00+02:00",
+      "return_at": "2026-07-22T16:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 807,
+      "flight_number": 1961,
+      "duration": 845,
+      "duration_to": 130,
+      "duration_back": 130
+    }
+  },
+  "QOW": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-07-09T07:00:00+02:00",
+      "return_at": "2026-07-24T12:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 7192,
+      "flight_number": 1728,
+      "duration": 2755,
+      "duration_to": 670,
+      "duration_back": 630
+    }
+  },
+  "RAK": {
+    "0": {
+      "airline": "TO",
+      "departure_at": "2026-03-19T18:55:00+01:00",
+      "return_at": "2026-03-27T10:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 760,
+      "flight_number": 9864,
+      "duration": 880,
+      "duration_to": 265,
+      "duration_back": 340
+    }
+  },
+  "RBA": {
+    "1": {
+      "airline": "EI",
+      "departure_at": "2026-05-21T21:45:00+02:00",
+      "return_at": "2026-06-06T21:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 932,
+      "flight_number": 337,
+      "duration": 1570,
+      "duration_to": 350,
+      "duration_back": 295
+    }
+  },
+  "REG": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-24T21:20:00+02:00",
+      "return_at": "2026-05-01T06:15:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 320,
+      "flight_number": 8602,
+      "duration": 1665,
+      "duration_to": 155,
+      "duration_back": 215
+    }
+  },
+  "REK": {
+    "1": {
+      "airline": "DY",
+      "departure_at": "2026-04-08T20:45:00+02:00",
+      "return_at": "2026-04-14T20:05:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 724,
+      "flight_number": 1109,
+      "duration": 1710,
+      "duration_to": 270,
+      "duration_back": 255
+    }
+  },
+  "REU": {
+    "1": {
+      "airline": "U2",
+      "departure_at": "2026-04-03T21:45:00+02:00",
+      "return_at": "2026-04-06T10:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1829,
+      "flight_number": 2604,
+      "duration": 3525,
+      "duration_to": 255,
+      "duration_back": 240
+    }
+  },
+  "RHO": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-07-01T06:10:00+02:00",
+      "return_at": "2026-07-08T10:45:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 538,
+      "flight_number": 4396,
+      "duration": 390,
+      "duration_to": 190,
+      "duration_back": 200
+    }
+  },
+  "RIO": {
+    "1": {
+      "airline": "TP",
+      "departure_at": "2026-09-17T06:00:00+02:00",
+      "return_at": "2026-09-27T15:35:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3552,
+      "flight_number": 535,
+      "duration": 2365,
+      "duration_to": 1050,
+      "duration_back": 795
+    }
+  },
+  "RIX": {
+    "1": {
+      "airline": "DY",
+      "departure_at": "2026-09-08T21:30:00+02:00",
+      "return_at": "2026-09-10T16:30:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 422,
+      "flight_number": 1109,
+      "duration": 1225,
+      "duration_to": 190,
+      "duration_back": 145
+    }
+  },
+  "RJK": {
+    "1": {
+      "airline": "LH",
+      "departure_at": "2026-04-24T07:20:00+02:00",
+      "return_at": "2026-04-24T12:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1231,
+      "flight_number": 1963,
+      "duration": 640,
+      "duration_to": 135,
+      "duration_back": 135
+    }
+  },
+  "RMF": {
+    "1": {
+      "airline": "LX",
+      "departure_at": "2026-03-18T20:40:00+01:00",
+      "return_at": "2026-04-01T14:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1155,
+      "flight_number": 979,
+      "duration": 1655,
+      "duration_to": 360,
+      "duration_back": 390
+    }
+  },
+  "RMI": {
+    "2": {
+      "airline": "W6",
+      "departure_at": "2026-05-18T12:10:00+02:00",
+      "return_at": "2026-05-26T13:10:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1051,
+      "flight_number": 2316,
+      "duration": 3550,
+      "duration_to": 275,
+      "duration_back": 295
+    }
+  },
+  "RMO": {
+    "0": {
+      "airline": "W4",
+      "departure_at": "2026-05-20T14:55:00+02:00",
+      "return_at": "2026-05-24T06:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 238,
+      "flight_number": 3976,
+      "duration": 270,
+      "duration_to": 130,
+      "duration_back": 140
+    }
+  },
+  "RMU": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-03-21T09:50:00+01:00",
+      "return_at": "2026-03-30T21:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 813,
+      "flight_number": 1144,
+      "duration": 3015,
+      "duration_to": 365,
+      "duration_back": 375
+    }
+  },
+  "ROM": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-04-13T08:20:00+02:00",
+      "return_at": "2026-04-20T23:30:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 334,
+      "flight_number": 196,
+      "duration": 1340,
+      "duration_to": 190,
+      "duration_back": 270
+    }
+  },
+  "RTM": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-04-22T13:55:00+02:00",
+      "return_at": "2026-04-24T19:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 960,
+      "flight_number": 1639,
+      "duration": 2820,
+      "duration_to": 365,
+      "duration_back": 160
+    }
+  },
+  "RTW": {
+    "3": {
+      "airline": "VF",
+      "departure_at": "2026-05-03T12:30:00+02:00",
+      "return_at": "2026-05-04T23:05:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3030,
+      "flight_number": 58,
+      "duration": 2725,
+      "duration_to": 595,
+      "duration_back": 535
+    }
+  },
+  "RUH": {
+    "2": {
+      "airline": "LO",
+      "departure_at": "2026-03-20T18:40:00+01:00",
+      "return_at": "2026-03-26T04:35:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1583,
+      "flight_number": 390,
+      "duration": 2305,
+      "duration_to": 485,
+      "duration_back": 455
+    }
+  },
+  "RVN": {
+    "1": {
+      "airline": "N7",
+      "departure_at": "2026-09-21T20:05:00+02:00",
+      "return_at": "2026-09-28T09:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1068,
+      "flight_number": 1438,
+      "duration": 980,
+      "duration_to": 190,
+      "duration_back": 195
+    }
+  },
+  "SAN": {
+    "1": {
+      "airline": "BA",
+      "departure_at": "2026-05-27T06:35:00+02:00",
+      "return_at": "2026-06-10T07:15:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2616,
+      "flight_number": 999,
+      "duration": 2650,
+      "duration_to": 805,
+      "duration_back": 872
+    }
+  },
+  "SAO": {
+    "1": {
+      "airline": "AF",
+      "departure_at": "2026-11-01T06:55:00+01:00",
+      "return_at": "2026-11-21T20:40:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3481,
+      "flight_number": 1135,
+      "duration": 2035,
+      "duration_to": 830,
+      "duration_back": 775
+    }
+  },
+  "SCO": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-05-01T19:40:00+02:00",
+      "return_at": "2026-05-09T02:55:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1306,
+      "flight_number": 984,
+      "duration": 3900,
+      "duration_to": 345,
+      "duration_back": 425
+    }
+  },
+  "SCW": {
+    "3": {
+      "airline": "U2",
+      "departure_at": "2026-03-13T06:40:00+01:00",
+      "return_at": "2026-03-28T20:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2544,
+      "flight_number": 8628,
+      "duration": 3690,
+      "duration_to": 750,
+      "duration_back": 535
+    }
+  },
+  "SDQ": {
+    "2": {
+      "airline": "MW",
+      "departure_at": "2026-03-23T20:45:00+01:00",
+      "return_at": "2026-03-28T02:52:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4044,
+      "flight_number": 134,
+      "duration": 3983,
+      "duration_to": 825,
+      "duration_back": 812
+    }
+  },
+  "SDZ": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-09T16:40:00+01:00",
+      "return_at": "2026-03-12T19:45:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3218,
+      "flight_number": 7783,
+      "duration": 2570,
+      "duration_to": 225,
+      "duration_back": 275
+    }
+  },
+  "SEL": {
+    "4": {
+      "airline": "DE",
+      "departure_at": "2026-03-10T16:50:00+01:00",
+      "return_at": "2026-03-16T18:25:00+09:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2458,
+      "flight_number": 4094,
+      "duration": 4375,
+      "duration_to": 1030,
+      "duration_back": 1030
+    }
+  },
+  "SEZ": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-04-14T18:05:00+02:00",
+      "return_at": "2026-04-28T08:20:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3380,
+      "flight_number": 8762,
+      "duration": 3625,
+      "duration_to": 755,
+      "duration_back": 760
+    }
+  },
+  "SFO": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-09-15T12:15:00+02:00",
+      "return_at": "2026-10-03T08:03:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2319,
+      "flight_number": 989,
+      "duration": 2566,
+      "duration_to": 885,
+      "duration_back": 882
+    }
+  },
+  "SGC": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-03-15T18:40:00+01:00",
+      "return_at": "2026-03-22T07:40:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2332,
+      "flight_number": 986,
+      "duration": 4365,
+      "duration_to": 620,
+      "duration_back": 685
+    }
+  },
+  "SGN": {
+    "2": {
+      "airline": "EW",
+      "departure_at": "2026-04-12T07:05:00+02:00",
+      "return_at": "2026-05-19T09:30:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2861,
+      "flight_number": 1160,
+      "duration": 4975,
+      "duration_to": 920,
+      "duration_back": 965
+    }
+  },
+  "SHA": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-05-11T08:20:00+02:00",
+      "return_at": "2026-05-28T12:55:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2177,
+      "flight_number": 196,
+      "duration": 3210,
+      "duration_to": 900,
+      "duration_back": 965
+    }
+  },
+  "SHJ": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-03-10T15:25:00+01:00",
+      "return_at": "2026-03-12T05:15:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 827,
+      "flight_number": 980,
+      "duration": 1320,
+      "duration_to": 430,
+      "duration_back": 490
+    }
+  },
+  "SID": {
+    "1": {
+      "airline": "U2",
+      "departure_at": "2026-03-18T06:20:00+01:00",
+      "return_at": "2026-03-30T15:20:00-01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1660,
+      "flight_number": 8628,
+      "duration": 1590,
+      "duration_to": 490,
+      "duration_back": 465
+    }
+  },
+  "SIN": {
+    "1": {
+      "airline": "A3",
+      "departure_at": "2026-06-20T20:40:00+02:00",
+      "return_at": "2026-06-26T21:00:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2438,
+      "flight_number": 823,
+      "duration": 2325,
+      "duration_to": 840,
+      "duration_back": 860
+    }
+  },
+  "SJC": {
+    "2": {
+      "airline": "FI",
+      "departure_at": "2026-09-15T14:05:00+02:00",
+      "return_at": "2026-10-03T08:10:00-07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5271,
+      "flight_number": 529,
+      "duration": 2052,
+      "duration_to": 847,
+      "duration_back": 797
+    }
+  },
+  "SJJ": {
+    "1": {
+      "airline": "MW",
+      "departure_at": "2026-04-09T18:35:00+02:00",
+      "return_at": "2026-04-17T10:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 639,
+      "flight_number": 8,
+      "duration": 2185,
+      "duration_to": 190,
+      "duration_back": 190
+    }
+  },
+  "SJO": {
+    "2": {
+      "airline": "AC",
+      "departure_at": "2026-07-21T07:00:00+02:00",
+      "return_at": "2026-08-03T07:55:00-06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4344,
+      "flight_number": 6933,
+      "duration": 2447,
+      "duration_to": 972,
+      "duration_back": 898
+    }
+  },
+  "SJU": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-03-23T15:40:00+01:00",
+      "return_at": "2026-04-05T01:00:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4104,
+      "flight_number": 193,
+      "duration": 3752,
+      "duration_to": 845,
+      "duration_back": 780
+    }
+  },
+  "SKD": {
+    "1": {
+      "airline": "XQ",
+      "departure_at": "2026-04-08T14:30:00+02:00",
+      "return_at": "2026-04-23T04:40:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1718,
+      "flight_number": 947,
+      "duration": 2885,
+      "duration_to": 445,
+      "duration_back": 575
+    }
+  },
+  "SKG": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-22T08:55:00+02:00",
+      "return_at": "2026-04-26T08:45:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 316,
+      "flight_number": 100,
+      "duration": 1590,
+      "duration_to": 145,
+      "duration_back": 190
+    }
+  },
+  "SKP": {
+    "1": {
+      "airline": "JU",
+      "departure_at": "2026-08-07T20:15:00+02:00",
+      "return_at": "2026-08-16T15:10:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 807,
+      "flight_number": 357,
+      "duration": 1395,
+      "duration_to": 185,
+      "duration_back": 185
+    }
+  },
+  "SNN": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-05-01T17:40:00+02:00",
+      "return_at": "2026-05-07T06:05:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 430,
+      "flight_number": 2961,
+      "duration": 880,
+      "duration_to": 200,
+      "duration_back": 195
+    }
+  },
+  "SOF": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-03-20T17:45:00+01:00",
+      "return_at": "2026-03-22T06:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 271,
+      "flight_number": 1148,
+      "duration": 270,
+      "duration_to": 135,
+      "duration_back": 135
+    }
+  },
+  "SPC": {
+    "3": {
+      "airline": "EW",
+      "departure_at": "2026-04-06T17:55:00+02:00",
+      "return_at": "2026-04-12T21:15:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1862,
+      "flight_number": 6845,
+      "duration": 5170,
+      "duration_to": 430,
+      "duration_back": 445
+    }
+  },
+  "SPK": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2027-02-13T20:25:00+01:00",
+      "return_at": "2027-02-27T07:30:00+09:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4312,
+      "flight_number": 1963,
+      "duration": 3145,
+      "duration_to": 910,
+      "duration_back": 1035
+    }
+  },
+  "SPU": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-05-04T06:35:00+02:00",
+      "return_at": "2026-05-10T09:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 323,
+      "flight_number": 5213,
+      "duration": 220,
+      "duration_to": 110,
+      "duration_back": 110
+    }
+  },
+  "SRE": {
+    "3": {
+      "airline": "LH",
+      "departure_at": "2026-06-18T18:45:00+02:00",
+      "return_at": "2026-06-21T20:25:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 6549,
+      "flight_number": 197,
+      "duration": 5210,
+      "duration_to": 1010,
+      "duration_back": 1000
+    }
+  },
+  "SSH": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-05-03T07:00:00+02:00",
+      "return_at": "2026-05-10T13:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 732,
+      "flight_number": 5375,
+      "duration": 575,
+      "duration_to": 280,
+      "duration_back": 295
+    }
+  },
+  "STO": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-20T22:20:00+01:00",
+      "return_at": "2026-03-23T21:50:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 420,
+      "flight_number": 146,
+      "duration": 1760,
+      "duration_to": 250,
+      "duration_back": 250
+    }
+  },
+  "STR": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-04-04T12:35:00+02:00",
+      "return_at": "2026-04-13T20:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 601,
+      "flight_number": 8000,
+      "duration": 140,
+      "duration_to": 70,
+      "duration_back": 70
+    }
+  },
+  "STW": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-04-14T16:35:00+02:00",
+      "return_at": "2026-04-15T16:15:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2551,
+      "flight_number": 60,
+      "duration": 2570,
+      "duration_to": 650,
+      "duration_back": 615
+    }
+  },
+  "SUF": {
+    "1": {
+      "airline": "W4",
+      "departure_at": "2026-04-22T07:45:00+02:00",
+      "return_at": "2026-04-28T19:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 436,
+      "flight_number": 3110,
+      "duration": 1105,
+      "duration_to": 245,
+      "duration_back": 210
+    }
+  },
+  "SVG": {
+    "1": {
+      "airline": "D8",
+      "departure_at": "2026-09-17T21:55:00+02:00",
+      "return_at": "2026-09-24T19:20:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 469,
+      "flight_number": 3305,
+      "duration": 1490,
+      "duration_to": 130,
+      "duration_back": 130
+    }
+  },
+  "SVQ": {
+    "1": {
+      "airline": "MW",
+      "departure_at": "2026-05-09T18:40:00+02:00",
+      "return_at": "2026-05-16T08:45:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 666,
+      "flight_number": 177,
+      "duration": 2980,
+      "duration_to": 275,
+      "duration_back": 360
+    }
+  },
+  "SVX": {
+    "1": {
+      "airline": "PC",
+      "departure_at": "2026-04-29T18:50:00+02:00",
+      "return_at": "2026-05-13T01:30:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1763,
+      "flight_number": 5008,
+      "duration": 2980,
+      "duration_to": 465,
+      "duration_back": 545
+    }
+  },
+  "SYD": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-04-11T18:10:00+02:00",
+      "return_at": "2026-04-25T20:35:00+10:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4053,
+      "flight_number": 170,
+      "duration": 3970,
+      "duration_to": 1300,
+      "duration_back": 1365
+    }
+  },
+  "SYX": {
+    "3": {
+      "airline": "PC",
+      "departure_at": "2026-10-03T16:00:00+02:00",
+      "return_at": "2026-10-13T19:20:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3701,
+      "flight_number": 978,
+      "duration": 4595,
+      "duration_to": 1130,
+      "duration_back": 950
+    }
+  },
+  "SZF": {
+    "3": {
+      "airline": "W6",
+      "departure_at": "2026-07-13T08:20:00+02:00",
+      "return_at": "2026-07-29T03:10:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1151,
+      "flight_number": 7038,
+      "duration": 3025,
+      "duration_to": 340,
+      "duration_back": 280
+    }
+  },
+  "SZG": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-14T22:15:00+01:00",
+      "return_at": "2026-03-18T17:40:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 549,
+      "flight_number": 177,
+      "duration": 840,
+      "duration_to": 225,
+      "duration_back": 70
+    }
+  },
+  "SZX": {
+    "2": {
+      "airline": "KL",
+      "departure_at": "2026-05-11T17:30:00+02:00",
+      "return_at": "2026-05-28T07:15:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2528,
+      "flight_number": 1780,
+      "duration": 3345,
+      "duration_to": 880,
+      "duration_back": 950
+    }
+  },
+  "TAS": {
+    "2": {
+      "airline": "RR",
+      "departure_at": "2026-04-20T08:20:00+02:00",
+      "return_at": "2026-06-03T05:30:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1572,
+      "flight_number": 196,
+      "duration": 2970,
+      "duration_to": 445,
+      "duration_back": 465
+    }
+  },
+  "TBS": {
+    "1": {
+      "airline": "VF",
+      "departure_at": "2026-03-10T13:40:00+01:00",
+      "return_at": "2026-03-29T04:55:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 648,
+      "flight_number": 58,
+      "duration": 1430,
+      "duration_to": 315,
+      "duration_back": 335
+    }
+  },
+  "TCI": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-19T20:50:00+02:00",
+      "return_at": "2026-04-25T06:05:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 393,
+      "flight_number": 2418,
+      "duration": 1135,
+      "duration_to": 320,
+      "duration_back": 360
+    }
+  },
+  "TGD": {
+    "0": {
+      "airline": "MW",
+      "departure_at": "2026-04-13T07:25:00+02:00",
+      "return_at": "2026-04-20T09:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 319,
+      "flight_number": 1578,
+      "duration": 245,
+      "duration_to": 125,
+      "duration_back": 120
+    }
+  },
+  "TGT": {
+    "3": {
+      "airline": "U2",
+      "departure_at": "2026-03-12T07:05:00+01:00",
+      "return_at": "2026-03-17T15:25:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 7110,
+      "flight_number": 8628,
+      "duration": 2915,
+      "duration_to": 785,
+      "duration_back": 735
+    }
+  },
+  "TIA": {
+    "0": {
+      "airline": "W4",
+      "departure_at": "2026-04-08T14:10:00+02:00",
+      "return_at": "2026-04-15T05:50:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 293,
+      "flight_number": 5106,
+      "duration": 275,
+      "duration_to": 135,
+      "duration_back": 140
+    }
+  },
+  "TIV": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-04-23T11:55:00+02:00",
+      "return_at": "2026-05-07T14:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 290,
+      "flight_number": 5361,
+      "duration": 250,
+      "duration_to": 125,
+      "duration_back": 125
+    }
+  },
+  "TJM": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-04-12T19:40:00+02:00",
+      "return_at": "2026-04-19T18:00:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1912,
+      "flight_number": 984,
+      "duration": 4210,
+      "duration_to": 565,
+      "duration_back": 685
+    }
+  },
+  "TLL": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-05-06T11:35:00+02:00",
+      "return_at": "2026-05-12T16:40:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 218,
+      "flight_number": 2732,
+      "duration": 225,
+      "duration_to": 110,
+      "duration_back": 115
+    }
+  },
+  "TLS": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-25T06:20:00+01:00",
+      "return_at": "2026-03-28T09:40:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 638,
+      "flight_number": 177,
+      "duration": 1890,
+      "duration_to": 220,
+      "duration_back": 200
+    }
+  },
+  "TNG": {
+    "1": {
+      "airline": "FR",
+      "departure_at": "2026-03-12T21:25:00+01:00",
+      "return_at": "2026-03-17T19:10:00Z",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 680,
+      "flight_number": 177,
+      "duration": 2790,
+      "duration_to": 295,
+      "duration_back": 315
+    }
+  },
+  "TOF": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-03-11T13:40:00+01:00",
+      "return_at": "2026-03-21T12:25:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2799,
+      "flight_number": 58,
+      "duration": 3845,
+      "duration_to": 695,
+      "duration_back": 740
+    }
+  },
+  "TOS": {
+    "1": {
+      "airline": "DY",
+      "departure_at": "2026-09-01T21:30:00+02:00",
+      "return_at": "2026-09-08T17:25:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 507,
+      "flight_number": 1109,
+      "duration": 1960,
+      "duration_to": 215,
+      "duration_back": 210
+    }
+  },
+  "TPA": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-04-10T11:05:00+02:00",
+      "return_at": "2026-04-25T18:58:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2512,
+      "flight_number": 987,
+      "duration": 2117,
+      "duration_to": 800,
+      "duration_back": 719
+    }
+  },
+  "TPE": {
+    "3": {
+      "airline": "JU",
+      "departure_at": "2026-03-22T20:45:00+01:00",
+      "return_at": "2026-03-29T18:40:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2508,
+      "flight_number": 357,
+      "duration": 3655,
+      "duration_to": 990,
+      "duration_back": 955
+    }
+  },
+  "TRN": {
+    "1": {
+      "airline": "W4",
+      "departure_at": "2026-04-23T14:10:00+02:00",
+      "return_at": "2026-04-29T12:40:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 435,
+      "flight_number": 5106,
+      "duration": 800,
+      "duration_to": 265,
+      "duration_back": 195
+    }
+  },
+  "TRS": {
+    "0": {
+      "airline": "MW",
+      "departure_at": "2026-03-23T06:00:00+01:00",
+      "return_at": "2026-03-26T08:00:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 637,
+      "flight_number": 6780,
+      "duration": 190,
+      "duration_to": 95,
+      "duration_back": 95
+    }
+  },
+  "TUN": {
+    "1": {
+      "airline": "VY",
+      "departure_at": "2026-06-15T22:00:00+02:00",
+      "return_at": "2026-06-24T18:15:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 849,
+      "flight_number": 1887,
+      "duration": 2715,
+      "duration_to": 270,
+      "duration_back": 210
+    }
+  },
+  "TYO": {
+    "3": {
+      "airline": "TK",
+      "departure_at": "2026-09-16T12:30:00+02:00",
+      "return_at": "2026-09-20T13:45:00+09:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2586,
+      "flight_number": 58,
+      "duration": 5620,
+      "duration_to": 1305,
+      "duration_back": 1410
+    }
+  },
+  "UBN": {
+    "1": {
+      "airline": "DE",
+      "departure_at": "2026-05-09T08:20:00+02:00",
+      "return_at": "2026-05-16T10:10:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2973,
+      "flight_number": 4074,
+      "duration": 1550,
+      "duration_to": 570,
+      "duration_back": 585
+    }
+  },
+  "UFA": {
+    "1": {
+      "airline": "XQ",
+      "departure_at": "2026-04-24T21:15:00+02:00",
+      "return_at": "2026-05-13T21:35:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1951,
+      "flight_number": 663,
+      "duration": 2055,
+      "duration_to": 440,
+      "duration_back": 595
+    }
+  },
+  "UGC": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-05-01T12:30:00+02:00",
+      "return_at": "2026-06-11T03:30:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1830,
+      "flight_number": 58,
+      "duration": 4200,
+      "duration_to": 445,
+      "duration_back": 470
+    }
+  },
+  "UIO": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-08-05T22:10:00+02:00",
+      "return_at": "2026-08-12T10:10:00-05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5122,
+      "flight_number": 1219,
+      "duration": 4120,
+      "duration_to": 1090,
+      "duration_back": 1265
+    }
+  },
+  "UKK": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-04-25T16:00:00+02:00",
+      "return_at": "2026-05-10T21:05:00+06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2052,
+      "flight_number": 978,
+      "duration": 3245,
+      "duration_to": 550,
+      "duration_back": 765
+    }
+  },
+  "ULY": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-03-12T13:40:00+01:00",
+      "return_at": "2026-03-25T22:45:00+04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1629,
+      "flight_number": 58,
+      "duration": 4730,
+      "duration_to": 540,
+      "duration_back": 595
+    }
+  },
+  "URA": {
+    "2": {
+      "airline": "TK",
+      "departure_at": "2026-08-02T22:10:00+02:00",
+      "return_at": "2026-08-16T22:10:00+05:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3320,
+      "flight_number": 1219,
+      "duration": 4885,
+      "duration_to": 630,
+      "duration_back": 690
+    }
+  },
+  "USM": {
+    "4": {
+      "airline": "EW",
+      "departure_at": "2026-03-28T06:00:00+01:00",
+      "return_at": "2026-04-12T19:00:00+07:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 5340,
+      "flight_number": 8212,
+      "duration": 5340,
+      "duration_to": 1125,
+      "duration_back": 1020
+    }
+  },
+  "UUD": {
+    "2": {
+      "airline": "PC",
+      "departure_at": "2026-04-10T09:25:00+02:00",
+      "return_at": "2026-04-17T10:15:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3410,
+      "flight_number": 5068,
+      "duration": 4285,
+      "duration_to": 825,
+      "duration_back": 900
+    }
+  },
+  "VAR": {
+    "0": {
+      "airline": "W6",
+      "departure_at": "2026-03-23T14:40:00+01:00",
+      "return_at": "2026-03-25T12:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 343,
+      "flight_number": 4516,
+      "duration": 295,
+      "duration_to": 145,
+      "duration_back": 150
+    }
+  },
+  "VCE": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-04-15T19:05:00+02:00",
+      "return_at": "2026-04-18T08:15:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 284,
+      "flight_number": 401,
+      "duration": 200,
+      "duration_to": 100,
+      "duration_back": 100
+    }
+  },
+  "VIE": {
+    "0": {
+      "airline": "OS",
+      "departure_at": "2026-06-05T15:10:00+02:00",
+      "return_at": "2026-06-12T15:00:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 518,
+      "flight_number": 230,
+      "duration": 145,
+      "duration_to": 75,
+      "duration_back": 70
+    }
+  },
+  "VLC": {
+    "1": {
+      "airline": "MW",
+      "departure_at": "2026-04-13T11:25:00+02:00",
+      "return_at": "2026-04-18T12:20:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 456,
+      "flight_number": 8,
+      "duration": 2515,
+      "duration_to": 225,
+      "duration_back": 260
+    }
+  },
+  "VNO": {
+    "0": {
+      "airline": "FR",
+      "departure_at": "2026-03-23T07:00:00+01:00",
+      "return_at": "2026-03-29T13:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 262,
+      "flight_number": 1570,
+      "duration": 195,
+      "duration_to": 95,
+      "duration_back": 100
+    }
+  },
+  "VOG": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-06-03T18:10:00+02:00",
+      "return_at": "2026-06-19T10:05:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2033,
+      "flight_number": 510,
+      "duration": 2565,
+      "duration_to": 560,
+      "duration_back": 545
+    }
+  },
+  "VRN": {
+    "1": {
+      "airline": "W4",
+      "departure_at": "2026-05-28T14:55:00+02:00",
+      "return_at": "2026-05-31T23:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 570,
+      "flight_number": 3976,
+      "duration": 960,
+      "duration_to": 275,
+      "duration_back": 235
+    }
+  },
+  "VVO": {
+    "2": {
+      "airline": "VF",
+      "departure_at": "2026-04-13T16:35:00+02:00",
+      "return_at": "2026-04-30T12:35:00+10:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3394,
+      "flight_number": 60,
+      "duration": 5640,
+      "duration_to": 960,
+      "duration_back": 1155
+    }
+  },
+  "WAS": {
+    "1": {
+      "airline": "FI",
+      "departure_at": "2026-05-16T14:05:00+02:00",
+      "return_at": "2026-05-24T23:20:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 1952,
+      "flight_number": 529,
+      "duration": 2585,
+      "duration_to": 615,
+      "duration_back": 565
+    }
+  },
+  "WAW": {
+    "1": {
+      "airline": "W6",
+      "departure_at": "2026-04-16T12:10:00+02:00",
+      "return_at": "2026-04-19T11:35:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 420,
+      "flight_number": 2316,
+      "duration": 2375,
+      "duration_to": 165,
+      "duration_back": 150
+    }
+  },
+  "WDH": {
+    "2": {
+      "airline": "BA",
+      "departure_at": "2026-10-18T18:30:00+02:00",
+      "return_at": "2026-11-02T18:20:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 4733,
+      "flight_number": 995,
+      "duration": 2310,
+      "duration_to": 910,
+      "duration_back": 910
+    }
+  },
+  "WRO": {
+    "2": {
+      "airline": "FR",
+      "departure_at": "2026-03-25T10:25:00+01:00",
+      "return_at": "2026-03-30T21:15:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 638,
+      "flight_number": 3670,
+      "duration": 2380,
+      "duration_to": 355,
+      "duration_back": 205
+    }
+  },
+  "WUH": {
+    "2": {
+      "airline": "AY",
+      "departure_at": "2026-09-23T18:05:00+02:00",
+      "return_at": "2026-10-07T21:25:00+08:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2962,
+      "flight_number": 1436,
+      "duration": 3920,
+      "duration_to": 760,
+      "duration_back": 815
+    }
+  },
+  "XRY": {
+    "0": {
+      "airline": "EW",
+      "departure_at": "2026-11-03T06:00:00+01:00",
+      "return_at": "2026-11-13T21:30:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 984,
+      "flight_number": 8550,
+      "duration": 1760,
+      "duration_to": 220,
+      "duration_back": 260
+    }
+  },
+  "YHZ": {
+    "2": {
+      "airline": "LH",
+      "departure_at": "2026-06-24T07:45:00+02:00",
+      "return_at": "2026-07-03T09:00:00-03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2459,
+      "flight_number": 9436,
+      "duration": 2107,
+      "duration_to": 637,
+      "duration_back": 680
+    }
+  },
+  "YTO": {
+    "0": {
+      "airline": "TS",
+      "departure_at": "2026-05-10T12:25:00+02:00",
+      "return_at": "2026-05-23T21:05:00-04:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2165,
+      "flight_number": 419,
+      "duration": 1000,
+      "duration_to": 530,
+      "duration_back": 470
+    }
+  },
+  "YYC": {
+    "1": {
+      "airline": "EI",
+      "departure_at": "2026-04-27T21:45:00+02:00",
+      "return_at": "2026-05-16T19:55:00-06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 2626,
+      "flight_number": 337,
+      "duration": 3345,
+      "duration_to": 640,
+      "duration_back": 610
+    }
+  },
+  "ZAD": {
+    "1": {
+      "airline": "W6",
+      "departure_at": "2026-08-03T08:20:00+02:00",
+      "return_at": "2026-08-08T05:55:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 696,
+      "flight_number": 7038,
+      "duration": 2115,
+      "duration_to": 150,
+      "duration_back": 145
+    }
+  },
+  "ZAG": {
+    "1": {
+      "airline": "RR",
+      "departure_at": "2026-04-24T21:10:00+02:00",
+      "return_at": "2026-04-30T08:05:00+02:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 558,
+      "flight_number": 1148,
+      "duration": 2210,
+      "duration_to": 220,
+      "duration_back": 170
+    }
+  },
+  "ZLO": {
+    "2": {
+      "airline": "AF",
+      "departure_at": "2026-12-19T12:20:00+01:00",
+      "return_at": "2027-01-01T18:10:00-06:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 6882,
+      "flight_number": 1735,
+      "duration": 3043,
+      "duration_to": 938,
+      "duration_back": 895
+    }
+  },
+  "ZNZ": {
+    "1": {
+      "airline": "TK",
+      "departure_at": "2026-05-01T15:10:00+02:00",
+      "return_at": "2026-05-08T02:55:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 3231,
+      "flight_number": 1726,
+      "duration": 3180,
+      "duration_to": 625,
+      "duration_back": 740
+    }
+  },
+  "ZRH": {
+    "0": {
+      "airline": "U2",
+      "departure_at": "2026-03-18T19:00:00+01:00",
+      "return_at": "2026-03-24T21:15:00+01:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 360,
+      "flight_number": 5189,
+      "duration": 180,
+      "duration_to": 85,
+      "duration_back": 95
+    }
+  },
+  "ZTH": {
+    "1": {
+      "airline": "RR",
+      "departure_at": "2026-05-01T21:55:00+02:00",
+      "return_at": "2026-05-07T12:00:00+03:00",
+      "expires_at": "2026-03-09T13:10:40Z",
+      "price": 916,
+      "flight_number": 206,
+      "duration": 1675,
+      "duration_to": 215,
+      "duration_back": 330
+    }
+  }
+}

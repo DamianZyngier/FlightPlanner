@@ -1,5 +1,6 @@
 import os
 import requests
+import json
 from datetime import datetime, date
 from backend.utils import generate_google_flights_link
 
@@ -31,6 +32,13 @@ class TravelpayoutsClient:
             response = requests.get(url, params=params)
             response.raise_for_status()
             data = response.json()
+            
+            # SAVE SAMPLE FOR USER
+            if data.get("success") and data.get("data"):
+                os.makedirs("data", exist_ok=True)
+                with open("data/api_sample.json", "w") as f:
+                    json.dump(data["data"], f, indent=2)
+
             if data.get("success"):
                 return data.get("data", {})
             return {}
@@ -39,74 +47,43 @@ class TravelpayoutsClient:
             return {}
 
     def get_latest_prices(self, origin=None, destination=None, period_type="year", sorting="price", limit=30, currency="PLN"):
-        """
-        v2/prices/latest: Returns the latest prices found by users for a route.
-        Good for hunting globally for very low value fares.
-        """
         url = f"{self.base_url}/v2/prices/latest"
-        params = {
-            "origin": origin,
-            "destination": destination,
-            "period_type": period_type,
-            "sorting": sorting,
-            "limit": limit,
-            "currency": currency,
-            "token": self.token
-        }
-        # Clean None values
+        params = {"origin": origin, "destination": destination, "period_type": period_type, "sorting": sorting, "limit": limit, "currency": currency, "token": self.token}
         params = {k: v for k, v in params.items() if v is not None}
-        
         try:
             response = requests.get(url, params=params)
             response.raise_for_status()
             data = response.json()
-            if data.get("success"):
-                return data.get("data", [])
+            if data.get("success"): return data.get("data", [])
             return []
         except Exception as e:
             print(f"Travelpayouts Latest Prices Error: {e}")
             return []
 
     def get_month_matrix(self, origin, destination, currency="PLN"):
-        """
-        v2/prices/month-matrix: Returns a matrix of prices for a month.
-        """
         url = f"{self.base_url}/v2/prices/month-matrix"
-        params = {
-            "origin": origin,
-            "destination": destination,
-            "currency": currency,
-            "token": self.token
-        }
+        params = {"origin": origin, "destination": destination, "currency": currency, "token": self.token}
         try:
             response = requests.get(url, params=params)
             response.raise_for_status()
             data = response.json()
-            if data.get("success"):
-                return data.get("data", [])
+            if data.get("success"): return data.get("data", [])
             return []
         except Exception as e:
             print(f"Travelpayouts Month Matrix Error: {e}")
             return []
 
     def normalize_cheap_prices(self, origin, data):
-        """
-        Normalizes v1/prices/cheap response data.
-        """
         results = []
-        if not data or not isinstance(data, dict):
-            return results
-
+        if not data or not isinstance(data, dict): return results
         for dest, offers in data.items():
             if not isinstance(offers, dict): continue
             for idx, offer in offers.items():
                 try:
                     raw_dep = offer.get('departure_at') or offer.get('departure_date')
                     if not raw_dep: continue
-                    
                     dep_date = raw_dep.split('T')[0]
                     ret_date = (offer.get('return_at') or offer.get('return_date', '')).split('T')[0] if (offer.get('return_at') or offer.get('return_date')) else None
-                    
                     results.append({
                         "id": f"tp-cheap-{origin}-{dest}-{raw_dep}",
                         "source": "Travelpayouts-Cheap",
@@ -120,31 +97,19 @@ class TravelpayoutsClient:
                         "currency": "PLN",
                         "link": generate_google_flights_link(origin, dest, dep_date, ret_date)
                     })
-                except Exception as e:
-                    print(f"Skipping cheap offer due to error: {e}")
-                    continue
+                except Exception as e: continue
         return results
 
     def normalize_latest_prices(self, data):
-        """
-        Normalizes v2/prices/latest response data.
-        """
         results = []
-        if not data or not isinstance(data, list):
-            return results
-
+        if not data or not isinstance(data, list): return results
         for offer in data:
             try:
-                # v2/latest can have 'departure_at' or 'departure_date'
                 raw_dep = offer.get('departure_at') or offer.get('departure_date')
-                if not raw_dep:
-                    continue
-
+                if not raw_dep: continue
                 dep_date = raw_dep.split('T')[0]
                 ret_date = offer.get('return_date') or offer.get('return_at')
-                if ret_date and 'T' in ret_date:
-                    ret_date = ret_date.split('T')[0]
-
+                if ret_date and 'T' in ret_date: ret_date = ret_date.split('T')[0]
                 results.append({
                     "id": f"tp-latest-{offer.get('origin')}-{offer.get('destination')}-{raw_dep}",
                     "source": "Travelpayouts-Latest",
@@ -158,7 +123,5 @@ class TravelpayoutsClient:
                     "currency": "PLN",
                     "link": generate_google_flights_link(offer.get('origin'), offer.get('destination'), dep_date, ret_date)
                 })
-            except Exception as e:
-                print(f"Skipping latest offer due to error: {e}")
-                continue
+            except Exception as e: continue
         return results
