@@ -49,7 +49,11 @@ class FlightMonitor:
             
             # Use Amadeus for high-precision data
             refined = self.amadeus.search_flight_offers(origin, destination, d1, d2)
-            scored = [self.scorer.score_flight(rf) for rf in refined]
+            scored = []
+            for rf in refined:
+                sf = self.scorer.score_flight(rf)
+                sf['was_precision_scanned'] = True
+                scored.append(sf)
             
             if not scored:
                 print("No results found in precision scan.")

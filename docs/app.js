@@ -229,6 +229,7 @@ class FlightPlanner {
 
         if (this.currentView === 'citybreak') {
             filtered = filtered.filter(f => {
+                if (f.was_precision_scanned) return true; // Keep manually analyzed routes
                 const day = new Date(f.departure_date).getDay();
                 return f.origin === 'KRK' && 
                        (f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 4) &&
@@ -237,6 +238,7 @@ class FlightPlanner {
             });
         } else {
             filtered = filtered.filter(f => {
+                if (f.was_precision_scanned) return true; // Keep manually analyzed routes
                 const dist = this.data.config.ORIGINS[f.origin] ?? 0;
                 const dur = f.score_breakdown?.duration_days || 0;
                 return dist <= maxDist && dur >= minD && dur <= maxD;
