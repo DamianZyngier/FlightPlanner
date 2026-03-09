@@ -41,10 +41,10 @@
 
         <div class="sidebar-section">
             <label class="section-label">Manage Destinations</label>
-            <div class="input-group">
-                <input type="text" id="new-dest-country" placeholder="Country" maxlength="2">
-                <input type="text" id="new-dest-code" placeholder="IATA" maxlength="3">
-                <button id="add-dest-btn" class="btn-icon">+</button>
+            <div class="smart-input">
+                <input type="text" id="dest-autocomplete" list="dest-suggestions" placeholder="Type Country or City...">
+                <datalist id="dest-suggestions"></datalist>
+                <button id="add-dest-btn" class="btn-primary-sm">Add</button>
             </div>
             <div id="dest-list" class="tag-cloud"></div>
         </div>
@@ -57,7 +57,7 @@
     <main class="main-content">
         <header class="top-nav">
             <div class="metric">
-                <span class="metric-label">Best Deal</span>
+                <span class="metric-label">Best Match</span>
                 <span id="stat-best-price" class="metric-value">--</span>
             </div>
             <div class="metric">
@@ -65,22 +65,17 @@
                 <span id="stat-total-routes" class="metric-value">--</span>
             </div>
             <div class="metric">
-                <span class="metric-label">Source</span>
-                <span class="metric-value">Travelpayouts</span>
+                <span class="metric-label">Engine</span>
+                <span class="metric-value" style="color: var(--success)">Live</span>
             </div>
         </header>
 
         <div class="view-container">
             <section class="section-deals">
                 <div class="section-header">
-                    <h2>Current Opportunities</h2>
-                    <div class="sort-controls">
-                        <!-- Add sorting if needed later -->
-                    </div>
+                    <h2>Flight Opportunities</h2>
                 </div>
-                <div id="deals-grid" class="deals-grid">
-                    <!-- Cards injected here -->
-                </div>
+                <div id="deals-grid" class="deals-grid"></div>
             </section>
 
             <section class="section-analytics">
