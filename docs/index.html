@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Monitor - KRK & Surroundings</title>
+    <title>Flight Planner Pro - Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
@@ -17,55 +17,110 @@
 </head>
 <body>
 
-<header>
-    <h1>✈️ Flight Monitor</h1>
-    <p>Tracking deals from Kraków (+300km) to AU, NZ, NA, BW, JP</p>
-    <div id="last-updated">Last Updated: Loading...</div>
-</header>
-
-<main>
-    <section id="config-panel">
-        <h2>⛭ Scoring Configuration</h2>
-        <div class="sliders-container">
-            <div class="slider-group">
-                <label for="w-price">Price Weight (<span id="val-price">0.5</span>)</label>
-                <input type="range" id="w-price" min="0" max="2" step="0.1" value="0.5">
-            </div>
-            <div class="slider-group">
-                <label for="w-duration">Duration Weight (<span id="val-duration">0.2</span>)</label>
-                <input type="range" id="w-duration" min="0" max="2" step="0.1" value="0.2">
-            </div>
-            <div class="slider-group">
-                <label for="w-distance">Distance KRK Weight (<span id="val-distance">0.1</span>)</label>
-                <input type="range" id="w-distance" min="0" max="2" step="0.1" value="0.1">
-            </div>
-            <div class="slider-group">
-                <label for="w-days">Days Off Weight (<span id="val-days">0.1</span>)</label>
-                <input type="range" id="w-days" min="0" max="2" step="0.1" value="0.1">
-            </div>
-            <div class="slider-group">
-                <label for="w-season">Seasonality Weight (<span id="val-season">0.1</span>)</label>
-                <input type="range" id="w-season" min="0" max="2" step="0.1" value="0.1">
-            </div>
+<div class="app-container">
+    <aside class="sidebar">
+        <div class="logo">
+            <span class="logo-icon">✈️</span>
+            <h1>Flight Planner</h1>
         </div>
-    </section>
+        
+        <nav>
+            <button class="nav-btn active" data-tab="dashboard">📊 Dashboard</button>
+            <button class="nav-btn" data-tab="destinations">📍 Destinations</button>
+            <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
+        </nav>
 
-    <section id="results">
-        <h2>🔥 Best Deals</h2>
-        <div id="deals-grid" class="grid">
-            <!-- Cards injected here -->
+        <div class="sidebar-footer">
+            <button id="scan-btn" class="primary-btn">🚀 Run Flight Scan</button>
+            <div id="scan-status" class="status-indicator"></div>
         </div>
-    </section>
+    </aside>
 
-    <section id="history">
-        <h2>📈 Price History (Average per Country)</h2>
-        <canvas id="historyChart"></canvas>
-    </section>
-</main>
+    <main class="content">
+        <header class="top-header">
+            <div class="header-info">
+                <h2 id="current-tab-title">Dashboard</h2>
+                <span id="last-updated">Last Updated: Loading...</span>
+            </div>
+            <div class="header-actions">
+                <label for="origin-dist">Max Distance from KRK: <span id="val-dist-krk">600</span>km</label>
+                <input type="range" id="origin-dist" min="0" max="1000" step="50" value="600">
+            </div>
+        </header>
 
-<footer>
-    <p>Automated by GitHub Actions & Travelpayouts + Amadeus APIs</p>
-</footer>
+        <div id="dashboard-tab" class="tab-content active">
+            <section class="stats-overview">
+                <div class="stat-card">
+                    <h3>Best Deal</h3>
+                    <div id="stat-best-price" class="stat-value">--</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Routes</h3>
+                    <div id="stat-total-routes" class="stat-value">--</div>
+                </div>
+            </section>
+
+            <section class="deals-section">
+                <div class="section-header">
+                    <h2>🔥 Curated Travel Deals</h2>
+                    <div class="filter-pills">
+                        <!-- Filters can go here -->
+                    </div>
+                </div>
+                <div id="deals-grid" class="grid">
+                    <!-- Cards injected here -->
+                </div>
+            </section>
+
+            <section class="charts-section">
+                <h2>📈 Market Trends</h2>
+                <canvas id="historyChart"></canvas>
+            </section>
+        </div>
+
+        <div id="destinations-tab" class="tab-content">
+            <section class="management-card">
+                <h2>Manage Destinations</h2>
+                <div class="add-dest-form">
+                    <input type="text" id="new-dest-country" placeholder="Country (e.g. US)">
+                    <input type="text" id="new-dest-code" placeholder="Airport Code (e.g. JFK)">
+                    <button id="add-dest-btn" class="accent-btn">Add Destination</button>
+                </div>
+                <div id="dest-list" class="tag-container">
+                    <!-- Tags injected here -->
+                </div>
+            </section>
+        </div>
+
+        <div id="settings-tab" class="tab-content">
+            <section class="management-card">
+                <h2>Scoring Weights</h2>
+                <div class="sliders-container">
+                    <div class="slider-group">
+                        <label for="w-price">Price (<span id="val-price">0.5</span>)</label>
+                        <input type="range" id="w-price" min="0" max="2" step="0.1" value="0.5">
+                    </div>
+                    <div class="slider-group">
+                        <label for="w-duration">Duration (<span id="val-duration">0.2</span>)</label>
+                        <input type="range" id="w-duration" min="0" max="2" step="0.1" value="0.2">
+                    </div>
+                    <div class="slider-group">
+                        <label for="w-distance">Origin Distance (<span id="val-distance">0.1</span>)</label>
+                        <input type="range" id="w-distance" min="0" max="2" step="0.1" value="0.1">
+                    </div>
+                    <div class="slider-group">
+                        <label for="w-days">Work Days Off (<span id="val-days">0.1</span>)</label>
+                        <input type="range" id="w-days" min="0" max="2" step="0.1" value="0.1">
+                    </div>
+                    <div class="slider-group">
+                        <label for="w-season">Weather/Season (<span id="val-season">0.1</span>)</label>
+                        <input type="range" id="w-season" min="0" max="2" step="0.1" value="0.1">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
 
 <script src="app.js"></script>
 </body>

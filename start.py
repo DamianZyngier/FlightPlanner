@@ -2,84 +2,82 @@ import os
 import subprocess
 import sys
 import shutil
-import http.server
-import socketserver
 import threading
 import webbrowser
 import time
+import json
+from flask import Flask, request, jsonify, send_from_directory
+
+app = Flask(__name__, static_folder="docs")
+
+CONFIG_PATH = "data/config.json"
+FLIGHTS_PATH = "data/flights.json"
+DOCS_DATA_PATH = "docs/data/flights.json"
 
 def run_command(command):
     print(f"Executing: {' '.join(command)}")
     try:
-        subprocess.run(command, check=True)
-        return True
-    except subprocess.CalledProcessError as e:
-        print(f"Error executing command: {e}")
-        return False
+        # Use subprocess.run with universal_newlines=True to get text output
+        result = subprocess.run(command, capture_output=True, text=True)
+        return True, result.stdout
+    except Exception as e:
+        return False, str(e)
+
+@app.route("/")
+def serve_index():
+    return send_from_directory("docs", "index.html")
+
+@app.route("/<path:path>")
+def serve_static(path):
+    return send_from_directory("docs", path)
+
+@app.route("/api/config", methods=["GET", "POST"])
+def manage_config():
+    if request.method == "POST":
+        new_config = request.json
+        with open(CONFIG_PATH, "w") as f:
+            json.dump(new_config, f, indent=2)
+        return jsonify({"status": "success"})
+    
+    if os.path.exists(CONFIG_PATH):
+        with open(CONFIG_PATH, "r") as f:
+            return jsonify(json.load(f))
+    return jsonify({})
+
+@app.route("/api/flights")
+def get_flights():
+    if os.path.exists(FLIGHTS_PATH):
+        with open(FLIGHTS_PATH, "r") as f:
+            return jsonify(json.load(f))
+    return jsonify({"current_best": [], "history": []})
+
+@app.route("/api/scan", methods=["POST"])
+def trigger_scan():
+    # Sync data to docs after scan
+    success, output = run_command([sys.executable, "-m", "backend.main"])
+    if success:
+        if os.path.exists(FLIGHTS_PATH):
+            os.makedirs(os.path.dirname(DOCS_DATA_PATH), exist_ok=True)
+            shutil.copy2(FLIGHTS_PATH, DOCS_DATA_PATH)
+        return jsonify({"status": "success", "output": output})
+    return jsonify({"status": "error", "output": output}), 500
 
 def check_requirements():
-    print("Checking dependencies...")
     try:
+        import flask
         import requests
         import dotenv
         return True
     except ImportError:
-        print("Missing dependencies. Installing from requirements.txt...")
-        return run_command([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+        print("Missing dependencies. Installing...")
+        subprocess.run([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+        return True
 
-def main():
-    # 1. Install/Check Requirements
-    if not check_requirements():
-        print("Failed to prepare environment. Please check your internet connection.")
-        # We continue anyway, maybe they just want to see existing data
-    
-    # 2. Run Backend Scanner
-    print("\n--- Starting Flight Scan (Phase 1) ---")
-    # We use -m to handle package imports correctly
-    if run_command([sys.executable, "-m", "backend.main"]):
-        print("Scan completed successfully.")
-    else:
-        print("Scan failed or returned errors. Check your .env file.")
-
-    # 3. Sync Data to Frontend
-    print("\n--- Syncing Data to Frontend (Phase 2) ---")
-    src = os.path.join("data", "flights.json")
-    dst_dir = os.path.join("docs", "data")
-    dst = os.path.join(dst_dir, "flights.json")
-
-    if os.path.exists(src):
-        os.makedirs(dst_dir, exist_ok=True)
-        shutil.copy2(src, dst)
-        print(f"Data synced: {src} -> {dst}")
-    else:
-        print(f"Warning: {src} not found. UI might show old or no data.")
-
-    # 4. Start Local Server
-    PORT = 8000
-    DIRECTORY = "docs"
-
-    class Handler(http.server.SimpleHTTPRequestHandler):
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, directory=DIRECTORY, **kwargs)
-
-    print(f"\n--- Launching Local Server (Phase 3) ---")
-    print(f"Serving at: http://localhost:{PORT}")
-    
-    # Function to open browser after a short delay
-    def open_browser():
-        time.sleep(1.5)
-        webbrowser.open(f"http://localhost:{PORT}")
-
-    threading.Thread(target=open_browser, daemon=True).start()
-
-    try:
-        with socketserver.TCPServer(("", PORT), Handler) as httpd:
-            print("Press Ctrl+C to stop the server.")
-            httpd.serve_forever()
-    except KeyboardInterrupt:
-        print("\nServer stopped.")
-    except Exception as e:
-        print(f"Could not start server: {e}")
+def open_browser():
+    time.sleep(2)
+    webbrowser.open("http://localhost:5000")
 
 if __name__ == "__main__":
-    main()
+    check_requirements()
+    threading.Thread(target=open_browser, daemon=True).start()
+    app.run(host="0.0.0.0", port=5000, debug=False)

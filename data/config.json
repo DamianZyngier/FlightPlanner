@@ -1,0 +1,55 @@
+{
+  "ORIGINS": {
+    "KRK": 0,
+    "KTW": 80,
+    "OSR": 170,
+    "RZE": 160,
+    "WAW": 300,
+    "WMI": 310,
+    "BUD": 400,
+    "BTS": 450,
+    "VIE": 460,
+    "PRG": 540,
+    "BER": 600
+  },
+  "DESTINATIONS": {
+    "AU": ["SYD", "MEL", "BNE", "PER"],
+    "NZ": ["AKL", "CHC", "WLG"],
+    "NA": ["WDH"],
+    "BW": ["GBE", "MUB"],
+    "ZA": ["JNB", "CPT", "DUR"],
+    "JP": ["TYO", "KIX", "FUK"],
+    "TH": ["BKK", "HKT", "CNX"],
+    "MY": ["KUL", "BKI"],
+    "PH": ["MNL", "CEB"],
+    "VN": ["SGN", "HAN", "DAD"],
+    "PE": ["LIM", "CUZ"],
+    "CV": ["SID", "RAI", "BVC"],
+    "CA": ["YYZ", "YVR", "YUL", "YYC"]
+  },
+  "PEAK_SEASONS": {
+    "AU": [12, 1, 2, 3, 4, 10, 11],
+    "NZ": [12, 1, 2, 3],
+    "NA": [5, 6, 7, 8, 9, 10],
+    "BW": [5, 6, 7, 8, 9, 10],
+    "ZA": [11, 12, 1, 2, 3],
+    "JP": [3, 4, 5, 10, 11],
+    "TH": [11, 12, 1, 2, 3],
+    "MY": [1, 2, 3, 6, 7, 8],
+    "PH": [12, 1, 2, 3, 4, 5],
+    "VN": [12, 1, 2, 3, 4],
+    "PE": [5, 6, 7, 8, 9],
+    "CV": [11, 12, 1, 2, 3, 4, 5, 6],
+    "CA": [6, 7, 8, 9]
+  },
+  "DEFAULT_WEIGHTS": {
+    "price": 0.5,
+    "duration": 0.2,
+    "distance_krk": 0.1,
+    "days_off": 0.1,
+    "seasonality": 0.1
+  },
+  "USE_AMADEUS": false,
+  "EMAIL_SENDER": "zyngi23@gmail.com",
+  "EMAIL_RECEIVER": "zyngi23@gmail.com"
+}

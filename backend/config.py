@@ -1,94 +1,36 @@
+import json
+import os
 from datetime import date
 
-# Origin Airports and their distance from KRK (km)
-ORIGINS = {
-    "KRK": 0,    # Krakow
-    "KTW": 80,   # Katowice
-    "OSR": 170,  # Ostrava
-    "RZE": 160,  # Rzeszow
-    "WAW": 300,  # Warsaw Chopin
-    "WMI": 310,  # Warsaw Modlin
-    "BUD": 400,  # Budapest
-    "BTS": 450,  # Bratislava
-    "VIE": 460,  # Vienna
-    "PRG": 540,  # Prague
-    "BER": 600   # Berlin (often cheap long haul, close enough for dedicated travelers)
-}
+CONFIG_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "config.json")
 
-# Destinations
-DESTINATIONS = {
-    "AU": ["SYD", "MEL", "BNE", "PER"], # Australia
-    "NZ": ["AKL", "CHC", "WLG"],        # New Zealand
-    "NA": ["WDH"],                      # Namibia (Windhoek)
-    "BW": ["GBE", "MUB"],               # Botswana (Gaborone, Maun)
-    "ZA": ["JNB", "CPT", "DUR"],        # South Africa (Johannesburg, Cape Town, Durban)
-    "JP": ["TYO", "KIX", "FUK"],        # Japan (Tokyo, Osaka, Fukuoka)
-    "TH": ["BKK", "HKT", "CNX"],        # Thailand (Bangkok, Phuket, Chiang Mai)
-    "MY": ["KUL", "BKI"],               # Malaysia (Kuala Lumpur, Kota Kinabalu)
-    "PH": ["MNL", "CEB"],               # Philippines (Manila, Cebu)
-    "VN": ["SGN", "HAN", "DAD"],        # Vietnam (Ho Chi Minh, Hanoi, Da Nang)
-    "PE": ["LIM", "CUZ"],               # Peru (Lima, Cusco)
-    "CV": ["SID", "RAI", "BVC"],        # Cape Verde (Sal, Praia, Boa Vista)
-    "CA": ["YYZ", "YVR", "YUL", "YYC"]  # Canada (Toronto, Vancouver, Montreal, Calgary)
-}
+def load_config():
+    if os.path.exists(CONFIG_PATH):
+        with open(CONFIG_PATH, "r") as f:
+            return json.load(f)
+    return {}
 
-# Peak Seasons (approximate months for best weather)
-# 1 = Jan, 12 = Dec
-PEAK_SEASONS = {
-    "AU": [12, 1, 2, 3, 4, 10, 11], # Summer/Shoulder
-    "NZ": [12, 1, 2, 3],            # Summer
-    "NA": [5, 6, 7, 8, 9, 10],      # Dry Season (safari)
-    "BW": [5, 6, 7, 8, 9, 10],      # Dry Season (safari)
-    "ZA": [11, 12, 1, 2, 3],        # Summer
-    "JP": [3, 4, 5, 10, 11],        # Cherry Blossom / Autumn
-    "TH": [11, 12, 1, 2, 3],        # Dry Season
-    "MY": [1, 2, 3, 6, 7, 8],       # Dry-ish
-    "PH": [12, 1, 2, 3, 4, 5],      # Dry Season
-    "VN": [12, 1, 2, 3, 4],         # Dry Season
-    "PE": [5, 6, 7, 8, 9],          # Dry Season (Andes)
-    "CV": [11, 12, 1, 2, 3, 4, 5, 6], # Pleasant weather
-    "CA": [6, 7, 8, 9]              # Summer/Early Autumn
-}
+config_data = load_config()
+
+ORIGINS = config_data.get("ORIGINS", {})
+DESTINATIONS = config_data.get("DESTINATIONS", {})
+PEAK_SEASONS = config_data.get("PEAK_SEASONS", {})
+DEFAULT_WEIGHTS = config_data.get("DEFAULT_WEIGHTS", {})
+USE_AMADEUS = config_data.get("USE_AMADEUS", False)
+EMAIL_SENDER = config_data.get("EMAIL_SENDER", "")
+EMAIL_RECEIVER = config_data.get("EMAIL_RECEIVER", "")
 
 # Polish Public Holidays (2026-2027)
 HOLIDAYS = [
-    date(2026, 1, 1),
-    date(2026, 1, 6),
-    date(2026, 4, 5),
-    date(2026, 4, 6),
-    date(2026, 5, 1),
-    date(2026, 5, 3),
-    date(2026, 6, 3),
-    date(2026, 8, 15),
-    date(2026, 11, 1),
-    date(2026, 11, 11),
-    date(2026, 12, 25),
-    date(2026, 12, 26),
-    # 2027
-    date(2027, 1, 1),
-    date(2027, 1, 6),
-    date(2027, 3, 28),
-    date(2027, 3, 29),
-    date(2027, 5, 1),
-    date(2027, 5, 3),
-    date(2027, 5, 27),
-    date(2027, 8, 15),
-    date(2027, 11, 1),
-    date(2027, 11, 11),
-    date(2027, 12, 25),
-    date(2027, 12, 26),
+    date(2026, 1, 1), date(2026, 1, 6), date(2026, 4, 5), date(2026, 4, 6),
+    date(2026, 5, 1), date(2026, 5, 3), date(2026, 6, 3), date(2026, 8, 15),
+    date(2026, 11, 1), date(2026, 11, 11), date(2026, 12, 25), date(2026, 12, 26),
+    date(2027, 1, 1), date(2027, 1, 6), date(2027, 3, 28), date(2027, 3, 29),
+    date(2027, 5, 1), date(2027, 5, 3), date(2027, 5, 27), date(2027, 8, 15),
+    date(2027, 11, 1), date(2027, 11, 11), date(2027, 12, 25), date(2027, 12, 26),
 ]
 
-# Default Scoring Weights
-DEFAULT_WEIGHTS = {
-    "price": 0.5,
-    "duration": 0.2,
-    "distance_krk": 0.1,
-    "days_off": 0.1,
-    "seasonality": 0.1
-}
-
-# Airport to City mapping for UI display
+# Base Airport Names (can be extended in UI)
 AIRPORT_NAMES = {
     "KRK": "Kraków", "KTW": "Katowice", "OSR": "Ostrava", "RZE": "Rzeszów",
     "WAW": "Warsaw Chopin", "WMI": "Warsaw Modlin", "BUD": "Budapest",
@@ -97,7 +39,8 @@ AIRPORT_NAMES = {
     "AKL": "Auckland", "CHC": "Christchurch", "WLG": "Wellington",
     "WDH": "Windhoek", "GBE": "Gaborone", "MUB": "Maun",
     "JNB": "Johannesburg", "CPT": "Cape Town", "DUR": "Durban",
-    "TYO": "Tokyo", "KIX": "Osaka", "FUK": "Fukuoka", "HND": "Tokyo Haneda", "NRT": "Tokyo Narita",
+    "TYO": "Tokyo", "KIX": "Osaka", "FUK": "Fukuoka",
+    "HND": "Tokyo Haneda", "NRT": "Tokyo Narita",
     "BKK": "Bangkok", "HKT": "Phuket", "CNX": "Chiang Mai",
     "KUL": "Kuala Lumpur", "BKI": "Kota Kinabalu",
     "MNL": "Manila", "CEB": "Cebu",
@@ -106,10 +49,3 @@ AIRPORT_NAMES = {
     "SID": "Sal", "RAI": "Praia", "BVC": "Boa Vista",
     "YYZ": "Toronto", "YVR": "Vancouver", "YUL": "Montreal", "YYC": "Calgary"
 }
-
-# Feature Toggles
-USE_AMADEUS = False # Set to True to enable Amadeus precision checks
-
-# Email Config
-EMAIL_SENDER = "zyngi23@gmail.com"  # The user's email is both sender (via SMTP) and receiver
-EMAIL_RECEIVER = "zyngi23@gmail.com"
