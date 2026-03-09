@@ -1,6 +1,69 @@
 {
-  "last_updated": "2026-03-09T07:01:23.982279",
+  "last_updated": "2026-03-09T11:27:11.860076",
   "current_best": [
+    {
+      "id": "tp-cheap-WAW-SID-2026-05-09T17:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "WAW",
+      "destination": "SID",
+      "departure_date": "2026-05-09",
+      "return_date": "2026-05-14",
+      "airline": "FR",
+      "price": 1435.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SID%20from%20WAW%20on%202026-05-09%20returning%202026-05-14",
+      "score": 2.02,
+      "score_breakdown": {
+        "price_raw": 1435.0,
+        "price_component": 0.72,
+        "days_off": 4,
+        "dist_km": 300,
+        "duration_days": 5,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-BER-MNL-2026-05-01T12:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "BER",
+      "destination": "MNL",
+      "departure_date": "2026-05-01",
+      "return_date": "2026-05-08",
+      "airline": "VF",
+      "price": 1815.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BER%20on%202026-05-01%20returning%202026-05-08",
+      "score": 2.21,
+      "score_breakdown": {
+        "price_raw": 1815.0,
+        "price_component": 0.91,
+        "days_off": 5,
+        "dist_km": 600,
+        "duration_days": 7,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-CNX-2026-11-07T17:45:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "WAW",
+      "destination": "CNX",
+      "departure_date": "2026-11-07",
+      "return_date": "2026-11-15",
+      "airline": "W6",
+      "price": 3183.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20WAW%20on%202026-11-07%20returning%202026-11-15",
+      "score": 2.29,
+      "score_breakdown": {
+        "price_raw": 3183.0,
+        "price_component": 1.59,
+        "days_off": 4,
+        "dist_km": 300,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
     {
       "id": "mock-9334",
       "source": "Mock",
@@ -187,6 +250,90 @@
         "days_off": 6,
         "dist_km": 0,
         "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-RAI-2026-04-07T13:15:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "WAW",
+      "destination": "RAI",
+      "departure_date": "2026-04-07",
+      "return_date": "2026-04-17",
+      "airline": "W6",
+      "price": 1882.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RAI%20from%20WAW%20on%202026-04-07%20returning%202026-04-17",
+      "score": 2.54,
+      "score_breakdown": {
+        "price_raw": 1882.0,
+        "price_component": 0.94,
+        "days_off": 9,
+        "dist_km": 300,
+        "duration_days": 10,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-BER-BVC-2026-04-03T17:40:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "BER",
+      "destination": "BVC",
+      "departure_date": "2026-04-03",
+      "return_date": "2026-04-11",
+      "airline": "FR",
+      "price": 3165.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BVC%20from%20BER%20on%202026-04-03%20returning%202026-04-11",
+      "score": 2.68,
+      "score_breakdown": {
+        "price_raw": 3165.0,
+        "price_component": 1.58,
+        "days_off": 5,
+        "dist_km": 600,
+        "duration_days": 8,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-KUL-2026-05-04T11:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "VIE",
+      "destination": "KUL",
+      "departure_date": "2026-05-04",
+      "return_date": "2026-05-12",
+      "airline": "EY",
+      "price": 2152.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202026-05-04%20returning%202026-05-12",
+      "score": 2.74,
+      "score_breakdown": {
+        "price_raw": 2152.0,
+        "price_component": 1.08,
+        "days_off": 7,
+        "dist_km": 460,
+        "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-HKT-2026-11-15T13:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "VIE",
+      "destination": "HKT",
+      "departure_date": "2026-11-15",
+      "return_date": "2026-11-25",
+      "airline": "CA",
+      "price": 2184.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20VIE%20on%202026-11-15%20returning%202026-11-25",
+      "score": 2.75,
+      "score_breakdown": {
+        "price_raw": 2184.0,
+        "price_component": 1.09,
+        "days_off": 8,
+        "dist_km": 460,
+        "duration_days": 10,
         "in_season": true
       }
     },
@@ -380,6 +527,69 @@
       }
     },
     {
+      "id": "tp-cheap-VIE-TYO-2026-06-03T12:15:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "VIE",
+      "destination": "TYO",
+      "departure_date": "2026-06-03",
+      "return_date": "2026-06-10",
+      "airline": "AF",
+      "price": 2565.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20VIE%20on%202026-06-03%20returning%202026-06-10",
+      "score": 2.94,
+      "score_breakdown": {
+        "price_raw": 2565.0,
+        "price_component": 1.28,
+        "days_off": 5,
+        "dist_km": 460,
+        "duration_days": 7,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-MEL-2026-11-07T13:05:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "WAW",
+      "destination": "MEL",
+      "departure_date": "2026-11-07",
+      "return_date": "2026-11-14",
+      "airline": "AY",
+      "price": 4100.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20WAW%20on%202026-11-07%20returning%202026-11-14",
+      "score": 2.95,
+      "score_breakdown": {
+        "price_raw": 4100.0,
+        "price_component": 2.05,
+        "days_off": 4,
+        "dist_km": 300,
+        "duration_days": 7,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-CPT-2026-05-12T22:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "VIE",
+      "destination": "CPT",
+      "departure_date": "2026-05-12",
+      "return_date": "2026-05-19",
+      "airline": "ET",
+      "price": 2437.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20VIE%20on%202026-05-12%20returning%202026-05-19",
+      "score": 2.98,
+      "score_breakdown": {
+        "price_raw": 2437.0,
+        "price_component": 1.22,
+        "days_off": 6,
+        "dist_km": 460,
+        "duration_days": 7,
+        "in_season": false
+      }
+    },
+    {
       "id": "mock-1379",
       "source": "Mock",
       "origin": "KRK",
@@ -506,6 +716,69 @@
       }
     },
     {
+      "id": "tp-cheap-BER-SID-2026-03-18T06:20:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "BER",
+      "destination": "SID",
+      "departure_date": "2026-03-18",
+      "return_date": "2026-03-30",
+      "airline": "U2",
+      "price": 1660.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SID%20from%20BER%20on%202026-03-18%20returning%202026-03-30",
+      "score": 3.13,
+      "score_breakdown": {
+        "price_raw": 1660.0,
+        "price_component": 0.83,
+        "days_off": 9,
+        "dist_km": 600,
+        "duration_days": 12,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-BKK-2026-06-26T14:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "VIE",
+      "destination": "BKK",
+      "departure_date": "2026-06-26",
+      "return_date": "2026-07-06",
+      "airline": "OV",
+      "price": 2240.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-06-26%20returning%202026-07-06",
+      "score": 3.18,
+      "score_breakdown": {
+        "price_raw": 2240.0,
+        "price_component": 1.12,
+        "days_off": 7,
+        "dist_km": 460,
+        "duration_days": 10,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-YVR-2026-07-09T06:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "VIE",
+      "destination": "YVR",
+      "departure_date": "2026-07-09",
+      "return_date": "2026-07-19",
+      "airline": "OS",
+      "price": 3288.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20VIE%20on%202026-07-09%20returning%202026-07-19",
+      "score": 3.2,
+      "score_breakdown": {
+        "price_raw": 3288.0,
+        "price_component": 1.64,
+        "days_off": 7,
+        "dist_km": 460,
+        "duration_days": 10,
+        "in_season": true
+      }
+    },
+    {
       "id": "mock-5416",
       "source": "Mock",
       "origin": "WAW",
@@ -628,6 +901,153 @@
         "days_off": 6,
         "dist_km": 300,
         "duration_days": 8,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-HAN-2026-03-18T06:50:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "KRK",
+      "destination": "HAN",
+      "departure_date": "2026-03-18",
+      "return_date": "2026-03-19",
+      "airline": "RR",
+      "price": 3420.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20KRK%20on%202026-03-18%20returning%202026-03-19",
+      "score": 3.31,
+      "score_breakdown": {
+        "price_raw": 3420.0,
+        "price_component": 1.71,
+        "days_off": 2,
+        "dist_km": 0,
+        "duration_days": 1,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-SGN-2026-06-22T13:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "VIE",
+      "destination": "SGN",
+      "departure_date": "2026-06-22",
+      "return_date": "2026-07-01",
+      "airline": "MU",
+      "price": 2831.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20VIE%20on%202026-06-22%20returning%202026-07-01",
+      "score": 3.38,
+      "score_breakdown": {
+        "price_raw": 2831.0,
+        "price_component": 1.42,
+        "days_off": 8,
+        "dist_km": 460,
+        "duration_days": 9,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-BKK-2026-10-10T18:25:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "WAW",
+      "destination": "BKK",
+      "departure_date": "2026-10-10",
+      "return_date": "2026-10-21",
+      "airline": "A3",
+      "price": 2395.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20WAW%20on%202026-10-10%20returning%202026-10-21",
+      "score": 3.4,
+      "score_breakdown": {
+        "price_raw": 2395.0,
+        "price_component": 1.2,
+        "days_off": 8,
+        "dist_km": 300,
+        "duration_days": 11,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-SYD-2026-04-09T06:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "WAW",
+      "destination": "SYD",
+      "departure_date": "2026-04-09",
+      "return_date": "2026-04-13",
+      "airline": "W6",
+      "price": 4029.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20WAW%20on%202026-04-09%20returning%202026-04-13",
+      "score": 3.41,
+      "score_breakdown": {
+        "price_raw": 4029.0,
+        "price_component": 2.01,
+        "days_off": 3,
+        "dist_km": 300,
+        "duration_days": 4,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-WDH-2026-05-05T19:45:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "WAW",
+      "destination": "WDH",
+      "departure_date": "2026-05-05",
+      "return_date": "2026-05-16",
+      "airline": "ET",
+      "price": 3215.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20WAW%20on%202026-05-05%20returning%202026-05-16",
+      "score": 3.41,
+      "score_breakdown": {
+        "price_raw": 3215.0,
+        "price_component": 1.61,
+        "days_off": 9,
+        "dist_km": 300,
+        "duration_days": 11,
+        "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-BER-KUL-2026-04-13T14:45:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "BER",
+      "destination": "KUL",
+      "departure_date": "2026-04-13",
+      "return_date": "2026-04-19",
+      "airline": "EW",
+      "price": 2847.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20BER%20on%202026-04-13%20returning%202026-04-19",
+      "score": 3.42,
+      "score_breakdown": {
+        "price_raw": 2847.0,
+        "price_component": 1.42,
+        "days_off": 5,
+        "dist_km": 600,
+        "duration_days": 6,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-DAD-2026-06-02T08:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "origin": "WAW",
+      "destination": "DAD",
+      "departure_date": "2026-06-02",
+      "return_date": "2026-06-12",
+      "airline": "LO",
+      "price": 2950.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20WAW%20on%202026-06-02%20returning%202026-06-12",
+      "score": 3.48,
+      "score_breakdown": {
+        "price_raw": 2950.0,
+        "price_component": 1.48,
+        "days_off": 8,
+        "dist_km": 300,
+        "duration_days": 10,
         "in_season": false
       }
     }
