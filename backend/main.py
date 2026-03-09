@@ -4,6 +4,9 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timedelta, date
+from dotenv import load_dotenv
+
+load_dotenv() # Load local .env file if it exists
 
 from backend.config import ORIGINS, DESTINATIONS, EMAIL_SENDER, EMAIL_RECEIVER
 from backend.amadeus_client import FlightSearchClient
