@@ -41,7 +41,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 320px;
+    width: 420px;
     background: var(--sidebar-bg);
     border-right: 1px solid var(--border-strong);
     padding: 2rem 1.5rem;
