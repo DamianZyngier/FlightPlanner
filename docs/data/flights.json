@@ -1,9 +1,10 @@
 {
-  "last_updated": "2026-03-09T11:27:11.860076",
+  "last_updated": "2026-03-09T12:40:13.466558",
   "current_best": [
     {
       "id": "tp-cheap-WAW-SID-2026-05-09T17:50:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "WAW",
       "destination": "SID",
       "departure_date": "2026-05-09",
@@ -25,6 +26,7 @@
     {
       "id": "tp-cheap-BER-MNL-2026-05-01T12:30:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "BER",
       "destination": "MNL",
       "departure_date": "2026-05-01",
@@ -46,6 +48,7 @@
     {
       "id": "tp-cheap-WAW-CNX-2026-11-07T17:45:00+01:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "WAW",
       "destination": "CNX",
       "departure_date": "2026-11-07",
@@ -256,6 +259,7 @@
     {
       "id": "tp-cheap-WAW-RAI-2026-04-07T13:15:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "WAW",
       "destination": "RAI",
       "departure_date": "2026-04-07",
@@ -277,6 +281,7 @@
     {
       "id": "tp-cheap-BER-BVC-2026-04-03T17:40:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "BER",
       "destination": "BVC",
       "departure_date": "2026-04-03",
@@ -298,6 +303,7 @@
     {
       "id": "tp-cheap-VIE-KUL-2026-05-04T11:55:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "VIE",
       "destination": "KUL",
       "departure_date": "2026-05-04",
@@ -319,6 +325,7 @@
     {
       "id": "tp-cheap-VIE-HKT-2026-11-15T13:00:00+01:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "VIE",
       "destination": "HKT",
       "departure_date": "2026-11-15",
@@ -529,6 +536,7 @@
     {
       "id": "tp-cheap-VIE-TYO-2026-06-03T12:15:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "VIE",
       "destination": "TYO",
       "departure_date": "2026-06-03",
@@ -550,6 +558,7 @@
     {
       "id": "tp-cheap-WAW-MEL-2026-11-07T13:05:00+01:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "WAW",
       "destination": "MEL",
       "departure_date": "2026-11-07",
@@ -571,6 +580,7 @@
     {
       "id": "tp-cheap-VIE-CPT-2026-05-12T22:05:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "VIE",
       "destination": "CPT",
       "departure_date": "2026-05-12",
@@ -718,6 +728,7 @@
     {
       "id": "tp-cheap-BER-SID-2026-03-18T06:20:00+01:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "BER",
       "destination": "SID",
       "departure_date": "2026-03-18",
@@ -739,6 +750,7 @@
     {
       "id": "tp-cheap-VIE-BKK-2026-06-26T14:30:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "VIE",
       "destination": "BKK",
       "departure_date": "2026-06-26",
@@ -760,6 +772,7 @@
     {
       "id": "tp-cheap-VIE-YVR-2026-07-09T06:50:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "VIE",
       "destination": "YVR",
       "departure_date": "2026-07-09",
@@ -907,6 +920,7 @@
     {
       "id": "tp-cheap-KRK-HAN-2026-03-18T06:50:00+01:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "KRK",
       "destination": "HAN",
       "departure_date": "2026-03-18",
@@ -928,6 +942,7 @@
     {
       "id": "tp-cheap-VIE-SGN-2026-06-22T13:30:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "VIE",
       "destination": "SGN",
       "departure_date": "2026-06-22",
@@ -949,6 +964,7 @@
     {
       "id": "tp-cheap-WAW-BKK-2026-10-10T18:25:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "WAW",
       "destination": "BKK",
       "departure_date": "2026-10-10",
@@ -970,6 +986,7 @@
     {
       "id": "tp-cheap-WAW-SYD-2026-04-09T06:05:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "WAW",
       "destination": "SYD",
       "departure_date": "2026-04-09",
@@ -991,6 +1008,7 @@
     {
       "id": "tp-cheap-WAW-WDH-2026-05-05T19:45:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "WAW",
       "destination": "WDH",
       "departure_date": "2026-05-05",
@@ -1012,6 +1030,7 @@
     {
       "id": "tp-cheap-BER-KUL-2026-04-13T14:45:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "BER",
       "destination": "KUL",
       "departure_date": "2026-04-13",
@@ -1033,6 +1052,7 @@
     {
       "id": "tp-cheap-WAW-DAD-2026-06-02T08:30:00+02:00",
       "source": "Travelpayouts-Cheap",
+      "is_mock": false,
       "origin": "WAW",
       "destination": "DAD",
       "departure_date": "2026-06-02",

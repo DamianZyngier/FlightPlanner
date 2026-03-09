@@ -104,10 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
             season: parseFloat(sliders.season.value)
         };
 
-        // Rescore and Sort
-        const flights = flightData.current_best.map(f => {
-            return { ...f, ui_score: calculateScore(f, weights) };
-        });
+        // Filter out mock data and Rescore and Sort
+        const flights = flightData.current_best
+            .filter(f => !f.is_mock) // Only real data
+            .map(f => {
+                return { ...f, ui_score: calculateScore(f, weights) };
+            });
 
         flights.sort((a, b) => a.ui_score - b.ui_score);
 

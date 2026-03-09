@@ -25,7 +25,7 @@ class FlightSearchClient:
             except Exception as e:
                 print(f"Failed to initialize Amadeus client: {e}")
         else:
-            print("Amadeus credentials not found. Using MOCK mode.")
+            print("Amadeus credentials not found. Mock mode disabled.")
 
     def search_flight_offers(self, origin, destination, departure_date, return_date):
         if self.client:
@@ -44,7 +44,8 @@ class FlightSearchClient:
                 print(f"Amadeus Error ({origin}->{destination}): {e}")
                 return []
         else:
-            return self._mock_response(origin, destination, departure_date, return_date)
+            # Removed mock response to only show real data
+            return []
 
     def _process_response(self, data):
         results = []
@@ -62,6 +63,7 @@ class FlightSearchClient:
                 results.append({
                     "id": offer.get('id'),
                     "source": "Amadeus",
+                    "is_mock": False,
                     "origin": origin,
                     "destination": dest,
                     "departure_date": dep_date,
@@ -73,20 +75,3 @@ class FlightSearchClient:
                 })
             except: continue
         return results
-
-    def _mock_response(self, origin, destination, dep_date, ret_date):
-        dep_str = dep_date.isoformat()
-        ret_str = ret_date.isoformat()
-        return [{
-            "id": f"mock-{random.randint(1000,9999)}",
-            "source": "Mock",
-            "is_mock": True,
-            "origin": origin,
-            "destination": destination,
-            "departure_date": dep_str,
-            "return_date": ret_str,
-            "airline": "LO",
-            "price": 4250.0,
-            "currency": "PLN",
-            "link": generate_google_flights_link(origin, destination, dep_str, ret_str)
-        }]
