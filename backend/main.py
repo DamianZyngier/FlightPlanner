@@ -56,7 +56,7 @@ class FlightMonitor:
 
         # Phase 2: Amadeus Refinement (Optional)
         if self.config.get("USE_AMADEUS", False):
-            all_flights.sort(key=lambda x: x['score'])
+            all_flights.sort(key=lambda x: x['score'], reverse=True)
             for deal in all_flights[:5]:
                 print(f"Refining {deal['origin']} -> {deal['destination']}...")
                 refined = self.amadeus.search_flight_offers(
@@ -64,11 +64,11 @@ class FlightMonitor:
                     datetime.strptime(deal['departure_date'], "%Y-%m-%d").date(),
                     datetime.strptime(deal['return_date'], "%Y-%m-%d").date()
                 )
-                all_flights.extend([self.scorer.score_flight(rf) for f in refined])
+                all_flights.extend([self.scorer.score_flight(rf) for rf in refined])
 
         # deduplicate and Update
         unique = { (f['origin'], f['destination'], f['departure_date']): f for f in all_flights }.values()
-        self.data['current_best'] = sorted(unique, key=lambda x: x['score'])[:50]
+        self.data['current_best'] = sorted(unique, key=lambda x: x['score'], reverse=True)[:50]
         self.data['last_updated'] = datetime.now().isoformat()
         
         # History Stats (simplified)
@@ -78,8 +78,19 @@ class FlightMonitor:
             prices = [f['price'] for f in all_flights if f['destination'] in codes]
             if prices: stats[country] = {"avg": round(sum(prices)/len(prices), 2)}
         
-        self.data['history'].append({"date": today_str, "stats": stats})
-        self.data['history'] = self.data['history'][-30:] # Keep last 30 runs
+        # Update or append today's stats
+        updated_history = []
+        found_today = False
+        for entry in self.data.get('history', []):
+            if entry['date'] == today_str:
+                entry['stats'] = stats
+                found_today = True
+            updated_history.append(entry)
+        
+        if not found_today:
+            updated_history.append({"date": today_str, "stats": stats})
+        
+        self.data['history'] = updated_history[-30:] # Keep last 30 runs
         
         self.save_data()
         print(f"Scan complete. Found {len(all_flights)} options.")

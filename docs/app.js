@@ -157,25 +157,36 @@ class FlightPlanner {
 
     async triggerScan() {
         this.els.scanBtn.disabled = true; this.els.scanBtn.innerText = "⏳ Scanning...";
-        try { await fetch('/api/scan', { method: 'POST' }); await this.loadFlights(); }
-        finally { this.els.scanBtn.disabled = false; this.els.scanBtn.innerText = "🚀 Run Global Scan"; }
+        try { 
+            const r = await fetch('/api/scan', { method: 'POST' }); 
+            if (!r.ok) {
+                const err = await r.json();
+                throw new Error(err.output || "Scan failed on server.");
+            }
+            await this.loadFlights(); 
+        } catch (e) {
+            alert("Error during Global Scan: " + e.message);
+        } finally { 
+            this.els.scanBtn.disabled = false; this.els.scanBtn.innerText = "🚀 Run Global Scan"; 
+        }
     }
 
     async triggerPrecisionScan(origin, dest, dep, ret, btn) {
+        const oldText = btn.innerText;
         btn.disabled = true; btn.innerText = "⏳ Precision...";
         try {
-            const r = await fetch('/api/precision', { 
-                method: 'POST', 
+            const r = await fetch('/api/precision', {
+                method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ origin, destination: dest, departure_date: dep, return_date: ret })
             });
+            if (!r.ok) throw new Error("Precision scan failed.");
             const res = await r.json();
             if (res.status === 'success') { await this.loadFlights(); }
             else { alert("Precision Scan failed: " + (res.message || "Unknown error")); }
         } catch (e) { alert("Error connecting to precision engine."); }
-        finally { btn.disabled = false; }
+        finally { btn.disabled = false; btn.innerText = oldText; }
     }
-
     async addFromSmartInput() {
         const val = this.els.autoInput.value.trim(); if (!val) return;
         let c = '', a = '';

@@ -180,8 +180,8 @@
     ]
   },
   "SETTINGS": {
-    "origin_dist": 250,
-    "max_price": 5000,
+    "origin_dist": 600,
+    "max_price": 8000,
     "min_dur": 1,
     "max_dur": 30,
     "w_price": 1,
