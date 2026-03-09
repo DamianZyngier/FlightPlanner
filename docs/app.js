@@ -12,7 +12,15 @@ const DATA_MAP = {
         "SYD": "Sydney Kingsford Smith", "MEL": "Melbourne", "BNE": "Brisbane", "AKL": "Auckland", "CHC": "Christchurch",
         "TYO": "Tokyo (All Airports)", "NRT": "Tokyo Narita", "HND": "Tokyo Haneda", "KIX": "Osaka Kansai", "BKK": "Bangkok Suvarnabhumi",
         "HKT": "Phuket", "SGN": "Ho Chi Minh Tan Son Nhat", "HAN": "Hanoi Noi Bai", "LIM": "Lima Jorge Chávez", "CUZ": "Cusco",
-        "YYZ": "Toronto Pearson", "YVR": "Vancouver", "JNB": "Johannesburg O.R. Tambo", "CPT": "Cape Town", "WDH": "Windhoek Hosea Kutako"
+        "YYZ": "Toronto Pearson", "YVR": "Vancouver", "JNB": "Johannesburg O.R. Tambo", "CPT": "Cape Town", "WDH": "Windhoek Hosea Kutako",
+        "MUC": "Munich Airport", "CDG": "Paris Charles de Gaulle", "AMS": "Amsterdam Schiphol", "LHR": "London Heathrow", "DXB": "Dubai Intl"
+    },
+    "AIRLINES": {
+        "LO": "LOT Polish Airlines", "LH": "Lufthansa", "LX": "Swiss International", "OS": "Austrian Airlines", "AF": "Air France",
+        "KL": "KLM Royal Dutch", "TK": "Turkish Airlines", "EK": "Emirates", "QR": "Qatar Airways", "AY": "Finnair",
+        "FR": "Ryanair", "W6": "Wizz Air", "BA": "British Airways", "DL": "Delta Air Lines", "UA": "United Airlines",
+        "AA": "American Airlines", "SQ": "Singapore Airlines", "CX": "Cathay Pacific", "NH": "ANA (All Nippon Airways)",
+        "JL": "Japan Airlines", "KE": "Korean Air", "EK": "Emirates", "EY": "Etihad Airways", "QR": "Qatar Airways"
     }
 };
 
@@ -152,8 +160,6 @@ class FlightPlanner {
             await this.saveConfig();
             this.renderDestinations();
             this.els.autoInput.value = '';
-        } else {
-            alert("Could not identify country or airport. Please use the suggestions.");
         }
     }
 
@@ -173,6 +179,7 @@ class FlightPlanner {
     }
 
     getName(code) { return DATA_MAP.AIRPORTS[code] || DATA_MAP.COUNTRIES[code] || code; }
+    getAirline(code) { return DATA_MAP.AIRLINES[code] || code; }
 
     renderOriginList() {
         if (!this.data.config?.ORIGINS) return;
@@ -180,7 +187,7 @@ class FlightPlanner {
         const html = Object.entries(this.data.config.ORIGINS)
             .filter(([code, dist]) => dist <= maxDist)
             .sort((a,b) => a[1] - b[1])
-            .map(([code, dist]) => `<span class="origin-tag" title="${this.getName(code)}">${code} (${dist}km)</span>`)
+            .map(([code, dist]) => `<span class="origin-tag" title="${this.getName(code)}">${this.getName(code)} (${code}) - ${dist}km</span>`)
             .join('');
         this.els.originList.innerHTML = html;
     }
@@ -212,7 +219,7 @@ class FlightPlanner {
                     </div>
                 </div>
                 <div class="itin-badge-list">
-                    ${(f.layovers_out || []).map(l => `<span class="badge badge-${l.status}">${l.airport} ${l.duration}</span>`).join('')}
+                    ${(f.layovers_out || []).map(l => `<span class="badge badge-${l.status}" title="${this.getName(l.airport)}">${l.airport} ${l.duration}</span>`).join('')}
                 </div>
             </div>
         ` : `<div class="mini-itin"><span class="itin-duration" style="color:var(--accent)">🔍 Precision Scan Required</span></div>`;
@@ -227,7 +234,7 @@ class FlightPlanner {
                 <div class="score-tag ${this.getScoreClass(f.score)}">${Math.round(f.score)}% Match</div>
                 <div class="card-details">
                     <div class="row"><span>From</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div>
-                    <div class="row"><span>Airline</span> <span>${f.airline}</span></div>
+                    <div class="row"><span>Airline</span> <span>${this.getAirline(f.airline)}</span></div>
                     <div class="row"><span>Travel Dates</span> <span>${f.departure_date}</span></div>
                 </div>
                 <a href="${f.link}" target="_blank" class="btn-book">Open on Google Flights</a>

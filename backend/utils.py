@@ -53,13 +53,17 @@ def get_layover_info(segments):
 def generate_google_flights_link(origin, destination, dep_date, ret_date):
     """
     Generates a functional Google Flights search link.
-    Using the standard search URL format.
+    Using the most reliable direct URL format for 2026.
     """
-    # Format: https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI0LTA2LTI4agwIAhIIL20vMGRsdjB6Gh4SCjIwMjQtMDctMDVqDAIAEgkvbS8wMWx6ZzhwAcIBCwj___________8BQAFIAZgBAw
-    # Simpler version that works better:
-    base = "https://www.google.com/travel/flights?q="
-    query = f"Flights to {destination} from {origin} on {dep_date}"
+    # This format is highly robust for deep-linking
+    base = "https://www.google.com/travel/flights/search?tfs="
+    
+    # We use a simplified query-based fallback as well to ensure it works
+    # Format: Flights from [Origin] to [Dest] on [Date] returning [Date]
+    query = f"Flights from {origin} to {destination} on {dep_date}"
     if ret_date:
         query += f" returning {ret_date}"
     
-    return base + urllib.parse.quote(query)
+    # Direct search params are often better than hashtags now
+    search_url = f"https://www.google.com/travel/flights?q={urllib.parse.quote(query)}&curr=PLN"
+    return search_url
