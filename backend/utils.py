@@ -9,14 +9,9 @@ def calculate_days_off(start_date: date, end_date: date) -> int:
     days_off_needed = 0
     current_date = start_date
     while current_date <= end_date:
-        # Check if weekend (Sat=5, Sun=6)
-        if current_date.weekday() >= 5:
-            pass # Weekend
-        # Check if holiday
-        elif current_date in HOLIDAYS:
-            pass # Holiday
-        else:
-            days_off_needed += 1
+        if current_date.weekday() >= 5: pass # Weekend
+        elif current_date in HOLIDAYS: pass # Holiday
+        else: days_off_needed += 1
         current_date += timedelta(days=1)
     return days_off_needed
 
@@ -29,7 +24,6 @@ def parse_amadeus_duration(duration_str):
     return f"{h or 0}h {m or 0}m"
 
 def get_layover_info(segments):
-    """Calculates layovers between segments."""
     from datetime import datetime
     layovers = []
     for i in range(len(segments) - 1):
@@ -37,10 +31,8 @@ def get_layover_info(segments):
             arr_time = datetime.fromisoformat(segments[i]['arrival']['at'].replace('Z', ''))
             dep_time = datetime.fromisoformat(segments[i+1]['departure']['at'].replace('Z', ''))
             diff = (dep_time - arr_time).total_seconds() / 60
-            
             hours = int(diff // 60)
             mins = int(diff % 60)
-            
             status = "short" if diff < 90 else "long" if diff > 360 else "medium"
             layovers.append({
                 "airport": segments[i]['arrival']['iataCode'],
@@ -53,13 +45,11 @@ def get_layover_info(segments):
 def generate_google_flights_link(origin, destination, dep_date, ret_date):
     """
     Generates a functional Google Flights search link.
-    Using the highly compatible search-query URL format.
+    Using the direct ?flt parameter format which is the most reliable.
     """
-    # The 'q' parameter with specific language triggers the search interface correctly
-    query = f"flights from {origin} to {destination} on {dep_date}"
-    if ret_date:
-        query += f" returning {ret_date}"
+    if not ret_date:
+        # One way
+        return f"https://www.google.com/flights?flt={origin}.{destination}.{dep_date};curr:PLN"
     
-    # We use /search and explicitly state currency to force the search view
-    search_url = f"https://www.google.com/travel/flights/search?q={urllib.parse.quote(query)}&curr=PLN"
-    return search_url
+    # Round trip
+    return f"https://www.google.com/flights?flt={origin}.{destination}.{dep_date}*{destination}.{origin}.{ret_date};curr:PLN"
