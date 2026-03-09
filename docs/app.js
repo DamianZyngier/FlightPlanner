@@ -20,8 +20,8 @@ class FlightPlanner {
             bestPrice: q('stat-best-price'), totalRoutes: q('stat-total-routes'),
             viewName: q('current-view-name'), addBtn: q('add-dest-btn'), autoInput: q('dest-autocomplete'),
             suggestions: q('dest-suggestions'), originList: q('included-origins'),
-            wPrice: q('w-price'), wDist: q('w-dist'), wWeather: q('w-weather'), wEff: q('w-eff'),
-            vWPrice: q('val-w-price'), vWDist: q('val-w-dist'), vWWeather: q('val-w-weather'), vWEff: q('val-w-eff'),
+            wPrice: q('w-price'), wWeather: q('w-weather'), wEff: q('w-eff'),
+            vWPrice: q('val-w-price'), vWWeather: q('val-w-weather'), vWEff: q('val-w-eff'),
             sortBy: q('sort-by'), precisionStatus: q('precision-status')
         };
     }
@@ -58,7 +58,7 @@ class FlightPlanner {
             };
         });
 
-        const sliders = ['originDist', 'filterPrice', 'minDur', 'maxDur', 'wPrice', 'wDist', 'wWeather', 'wEff'];
+        const sliders = ['originDist', 'filterPrice', 'minDur', 'maxDur', 'wPrice', 'wWeather', 'wEff'];
         sliders.forEach(key => {
             const el = this.els[key];
             if (!el) return;
@@ -95,7 +95,6 @@ class FlightPlanner {
                 if (this.els.minDur) this.els.minDur.value = s.min_dur ?? 1;
                 if (this.els.maxDur) this.els.maxDur.value = s.max_dur ?? 30;
                 if (this.els.wPrice) this.els.wPrice.value = s.w_price ?? 1.0;
-                if (this.els.wDist) this.els.wDist.value = s.w_dist ?? 0.5;
                 if (this.els.wWeather) this.els.wWeather.value = s.w_weather ?? 0.5;
                 if (this.els.wEff) this.els.wEff.value = s.w_eff ?? 0.5;
                 
@@ -109,7 +108,6 @@ class FlightPlanner {
                 
                 // Weights labels
                 if (this.els.vWPrice) this.els.vWPrice.innerText = this.els.wPrice?.value || 1.0;
-                if (this.els.vWDist) this.els.vWDist.innerText = this.els.wDist?.value || 0.5;
                 if (this.els.vWWeather) this.els.vWWeather.innerText = this.els.wWeather?.value || 0.5;
                 if (this.els.vWEff) this.els.vWEff.innerText = this.els.wEff?.value || 0.5;
                 
@@ -127,7 +125,6 @@ class FlightPlanner {
             min_dur: parseInt(this.els.minDur?.value || 1),
             max_dur: parseInt(this.els.maxDur?.value || 30),
             w_price: parseFloat(this.els.wPrice?.value || 1.0),
-            w_dist: parseFloat(this.els.wDist?.value || 0.5),
             w_weather: parseFloat(this.els.wWeather?.value || 0.5),
             w_eff: parseFloat(this.els.wEff?.value || 0.5),
             last_view: this.currentView,
@@ -224,7 +221,6 @@ class FlightPlanner {
         const sortBy = this.els.sortBy?.value || 'score';
         const w = { 
             p: parseFloat(this.els.wPrice?.value || 1.0), 
-            d: parseFloat(this.els.wDist?.value || 0.5), 
             we: parseFloat(this.els.wWeather?.value || 0.5),
             ef: parseFloat(this.els.wEff?.value || 0.5)
         };
@@ -250,12 +246,11 @@ class FlightPlanner {
         const rescored = filtered.map(f => {
             const bd = f.score_breakdown || {};
             const p_s = Math.max(0, 100 - (bd.price_raw - 1500)/60);
-            const d_s = Math.max(0, 100 - (bd.dist_km/6));
             const w_s = bd.in_season ? 100 : 20;
             const e_s = Math.max(0, Math.min(100, (bd.efficiency || 0) * 15));
             
-            const totalW = w.p + w.d + w.we + w.ef;
-            const final = (p_s*w.p + d_s*w.d + w_s*w.we + e_s*w.ef) / totalW;
+            const totalW = w.p + w.we + w.ef;
+            const final = (p_s*w.p + w_s*w.we + e_s*w.ef) / totalW;
             return { ...f, ui_score: Math.round(final) };
         });
 

@@ -1,6 +1,38 @@
 {
-  "last_updated": "2026-03-09T22:40:44.739800",
+  "last_updated": "2026-03-09T22:57:08.727147",
   "current_best": [
+    {
+      "id": "3",
+      "source": "Amadeus",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "SGN",
+      "departure_date": "2026-04-20",
+      "return_date": "2026-05-05",
+      "airline": "QR",
+      "price": 3081.86,
+      "currency": "PLN",
+      "duration_out": "16h 40m",
+      "duration_in": "34h 0m",
+      "stops_out": 1,
+      "layovers_out": [
+        {
+          "airport": "DOH",
+          "duration": "3h 0m",
+          "status": "medium"
+        }
+      ],
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20PRG%20on%202026-04-20%20through%202026-05-05&curr=PLN",
+      "score": 64.8,
+      "score_breakdown": {
+        "price_raw": 3081.86,
+        "days_off": 11,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 4
+      }
+    },
     {
       "id": "tp-cheap-KRK-HAN-2026-03-18T06:50:00+01:00",
       "source": "Travelpayouts-Cheap",
@@ -163,29 +195,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-KUL-2026-08-24T19:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "KUL",
-      "departure_date": "2026-08-24",
-      "return_date": "2026-09-07",
-      "airline": "LW",
-      "price": 2541.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20WAW%20on%202026-08-24%20through%202026-09-07&curr=PLN",
-      "score": 56.3,
-      "score_breakdown": {
-        "price_raw": 2541.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "dist_km": 300,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-VIE-YYC-2026-06-11T07:40:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -229,52 +238,6 @@
         "in_season": true,
         "duration_days": 7,
         "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-DAD-2026-03-19T06:15:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "DAD",
-      "departure_date": "2026-03-19",
-      "return_date": "2026-04-15",
-      "airline": "W6",
-      "price": 3454.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20KRK%20on%202026-03-19%20through%202026-04-15&curr=PLN",
-      "score": 53.7,
-      "score_breakdown": {
-        "price_raw": 3454.0,
-        "days_off": 19,
-        "holiday_count": 2,
-        "dist_km": 0,
-        "in_season": true,
-        "duration_days": 27,
-        "efficiency": 8
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BKK-2026-04-20T12:15:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BKK",
-      "departure_date": "2026-04-20",
-      "return_date": "2026-05-13",
-      "airline": "LO",
-      "price": 2548.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20KRK%20on%202026-04-20%20through%202026-05-13&curr=PLN",
-      "score": 53.3,
-      "score_breakdown": {
-        "price_raw": 2548.0,
-        "days_off": 17,
-        "holiday_count": 2,
-        "dist_km": 0,
-        "in_season": false,
-        "duration_days": 23,
-        "efficiency": 6
       }
     },
     {
@@ -344,6 +307,38 @@
         "in_season": true,
         "duration_days": 13,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "3",
+      "source": "Amadeus",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "MNL",
+      "departure_date": "2026-04-10",
+      "return_date": "2026-04-25",
+      "airline": "QR",
+      "price": 4606.32,
+      "currency": "PLN",
+      "duration_out": "18h 0m",
+      "duration_in": "26h 50m",
+      "stops_out": 1,
+      "layovers_out": [
+        {
+          "airport": "DOH",
+          "duration": "2h 50m",
+          "status": "medium"
+        }
+      ],
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BER%20on%202026-04-10%20through%202026-04-25&curr=PLN",
+      "score": 52.1,
+      "score_breakdown": {
+        "price_raw": 4606.32,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 4
       }
     },
     {
@@ -646,29 +641,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-MNL-2026-04-10T16:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "MNL",
-      "departure_date": "2026-04-10",
-      "return_date": "2026-04-24",
-      "airline": "PC",
-      "price": 2642.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BER%20on%202026-04-10%20through%202026-04-24&curr=PLN",
-      "score": 50.5,
-      "score_breakdown": {
-        "price_raw": 2642.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "dist_km": 600,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-VIE-TYO-2026-06-03T12:15:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -712,29 +684,6 @@
         "in_season": false,
         "duration_days": 7,
         "efficiency": 2
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-SGN-2026-04-20T08:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "SGN",
-      "departure_date": "2026-04-20",
-      "return_date": "2026-05-04",
-      "airline": "FR",
-      "price": 2786.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20PRG%20on%202026-04-20%20through%202026-05-04&curr=PLN",
-      "score": 50.3,
-      "score_breakdown": {
-        "price_raw": 2786.0,
-        "days_off": 10,
-        "holiday_count": 2,
-        "dist_km": 540,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 4
       }
     },
     {
@@ -1149,6 +1098,115 @@
         "in_season": true,
         "duration_days": 4,
         "efficiency": -1
+      }
+    },
+    {
+      "id": "3",
+      "source": "Amadeus",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "KUL",
+      "departure_date": "2026-08-24",
+      "return_date": "2026-09-08",
+      "airline": "LH",
+      "price": 3755.88,
+      "currency": "PLN",
+      "duration_out": "19h 45m",
+      "duration_in": "25h 25m",
+      "stops_out": 2,
+      "layovers_out": [
+        {
+          "airport": "MUC",
+          "duration": "2h 40m",
+          "status": "medium"
+        },
+        {
+          "airport": "SIN",
+          "duration": "1h 50m",
+          "status": "medium"
+        }
+      ],
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20WAW%20on%202026-08-24%20through%202026-09-08&curr=PLN",
+      "score": 46.2,
+      "score_breakdown": {
+        "price_raw": 3755.88,
+        "days_off": 12,
+        "holiday_count": 0,
+        "dist_km": 300,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "3",
+      "source": "Amadeus",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "BKK",
+      "departure_date": "2026-04-20",
+      "return_date": "2026-05-13",
+      "airline": "LH",
+      "price": 3475.45,
+      "currency": "PLN",
+      "duration_out": "15h 35m",
+      "duration_in": "22h 50m",
+      "stops_out": 1,
+      "layovers_out": [
+        {
+          "airport": "MUC",
+          "duration": "4h 20m",
+          "status": "medium"
+        }
+      ],
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20KRK%20on%202026-04-20%20through%202026-05-13&curr=PLN",
+      "score": 45.5,
+      "score_breakdown": {
+        "price_raw": 3475.45,
+        "days_off": 17,
+        "holiday_count": 2,
+        "dist_km": 0,
+        "in_season": false,
+        "duration_days": 23,
+        "efficiency": 6
+      }
+    },
+    {
+      "id": "3",
+      "source": "Amadeus",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "DAD",
+      "departure_date": "2026-03-19",
+      "return_date": "2026-04-16",
+      "airline": "OS",
+      "price": 4828.69,
+      "currency": "PLN",
+      "duration_out": "22h 55m",
+      "duration_in": "20h 20m",
+      "stops_out": 2,
+      "layovers_out": [
+        {
+          "airport": "VIE",
+          "duration": "4h 35m",
+          "status": "medium"
+        },
+        {
+          "airport": "BKK",
+          "duration": "5h 40m",
+          "status": "medium"
+        }
+      ],
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20KRK%20on%202026-03-19%20through%202026-04-16&curr=PLN",
+      "score": 42.3,
+      "score_breakdown": {
+        "price_raw": 4828.69,
+        "days_off": 20,
+        "holiday_count": 2,
+        "dist_km": 0,
+        "in_season": true,
+        "duration_days": 28,
+        "efficiency": 8
       }
     }
   ],

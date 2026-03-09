@@ -11,18 +11,14 @@ class FlightScorer:
         price = flight_data['price']
         price_pts = max(0, min(100, 100 - (price - 1500) / 60))
 
-        # 2. Distance Score
-        dist_km = ORIGINS.get(flight_data['origin'], 600)
-        dist_pts = max(0, min(100, 100 - (dist_km / 6)))
-
-        # 3. Days Off & Holidays
+        # 2. Days Off & Holidays
         dep_date = datetime.strptime(flight_data['departure_date'], "%Y-%m-%d").date()
         ret_date = datetime.strptime(flight_data['return_date'], "%Y-%m-%d").date() if flight_data.get('return_date') else dep_date
         
         days_off, holiday_count = calculate_days_off_detailed(dep_date, ret_date)
         days_pts = max(0, min(100, 100 - (days_off * 10)))
 
-        # 4. Seasonality
+        # 3. Seasonality
         dest_code = flight_data['destination']
         country_code = self._get_country_code(dest_code)
         month = dep_date.month
@@ -35,13 +31,14 @@ class FlightScorer:
         # Duration & Efficiency
         duration_days = (ret_date - dep_date).days
         efficiency = duration_days - days_off # Higher is better
+        eff_pts = max(0, min(100, efficiency * 15))
 
-        # Weighted Sum (Using backend weights as baseline)
+        # Weighted Sum
+        # Note: distance_krk is removed from calculation
         final_score = (
             price_pts * self.weights.get('price', 0.5) +
-            days_pts * self.weights.get('days_off', 0.2) +
-            dist_pts * self.weights.get('distance_krk', 0.1) +
-            season_pts * self.weights.get('seasonality', 0.2)
+            season_pts * self.weights.get('seasonality', 0.2) +
+            eff_pts * self.weights.get('efficiency', 0.3)
         )
 
         flight_data['score'] = round(final_score, 1)
@@ -49,7 +46,6 @@ class FlightScorer:
             "price_raw": price,
             "days_off": days_off,
             "holiday_count": holiday_count,
-            "dist_km": dist_km,
             "in_season": in_season,
             "duration_days": duration_days,
             "efficiency": efficiency

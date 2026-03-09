@@ -25,7 +25,7 @@ ORIGINS = config_data.get("ORIGINS", {})
 DESTINATIONS = config_data.get("DESTINATIONS", {})
 PEAK_SEASONS = config_data.get("PEAK_SEASONS", {})
 DEFAULT_WEIGHTS = config_data.get("DEFAULT_WEIGHTS", {
-    "price": 0.5, "days_off": 0.2, "distance_krk": 0.1, "seasonality": 0.2
+    "price": 0.5, "seasonality": 0.2, "efficiency": 0.3
 })
 USE_AMADEUS = config_data.get("USE_AMADEUS", False)
 EMAIL_SENDER = config_data.get("EMAIL_SENDER", "")
