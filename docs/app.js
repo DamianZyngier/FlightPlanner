@@ -161,7 +161,7 @@ class FlightPlanner {
                     <div class="row"><span>Dates</span> <span>${f.departure_date} - ${f.return_date}</span></div>
                     <div class="row"><span>Airline</span> <span>${f.airline}</span></div>
                 </div>
-                <a href="${f.link}" target="_blank" class="btn-book">Select Deal</a>
+                <a href="${f.link}" target="_blank" class="btn-book">Open on Google Flights</a>
             </div>
         `;
     }
