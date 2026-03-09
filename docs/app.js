@@ -55,10 +55,10 @@ class FlightPlanner {
     populateSuggestions() {
         let html = '';
         Object.entries(DATA_MAP.COUNTRIES).forEach(([code, name]) => {
-            html += `<option value="${name} (${code})">Country</option>`;
+            html += `<option value="${name} (${code})"></option>`;
         });
         Object.entries(DATA_MAP.AIRPORTS).forEach(([code, name]) => {
-            html += `<option value="${code}: ${name}">Airport</option>`;
+            html += `<option value="${code}: ${name}"></option>`;
         });
         this.els.suggestions.innerHTML = html;
     }
@@ -180,7 +180,7 @@ class FlightPlanner {
         const html = Object.entries(this.data.config.ORIGINS)
             .filter(([code, dist]) => dist <= maxDist)
             .sort((a,b) => a[1] - b[1])
-            .map(([code, dist]) => `<span class="origin-tag">${code} (${dist}km)</span>`)
+            .map(([code, dist]) => `<span class="origin-tag" title="${this.getName(code)}">${code} (${dist}km)</span>`)
             .join('');
         this.els.originList.innerHTML = html;
     }
@@ -226,7 +226,7 @@ class FlightPlanner {
                 ${itin}
                 <div class="score-tag ${this.getScoreClass(f.score)}">${Math.round(f.score)}% Match</div>
                 <div class="card-details">
-                    <div class="row"><span>From</span> <span>${this.getName(f.origin)}</span></div>
+                    <div class="row"><span>From</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div>
                     <div class="row"><span>Airline</span> <span>${f.airline}</span></div>
                     <div class="row"><span>Travel Dates</span> <span>${f.departure_date}</span></div>
                 </div>
@@ -240,10 +240,10 @@ class FlightPlanner {
         this.els.destList.innerHTML = Object.entries(this.data.config.DESTINATIONS).flatMap(([country, codes]) => {
             const countryName = this.getName(country);
             if (codes.length === 0) {
-                return [`<div class="tag"><span>${countryName} (Any)</span><span class="tag-remove" onclick="window.app.removeDest('${country}', null)">×</span></div>`];
+                return [`<div class="tag" title="${countryName}"><span>${countryName} (Any)</span><span class="tag-remove" onclick="window.app.removeDest('${country}', null)">×</span></div>`];
             }
             return codes.map(code => `
-                <div class="tag">
+                <div class="tag" title="${this.getName(code)}">
                     <span>${countryName}: <strong>${code}</strong></span>
                     <span class="tag-remove" onclick="window.app.removeDest('${country}', '${code}')">×</span>
                 </div>
