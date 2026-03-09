@@ -5,15 +5,17 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timedelta, date
 
-from backend.config import DESTINATIONS, EMAIL_SENDER, EMAIL_RECEIVER
+from backend.config import ORIGINS, DESTINATIONS, EMAIL_SENDER, EMAIL_RECEIVER
 from backend.amadeus_client import FlightSearchClient
+from backend.travelpayouts_client import TravelpayoutsClient
 from backend.scorer import FlightScorer
 
 DATA_FILE = "data/flights.json"
 
 class FlightMonitor:
     def __init__(self):
-        self.client = FlightSearchClient()
+        self.amadeus = FlightSearchClient()
+        self.travelpayouts = TravelpayoutsClient()
         self.scorer = FlightScorer()
         self.data = self.load_data()
 
@@ -27,6 +29,8 @@ class FlightMonitor:
         return {"current_best": [], "history": []}
 
     def save_data(self):
+        # Ensure directory exists
+        os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
         with open(DATA_FILE, 'w') as f:
             json.dump(self.data, f, indent=2)
 
@@ -39,10 +43,11 @@ class FlightMonitor:
         msg = MIMEMultipart()
         msg['From'] = EMAIL_SENDER
         msg['To'] = EMAIL_RECEIVER
-        msg['Subject'] = f"✈️ AMADEUS DEAL: {flight['destination']} for {flight['price']} PLN!"
+        msg['Subject'] = f"✈️ FLIGHT DEAL: {flight['destination']} for {flight['price']} PLN!"
 
         body = f"""
-        <h1>Super Deal Found on Amadeus!</h1>
+        <h1>Super Deal Found!</h1>
+        <p><strong>Source:</strong> {flight['source']}</p>
         <p><strong>Destination:</strong> {flight['destination']} ({flight['airline']})</p>
         <p><strong>Dates:</strong> {flight['departure_date']} to {flight['return_date']}</p>
         <p><strong>Price:</strong> {flight['price']} {flight['currency']}</p>
@@ -58,74 +63,78 @@ class FlightMonitor:
             server.login(EMAIL_SENDER, password)
             server.send_message(msg)
             server.quit()
-        except: pass
+        except Exception as e:
+            print(f"Failed to send email: {e}")
 
     def run(self):
-        print(f"Starting Amadeus Lean Search at {datetime.now()}")
+        print(f"Starting Flight Scan at {datetime.now()}")
         
-        # Lean Selection: 2 Origins, 5 Hubs
-        origins = ["KRK", "WAW"]
-        hubs = {
-            "AU": "SYD",
-            "NZ": "AKL",
-            "NA": "WDH",
-            "BW": "GBE",
-            "JP": "TYO"
-        }
-
-        # Dates: 2 specific windows to minimize API calls (10 total requests per run)
-        today = date.today()
-        dates_to_check = []
-        
-        # Next Friday
-        curr = today + timedelta(days=1)
-        while curr.weekday() != 4: curr += timedelta(days=1)
-        dates_to_check.append(curr)
-        
-        # One random Friday in 2 months
-        future = today + timedelta(days=60)
-        while future.weekday() != 4: future += timedelta(days=1)
-        dates_to_check.append(future)
-
         all_flights = []
-        for origin in origins:
-            for country, dest in hubs.items():
-                for dep_date in dates_to_check:
-                    # Ideal duration: 8 days
-                    ret_date = dep_date + timedelta(days=8)
-                    
-                    print(f"Searching {origin} -> {dest}...")
-                    flights = self.client.search_flight_offers(origin, dest, dep_date, ret_date)
-                    for f in flights:
-                        all_flights.append(self.scorer.score_flight(f))
-
-        all_flights.sort(key=lambda x: x['score'])
         
-        # Update Data
+        # 1. TRAVELPAYOUTS BROAD SCAN
+        # Check all origins for cheap long-haul destinations
+        origins_to_check = ["KRK", "WAW", "BER", "VIE"]
+        for origin in origins_to_check:
+            print(f"Broad Scan (Travelpayouts) for {origin}...")
+            # Using v1/prices/cheap with destination='-' to get a map of cheap destinations
+            cheap_data = self.travelpayouts.get_cheap_prices(origin)
+            normalized = self.travelpayouts.normalize_cheap_prices(origin, cheap_data)
+            
+            for f in normalized:
+                # Filter for our regions of interest
+                is_target = False
+                for region, dests in DESTINATIONS.items():
+                    if f['destination'] in dests:
+                        is_target = True
+                        break
+                
+                if is_target and f.get('return_date'):
+                    all_flights.append(self.scorer.score_flight(f))
+
+        # 2. TRAVELPAYOUTS LATEST SCAN (Global Hunting)
+        print("Hunting for latest global deals...")
+        latest_data = self.travelpayouts.get_latest_prices(limit=50)
+        normalized_latest = self.travelpayouts.normalize_latest_prices(latest_data)
+        for f in normalized_latest:
+            if f['origin'] in ORIGINS and f.get('return_date'):
+                 all_flights.append(self.scorer.score_flight(f))
+
+        # 3. AMADEUS PRECISION LAYER
+        # Use Amadeus for the top 5 most promising deals found by Travelpayouts
+        # or for specific hub checks.
+        all_flights.sort(key=lambda x: x['score'])
+        top_contenders = all_flights[:5]
+        
+        print(f"Refining {len(top_contenders)} deals with Amadeus...")
+        refined_flights = []
+        for deal in top_contenders:
+            dep_date = datetime.strptime(deal['departure_date'], "%Y-%m-%d").date()
+            ret_date = datetime.strptime(deal['return_date'], "%Y-%m-%d").date()
+            
+            amadeus_results = self.amadeus.search_flight_offers(
+                deal['origin'], deal['destination'], dep_date, ret_date
+            )
+            for f in amadeus_results:
+                refined_flights.append(self.scorer.score_flight(f))
+        
+        all_flights.extend(refined_flights)
+
+        # Update and Save Data
         self.data['last_updated'] = datetime.now().isoformat()
-        # Keep current best deals (mix of all runs)
-        # Combine existing and new, then filter for top scores
-        combined = self.data['current_best'] + all_flights
-        # Remove duplicates (roughly by ID or key details)
+        
+        combined = self.data.get('current_best', []) + all_flights
+        # Remove duplicates
         unique = { (f['origin'], f['destination'], f['departure_date']): f for f in combined }.values()
         
         sorted_unique = sorted(unique, key=lambda x: x['score'])
-        self.data['current_best'] = sorted_unique[:30]
+        self.data['current_best'] = sorted_unique[:50]
         
-        # Stats entry
-        history_entry = {"date": today.isoformat(), "stats": {}}
-        for country, hub in hubs.items():
-            c_flights = [f for f in all_flights if f['destination'] == hub]
-            if c_flights:
-                history_entry["stats"][country] = {"avg": round(sum(f['price'] for f in c_flights)/len(c_flights), 2)}
-        
-        self.data['history'].append(history_entry)
         self.save_data()
 
-        if sorted_unique and sorted_unique[0]['score'] < 3.8:
+        if sorted_unique and sorted_unique[0]['score'] < 3.5:
             self.send_email(sorted_unique[0])
 
-        print(f"Done. Searched {len(origins)*len(hubs)*len(dates_to_check)} pairs.")
+        print(f"Done. Found {len(all_flights)} potential deals.")
 
 if __name__ == "__main__":
     monitor = FlightMonitor()
