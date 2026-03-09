@@ -107,6 +107,9 @@ AIRPORT_NAMES = {
     "YYZ": "Toronto", "YVR": "Vancouver", "YUL": "Montreal", "YYC": "Calgary"
 }
 
+# Feature Toggles
+USE_AMADEUS = False # Set to True to enable Amadeus precision checks
+
 # Email Config
 EMAIL_SENDER = "zyngi23@gmail.com"  # The user's email is both sender (via SMTP) and receiver
 EMAIL_RECEIVER = "zyngi23@gmail.com"

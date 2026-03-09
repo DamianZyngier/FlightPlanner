@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv() # Load local .env file if it exists
 
-from backend.config import ORIGINS, DESTINATIONS, EMAIL_SENDER, EMAIL_RECEIVER
+from backend.config import ORIGINS, DESTINATIONS, EMAIL_SENDER, EMAIL_RECEIVER, USE_AMADEUS
 from backend.amadeus_client import FlightSearchClient
 from backend.travelpayouts_client import TravelpayoutsClient
 from backend.scorer import FlightScorer
@@ -103,24 +103,25 @@ class FlightMonitor:
                  all_flights.append(self.scorer.score_flight(f))
 
         # 3. AMADEUS PRECISION LAYER
-        # Use Amadeus for the top 5 most promising deals found by Travelpayouts
-        # or for specific hub checks.
-        all_flights.sort(key=lambda x: x['score'])
-        top_contenders = all_flights[:5]
-        
-        print(f"Refining {len(top_contenders)} deals with Amadeus...")
-        refined_flights = []
-        for deal in top_contenders:
-            dep_date = datetime.strptime(deal['departure_date'], "%Y-%m-%d").date()
-            ret_date = datetime.strptime(deal['return_date'], "%Y-%m-%d").date()
+        if USE_AMADEUS:
+            all_flights.sort(key=lambda x: x['score'])
+            top_contenders = all_flights[:5]
             
-            amadeus_results = self.amadeus.search_flight_offers(
-                deal['origin'], deal['destination'], dep_date, ret_date
-            )
-            for f in amadeus_results:
-                refined_flights.append(self.scorer.score_flight(f))
-        
-        all_flights.extend(refined_flights)
+            print(f"Refining {len(top_contenders)} deals with Amadeus...")
+            refined_flights = []
+            for deal in top_contenders:
+                dep_date = datetime.strptime(deal['departure_date'], "%Y-%m-%d").date()
+                ret_date = datetime.strptime(deal['return_date'], "%Y-%m-%d").date()
+                
+                amadeus_results = self.amadeus.search_flight_offers(
+                    deal['origin'], deal['destination'], dep_date, ret_date
+                )
+                for f in amadeus_results:
+                    refined_flights.append(self.scorer.score_flight(f))
+            
+            all_flights.extend(refined_flights)
+        else:
+            print("Skipping Amadeus refinement (USE_AMADEUS = False).")
 
         # Update and Save Data
         self.data['last_updated'] = datetime.now().isoformat()
