@@ -82,6 +82,20 @@ input[type="range"] { flex-grow: 1; accent-color: var(--accent); }
 .range-val { font-size: 0.875rem; font-weight: 600; min-width: 50px; }
 .help-text { font-size: 0.7rem; color: #94a3b8; }
 
+.origin-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+.origin-tag {
+    font-size: 0.65rem;
+    background: rgba(255,255,255,0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: #cbd5e1;
+}
+
 /* Smart Input */
 .smart-input { display: flex; gap: 0.5rem; }
 .smart-input input { 
@@ -168,14 +182,16 @@ input[type="range"] { flex-grow: 1; accent-color: var(--accent); }
     top: 1.25rem; right: 1.25rem;
     font-size: 0.75rem;
     font-weight: 800;
-    padding: 0.3rem 0.6rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 6px;
     color: white;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.score-excellent { background: var(--success); }
-.score-good { background: #84cc16; }
-.score-fair { background: var(--warning); }
-.score-poor { background: var(--danger); }
+.score-excellent { background: #059669 !important; } /* Darker green */
+.score-good { background: #84cc16 !important; }
+.score-fair { background: #f59e0b !important; }
+.score-poor { background: #dc2626 !important; }
 
 /* Minimal Itinerary */
 .mini-itin { padding: 1rem 0; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; }

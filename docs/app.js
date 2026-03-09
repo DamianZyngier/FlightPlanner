@@ -38,7 +38,8 @@ class FlightPlanner {
             totalRoutes: q('stat-total-routes'),
             addBtn: q('add-dest-btn'),
             autoInput: q('dest-autocomplete'),
-            suggestions: q('dest-suggestions')
+            suggestions: q('dest-suggestions'),
+            originList: q('included-origins')
         };
     }
 
@@ -48,6 +49,7 @@ class FlightPlanner {
         await this.loadFlights();
         this.bindEvents();
         this.renderDestinations();
+        this.renderOriginList();
     }
 
     populateSuggestions() {
@@ -66,6 +68,7 @@ class FlightPlanner {
         this.els.addBtn.onclick = () => this.addFromSmartInput();
         this.els.originDist.oninput = (e) => {
             this.els.valDistKrk.innerText = e.target.value;
+            this.renderOriginList();
             this.renderDashboard();
         };
     }
@@ -111,18 +114,14 @@ class FlightPlanner {
 
         let countryCode = '', airportCode = '';
 
-        // Case 1: "Mexico (MX)"
         if (val.includes('(')) {
             countryCode = val.split('(')[1].replace(')', '').trim();
-            airportCode = '-'; // Placeholder for whole country scan
+            airportCode = '-'; 
         } 
-        // Case 2: "JFK: John F. Kennedy"
         else if (val.includes(':')) {
             airportCode = val.split(':')[0].trim();
-            // Try to find country for this airport (fallback to 'XX')
             countryCode = 'INTL'; 
         }
-        // Case 3: Raw code
         else {
             airportCode = val.toUpperCase();
             countryCode = 'INTL';
@@ -156,6 +155,17 @@ class FlightPlanner {
 
     getName(code) { return DATA_MAP.AIRPORTS[code] || DATA_MAP.COUNTRIES[code] || code; }
 
+    renderOriginList() {
+        if (!this.data.config?.ORIGINS) return;
+        const maxDist = parseInt(this.els.originDist.value);
+        const html = Object.entries(this.data.config.ORIGINS)
+            .filter(([code, dist]) => dist <= maxDist)
+            .sort((a,b) => a[1] - b[1])
+            .map(([code, dist]) => `<span class="origin-tag">${code} (${dist}km)</span>`)
+            .join('');
+        this.els.originList.innerHTML = html;
+    }
+
     renderDashboard() {
         if (!this.data.flights?.current_best) return;
         const maxDist = parseInt(this.els.originDist.value);
@@ -163,7 +173,7 @@ class FlightPlanner {
 
         const filtered = this.data.flights.current_best
             .filter(f => !f.is_mock && (origins[f.origin] ?? 0) <= maxDist)
-            .sort((a, b) => b.score - a.score); // High score first
+            .sort((a, b) => b.score - a.score);
 
         this.els.totalRoutes.innerText = filtered.length;
         this.els.bestPrice.innerText = filtered.length ? `${filtered[0].price} ${filtered[0].currency}` : "--";
