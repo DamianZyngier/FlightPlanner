@@ -110,6 +110,7 @@ class TravelpayoutsClient:
                     results.append({
                         "id": f"tp-cheap-{origin}-{dest}-{raw_dep}",
                         "source": "Travelpayouts-Cheap",
+                        "is_mock": False,
                         "origin": origin,
                         "destination": dest,
                         "departure_date": dep_date,
@@ -147,6 +148,7 @@ class TravelpayoutsClient:
                 results.append({
                     "id": f"tp-latest-{offer.get('origin')}-{offer.get('destination')}-{raw_dep}",
                     "source": "Travelpayouts-Latest",
+                    "is_mock": False,
                     "origin": offer.get('origin'),
                     "destination": offer.get('destination'),
                     "departure_date": dep_date,

@@ -80,6 +80,7 @@ class FlightSearchClient:
         return [{
             "id": f"mock-{random.randint(1000,9999)}",
             "source": "Mock",
+            "is_mock": True,
             "origin": origin,
             "destination": destination,
             "departure_date": dep_str,

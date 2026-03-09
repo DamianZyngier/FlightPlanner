@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         flights.forEach(f => {
             const card = document.createElement('div');
-            card.className = 'card';
+            card.className = f.is_mock ? 'card mock' : 'card';
             card.innerHTML = `
                 <div class="score-badge">Score: ${f.ui_score}</div>
                 <div class="card-header">
