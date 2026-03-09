@@ -1,16 +1,12 @@
 from datetime import datetime
 from backend.config import ORIGINS, DESTINATIONS, PEAK_SEASONS, DEFAULT_WEIGHTS
-from backend.utils import calculate_days_off
+from backend.utils import calculate_days_off_detailed
 
 class FlightScorer:
     def __init__(self, weights=None):
         self.weights = weights or DEFAULT_WEIGHTS
 
     def score_flight(self, flight_data):
-        """
-        Calculates a composite score for a flight. 
-        Higher is better (0-100).
-        """
         # 1. Price Score
         price = flight_data['price']
         price_pts = max(0, min(100, 100 - (price - 1500) / 60))
@@ -19,10 +15,11 @@ class FlightScorer:
         dist_km = ORIGINS.get(flight_data['origin'], 600)
         dist_pts = max(0, min(100, 100 - (dist_km / 6)))
 
-        # 3. Days Off
+        # 3. Days Off & Holidays
         dep_date = datetime.strptime(flight_data['departure_date'], "%Y-%m-%d").date()
         ret_date = datetime.strptime(flight_data['return_date'], "%Y-%m-%d").date() if flight_data.get('return_date') else dep_date
-        days_off = calculate_days_off(dep_date, ret_date)
+        
+        days_off, holiday_count = calculate_days_off_detailed(dep_date, ret_date)
         days_pts = max(0, min(100, 100 - (days_off * 10)))
 
         # 4. Seasonality
@@ -35,14 +32,11 @@ class FlightScorer:
                 in_season = True
         season_pts = 100 if in_season else 20
 
-        # Duration logic
-        # Travelpayouts duration is in minutes. Amadeus is ISO string.
-        # We'll normalize to Days for the breakdown.
-        duration_days = 0
-        if flight_data.get('return_date'):
-            duration_days = (ret_date - dep_date).days
-        
-        # Weighted Sum
+        # Duration & Efficiency
+        duration_days = (ret_date - dep_date).days
+        efficiency = duration_days - days_off # Higher is better
+
+        # Weighted Sum (Using backend weights as baseline)
         final_score = (
             price_pts * self.weights.get('price', 0.5) +
             days_pts * self.weights.get('days_off', 0.2) +
@@ -54,9 +48,11 @@ class FlightScorer:
         flight_data['score_breakdown'] = {
             "price_raw": price,
             "days_off": days_off,
+            "holiday_count": holiday_count,
             "dist_km": dist_km,
             "in_season": in_season,
-            "duration_days": duration_days
+            "duration_days": duration_days,
+            "efficiency": efficiency
         }
         return flight_data
 
