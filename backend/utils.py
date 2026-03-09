@@ -44,12 +44,15 @@ def get_layover_info(segments):
 
 def generate_google_flights_link(origin, destination, dep_date, ret_date):
     """
-    Generates a functional Google Flights search link.
-    Using the direct ?flt parameter format which is the most reliable.
+    Generates a functional Google Flights search link using the 'through' query format.
+    Format: https://www.google.com/travel/flights?q=Flights to [DEST] from [ORIG] on [DEP] through [RET]
     """
     if not ret_date:
         # One way
-        return f"https://www.google.com/flights?flt={origin}.{destination}.{dep_date};curr:PLN"
+        query = f"Flights to {destination} from {origin} on {dep_date}"
+    else:
+        # Round trip using 'through' for maximum compatibility
+        query = f"Flights to {destination} from {origin} on {dep_date} through {ret_date}"
     
-    # Round trip
-    return f"https://www.google.com/flights?flt={origin}.{destination}.{dep_date}*{destination}.{origin}.{ret_date};curr:PLN"
+    # URL Encode the query and explicitly set currency
+    return f"https://www.google.com/travel/flights?q={urllib.parse.quote(query)}&curr=PLN"

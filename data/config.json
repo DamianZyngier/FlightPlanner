@@ -181,10 +181,13 @@
   },
   "SETTINGS": {
     "origin_dist": 600,
-    "max_duration": 30,
+    "max_price": 4200,
+    "min_dur": 1,
+    "max_dur": 30,
     "w_price": 1,
     "w_dist": 0.5,
-    "w_weather": 0.5
+    "w_weather": 0.5,
+    "last_view": "longhaul"
   },
   "USE_AMADEUS": false
 }

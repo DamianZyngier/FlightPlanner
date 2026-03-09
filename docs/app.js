@@ -1,5 +1,5 @@
 /**
- * Flight Planner Pro - Multi-View Dashboard (Fixed & Optimized)
+ * Flight Planner Pro - Multi-View Dashboard (Added Price Filter)
  */
 
 const DATA_MAP = {
@@ -22,6 +22,7 @@ class FlightPlanner {
             scanBtn: q('scan-btn'), lastUpdated: q('last-updated'), dealsGrid: q('deals-grid'),
             destList: q('dest-list'), originDist: q('origin-dist'), valDistKrk: q('val-dist-krk'),
             minDur: q('min-duration'), maxDur: q('max-duration'), valMinDur: q('val-min-dur'), valMaxDur: q('val-max-dur'),
+            filterPrice: q('filter-price'), valMaxPrice: q('val-max-price'),
             bestPrice: q('stat-best-price'), totalRoutes: q('stat-total-routes'),
             viewName: q('current-view-name'), addBtn: q('add-dest-btn'), autoInput: q('dest-autocomplete'),
             suggestions: q('dest-suggestions'), originList: q('included-origins'),
@@ -61,11 +62,12 @@ class FlightPlanner {
             };
         });
 
-        const sliders = ['originDist', 'minDur', 'maxDur', 'wPrice', 'wDist', 'wWeather'];
+        const sliders = ['originDist', 'filterPrice', 'minDur', 'maxDur', 'wPrice', 'wDist', 'wWeather'];
         sliders.forEach(key => {
             this.els[key].oninput = (e) => {
                 const val = e.target.value;
                 if (key === 'originDist') { this.els.valDistKrk.innerText = val; this.renderOriginList(); }
+                else if (key === 'filterPrice') this.els.valMaxPrice.innerText = val;
                 else if (key === 'minDur') this.els.valMinDur.innerText = val;
                 else if (key === 'maxDur') this.els.valMaxDur.innerText = val;
                 else {
@@ -86,6 +88,7 @@ class FlightPlanner {
             if (this.data.config.SETTINGS) {
                 const s = this.data.config.SETTINGS;
                 this.els.originDist.value = s.origin_dist ?? 600;
+                this.els.filterPrice.value = s.max_price ?? 8000;
                 this.els.minDur.value = s.min_dur ?? 1;
                 this.els.maxDur.value = s.max_dur ?? 30;
                 this.els.wPrice.value = s.w_price ?? 1.0;
@@ -94,6 +97,7 @@ class FlightPlanner {
                 this.currentView = s.last_view ?? 'longhaul';
                 
                 this.els.valDistKrk.innerText = this.els.originDist.value;
+                this.els.valMaxPrice.innerText = this.els.filterPrice.value;
                 this.els.valMinDur.innerText = this.els.minDur.value;
                 this.els.valMaxDur.innerText = this.els.maxDur.value;
                 if (this.els.vWPrice) this.els.vWPrice.innerText = this.els.wPrice.value;
@@ -112,6 +116,7 @@ class FlightPlanner {
         if (!this.data.config) return;
         this.data.config.SETTINGS = {
             origin_dist: parseInt(this.els.originDist.value),
+            max_price: parseInt(this.els.filterPrice.value),
             min_dur: parseInt(this.els.minDur.value),
             max_dur: parseInt(this.els.maxDur.value),
             w_price: parseFloat(this.els.wPrice.value),
@@ -162,18 +167,19 @@ class FlightPlanner {
             .filter(([c, d]) => d <= max)
             .sort((a,b) => a[1]-b[1])
             .map(([c, d]) => `<span class="origin-tag" title="${this.getName(c)}">${this.getName(c)}</span>`)
-            .join(' '); // Space added
+            .join(' ');
         this.els.originList.innerHTML = html;
     }
 
     renderDashboard() {
         if (!this.data.flights?.current_best || !this.data.config) return;
         const maxDist = parseInt(this.els.originDist.value);
+        const maxPrice = parseInt(this.els.filterPrice.value);
         const minD = parseInt(this.els.minDur.value);
         const maxD = parseInt(this.els.maxDur.value);
         const w = { p: parseFloat(this.els.wPrice.value), d: parseFloat(this.els.wDist.value), we: parseFloat(this.els.wWeather.value) };
 
-        let filtered = this.data.flights.current_best.filter(f => !f.is_mock);
+        let filtered = this.data.flights.current_best.filter(f => !f.is_mock && f.price <= maxPrice);
 
         if (this.currentView === 'citybreak') {
             filtered = filtered.filter(f => {

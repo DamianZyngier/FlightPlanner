@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T13:10:40.446182",
+  "last_updated": "2026-03-09T14:48:31.662135",
   "current_best": [
     {
       "id": "tp-cheap-WMI-AKL-2026-05-17T11:40:00+02:00",
@@ -12,7 +12,7 @@
       "airline": "W6",
       "price": 9961.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20AKL%20on%202026-05-17%20returning%202026-05-31&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20WMI%20on%202026-05-17%20through%202026-05-31&curr=PLN",
       "score": 6.8,
       "score_breakdown": {
         "price_raw": 9961.0,
@@ -32,7 +32,7 @@
       "airline": "QR",
       "price": 7360.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20WLG%20on%202026-04-17%20returning%202026-04-24&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WLG%20from%20PRG%20on%202026-04-17%20through%202026-04-24&curr=PLN",
       "score": 12.3,
       "score_breakdown": {
         "price_raw": 7360.0,
@@ -52,7 +52,7 @@
       "airline": "W6",
       "price": 8756.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BTS%20to%20FUK%20on%202026-03-12%20returning%202026-03-19&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FUK%20from%20BTS%20on%202026-03-12%20through%202026-03-19&curr=PLN",
       "score": 16.5,
       "score_breakdown": {
         "price_raw": 8756.0,
@@ -72,7 +72,7 @@
       "airline": "G9",
       "price": 6675.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20JNB%20on%202026-04-10%20returning%202026-05-21&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20WMI%20on%202026-04-10%20through%202026-05-21&curr=PLN",
       "score": 17.9,
       "score_breakdown": {
         "price_raw": 6675.0,
@@ -92,7 +92,7 @@
       "airline": "G9",
       "price": 7532.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20MEL%20on%202026-04-10%20returning%202026-05-02&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20WMI%20on%202026-04-10%20through%202026-05-02&curr=PLN",
       "score": 18.7,
       "score_breakdown": {
         "price_raw": 7532.0,
@@ -112,32 +112,12 @@
       "airline": "VY",
       "price": 7062.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20VIE%20to%20CUZ%20on%202026-07-20%20returning%202026-08-10&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CUZ%20from%20VIE%20on%202026-07-20%20through%202026-08-10&curr=PLN",
       "score": 20.2,
       "score_breakdown": {
         "price_raw": 7062.0,
         "days_off": 16,
         "dist_km": 460,
-        "in_season": true
-      }
-    },
-    {
-      "id": "tp-cheap-RZE-AKL-2026-03-09T13:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "RZE",
-      "destination": "AKL",
-      "departure_date": "2026-03-09",
-      "return_date": "2026-03-16",
-      "airline": "LH",
-      "price": 8649.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20RZE%20to%20AKL%20on%202026-03-09%20returning%202026-03-16&curr=PLN",
-      "score": 21.3,
-      "score_breakdown": {
-        "price_raw": 8649.0,
-        "days_off": 6,
-        "dist_km": 160,
         "in_season": true
       }
     },
@@ -150,12 +130,12 @@
       "departure_date": "2026-07-31",
       "return_date": "2026-08-15",
       "airline": "RR",
-      "price": 6752.0,
+      "price": 6744.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20KRK%20to%20CHC%20on%202026-07-31%20returning%202026-08-15&curr=PLN",
-      "score": 22.4,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CHC%20from%20KRK%20on%202026-07-31%20through%202026-08-15&curr=PLN",
+      "score": 22.5,
       "score_breakdown": {
-        "price_raw": 6752.0,
+        "price_raw": 6744.0,
         "days_off": 11,
         "dist_km": 0,
         "in_season": false
@@ -172,7 +152,7 @@
       "airline": "AF",
       "price": 6484.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BER%20to%20CUZ%20on%202026-07-01%20returning%202026-07-22&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CUZ%20from%20BER%20on%202026-07-01%20through%202026-07-22&curr=PLN",
       "score": 22.6,
       "score_breakdown": {
         "price_raw": 6484.0,
@@ -192,7 +172,7 @@
       "airline": "TK",
       "price": 4950.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20AKL%20on%202026-11-02%20returning%202026-11-16&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20PRG%20on%202026-11-02%20through%202026-11-16&curr=PLN",
       "score": 28.4,
       "score_breakdown": {
         "price_raw": 4950.0,
@@ -212,7 +192,7 @@
       "airline": "G9",
       "price": 6748.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20MNL%20on%202026-12-19%20returning%202026-12-29&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WMI%20on%202026-12-19%20through%202026-12-29&curr=PLN",
       "score": 29.3,
       "score_breakdown": {
         "price_raw": 6748.0,
@@ -230,12 +210,12 @@
       "departure_date": "2026-11-07",
       "return_date": "2026-11-15",
       "airline": "G9",
-      "price": 6501.0,
+      "price": 6494.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20CNX%20on%202026-11-07%20returning%202026-11-15&curr=PLN",
-      "score": 33.3,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20WMI%20on%202026-11-07%20through%202026-11-15&curr=PLN",
+      "score": 33.4,
       "score_breakdown": {
-        "price_raw": 6501.0,
+        "price_raw": 6494.0,
         "days_off": 4,
         "dist_km": 310,
         "in_season": true
@@ -252,7 +232,7 @@
       "airline": "TK",
       "price": 4797.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WAW%20to%20BNE%20on%202026-09-04%20returning%202026-09-20&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BNE%20from%20WAW%20on%202026-09-04%20through%202026-09-20&curr=PLN",
       "score": 33.7,
       "score_breakdown": {
         "price_raw": 4797.0,
@@ -272,7 +252,7 @@
       "airline": "TK",
       "price": 4750.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WAW%20to%20AKL%20on%202026-09-14%20returning%202026-10-18&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20WAW%20on%202026-09-14%20through%202026-10-18&curr=PLN",
       "score": 34.1,
       "score_breakdown": {
         "price_raw": 4750.0,
@@ -292,7 +272,7 @@
       "airline": "TK",
       "price": 4634.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BER%20to%20AKL%20on%202026-10-01%20returning%202026-10-07&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20BER%20on%202026-10-01%20through%202026-10-07&curr=PLN",
       "score": 35.0,
       "score_breakdown": {
         "price_raw": 4634.0,
@@ -310,12 +290,12 @@
       "departure_date": "2026-04-25",
       "return_date": "2026-05-16",
       "airline": "FR",
-      "price": 3982.0,
+      "price": 3977.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BER%20to%20LIM%20on%202026-04-25%20returning%202026-05-16&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20BER%20on%202026-04-25%20through%202026-05-16&curr=PLN",
       "score": 35.5,
       "score_breakdown": {
-        "price_raw": 3982.0,
+        "price_raw": 3977.0,
         "days_off": 14,
         "dist_km": 600,
         "in_season": false
@@ -332,32 +312,12 @@
       "airline": "G9",
       "price": 4480.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20DAD%20on%202026-06-20%20returning%202026-07-04&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20WMI%20on%202026-06-20%20through%202026-07-04&curr=PLN",
       "score": 36.2,
       "score_breakdown": {
         "price_raw": 4480.0,
         "days_off": 10,
         "dist_km": 310,
-        "in_season": false
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-SYD-2026-08-13T12:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "SYD",
-      "departure_date": "2026-08-13",
-      "return_date": "2026-08-31",
-      "airline": "CZ",
-      "price": 4294.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BUD%20to%20SYD%20on%202026-08-13%20returning%202026-08-31&curr=PLN",
-      "score": 36.2,
-      "score_breakdown": {
-        "price_raw": 4294.0,
-        "days_off": 13,
-        "dist_km": 400,
         "in_season": false
       }
     },
@@ -372,7 +332,7 @@
       "airline": "TK",
       "price": 4915.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20BNE%20on%202026-10-08%20returning%202026-10-25&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BNE%20from%20PRG%20on%202026-10-08%20through%202026-10-25&curr=PLN",
       "score": 36.7,
       "score_breakdown": {
         "price_raw": 4915.0,
@@ -390,12 +350,12 @@
       "departure_date": "2026-12-30",
       "return_date": "2027-01-30",
       "airline": "W9",
-      "price": 4897.0,
+      "price": 4891.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20MEL%20on%202026-12-30%20returning%202027-01-30&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20PRG%20on%202026-12-30%20through%202027-01-30&curr=PLN",
       "score": 36.9,
       "score_breakdown": {
-        "price_raw": 4897.0,
+        "price_raw": 4891.0,
         "days_off": 21,
         "dist_km": 540,
         "in_season": true
@@ -412,7 +372,7 @@
       "airline": "BA",
       "price": 4733.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BER%20to%20WDH%20on%202026-10-18%20returning%202026-11-02&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20BER%20on%202026-10-18%20through%202026-11-02&curr=PLN",
       "score": 37.2,
       "score_breakdown": {
         "price_raw": 4733.0,
@@ -432,7 +392,7 @@
       "airline": "TK",
       "price": 3951.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20VIE%20to%20LIM%20on%202026-04-12%20returning%202026-05-04&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20VIE%20on%202026-04-12%20through%202026-05-04&curr=PLN",
       "score": 38.1,
       "score_breakdown": {
         "price_raw": 3951.0,
@@ -452,32 +412,12 @@
       "airline": "TK",
       "price": 4644.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BUD%20to%20AKL%20on%202026-11-10%20returning%202026-11-17&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20BUD%20on%202026-11-10%20through%202026-11-17&curr=PLN",
       "score": 38.3,
       "score_breakdown": {
         "price_raw": 4644.0,
         "days_off": 5,
         "dist_km": 400,
-        "in_season": false
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-SYD-2026-05-01T11:55:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "SYD",
-      "departure_date": "2026-05-01",
-      "return_date": "2026-06-05",
-      "airline": "EY",
-      "price": 3926.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20VIE%20to%20SYD%20on%202026-05-01%20returning%202026-06-05&curr=PLN",
-      "score": 38.3,
-      "score_breakdown": {
-        "price_raw": 3926.0,
-        "days_off": 24,
-        "dist_km": 460,
         "in_season": false
       }
     },
@@ -492,13 +432,33 @@
       "airline": "FR",
       "price": 4723.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20SYD%20on%202026-04-15%20returning%202026-04-29&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20PRG%20on%202026-04-15%20through%202026-04-29&curr=PLN",
       "score": 38.3,
       "score_breakdown": {
         "price_raw": 4723.0,
         "days_off": 11,
         "dist_km": 540,
         "in_season": true
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-SYD-2026-05-01T11:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "SYD",
+      "departure_date": "2026-05-01",
+      "return_date": "2026-06-05",
+      "airline": "EY",
+      "price": 3926.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20VIE%20on%202026-05-01%20through%202026-06-05&curr=PLN",
+      "score": 38.3,
+      "score_breakdown": {
+        "price_raw": 3926.0,
+        "days_off": 24,
+        "dist_km": 460,
+        "in_season": false
       }
     },
     {
@@ -512,7 +472,7 @@
       "airline": "TK",
       "price": 4243.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BER%20to%20MEL%20on%202026-04-11%20returning%202026-04-25&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20BER%20on%202026-04-11%20through%202026-04-25&curr=PLN",
       "score": 41.3,
       "score_breakdown": {
         "price_raw": 4243.0,
@@ -532,7 +492,7 @@
       "airline": "LO",
       "price": 5093.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20RZE%20to%20DAD%20on%202026-03-19%20returning%202026-04-15&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20RZE%20on%202026-03-19%20through%202026-04-15&curr=PLN",
       "score": 41.6,
       "score_breakdown": {
         "price_raw": 5093.0,
@@ -552,7 +512,7 @@
       "airline": "FR",
       "price": 3813.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20LIM%20on%202026-04-22%20returning%202026-05-06&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20WMI%20on%202026-04-22%20through%202026-05-06&curr=PLN",
       "score": 41.7,
       "score_breakdown": {
         "price_raw": 3813.0,
@@ -572,7 +532,7 @@
       "airline": "TK",
       "price": 5269.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20KRK%20to%20AKL%20on%202027-01-18%20returning%202027-01-30&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20KRK%20on%202027-01-18%20through%202027-01-30&curr=PLN",
       "score": 42.8,
       "score_breakdown": {
         "price_raw": 5269.0,
@@ -592,7 +552,7 @@
       "airline": "W6",
       "price": 3680.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20TYO%20on%202026-09-13%20returning%202026-09-27&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WMI%20on%202026-09-13%20through%202026-09-27&curr=PLN",
       "score": 42.8,
       "score_breakdown": {
         "price_raw": 3680.0,
@@ -612,7 +572,7 @@
       "airline": "FR",
       "price": 4053.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BER%20to%20SYD%20on%202026-04-11%20returning%202026-04-25&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20BER%20on%202026-04-11%20through%202026-04-25&curr=PLN",
       "score": 42.9,
       "score_breakdown": {
         "price_raw": 4053.0,
@@ -632,7 +592,7 @@
       "airline": "AF",
       "price": 3185.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20CPT%20on%202026-05-01%20returning%202026-05-15&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20PRG%20on%202026-05-01%20through%202026-05-15&curr=PLN",
       "score": 43.1,
       "score_breakdown": {
         "price_raw": 3185.0,
@@ -652,7 +612,7 @@
       "airline": "FZ",
       "price": 3653.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WAW%20to%20CEB%20on%202026-08-17%20returning%202026-08-30&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20WAW%20on%202026-08-17%20through%202026-08-30&curr=PLN",
       "score": 43.2,
       "score_breakdown": {
         "price_raw": 3653.0,
@@ -672,7 +632,7 @@
       "airline": "FR",
       "price": 4396.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BUD%20to%20LIM%20on%202026-05-01%20returning%202026-05-16&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20BUD%20on%202026-05-01%20through%202026-05-16&curr=PLN",
       "score": 43.4,
       "score_breakdown": {
         "price_raw": 4396.0,
@@ -692,11 +652,31 @@
       "airline": "DV",
       "price": 3368.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BUD%20to%20DAD%20on%202026-09-10%20returning%202026-09-25&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20BUD%20on%202026-09-10%20through%202026-09-25&curr=PLN",
       "score": 43.9,
       "score_breakdown": {
         "price_raw": 3368.0,
         "days_off": 12,
+        "dist_km": 400,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-CPT-2026-04-06T06:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "CPT",
+      "departure_date": "2026-04-06",
+      "return_date": "2026-04-12",
+      "airline": "W6",
+      "price": 4086.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20BUD%20on%202026-04-06%20through%202026-04-12&curr=PLN",
+      "score": 44.0,
+      "score_breakdown": {
+        "price_raw": 4086.0,
+        "days_off": 4,
         "dist_km": 400,
         "in_season": false
       }
@@ -712,7 +692,7 @@
       "airline": "MU",
       "price": 3584.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20VIE%20to%20MEL%20on%202026-06-01%20returning%202026-06-10&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20VIE%20on%202026-06-01%20through%202026-06-10&curr=PLN",
       "score": 44.1,
       "score_breakdown": {
         "price_raw": 3584.0,
@@ -732,7 +712,7 @@
       "airline": "QR",
       "price": 3200.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20VIE%20to%20DUR%20on%202026-04-01%20returning%202026-04-30&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DUR%20from%20VIE%20on%202026-04-01%20through%202026-04-30&curr=PLN",
       "score": 44.3,
       "score_breakdown": {
         "price_raw": 3200.0,
@@ -752,7 +732,7 @@
       "airline": "BA",
       "price": 2995.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20JNB%20on%202026-04-04%20returning%202026-05-04&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20PRG%20on%202026-04-04%20through%202026-05-04&curr=PLN",
       "score": 44.7,
       "score_breakdown": {
         "price_raw": 2995.0,
@@ -772,7 +752,7 @@
       "airline": "W6",
       "price": 4339.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WMI%20to%20SYD%20on%202026-04-10%20returning%202026-05-06&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20WMI%20on%202026-04-10%20through%202026-05-06&curr=PLN",
       "score": 45.3,
       "score_breakdown": {
         "price_raw": 4339.0,
@@ -792,7 +772,7 @@
       "airline": "TK",
       "price": 4945.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20KRK%20to%20SYD%20on%202026-10-31%20returning%202026-11-21&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20KRK%20on%202026-10-31%20through%202026-11-21&curr=PLN",
       "score": 45.5,
       "score_breakdown": {
         "price_raw": 4945.0,
@@ -812,7 +792,7 @@
       "airline": "CI",
       "price": 2897.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20CEB%20on%202026-11-06%20returning%202026-11-21&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20PRG%20on%202026-11-06%20through%202026-11-21&curr=PLN",
       "score": 45.5,
       "score_breakdown": {
         "price_raw": 2897.0,
@@ -832,7 +812,7 @@
       "airline": "EY",
       "price": 2902.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20HAN%20on%202026-06-15%20returning%202026-07-05&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20PRG%20on%202026-06-15%20through%202026-07-05&curr=PLN",
       "score": 45.5,
       "score_breakdown": {
         "price_raw": 2902.0,
@@ -852,33 +832,13 @@
       "airline": "LO",
       "price": 3851.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20PRG%20to%20LIM%20on%202026-05-02%20returning%202026-05-16&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20PRG%20on%202026-05-02%20through%202026-05-16&curr=PLN",
       "score": 45.6,
       "score_breakdown": {
         "price_raw": 3851.0,
         "days_off": 10,
         "dist_km": 540,
         "in_season": true
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-LIM-2026-04-22T17:35:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "LIM",
-      "departure_date": "2026-04-22",
-      "return_date": "2026-05-06",
-      "airline": "FR",
-      "price": 3934.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20KRK%20to%20LIM%20on%202026-04-22%20returning%202026-05-06&curr=PLN",
-      "score": 45.9,
-      "score_breakdown": {
-        "price_raw": 3934.0,
-        "days_off": 10,
-        "dist_km": 0,
-        "in_season": false
       }
     },
     {
@@ -892,7 +852,7 @@
       "airline": "VF",
       "price": 2727.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BER%20to%20DAD%20on%202026-09-11%20returning%202026-09-27&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20BER%20on%202026-09-11%20through%202026-09-27&curr=PLN",
       "score": 45.9,
       "score_breakdown": {
         "price_raw": 2727.0,
@@ -902,22 +862,22 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-CPT-2026-06-22T06:00:00+02:00",
+      "id": "tp-cheap-KRK-LIM-2026-04-22T17:35:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
-      "origin": "BUD",
-      "destination": "CPT",
-      "departure_date": "2026-06-22",
-      "return_date": "2026-07-06",
-      "airline": "KL",
-      "price": 3100.0,
+      "origin": "KRK",
+      "destination": "LIM",
+      "departure_date": "2026-04-22",
+      "return_date": "2026-05-06",
+      "airline": "FR",
+      "price": 3934.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BUD%20to%20CPT%20on%202026-06-22%20returning%202026-07-06&curr=PLN",
-      "score": 46.2,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20KRK%20on%202026-04-22%20through%202026-05-06&curr=PLN",
+      "score": 45.9,
       "score_breakdown": {
-        "price_raw": 3100.0,
-        "days_off": 11,
-        "dist_km": 400,
+        "price_raw": 3934.0,
+        "days_off": 10,
+        "dist_km": 0,
         "in_season": false
       }
     },
@@ -930,12 +890,12 @@
       "departure_date": "2026-05-18",
       "return_date": "2026-06-14",
       "airline": "TK",
-      "price": 2963.0,
+      "price": 2960.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20VIE%20to%20AKL%20on%202026-05-18%20returning%202026-06-14&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20VIE%20on%202026-05-18%20through%202026-06-14&curr=PLN",
       "score": 46.3,
       "score_breakdown": {
-        "price_raw": 2963.0,
+        "price_raw": 2960.0,
         "days_off": 19,
         "dist_km": 460,
         "in_season": false
@@ -952,7 +912,7 @@
       "airline": "LO",
       "price": 4234.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WAW%20to%20PER%20on%202026-04-10%20returning%202026-05-02&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20PER%20from%20WAW%20on%202026-04-10%20through%202026-05-02&curr=PLN",
       "score": 46.4,
       "score_breakdown": {
         "price_raw": 4234.0,
@@ -972,12 +932,32 @@
       "airline": "EI",
       "price": 2626.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20BER%20to%20YYC%20on%202026-04-27%20returning%202026-05-16&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BER%20on%202026-04-27%20through%202026-05-16&curr=PLN",
       "score": 46.8,
       "score_breakdown": {
         "price_raw": 2626.0,
         "days_off": 14,
         "dist_km": 600,
+        "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-MNL-2026-10-16T13:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "MNL",
+      "departure_date": "2026-10-16",
+      "return_date": "2026-11-02",
+      "airline": "CA",
+      "price": 2879.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202026-10-16%20through%202026-11-02&curr=PLN",
+      "score": 47.0,
+      "score_breakdown": {
+        "price_raw": 2879.0,
+        "days_off": 12,
+        "dist_km": 460,
         "in_season": false
       }
     },
@@ -992,13 +972,33 @@
       "airline": "LH",
       "price": 3200.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights/search?q=flights%20from%20WAW%20to%20LIM%20on%202026-11-04%20returning%202026-12-09&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20WAW%20on%202026-11-04%20through%202026-12-09&curr=PLN",
       "score": 47.0,
       "score_breakdown": {
         "price_raw": 3200.0,
         "days_off": 25,
         "dist_km": 300,
         "in_season": false
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-GBE-2026-07-29T10:10:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "GBE",
+      "departure_date": "2026-07-29",
+      "return_date": "2026-08-14",
+      "airline": "D8",
+      "price": 4747.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GBE%20from%20KRK%20on%202026-07-29%20through%202026-08-14&curr=PLN",
+      "score": 47.1,
+      "score_breakdown": {
+        "price_raw": 4747.0,
+        "days_off": 13,
+        "dist_km": 0,
+        "in_season": true
       }
     }
   ],
@@ -1484,6 +1484,88 @@
         },
         "CA": {
           "avg": 2807.42
+        }
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "stats": {
+        "AU": {
+          "avg": 4554.47
+        },
+        "BW": {
+          "avg": 4747.0
+        },
+        "CA": {
+          "avg": 2806.75
+        },
+        "JP": {
+          "avg": 3554.0
+        },
+        "MY": {
+          "avg": 2750.0
+        },
+        "NA": {
+          "avg": 3518.0
+        },
+        "NZ": {
+          "avg": 5696.89
+        },
+        "PE": {
+          "avg": 4518.67
+        },
+        "PH": {
+          "avg": 3308.08
+        },
+        "TH": {
+          "avg": 2768.74
+        },
+        "VN": {
+          "avg": 3170.33
+        },
+        "ZA": {
+          "avg": 3132.38
+        }
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "stats": {
+        "AU": {
+          "avg": 4554.47
+        },
+        "BW": {
+          "avg": 4747.0
+        },
+        "CA": {
+          "avg": 2806.75
+        },
+        "JP": {
+          "avg": 3554.0
+        },
+        "MY": {
+          "avg": 2750.0
+        },
+        "NA": {
+          "avg": 3518.0
+        },
+        "NZ": {
+          "avg": 5696.89
+        },
+        "PE": {
+          "avg": 4518.67
+        },
+        "PH": {
+          "avg": 3308.08
+        },
+        "TH": {
+          "avg": 2768.74
+        },
+        "VN": {
+          "avg": 3170.33
+        },
+        "ZA": {
+          "avg": 3132.38
         }
       }
     }
