@@ -4,6 +4,7 @@
     --accent-hover: #2563eb;
     --success: #10b981;
     --danger: #ef4444;
+    --warning: #f59e0b;
     --bg-main: #f8fafc;
     --sidebar-bg: #0f172a;
     --card-bg: #ffffff;
@@ -154,7 +155,7 @@ nav {
 /* Grid & Cards */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 1.5rem;
 }
 
@@ -173,26 +174,77 @@ nav {
     box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
 }
 
-.card.mock {
-    background: #fffdf0;
-    border-style: dashed;
-    border-color: #f1c40f;
-}
-
-.card.mock::after {
-    content: "MOCK";
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%) rotate(-15deg);
-    font-size: 4rem; font-weight: 900; color: rgba(241,196,15,0.07);
-    pointer-events: none;
-}
-
-.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem; }
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
 .destination { font-size: 1.25rem; font-weight: 700; color: var(--primary); }
 .price { font-size: 1.25rem; font-weight: 800; color: var(--danger); }
 
-.details { display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; }
+/* Skyscanner Style Itinerary */
+.itinerary-line {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stops-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.timeline {
+    flex-grow: 1;
+    height: 2px;
+    background: var(--border);
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: var(--text-muted);
+    border-radius: 50%;
+}
+
+.timeline-label {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.duration-tag {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.layover-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.badge {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.badge-short { background: #d1fae5; color: #065f46; }
+.badge-medium { background: #fef3c7; color: #92400e; }
+.badge-long { background: #fee2e2; color: #991b1b; }
+
+.details { display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; }
 .detail-row { display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 0.25rem; }
 .detail-row span:first-child { color: var(--text-muted); }
 

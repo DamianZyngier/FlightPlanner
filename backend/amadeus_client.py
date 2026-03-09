@@ -1,7 +1,7 @@
 import os
 import random
 from datetime import datetime
-from backend.utils import generate_google_flights_link
+from backend.utils import generate_google_flights_link, parse_amadeus_duration, get_layover_info
 
 try:
     from amadeus import Client, ResponseError
@@ -37,14 +37,13 @@ class FlightSearchClient:
                     returnDate=return_date.isoformat(),
                     adults=1,
                     currencyCode='PLN',
-                    max=3 # Keep it lean
+                    max=3
                 )
                 return self._process_response(response.data)
             except Exception as e:
                 print(f"Amadeus Error ({origin}->{destination}): {e}")
                 return []
         else:
-            # Removed mock response to only show real data
             return []
 
     def _process_response(self, data):
@@ -52,8 +51,15 @@ class FlightSearchClient:
         for offer in data:
             try:
                 itineraries = offer.get('itineraries', [])
-                out_segments = itineraries[0].get('segments', [])
-                in_segments = itineraries[1].get('segments', []) if len(itineraries) > 1 else []
+                if not itineraries: continue
+                
+                # Outbound info
+                out_itin = itineraries[0]
+                out_segments = out_itin.get('segments', [])
+                
+                # Inbound info (if available)
+                in_itin = itineraries[1] if len(itineraries) > 1 else None
+                in_segments = in_itin.get('segments', []) if in_itin else []
                 
                 origin = out_segments[0].get('departure', {}).get('iataCode')
                 dest = out_segments[-1].get('arrival', {}).get('iataCode')
@@ -71,7 +77,13 @@ class FlightSearchClient:
                     "airline": out_segments[0].get('carrierCode'),
                     "price": float(offer.get('price', {}).get('total')),
                     "currency": "PLN",
+                    "duration_out": parse_amadeus_duration(out_itin.get('duration')),
+                    "duration_in": parse_amadeus_duration(in_itin.get('duration')) if in_itin else None,
+                    "stops_out": len(out_segments) - 1,
+                    "layovers_out": get_layover_info(out_segments),
                     "link": generate_google_flights_link(origin, dest, dep_date, ret_date)
                 })
-            except: continue
+            except Exception as e:
+                print(f"Error processing Amadeus offer: {e}")
+                continue
         return results
