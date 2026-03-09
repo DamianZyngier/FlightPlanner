@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T15:14:34.954675",
+  "last_updated": "2026-03-09T15:32:38.483396",
   "current_best": [
     {
       "id": "tp-cheap-WMI-AKL-2026-05-17T11:40:00+02:00",
@@ -17,9 +17,11 @@
       "score_breakdown": {
         "price_raw": 9961.0,
         "days_off": 10,
+        "holiday_count": 0,
         "dist_km": 310,
         "in_season": false,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -38,9 +40,34 @@
       "score_breakdown": {
         "price_raw": 7360.0,
         "days_off": 6,
+        "holiday_count": 0,
         "dist_km": 540,
         "in_season": false,
-        "duration_days": 7
+        "duration_days": 7,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-WLG-2026-05-04T19:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "WLG",
+      "departure_date": "2026-05-04",
+      "return_date": "2026-06-30",
+      "airline": "TK",
+      "price": 7094.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WLG%20from%20WAW%20on%202026-05-04%20through%202026-06-30&curr=PLN",
+      "score": 10.4,
+      "score_breakdown": {
+        "price_raw": 7094.0,
+        "days_off": 41,
+        "holiday_count": 1,
+        "dist_km": 300,
+        "in_season": false,
+        "duration_days": 57,
+        "efficiency": 16
       }
     },
     {
@@ -59,9 +86,11 @@
       "score_breakdown": {
         "price_raw": 6675.0,
         "days_off": 29,
+        "holiday_count": 2,
         "dist_km": 310,
         "in_season": false,
-        "duration_days": 41
+        "duration_days": 41,
+        "efficiency": 12
       }
     },
     {
@@ -80,9 +109,11 @@
       "score_breakdown": {
         "price_raw": 7532.0,
         "days_off": 15,
+        "holiday_count": 1,
         "dist_km": 310,
         "in_season": true,
-        "duration_days": 22
+        "duration_days": 22,
+        "efficiency": 7
       }
     },
     {
@@ -101,9 +132,11 @@
       "score_breakdown": {
         "price_raw": 7062.0,
         "days_off": 16,
+        "holiday_count": 0,
         "dist_km": 460,
         "in_season": true,
-        "duration_days": 21
+        "duration_days": 21,
+        "efficiency": 5
       }
     },
     {
@@ -122,9 +155,11 @@
       "score_breakdown": {
         "price_raw": 8756.0,
         "days_off": 6,
+        "holiday_count": 0,
         "dist_km": 450,
         "in_season": true,
-        "duration_days": 7
+        "duration_days": 7,
+        "efficiency": 1
       }
     },
     {
@@ -136,16 +171,18 @@
       "departure_date": "2026-07-31",
       "return_date": "2026-08-15",
       "airline": "RR",
-      "price": 6743.0,
+      "price": 6749.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CHC%20from%20KRK%20on%202026-07-31%20through%202026-08-15&curr=PLN",
       "score": 18.3,
       "score_breakdown": {
-        "price_raw": 6743.0,
+        "price_raw": 6749.0,
         "days_off": 11,
+        "holiday_count": 1,
         "dist_km": 0,
         "in_season": false,
-        "duration_days": 15
+        "duration_days": 15,
+        "efficiency": 4
       }
     },
     {
@@ -164,9 +201,11 @@
       "score_breakdown": {
         "price_raw": 6484.0,
         "days_off": 16,
+        "holiday_count": 0,
         "dist_km": 600,
         "in_season": true,
-        "duration_days": 21
+        "duration_days": 21,
+        "efficiency": 5
       }
     },
     {
@@ -185,9 +224,11 @@
       "score_breakdown": {
         "price_raw": 4950.0,
         "days_off": 10,
+        "holiday_count": 1,
         "dist_km": 540,
         "in_season": false,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -206,9 +247,11 @@
       "score_breakdown": {
         "price_raw": 6748.0,
         "days_off": 6,
+        "holiday_count": 2,
         "dist_km": 310,
         "in_season": true,
-        "duration_days": 10
+        "duration_days": 10,
+        "efficiency": 4
       }
     },
     {
@@ -220,16 +263,18 @@
       "departure_date": "2026-11-07",
       "return_date": "2026-11-15",
       "airline": "G9",
-      "price": 6493.0,
+      "price": 6498.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20WMI%20on%202026-11-07%20through%202026-11-15&curr=PLN",
       "score": 29.2,
       "score_breakdown": {
-        "price_raw": 6493.0,
+        "price_raw": 6498.0,
         "days_off": 4,
+        "holiday_count": 1,
         "dist_km": 310,
         "in_season": true,
-        "duration_days": 8
+        "duration_days": 8,
+        "efficiency": 4
       }
     },
     {
@@ -248,9 +293,11 @@
       "score_breakdown": {
         "price_raw": 4797.0,
         "days_off": 11,
+        "holiday_count": 0,
         "dist_km": 300,
         "in_season": false,
-        "duration_days": 16
+        "duration_days": 16,
+        "efficiency": 5
       }
     },
     {
@@ -269,9 +316,11 @@
       "score_breakdown": {
         "price_raw": 4750.0,
         "days_off": 25,
+        "holiday_count": 0,
         "dist_km": 300,
         "in_season": false,
-        "duration_days": 34
+        "duration_days": 34,
+        "efficiency": 9
       }
     },
     {
@@ -290,9 +339,11 @@
       "score_breakdown": {
         "price_raw": 4634.0,
         "days_off": 5,
+        "holiday_count": 0,
         "dist_km": 600,
         "in_season": false,
-        "duration_days": 6
+        "duration_days": 6,
+        "efficiency": 1
       }
     },
     {
@@ -304,16 +355,18 @@
       "departure_date": "2026-04-25",
       "return_date": "2026-05-16",
       "airline": "FR",
-      "price": 3977.0,
+      "price": 3980.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20BER%20on%202026-04-25%20through%202026-05-16&curr=PLN",
-      "score": 31.4,
+      "score": 31.3,
       "score_breakdown": {
-        "price_raw": 3977.0,
+        "price_raw": 3980.0,
         "days_off": 14,
+        "holiday_count": 2,
         "dist_km": 600,
         "in_season": false,
-        "duration_days": 21
+        "duration_days": 21,
+        "efficiency": 7
       }
     },
     {
@@ -332,9 +385,11 @@
       "score_breakdown": {
         "price_raw": 4480.0,
         "days_off": 10,
+        "holiday_count": 0,
         "dist_km": 310,
         "in_season": false,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -353,9 +408,11 @@
       "score_breakdown": {
         "price_raw": 4915.0,
         "days_off": 12,
+        "holiday_count": 0,
         "dist_km": 540,
         "in_season": true,
-        "duration_days": 17
+        "duration_days": 17,
+        "efficiency": 5
       }
     },
     {
@@ -367,16 +424,18 @@
       "departure_date": "2026-12-30",
       "return_date": "2027-01-30",
       "airline": "W9",
-      "price": 4891.0,
+      "price": 4895.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20PRG%20on%202026-12-30%20through%202027-01-30&curr=PLN",
       "score": 32.7,
       "score_breakdown": {
-        "price_raw": 4891.0,
+        "price_raw": 4895.0,
         "days_off": 21,
+        "holiday_count": 2,
         "dist_km": 540,
         "in_season": true,
-        "duration_days": 31
+        "duration_days": 31,
+        "efficiency": 10
       }
     },
     {
@@ -395,9 +454,11 @@
       "score_breakdown": {
         "price_raw": 4733.0,
         "days_off": 11,
+        "holiday_count": 1,
         "dist_km": 600,
         "in_season": true,
-        "duration_days": 15
+        "duration_days": 15,
+        "efficiency": 4
       }
     },
     {
@@ -416,9 +477,11 @@
       "score_breakdown": {
         "price_raw": 3951.0,
         "days_off": 15,
+        "holiday_count": 2,
         "dist_km": 460,
         "in_season": false,
-        "duration_days": 22
+        "duration_days": 22,
+        "efficiency": 7
       }
     },
     {
@@ -437,9 +500,11 @@
       "score_breakdown": {
         "price_raw": 4644.0,
         "days_off": 5,
+        "holiday_count": 1,
         "dist_km": 400,
         "in_season": false,
-        "duration_days": 7
+        "duration_days": 7,
+        "efficiency": 2
       }
     },
     {
@@ -458,9 +523,11 @@
       "score_breakdown": {
         "price_raw": 4723.0,
         "days_off": 11,
+        "holiday_count": 0,
         "dist_km": 540,
         "in_season": true,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 3
       }
     },
     {
@@ -479,9 +546,11 @@
       "score_breakdown": {
         "price_raw": 3926.0,
         "days_off": 24,
+        "holiday_count": 3,
         "dist_km": 460,
         "in_season": false,
-        "duration_days": 35
+        "duration_days": 35,
+        "efficiency": 11
       }
     },
     {
@@ -500,9 +569,11 @@
       "score_breakdown": {
         "price_raw": 4243.0,
         "days_off": 10,
+        "holiday_count": 0,
         "dist_km": 600,
         "in_season": true,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -521,9 +592,11 @@
       "score_breakdown": {
         "price_raw": 5093.0,
         "days_off": 19,
+        "holiday_count": 2,
         "dist_km": 160,
         "in_season": true,
-        "duration_days": 27
+        "duration_days": 27,
+        "efficiency": 8
       }
     },
     {
@@ -542,9 +615,11 @@
       "score_breakdown": {
         "price_raw": 3813.0,
         "days_off": 10,
+        "holiday_count": 2,
         "dist_km": 310,
         "in_season": false,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -563,9 +638,11 @@
       "score_breakdown": {
         "price_raw": 5269.0,
         "days_off": 10,
+        "holiday_count": 0,
         "dist_km": 0,
         "in_season": true,
-        "duration_days": 12
+        "duration_days": 12,
+        "efficiency": 2
       }
     },
     {
@@ -584,9 +661,11 @@
       "score_breakdown": {
         "price_raw": 4053.0,
         "days_off": 10,
+        "holiday_count": 0,
         "dist_km": 600,
         "in_season": true,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -605,9 +684,11 @@
       "score_breakdown": {
         "price_raw": 3680.0,
         "days_off": 10,
+        "holiday_count": 0,
         "dist_km": 310,
         "in_season": false,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -626,9 +707,11 @@
       "score_breakdown": {
         "price_raw": 3185.0,
         "days_off": 10,
+        "holiday_count": 2,
         "dist_km": 540,
         "in_season": false,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -647,9 +730,11 @@
       "score_breakdown": {
         "price_raw": 3653.0,
         "days_off": 10,
+        "holiday_count": 0,
         "dist_km": 300,
         "in_season": false,
-        "duration_days": 13
+        "duration_days": 13,
+        "efficiency": 3
       }
     },
     {
@@ -668,30 +753,11 @@
       "score_breakdown": {
         "price_raw": 4396.0,
         "days_off": 10,
+        "holiday_count": 2,
         "dist_km": 400,
         "in_season": true,
-        "duration_days": 15
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-CPT-2026-04-06T06:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "CPT",
-      "departure_date": "2026-04-06",
-      "return_date": "2026-04-12",
-      "airline": "W6",
-      "price": 4086.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20BUD%20on%202026-04-06%20through%202026-04-12&curr=PLN",
-      "score": 39.8,
-      "score_breakdown": {
-        "price_raw": 4086.0,
-        "days_off": 4,
-        "dist_km": 400,
-        "in_season": false,
-        "duration_days": 6
+        "duration_days": 15,
+        "efficiency": 5
       }
     },
     {
@@ -710,9 +776,11 @@
       "score_breakdown": {
         "price_raw": 3368.0,
         "days_off": 12,
+        "holiday_count": 0,
         "dist_km": 400,
         "in_season": false,
-        "duration_days": 15
+        "duration_days": 15,
+        "efficiency": 3
       }
     },
     {
@@ -731,9 +799,11 @@
       "score_breakdown": {
         "price_raw": 3584.0,
         "days_off": 7,
+        "holiday_count": 1,
         "dist_km": 460,
         "in_season": false,
-        "duration_days": 9
+        "duration_days": 9,
+        "efficiency": 2
       }
     },
     {
@@ -752,9 +822,11 @@
       "score_breakdown": {
         "price_raw": 3200.0,
         "days_off": 21,
+        "holiday_count": 2,
         "dist_km": 460,
         "in_season": false,
-        "duration_days": 29
+        "duration_days": 29,
+        "efficiency": 8
       }
     },
     {
@@ -773,9 +845,11 @@
       "score_breakdown": {
         "price_raw": 2995.0,
         "days_off": 19,
+        "holiday_count": 4,
         "dist_km": 540,
         "in_season": false,
-        "duration_days": 30
+        "duration_days": 30,
+        "efficiency": 11
       }
     },
     {
@@ -794,9 +868,11 @@
       "score_breakdown": {
         "price_raw": 4339.0,
         "days_off": 18,
+        "holiday_count": 2,
         "dist_km": 310,
         "in_season": true,
-        "duration_days": 26
+        "duration_days": 26,
+        "efficiency": 8
       }
     },
     {
@@ -815,9 +891,11 @@
       "score_breakdown": {
         "price_raw": 4945.0,
         "days_off": 14,
+        "holiday_count": 2,
         "dist_km": 0,
         "in_season": true,
-        "duration_days": 21
+        "duration_days": 21,
+        "efficiency": 7
       }
     },
     {
@@ -836,9 +914,11 @@
       "score_breakdown": {
         "price_raw": 2902.0,
         "days_off": 15,
+        "holiday_count": 0,
         "dist_km": 540,
         "in_season": false,
-        "duration_days": 20
+        "duration_days": 20,
+        "efficiency": 5
       }
     },
     {
@@ -857,9 +937,11 @@
       "score_breakdown": {
         "price_raw": 2897.0,
         "days_off": 10,
+        "holiday_count": 1,
         "dist_km": 540,
         "in_season": false,
-        "duration_days": 15
+        "duration_days": 15,
+        "efficiency": 5
       }
     },
     {
@@ -878,9 +960,11 @@
       "score_breakdown": {
         "price_raw": 3851.0,
         "days_off": 10,
+        "holiday_count": 1,
         "dist_km": 540,
         "in_season": true,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -899,9 +983,11 @@
       "score_breakdown": {
         "price_raw": 3934.0,
         "days_off": 10,
+        "holiday_count": 2,
         "dist_km": 0,
         "in_season": false,
-        "duration_days": 14
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -920,9 +1006,11 @@
       "score_breakdown": {
         "price_raw": 2727.0,
         "days_off": 11,
+        "holiday_count": 0,
         "dist_km": 600,
         "in_season": false,
-        "duration_days": 16
+        "duration_days": 16,
+        "efficiency": 5
       }
     },
     {
@@ -934,16 +1022,18 @@
       "departure_date": "2026-05-18",
       "return_date": "2026-06-14",
       "airline": "TK",
-      "price": 2959.0,
+      "price": 2962.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20VIE%20on%202026-05-18%20through%202026-06-14&curr=PLN",
-      "score": 42.2,
+      "score": 42.1,
       "score_breakdown": {
-        "price_raw": 2959.0,
+        "price_raw": 2962.0,
         "days_off": 19,
+        "holiday_count": 1,
         "dist_km": 460,
         "in_season": false,
-        "duration_days": 27
+        "duration_days": 27,
+        "efficiency": 8
       }
     },
     {
@@ -962,9 +1052,11 @@
       "score_breakdown": {
         "price_raw": 4234.0,
         "days_off": 15,
+        "holiday_count": 1,
         "dist_km": 300,
         "in_season": true,
-        "duration_days": 22
+        "duration_days": 22,
+        "efficiency": 7
       }
     },
     {
@@ -983,9 +1075,34 @@
       "score_breakdown": {
         "price_raw": 2626.0,
         "days_off": 14,
+        "holiday_count": 2,
         "dist_km": 600,
         "in_season": false,
-        "duration_days": 19
+        "duration_days": 19,
+        "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-MNL-2026-10-16T13:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "MNL",
+      "departure_date": "2026-10-16",
+      "return_date": "2026-11-02",
+      "airline": "CA",
+      "price": 2881.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202026-10-16%20through%202026-11-02&curr=PLN",
+      "score": 42.8,
+      "score_breakdown": {
+        "price_raw": 2881.0,
+        "days_off": 12,
+        "holiday_count": 1,
+        "dist_km": 460,
+        "in_season": false,
+        "duration_days": 17,
+        "efficiency": 5
       }
     },
     {
@@ -1004,9 +1121,11 @@
       "score_breakdown": {
         "price_raw": 3200.0,
         "days_off": 25,
+        "holiday_count": 1,
         "dist_km": 300,
         "in_season": false,
-        "duration_days": 35
+        "duration_days": 35,
+        "efficiency": 10
       }
     },
     {
@@ -1025,30 +1144,11 @@
       "score_breakdown": {
         "price_raw": 4747.0,
         "days_off": 13,
+        "holiday_count": 0,
         "dist_km": 0,
         "in_season": true,
-        "duration_days": 16
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-MNL-2026-10-16T13:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "MNL",
-      "departure_date": "2026-10-16",
-      "return_date": "2026-11-02",
-      "airline": "CA",
-      "price": 2878.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202026-10-16%20through%202026-11-02&curr=PLN",
-      "score": 42.9,
-      "score_breakdown": {
-        "price_raw": 2878.0,
-        "days_off": 12,
-        "dist_km": 460,
-        "in_season": false,
-        "duration_days": 17
+        "duration_days": 16,
+        "efficiency": 3
       }
     }
   ],
@@ -1657,6 +1757,47 @@
         },
         "ZA": {
           "avg": 3132.38
+        }
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "stats": {
+        "AU": {
+          "avg": 4554.93
+        },
+        "BW": {
+          "avg": 4747.0
+        },
+        "CA": {
+          "avg": 2808.92
+        },
+        "JP": {
+          "avg": 3554.0
+        },
+        "MY": {
+          "avg": 2750.29
+        },
+        "NA": {
+          "avg": 3518.0
+        },
+        "NZ": {
+          "avg": 5837.3
+        },
+        "PE": {
+          "avg": 4519.0
+        },
+        "PH": {
+          "avg": 3280.27
+        },
+        "TH": {
+          "avg": 2772.37
+        },
+        "VN": {
+          "avg": 3164.9
+        },
+        "ZA": {
+          "avg": 3163.45
         }
       }
     }
