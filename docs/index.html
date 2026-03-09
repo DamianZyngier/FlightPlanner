@@ -24,33 +24,66 @@
             <h1>Flight Planner</h1>
         </div>
         
+        <!-- Section 1: Filters -->
         <div class="sidebar-section">
-            <label class="section-label">Scanning Control</label>
-            <button id="scan-btn" class="btn-primary">🚀 Run Global Scan</button>
-            <div id="scan-status" class="status-text">Ready</div>
-        </div>
-
-        <div class="sidebar-section">
-            <label class="section-label">Origin Distance</label>
+            <label class="section-label">Active Filters</label>
             <div class="range-container">
-                <input type="range" id="origin-dist" min="0" max="1000" step="50" value="600">
-                <span class="range-val"><span id="val-dist-krk">600</span>km</span>
+                <p class="help-text">Max Distance from KRK</p>
+                <div class="range-row">
+                    <input type="range" id="origin-dist" min="0" max="1000" step="50" value="600">
+                    <span class="range-val"><span id="val-dist-krk">600</span>km</span>
+                </div>
+                <div id="included-origins" class="origin-list"></div>
             </div>
-            <p class="help-text">Max distance from Kraków</p>
-            <div id="included-origins" class="origin-list"></div>
+
+            <div class="range-container" style="margin-top: 1rem;">
+                <p class="help-text">Max Trip Duration</p>
+                <div class="range-row">
+                    <input type="range" id="filter-duration" min="1" max="30" step="1" value="30">
+                    <span class="range-val"><span id="val-duration">30</span>d</span>
+                </div>
+            </div>
         </div>
 
+        <!-- Section 2: Importance Weights -->
         <div class="sidebar-section">
-            <label class="section-label">Manage Destinations</label>
+            <label class="section-label">What's Important? (Weights)</label>
+            <div class="range-container">
+                <p class="help-text">Low Price Importance</p>
+                <div class="range-row">
+                    <input type="range" id="w-price" min="0" max="2" step="0.1" value="1.0">
+                    <span class="range-val" id="val-w-price">1.0</span>
+                </div>
+            </div>
+            <div class="range-container">
+                <p class="help-text">Origin Distance Importance</p>
+                <div class="range-row">
+                    <input type="range" id="w-dist" min="0" max="2" step="0.1" value="0.5">
+                    <span class="range-val" id="val-w-dist">0.5</span>
+                </div>
+            </div>
+            <div class="range-container">
+                <p class="help-text">Best Weather Importance</p>
+                <div class="range-row">
+                    <input type="range" id="w-weather" min="0" max="2" step="0.1" value="0.5">
+                    <span class="range-val" id="val-w-weather">0.5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Manage Destinations -->
+        <div class="sidebar-section">
+            <label class="section-label">Tracked Destinations</label>
             <div class="smart-input">
-                <input type="text" id="dest-autocomplete" list="dest-suggestions" placeholder="Type Country or City...">
+                <input type="text" id="dest-autocomplete" list="dest-suggestions" placeholder="Add country or city...">
                 <datalist id="dest-suggestions"></datalist>
                 <button id="add-dest-btn" class="btn-primary-sm">Add</button>
             </div>
-            <div id="dest-list" class="tag-cloud"></div>
+            <div id="dest-list"></div>
         </div>
 
         <div class="sidebar-footer">
+            <button id="scan-btn" class="btn-primary" style="margin-bottom: 1rem; width: 100%;">🚀 Run Global Scan</button>
             <div id="last-updated">Updating...</div>
         </div>
     </aside>
@@ -66,15 +99,15 @@
                 <span id="stat-total-routes" class="metric-value">--</span>
             </div>
             <div class="metric">
-                <span class="metric-label">Engine</span>
-                <span class="metric-value" style="color: var(--success)">Live</span>
+                <span class="metric-label">Precision Engine</span>
+                <span class="metric-value" id="precision-status" style="color: var(--warning)">Standby</span>
             </div>
         </header>
 
         <div class="view-container">
             <section class="section-deals">
                 <div class="section-header">
-                    <h2>Flight Opportunities</h2>
+                    <h2>Live Opportunities</h2>
                 </div>
                 <div id="deals-grid" class="deals-grid"></div>
             </section>

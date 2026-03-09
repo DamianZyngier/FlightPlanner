@@ -1,5 +1,5 @@
 /**
- * Flight Planner Pro - Smart Dashboard
+ * Flight Planner Pro - Optimized Smart Dashboard
  */
 
 const DATA_MAP = {
@@ -12,15 +12,12 @@ const DATA_MAP = {
         "SYD": "Sydney Kingsford Smith", "MEL": "Melbourne", "BNE": "Brisbane", "AKL": "Auckland", "CHC": "Christchurch",
         "TYO": "Tokyo (All Airports)", "NRT": "Tokyo Narita", "HND": "Tokyo Haneda", "KIX": "Osaka Kansai", "BKK": "Bangkok Suvarnabhumi",
         "HKT": "Phuket", "SGN": "Ho Chi Minh Tan Son Nhat", "HAN": "Hanoi Noi Bai", "LIM": "Lima Jorge Chávez", "CUZ": "Cusco",
-        "YYZ": "Toronto Pearson", "YVR": "Vancouver", "JNB": "Johannesburg O.R. Tambo", "CPT": "Cape Town", "WDH": "Windhoek Hosea Kutako",
-        "MUC": "Munich Airport", "CDG": "Paris Charles de Gaulle", "AMS": "Amsterdam Schiphol", "LHR": "London Heathrow", "DXB": "Dubai Intl"
+        "YYZ": "Toronto Pearson", "YVR": "Vancouver", "JNB": "Johannesburg O.R. Tambo", "CPT": "Cape Town", "WDH": "Windhoek Hosea Kutako"
     },
     "AIRLINES": {
         "LO": "LOT Polish Airlines", "LH": "Lufthansa", "LX": "Swiss International", "OS": "Austrian Airlines", "AF": "Air France",
         "KL": "KLM Royal Dutch", "TK": "Turkish Airlines", "EK": "Emirates", "QR": "Qatar Airways", "AY": "Finnair",
-        "FR": "Ryanair", "W6": "Wizz Air", "BA": "British Airways", "DL": "Delta Air Lines", "UA": "United Airlines",
-        "AA": "American Airlines", "SQ": "Singapore Airlines", "CX": "Cathay Pacific", "NH": "ANA (All Nippon Airways)",
-        "JL": "Japan Airlines", "KE": "Korean Air", "EK": "Emirates", "EY": "Etihad Airways", "QR": "Qatar Airways"
+        "FR": "Ryanair", "W6": "Wizz Air", "BA": "British Airways"
     }
 };
 
@@ -36,18 +33,22 @@ class FlightPlanner {
         const q = (id) => document.getElementById(id);
         return {
             scanBtn: q('scan-btn'),
-            scanStatus: q('scan-status'),
             lastUpdated: q('last-updated'),
             dealsGrid: q('deals-grid'),
             destList: q('dest-list'),
             originDist: q('origin-dist'),
             valDistKrk: q('val-dist-krk'),
+            filterDuration: q('filter-duration'),
+            valDuration: q('val-duration'),
             bestPrice: q('stat-best-price'),
             totalRoutes: q('stat-total-routes'),
+            precisionStatus: q('precision-status'),
             addBtn: q('add-dest-btn'),
             autoInput: q('dest-autocomplete'),
             suggestions: q('dest-suggestions'),
-            originList: q('included-origins')
+            originList: q('included-origins'),
+            wPrice: q('w-price'), wDist: q('w-dist'), wWeather: q('w-weather'),
+            valWPrice: q('val-w-price'), valWDist: q('val-w-dist'), valWWeather: q('val-w-weather')
         };
     }
 
@@ -61,59 +62,95 @@ class FlightPlanner {
     }
 
     populateSuggestions() {
-        let html = '';
-        Object.entries(DATA_MAP.COUNTRIES).forEach(([code, name]) => {
-            html += `<option value="${name} (${code})"></option>`;
-        });
-        Object.entries(DATA_MAP.AIRPORTS).forEach(([code, name]) => {
-            html += `<option value="${code}: ${name}"></option>`;
-        });
-        this.els.suggestions.innerHTML = html;
+        let h = '';
+        Object.entries(DATA_MAP.COUNTRIES).forEach(([c, n]) => h += `<option value="${n} (${c})"></option>`);
+        Object.entries(DATA_MAP.AIRPORTS).forEach(([c, n]) => h += `<option value="${c}: ${n}"></option>`);
+        this.els.suggestions.innerHTML = h;
     }
 
     bindEvents() {
         this.els.scanBtn.onclick = () => this.triggerScan();
         this.els.addBtn.onclick = () => this.addFromSmartInput();
-        this.els.originDist.oninput = (e) => {
-            this.els.valDistKrk.innerText = e.target.value;
-            this.renderOriginList();
-            this.renderDashboard();
-        };
-        this.els.autoInput.onkeypress = (e) => {
-            if (e.key === 'Enter') this.addFromSmartInput();
-        };
+        
+        // Settings auto-save and live update
+        const sliders = ['originDist', 'filterDuration', 'wPrice', 'wDist', 'wWeather'];
+        sliders.forEach(key => {
+            this.els[key].oninput = (e) => {
+                const val = e.target.value;
+                if (key === 'originDist') {
+                    this.els.valDistKrk.innerText = val;
+                    this.renderOriginList();
+                } else if (key === 'filterDuration') {
+                    this.els.valDuration.innerText = val;
+                } else {
+                    const labelId = 'val-w-' + key.replace('w', '').toLowerCase();
+                    document.getElementById(labelId).innerText = val;
+                }
+                this.saveConfigLocally();
+                this.renderDashboard();
+            };
+        });
     }
 
     async loadConfig() {
         try {
             const r = await fetch('/api/config');
             this.data.config = await r.json();
+            
+            // Restore settings from config
+            if (this.data.config.SETTINGS) {
+                const s = this.data.config.SETTINGS;
+                this.els.originDist.value = s.origin_dist || 600;
+                this.els.filterDuration.value = s.max_duration || 30;
+                this.els.wPrice.value = s.w_price || 1.0;
+                this.els.wDist.value = s.w_dist || 0.5;
+                this.els.wWeather.value = s.w_weather || 0.5;
+                
+                // Sync labels
+                this.els.valDistKrk.innerText = this.els.originDist.value;
+                this.els.valDuration.innerText = this.els.filterDuration.value;
+                this.els.valWPrice.innerText = this.els.wPrice.value;
+                this.els.valWDist.innerText = this.els.wDist.value;
+                this.els.valWWeather.innerText = this.els.wWeather.value;
+            }
+            this.els.precisionStatus.innerText = this.data.config.USE_AMADEUS ? "Active" : "Standby";
+            this.els.precisionStatus.style.color = this.data.config.USE_AMADEUS ? "var(--success)" : "var(--warning)";
         } catch (e) { console.error("Config failed", e); }
+    }
+
+    async saveConfigLocally() {
+        // Prepare settings object
+        this.data.config.SETTINGS = {
+            origin_dist: parseInt(this.els.originDist.value),
+            max_duration: parseInt(this.els.filterDuration.value),
+            w_price: parseFloat(this.els.wPrice.value),
+            w_dist: parseFloat(this.els.wDist.value),
+            w_weather: parseFloat(this.els.wWeather.value)
+        };
+        await fetch('/api/config', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(this.data.config)
+        });
     }
 
     async loadFlights() {
         try {
             const r = await fetch('/api/flights');
             this.data.flights = await r.json();
-            this.updateMetadata();
+            const lu = this.data.flights.last_updated;
+            if (lu) this.els.lastUpdated.innerText = `Updated: ${new Date(lu).toLocaleTimeString()}`;
             this.renderDashboard();
         } catch (e) { console.error("Flights failed", e); }
     }
 
-    updateMetadata() {
-        const lu = this.data.flights.last_updated;
-        if (lu) this.els.lastUpdated.innerText = `Updated: ${new Date(lu).toLocaleTimeString()}`;
-    }
-
     async triggerScan() {
         this.els.scanBtn.disabled = true;
-        this.els.scanBtn.innerText = "⏳ Processing...";
+        this.els.scanBtn.innerText = "⏳ Scanning...";
         try {
             await fetch('/api/scan', { method: 'POST' });
             await this.loadFlights();
-            this.els.scanStatus.innerText = "Complete";
-        } catch (e) { this.els.scanStatus.innerText = "Error"; }
-        finally {
+        } finally {
             this.els.scanBtn.disabled = false;
             this.els.scanBtn.innerText = "🚀 Run Global Scan";
         }
@@ -122,72 +159,34 @@ class FlightPlanner {
     async addFromSmartInput() {
         const val = this.els.autoInput.value.trim();
         if (!val) return;
-
-        let countryCode = '', airportCode = '';
-
-        if (val.includes('(') && val.includes(')')) {
-            countryCode = val.split('(')[1].split(')')[0].toUpperCase();
-            airportCode = '-'; 
-        } 
-        else if (val.includes(':')) {
-            airportCode = val.split(':')[0].trim().toUpperCase();
-            countryCode = 'INTL'; 
+        let cCode = '', aCode = '';
+        if (val.includes('(')) {
+            cCode = val.split('(')[1].split(')')[0].toUpperCase();
+            aCode = '-';
+        } else if (val.includes(':')) {
+            aCode = val.split(':')[0].trim().toUpperCase();
+            cCode = 'INTL';
+        } else {
+            aCode = val.toUpperCase(); cCode = 'INTL';
         }
-        else {
-            const upper = val.toUpperCase();
-            if (DATA_MAP.COUNTRIES[upper]) {
-                countryCode = upper;
-                airportCode = '-';
-            } 
-            else if (DATA_MAP.AIRPORTS[upper] || upper.length === 3) {
-                airportCode = upper;
-                countryCode = 'INTL';
-            }
-            else {
-                const foundEntry = Object.entries(DATA_MAP.COUNTRIES).find(([code, name]) => name.toLowerCase() === val.toLowerCase());
-                if (foundEntry) {
-                    countryCode = foundEntry[0];
-                    airportCode = '-';
-                }
-            }
-        }
-
-        if (countryCode) {
-            if (!this.data.config.DESTINATIONS[countryCode]) this.data.config.DESTINATIONS[countryCode] = [];
-            if (airportCode !== '-' && !this.data.config.DESTINATIONS[countryCode].includes(airportCode)) {
-                this.data.config.DESTINATIONS[countryCode].push(airportCode);
-            }
-            await this.saveConfig();
+        if (cCode) {
+            if (!this.data.config.DESTINATIONS[cCode]) this.data.config.DESTINATIONS[cCode] = [];
+            if (aCode !== '-' && !this.data.config.DESTINATIONS[cCode].includes(aCode)) this.data.config.DESTINATIONS[cCode].push(aCode);
+            await this.saveConfigLocally();
             this.renderDestinations();
             this.els.autoInput.value = '';
         }
     }
 
-    async saveConfig() {
-        await fetch('/api/config', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(this.data.config)
-        });
-    }
-
-    getScoreClass(s) {
-        if (s > 80) return 'score-excellent';
-        if (s > 60) return 'score-good';
-        if (s > 40) return 'score-fair';
-        return 'score-poor';
-    }
-
-    getName(code) { return DATA_MAP.AIRPORTS[code] || DATA_MAP.COUNTRIES[code] || code; }
-    getAirline(code) { return DATA_MAP.AIRLINES[code] || code; }
+    getName(c) { return DATA_MAP.AIRPORTS[c] || DATA_MAP.COUNTRIES[c] || c; }
+    getAirline(c) { return DATA_MAP.AIRLINES[c] || c; }
 
     renderOriginList() {
-        if (!this.data.config?.ORIGINS) return;
-        const maxDist = parseInt(this.els.originDist.value);
-        const html = Object.entries(this.data.config.ORIGINS)
-            .filter(([code, dist]) => dist <= maxDist)
-            .sort((a,b) => a[1] - b[1])
-            .map(([code, dist]) => `<span class="origin-tag" title="${this.getName(code)}">${this.getName(code)} (${code}) - ${dist}km</span>`)
+        const max = parseInt(this.els.originDist.value);
+        const html = Object.entries(this.data.config.ORIGINS || {})
+            .filter(([c, d]) => d <= max)
+            .sort((a,b) => a[1]-b[1])
+            .map(([c, d]) => `<span class="origin-tag" title="${this.getName(c)}">${c}</span>`)
             .join('');
         this.els.originList.innerHTML = html;
     }
@@ -195,34 +194,51 @@ class FlightPlanner {
     renderDashboard() {
         if (!this.data.flights?.current_best) return;
         const maxDist = parseInt(this.els.originDist.value);
-        const origins = this.data.config.ORIGINS || {};
+        const maxDur = parseInt(this.els.filterDuration.value);
+        const weights = { 
+            price: parseFloat(this.els.wPrice.value),
+            dist: parseFloat(this.els.wDist.value),
+            weather: parseFloat(this.els.wWeather.value)
+        };
 
         const filtered = this.data.flights.current_best
-            .filter(f => !f.is_mock && (origins[f.origin] ?? 0) <= maxDist)
-            .sort((a, b) => b.score - a.score);
+            .filter(f => {
+                const dist = this.data.config.ORIGINS[f.origin] ?? 0;
+                const dur = f.score_breakdown?.duration_days || 8;
+                return dist <= maxDist && dur <= maxDur;
+            })
+            .map(f => {
+                // Dynamic UI Rescoring
+                const bd = f.score_breakdown;
+                const p_score = max(0, 100 - (bd.price_raw - 2000)/60);
+                const d_score = max(0, 100 - (bd.dist_km/6));
+                const w_score = bd.in_season ? 100 : 20;
+                const new_score = (p_score*weights.price + d_score*weights.dist + w_score*weights.weather) / (weights.price + weights.dist + weights.weather);
+                return { ...f, ui_score: Math.round(new_score) };
+            })
+            .sort((a, b) => b.ui_score - a.ui_score);
 
         this.els.totalRoutes.innerText = filtered.length;
         this.els.bestPrice.innerText = filtered.length ? `${filtered[0].price} ${filtered[0].currency}` : "--";
-
         this.els.dealsGrid.innerHTML = filtered.map(f => this.createCard(f)).join('');
         this.renderHistory();
     }
 
     createCard(f) {
+        const bd = f.score_breakdown || {};
+        const s = f.ui_score;
+        const sCls = s > 80 ? 'score-excellent' : s > 60 ? 'score-good' : s > 40 ? 'score-fair' : 'score-poor';
+        
         const itin = f.duration_out ? `
             <div class="mini-itin">
                 <div class="itin-main">
                     <span class="itin-duration">${f.duration_out}</span>
-                    <div class="itin-line">
-                        <div class="itin-dot" style="left:0"></div>
-                        <div class="itin-dot" style="left:100%"></div>
-                    </div>
+                    <div class="itin-line"><div class="itin-dot" style="left:0"></div><div class="itin-dot" style="left:100%"></div></div>
                 </div>
                 <div class="itin-badge-list">
-                    ${(f.layovers_out || []).map(l => `<span class="badge badge-${l.status}" title="${this.getName(l.airport)}">${l.airport} ${l.duration}</span>`).join('')}
+                    ${(f.layovers_out || []).map(l => `<span class="badge badge-${l.status}" title="${this.getName(l.airport)}">${l.airport}</span>`).join('')}
                 </div>
-            </div>
-        ` : `<div class="mini-itin"><span class="itin-duration" style="color:var(--accent)">🔍 Precision Scan Required</span></div>`;
+            </div>` : `<div class="mini-itin"><span class="itin-duration" style="color:var(--accent)">🔍 Precision Scan Required</span></div>`;
 
         return `
             <div class="card">
@@ -231,11 +247,15 @@ class FlightPlanner {
                     <div class="card-price">${f.price} ${f.currency}</div>
                 </div>
                 ${itin}
-                <div class="score-tag ${this.getScoreClass(f.score)}">${Math.round(f.score)}% Match</div>
+                <div class="score-tag ${sCls}">${s}% Match</div>
+                <div class="trip-highlight">
+                    <div class="highlight-item"><span class="highlight-label">Duration</span><span class="highlight-val">${bd.duration_days || 8} Days</span></div>
+                    <div class="highlight-item"><span class="highlight-label">Days Off</span><span class="highlight-val">${bd.days_off || 0} Work Days</span></div>
+                </div>
                 <div class="card-details">
-                    <div class="row"><span>From</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div>
+                    <div class="row"><span>From</span> <span>${this.getName(f.origin)}</span></div>
                     <div class="row"><span>Airline</span> <span>${this.getAirline(f.airline)}</span></div>
-                    <div class="row"><span>Travel Dates</span> <span>${f.departure_date}</span></div>
+                    <div class="row"><span>Dates</span> <span>${f.departure_date}</span></div>
                 </div>
                 <a href="${f.link}" target="_blank" class="btn-book">Open on Google Flights</a>
             </div>
@@ -244,55 +264,49 @@ class FlightPlanner {
 
     renderDestinations() {
         if (!this.data.config?.DESTINATIONS) return;
-        this.els.destList.innerHTML = Object.entries(this.data.config.DESTINATIONS).flatMap(([country, codes]) => {
-            const countryName = this.getName(country);
-            if (codes.length === 0) {
-                return [`<div class="tag" title="${countryName}"><span>${countryName} (Any)</span><span class="tag-remove" onclick="window.app.removeDest('${country}', null)">×</span></div>`];
-            }
-            return codes.map(code => `
-                <div class="tag" title="${this.getName(code)}">
-                    <span>${countryName}: <strong>${code}</strong></span>
-                    <span class="tag-remove" onclick="window.app.removeDest('${country}', '${code}')">×</span>
+        const grouped = this.data.config.DESTINATIONS;
+        let h = '';
+        Object.entries(grouped).forEach(([cCode, airports]) => {
+            h += `<div class="country-group">
+                <div class="country-header">${this.getName(cCode)}</div>
+                <div class="tag-cloud">
+                    ${airports.length ? airports.map(a => `
+                        <div class="tag" title="${this.getName(a)}">
+                            <span>${a}</span>
+                            <span class="tag-remove" onclick="window.app.removeDest('${cCode}', '${a}')">×</span>
+                        </div>`).join('') : `<div class="tag"><span>Any</span><span class="tag-remove" onclick="window.app.removeDest('${cCode}', null)">×</span></div>`}
                 </div>
-            `);
-        }).join('');
+            </div>`;
+        });
+        this.els.destList.innerHTML = h;
     }
 
-    async removeDest(c, code) {
-        if (!code) {
-            delete this.data.config.DESTINATIONS[c];
-        } else {
-            this.data.config.DESTINATIONS[c] = this.data.config.DESTINATIONS[c].filter(x => x !== code);
+    async removeDest(c, a) {
+        if (!a) delete this.data.config.DESTINATIONS[c];
+        else {
+            this.data.config.DESTINATIONS[c] = this.data.config.DESTINATIONS[c].filter(x => x !== a);
             if (!this.data.config.DESTINATIONS[c].length) delete this.data.config.DESTINATIONS[c];
         }
-        await this.saveConfig();
+        await this.saveConfigLocally();
         this.renderDestinations();
     }
 
     renderHistory() {
         const hist = this.data.flights.history;
         if (!hist?.length) return;
-        const canvas = document.getElementById('historyChart');
-        if (!canvas) return;
-        const ctx = canvas.getContext('2d');
+        const ctx = document.getElementById('historyChart').getContext('2d');
         const labels = hist.map(h => new Date(h.date).toLocaleDateString());
         const countries = [...new Set(hist.flatMap(h => Object.keys(h.stats || {})))];
-
         const datasets = countries.map((c, i) => ({
             label: this.getName(c),
             data: hist.map(h => h.stats?.[c]?.avg || null),
             borderColor: ['#3b82f6', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6'][i % 5],
-            tension: 0.3,
-            fill: false
+            tension: 0.3, fill: false
         }));
-
         if (this.chart) this.chart.destroy();
-        this.chart = new Chart(ctx, {
-            type: 'line',
-            data: { labels, datasets },
-            options: { responsive: true, maintainAspectRatio: false }
-        });
+        this.chart = new Chart(ctx, { type: 'line', data: { labels, datasets }, options: { responsive: true, maintainAspectRatio: false } });
     }
 }
 
+function max(a, b) { return a > b ? a : b; }
 window.app = new FlightPlanner();
