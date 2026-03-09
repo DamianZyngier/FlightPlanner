@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Planner Pro - Dashboard</title>
+    <title>Flight Planner Pro</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
@@ -17,105 +17,76 @@
 </head>
 <body>
 
-<div class="app-container">
+<div class="app-layout">
     <aside class="sidebar">
-        <div class="logo">
-            <span class="logo-icon">✈️</span>
+        <div class="sidebar-brand">
+            <span class="icon">✈️</span>
             <h1>Flight Planner</h1>
         </div>
         
-        <nav>
-            <button class="nav-btn active" data-tab="dashboard">📊 Dashboard</button>
-            <button class="nav-btn" data-tab="destinations">📍 Destinations</button>
-            <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
-        </nav>
+        <div class="sidebar-section">
+            <label class="section-label">Scanning Control</label>
+            <button id="scan-btn" class="btn-primary">🚀 Run Global Scan</button>
+            <div id="scan-status" class="status-text">Ready</div>
+        </div>
+
+        <div class="sidebar-section">
+            <label class="section-label">Origin Distance</label>
+            <div class="range-container">
+                <input type="range" id="origin-dist" min="0" max="1000" step="50" value="600">
+                <span class="range-val"><span id="val-dist-krk">600</span>km</span>
+            </div>
+            <p class="help-text">Max distance from Kraków</p>
+        </div>
+
+        <div class="sidebar-section">
+            <label class="section-label">Manage Destinations</label>
+            <div class="input-group">
+                <input type="text" id="new-dest-country" placeholder="Country" maxlength="2">
+                <input type="text" id="new-dest-code" placeholder="IATA" maxlength="3">
+                <button id="add-dest-btn" class="btn-icon">+</button>
+            </div>
+            <div id="dest-list" class="tag-cloud"></div>
+        </div>
 
         <div class="sidebar-footer">
-            <button id="scan-btn" class="primary-btn">🚀 Run Flight Scan</button>
-            <div id="scan-status" class="status-indicator"></div>
+            <div id="last-updated">Updating...</div>
         </div>
     </aside>
 
-    <main class="content">
-        <header class="top-header">
-            <div class="header-info">
-                <h2 id="current-tab-title">Dashboard</h2>
-                <span id="last-updated">Last Updated: Loading...</span>
+    <main class="main-content">
+        <header class="top-nav">
+            <div class="metric">
+                <span class="metric-label">Best Deal</span>
+                <span id="stat-best-price" class="metric-value">--</span>
             </div>
-            <div class="header-actions">
-                <label for="origin-dist">Max Distance from KRK: <span id="val-dist-krk">600</span>km</label>
-                <input type="range" id="origin-dist" min="0" max="1000" step="50" value="600">
+            <div class="metric">
+                <span class="metric-label">Active Routes</span>
+                <span id="stat-total-routes" class="metric-value">--</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Source</span>
+                <span class="metric-value">Travelpayouts</span>
             </div>
         </header>
 
-        <div id="dashboard-tab" class="tab-content active">
-            <section class="stats-overview">
-                <div class="stat-card">
-                    <h3>Best Deal</h3>
-                    <div id="stat-best-price" class="stat-value">--</div>
-                </div>
-                <div class="stat-card">
-                    <h3>Total Routes</h3>
-                    <div id="stat-total-routes" class="stat-value">--</div>
-                </div>
-            </section>
-
-            <section class="deals-section">
+        <div class="view-container">
+            <section class="section-deals">
                 <div class="section-header">
-                    <h2>🔥 Curated Travel Deals</h2>
-                    <div class="filter-pills">
-                        <!-- Filters can go here -->
+                    <h2>Current Opportunities</h2>
+                    <div class="sort-controls">
+                        <!-- Add sorting if needed later -->
                     </div>
                 </div>
-                <div id="deals-grid" class="grid">
+                <div id="deals-grid" class="deals-grid">
                     <!-- Cards injected here -->
                 </div>
             </section>
 
-            <section class="charts-section">
-                <h2>📈 Market Trends</h2>
-                <canvas id="historyChart"></canvas>
-            </section>
-        </div>
-
-        <div id="destinations-tab" class="tab-content">
-            <section class="management-card">
-                <h2>Manage Destinations</h2>
-                <div class="add-dest-form">
-                    <input type="text" id="new-dest-country" placeholder="Country (e.g. US)">
-                    <input type="text" id="new-dest-code" placeholder="Airport Code (e.g. JFK)">
-                    <button id="add-dest-btn" class="accent-btn">Add Destination</button>
-                </div>
-                <div id="dest-list" class="tag-container">
-                    <!-- Tags injected here -->
-                </div>
-            </section>
-        </div>
-
-        <div id="settings-tab" class="tab-content">
-            <section class="management-card">
-                <h2>Scoring Weights</h2>
-                <div class="sliders-container">
-                    <div class="slider-group">
-                        <label for="w-price">Price (<span id="val-price">0.5</span>)</label>
-                        <input type="range" id="w-price" min="0" max="2" step="0.1" value="0.5">
-                    </div>
-                    <div class="slider-group">
-                        <label for="w-duration">Duration (<span id="val-duration">0.2</span>)</label>
-                        <input type="range" id="w-duration" min="0" max="2" step="0.1" value="0.2">
-                    </div>
-                    <div class="slider-group">
-                        <label for="w-distance">Origin Distance (<span id="val-distance">0.1</span>)</label>
-                        <input type="range" id="w-distance" min="0" max="2" step="0.1" value="0.1">
-                    </div>
-                    <div class="slider-group">
-                        <label for="w-days">Work Days Off (<span id="val-days">0.1</span>)</label>
-                        <input type="range" id="w-days" min="0" max="2" step="0.1" value="0.1">
-                    </div>
-                    <div class="slider-group">
-                        <label for="w-season">Weather/Season (<span id="val-season">0.1</span>)</label>
-                        <input type="range" id="w-season" min="0" max="2" step="0.1" value="0.1">
-                    </div>
+            <section class="section-analytics">
+                <h2>Price Trends</h2>
+                <div class="chart-wrapper">
+                    <canvas id="historyChart"></canvas>
                 </div>
             </section>
         </div>

@@ -1,281 +1,212 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const API_FLIGHTS = '/api/flights';
-    const API_CONFIG = '/api/config';
-    const API_SCAN = '/api/scan';
+/**
+ * Flight Planner Pro - Optimized Dashboard Script
+ */
 
-    let flightData = null;
-    let configData = null;
-    let chartInstance = null;
-    let originsList = {};
+const AIRPORT_NAMES = {
+    "KRK": "Kraków", "KTW": "Katowice", "OSR": "Ostrava", "RZE": "Rzeszów",
+    "WAW": "Warsaw", "WMI": "Modlin", "BUD": "Budapest", "BTS": "Bratislava",
+    "VIE": "Vienna", "PRG": "Prague", "BER": "Berlin", "SYD": "Sydney",
+    "MEL": "Melbourne", "BNE": "Brisbane", "PER": "Perth", "AKL": "Auckland",
+    "WDH": "Windhoek", "GBE": "Gaborone", "JNB": "Johannesburg", "CPT": "Cape Town",
+    "TYO": "Tokyo", "BKK": "Bangkok", "HKT": "Phuket", "KUL": "Kuala Lumpur",
+    "MNL": "Manila", "SGN": "Ho Chi Minh", "LIM": "Lima", "CUZ": "Cusco",
+    "SID": "Sal", "YYZ": "Toronto", "YVR": "Vancouver"
+};
 
-    // UI Elements
-    const elements = {
-        scanBtn: document.getElementById('scan-btn'),
-        scanStatus: document.getElementById('scan-status'),
-        lastUpdated: document.getElementById('last-updated'),
-        dealsGrid: document.getElementById('deals-grid'),
-        destList: document.getElementById('dest-list'),
-        addDestBtn: document.getElementById('add-dest-btn'),
-        newDestCountry: document.getElementById('new-dest-country'),
-        newDestCode: document.getElementById('new-dest-code'),
-        originDist: document.getElementById('origin-dist'),
-        valDistKrk: document.getElementById('val-dist-krk'),
-        bestPrice: document.getElementById('stat-best-price'),
-        totalRoutes: document.getElementById('stat-total-routes'),
-        navBtns: document.querySelectorAll('.nav-btn'),
-        tabContents: document.querySelectorAll('.tab-content'),
-        tabTitle: document.getElementById('current-tab-title')
-    };
-
-    const AIRPORT_NAMES = {
-        "KRK": "Kraków", "KTW": "Katowice", "OSR": "Ostrava", "RZE": "Rzeszów",
-        "WAW": "Warsaw Chopin", "WMI": "Warsaw Modlin", "BUD": "Budapest",
-        "BTS": "Bratislava", "VIE": "Vienna", "PRG": "Prague", "BER": "Berlin",
-        "SYD": "Sydney", "MEL": "Melbourne", "BNE": "Brisbane", "PER": "Perth",
-        "AKL": "Auckland", "CHC": "Christchurch", "WLG": "Wellington",
-        "WDH": "Windhoek", "GBE": "Gaborone", "MUB": "Maun",
-        "JNB": "Johannesburg", "CPT": "Cape Town", "DUR": "Durban",
-        "TYO": "Tokyo", "KIX": "Osaka", "FUK": "Fukuoka",
-        "HND": "Tokyo Haneda", "NRT": "Tokyo Narita",
-        "BKK": "Bangkok", "HKT": "Phuket", "CNX": "Chiang Mai",
-        "KUL": "Kuala Lumpur", "BKI": "Kota Kinabalu",
-        "MNL": "Manila", "CEB": "Cebu",
-        "SGN": "Ho Chi Minh City", "HAN": "Hanoi", "DAD": "Da Nang",
-        "LIM": "Lima", "CUZ": "Cusco",
-        "SID": "Sal", "RAI": "Praia", "BVC": "Boa Vista",
-        "YYZ": "Toronto", "YVR": "Vancouver", "YUL": "Montreal", "YYC": "Calgary"
-    };
-
-    async function init() {
-        await loadConfig();
-        await loadFlights();
-        setupEventListeners();
-        renderDestinations();
+class FlightPlanner {
+    constructor() {
+        this.data = { flights: null, config: null };
+        this.chart = null;
+        this.els = this.getElements();
+        this.init();
     }
 
-    async function loadConfig() {
+    getElements() {
+        const query = (id) => document.getElementById(id);
+        return {
+            scanBtn: query('scan-btn'),
+            scanStatus: query('scan-status'),
+            lastUpdated: query('last-updated'),
+            dealsGrid: query('deals-grid'),
+            destList: query('dest-list'),
+            originDist: query('origin-dist'),
+            valDistKrk: query('val-dist-krk'),
+            bestPrice: query('stat-best-price'),
+            totalRoutes: query('stat-total-routes'),
+            addBtn: query('add-dest-btn'),
+            inCountry: query('new-dest-country'),
+            inCode: query('new-dest-code')
+        };
+    }
+
+    async init() {
+        await this.loadConfig();
+        await this.loadFlights();
+        this.bindEvents();
+        this.renderDestinations();
+    }
+
+    bindEvents() {
+        this.els.scanBtn.onclick = () => this.triggerScan();
+        this.els.addBtn.onclick = () => this.addDestination();
+        this.els.originDist.oninput = (e) => {
+            this.els.valDistKrk.innerText = e.target.value;
+            this.renderDashboard();
+        };
+    }
+
+    async loadConfig() {
         try {
-            const resp = await fetch(API_CONFIG);
-            configData = await resp.json();
-            originsList = configData.ORIGINS || {};
-        } catch (e) { console.error("Config load failed", e); }
+            const r = await fetch('/api/config');
+            this.data.config = await r.json();
+        } catch (e) { console.error("Config failed", e); }
     }
 
-    async function loadFlights() {
+    async loadFlights() {
         try {
-            const resp = await fetch(API_FLIGHTS);
-            flightData = await resp.json();
-            if (flightData.last_updated) {
-                elements.lastUpdated.innerText = `Last Updated: ${new Date(flightData.last_updated).toLocaleString()}`;
-            }
-            renderDashboard();
-        } catch (e) { console.error("Flight load failed", e); }
+            const r = await fetch('/api/flights');
+            this.data.flights = await r.json();
+            this.updateMetadata();
+            this.renderDashboard();
+        } catch (e) { console.error("Flights failed", e); }
     }
 
-    function setupEventListeners() {
-        elements.navBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const tab = btn.dataset.tab;
-                elements.navBtns.forEach(b => b.classList.remove('active'));
-                elements.tabContents.forEach(c => c.classList.remove('active'));
-                btn.classList.add('active');
-                document.getElementById(`${tab}-tab`).classList.add('active');
-                elements.tabTitle.innerText = btn.innerText.split(' ')[1];
-            });
-        });
-
-        elements.originDist.addEventListener('input', (e) => {
-            elements.valDistKrk.innerText = e.target.value;
-            renderDashboard();
-        });
-
-        elements.scanBtn.addEventListener('click', async () => {
-            elements.scanBtn.disabled = true;
-            elements.scanBtn.innerText = "⏳ Scanning...";
-            elements.scanStatus.innerText = "Processing matrix...";
-            try {
-                const resp = await fetch(API_SCAN, { method: 'POST' });
-                const result = await resp.json();
-                if (result.status === 'success') {
-                    elements.scanStatus.innerText = "Scan complete!";
-                    await loadFlights();
-                } else {
-                    elements.scanStatus.innerText = "Error: " + result.output;
-                }
-            } catch (e) {
-                elements.scanStatus.innerText = "Failed to trigger scan.";
-            } finally {
-                elements.scanBtn.disabled = false;
-                elements.scanBtn.innerText = "🚀 Run Flight Scan";
-            }
-        });
-
-        elements.addDestBtn.addEventListener('click', async () => {
-            const country = elements.newDestCountry.value.toUpperCase();
-            const code = elements.newDestCode.value.toUpperCase();
-            if (country && code) {
-                if (!configData.DESTINATIONS) configData.DESTINATIONS = {};
-                if (!configData.DESTINATIONS[country]) configData.DESTINATIONS[country] = [];
-                if (!configData.DESTINATIONS[country].includes(code)) {
-                    configData.DESTINATIONS[country].push(code);
-                    await saveConfig();
-                    renderDestinations();
-                    elements.newDestCountry.value = '';
-                    elements.newDestCode.value = '';
-                }
-            }
-        });
+    updateMetadata() {
+        const lu = this.data.flights.last_updated;
+        if (lu) this.els.lastUpdated.innerText = `Updated: ${new Date(lu).toLocaleTimeString()}`;
     }
 
-    async function saveConfig() {
-        await fetch(API_CONFIG, {
+    async triggerScan() {
+        this.els.scanBtn.disabled = true;
+        this.els.scanBtn.innerText = "⏳ Scanning...";
+        try {
+            const r = await fetch('/api/scan', { method: 'POST' });
+            await this.loadFlights();
+            this.els.scanStatus.innerText = "Success";
+        } catch (e) {
+            this.els.scanStatus.innerText = "Failed";
+        } finally {
+            this.els.scanBtn.disabled = false;
+            this.els.scanBtn.innerText = "🚀 Run Global Scan";
+        }
+    }
+
+    async addDestination() {
+        const c = this.els.inCountry.value.toUpperCase();
+        const a = this.els.inCode.value.toUpperCase();
+        if (!c || !a) return;
+
+        if (!this.data.config.DESTINATIONS[c]) this.data.config.DESTINATIONS[c] = [];
+        if (!this.data.config.DESTINATIONS[c].includes(a)) {
+            this.data.config.DESTINATIONS[c].push(a);
+            await this.saveConfig();
+            this.renderDestinations();
+            this.els.inCountry.value = ''; this.els.inCode.value = '';
+        }
+    }
+
+    async saveConfig() {
+        await fetch('/api/config', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(configData)
+            body: JSON.stringify(this.data.config)
         });
     }
 
-    function getAirportDisplay(code) {
-        return AIRPORT_NAMES[code] ? `${AIRPORT_NAMES[code]} (${code})` : code;
+    getAirport(code) { return AIRPORT_NAMES[code] ? `${AIRPORT_NAMES[code]} (${code})` : code; }
+
+    renderDashboard() {
+        if (!this.data.flights?.current_best) return;
+
+        const maxDist = parseInt(this.els.originDist.value);
+        const origins = this.data.config.ORIGINS || {};
+
+        const filtered = this.data.flights.current_best
+            .filter(f => !f.is_mock && (origins[f.origin] ?? 0) <= maxDist)
+            .sort((a, b) => a.score - b.score);
+
+        this.els.totalRoutes.innerText = filtered.length;
+        this.els.bestPrice.innerText = filtered.length ? `${filtered[0].price} ${filtered[0].currency}` : "--";
+
+        this.els.dealsGrid.innerHTML = filtered.map(f => this.createCard(f)).join('');
+        this.renderHistory();
     }
 
-    function calculateScore(flight, weights) {
-        const bd = flight.score_breakdown;
-        if (!bd) return 0;
-        const price_score = bd.price_raw / 1000.0;
-        const days_score = bd.days_off;
-        const dist_score = bd.dist_km / 100.0;
-        const dur_diff = Math.abs(bd.duration_days - 8);
-        const season_score = bd.in_season ? 0 : 1;
-
-        return parseFloat((
-            (price_score * weights.price) +
-            (days_score * weights.days) +
-            (dist_score * weights.distance) +
-            (dur_diff * weights.duration) +
-            (season_score * weights.season * 5)
-        ).toFixed(2));
-    }
-
-    function renderItinerary(f) {
-        if (!f.duration_out) {
-            return `<div class="itinerary-line"><div class="stops-row"><span class="duration-tag">Details via Precision Scan</span></div></div>`;
-        }
-
-        const stopsLabel = f.stops_out === 0 ? 'Direct' : `${f.stops_out} Stop${f.stops_out > 1 ? 's' : ''}`;
-        
-        let layoverHtml = '';
-        if (f.layovers_out && f.layovers_out.length > 0) {
-            layoverHtml = `<div class="layover-badges">`;
-            f.layovers_out.forEach(l => {
-                layoverHtml += `<span class="badge badge-${l.status}">${l.airport}: ${l.duration}</span>`;
-            });
-            layoverHtml += `</div>`;
-        }
-
-        return `
-            <div class="itinerary-line">
-                <div class="stops-row">
-                    <span class="duration-tag">${f.duration_out}</span>
-                    <div class="timeline">
-                        <div class="timeline-dot" style="left: 0;"></div>
-                        ${f.stops_out > 0 ? `<div class="timeline-dot" style="left: 50%;"></div><span class="timeline-label">${stopsLabel}</span>` : ''}
-                        <div class="timeline-dot" style="left: 100%;"></div>
+    createCard(f) {
+        const itin = f.duration_out ? `
+            <div class="mini-itin">
+                <div class="itin-main">
+                    <span class="itin-duration">${f.duration_out}</span>
+                    <div class="itin-line">
+                        <div class="itin-dot" style="left:0"></div>
+                        <div class="itin-dot" style="left:100%"></div>
                     </div>
                 </div>
-                ${layoverHtml}
+                <div class="itin-badge-list">
+                    ${(f.layovers_out || []).map(l => `<span class="badge badge-${l.status}">${l.airport} ${l.duration}</span>`).join('')}
+                </div>
+            </div>
+        ` : `<div class="mini-itin"><span class="itin-duration">Details in Precision Scan</span></div>`;
+
+        return `
+            <div class="card">
+                <div class="score-tag">Score ${f.score}</div>
+                <div class="card-top">
+                    <div class="card-dest">${this.getAirport(f.destination)}</div>
+                    <div class="card-price">${f.price} ${f.currency}</div>
+                </div>
+                ${itin}
+                <div class="card-details">
+                    <div class="row"><span>Origin</span> <span>${this.getAirport(f.origin)}</span></div>
+                    <div class="row"><span>Dates</span> <span>${f.departure_date} - ${f.return_date}</span></div>
+                    <div class="row"><span>Airline</span> <span>${f.airline}</span></div>
+                </div>
+                <a href="${f.link}" target="_blank" class="btn-book">Select Deal</a>
             </div>
         `;
     }
 
-    function renderDashboard() {
-        if (!flightData || !flightData.current_best) return;
-
-        const maxOriginDist = parseInt(elements.originDist.value);
-        const weights = { price: 0.5, duration: 0.2, distance: 0.1, days: 0.1, season: 0.1 };
-
-        let flights = flightData.current_best
-            .filter(f => !f.is_mock)
-            .filter(f => (originsList[f.origin] || 0) <= maxOriginDist)
-            .map(f => ({ ...f, ui_score: calculateScore(f, weights) }));
-
-        flights.sort((a, b) => a.ui_score - b.ui_score);
-
-        elements.totalRoutes.innerText = flights.length;
-        elements.bestPrice.innerText = flights.length > 0 ? `${flights[0].price} ${flights[0].currency}` : "--";
-
-        elements.dealsGrid.innerHTML = '';
-        flights.forEach(f => {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                <div class="score-badge">Score: ${f.ui_score}</div>
-                <div class="card-header">
-                    <span class="destination">${getAirportDisplay(f.destination)}</span>
-                    <span class="price">${f.price} ${f.currency}</span>
+    renderDestinations() {
+        if (!this.data.config?.DESTINATIONS) return;
+        this.els.destList.innerHTML = Object.entries(this.data.config.DESTINATIONS).flatMap(([country, codes]) => 
+            codes.map(code => `
+                <div class="tag">
+                    <span>${country}: ${code}</span>
+                    <span class="tag-remove" onclick="window.app.removeDest('${country}', '${code}')">×</span>
                 </div>
-                
-                ${renderItinerary(f)}
-
-                <div class="details">
-                    <div class="detail-row"><span>From</span> <span>${getAirportDisplay(f.origin)}</span></div>
-                    <div class="detail-row"><span>Airline</span> <span>${f.airline}</span></div>
-                    <div class="detail-row"><span>Dates</span> <span>${f.departure_date} - ${f.return_date}</span></div>
-                </div>
-                <a href="${f.link}" target="_blank" class="book-btn">View on Google Flights</a>
-            `;
-            elements.dealsGrid.appendChild(card);
-        });
-
-        renderHistory(flightData.history);
+            `)
+        ).join('');
     }
 
-    function renderDestinations() {
-        if (!configData || !configData.DESTINATIONS) return;
-        elements.destList.innerHTML = '';
-        Object.entries(configData.DESTINATIONS).forEach(([country, codes]) => {
-            codes.forEach(code => {
-                const tag = document.createElement('div');
-                tag.className = 'tag';
-                tag.innerHTML = `<span>${country}: <strong>${code}</strong></span><span class="tag-remove" data-country="${country}" data-code="${code}">×</span>`;
-                tag.querySelector('.tag-remove').addEventListener('click', async (e) => {
-                    const c = e.target.dataset.country;
-                    const cd = e.target.dataset.code;
-                    configData.DESTINATIONS[c] = configData.DESTINATIONS[c].filter(x => x !== cd);
-                    if (configData.DESTINATIONS[c].length === 0) delete configData.DESTINATIONS[c];
-                    await saveConfig();
-                    renderDestinations();
-                });
-                elements.destList.appendChild(tag);
-            });
-        });
+    async removeDest(c, code) {
+        this.data.config.DESTINATIONS[c] = this.data.config.DESTINATIONS[c].filter(x => x !== code);
+        if (!this.data.config.DESTINATIONS[c].length) delete this.data.config.DESTINATIONS[c];
+        await this.saveConfig();
+        this.renderDestinations();
     }
 
-    function renderHistory(history) {
-        if (!history || history.length === 0) return;
-        const canvas = document.getElementById('historyChart');
-        if (!canvas) return;
-        const ctx = canvas.getContext('2d');
-        const dates = history.map(h => new Date(h.date).toLocaleDateString());
-        const countries = new Set();
-        history.forEach(h => { if (h.stats) Object.keys(h.stats).forEach(k => countries.add(k)); });
+    renderHistory() {
+        const hist = this.data.flights.history;
+        if (!hist?.length) return;
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        const labels = hist.map(h => new Date(h.date).toLocaleDateString());
+        const countries = [...new Set(hist.flatMap(h => Object.keys(h.stats || {})))];
 
-        const datasets = Array.from(countries).map((country, index) => {
-            const data = history.map(h => h.stats && h.stats[country] ? h.stats[country].avg : null);
-            const colors = ['#3b82f6', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6'];
-            return {
-                label: country, data: data, borderColor: colors[index % colors.length],
-                backgroundColor: 'transparent', tension: 0.3
-            };
-        });
+        const datasets = countries.map((c, i) => ({
+            label: c,
+            data: hist.map(h => h.stats?.[c]?.avg || null),
+            borderColor: ['#3b82f6', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6'][i % 5],
+            tension: 0.3,
+            fill: false
+        }));
 
-        if (chartInstance) chartInstance.destroy();
-        chartInstance = new Chart(ctx, {
+        if (this.chart) this.chart.destroy();
+        this.chart = new Chart(ctx, {
             type: 'line',
-            data: { labels: dates, datasets: datasets },
-            options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+            data: { labels, datasets },
+            options: { responsive: true, maintainAspectRatio: false }
         });
     }
+}
 
-    init();
-});
+window.app = new FlightPlanner();
