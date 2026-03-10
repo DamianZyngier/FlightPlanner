@@ -25,19 +25,36 @@ class FlightMonitor:
         """Worker for ThreadPoolExecutor."""
         print(f"Searching from {origin}...")
         try:
+            # 1. Standard scan (all destinations on our list)
             raw_data = self.travelpayouts.get_cheap_prices(origin)
             normalized = self.travelpayouts.normalize_cheap_prices(origin, raw_data)
             
+            # 2. Special Case: Kraków Weekend API Request
+            # Specifically ask for short trips (2-5 days) from KRK
+            if origin == 'KRK':
+                print(f"Running dedicated City Break API request for {origin}...")
+                # Fetch latest prices specifically for 2-7 day durations
+                for duration in [2, 3, 4, 5, 6, 7]:
+                    weekend_raw = self.travelpayouts.get_latest_prices(origin=origin, trip_duration=duration, limit=100)
+                    normalized.extend(self.travelpayouts.normalize_latest_prices(weekend_raw))
+
             # LCCs to filter out for long-haul
             lcc_codes = ['FR', 'W6']
             tracked_codes = [code for codes in destinations.values() for code in codes]
             
             origin_results = []
+            seen_ids = set()
+            
             for f in normalized:
+                fid = f['id']
+                if fid in seen_ids: continue
+                seen_ids.add(fid)
+                
                 dest = f['destination']
                 is_tracked = dest in tracked_codes
                 
-                # Special Case: Kraków Weekend - allow everything cheap
+                # Special Case: Kraków Weekend - allow everything cheap and short
+                # If it's from KRK and short, we consider it regardless of destination list
                 is_krk_weekend_candidate = (origin == 'KRK' and f['price'] < 1000)
                 
                 # Filter: skip LCCs for long-haul (tracked) destinations
@@ -45,7 +62,13 @@ class FlightMonitor:
                     continue
                 
                 if (is_tracked or is_krk_weekend_candidate) and f.get('return_date'):
-                    origin_results.append(self.scorer.score_flight(f))
+                    scored = self.scorer.score_flight(f)
+                    # For City Break mode, we only want flights with max 3 days off
+                    # (This check is also done on frontend, but good to have here for DB cleanliness)
+                    if origin == 'KRK' and scored['score_breakdown']['days_off'] > 3:
+                        if not is_tracked: continue # Only keep if it's a long-haul destination
+                        
+                    origin_results.append(scored)
             return origin_results
         except Exception as e:
             print(f"Error scanning origin {origin}: {e}")

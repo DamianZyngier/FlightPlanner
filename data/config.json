@@ -183,6 +183,7 @@
     "origin_dist": 600,
     "max_price_longhaul": 8000,
     "max_price_citybreak": 500,
+    "max_daysoff_citybreak": 3,
     "min_dur": 7,
     "max_dur": 16,
     "w_price": 1,

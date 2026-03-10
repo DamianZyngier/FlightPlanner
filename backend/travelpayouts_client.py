@@ -46,9 +46,24 @@ class TravelpayoutsClient:
             print(f"Travelpayouts Cheap Prices Error: {e}")
             return {}
 
-    def get_latest_prices(self, origin=None, destination=None, period_type="year", sorting="price", limit=30, currency="PLN"):
+    def get_latest_prices(self, origin=None, destination=None, period_type="year", sorting="price", limit=100, currency="PLN", trip_duration=None):
+        """
+        v2/prices/latest: Returns the latest prices for the specified route.
+        Supports trip_duration in days.
+        """
         url = f"{self.base_url}/v2/prices/latest"
-        params = {"origin": origin, "destination": destination, "period_type": period_type, "sorting": sorting, "limit": limit, "currency": currency, "token": self.token}
+        params = {
+            "origin": origin, 
+            "destination": destination, 
+            "period_type": period_type, 
+            "sorting": sorting, 
+            "limit": limit, 
+            "currency": currency, 
+            "token": self.token
+        }
+        if trip_duration:
+            params["trip_duration"] = trip_duration
+            
         params = {k: v for k, v in params.items() if v is not None}
         try:
             response = requests.get(url, params=params)
