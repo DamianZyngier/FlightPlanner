@@ -279,11 +279,13 @@ class FlightPlanner {
         const distCont = document.getElementById('filter-dist-container');
         const durCont = document.getElementById('filter-dur-container');
         const weightSec = document.getElementById('filter-weights-section');
+        const destSec = document.getElementById('filter-destinations-section');
         const analyticsSec = document.getElementById('analytics-section');
 
         if (distCont) distCont.style.display = isCityBreak ? 'none' : 'flex';
         if (durCont) durCont.style.display = isCityBreak ? 'none' : 'flex';
         if (weightSec) weightSec.style.display = isCityBreak ? 'none' : 'flex';
+        if (destSec) destSec.style.display = isCityBreak ? 'none' : 'flex';
         if (analyticsSec) analyticsSec.style.display = isCityBreak ? 'none' : 'block';
 
         const maxDist = parseInt(this.els.originDist?.value || 600);
