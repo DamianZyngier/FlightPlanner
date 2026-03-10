@@ -16,7 +16,8 @@ class FlightPlanner {
             scanBtn: q('scan-btn'), lastUpdated: q('last-updated'), dealsGrid: q('deals-grid'),
             destList: q('dest-list'), originDist: q('origin-dist'), valDistKrk: q('val-dist-krk'),
             minDur: q('min-duration'), maxDur: q('max-duration'), valMinDur: q('val-min-dur'), valMaxDur: q('val-max-dur'),
-            filterPrice: q('filter-price'), valMaxPrice: q('val-max-price'),
+            filterPriceLonghaul: q('filter-price-longhaul'), valMaxPriceLonghaul: q('val-max-price-longhaul'),
+            filterPriceCitybreak: q('filter-price-citybreak'), valMaxPriceCitybreak: q('val-max-price-citybreak'),
             bestPrice: q('stat-best-price'), totalRoutes: q('stat-total-routes'),
             viewName: q('current-view-name'), addBtn: q('add-dest-btn'), autoInput: q('dest-autocomplete'),
             suggestions: q('dest-suggestions'), originList: q('included-origins'),
@@ -58,14 +59,15 @@ class FlightPlanner {
             };
         });
 
-        const sliders = ['originDist', 'filterPrice', 'minDur', 'maxDur', 'wPrice', 'wWeather', 'wEff'];
+        const sliders = ['originDist', 'filterPriceLonghaul', 'filterPriceCitybreak', 'minDur', 'maxDur', 'wPrice', 'wWeather', 'wEff'];
         sliders.forEach(key => {
             const el = this.els[key];
             if (!el) return;
             el.oninput = (e) => {
                 const val = e.target.value;
                 if (key === 'originDist' && this.els.valDistKrk) { this.els.valDistKrk.innerText = val; this.renderOriginList(); }
-                else if (key === 'filterPrice' && this.els.valMaxPrice) this.els.valMaxPrice.innerText = val;
+                else if (key === 'filterPriceLonghaul' && this.els.valMaxPriceLonghaul) this.els.valMaxPriceLonghaul.innerText = val;
+                else if (key === 'filterPriceCitybreak' && this.els.valMaxPriceCitybreak) this.els.valMaxPriceCitybreak.innerText = val;
                 else if (key === 'minDur' && this.els.valMinDur) this.els.valMinDur.innerText = val;
                 else if (key === 'maxDur' && this.els.valMaxDur) this.els.valMaxDur.innerText = val;
                 else {
@@ -104,7 +106,8 @@ class FlightPlanner {
         if (!this.data.config || !this.data.config.SETTINGS) return;
         const s = this.data.config.SETTINGS;
         if (this.els.originDist) this.els.originDist.value = s.origin_dist ?? 600;
-        if (this.els.filterPrice) this.els.filterPrice.value = s.max_price ?? 8000;
+        if (this.els.filterPriceLonghaul) this.els.filterPriceLonghaul.value = s.max_price_longhaul ?? s.max_price ?? 8000;
+        if (this.els.filterPriceCitybreak) this.els.filterPriceCitybreak.value = s.max_price_citybreak ?? 500;
         if (this.els.minDur) this.els.minDur.value = s.min_dur ?? 1;
         if (this.els.maxDur) this.els.maxDur.value = s.max_dur ?? 30;
         if (this.els.wPrice) this.els.wPrice.value = s.w_price ?? 1.0;
@@ -115,7 +118,8 @@ class FlightPlanner {
         if (this.els.sortBy) this.els.sortBy.value = s.sort_by ?? 'score';
         
         if (this.els.valDistKrk) this.els.valDistKrk.innerText = this.els.originDist?.value || 600;
-        if (this.els.valMaxPrice) this.els.valMaxPrice.innerText = this.els.filterPrice?.value || 8000;
+        if (this.els.valMaxPriceLonghaul) this.els.valMaxPriceLonghaul.innerText = this.els.filterPriceLonghaul?.value || 8000;
+        if (this.els.valMaxPriceCitybreak) this.els.valMaxPriceCitybreak.innerText = this.els.filterPriceCitybreak?.value || 500;
         if (this.els.valMinDur) this.els.valMinDur.innerText = this.els.minDur?.value || 1;
         if (this.els.valMaxDur) this.els.valMaxDur.innerText = this.els.maxDur?.value || 30;
         
@@ -132,7 +136,8 @@ class FlightPlanner {
         if (!this.data.config) return;
         this.data.config.SETTINGS = {
             origin_dist: parseInt(this.els.originDist?.value || 600),
-            max_price: parseInt(this.els.filterPrice?.value || 8000),
+            max_price_longhaul: parseInt(this.els.filterPriceLonghaul?.value || 8000),
+            max_price_citybreak: parseInt(this.els.filterPriceCitybreak?.value || 500),
             min_dur: parseInt(this.els.minDur?.value || 1),
             max_dur: parseInt(this.els.maxDur?.value || 30),
             w_price: parseFloat(this.els.wPrice?.value || 1.0),
@@ -277,19 +282,24 @@ class FlightPlanner {
         // UI Toggling for City Break mode
         const isCityBreak = this.currentView === 'citybreak';
         const distCont = document.getElementById('filter-dist-container');
+        const priceLonghaulCont = document.getElementById('filter-price-longhaul-container');
+        const priceCitybreakCont = document.getElementById('filter-price-citybreak-container');
         const durCont = document.getElementById('filter-dur-container');
         const weightSec = document.getElementById('filter-weights-section');
         const destSec = document.getElementById('filter-destinations-section');
         const analyticsSec = document.getElementById('analytics-section');
 
         if (distCont) distCont.style.display = isCityBreak ? 'none' : 'flex';
+        if (priceLonghaulCont) priceLonghaulCont.style.display = isCityBreak ? 'none' : 'flex';
+        if (priceCitybreakCont) priceCitybreakCont.style.display = isCityBreak ? 'flex' : 'none';
         if (durCont) durCont.style.display = isCityBreak ? 'none' : 'flex';
         if (weightSec) weightSec.style.display = isCityBreak ? 'none' : 'flex';
         if (destSec) destSec.style.display = isCityBreak ? 'none' : 'flex';
         if (analyticsSec) analyticsSec.style.display = isCityBreak ? 'none' : 'block';
 
         const maxDist = parseInt(this.els.originDist?.value || 600);
-        const maxPrice = parseInt(this.els.filterPrice?.value || 8000);
+        const maxPriceLonghaul = parseInt(this.els.filterPriceLonghaul?.value || 8000);
+        const maxPriceCitybreak = parseInt(this.els.filterPriceCitybreak?.value || 500);
         const minD = parseInt(this.els.minDur?.value || 1);
         const maxD = parseInt(this.els.maxDur?.value || 30);
         const sortBy = this.els.sortBy?.value || 'score';
@@ -300,13 +310,9 @@ class FlightPlanner {
         };
 
         const lccCodes = ['FR', 'W6'];
-        let viewMaxPrice = maxPrice;
-        if (isCityBreak) {
-            // Default 500 PLN for citybreak if not manually adjusted high
-            if (maxPrice > 1000) viewMaxPrice = 500;
-        }
+        const currentMaxPrice = isCityBreak ? maxPriceCitybreak : maxPriceLonghaul;
 
-        let filtered = this.data.flights.current_best.filter(f => !f.is_mock && f.price <= viewMaxPrice);
+        let filtered = this.data.flights.current_best.filter(f => !f.is_mock && f.price <= currentMaxPrice);
 
         if (this.currentView === 'longhaul') {
             filtered = filtered.filter(f => {
