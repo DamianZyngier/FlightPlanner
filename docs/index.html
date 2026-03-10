@@ -13,7 +13,7 @@
 <div class="app-layout">
     <aside class="sidebar">
         <div class="sidebar-brand">
-            <i class="ti ti-plane-tilt accent-color" style="font-size: 1.8rem; color: var(--accent);"></i>
+            <i class="ti ti-plane-tilt accent-color icon"></i>
             <h1>FlightPlanner<span style="color: var(--accent);">Pro</span></h1>
         </div>
 
@@ -22,9 +22,9 @@
             <button class="nav-tab" data-view="citybreak">City Break from KRK</button>
         </nav>
 
-        <div class="sidebar-section" style="border-bottom: 1px solid var(--border-strong); padding-bottom: 1rem">
-            <button id="scan-btn" class="btn-primary" style="width: 100%; margin-bottom: 0.75rem;">🚀 Run Global Scan</button>
-            <div id="last-updated" style="font-size: 0.75rem; text-align: center; color: var(--text-muted); font-weight: 600;">Updating...</div>
+        <div class="sidebar-section sidebar-section-scan">
+            <button id="scan-btn" class="btn-primary scan-btn-container">🚀 Run Global Scan</button>
+            <div id="last-updated" class="last-updated-text">Updating...</div>
         </div>
         
         <div class="sidebar-section">
@@ -96,20 +96,20 @@
         </div>
 
         <div class="sidebar-footer">
-            <div id="footer-info" style="font-size: 0.7rem; color: var(--text-muted);">Flight Planner Pro v1.2</div>
+            <div id="footer-info" class="footer-info-text">Flight Planner Pro v1.2</div>
         </div>
     </aside>
 
     <main class="main-content">
         <div class="view-container">
             <section class="section-deals">
-                <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
+                <div class="section-header section-header-flex">
                     <div>
-                        <h2 style="margin-bottom: 0.25rem;">Live Flight Opportunities</h2>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; font-weight: 500;">Real-time analysis based on your custom scoring algorithm</p>
+                        <h2 class="section-title-sub">Live Flight Opportunities</h2>
+                        <p class="section-desc">Real-time analysis based on your custom scoring algorithm</p>
                     </div>
                     <div class="sort-control">
-                        <select id="sort-by" style="padding: 0.6rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-strong); font-size: 0.85rem; font-weight: 600; outline: none; cursor: pointer; color: var(--text-secondary); background: white;">
+                        <select id="sort-by" class="sort-select">
                             <option value="score">Sort by: AI Match Score</option>
                             <option value="price">Sort by: Lowest Price</option>
                         </select>
@@ -119,8 +119,8 @@
             </section>
 
             <section class="section-analytics">
-                <h2 style="margin-bottom: 0.5rem;">Market Trends</h2>
-                <p style="color: var(--text-muted); font-size: 0.9rem; font-weight: 500; margin-bottom: 2rem;">Average flight prices over time for your tracked regions</p>
+                <h2 class="market-trends-title">Market Trends</h2>
+                <p class="market-trends-desc">Average flight prices over time for your tracked regions</p>
                 <div class="chart-wrapper">
                     <canvas id="historyChart"></canvas>
                 </div>
