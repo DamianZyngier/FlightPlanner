@@ -330,19 +330,17 @@ class FlightPlanner {
                 if (f.was_precision_scanned) return true; 
                 
                 const depDate = new Date(f.departure_date);
-                const day = depDate.getDay(); // 0=Sun, 4=Thu, 5=Fri
+                const day = depDate.getDay(); 
                 
-                // Weekend logic:
+                // Weekend logic (relaxed):
                 // 1. Must be from KRK
-                // 2. Departure on Thursday (evening) or Friday
-                // 3. Return on Sunday or Monday
-                // 4. Relaxed to 1 day for visibility
+                // 2. Any departure day for now to find data
+                // 3. Days off <= 2
                 
-                const isWeekendFlight = (day === 4 || day === 5);
-                const isShortTrip = f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 4;
-                const noDaysOff = f.score_breakdown?.days_off <= 1;
+                const isShortTrip = f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 10;
+                const lowDaysOff = f.score_breakdown?.days_off <= 2;
 
-                return f.origin === 'KRK' && isWeekendFlight && isShortTrip && noDaysOff;
+                return f.origin === 'KRK' && isShortTrip && lowDaysOff;
             });
         } else {
             filtered = filtered.filter(f => {
