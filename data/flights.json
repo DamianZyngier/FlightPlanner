@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-10T09:34:19.579873",
+  "last_updated": "2026-03-10T10:12:06.322641",
   "current_best": [
     {
       "id": "tp-cheap-KRK-IZM-2026-05-22T14:50:00+02:00",
@@ -54,12 +54,12 @@
       "departure_date": "2027-01-01",
       "return_date": "2027-01-24",
       "airline": "CA",
-      "price": 2493.0,
+      "price": 2489.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202027-01-01%20through%202027-01-24&curr=PLN",
-      "score": 81.7,
+      "score": 81.8,
       "score_breakdown": {
-        "price_raw": 2493.0,
+        "price_raw": 2489.0,
         "days_off": 14,
         "holiday_count": 2,
         "in_season": true,
@@ -428,12 +428,12 @@
       "departure_date": "2026-09-15",
       "return_date": "2026-10-23",
       "airline": "EY",
-      "price": 2884.0,
+      "price": 2879.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20WAW%20on%202026-09-15%20through%202026-10-23&curr=PLN",
       "score": 70.5,
       "score_breakdown": {
-        "price_raw": 2884.0,
+        "price_raw": 2879.0,
         "days_off": 29,
         "holiday_count": 0,
         "in_season": false,
@@ -1548,40 +1548,40 @@
       "date": "2026-03-10",
       "stats": {
         "AU": {
-          "avg": 4677.15
+          "avg": 4676.54
         },
         "BW": {
           "avg": 4747.0
         },
         "CA": {
-          "avg": 2792.44
+          "avg": 2791.67
         },
         "JP": {
           "avg": 2929.71
         },
         "MY": {
-          "avg": 2694.67
+          "avg": 2693.83
         },
         "NA": {
           "avg": 2910.5
         },
         "NZ": {
-          "avg": 5807.91
+          "avg": 5806.82
         },
         "PE": {
-          "avg": 4513.2
+          "avg": 4511.8
         },
         "PH": {
-          "avg": 3256.7
+          "avg": 3256.3
         },
         "TH": {
           "avg": 2777.81
         },
         "VN": {
-          "avg": 3084.12
+          "avg": 3083.81
         },
         "ZA": {
-          "avg": 3121.6
+          "avg": 3121.2
         }
       }
     }
