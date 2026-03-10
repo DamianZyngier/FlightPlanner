@@ -66,6 +66,11 @@ class FlightSearchClient:
                 dep_date = out_segments[0].get('departure', {}).get('at').split('T')[0]
                 ret_date = in_segments[-1].get('arrival', {}).get('at').split('T')[0] if in_segments else None
 
+                # Carriers info
+                carriers = set()
+                for seg in out_segments: carriers.add(seg.get('carrierCode'))
+                for seg in in_segments: carriers.add(seg.get('carrierCode'))
+
                 results.append({
                     "id": offer.get('id'),
                     "source": "Amadeus",
@@ -75,6 +80,7 @@ class FlightSearchClient:
                     "departure_date": dep_date,
                     "return_date": ret_date,
                     "airline": out_segments[0].get('carrierCode'),
+                    "all_airlines": list(carriers),
                     "price": float(offer.get('price', {}).get('total')),
                     "currency": "PLN",
                     "duration_out": parse_amadeus_duration(out_itin.get('duration')),

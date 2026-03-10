@@ -185,11 +185,11 @@
     "min_dur": 7,
     "max_dur": 16,
     "w_price": 1,
-    "w_dist": 0.5,
     "w_weather": 0.5,
     "w_eff": 0.5,
-    "last_view": "longhaul",
-    "sort_by": "score"
+    "last_view": "citybreak",
+    "sort_by": "score",
+    "api_url": ""
   },
   "USE_AMADEUS": false
 }
