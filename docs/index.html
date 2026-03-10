@@ -18,9 +18,14 @@
         </div>
 
         <nav class="view-tabs">
-            <button class="nav-tab active" data-view="longhaul">World Explorer</button>
-            <button class="nav-tab" data-view="citybreak">Kraków Weekend</button>
+            <button class="nav-tab active" data-view="longhaul">Long-haul trips</button>
+            <button class="nav-tab" data-view="citybreak">City Break from KRK</button>
         </nav>
+
+        <div class="sidebar-section" style="border-bottom: 1px solid var(--border-strong); padding-bottom: 1rem">
+            <button id="scan-btn" class="btn-primary" style="width: 100%; margin-bottom: 0.75rem;">🚀 Run Global Scan</button>
+            <div id="last-updated" style="font-size: 0.75rem; text-align: center; color: var(--text-muted); font-weight: 600;">Updating...</div>
+        </div>
         
         <div class="sidebar-section">
             <label class="section-label">Main Filters</label>
@@ -91,27 +96,11 @@
         </div>
 
         <div class="sidebar-footer">
-            <button id="scan-btn" class="btn-primary" style="width: 100%;">🚀 Run Global Scan</button>
-            <div id="last-updated">Updating...</div>
+            <div id="footer-info" style="font-size: 0.7rem; color: var(--text-muted);">Flight Planner Pro v1.2</div>
         </div>
     </aside>
 
     <main class="main-content">
-        <header class="top-nav">
-            <div class="metric">
-                <span class="metric-label">Best Opportunity</span>
-                <span id="stat-best-price" class="metric-value">--</span>
-            </div>
-            <div class="metric">
-                <span class="metric-label">Global Deals</span>
-                <span id="stat-total-routes" class="metric-value">--</span>
-            </div>
-            <div class="metric">
-                <span class="metric-label">Active View</span>
-                <span class="metric-value" id="current-view-name" style="color: var(--accent);">World Explorer</span>
-            </div>
-        </header>
-
         <div class="view-container">
             <section class="section-deals">
                 <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">

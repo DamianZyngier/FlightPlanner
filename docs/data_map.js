@@ -12,6 +12,16 @@ const DATA_MAP = {
         "LO": "LOT Polish Airlines", "LH": "Lufthansa", "LX": "Swiss", "OS": "Austrian Airlines", "AF": "Air France", 
         "KL": "KLM", "TK": "Turkish Airlines", "EK": "Emirates", "QR": "Qatar Airways", "AY": "Finnair", 
         "FR": "Ryanair", "W6": "Wizz Air", "BA": "British Airways", "CA": "Air China", "FZ": "flydubai", 
-        "EY": "Etihad Airways", "EI": "Aer Lingus", "VF": "Valuair" 
+        "EY": "Etihad Airways", "EI": "Aer Lingus", "VF": "Valuair", "DE": "Condor", "LW": "Pacific Coastal", 
+        "PC": "Pegasus Airlines", "MS": "EgyptAir", "ET": "Ethiopian Airlines", "KE": "Korean Air", 
+        "JL": "Japan Airlines", "NH": "ANA (All Nippon Airways)", "SQ": "Singapore Airlines", 
+        "TG": "Thai Airways", "VN": "Vietnam Airlines", "QF": "Qantas", "NZ": "Air New Zealand",
+        "SA": "South African Airways", "IB": "Iberia", "TP": "TAP Air Portugal", "AZ": "ITA Airways",
+        "SN": "Brussels Airlines", "SK": "SAS", "DY": "Norwegian", "A3": "Aegean Airlines",
+        "SU": "Aeroflot", "LY": "El Al", "WY": "Oman Air", "GF": "Gulf Air", "KU": "Kuwait Airways",
+        "SV": "Saudia", "RJ": "Royal Jordanian", "ME": "Middle East Airlines", "KQ": "Kenya Airways",
+        "AT": "Royal Air Maroc", "UL": "SriLankan Airlines", "MH": "Malaysia Airlines", 
+        "GA": "Garuda Indonesia", "CI": "China Airlines", "BR": "EVA Air", "CX": "Cathay Pacific",
+        "VS": "Virgin Atlantic", "DI": "Norwegian Air UK", "EW": "Eurowings", "U2": "EasyJet"
     }
 };

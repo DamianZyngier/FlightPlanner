@@ -28,11 +28,23 @@ class FlightMonitor:
             raw_data = self.travelpayouts.get_cheap_prices(origin)
             normalized = self.travelpayouts.normalize_cheap_prices(origin, raw_data)
             
+            # LCCs to filter out for long-haul
+            lcc_codes = ['FR', 'W6']
+            tracked_codes = [code for codes in destinations.values() for code in codes]
+            
             origin_results = []
             for f in normalized:
-                # Flat check if destination is in any of our tracked lists
-                is_tracked = any(f['destination'] in codes for codes in destinations.values())
-                if is_tracked and f.get('return_date'):
+                dest = f['destination']
+                is_tracked = dest in tracked_codes
+                
+                # Special Case: Kraków Weekend - allow everything cheap
+                is_krk_weekend_candidate = (origin == 'KRK' and f['price'] < 1000)
+                
+                # Filter: skip LCCs for long-haul (tracked) destinations
+                if is_tracked and f.get('airline') in lcc_codes:
+                    continue
+                
+                if (is_tracked or is_krk_weekend_candidate) and f.get('return_date'):
                     origin_results.append(self.scorer.score_flight(f))
             return origin_results
         except Exception as e:

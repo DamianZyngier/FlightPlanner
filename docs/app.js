@@ -52,7 +52,7 @@ class FlightPlanner {
                 document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 this.currentView = btn.dataset.view;
-                if (this.els.viewName) this.els.viewName.innerText = this.currentView === 'longhaul' ? 'World Explorer' : 'Kraków Weekend';
+                if (this.els.viewName) this.els.viewName.innerText = this.currentView === 'longhaul' ? 'Long-haul trips' : 'City Break from KRK';
                 this.saveConfigLocally();
                 this.renderDashboard();
             };
@@ -125,7 +125,7 @@ class FlightPlanner {
         if (this.els.vWEff) this.els.vWEff.innerText = this.els.wEff?.value || 0.5;
         
         document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.dataset.view === this.currentView));
-        if (this.els.viewName) this.els.viewName.innerText = this.currentView === 'longhaul' ? 'World Explorer' : 'Kraków Weekend';
+        if (this.els.viewName) this.els.viewName.innerText = this.currentView === 'longhaul' ? 'Long-haul trips' : 'City Break from KRK';
     }
 
     async saveConfigLocally() {
@@ -284,16 +284,45 @@ class FlightPlanner {
             ef: parseFloat(this.els.wEff?.value || 0.5)
         };
 
-        let filtered = this.data.flights.current_best.filter(f => !f.is_mock && f.price <= maxPrice);
-
+        const lccCodes = ['FR', 'W6'];
+        let viewMaxPrice = maxPrice;
         if (this.currentView === 'citybreak') {
+            // Default 500 PLN for citybreak if not manually adjusted high
+            if (maxPrice > 1000) viewMaxPrice = 500;
+        }
+
+        let filtered = this.data.flights.current_best.filter(f => !f.is_mock && f.price <= viewMaxPrice);
+
+        if (this.currentView === 'longhaul') {
             filtered = filtered.filter(f => {
-                if (f.was_precision_scanned) return true; // Keep manually analyzed routes
-                const day = new Date(f.departure_date).getDay();
-                return f.origin === 'KRK' && 
-                       (f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 4) &&
-                       (f.score_breakdown?.days_off <= 2) &&
-                       (day === 4 || day === 5);
+                // Filter out flights that have LCC segments
+                if (f.all_airlines && f.all_airlines.some(a => lccCodes.includes(a))) return false;
+                // Travelpayouts often only provides the main airline, but if it's LCC, filter it out too
+                if (lccCodes.includes(f.airline)) return false;
+                
+                const dist = this.data.config.ORIGINS[f.origin] ?? 0;
+                const dur = f.score_breakdown?.duration_days || 0;
+                return dist <= maxDist && dur >= minD && dur <= maxD;
+            });
+        } else if (this.currentView === 'citybreak') {
+            filtered = filtered.filter(f => {
+                if (f.was_precision_scanned) return true; 
+                
+                const depDate = new Date(f.departure_date);
+                const retDate = f.return_date ? new Date(f.return_date) : null;
+                const day = depDate.getDay(); // 0=Sun, 4=Thu, 5=Fri
+                
+                // Weekend logic:
+                // 1. Must be from KRK
+                // 2. Departure on Thursday (evening) or Friday
+                // 3. Return on Sunday or Monday
+                // 4. ZERO days off required (calculated by backend)
+                
+                const isWeekendFlight = (day === 4 || day === 5);
+                const isShortTrip = f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 4;
+                const noDaysOff = f.score_breakdown?.days_off <= 1; // Relaxed to 1 day for visibility
+
+                return f.origin === 'KRK' && isWeekendFlight && isShortTrip && noDaysOff;
             });
         } else {
             filtered = filtered.filter(f => {
