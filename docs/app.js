@@ -329,18 +329,9 @@ class FlightPlanner {
             filtered = filtered.filter(f => {
                 if (f.was_precision_scanned) return true; 
                 
-                const depDate = new Date(f.departure_date);
-                const day = depDate.getDay(); 
-                
-                // Weekend logic (relaxed):
-                // 1. Must be from KRK
-                // 2. Any departure day for now to find data
-                // 3. Days off <= 2
-                
-                const isShortTrip = f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 10;
-                const lowDaysOff = f.score_breakdown?.days_off <= 2;
-
-                return f.origin === 'KRK' && isShortTrip && lowDaysOff;
+                // DEBUG: Show everything from KRK regardless of duration/day
+                // This is temporary until you run a fresh Global Scan
+                return f.origin === 'KRK';
             });
         } else {
             filtered = filtered.filter(f => {
