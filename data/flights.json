@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-10T10:36:57.117521",
+  "last_updated": "2026-03-10T10:41:32.667700",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2027-01-01T13:10:00+01:00",
@@ -574,28 +574,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-MNL-2026-04-10T16:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "MNL",
-      "departure_date": "2026-04-10",
-      "return_date": "2026-04-24",
-      "airline": "PC",
-      "price": 2610.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BER%20on%202026-04-10%20through%202026-04-24&curr=PLN",
-      "score": 64.2,
-      "score_breakdown": {
-        "price_raw": 2610.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-VIE-HKT-2026-11-15T13:00:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1100,6 +1078,42 @@
         "duration_days": 41,
         "efficiency": 12
       }
+    },
+    {
+      "id": "3",
+      "source": "Amadeus",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "MNL",
+      "departure_date": "2026-04-10",
+      "return_date": "2026-04-25",
+      "airline": "QR",
+      "all_airlines": [
+        "QR"
+      ],
+      "price": 4609.94,
+      "currency": "PLN",
+      "duration_out": "17h 50m",
+      "duration_in": "18h 50m",
+      "stops_out": 1,
+      "layovers_out": [
+        {
+          "airport": "DOH",
+          "duration": "2h 40m",
+          "status": "medium"
+        }
+      ],
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BER%20on%202026-04-10%20through%202026-04-25&curr=PLN",
+      "score": 52.1,
+      "score_breakdown": {
+        "price_raw": 4609.94,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 4
+      },
+      "was_precision_scanned": true
     }
   ],
   "history": [
