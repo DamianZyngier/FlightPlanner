@@ -7,62 +7,18 @@
     "seasonality": 0.1
   },
   "DESTINATIONS": {
-    "AU": [
-      "SYD",
-      "MEL",
-      "BNE",
-      "PER"
-    ],
-    "BW": [
-      "GBE",
-      "MUB"
-    ],
-    "CA": [
-      "YYZ",
-      "YVR",
-      "YUL",
-      "YYC"
-    ],
-    "JP": [
-      "TYO",
-      "KIX",
-      "FUK"
-    ],
-    "MY": [
-      "KUL",
-      "BKI"
-    ],
-    "NA": [
-      "WDH"
-    ],
-    "NZ": [
-      "AKL",
-      "CHC",
-      "WLG"
-    ],
-    "PE": [
-      "LIM",
-      "CUZ"
-    ],
-    "PH": [
-      "MNL",
-      "CEB"
-    ],
-    "TH": [
-      "BKK",
-      "HKT",
-      "CNX"
-    ],
-    "VN": [
-      "SGN",
-      "HAN",
-      "DAD"
-    ],
-    "ZA": [
-      "JNB",
-      "CPT",
-      "DUR"
-    ]
+    "AU": ["SYD", "MEL", "BNE", "PER"],
+    "BW": ["GBE", "MUB"],
+    "CA": ["YYZ", "YVR", "YUL", "YYC"],
+    "JP": ["TYO", "KIX", "FUK"],
+    "MY": ["KUL", "BKI"],
+    "NA": ["WDH"],
+    "NZ": ["AKL", "CHC", "WLG"],
+    "PE": ["LIM", "CUZ"],
+    "PH": ["MNL", "CEB"],
+    "TH": ["BKK", "HKT", "CNX"],
+    "VN": ["SGN", "HAN", "DAD"],
+    "ZA": ["JNB", "CPT", "DUR"]
   },
   "EMAIL_RECEIVER": "zyngi23@gmail.com",
   "EMAIL_SENDER": "zyngi23@gmail.com",
@@ -80,113 +36,28 @@
     "WMI": 310
   },
   "PEAK_SEASONS": {
-    "AU": [
-      12,
-      1,
-      2,
-      3,
-      4,
-      10,
-      11
-    ],
-    "BW": [
-      5,
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
-    "CA": [
-      6,
-      7,
-      8,
-      9
-    ],
-    "CV": [
-      11,
-      12,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "JP": [
-      3,
-      4,
-      5,
-      10,
-      11
-    ],
-    "MY": [
-      1,
-      2,
-      3,
-      6,
-      7,
-      8
-    ],
-    "NA": [
-      5,
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
-    "NZ": [
-      12,
-      1,
-      2,
-      3
-    ],
-    "PE": [
-      5,
-      6,
-      7,
-      8,
-      9
-    ],
-    "PH": [
-      12,
-      1,
-      2,
-      3,
-      4,
-      5
-    ],
-    "TH": [
-      11,
-      12,
-      1,
-      2,
-      3
-    ],
-    "VN": [
-      12,
-      1,
-      2,
-      3,
-      4
-    ],
-    "ZA": [
-      11,
-      12,
-      1,
-      2,
-      3
-    ]
+    "AU": [12, 1, 2, 3, 4, 10, 11],
+    "BW": [5, 6, 7, 8, 9, 10],
+    "CA": [6, 7, 8, 9],
+    "CV": [11, 12, 1, 2, 3, 4, 5, 6],
+    "JP": [3, 4, 5, 10, 11],
+    "MY": [1, 2, 3, 6, 7, 8],
+    "NA": [5, 6, 7, 8, 9, 10],
+    "NZ": [12, 1, 2, 3],
+    "PE": [5, 6, 7, 8, 9],
+    "PH": [12, 1, 2, 3, 4, 5],
+    "TH": [11, 12, 1, 2, 3],
+    "VN": [12, 1, 2, 3, 4],
+    "ZA": [11, 12, 1, 2, 3]
   },
   "SETTINGS": {
     "origin_dist": 600,
     "max_price": 8000,
-    "min_dur": 1,
-    "max_dur": 30,
+    "min_dur": 7,
+    "max_dur": 16,
     "w_price": 1,
     "w_dist": 0.5,
-    "w_weather": 0.2,
+    "w_weather": 0.5,
     "w_eff": 0.5,
     "last_view": "longhaul",
     "sort_by": "score"

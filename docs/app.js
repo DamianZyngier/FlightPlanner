@@ -84,37 +84,48 @@ class FlightPlanner {
     async loadConfig() {
         console.log("Loading config...");
         try {
+            // 1. Try to load from LocalStorage first (for persistence on static sites)
+            const localConfig = localStorage.getItem('fp_config');
+            if (localConfig) {
+                this.data.config = JSON.parse(localConfig);
+                this.applyConfigToUi();
+                return;
+            }
+
+            // 2. Fallback to server/file if no local config
             let r = await fetch('/api/config');
             if (!r.ok) r = await fetch('./data/config.json');
             this.data.config = await r.json();
-            
-            if (this.data.config.SETTINGS) {
-                const s = this.data.config.SETTINGS;
-                if (this.els.originDist) this.els.originDist.value = s.origin_dist ?? 600;
-                if (this.els.filterPrice) this.els.filterPrice.value = s.max_price ?? 8000;
-                if (this.els.minDur) this.els.minDur.value = s.min_dur ?? 1;
-                if (this.els.maxDur) this.els.maxDur.value = s.max_dur ?? 30;
-                if (this.els.wPrice) this.els.wPrice.value = s.w_price ?? 1.0;
-                if (this.els.wWeather) this.els.wWeather.value = s.w_weather ?? 0.5;
-                if (this.els.wEff) this.els.wEff.value = s.w_eff ?? 0.5;
-                
-                this.currentView = s.last_view ?? 'longhaul';
-                if (this.els.sortBy) this.els.sortBy.value = s.sort_by ?? 'score';
-                
-                if (this.els.valDistKrk) this.els.valDistKrk.innerText = this.els.originDist?.value || 600;
-                if (this.els.valMaxPrice) this.els.valMaxPrice.innerText = this.els.filterPrice?.value || 8000;
-                if (this.els.valMinDur) this.els.valMinDur.innerText = this.els.minDur?.value || 1;
-                if (this.els.valMaxDur) this.els.valMaxDur.innerText = this.els.maxDur?.value || 30;
-                
-                // Weights labels
-                if (this.els.vWPrice) this.els.vWPrice.innerText = this.els.wPrice?.value || 1.0;
-                if (this.els.vWWeather) this.els.vWWeather.innerText = this.els.wWeather?.value || 0.5;
-                if (this.els.vWEff) this.els.vWEff.innerText = this.els.wEff?.value || 0.5;
-                
-                document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.dataset.view === this.currentView));
-                if (this.els.viewName) this.els.viewName.innerText = this.currentView === 'longhaul' ? 'World Explorer' : 'Kraków Weekend';
-            }
+            this.applyConfigToUi();
         } catch (e) { console.error("Error loading config:", e); }
+    }
+
+    applyConfigToUi() {
+        if (!this.data.config || !this.data.config.SETTINGS) return;
+        const s = this.data.config.SETTINGS;
+        if (this.els.originDist) this.els.originDist.value = s.origin_dist ?? 600;
+        if (this.els.filterPrice) this.els.filterPrice.value = s.max_price ?? 8000;
+        if (this.els.minDur) this.els.minDur.value = s.min_dur ?? 1;
+        if (this.els.maxDur) this.els.maxDur.value = s.max_dur ?? 30;
+        if (this.els.wPrice) this.els.wPrice.value = s.w_price ?? 1.0;
+        if (this.els.wWeather) this.els.wWeather.value = s.w_weather ?? 0.5;
+        if (this.els.wEff) this.els.wEff.value = s.w_eff ?? 0.5;
+        
+        this.currentView = s.last_view ?? 'longhaul';
+        if (this.els.sortBy) this.els.sortBy.value = s.sort_by ?? 'score';
+        
+        if (this.els.valDistKrk) this.els.valDistKrk.innerText = this.els.originDist?.value || 600;
+        if (this.els.valMaxPrice) this.els.valMaxPrice.innerText = this.els.filterPrice?.value || 8000;
+        if (this.els.valMinDur) this.els.valMinDur.innerText = this.els.minDur?.value || 1;
+        if (this.els.valMaxDur) this.els.valMaxDur.innerText = this.els.maxDur?.value || 30;
+        
+        // Weights labels
+        if (this.els.vWPrice) this.els.vWPrice.innerText = this.els.wPrice?.value || 1.0;
+        if (this.els.vWWeather) this.els.vWWeather.innerText = this.els.wWeather?.value || 0.5;
+        if (this.els.vWEff) this.els.vWEff.innerText = this.els.wEff?.value || 0.5;
+        
+        document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.dataset.view === this.currentView));
+        if (this.els.viewName) this.els.viewName.innerText = this.currentView === 'longhaul' ? 'World Explorer' : 'Kraków Weekend';
     }
 
     async saveConfigLocally() {
@@ -128,11 +139,34 @@ class FlightPlanner {
             w_weather: parseFloat(this.els.wWeather?.value || 0.5),
             w_eff: parseFloat(this.els.wEff?.value || 0.5),
             last_view: this.currentView,
-            sort_by: this.els.sortBy?.value || 'score'
+            sort_by: this.els.sortBy?.value || 'score',
+            api_url: this.data.config.SETTINGS?.api_url || ''
         };
+        
+        // Store in localStorage so UI preferences persist in browser
+        localStorage.setItem('fp_config', JSON.stringify(this.data.config));
+
+        // Check if we are on GitHub Pages (static environment)
+        const isStatic = window.location.hostname.includes('github.io');
+        const apiBase = this.data.config.SETTINGS?.api_url || '';
+
+        // Do not attempt POST if on static site and no custom API URL is set
+        if (isStatic && !apiBase) return;
+
         try {
-            await fetch('/api/config', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(this.data.config) });
-        } catch(e) {}
+            const url = apiBase ? `${apiBase}/api/config` : '/api/config';
+            const r = await fetch(url, { 
+                method: 'POST', 
+                headers: { 'Content-Type': 'application/json' }, 
+                body: JSON.stringify(this.data.config) 
+            });
+            if (r.status === 405 || r.status === 404) {
+                console.warn("API not found. Settings saved locally only.");
+                return;
+            }
+        } catch(e) {
+            console.error("Failed to save config to server:", e);
+        }
     }
 
     async loadFlights() {
@@ -149,15 +183,27 @@ class FlightPlanner {
     async triggerScan() {
         if (!this.els.scanBtn) return;
         this.els.scanBtn.disabled = true; this.els.scanBtn.innerText = "⏳ Scanning...";
+
+        // Check if we are on GitHub Pages (static environment)
+        const isStatic = window.location.hostname.includes('github.io');
+        const apiBase = isStatic ? (this.data.config?.SETTINGS?.api_url || '') : '';
+
         try { 
-            const r = await fetch('/api/scan', { method: 'POST' }); 
+            const url = apiBase ? `${apiBase}/api/scan` : '/api/scan';
+            const r = await fetch(url, { method: 'POST' }); 
+            
+            if (r.status === 405 || r.status === 404) {
+                throw new Error("API not found. GitHub Pages is static and does not support on-demand scanning. To use this feature, run the app locally or configure a live backend URL in Settings.");
+            }
+
             if (!r.ok) {
                 const err = await r.json();
                 throw new Error(err.output || "Scan failed on server.");
             }
             await this.loadFlights(); 
         } catch (e) {
-            alert("Error during Global Scan: " + e.message);
+            console.error("Global Scan Error:", e);
+            alert("Error: " + e.message);
         } finally { 
             this.els.scanBtn.disabled = false; this.els.scanBtn.innerText = "🚀 Run Global Scan"; 
         }
@@ -166,17 +212,30 @@ class FlightPlanner {
     async triggerPrecisionScan(origin, dest, dep, ret, btn) {
         const oldText = btn.innerText;
         btn.disabled = true; btn.innerText = "⏳ Precision...";
+
+        // Check if we are on GitHub Pages (static environment)
+        const isStatic = window.location.hostname.includes('github.io');
+        const apiBase = isStatic ? (this.data.config?.SETTINGS?.api_url || '') : '';
+        
         try {
-            const r = await fetch('/api/precision', {
+            const url = apiBase ? `${apiBase}/api/precision` : '/api/precision';
+            const r = await fetch(url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ origin, destination: dest, departure_date: dep, return_date: ret })
             });
+
+            if (r.status === 405 || r.status === 404) {
+                throw new Error("API not found. GitHub Pages is static and does not support precision scanning. To use this feature, run the app locally or configure a live backend URL in Settings.");
+            }
             if (!r.ok) throw new Error("Precision scan failed.");
             const res = await r.json();
             if (res.status === 'success') { await this.loadFlights(); }
             else { alert("Precision Scan failed: " + (res.message || "Unknown error")); }
-        } catch (e) { alert("Error connecting to precision engine."); }
+        } catch (e) { 
+            console.error("Precision Scan Error:", e);
+            alert("Error: " + e.message); 
+        }
         finally { btn.disabled = false; btn.innerText = oldText; }
     }
 

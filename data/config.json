@@ -182,8 +182,8 @@
   "SETTINGS": {
     "origin_dist": 600,
     "max_price": 8000,
-    "min_dur": 1,
-    "max_dur": 30,
+    "min_dur": 7,
+    "max_dur": 16,
     "w_price": 1,
     "w_dist": 0.5,
     "w_weather": 0.5,
