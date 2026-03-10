@@ -30,7 +30,7 @@
         <div class="sidebar-section">
             <label class="section-label">Main Filters</label>
             
-            <div class="range-container">
+            <div id="filter-dist-container" class="range-container">
                 <p class="help-text">Max Distance from KRK</p>
                 <div class="range-row">
                     <input type="range" id="origin-dist" min="0" max="1000" step="50" value="600">
@@ -39,7 +39,7 @@
                 <div id="included-origins" class="origin-list"></div>
             </div>
 
-            <div class="range-container">
+            <div id="filter-price-container" class="range-container">
                 <p class="help-text">Budget (PLN)</p>
                 <div class="range-row">
                     <input type="range" id="filter-price" min="500" max="15000" step="100" value="8000">
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="range-container">
+            <div id="filter-dur-container" class="range-container">
                 <p class="help-text">Trip Duration (Days)</p>
                 <div class="range-row">
                     <input type="range" id="min-duration" min="1" max="30" step="1" value="1">
@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        <div class="sidebar-section">
+        <div id="filter-weights-section" class="sidebar-section">
             <label class="section-label">Algorithm Weights</label>
             <div class="range-container">
                 <p class="help-text">Price Sensitivity</p>
@@ -118,7 +118,7 @@
                 <div id="deals-grid" class="deals-grid"></div>
             </section>
 
-            <section class="section-analytics">
+            <section id="analytics-section" class="section-analytics">
                 <h2 class="market-trends-title">Market Trends</h2>
                 <p class="market-trends-desc">Average flight prices over time for your tracked regions</p>
                 <div class="chart-wrapper">

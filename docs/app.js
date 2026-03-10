@@ -273,6 +273,19 @@ class FlightPlanner {
 
     renderDashboard() {
         if (!this.data.flights?.current_best || !this.data.config) return;
+        
+        // UI Toggling for City Break mode
+        const isCityBreak = this.currentView === 'citybreak';
+        const distCont = document.getElementById('filter-dist-container');
+        const durCont = document.getElementById('filter-dur-container');
+        const weightSec = document.getElementById('filter-weights-section');
+        const analyticsSec = document.getElementById('analytics-section');
+
+        if (distCont) distCont.style.display = isCityBreak ? 'none' : 'flex';
+        if (durCont) durCont.style.display = isCityBreak ? 'none' : 'flex';
+        if (weightSec) weightSec.style.display = isCityBreak ? 'none' : 'flex';
+        if (analyticsSec) analyticsSec.style.display = isCityBreak ? 'none' : 'block';
+
         const maxDist = parseInt(this.els.originDist?.value || 600);
         const maxPrice = parseInt(this.els.filterPrice?.value || 8000);
         const minD = parseInt(this.els.minDur?.value || 1);
@@ -286,7 +299,7 @@ class FlightPlanner {
 
         const lccCodes = ['FR', 'W6'];
         let viewMaxPrice = maxPrice;
-        if (this.currentView === 'citybreak') {
+        if (isCityBreak) {
             // Default 500 PLN for citybreak if not manually adjusted high
             if (maxPrice > 1000) viewMaxPrice = 500;
         }
@@ -304,23 +317,22 @@ class FlightPlanner {
                 const dur = f.score_breakdown?.duration_days || 0;
                 return dist <= maxDist && dur >= minD && dur <= maxD;
             });
-        } else if (this.currentView === 'citybreak') {
+        } else if (isCityBreak) {
             filtered = filtered.filter(f => {
                 if (f.was_precision_scanned) return true; 
                 
                 const depDate = new Date(f.departure_date);
-                const retDate = f.return_date ? new Date(f.return_date) : null;
                 const day = depDate.getDay(); // 0=Sun, 4=Thu, 5=Fri
                 
                 // Weekend logic:
                 // 1. Must be from KRK
                 // 2. Departure on Thursday (evening) or Friday
                 // 3. Return on Sunday or Monday
-                // 4. ZERO days off required (calculated by backend)
+                // 4. Relaxed to 1 day for visibility
                 
                 const isWeekendFlight = (day === 4 || day === 5);
                 const isShortTrip = f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 4;
-                const noDaysOff = f.score_breakdown?.days_off <= 1; // Relaxed to 1 day for visibility
+                const noDaysOff = f.score_breakdown?.days_off <= 1;
 
                 return f.origin === 'KRK' && isWeekendFlight && isShortTrip && noDaysOff;
             });
@@ -448,7 +460,22 @@ class FlightPlanner {
         const ctx = canvas.getContext('2d');
         const labels = hist.map(h => new Date(h.date).toLocaleDateString());
         const countries = [...new Set(hist.flatMap(h => Object.keys(h.stats || {})))];
-        const datasets = countries.map((c, i) => ({ label: this.getName(c), data: hist.map(h => h.stats?.[c]?.avg || null), borderColor: ['#6366f1', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6'][i % 5], tension: 0.3, fill: false }));
+        
+        // Expanded color palette
+        const colors = [
+            '#6366f1', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6', 
+            '#06b6d4', '#ec4899', '#f97316', '#84cc16', '#14b8a6',
+            '#3b82f6', '#d946ef', '#fbbf24', '#4ade80', '#fb7185'
+        ];
+
+        const datasets = countries.map((c, i) => ({ 
+            label: this.getName(c), 
+            data: hist.map(h => h.stats?.[c]?.avg || null), 
+            borderColor: colors[i % colors.length], 
+            backgroundColor: colors[i % colors.length],
+            tension: 0.3, 
+            fill: false 
+        }));
         if (this.chart) this.chart.destroy();
         this.chart = new Chart(ctx, { type: 'line', data: { labels, datasets }, options: { responsive: true, maintainAspectRatio: false } });
     }
