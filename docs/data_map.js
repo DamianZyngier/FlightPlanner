@@ -6,7 +6,15 @@ const DATA_MAP = {
         "BUD": "Budapest Ferenc Liszt", "SYD": "Sydney", "AKL": "Auckland", "TYO": "Tokyo", 
         "BKK": "Bangkok", "SGN": "Ho Chi Minh", "LIM": "Lima", "JNB": "Johannesburg", 
         "CPT": "Cape Town", "RZE": "Rzeszów Jasionka", "OSR": "Ostrava Leoš Janáček", 
-        "BTS": "Bratislava M. R. Štefánik" 
+        "BTS": "Bratislava M. R. Štefánik", "RAK": "Marrakesh", "CPH": "Copenhagen", 
+        "GOT": "Gothenburg", "IZM": "Izmir", "BLL": "Billund", "BEG": "Belgrade", 
+        "TLS": "Toulouse", "BDS": "Brindisi", "BHX": "Birmingham", "MAD": "Madrid",
+        "BCN": "Barcelona", "FCO": "Rome", "CDG": "Paris CDG", "AMS": "Amsterdam",
+        "FRA": "Frankfurt", "MUC": "Munich", "ZRH": "Zurich", "DXB": "Dubai",
+        "IST": "Istanbul", "ATH": "Athens", "LIS": "Lisbon", "OSL": "Oslo",
+        "ARN": "Stockholm", "HEL": "Helsinki", "DUB": "Dublin", "MLA": "Malta",
+        "PMI": "Palma de Mallorca", "TFS": "Tenerife", "LPA": "Gran Canaria",
+        "ACE": "Lanzarote", "CTA": "Catania", "NAP": "Naples", "VCE": "Venice"
     },
     "AIRLINES": { 
         "LO": "LOT Polish Airlines", "LH": "Lufthansa", "LX": "Swiss", "OS": "Austrian Airlines", "AF": "Air France", 
