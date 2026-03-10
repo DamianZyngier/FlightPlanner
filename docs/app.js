@@ -4,7 +4,7 @@
 
 class FlightPlanner {
     constructor() {
-        this.data = { flights: null, config: null };
+        this.data = { flights: null, config: null, global: { countries: {}, cities: {}, cityToCountry: {} } };
         this.currentView = 'longhaul';
         this.els = this.getElements();
         this.init();
@@ -30,12 +30,45 @@ class FlightPlanner {
 
     async init() {
         this.populateSuggestions();
+        await this.loadGlobalNames(); 
         await this.loadConfig();
         await this.loadFlights();
         this.bindEvents();
         this.renderDestinations();
         this.renderOriginList();
     }
+
+    async loadGlobalNames() {
+        console.log("Fetching global travel data...");
+        try {
+            const [countries, cities] = await Promise.all([
+                fetch('https://api.travelpayouts.com/data/en/countries.json').then(r => r.json()),
+                fetch('https://api.travelpayouts.com/data/en/cities.json').then(r => r.json())
+            ]);
+            
+            countries.forEach(c => this.data.global.countries[c.code] = c.name);
+            cities.forEach(c => {
+                this.data.global.cities[c.code] = c.name;
+                this.data.global.cityToCountry[c.code] = c.country_code;
+            });
+            console.log(`Loaded ${countries.length} countries and ${cities.length} cities.`);
+        } catch (e) { console.error("Global Data Load Error:", e); }
+    }
+
+    getName(code) { 
+        return DATA_MAP.AIRPORTS[code] || 
+               this.data.global.cities[code] || 
+               this.data.global.countries[code] || 
+               DATA_MAP.COUNTRIES[code] || 
+               code; 
+    }
+
+    getCountryName(code) {
+        const countryCode = this.data.global.cityToCountry[code] || code;
+        return this.data.global.countries[countryCode] || DATA_MAP.COUNTRIES[countryCode] || "";
+    }
+
+    getAirline(c) { return DATA_MAP.AIRLINES[c] || c; }
 
     populateSuggestions() {
         if (!this.els.suggestions) return;
@@ -86,7 +119,6 @@ class FlightPlanner {
     }
 
     async loadConfig() {
-        console.log("Loading config...");
         try {
             const localConfig = localStorage.getItem('fp_config');
             if (localConfig) {
@@ -214,9 +246,6 @@ class FlightPlanner {
         }
     }
 
-    getName(c) { return DATA_MAP.AIRPORTS[c] || DATA_MAP.COUNTRIES[c] || c; }
-    getAirline(c) { return DATA_MAP.AIRLINES[c] || c; }
-
     renderOriginList() {
         if (!this.data.config || !this.els.originList) return;
         const maxVal = parseInt(this.els.originDist?.value || 600);
@@ -245,12 +274,9 @@ class FlightPlanner {
         if (destSec) destSec.style.display = isCityBreak ? 'none' : 'flex';
         if (analyticsSec) analyticsSec.style.display = isCityBreak ? 'none' : 'block';
 
-        const maxDist = parseInt(this.els.originDist?.value || 600);
         const maxPriceLong = parseInt(this.els.filterPriceLonghaul?.value || 8000);
         const maxPriceCity = parseInt(this.els.filterPriceCitybreak?.value || 500);
         const maxDaysOffCity = parseInt(this.els.filterDaysOffCitybreak?.value || 0);
-        const minD = parseInt(this.els.minDur?.value || 1);
-        const maxD = parseInt(this.els.maxDur?.value || 30);
         const sortBy = this.els.sortBy?.value || 'score';
         const w = { p: parseFloat(this.els.wPrice?.value || 1.0), we: parseFloat(this.els.wWeather?.value || 0.5), ef: parseFloat(this.els.wEff?.value || 0.5) };
 
@@ -264,7 +290,7 @@ class FlightPlanner {
                 if (lcc.includes(f.airline)) return false;
                 const dist = this.data.config.ORIGINS[f.origin] ?? 0;
                 const dur = f.score_breakdown?.duration_days || 0;
-                return dist <= maxDist && dur >= minD && dur <= maxD;
+                return dist <= parseInt(this.els.originDist?.value || 600) && dur >= parseInt(this.els.minDur?.value || 1) && dur <= parseInt(this.els.maxDur?.value || 30);
             });
         } else if (isCityBreak) {
             filtered = filtered.filter(f => {
@@ -276,13 +302,6 @@ class FlightPlanner {
                 const isShort = f.score_breakdown?.duration_days >= 2 && f.score_breakdown?.duration_days <= 5;
                 const lowDaysOff = (f.score_breakdown?.days_off ?? 0) <= maxDaysOffCity;
                 return isWeekend && isShort && lowDaysOff;
-            });
-        } else {
-            filtered = filtered.filter(f => {
-                if (f.was_precision_scanned) return true;
-                const dist = this.data.config.ORIGINS[f.origin] ?? 0;
-                const dur = f.score_breakdown?.duration_days || 0;
-                return dist <= maxDist && dur >= minD && dur <= maxD;
             });
         }
 
@@ -298,9 +317,6 @@ class FlightPlanner {
         if (sortBy === 'price') rescored.sort((a, b) => a.price - b.price);
         else rescored.sort((a, b) => b.ui_score - a.ui_score);
 
-        if (this.els.totalRoutes) this.els.totalRoutes.innerText = rescored.length;
-        if (this.els.bestPrice) this.els.bestPrice.innerText = rescored.length ? `${rescored[0].price.toLocaleString()} ${rescored[0].currency}` : "--";
-        
         if (this.els.dealsGrid) {
             this.els.dealsGrid.innerHTML = '';
             rescored.forEach(f => {
@@ -318,8 +334,40 @@ class FlightPlanner {
         const bd = f.score_breakdown || {};
         const s = f.ui_score;
         const sCls = s > 80 ? 'score-excellent' : s > 60 ? 'score-good' : s > 40 ? 'score-fair' : 'score-poor';
+        const city = this.getName(f.destination);
+        const country = this.getCountryName(f.destination);
+        
         const itin = f.duration_out ? `<div class="mini-itin"><div class="itin-main"><span class="itin-duration">${f.duration_out}</span><div class="itin-line"><div class="itin-dot" style="left:0"></div><div class="itin-dot" style="left:100%"></div></div></div><div class="itin-badge-list">${(f.layovers_out || []).map(l => `<span class="badge badge-${l.status}" title="${this.getName(l.airport)}">${l.airport}</span>`).join('')}</div></div>` : `<div class="mini-itin"><button class="btn-book btn-precision" style="width:100%; font-size:0.75rem; padding:0.6rem; margin:0; border: 1px dashed var(--accent);"><i class="ti ti-zoom-scan" style="margin-right: 4px;"></i> Analyze Route Details</button></div>`;
-        return `<div class="card-top"><div class="card-dest">${this.getName(f.destination)}</div><div class="card-price">${f.price.toLocaleString()} ${f.currency}</div></div><div style="display: flex; align-items: center; gap: 8px;"><div class="score-tag ${sCls}">${s}% Match</div><span style="font-size: 0.7rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">AI Score</span></div>${itin}<div class="trip-highlight"><div class="highlight-item"><span class="highlight-label"><i class="ti ti-calendar-event"></i> Dates</span><span class="highlight-val">${f.departure_date} <span style="color: var(--text-muted);">→</span> ${f.return_date || '?'}</span></div><div class="highlight-item"><span class="highlight-label"><i class="ti ti-beach"></i> Holidays</span><span class="highlight-val">${bd.holiday_count || 0} Free Days</span></div></div><div class="card-details"><div class="row"><span>Origin</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div><div class="row"><span>Airline</span> <span>${this.getAirline(f.airline)}</span></div><div class="row"><span>Work Days</span> <span>${bd.days_off || 0} Off</span></div><div class="row"><span>Duration</span> <span>${bd.duration_days || '?'} Days</span></div></div><a href="${f.link}" target="_blank" class="btn-book"><i class="ti ti-external-link"></i> Book on Google Flights</a>`;
+        
+        return `<div class="card-top">
+                <div style="display: flex; flex-direction: column;">
+                    <div class="card-dest">${city}</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; margin-top: -2px;">${country}</div>
+                </div>
+                <div class="card-price">${f.price.toLocaleString()} ${f.currency}</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <div class="score-tag ${sCls}">${s}% Match</div>
+                <span style="font-size: 0.7rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">AI Score</span>
+            </div>
+            ${itin}
+            <div class="trip-highlight">
+                <div class="highlight-item">
+                    <span class="highlight-label"><i class="ti ti-calendar-event"></i> Dates</span>
+                    <span class="highlight-val">${f.departure_date} <span style="color: var(--text-muted);">→</span> ${f.return_date || '?'}</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-label"><i class="ti ti-beach"></i> Holidays</span>
+                    <span class="highlight-val">${bd.holiday_count || 0} Free Days</span>
+                </div>
+            </div>
+            <div class="card-details">
+                <div class="row"><span>Origin</span> <span title="${this.getName(f.origin)}">${this.getName(f.origin)}</span></div>
+                <div class="row"><span>Airline</span> <span>${this.getAirline(f.airline)}</span></div>
+                <div class="row"><span>Work Days</span> <span>${bd.days_off || 0} Off</span></div>
+                <div class="row"><span>Duration</span> <span>${bd.duration_days || '?'} Days</span></div>
+            </div>
+            <a href="${f.link}" target="_blank" class="btn-book"><i class="ti ti-external-link"></i> Book on Google Flights</a>`;
     }
 
     renderDestinations() {
