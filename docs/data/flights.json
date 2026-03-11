@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-11T01:57:09.599365",
+  "last_updated": "2026-03-11T06:53:41.299168",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2027-01-01T13:10:00+01:00",
@@ -406,12 +406,12 @@
       "departure_date": "2026-11-04",
       "return_date": "2026-12-09",
       "airline": "LH",
-      "price": 3230.0,
+      "price": 3222.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20WAW%20on%202026-11-04%20through%202026-12-09&curr=PLN",
-      "score": 67.6,
+      "score": 67.7,
       "score_breakdown": {
-        "price_raw": 3230.0,
+        "price_raw": 3222.0,
         "days_off": 25,
         "holiday_count": 1,
         "in_season": false,
@@ -948,6 +948,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-STR-2026-05-01T14:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "STR",
+      "departure_date": "2026-05-01",
+      "return_date": "2026-05-04",
+      "airline": "W6",
+      "price": 223.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20STR%20from%20KRK%20on%202026-05-01%20through%202026-05-04&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 223.0,
+        "days_off": 1,
+        "holiday_count": 2,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 2
+      }
+    },
+    {
       "id": "tp-cheap-KRK-SVG-2026-05-01T18:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1077,28 +1099,6 @@
         "in_season": false,
         "duration_days": 10,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-HAN-2026-05-07T13:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "HAN",
-      "departure_date": "2026-05-07",
-      "return_date": "2026-05-23",
-      "airline": "MU",
-      "price": 2792.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20VIE%20on%202026-05-07%20through%202026-05-23&curr=PLN",
-      "score": 59.2,
-      "score_breakdown": {
-        "price_raw": 2792.0,
-        "days_off": 12,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 16,
-        "efficiency": 4
       }
     }
   ],
@@ -1598,7 +1598,7 @@
           "avg": 2697.44
         },
         "JP": {
-          "avg": 2959.14
+          "avg": 3049.25
         },
         "MY": {
           "avg": 2561.17
@@ -1610,7 +1610,7 @@
           "avg": 5149.67
         },
         "PE": {
-          "avg": 4408.6
+          "avg": 4407.0
         },
         "PH": {
           "avg": 3298.1
@@ -1619,7 +1619,7 @@
           "avg": 2746.93
         },
         "VN": {
-          "avg": 3093.12
+          "avg": 3088.24
         },
         "ZA": {
           "avg": 3122.5
