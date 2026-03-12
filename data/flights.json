@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-12T02:03:28.785343",
+  "last_updated": "2026-03-12T06:55:15.032362",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2026-05-16T13:00:00+02:00",
@@ -43,28 +43,6 @@
         "in_season": true,
         "duration_days": 23,
         "efficiency": 9
-      }
-    },
-    {
-      "id": "tp-cheap-BER-SGN-2026-04-12T07:05:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "SGN",
-      "departure_date": "2026-04-12",
-      "return_date": "2026-05-19",
-      "airline": "EW",
-      "price": 2861.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BER%20on%202026-04-12%20through%202026-05-19&curr=PLN",
-      "score": 78.7,
-      "score_breakdown": {
-        "price_raw": 2861.0,
-        "days_off": 26,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 37,
-        "efficiency": 11
       }
     },
     {
@@ -882,28 +860,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-HAN-2026-09-21T16:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "HAN",
-      "departure_date": "2026-09-21",
-      "return_date": "2026-10-10",
-      "airline": "LO",
-      "price": 2472.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20WAW%20on%202026-09-21%20through%202026-10-10&curr=PLN",
-      "score": 61.9,
-      "score_breakdown": {
-        "price_raw": 2472.0,
-        "days_off": 15,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 19,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-BER-BKK-2026-04-22T22:05:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -967,6 +923,28 @@
         "in_season": false,
         "duration_days": 35,
         "efficiency": 11
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-HAN-2026-09-21T16:40:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "HAN",
+      "departure_date": "2026-09-21",
+      "return_date": "2026-10-10",
+      "airline": "LO",
+      "price": 2513.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20WAW%20on%202026-09-21%20through%202026-10-10&curr=PLN",
+      "score": 61.6,
+      "score_breakdown": {
+        "price_raw": 2513.0,
+        "days_off": 15,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 19,
+        "efficiency": 4
       }
     },
     {
@@ -1098,6 +1076,28 @@
         "holiday_count": 2,
         "in_season": false,
         "duration_days": 13,
+        "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-WMI-BKK-2026-04-29T12:35:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WMI",
+      "destination": "BKK",
+      "departure_date": "2026-04-29",
+      "return_date": "2026-05-13",
+      "airline": "G9",
+      "price": 2753.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20WMI%20on%202026-04-29%20through%202026-05-13&curr=PLN",
+      "score": 59.6,
+      "score_breakdown": {
+        "price_raw": 2753.0,
+        "days_off": 10,
+        "holiday_count": 2,
+        "in_season": false,
+        "duration_days": 14,
         "efficiency": 4
       }
     }
@@ -1642,7 +1642,7 @@
           "avg": 3093.0
         },
         "NZ": {
-          "avg": 5344.1
+          "avg": 5613.18
         },
         "PE": {
           "avg": 4417.67
@@ -1654,10 +1654,10 @@
           "avg": 2747.36
         },
         "VN": {
-          "avg": 3161.71
+          "avg": 3183.06
         },
         "ZA": {
-          "avg": 3229.45
+          "avg": 3232.82
         }
       }
     }
