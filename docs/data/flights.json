@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-13T02:01:14.610724",
+  "last_updated": "2026-03-13T06:53:15.293225",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2026-05-16T13:00:00+02:00",
@@ -439,6 +439,28 @@
         "in_season": true,
         "duration_days": 28,
         "efficiency": 9
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-WDH-2026-06-19T06:45:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "WDH",
+      "departure_date": "2026-06-19",
+      "return_date": "2026-07-04",
+      "airline": "LX",
+      "price": 2586.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20VIE%20on%202026-06-19%20through%202026-07-04&curr=PLN",
+      "score": 69.0,
+      "score_breakdown": {
+        "price_raw": 2586.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 4
       }
     },
     {
@@ -1078,28 +1100,6 @@
         "duration_days": 8,
         "efficiency": 2
       }
-    },
-    {
-      "id": "tp-cheap-BER-HKT-2026-04-22T22:05:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "HKT",
-      "departure_date": "2026-04-22",
-      "return_date": "2026-05-05",
-      "airline": "EW",
-      "price": 2641.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BER%20on%202026-04-22%20through%202026-05-05&curr=PLN",
-      "score": 60.5,
-      "score_breakdown": {
-        "price_raw": 2641.0,
-        "days_off": 9,
-        "holiday_count": 2,
-        "in_season": false,
-        "duration_days": 13,
-        "efficiency": 4
-      }
     }
   ],
   "history": [
@@ -1665,19 +1665,19 @@
       "date": "2026-03-13",
       "stats": {
         "AU": {
-          "avg": 4688.33
+          "avg": 4690.94
         },
         "CA": {
           "avg": 2632.33
         },
         "JP": {
-          "avg": 3091.14
+          "avg": 3090.71
         },
         "MY": {
           "avg": 2563.67
         },
         "NA": {
-          "avg": 3250.5
+          "avg": 2900.5
         },
         "NZ": {
           "avg": 5715.1
@@ -1689,7 +1689,7 @@
           "avg": 3443.67
         },
         "TH": {
-          "avg": 2493.21
+          "avg": 2493.43
         },
         "VN": {
           "avg": 3026.53
