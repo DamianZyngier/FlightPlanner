@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-18T02:08:06.834837",
+  "last_updated": "2026-03-18T07:01:30.108190",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2026-05-16T13:00:00+02:00",
@@ -120,12 +120,12 @@
       "departure_date": "2026-07-08",
       "return_date": "2026-07-28",
       "airline": "G9",
-      "price": 2820.0,
+      "price": 2769.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20PRG%20on%202026-07-08%20through%202026-07-28&curr=PLN",
-      "score": 71.5,
+      "score": 71.9,
       "score_breakdown": {
-        "price_raw": 2820.0,
+        "price_raw": 2769.0,
         "days_off": 15,
         "holiday_count": 0,
         "in_season": true,
@@ -816,6 +816,28 @@
       }
     },
     {
+      "id": "tp-cheap-BUD-YYC-2026-06-03T17:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "YYC",
+      "departure_date": "2026-06-03",
+      "return_date": "2026-06-11",
+      "airline": "1A",
+      "price": 2417.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BUD%20on%202026-06-03%20through%202026-06-11&curr=PLN",
+      "score": 61.4,
+      "score_breakdown": {
+        "price_raw": 2417.0,
+        "days_off": 6,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 8,
+        "efficiency": 2
+      }
+    },
+    {
       "id": "tp-cheap-BER-MNL-2026-08-31T12:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -988,28 +1010,6 @@
         "holiday_count": 2,
         "in_season": false,
         "duration_days": 5,
-        "efficiency": 2
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-YYC-2026-06-03T17:05:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "YYC",
-      "departure_date": "2026-06-03",
-      "return_date": "2026-06-11",
-      "airline": "DE",
-      "price": 2478.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BUD%20on%202026-06-03%20through%202026-06-11&curr=PLN",
-      "score": 60.9,
-      "score_breakdown": {
-        "price_raw": 2478.0,
-        "days_off": 6,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 8,
         "efficiency": 2
       }
     },
@@ -1876,13 +1876,13 @@
           "avg": 3921.0
         },
         "CA": {
-          "avg": 2885.14
+          "avg": 2876.43
         },
         "JP": {
-          "avg": 3270.78
+          "avg": 3218.5
         },
         "MY": {
-          "avg": 2723.0
+          "avg": 2714.5
         },
         "NA": {
           "avg": 3945.67
@@ -1900,7 +1900,7 @@
           "avg": 2529.0
         },
         "VN": {
-          "avg": 3247.81
+          "avg": 3250.31
         },
         "ZA": {
           "avg": 3119.91
