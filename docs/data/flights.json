@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-18T13:10:44.149917",
+  "last_updated": "2026-03-18T18:58:57.318546",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2026-05-16T13:00:00+02:00",
@@ -120,12 +120,12 @@
       "departure_date": "2026-07-08",
       "return_date": "2026-07-28",
       "airline": "G9",
-      "price": 2771.0,
+      "price": 2781.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20PRG%20on%202026-07-08%20through%202026-07-28&curr=PLN",
-      "score": 71.9,
+      "score": 71.8,
       "score_breakdown": {
-        "price_raw": 2771.0,
+        "price_raw": 2781.0,
         "days_off": 15,
         "holiday_count": 0,
         "in_season": true,
@@ -153,28 +153,6 @@
         "in_season": false,
         "duration_days": 22,
         "efficiency": 6
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-TYO-2026-05-21T20:55:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "TYO",
-      "departure_date": "2026-05-21",
-      "return_date": "2026-06-04",
-      "airline": "FM",
-      "price": 2351.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BUD%20on%202026-05-21%20through%202026-06-04&curr=PLN",
-      "score": 70.9,
-      "score_breakdown": {
-        "price_raw": 2351.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 4
       }
     },
     {
@@ -296,12 +274,12 @@
       "departure_date": "2026-06-03",
       "return_date": "2026-06-16",
       "airline": "LX",
-      "price": 2685.0,
+      "price": 2694.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20BUD%20on%202026-06-03%20through%202026-06-16&curr=PLN",
-      "score": 68.1,
+      "score": 68.0,
       "score_breakdown": {
-        "price_raw": 2685.0,
+        "price_raw": 2694.0,
         "days_off": 9,
         "holiday_count": 1,
         "in_season": true,
@@ -340,12 +318,12 @@
       "departure_date": "2026-11-04",
       "return_date": "2026-12-09",
       "airline": "LH",
-      "price": 3315.0,
+      "price": 3326.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20WAW%20on%202026-11-04%20through%202026-12-09&curr=PLN",
-      "score": 66.9,
+      "score": 66.8,
       "score_breakdown": {
-        "price_raw": 3315.0,
+        "price_raw": 3326.0,
         "days_off": 25,
         "holiday_count": 1,
         "in_season": false,
@@ -574,28 +552,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-HAN-2026-04-27T21:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "HAN",
-      "departure_date": "2026-04-27",
-      "return_date": "2026-05-10",
-      "airline": "LO",
-      "price": 3264.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20KRK%20on%202026-04-27%20through%202026-05-10&curr=PLN",
-      "score": 63.3,
-      "score_breakdown": {
-        "price_raw": 3264.0,
-        "days_off": 9,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 13,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-WMI-HKT-2026-11-28T11:45:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -684,6 +640,28 @@
       }
     },
     {
+      "id": "tp-cheap-VIE-CNX-2026-06-29T15:35:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "CNX",
+      "departure_date": "2026-06-29",
+      "return_date": "2026-08-03",
+      "airline": "EK",
+      "price": 3889.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20VIE%20on%202026-06-29%20through%202026-08-03&curr=PLN",
+      "score": 62.1,
+      "score_breakdown": {
+        "price_raw": 3889.0,
+        "days_off": 26,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 35,
+        "efficiency": 9
+      }
+    },
+    {
       "id": "tp-cheap-WAW-HAN-2026-09-21T16:40:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -750,28 +728,6 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-YYC-2026-06-03T17:05:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "YYC",
-      "departure_date": "2026-06-03",
-      "return_date": "2026-06-11",
-      "airline": "1A",
-      "price": 2418.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BUD%20on%202026-06-03%20through%202026-06-11&curr=PLN",
-      "score": 61.4,
-      "score_breakdown": {
-        "price_raw": 2418.0,
-        "days_off": 6,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 8,
-        "efficiency": 2
-      }
-    },
-    {
       "id": "tp-cheap-BER-MNL-2026-08-31T12:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -791,6 +747,50 @@
         "in_season": false,
         "duration_days": 21,
         "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-YYC-2026-06-03T17:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "YYC",
+      "departure_date": "2026-06-03",
+      "return_date": "2026-06-11",
+      "airline": "1A",
+      "price": 2427.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BUD%20on%202026-06-03%20through%202026-06-11&curr=PLN",
+      "score": 61.3,
+      "score_breakdown": {
+        "price_raw": 2427.0,
+        "days_off": 6,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 8,
+        "efficiency": 2
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-CNX-2026-06-29T10:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "CNX",
+      "departure_date": "2026-06-29",
+      "return_date": "2026-08-03",
+      "airline": "QR",
+      "price": 4011.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20PRG%20on%202026-06-29%20through%202026-08-03&curr=PLN",
+      "score": 61.1,
+      "score_breakdown": {
+        "price_raw": 4011.0,
+        "days_off": 26,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 35,
+        "efficiency": 9
       }
     },
     {
@@ -904,6 +904,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-MEL-2026-03-23T19:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "MEL",
+      "departure_date": "2026-03-23",
+      "return_date": "2026-04-20",
+      "airline": "W9",
+      "price": 5047.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20PRG%20on%202026-03-23%20through%202026-04-20&curr=PLN",
+      "score": 60.4,
+      "score_breakdown": {
+        "price_raw": 5047.0,
+        "days_off": 20,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 28,
+        "efficiency": 8
+      }
+    },
+    {
       "id": "tp-cheap-VIE-MNL-2026-05-25T13:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -956,12 +978,12 @@
       "departure_date": "2026-06-18",
       "return_date": "2026-06-28",
       "airline": "CA",
-      "price": 2228.0,
+      "price": 2236.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-06-18%20through%202026-06-28&curr=PLN",
       "score": 59.4,
       "score_breakdown": {
-        "price_raw": 2228.0,
+        "price_raw": 2236.0,
         "days_off": 7,
         "holiday_count": 0,
         "in_season": false,
@@ -1077,28 +1099,6 @@
         "in_season": false,
         "duration_days": 14,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-SGN-2026-08-29T13:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "SGN",
-      "departure_date": "2026-08-29",
-      "return_date": "2026-09-11",
-      "airline": "CA",
-      "price": 2424.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BUD%20on%202026-08-29%20through%202026-09-11&curr=PLN",
-      "score": 57.8,
-      "score_breakdown": {
-        "price_raw": 2424.0,
-        "days_off": 10,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 13,
-        "efficiency": 3
       }
     }
   ],
@@ -1870,19 +1870,19 @@
       "date": "2026-03-18",
       "stats": {
         "AU": {
-          "avg": 4902.92
+          "avg": 4827.62
         },
         "BW": {
           "avg": 3921.0
         },
         "CA": {
-          "avg": 2880.14
+          "avg": 2889.86
         },
         "JP": {
-          "avg": 3223.12
+          "avg": 3236.25
         },
         "MY": {
-          "avg": 2699.5
+          "avg": 2702.67
         },
         "NA": {
           "avg": 3945.67
@@ -1891,19 +1891,19 @@
           "avg": 5481.12
         },
         "PE": {
-          "avg": 4045.0
+          "avg": 3862.0
         },
         "PH": {
-          "avg": 3175.62
+          "avg": 3177.88
         },
         "TH": {
-          "avg": 2519.08
+          "avg": 2822.25
         },
         "VN": {
-          "avg": 3250.31
+          "avg": 3194.07
         },
         "ZA": {
-          "avg": 3119.91
+          "avg": 3001.9
         }
       }
     }
