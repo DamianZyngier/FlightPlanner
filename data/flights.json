@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T02:08:56.041939",
+  "last_updated": "2026-03-19T06:58:00.564553",
   "current_best": [
     {
       "id": "tp-cheap-WMI-KUL-2026-07-16T22:45:00+02:00",
@@ -307,28 +307,6 @@
         "in_season": true,
         "duration_days": 19,
         "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-TYO-2026-04-23T16:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "TYO",
-      "departure_date": "2026-04-23",
-      "return_date": "2026-05-07",
-      "airline": "MS",
-      "price": 2970.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20PRG%20on%202026-04-23%20through%202026-05-07&curr=PLN",
-      "score": 65.8,
-      "score_breakdown": {
-        "price_raw": 2970.0,
-        "days_off": 10,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 4
       }
     },
     {
@@ -1098,6 +1076,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 14,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-TYO-2026-08-29T19:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "TYO",
+      "departure_date": "2026-08-29",
+      "return_date": "2026-09-08",
+      "airline": "FM",
+      "price": 2474.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BUD%20on%202026-08-29%20through%202026-09-08&curr=PLN",
+      "score": 57.4,
+      "score_breakdown": {
+        "price_raw": 2474.0,
+        "days_off": 7,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 10,
         "efficiency": 3
       }
     }
@@ -1900,7 +1900,7 @@
           "avg": 2895.14
         },
         "JP": {
-          "avg": 3238.5
+          "avg": 3272.12
         },
         "MY": {
           "avg": 2709.0
