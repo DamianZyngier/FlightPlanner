@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T02:02:54.917951",
+  "last_updated": "2026-03-20T06:55:09.253378",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HAN-2026-04-09T20:55:00+02:00",
@@ -241,28 +241,6 @@
         "in_season": true,
         "duration_days": 8,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-WDH-2026-06-19T06:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "WDH",
-      "departure_date": "2026-06-19",
-      "return_date": "2026-07-04",
-      "airline": "LX",
-      "price": 2610.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20VIE%20on%202026-06-19%20through%202026-07-04&curr=PLN",
-      "score": 68.8,
-      "score_breakdown": {
-        "price_raw": 2610.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 15,
-        "efficiency": 4
       }
     },
     {
@@ -530,28 +508,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-SGN-2026-05-14T13:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "SGN",
-      "departure_date": "2026-05-14",
-      "return_date": "2026-05-31",
-      "airline": "CA",
-      "price": 2943.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20VIE%20on%202026-05-14%20through%202026-05-31&curr=PLN",
-      "score": 62.5,
-      "score_breakdown": {
-        "price_raw": 2943.0,
-        "days_off": 12,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 17,
-        "efficiency": 5
-      }
-    },
-    {
       "id": "tp-cheap-WAW-CNX-2026-12-01T10:05:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -758,12 +714,12 @@
       "departure_date": "2027-02-23",
       "return_date": "2027-03-10",
       "airline": "CI",
-      "price": 2982.0,
+      "price": 2988.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20VIE%20on%202027-02-23%20through%202027-03-10&curr=PLN",
       "score": 61.1,
       "score_breakdown": {
-        "price_raw": 2982.0,
+        "price_raw": 2988.0,
         "days_off": 12,
         "holiday_count": 0,
         "in_season": true,
@@ -923,6 +879,28 @@
         "in_season": false,
         "duration_days": 35,
         "efficiency": 9
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-SGN-2026-04-10T05:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "SGN",
+      "departure_date": "2026-04-10",
+      "return_date": "2026-04-20",
+      "airline": "LW",
+      "price": 3082.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20VIE%20on%202026-04-10%20through%202026-04-20&curr=PLN",
+      "score": 60.3,
+      "score_breakdown": {
+        "price_raw": 3082.0,
+        "days_off": 7,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 10,
+        "efficiency": 3
       }
     },
     {
@@ -1099,6 +1077,28 @@
         "in_season": false,
         "duration_days": 14,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-LIM-2026-06-11T07:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "LIM",
+      "departure_date": "2026-06-11",
+      "return_date": "2026-06-30",
+      "airline": "KL",
+      "price": 4436.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20VIE%20on%202026-06-11%20through%202026-06-30&curr=PLN",
+      "score": 58.0,
+      "score_breakdown": {
+        "price_raw": 4436.0,
+        "days_off": 14,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 19,
+        "efficiency": 5
       }
     }
   ],
@@ -1927,7 +1927,7 @@
           "avg": 2807.29
         },
         "NA": {
-          "avg": 3945.67
+          "avg": 4131.33
         },
         "NZ": {
           "avg": 5527.5
@@ -1939,10 +1939,10 @@
           "avg": 3190.11
         },
         "TH": {
-          "avg": 2851.41
+          "avg": 2854.41
         },
         "VN": {
-          "avg": 3253.06
+          "avg": 3261.59
         },
         "ZA": {
           "avg": 2962.33
