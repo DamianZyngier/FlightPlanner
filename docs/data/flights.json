@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T01:57:02.802918",
+  "last_updated": "2026-03-21T06:42:01.905898",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HAN-2026-04-09T20:55:00+02:00",
@@ -86,28 +86,6 @@
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 29,
-        "efficiency": 7
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-MNL-2026-05-17T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "MNL",
-      "departure_date": "2026-05-17",
-      "return_date": "2026-06-07",
-      "airline": "EY",
-      "price": 3037.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20PRG%20on%202026-05-17%20through%202026-06-07&curr=PLN",
-      "score": 77.2,
-      "score_breakdown": {
-        "price_raw": 3037.0,
-        "days_off": 14,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 21,
         "efficiency": 7
       }
     },
@@ -332,6 +310,28 @@
       }
     },
     {
+      "id": "tp-cheap-WAW-LIM-2026-11-04T13:35:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "LIM",
+      "departure_date": "2026-11-04",
+      "return_date": "2026-12-09",
+      "airline": "LH",
+      "price": 3226.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20WAW%20on%202026-11-04%20through%202026-12-09&curr=PLN",
+      "score": 67.6,
+      "score_breakdown": {
+        "price_raw": 3226.0,
+        "days_off": 25,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 35,
+        "efficiency": 10
+      }
+    },
+    {
       "id": "tp-cheap-VIE-JNB-2026-05-07T16:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -351,28 +351,6 @@
         "in_season": false,
         "duration_days": 21,
         "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-WAW-LIM-2026-11-04T13:35:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "LIM",
-      "departure_date": "2026-11-04",
-      "return_date": "2026-12-09",
-      "airline": "LH",
-      "price": 3351.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20WAW%20on%202026-11-04%20through%202026-12-09&curr=PLN",
-      "score": 66.6,
-      "score_breakdown": {
-        "price_raw": 3351.0,
-        "days_off": 25,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 35,
-        "efficiency": 10
       }
     },
     {
@@ -838,6 +816,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-TRS-2026-04-04T12:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "TRS",
+      "departure_date": "2026-04-04",
+      "return_date": "2026-04-06",
+      "airline": "FR",
+      "price": 261.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TRS%20from%20KRK%20on%202026-04-04%20through%202026-04-06&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 261.0,
+        "days_off": 0,
+        "holiday_count": 2,
+        "in_season": false,
+        "duration_days": 2,
+        "efficiency": 2
+      }
+    },
+    {
       "id": "tp-cheap-PRG-CNX-2026-06-29T10:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -857,6 +857,28 @@
         "in_season": false,
         "duration_days": 35,
         "efficiency": 9
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-TYO-2026-11-13T21:05:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "TYO",
+      "departure_date": "2026-11-13",
+      "return_date": "2026-11-23",
+      "airline": "SK",
+      "price": 3109.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20PRG%20on%202026-11-13%20through%202026-11-23&curr=PLN",
+      "score": 60.1,
+      "score_breakdown": {
+        "price_raw": 3109.0,
+        "days_off": 7,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 10,
+        "efficiency": 3
       }
     },
     {
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 13,
-        "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-HAN-2026-08-27T13:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "HAN",
-      "departure_date": "2026-08-27",
-      "return_date": "2026-09-10",
-      "airline": "CA",
-      "price": 2443.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20VIE%20on%202026-08-27%20through%202026-09-10&curr=PLN",
-      "score": 57.6,
-      "score_breakdown": {
-        "price_raw": 2443.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 14,
         "efficiency": 3
       }
     }
@@ -1936,7 +1936,7 @@
           "avg": 3028.43
         },
         "JP": {
-          "avg": 3129.14
+          "avg": 3110.57
         },
         "MY": {
           "avg": 2821.29
@@ -1948,10 +1948,10 @@
           "avg": 6422.2
         },
         "PE": {
-          "avg": 4278.6
+          "avg": 4617.0
         },
         "PH": {
-          "avg": 3229.11
+          "avg": 3218.33
         },
         "TH": {
           "avg": 2887.94
