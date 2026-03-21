@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T12:47:46.499062",
+  "last_updated": "2026-03-21T18:35:46.804563",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HAN-2026-04-09T20:55:00+02:00",
@@ -706,6 +706,28 @@
       }
     },
     {
+      "id": "tp-cheap-WAW-SGN-2026-05-22T19:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "SGN",
+      "departure_date": "2026-05-22",
+      "return_date": "2026-06-05",
+      "airline": "CA",
+      "price": 2563.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20WAW%20on%202026-05-22%20through%202026-06-05&curr=PLN",
+      "score": 61.1,
+      "score_breakdown": {
+        "price_raw": 2563.0,
+        "days_off": 10,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 14,
+        "efficiency": 4
+      }
+    },
+    {
       "id": "tp-cheap-KRK-BFS-2026-04-02T05:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -816,28 +838,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-SGN-2026-05-22T19:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "SGN",
-      "departure_date": "2026-05-22",
-      "return_date": "2026-06-05",
-      "airline": "CA",
-      "price": 2619.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20WAW%20on%202026-05-22%20through%202026-06-05&curr=PLN",
-      "score": 60.7,
-      "score_breakdown": {
-        "price_raw": 2619.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 14,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-PRG-TYO-2026-11-13T21:05:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -857,28 +857,6 @@
         "in_season": true,
         "duration_days": 10,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-WAW-MEL-2026-10-18T21:25:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "MEL",
-      "departure_date": "2026-10-18",
-      "return_date": "2026-11-22",
-      "airline": "FZ",
-      "price": 5104.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20WAW%20on%202026-10-18%20through%202026-11-22&curr=PLN",
-      "score": 60.0,
-      "score_breakdown": {
-        "price_raw": 5104.0,
-        "days_off": 24,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 35,
-        "efficiency": 11
       }
     },
     {
@@ -1097,6 +1075,28 @@
         "days_off": 11,
         "holiday_count": 0,
         "in_season": false,
+        "duration_days": 14,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BER-TYO-2026-05-11T06:10:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "TYO",
+      "departure_date": "2026-05-11",
+      "return_date": "2026-05-25",
+      "airline": "U2",
+      "price": 3432.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BER%20on%202026-05-11%20through%202026-05-25&curr=PLN",
+      "score": 57.4,
+      "score_breakdown": {
+        "price_raw": 3432.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
         "duration_days": 14,
         "efficiency": 3
       }
@@ -1930,22 +1930,22 @@
       "date": "2026-03-21",
       "stats": {
         "AU": {
-          "avg": 4959.46
+          "avg": 4958.5
         },
         "CA": {
           "avg": 3112.33
         },
         "JP": {
-          "avg": 3031.67
+          "avg": 3298.57
         },
         "MY": {
           "avg": 2816.57
         },
         "NA": {
-          "avg": 3409.0
+          "avg": 3138.0
         },
         "NZ": {
-          "avg": 6422.2
+          "avg": 6452.11
         },
         "PE": {
           "avg": 4558.2
@@ -1957,7 +1957,7 @@
           "avg": 2888.44
         },
         "VN": {
-          "avg": 3175.0
+          "avg": 3171.71
         },
         "ZA": {
           "avg": 2881.89
