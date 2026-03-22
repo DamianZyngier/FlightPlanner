@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T18:35:46.804563",
+  "last_updated": "2026-03-22T02:09:25.846883",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HAN-2026-04-09T20:55:00+02:00",
@@ -46,28 +46,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-SGN-2026-04-13T13:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "SGN",
-      "departure_date": "2026-04-13",
-      "return_date": "2026-05-16",
-      "airline": "CA",
-      "price": 2888.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20VIE%20on%202026-04-13%20through%202026-05-16&curr=PLN",
-      "score": 78.4,
-      "score_breakdown": {
-        "price_raw": 2888.0,
-        "days_off": 24,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 33,
-        "efficiency": 9
-      }
-    },
-    {
       "id": "tp-cheap-WMI-KUL-2026-07-16T22:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -109,28 +87,6 @@
         "in_season": false,
         "duration_days": 35,
         "efficiency": 9
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-CEB-2026-04-22T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "CEB",
-      "departure_date": "2026-04-22",
-      "return_date": "2026-05-11",
-      "airline": "EY",
-      "price": 3383.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20PRG%20on%202026-04-22%20through%202026-05-11&curr=PLN",
-      "score": 71.3,
-      "score_breakdown": {
-        "price_raw": 3383.0,
-        "days_off": 13,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 19,
-        "efficiency": 6
       }
     },
     {
@@ -970,25 +926,25 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-DAD-2026-05-30T11:20:00+02:00",
+      "id": "tp-cheap-BER-MEL-2026-05-01T14:15:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
-      "origin": "PRG",
-      "destination": "DAD",
-      "departure_date": "2026-05-30",
-      "return_date": "2026-06-10",
-      "airline": "EY",
-      "price": 2873.0,
+      "origin": "BER",
+      "destination": "MEL",
+      "departure_date": "2026-05-01",
+      "return_date": "2026-05-31",
+      "airline": "QR",
+      "price": 4384.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202026-05-30%20through%202026-06-10&curr=PLN",
-      "score": 58.6,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20BER%20on%202026-05-01%20through%202026-05-31&curr=PLN",
+      "score": 58.0,
       "score_breakdown": {
-        "price_raw": 2873.0,
-        "days_off": 7,
-        "holiday_count": 1,
+        "price_raw": 4384.0,
+        "days_off": 20,
+        "holiday_count": 2,
         "in_season": false,
-        "duration_days": 11,
-        "efficiency": 4
+        "duration_days": 30,
+        "efficiency": 10
       }
     },
     {
@@ -1100,29 +1056,53 @@
         "duration_days": 14,
         "efficiency": 3
       }
+    },
+    {
+      "id": "tp-cheap-BER-CNX-2026-06-29T13:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "CNX",
+      "departure_date": "2026-06-29",
+      "return_date": "2026-08-03",
+      "airline": "HU",
+      "price": 4526.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20BER%20on%202026-06-29%20through%202026-08-03&curr=PLN",
+      "score": 56.8,
+      "score_breakdown": {
+        "price_raw": 4526.0,
+        "days_off": 26,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 35,
+        "efficiency": 9
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-HKT-2026-05-09T22:25:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "HKT",
+      "departure_date": "2026-05-09",
+      "return_date": "2026-05-17",
+      "airline": "G9",
+      "price": 2545.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20VIE%20on%202026-05-09%20through%202026-05-17&curr=PLN",
+      "score": 56.8,
+      "score_breakdown": {
+        "price_raw": 2545.0,
+        "days_off": 5,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 8,
+        "efficiency": 3
+      }
     }
   ],
   "history": [
-    {
-      "date": "2026-03-04",
-      "stats": {
-        "AU": {
-          "avg": 3800.0
-        },
-        "NZ": {
-          "avg": 3800.0
-        },
-        "NA": {
-          "avg": 3800.0
-        },
-        "BW": {
-          "avg": 3800.0
-        },
-        "JP": {
-          "avg": 3800.0
-        }
-      }
-    },
     {
       "date": "2026-03-05",
       "stats": {
@@ -1961,6 +1941,44 @@
         },
         "ZA": {
           "avg": 2881.89
+        }
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "stats": {
+        "AU": {
+          "avg": 4912.08
+        },
+        "CA": {
+          "avg": 3112.33
+        },
+        "JP": {
+          "avg": 3310.29
+        },
+        "MY": {
+          "avg": 2816.57
+        },
+        "NA": {
+          "avg": 3138.0
+        },
+        "NZ": {
+          "avg": 6452.11
+        },
+        "PE": {
+          "avg": 4558.2
+        },
+        "PH": {
+          "avg": 3412.9
+        },
+        "TH": {
+          "avg": 2883.0
+        },
+        "VN": {
+          "avg": 3154.29
+        },
+        "ZA": {
+          "avg": 2782.67
         }
       }
     }
