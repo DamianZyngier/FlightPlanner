@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T02:09:25.846883",
+  "last_updated": "2026-03-22T06:51:55.329742",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HAN-2026-04-09T20:55:00+02:00",
@@ -626,12 +626,12 @@
       "departure_date": "2027-02-23",
       "return_date": "2027-03-10",
       "airline": "CI",
-      "price": 2988.0,
+      "price": 2975.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20VIE%20on%202027-02-23%20through%202027-03-10&curr=PLN",
-      "score": 61.1,
+      "score": 61.2,
       "score_breakdown": {
-        "price_raw": 2988.0,
+        "price_raw": 2975.0,
         "days_off": 12,
         "holiday_count": 0,
         "in_season": true,
@@ -1975,10 +1975,10 @@
           "avg": 2883.0
         },
         "VN": {
-          "avg": 3154.29
+          "avg": 3153.53
         },
         "ZA": {
-          "avg": 2782.67
+          "avg": 2753.89
         }
       }
     }
