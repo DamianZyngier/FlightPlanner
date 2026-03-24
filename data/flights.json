@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24T02:02:12.842790",
+  "last_updated": "2026-03-24T07:03:42.723465",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HAN-2026-04-09T20:55:00+02:00",
@@ -351,6 +351,28 @@
         "in_season": true,
         "duration_days": 46,
         "efficiency": 15
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-TYO-2026-04-26T06:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "TYO",
+      "departure_date": "2026-04-26",
+      "return_date": "2026-05-11",
+      "airline": "RR",
+      "price": 3570.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20KRK%20on%202026-04-26%20through%202026-05-11&curr=PLN",
+      "score": 65.2,
+      "score_breakdown": {
+        "price_raw": 3570.0,
+        "days_off": 10,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 5
       }
     },
     {
@@ -1077,28 +1099,6 @@
         "in_season": false,
         "duration_days": 14,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BEG-2026-05-27T13:10:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BEG",
-      "departure_date": "2026-05-27",
-      "return_date": "2026-05-31",
-      "airline": "RR",
-      "price": 524.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BEG%20from%20KRK%20on%202026-05-27%20through%202026-05-31&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 524.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 1
       }
     }
   ],
@@ -1999,13 +1999,13 @@
           "avg": 2643.4
         },
         "JP": {
-          "avg": 3637.12
+          "avg": 3629.67
         },
         "MY": {
           "avg": 2902.83
         },
         "NA": {
-          "avg": 3549.67
+          "avg": 3500.0
         },
         "NZ": {
           "avg": 6243.33
