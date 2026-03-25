@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-25T02:07:57.351162",
+  "last_updated": "2026-03-25T07:01:47.708375",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HAN-2026-04-09T20:55:00+02:00",
@@ -552,6 +552,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-GDN-2026-04-29T08:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "GDN",
+      "departure_date": "2026-04-29",
+      "return_date": "2026-05-04",
+      "airline": "FR",
+      "price": 220.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GDN%20from%20KRK%20on%202026-04-29%20through%202026-05-04&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 220.0,
+        "days_off": 3,
+        "holiday_count": 2,
+        "in_season": false,
+        "duration_days": 5,
+        "efficiency": 2
+      }
+    },
+    {
       "id": "tp-cheap-KRK-MAN-2026-04-03T23:10:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1076,28 +1098,6 @@
         "holiday_count": 1,
         "in_season": false,
         "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BRS-2026-03-27T07:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BRS",
-      "departure_date": "2026-03-27",
-      "return_date": "2026-03-29",
-      "airline": "FR",
-      "price": 585.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BRS%20from%20KRK%20on%202026-03-27%20through%202026-03-29&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 585.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
         "efficiency": 1
       }
     }
@@ -2011,7 +2011,7 @@
       "date": "2026-03-25",
       "stats": {
         "AU": {
-          "avg": 4878.57
+          "avg": 4927.27
         },
         "BW": {
           "avg": 5716.0
