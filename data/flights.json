@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-27T02:22:32.309929",
+  "last_updated": "2026-03-27T07:06:39.979096",
   "current_best": [
     {
       "id": "tp-cheap-WAW-HKT-2027-01-08T13:10:00+01:00",
@@ -948,28 +948,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-BGO-2026-04-01T05:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BGO",
-      "departure_date": "2026-04-01",
-      "return_date": "2026-04-05",
-      "airline": "W6",
-      "price": 235.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BGO%20from%20KRK%20on%202026-04-01%20through%202026-04-05&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 235.0,
-        "days_off": 3,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-BRI-2026-05-21T19:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1098,6 +1076,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-DUB-2026-04-24T10:10:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "DUB",
+      "departure_date": "2026-04-24",
+      "return_date": "2026-04-26",
+      "airline": "FR",
+      "price": 362.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DUB%20from%20KRK%20on%202026-04-24%20through%202026-04-26&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 362.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
         "efficiency": 1
       }
     }
@@ -2056,7 +2056,7 @@
           "avg": 5064.33
         },
         "BW": {
-          "avg": 5672.0
+          "avg": 5949.0
         },
         "CA": {
           "avg": 2846.57
@@ -2080,7 +2080,7 @@
           "avg": 3481.73
         },
         "TH": {
-          "avg": 2854.07
+          "avg": 2854.0
         },
         "VN": {
           "avg": 3294.25
