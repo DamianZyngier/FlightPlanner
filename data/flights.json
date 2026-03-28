@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-28T02:06:01.426890",
+  "last_updated": "2026-03-28T06:58:44.071852",
   "current_best": [
     {
       "id": "tp-cheap-WAW-HAN-2026-12-07T13:10:00+01:00",
@@ -398,6 +398,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-AMS-2026-04-30T12:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "AMS",
+      "departure_date": "2026-04-30",
+      "return_date": "2026-05-05",
+      "airline": "RR",
+      "price": 678.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AMS%20from%20KRK%20on%202026-04-30%20through%202026-05-05&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 678.0,
+        "days_off": 3,
+        "holiday_count": 2,
+        "in_season": false,
+        "duration_days": 5,
+        "efficiency": 2
+      }
+    },
+    {
       "id": "tp-cheap-KRK-FMO-2026-05-01T15:15:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -662,6 +684,28 @@
       }
     },
     {
+      "id": "tp-cheap-BER-WDH-2026-10-08T09:40:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "WDH",
+      "departure_date": "2026-10-08",
+      "return_date": "2026-10-26",
+      "airline": "QR",
+      "price": 4292.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20BER%20on%202026-10-08%20through%202026-10-26&curr=PLN",
+      "score": 59.2,
+      "score_breakdown": {
+        "price_raw": 4292.0,
+        "days_off": 13,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 18,
+        "efficiency": 5
+      }
+    },
+    {
       "id": "tp-cheap-WAW-TYO-2026-06-11T11:50:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -772,28 +816,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-YVR-2026-04-17T21:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "YVR",
-      "departure_date": "2026-04-17",
-      "return_date": "2026-05-01",
-      "airline": "W4",
-      "price": 2938.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20WAW%20on%202026-04-17%20through%202026-05-01&curr=PLN",
-      "score": 58.0,
-      "score_breakdown": {
-        "price_raw": 2938.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 14,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-WAW-YYC-2026-04-12T21:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -852,28 +874,6 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 425.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-AMS-2026-06-19T09:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "AMS",
-      "departure_date": "2026-06-19",
-      "return_date": "2026-06-22",
-      "airline": "U2",
-      "price": 648.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AMS%20from%20KRK%20on%202026-06-19%20through%202026-06-22&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 648.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2080,7 +2080,7 @@
           "avg": 5962.5
         },
         "CA": {
-          "avg": 2885.88
+          "avg": 2878.43
         },
         "JP": {
           "avg": 3567.5
@@ -2089,13 +2089,13 @@
           "avg": 2738.17
         },
         "NA": {
-          "avg": 3938.67
+          "avg": 4027.0
         },
         "NZ": {
           "avg": 6555.5
         },
         "PE": {
-          "avg": 4600.67
+          "avg": 4236.0
         },
         "PH": {
           "avg": 3240.67
@@ -2104,7 +2104,7 @@
           "avg": 2467.09
         },
         "VN": {
-          "avg": 3295.75
+          "avg": 3475.18
         },
         "ZA": {
           "avg": 3048.71
