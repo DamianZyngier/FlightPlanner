@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T02:27:56.016081",
+  "last_updated": "2026-03-30T07:26:56.895328",
   "current_best": [
     {
       "id": "tp-cheap-VIE-HAN-2026-06-14T22:30:00+02:00",
@@ -87,6 +87,28 @@
         "in_season": false,
         "duration_days": 28,
         "efficiency": 9
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-JNB-2026-03-30T15:10:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "JNB",
+      "departure_date": "2026-03-30",
+      "return_date": "2026-05-12",
+      "airline": "EK",
+      "price": 3332.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20WAW%20on%202026-03-30%20through%202026-05-12&curr=PLN",
+      "score": 74.7,
+      "score_breakdown": {
+        "price_raw": 3332.0,
+        "days_off": 30,
+        "holiday_count": 4,
+        "in_season": true,
+        "duration_days": 43,
+        "efficiency": 13
       }
     },
     {
@@ -329,6 +351,28 @@
         "in_season": true,
         "duration_days": 15,
         "efficiency": 7
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-TYO-2026-04-07T10:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "TYO",
+      "departure_date": "2026-04-07",
+      "return_date": "2026-04-22",
+      "airline": "EY",
+      "price": 2239.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-04-07%20through%202026-04-22&curr=PLN",
+      "score": 67.3,
+      "score_breakdown": {
+        "price_raw": 2239.0,
+        "days_off": 12,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 3
       }
     },
     {
@@ -728,28 +772,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-TYO-2026-06-15T11:50:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "TYO",
-      "departure_date": "2026-06-15",
-      "return_date": "2026-06-29",
-      "airline": "EY",
-      "price": 2235.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-06-15%20through%202026-06-29&curr=PLN",
-      "score": 59.4,
-      "score_breakdown": {
-        "price_raw": 2235.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 14,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-KRK-SYD-2027-01-03T09:15:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1072,28 +1094,6 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 568.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-EAP-2026-06-18T20:15:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "EAP",
-      "departure_date": "2026-06-18",
-      "return_date": "2026-06-21",
-      "airline": "U2",
-      "price": 208.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20EAP%20from%20KRK%20on%202026-06-18%20through%202026-06-21&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 208.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2122,10 +2122,10 @@
           "avg": 6253.0
         },
         "CA": {
-          "avg": 3001.78
+          "avg": 2982.62
         },
         "JP": {
-          "avg": 3690.0
+          "avg": 3315.4
         },
         "MY": {
           "avg": 2246.4
@@ -2146,10 +2146,10 @@
           "avg": 2668.21
         },
         "VN": {
-          "avg": 3128.44
+          "avg": 3131.19
         },
         "ZA": {
-          "avg": 3195.5
+          "avg": 3210.67
         }
       }
     }
