@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-31T02:22:57.382575",
+  "last_updated": "2026-03-31T07:13:56.912926",
   "current_best": [
     {
       "id": "tp-cheap-VIE-HAN-2026-06-14T22:30:00+02:00",
@@ -24,25 +24,25 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-KUL-2026-06-07T11:55:00+02:00",
+      "id": "tp-cheap-WAW-TYO-2026-04-14T10:20:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
-      "origin": "VIE",
-      "destination": "KUL",
-      "departure_date": "2026-06-07",
-      "return_date": "2026-06-22",
+      "origin": "WAW",
+      "destination": "TYO",
+      "departure_date": "2026-04-14",
+      "return_date": "2026-05-07",
       "airline": "EY",
-      "price": 1549.0,
+      "price": 2248.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202026-06-07%20through%202026-06-22&curr=PLN",
-      "score": 77.6,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-04-14%20through%202026-05-07&curr=PLN",
+      "score": 80.8,
       "score_breakdown": {
-        "price_raw": 1549.0,
-        "days_off": 11,
-        "holiday_count": 0,
+        "price_raw": 2248.0,
+        "days_off": 17,
+        "holiday_count": 2,
         "in_season": true,
-        "duration_days": 15,
-        "efficiency": 4
+        "duration_days": 23,
+        "efficiency": 6
       }
     },
     {
@@ -288,28 +288,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-TYO-2026-04-07T10:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "TYO",
-      "departure_date": "2026-04-07",
-      "return_date": "2026-04-22",
-      "airline": "EY",
-      "price": 2239.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-04-07%20through%202026-04-22&curr=PLN",
-      "score": 67.3,
-      "score_breakdown": {
-        "price_raw": 2239.0,
-        "days_off": 12,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 15,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-WAW-MNL-2026-04-10T10:20:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -395,6 +373,28 @@
         "in_season": true,
         "duration_days": 17,
         "efficiency": 6
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-KUL-2026-05-18T11:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "KUL",
+      "departure_date": "2026-05-18",
+      "return_date": "2026-05-31",
+      "airline": "EY",
+      "price": 1718.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202026-05-18%20through%202026-05-31&curr=PLN",
+      "score": 63.7,
+      "score_breakdown": {
+        "price_raw": 1718.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 13,
+        "efficiency": 3
       }
     },
     {
@@ -2137,7 +2137,7 @@
       "date": "2026-03-31",
       "stats": {
         "AU": {
-          "avg": 5114.0
+          "avg": 5196.56
         },
         "BW": {
           "avg": 6253.0
@@ -2146,16 +2146,16 @@
           "avg": 3344.71
         },
         "JP": {
-          "avg": 3315.4
+          "avg": 4302.0
         },
         "MY": {
-          "avg": 2005.5
+          "avg": 2033.67
         },
         "NA": {
           "avg": 4335.5
         },
         "NZ": {
-          "avg": 6632.12
+          "avg": 6697.12
         },
         "PE": {
           "avg": 4013.0
