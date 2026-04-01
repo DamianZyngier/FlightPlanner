@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-01T02:33:04.232964",
+  "last_updated": "2026-04-01T07:19:51.996023",
   "current_best": [
     {
       "id": "tp-cheap-VIE-HAN-2026-06-14T22:30:00+02:00",
@@ -706,28 +706,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-BKK-2026-06-02T11:55:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "BKK",
-      "departure_date": "2026-06-02",
-      "return_date": "2026-06-09",
-      "airline": "EY",
-      "price": 1509.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-06-02%20through%202026-06-09&curr=PLN",
-      "score": 60.9,
-      "score_breakdown": {
-        "price_raw": 1509.0,
-        "days_off": 5,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 7,
-        "efficiency": 2
-      }
-    },
-    {
       "id": "tp-cheap-VIE-DAD-2027-03-02T10:40:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -769,6 +747,28 @@
         "in_season": true,
         "duration_days": 10,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-BKK-2026-06-02T11:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "BKK",
+      "departure_date": "2026-06-02",
+      "return_date": "2026-06-11",
+      "airline": "EY",
+      "price": 1583.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-06-02%20through%202026-06-11&curr=PLN",
+      "score": 60.3,
+      "score_breakdown": {
+        "price_raw": 1583.0,
+        "days_off": 7,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 9,
+        "efficiency": 2
       }
     },
     {
@@ -1080,24 +1080,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-CGN-2026-05-09T12:45:00+02:00",
+      "id": "tp-cheap-KRK-CAG-2026-04-10T06:15:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
-      "destination": "CGN",
-      "departure_date": "2026-05-09",
-      "return_date": "2026-05-10",
+      "destination": "CAG",
+      "departure_date": "2026-04-10",
+      "return_date": "2026-04-13",
       "airline": "FR",
-      "price": 479.0,
+      "price": 368.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CGN%20from%20KRK%20on%202026-05-09%20through%202026-05-10&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CAG%20from%20KRK%20on%202026-04-10%20through%202026-04-13&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 479.0,
-        "days_off": 0,
+        "price_raw": 368.0,
+        "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 1,
+        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2158,7 +2158,7 @@
       "date": "2026-04-01",
       "stats": {
         "AU": {
-          "avg": 5134.27
+          "avg": 5098.36
         },
         "BW": {
           "avg": 6253.0
@@ -2185,10 +2185,10 @@
           "avg": 3427.67
         },
         "TH": {
-          "avg": 2505.64
+          "avg": 2510.93
         },
         "VN": {
-          "avg": 3030.5
+          "avg": 2874.94
         },
         "ZA": {
           "avg": 3065.5
