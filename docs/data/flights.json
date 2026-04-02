@@ -1,6 +1,28 @@
 {
-  "last_updated": "2026-04-02T02:11:45.869359",
+  "last_updated": "2026-04-02T07:12:26.613408",
   "current_best": [
+    {
+      "id": "tp-cheap-WAW-MNL-2026-05-23T11:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "MNL",
+      "departure_date": "2026-05-23",
+      "return_date": "2026-06-30",
+      "airline": "EY",
+      "price": 1792.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-05-23%20through%202026-06-30&curr=PLN",
+      "score": 87.6,
+      "score_breakdown": {
+        "price_raw": 1792.0,
+        "days_off": 26,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 38,
+        "efficiency": 12
+      }
+    },
     {
       "id": "tp-cheap-VIE-HAN-2026-06-14T22:30:00+02:00",
       "source": "Travelpayouts-Cheap",
@@ -266,28 +288,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-MNL-2026-04-10T10:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "MNL",
-      "departure_date": "2026-04-10",
-      "return_date": "2026-04-18",
-      "airline": "EY",
-      "price": 1882.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-04-10%20through%202026-04-18&curr=PLN",
-      "score": 65.8,
-      "score_breakdown": {
-        "price_raw": 1882.0,
-        "days_off": 6,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 8,
-        "efficiency": 2
-      }
-    },
-    {
       "id": "tp-cheap-VIE-KUL-2026-04-04T10:25:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -340,12 +340,12 @@
       "departure_date": "2026-06-18",
       "return_date": "2026-07-23",
       "airline": "EY",
-      "price": 3559.0,
+      "price": 3546.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20VIE%20on%202026-06-18%20through%202026-07-23&curr=PLN",
-      "score": 64.8,
+      "score": 65.0,
       "score_breakdown": {
-        "price_raw": 3559.0,
+        "price_raw": 3546.0,
         "days_off": 26,
         "holiday_count": 0,
         "in_season": false,
@@ -860,28 +860,6 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-TYO-2026-05-31T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "TYO",
-      "departure_date": "2026-05-31",
-      "return_date": "2026-06-12",
-      "airline": "EY",
-      "price": 3215.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20PRG%20on%202026-05-31%20through%202026-06-12&curr=PLN",
-      "score": 59.2,
-      "score_breakdown": {
-        "price_raw": 3215.0,
-        "days_off": 9,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 12,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-BUD-HAN-2026-06-04T14:35:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1098,6 +1076,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 1,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-CLJ-2026-10-29T06:15:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CLJ",
+      "departure_date": "2026-10-29",
+      "return_date": "2026-11-01",
+      "airline": "W6",
+      "price": 681.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CLJ%20from%20KRK%20on%202026-10-29%20through%202026-11-01&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 681.0,
+        "days_off": 2,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2188,7 +2188,7 @@
           "avg": 3127.5
         },
         "JP": {
-          "avg": 4016.0
+          "avg": 4007.6
         },
         "MY": {
           "avg": 2224.0
@@ -2197,13 +2197,13 @@
           "avg": 4265.2
         },
         "NZ": {
-          "avg": 6660.0
+          "avg": 6658.7
         },
         "PE": {
           "avg": 4049.17
         },
         "PH": {
-          "avg": 3197.71
+          "avg": 3184.86
         },
         "TH": {
           "avg": 2515.8
