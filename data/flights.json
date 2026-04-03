@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-03T02:13:24.165678",
+  "last_updated": "2026-04-03T07:07:37.245411",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2026-05-23T11:50:00+02:00",
@@ -398,6 +398,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-CEB-2026-04-22T10:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "CEB",
+      "departure_date": "2026-04-22",
+      "return_date": "2026-05-11",
+      "airline": "EY",
+      "price": 3958.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20PRG%20on%202026-04-22%20through%202026-05-11&curr=PLN",
+      "score": 66.5,
+      "score_breakdown": {
+        "price_raw": 3958.0,
+        "days_off": 13,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 19,
+        "efficiency": 6
+      }
+    },
+    {
       "id": "tp-cheap-VIE-KUL-2026-04-04T10:25:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -461,6 +483,28 @@
         "in_season": false,
         "duration_days": 35,
         "efficiency": 9
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-BNE-2026-04-30T13:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "BNE",
+      "departure_date": "2026-04-30",
+      "return_date": "2026-05-17",
+      "airline": "MU",
+      "price": 4144.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BNE%20from%20VIE%20on%202026-04-30%20through%202026-05-17&curr=PLN",
+      "score": 65.0,
+      "score_breakdown": {
+        "price_raw": 4144.0,
+        "days_off": 11,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 17,
+        "efficiency": 6
       }
     },
     {
@@ -592,28 +636,6 @@
         "holiday_count": 1,
         "in_season": false,
         "duration_days": 16,
-        "efficiency": 6
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-CEB-2026-04-22T11:15:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "CEB",
-      "departure_date": "2026-04-22",
-      "return_date": "2026-05-11",
-      "airline": "OS",
-      "price": 4404.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20PRG%20on%202026-04-22%20through%202026-05-11&curr=PLN",
-      "score": 62.8,
-      "score_breakdown": {
-        "price_raw": 4404.0,
-        "days_off": 13,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 19,
         "efficiency": 6
       }
     },
@@ -1077,28 +1099,6 @@
         "in_season": true,
         "duration_days": 6,
         "efficiency": 2
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-YVR-2026-04-24T06:10:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "YVR",
-      "departure_date": "2026-04-24",
-      "return_date": "2026-05-03",
-      "airline": "OS",
-      "price": 3070.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20VIE%20on%202026-04-24%20through%202026-05-03&curr=PLN",
-      "score": 56.9,
-      "score_breakdown": {
-        "price_raw": 3070.0,
-        "days_off": 5,
-        "holiday_count": 2,
-        "in_season": false,
-        "duration_days": 9,
-        "efficiency": 4
       }
     }
   ],
@@ -2200,7 +2200,7 @@
       "date": "2026-04-03",
       "stats": {
         "AU": {
-          "avg": 4669.73
+          "avg": 4625.92
         },
         "BW": {
           "avg": 6253.0
@@ -2218,13 +2218,13 @@
           "avg": 4102.25
         },
         "NZ": {
-          "avg": 6296.1
+          "avg": 6243.7
         },
         "PE": {
           "avg": 4049.17
         },
         "PH": {
-          "avg": 3219.71
+          "avg": 3156.0
         },
         "TH": {
           "avg": 2545.12
