@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-03T13:02:47.689497",
+  "last_updated": "2026-04-03T18:46:46.687888",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2026-04-26T10:20:00+02:00",
@@ -10,12 +10,12 @@
       "departure_date": "2026-04-26",
       "return_date": "2026-05-11",
       "airline": "EY",
-      "price": 1520.0,
+      "price": 1523.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-04-26%20through%202026-05-11&curr=PLN",
       "score": 82.3,
       "score_breakdown": {
-        "price_raw": 1520.0,
+        "price_raw": 1523.0,
         "days_off": 10,
         "holiday_count": 2,
         "in_season": true,
@@ -296,12 +296,12 @@
       "departure_date": "2026-06-03",
       "return_date": "2026-06-16",
       "airline": "LH",
-      "price": 2605.0,
+      "price": 2609.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20BUD%20on%202026-06-03%20through%202026-06-16&curr=PLN",
       "score": 68.8,
       "score_breakdown": {
-        "price_raw": 2605.0,
+        "price_raw": 2609.0,
         "days_off": 9,
         "holiday_count": 1,
         "in_season": true,
@@ -340,12 +340,12 @@
       "departure_date": "2026-11-04",
       "return_date": "2026-12-09",
       "airline": "AC",
-      "price": 3201.0,
+      "price": 3206.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20LIM%20from%20WAW%20on%202026-11-04%20through%202026-12-09&curr=PLN",
       "score": 67.8,
       "score_breakdown": {
-        "price_raw": 3201.0,
+        "price_raw": 3206.0,
         "days_off": 25,
         "holiday_count": 1,
         "in_season": false,
@@ -384,12 +384,12 @@
       "departure_date": "2026-04-22",
       "return_date": "2026-05-11",
       "airline": "EY",
-      "price": 3954.0,
+      "price": 3961.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20PRG%20on%202026-04-22%20through%202026-05-11&curr=PLN",
       "score": 66.5,
       "score_breakdown": {
-        "price_raw": 3954.0,
+        "price_raw": 3961.0,
         "days_off": 13,
         "holiday_count": 2,
         "in_season": true,
@@ -472,12 +472,12 @@
       "departure_date": "2026-04-30",
       "return_date": "2026-05-17",
       "airline": "MU",
-      "price": 4141.0,
+      "price": 4148.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BNE%20from%20VIE%20on%202026-04-30%20through%202026-05-17&curr=PLN",
-      "score": 65.0,
+      "score": 64.9,
       "score_breakdown": {
-        "price_raw": 4141.0,
+        "price_raw": 4148.0,
         "days_off": 11,
         "holiday_count": 2,
         "in_season": true,
@@ -538,12 +538,12 @@
       "departure_date": "2026-11-07",
       "return_date": "2026-11-23",
       "airline": "RR",
-      "price": 3286.0,
+      "price": 3291.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20KRK%20on%202026-11-07%20through%202026-11-23&curr=PLN",
       "score": 64.1,
       "score_breakdown": {
-        "price_raw": 3286.0,
+        "price_raw": 3291.0,
         "days_off": 10,
         "holiday_count": 1,
         "in_season": false,
@@ -1014,6 +1014,28 @@
       }
     },
     {
+      "id": "tp-cheap-VIE-MNL-2026-10-23T13:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "MNL",
+      "departure_date": "2026-10-23",
+      "return_date": "2026-11-07",
+      "airline": "CA",
+      "price": 2893.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202026-10-23%20through%202026-11-07&curr=PLN",
+      "score": 58.4,
+      "score_breakdown": {
+        "price_raw": 2893.0,
+        "days_off": 11,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 15,
+        "efficiency": 4
+      }
+    },
+    {
       "id": "tp-cheap-BER-YYC-2026-07-15T07:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1077,28 +1099,6 @@
         "in_season": true,
         "duration_days": 6,
         "efficiency": 2
-      }
-    },
-    {
-      "id": "tp-cheap-KTW-MNL-2026-06-24T08:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KTW",
-      "destination": "MNL",
-      "departure_date": "2026-06-24",
-      "return_date": "2026-08-07",
-      "airline": "LO",
-      "price": 4476.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20KTW%20on%202026-06-24%20through%202026-08-07&curr=PLN",
-      "score": 57.2,
-      "score_breakdown": {
-        "price_raw": 4476.0,
-        "days_off": 33,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 44,
-        "efficiency": 11
       }
     }
   ],
@@ -2200,10 +2200,10 @@
       "date": "2026-04-03",
       "stats": {
         "AU": {
-          "avg": 4625.67
+          "avg": 4580.5
         },
         "CA": {
-          "avg": 3165.4
+          "avg": 3174.9
         },
         "JP": {
           "avg": 3902.0
@@ -2215,19 +2215,19 @@
           "avg": 4102.25
         },
         "NZ": {
-          "avg": 6243.2
+          "avg": 6195.73
         },
         "PE": {
-          "avg": 4052.17
+          "avg": 4053.0
         },
         "PH": {
-          "avg": 3276.75
+          "avg": 3291.25
         },
         "TH": {
-          "avg": 2545.12
+          "avg": 2562.65
         },
         "VN": {
-          "avg": 3032.74
+          "avg": 3033.11
         },
         "ZA": {
           "avg": 2971.5
