@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-04T02:06:00.008175",
+  "last_updated": "2026-04-04T07:00:39.996336",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2026-04-26T10:20:00+02:00",
@@ -329,6 +329,28 @@
         "in_season": false,
         "duration_days": 25,
         "efficiency": 8
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-YVR-2026-06-25T10:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "YVR",
+      "departure_date": "2026-06-25",
+      "return_date": "2026-07-16",
+      "airline": "TK",
+      "price": 3186.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20WAW%20on%202026-06-25%20through%202026-07-16&curr=PLN",
+      "score": 68.5,
+      "score_breakdown": {
+        "price_raw": 3186.0,
+        "days_off": 16,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 21,
+        "efficiency": 5
       }
     },
     {
@@ -948,6 +970,28 @@
       }
     },
     {
+      "id": "tp-cheap-WAW-SYD-2026-06-08T11:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "SYD",
+      "departure_date": "2026-06-08",
+      "return_date": "2026-06-29",
+      "airline": "EY",
+      "price": 3316.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20WAW%20on%202026-06-08%20through%202026-06-29&curr=PLN",
+      "score": 59.4,
+      "score_breakdown": {
+        "price_raw": 3316.0,
+        "days_off": 16,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 21,
+        "efficiency": 5
+      }
+    },
+    {
       "id": "tp-cheap-BER-YYC-2026-08-05T07:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -988,28 +1032,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 17,
-        "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-BER-WDH-2026-10-08T09:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "WDH",
-      "departure_date": "2026-10-08",
-      "return_date": "2026-10-26",
-      "airline": "QR",
-      "price": 4292.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20BER%20on%202026-10-08%20through%202026-10-26&curr=PLN",
-      "score": 59.2,
-      "score_breakdown": {
-        "price_raw": 4292.0,
-        "days_off": 13,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 18,
         "efficiency": 5
       }
     },
@@ -1076,28 +1098,6 @@
         "holiday_count": 1,
         "in_season": false,
         "duration_days": 15,
-        "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-WDH-2026-06-01T19:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "WDH",
-      "departure_date": "2026-06-01",
-      "return_date": "2026-06-15",
-      "airline": "LX",
-      "price": 3901.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20KRK%20on%202026-06-01%20through%202026-06-15&curr=PLN",
-      "score": 58.0,
-      "score_breakdown": {
-        "price_raw": 3901.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 14,
         "efficiency": 4
       }
     }
@@ -2218,10 +2218,10 @@
       "date": "2026-04-04",
       "stats": {
         "AU": {
-          "avg": 4580.58
+          "avg": 4561.17
         },
         "CA": {
-          "avg": 3159.8
+          "avg": 3162.18
         },
         "JP": {
           "avg": 3902.0
@@ -2230,7 +2230,7 @@
           "avg": 2468.57
         },
         "NA": {
-          "avg": 4102.25
+          "avg": 4030.0
         },
         "NZ": {
           "avg": 6233.5
