@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-03T18:46:46.687888",
+  "last_updated": "2026-04-04T02:06:00.008175",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2026-04-26T10:20:00+02:00",
@@ -904,6 +904,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-HKT-2026-04-08T10:35:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "HKT",
+      "departure_date": "2026-04-08",
+      "return_date": "2026-04-25",
+      "airline": "TK",
+      "price": 2699.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20PRG%20on%202026-04-08%20through%202026-04-25&curr=PLN",
+      "score": 60.0,
+      "score_breakdown": {
+        "price_raw": 2699.0,
+        "days_off": 13,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 17,
+        "efficiency": 4
+      }
+    },
+    {
       "id": "tp-cheap-KRK-TYO-2026-06-11T11:20:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -922,6 +944,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 11,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BER-YYC-2026-08-05T07:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "YYC",
+      "departure_date": "2026-08-05",
+      "return_date": "2026-08-19",
+      "airline": "EW",
+      "price": 3204.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BER%20on%202026-08-05%20through%202026-08-19&curr=PLN",
+      "score": 59.3,
+      "score_breakdown": {
+        "price_raw": 3204.0,
+        "days_off": 11,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 14,
         "efficiency": 3
       }
     },
@@ -1036,28 +1080,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-YYC-2026-07-15T07:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "YYC",
-      "departure_date": "2026-07-15",
-      "return_date": "2026-07-28",
-      "airline": "EW",
-      "price": 3355.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BER%20on%202026-07-15%20through%202026-07-28&curr=PLN",
-      "score": 58.0,
-      "score_breakdown": {
-        "price_raw": 3355.0,
-        "days_off": 10,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 13,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-KRK-WDH-2026-06-01T19:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1078,51 +1100,9 @@
         "duration_days": 14,
         "efficiency": 4
       }
-    },
-    {
-      "id": "tp-cheap-BER-KUL-2026-06-01T06:10:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "KUL",
-      "departure_date": "2026-06-01",
-      "return_date": "2026-06-07",
-      "airline": "MW",
-      "price": 2886.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20BER%20on%202026-06-01%20through%202026-06-07&curr=PLN",
-      "score": 57.5,
-      "score_breakdown": {
-        "price_raw": 2886.0,
-        "days_off": 4,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 6,
-        "efficiency": 2
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-03-08",
-      "stats": {
-        "AU": {
-          "avg": 3800.0
-        },
-        "NZ": {
-          "avg": 3800.0
-        },
-        "NA": {
-          "avg": 3800.0
-        },
-        "BW": {
-          "avg": 3800.0
-        },
-        "JP": {
-          "avg": 3800.0
-        }
-      }
-    },
     {
       "date": "2026-03-08",
       "stats": {
@@ -2228,6 +2208,44 @@
         },
         "VN": {
           "avg": 3033.11
+        },
+        "ZA": {
+          "avg": 2971.5
+        }
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "stats": {
+        "AU": {
+          "avg": 4580.58
+        },
+        "CA": {
+          "avg": 3159.8
+        },
+        "JP": {
+          "avg": 3902.0
+        },
+        "MY": {
+          "avg": 2468.57
+        },
+        "NA": {
+          "avg": 4102.25
+        },
+        "NZ": {
+          "avg": 6233.5
+        },
+        "PE": {
+          "avg": 4084.67
+        },
+        "PH": {
+          "avg": 3435.78
+        },
+        "TH": {
+          "avg": 2566.18
+        },
+        "VN": {
+          "avg": 2838.28
         },
         "ZA": {
           "avg": 2971.5
