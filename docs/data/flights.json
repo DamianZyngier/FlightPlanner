@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-05T02:27:25.735521",
+  "last_updated": "2026-04-05T07:06:01.832839",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2026-04-26T10:20:00+02:00",
@@ -1014,28 +1014,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-MNL-2026-10-23T13:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "MNL",
-      "departure_date": "2026-10-23",
-      "return_date": "2026-11-07",
-      "airline": "CA",
-      "price": 2893.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202026-10-23%20through%202026-11-07&curr=PLN",
-      "score": 58.4,
-      "score_breakdown": {
-        "price_raw": 2893.0,
-        "days_off": 11,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 15,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-KRK-WDH-2026-06-01T19:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1097,6 +1075,28 @@
         "days_off": 10,
         "holiday_count": 0,
         "in_season": true,
+        "duration_days": 13,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-SGN-2026-09-19T13:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "SGN",
+      "departure_date": "2026-09-19",
+      "return_date": "2026-10-02",
+      "airline": "CA",
+      "price": 2484.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BUD%20on%202026-09-19%20through%202026-10-02&curr=PLN",
+      "score": 57.3,
+      "score_breakdown": {
+        "price_raw": 2484.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": false,
         "duration_days": 13,
         "efficiency": 3
       }
@@ -2239,7 +2239,7 @@
           "avg": 4662.64
         },
         "CA": {
-          "avg": 3114.8
+          "avg": 3118.4
         },
         "JP": {
           "avg": 3902.0
@@ -2254,16 +2254,16 @@
           "avg": 5780.7
         },
         "PE": {
-          "avg": 4042.0
+          "avg": 4120.83
         },
         "PH": {
-          "avg": 3781.11
+          "avg": 3786.89
         },
         "TH": {
           "avg": 2484.64
         },
         "VN": {
-          "avg": 3007.47
+          "avg": 3014.83
         },
         "ZA": {
           "avg": 3304.38
