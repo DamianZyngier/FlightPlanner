@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-09T02:10:53.562888",
+  "last_updated": "2026-04-09T07:21:48.217314",
   "current_best": [
     {
       "id": "tp-cheap-WAW-KUL-2026-06-02T11:50:00+02:00",
@@ -90,28 +90,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-KUL-2026-05-28T22:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "KUL",
-      "departure_date": "2026-05-28",
-      "return_date": "2026-06-30",
-      "airline": "EY",
-      "price": 2187.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202026-05-28%20through%202026-06-30&curr=PLN",
-      "score": 76.3,
-      "score_breakdown": {
-        "price_raw": 2187.0,
-        "days_off": 23,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 33,
-        "efficiency": 10
-      }
-    },
-    {
       "id": "tp-cheap-KRK-MNL-2026-05-19T21:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -175,6 +153,28 @@
         "in_season": true,
         "duration_days": 21,
         "efficiency": 6
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-KUL-2026-06-07T22:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "KUL",
+      "departure_date": "2026-06-07",
+      "return_date": "2026-06-22",
+      "airline": "EY",
+      "price": 2190.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202026-06-07%20through%202026-06-22&curr=PLN",
+      "score": 72.2,
+      "score_breakdown": {
+        "price_raw": 2190.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 4
       }
     },
     {
@@ -329,28 +329,6 @@
         "in_season": true,
         "duration_days": 15,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-AKL-2026-06-18T11:55:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "AKL",
-      "departure_date": "2026-06-18",
-      "return_date": "2026-07-23",
-      "airline": "EY",
-      "price": 3532.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AKL%20from%20VIE%20on%202026-06-18%20through%202026-07-23&curr=PLN",
-      "score": 65.1,
-      "score_breakdown": {
-        "price_raw": 3532.0,
-        "days_off": 26,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 35,
-        "efficiency": 9
       }
     },
     {
@@ -1098,6 +1076,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-GVA-2026-09-03T15:40:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "GVA",
+      "departure_date": "2026-09-03",
+      "return_date": "2026-09-07",
+      "airline": "U2",
+      "price": 540.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GVA%20from%20KRK%20on%202026-09-03%20through%202026-09-07&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 540.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
         "efficiency": 1
       }
     }
@@ -2275,13 +2275,13 @@
           "avg": 2771.6
         },
         "MY": {
-          "avg": 2661.88
+          "avg": 2662.25
         },
         "NA": {
           "avg": 4227.0
         },
         "NZ": {
-          "avg": 5739.33
+          "avg": 5768.11
         },
         "PE": {
           "avg": 4010.2
@@ -2290,7 +2290,7 @@
           "avg": 3602.11
         },
         "TH": {
-          "avg": 2592.55
+          "avg": 2427.7
         },
         "VN": {
           "avg": 2997.88
