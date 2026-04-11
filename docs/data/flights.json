@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-11T02:09:38.167265",
+  "last_updated": "2026-04-11T07:00:43.480712",
   "current_best": [
     {
       "id": "tp-cheap-WAW-KUL-2026-06-02T11:50:00+02:00",
@@ -219,6 +219,28 @@
         "in_season": false,
         "duration_days": 33,
         "efficiency": 10
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-CEB-2026-04-22T12:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "CEB",
+      "departure_date": "2026-04-22",
+      "return_date": "2026-05-11",
+      "airline": "MU",
+      "price": 3686.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20BUD%20on%202026-04-22%20through%202026-05-11&curr=PLN",
+      "score": 68.8,
+      "score_breakdown": {
+        "price_raw": 3686.0,
+        "days_off": 13,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 19,
+        "efficiency": 6
       }
     },
     {
@@ -747,28 +769,6 @@
         "in_season": false,
         "duration_days": 16,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-WAW-SYD-2026-06-08T11:50:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "SYD",
-      "departure_date": "2026-06-08",
-      "return_date": "2026-06-29",
-      "airline": "EY",
-      "price": 3316.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20WAW%20on%202026-06-08%20through%202026-06-29&curr=PLN",
-      "score": 59.4,
-      "score_breakdown": {
-        "price_raw": 3316.0,
-        "days_off": 16,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 21,
-        "efficiency": 5
       }
     },
     {
@@ -2266,7 +2266,7 @@
       "date": "2026-04-11",
       "stats": {
         "AU": {
-          "avg": 4769.83
+          "avg": 4719.64
         },
         "CA": {
           "avg": 3273.2
@@ -2287,13 +2287,13 @@
           "avg": 4032.4
         },
         "PH": {
-          "avg": 3562.1
+          "avg": 3573.36
         },
         "TH": {
           "avg": 2386.33
         },
         "VN": {
-          "avg": 3260.41
+          "avg": 3167.88
         },
         "ZA": {
           "avg": 3061.0
