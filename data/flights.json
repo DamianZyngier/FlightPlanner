@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T02:37:02.632886",
+  "last_updated": "2026-04-19T07:18:46.391476",
   "current_best": [
     {
       "id": "tp-cheap-VIE-BKK-2026-06-17T11:55:00+02:00",
@@ -483,6 +483,28 @@
         "in_season": false,
         "duration_days": 14,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-SYD-2026-05-02T13:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "SYD",
+      "departure_date": "2026-05-02",
+      "return_date": "2026-06-02",
+      "airline": "MU",
+      "price": 3996.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20VIE%20on%202026-05-02%20through%202026-06-02&curr=PLN",
+      "score": 61.2,
+      "score_breakdown": {
+        "price_raw": 3996.0,
+        "days_off": 22,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 31,
+        "efficiency": 9
       }
     },
     {
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-FUE-2026-05-15T22:25:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "FUE",
-      "departure_date": "2026-05-15",
-      "return_date": "2026-05-18",
-      "airline": "FR",
-      "price": 559.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FUE%20from%20KRK%20on%202026-05-15%20through%202026-05-18&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 559.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2260,7 +2260,7 @@
       "date": "2026-04-19",
       "stats": {
         "AU": {
-          "avg": 5237.0
+          "avg": 5176.08
         },
         "CA": {
           "avg": 3168.5
@@ -2287,7 +2287,7 @@
           "avg": 2901.17
         },
         "VN": {
-          "avg": 3104.07
+          "avg": 3108.93
         },
         "ZA": {
           "avg": 3387.3
