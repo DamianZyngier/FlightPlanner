@@ -1,28 +1,6 @@
 {
-  "last_updated": "2026-04-20T02:38:02.480829",
+  "last_updated": "2026-04-20T08:06:11.724690",
   "current_best": [
-    {
-      "id": "tp-cheap-VIE-BKK-2026-06-17T11:55:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "BKK",
-      "departure_date": "2026-06-17",
-      "return_date": "2026-07-30",
-      "airline": "EY",
-      "price": 1752.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-06-17%20through%202026-07-30&curr=PLN",
-      "score": 79.9,
-      "score_breakdown": {
-        "price_raw": 1752.0,
-        "days_off": 32,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 43,
-        "efficiency": 11
-      }
-    },
     {
       "id": "tp-cheap-VIE-MNL-2026-05-29T05:50:00+02:00",
       "source": "Travelpayouts-Cheap",
@@ -186,12 +164,12 @@
       "departure_date": "2026-06-07",
       "return_date": "2026-06-22",
       "airline": "EY",
-      "price": 2464.0,
+      "price": 2482.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202026-06-07%20through%202026-06-22&curr=PLN",
-      "score": 70.0,
+      "score": 69.8,
       "score_breakdown": {
-        "price_raw": 2464.0,
+        "price_raw": 2482.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -244,6 +222,28 @@
       }
     },
     {
+      "id": "tp-cheap-BUD-KUL-2026-05-18T12:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "KUL",
+      "departure_date": "2026-05-18",
+      "return_date": "2026-06-12",
+      "airline": "FM",
+      "price": 2652.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20BUD%20on%202026-05-18%20through%202026-06-12&curr=PLN",
+      "score": 69.4,
+      "score_breakdown": {
+        "price_raw": 2652.0,
+        "days_off": 19,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 25,
+        "efficiency": 6
+      }
+    },
+    {
       "id": "tp-cheap-PRG-DAD-2026-04-20T16:10:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -288,25 +288,25 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-KUL-2026-11-02T18:35:00+01:00",
+      "id": "tp-cheap-VIE-BKK-2026-06-02T11:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
-      "origin": "BUD",
-      "destination": "KUL",
-      "departure_date": "2026-11-02",
-      "return_date": "2026-11-22",
-      "airline": "LH",
-      "price": 2812.0,
+      "origin": "VIE",
+      "destination": "BKK",
+      "departure_date": "2026-06-02",
+      "return_date": "2026-06-16",
+      "airline": "EY",
+      "price": 1750.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20BUD%20on%202026-11-02%20through%202026-11-22&curr=PLN",
-      "score": 68.1,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-06-02%20through%202026-06-16&curr=PLN",
+      "score": 67.9,
       "score_breakdown": {
-        "price_raw": 2812.0,
-        "days_off": 14,
+        "price_raw": 1750.0,
+        "days_off": 10,
         "holiday_count": 1,
         "in_season": false,
-        "duration_days": 20,
-        "efficiency": 6
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -1036,6 +1036,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-CPH-2026-04-24T23:15:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CPH",
+      "departure_date": "2026-04-24",
+      "return_date": "2026-04-26",
+      "airline": "MW",
+      "price": 186.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPH%20from%20KRK%20on%202026-04-24%20through%202026-04-26&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 186.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-EAP-2026-06-18T12:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1072,28 +1094,6 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 542.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-FRA-2026-04-25T14:15:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "FRA",
-      "departure_date": "2026-04-25",
-      "return_date": "2026-04-27",
-      "airline": "RR",
-      "price": 472.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FRA%20from%20KRK%20on%202026-04-25%20through%202026-04-27&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 472.0,
         "days_off": 1,
         "holiday_count": 0,
         "in_season": false,
@@ -2260,22 +2260,22 @@
       "date": "2026-04-20",
       "stats": {
         "AU": {
-          "avg": 5078.17
+          "avg": 5079.5
         },
         "CA": {
-          "avg": 3180.0
+          "avg": 3179.0
         },
         "JP": {
           "avg": 3360.57
         },
         "MY": {
-          "avg": 2862.33
+          "avg": 2838.67
         },
         "NA": {
           "avg": 5134.75
         },
         "NZ": {
-          "avg": 5700.14
+          "avg": 5743.17
         },
         "PE": {
           "avg": 4627.75
@@ -2284,10 +2284,10 @@
           "avg": 3424.25
         },
         "TH": {
-          "avg": 2924.55
+          "avg": 2924.36
         },
         "VN": {
-          "avg": 3109.54
+          "avg": 3062.46
         },
         "ZA": {
           "avg": 3543.0
