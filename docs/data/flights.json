@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T13:25:55.990225",
+  "last_updated": "2026-04-22T19:12:26.678193",
   "current_best": [
     {
       "id": "tp-cheap-VIE-KUL-2026-06-14T11:55:00+02:00",
@@ -208,12 +208,12 @@
       "departure_date": "2026-06-11",
       "return_date": "2026-07-02",
       "airline": "W9",
-      "price": 3071.0,
+      "price": 3082.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20PRG%20on%202026-06-11%20through%202026-07-02&curr=PLN",
-      "score": 69.4,
+      "score": 69.3,
       "score_breakdown": {
-        "price_raw": 3071.0,
+        "price_raw": 3082.0,
         "days_off": 16,
         "holiday_count": 0,
         "in_season": true,
@@ -420,6 +420,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-HKT-2026-05-31T22:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "HKT",
+      "departure_date": "2026-05-31",
+      "return_date": "2026-06-18",
+      "airline": "MW",
+      "price": 2945.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20KRK%20on%202026-05-31%20through%202026-06-18&curr=PLN",
+      "score": 62.5,
+      "score_breakdown": {
+        "price_raw": 2945.0,
+        "days_off": 13,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 18,
+        "efficiency": 5
+      }
+    },
+    {
       "id": "tp-cheap-VIE-HKT-2026-06-02T11:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -461,28 +483,6 @@
         "in_season": false,
         "duration_days": 12,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-HAN-2026-05-24T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "HAN",
-      "departure_date": "2026-05-24",
-      "return_date": "2026-06-04",
-      "airline": "EY",
-      "price": 2033.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20PRG%20on%202026-05-24%20through%202026-06-04&curr=PLN",
-      "score": 61.1,
-      "score_breakdown": {
-        "price_raw": 2033.0,
-        "days_off": 8,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 11,
-        "efficiency": 3
       }
     },
     {
@@ -549,6 +549,50 @@
         "in_season": false,
         "duration_days": 5,
         "efficiency": 2
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-RMO-2026-06-02T13:45:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "RMO",
+      "departure_date": "2026-06-02",
+      "return_date": "2026-06-07",
+      "airline": "LO",
+      "price": 542.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RMO%20from%20KRK%20on%202026-06-02%20through%202026-06-07&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 542.0,
+        "days_off": 3,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 5,
+        "efficiency": 2
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-HAN-2026-05-24T11:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "HAN",
+      "departure_date": "2026-05-24",
+      "return_date": "2026-06-04",
+      "airline": "EY",
+      "price": 2040.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20PRG%20on%202026-05-24%20through%202026-06-04&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 2040.0,
+        "days_off": 8,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 11,
+        "efficiency": 3
       }
     },
     {
@@ -648,17 +692,39 @@
       "departure_date": "2026-09-03",
       "return_date": "2026-09-20",
       "airline": "G9",
-      "price": 3319.0,
+      "price": 3330.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20WMI%20on%202026-09-03%20through%202026-09-20&curr=PLN",
-      "score": 59.3,
+      "score": 59.2,
       "score_breakdown": {
-        "price_raw": 3319.0,
+        "price_raw": 3330.0,
         "days_off": 12,
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 17,
         "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-CPT-2027-01-11T18:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "CPT",
+      "departure_date": "2027-01-11",
+      "return_date": "2027-01-25",
+      "airline": "LH",
+      "price": 3231.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20WAW%20on%202027-01-11%20through%202027-01-25&curr=PLN",
+      "score": 59.1,
+      "score_breakdown": {
+        "price_raw": 3231.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 3
       }
     },
     {
@@ -802,12 +868,12 @@
       "departure_date": "2026-06-02",
       "return_date": "2026-06-06",
       "airline": "W6",
-      "price": 571.0,
+      "price": 573.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BER%20from%20KRK%20on%202026-06-02%20through%202026-06-06&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 571.0,
+        "price_raw": 573.0,
         "days_off": 3,
         "holiday_count": 1,
         "in_season": false,
@@ -890,12 +956,12 @@
       "departure_date": "2026-06-18",
       "return_date": "2026-06-21",
       "airline": "W6",
-      "price": 217.0,
+      "price": 212.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20EAP%20from%20KRK%20on%202026-06-18%20through%202026-06-21&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 217.0,
+        "price_raw": 212.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -944,28 +1010,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-HEL-2026-05-14T05:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "HEL",
-      "departure_date": "2026-05-14",
-      "return_date": "2026-05-18",
-      "airline": "RR",
-      "price": 703.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HEL%20from%20KRK%20on%202026-05-14%20through%202026-05-18&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 703.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -1054,50 +1098,6 @@
         "holiday_count": 1,
         "in_season": false,
         "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-PMF-2026-05-14T17:25:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "PMF",
-      "departure_date": "2026-05-14",
-      "return_date": "2026-05-17",
-      "airline": "FR",
-      "price": 393.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20PMF%20from%20KRK%20on%202026-05-14%20through%202026-05-17&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 393.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-STO-2026-04-29T13:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "STO",
-      "departure_date": "2026-04-29",
-      "return_date": "2026-05-02",
-      "airline": "FR",
-      "price": 199.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20STO%20from%20KRK%20on%202026-04-29%20through%202026-05-02&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 199.0,
-        "days_off": 2,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2260,40 +2260,40 @@
       "date": "2026-04-22",
       "stats": {
         "AU": {
-          "avg": 4839.38
+          "avg": 5053.12
         },
         "BW": {
           "avg": 5025.0
         },
         "CA": {
-          "avg": 2961.17
+          "avg": 3070.33
         },
         "JP": {
           "avg": 3405.57
         },
         "MY": {
-          "avg": 2999.33
+          "avg": 3002.83
         },
         "NA": {
-          "avg": 5043.67
+          "avg": 4516.0
         },
         "NZ": {
-          "avg": 5580.33
+          "avg": 5622.67
         },
         "PE": {
-          "avg": 4523.5
+          "avg": 5112.67
         },
         "PH": {
-          "avg": 3586.71
+          "avg": 3588.29
         },
         "TH": {
-          "avg": 3026.46
+          "avg": 3035.38
         },
         "VN": {
-          "avg": 3084.46
+          "avg": 3101.38
         },
         "ZA": {
-          "avg": 3426.11
+          "avg": 3415.33
         }
       }
     }
