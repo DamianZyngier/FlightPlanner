@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T02:40:07.320428",
+  "last_updated": "2026-04-26T07:28:12.452791",
   "current_best": [
     {
       "id": "tp-cheap-WAW-TYO-2027-03-01T13:10:00+01:00",
@@ -384,12 +384,12 @@
       "departure_date": "2027-01-18",
       "return_date": "2027-02-01",
       "airline": "CL",
-      "price": 2634.0,
+      "price": 2614.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20PRG%20on%202027-01-18%20through%202027-02-01&curr=PLN",
-      "score": 64.0,
+      "score": 64.2,
       "score_breakdown": {
-        "price_raw": 2634.0,
+        "price_raw": 2614.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -2284,10 +2284,10 @@
           "avg": 4648.5
         },
         "PH": {
-          "avg": 3717.14
+          "avg": 4051.75
         },
         "TH": {
-          "avg": 2886.45
+          "avg": 2851.17
         },
         "VN": {
           "avg": 2946.5
