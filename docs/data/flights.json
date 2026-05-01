@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T02:57:24.092669",
+  "last_updated": "2026-05-01T08:10:33.541065",
   "current_best": [
     {
       "id": "tp-cheap-WMI-KUL-2026-07-16T22:45:00+02:00",
@@ -604,12 +604,12 @@
       "departure_date": "2027-03-15",
       "return_date": "2027-03-28",
       "airline": "CA",
-      "price": 3153.0,
+      "price": 3149.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202027-03-15%20through%202027-03-28&curr=PLN",
-      "score": 59.7,
+      "score": 59.8,
       "score_breakdown": {
-        "price_raw": 3153.0,
+        "price_raw": 3149.0,
         "days_off": 10,
         "holiday_count": 1,
         "in_season": true,
@@ -1058,24 +1058,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-GLA-2026-08-20T18:40:00+02:00",
+      "id": "tp-cheap-KRK-GLA-2026-09-25T11:05:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "GLA",
-      "departure_date": "2026-08-20",
-      "return_date": "2026-08-23",
+      "departure_date": "2026-09-25",
+      "return_date": "2026-09-29",
       "airline": "FR",
-      "price": 605.0,
+      "price": 546.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GLA%20from%20KRK%20on%202026-08-20%20through%202026-08-23&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GLA%20from%20KRK%20on%202026-09-25%20through%202026-09-29&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 605.0,
-        "days_off": 2,
+        "price_raw": 546.0,
+        "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 3,
+        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -2263,22 +2263,22 @@
           "avg": 4949.38
         },
         "BW": {
-          "avg": 5742.0
+          "avg": 6608.0
         },
         "CA": {
           "avg": 2747.0
         },
         "JP": {
-          "avg": 3296.2
+          "avg": 3295.4
         },
         "MY": {
           "avg": 3035.5
         },
         "NA": {
-          "avg": 4254.0
+          "avg": 4164.25
         },
         "NZ": {
-          "avg": 6200.0
+          "avg": 5931.62
         },
         "PE": {
           "avg": 5192.6
@@ -2290,10 +2290,10 @@
           "avg": 2802.0
         },
         "VN": {
-          "avg": 3168.79
+          "avg": 3297.93
         },
         "ZA": {
-          "avg": 3525.62
+          "avg": 3564.12
         }
       }
     }
