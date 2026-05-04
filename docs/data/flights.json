@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04T02:47:34.802799",
+  "last_updated": "2026-05-04T08:28:16.036012",
   "current_best": [
     {
       "id": "tp-cheap-WAW-TYO-2027-03-01T13:10:00+01:00",
@@ -68,25 +68,25 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-YVR-2026-05-12T17:00:00+02:00",
+      "id": "tp-cheap-WAW-YVR-2026-06-01T07:40:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
-      "origin": "PRG",
+      "origin": "WAW",
       "destination": "YVR",
-      "departure_date": "2026-05-12",
-      "return_date": "2026-06-16",
-      "airline": "DE",
-      "price": 2718.0,
+      "departure_date": "2026-06-01",
+      "return_date": "2026-06-20",
+      "airline": "LO",
+      "price": 2860.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20PRG%20on%202026-05-12%20through%202026-06-16&curr=PLN",
-      "score": 71.8,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20WAW%20on%202026-06-01%20through%202026-06-20&curr=PLN",
+      "score": 71.2,
       "score_breakdown": {
-        "price_raw": 2718.0,
-        "days_off": 25,
+        "price_raw": 2860.0,
+        "days_off": 14,
         "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 35,
-        "efficiency": 10
+        "in_season": true,
+        "duration_days": 19,
+        "efficiency": 5
       }
     },
     {
@@ -398,28 +398,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-HAN-2027-03-08T13:10:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "HAN",
-      "departure_date": "2027-03-08",
-      "return_date": "2027-03-21",
-      "airline": "CA",
-      "price": 2880.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20WAW%20on%202027-03-08%20through%202027-03-21&curr=PLN",
-      "score": 62.0,
-      "score_breakdown": {
-        "price_raw": 2880.0,
-        "days_off": 10,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 13,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-KRK-MNL-2026-06-24T05:40:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -659,6 +637,28 @@
         "in_season": false,
         "duration_days": 15,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-HAN-2026-05-24T11:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "HAN",
+      "departure_date": "2026-05-24",
+      "return_date": "2026-06-06",
+      "airline": "EY",
+      "price": 2845.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20WAW%20on%202026-05-24%20through%202026-06-06&curr=PLN",
+      "score": 58.8,
+      "score_breakdown": {
+        "price_raw": 2845.0,
+        "days_off": 9,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 13,
+        "efficiency": 4
       }
     },
     {
@@ -2266,22 +2266,22 @@
       "date": "2026-05-04",
       "stats": {
         "AU": {
-          "avg": 5491.25
+          "avg": 5498.92
         },
         "BW": {
           "avg": 6588.0
         },
         "CA": {
-          "avg": 2910.86
+          "avg": 2931.14
         },
         "JP": {
-          "avg": 3370.8
+          "avg": 3370.2
         },
         "MY": {
           "avg": 2858.0
         },
         "NA": {
-          "avg": 4157.25
+          "avg": 4150.5
         },
         "NZ": {
           "avg": 5771.12
@@ -2296,7 +2296,7 @@
           "avg": 3004.0
         },
         "VN": {
-          "avg": 3178.79
+          "avg": 3176.29
         },
         "ZA": {
           "avg": 3764.55
