@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05T02:39:47.011246",
+  "last_updated": "2026-05-05T08:08:14.485572",
   "current_best": [
     {
       "id": "tp-cheap-WAW-TYO-2027-03-01T13:10:00+01:00",
@@ -120,12 +120,12 @@
       "departure_date": "2026-06-07",
       "return_date": "2026-06-22",
       "airline": "EY",
-      "price": 2406.0,
+      "price": 2413.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202026-06-07%20through%202026-06-22&curr=PLN",
-      "score": 70.5,
+      "score": 70.4,
       "score_breakdown": {
-        "price_raw": 2406.0,
+        "price_raw": 2413.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -1044,38 +1044,16 @@
       "departure_date": "2026-06-13",
       "return_date": "2026-06-16",
       "airline": "W6",
-      "price": 186.0,
+      "price": 209.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20EIN%20from%20KRK%20on%202026-06-13%20through%202026-06-16&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 186.0,
+        "price_raw": 209.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-FRA-2026-07-09T07:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "FRA",
-      "departure_date": "2026-07-09",
-      "return_date": "2026-07-13",
-      "airline": "RR",
-      "price": 581.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FRA%20from%20KRK%20on%202026-07-09%20through%202026-07-13&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 581.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -1098,6 +1076,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-GVA-2026-06-11T05:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "GVA",
+      "departure_date": "2026-06-11",
+      "return_date": "2026-06-14",
+      "airline": "W6",
+      "price": 534.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GVA%20from%20KRK%20on%202026-06-11%20through%202026-06-14&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 534.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2281,7 +2281,7 @@
           "avg": 3402.2
         },
         "MY": {
-          "avg": 2858.0
+          "avg": 2859.4
         },
         "NA": {
           "avg": 4114.0
