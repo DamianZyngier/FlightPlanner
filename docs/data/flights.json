@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T02:47:19.212331",
+  "last_updated": "2026-05-07T08:32:51.641461",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2027-02-05T14:35:00+01:00",
@@ -684,6 +684,28 @@
       }
     },
     {
+      "id": "tp-cheap-VIE-DAD-2027-03-02T14:55:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "DAD",
+      "departure_date": "2027-03-02",
+      "return_date": "2027-03-17",
+      "airline": "EK",
+      "price": 3338.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20VIE%20on%202027-03-02%20through%202027-03-17&curr=PLN",
+      "score": 58.2,
+      "score_breakdown": {
+        "price_raw": 3338.0,
+        "days_off": 12,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-VIE-KUL-2026-09-03T20:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-OPO-2026-06-13T06:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "OPO",
-      "departure_date": "2026-06-13",
-      "return_date": "2026-06-15",
-      "airline": "FR",
-      "price": 494.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20OPO%20from%20KRK%20on%202026-06-13%20through%202026-06-15&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 494.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
         "efficiency": 1
       }
     }
@@ -2275,7 +2275,7 @@
       "date": "2026-05-07",
       "stats": {
         "AU": {
-          "avg": 5621.6
+          "avg": 5590.8
         },
         "BW": {
           "avg": 5148.0
@@ -2284,16 +2284,16 @@
           "avg": 2989.6
         },
         "JP": {
-          "avg": 3611.67
+          "avg": 3605.83
         },
         "MY": {
           "avg": 2762.5
         },
         "NA": {
-          "avg": 4114.0
+          "avg": 4107.5
         },
         "NZ": {
-          "avg": 5910.5
+          "avg": 5662.5
         },
         "PE": {
           "avg": 4500.67
@@ -2305,10 +2305,10 @@
           "avg": 2887.1
         },
         "VN": {
-          "avg": 3340.8
+          "avg": 3321.07
         },
         "ZA": {
-          "avg": 3733.25
+          "avg": 3702.0
         }
       }
     }
