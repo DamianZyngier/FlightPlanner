@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T02:51:09.489714",
+  "last_updated": "2026-05-08T07:41:12.064633",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2027-02-05T14:35:00+01:00",
@@ -706,28 +706,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-BTS-2026-07-17T18:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BTS",
-      "departure_date": "2026-07-17",
-      "return_date": "2026-07-19",
-      "airline": "W6",
-      "price": 533.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BTS%20from%20KRK%20on%202026-07-17%20through%202026-07-19&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 533.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-CTA-2026-05-13T12:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -948,20 +926,20 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-RIX-2026-05-14T05:45:00+02:00",
+      "id": "tp-cheap-KRK-RIX-2026-05-21T05:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "RIX",
-      "departure_date": "2026-05-14",
-      "return_date": "2026-05-18",
+      "departure_date": "2026-05-21",
+      "return_date": "2026-05-25",
       "airline": "FR",
-      "price": 157.0,
+      "price": 191.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RIX%20from%20KRK%20on%202026-05-14%20through%202026-05-18&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RIX%20from%20KRK%20on%202026-05-21%20through%202026-05-25&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 157.0,
+        "price_raw": 191.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
@@ -1094,6 +1072,28 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 515.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-TLL-2026-07-11T14:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "TLL",
+      "departure_date": "2026-07-11",
+      "return_date": "2026-07-14",
+      "airline": "W6",
+      "price": 267.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TLL%20from%20KRK%20on%202026-07-11%20through%202026-07-14&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 267.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2278,7 +2278,7 @@
       "date": "2026-05-08",
       "stats": {
         "AU": {
-          "avg": 5625.27
+          "avg": 5659.23
         },
         "BW": {
           "avg": 5347.0
@@ -2287,7 +2287,7 @@
           "avg": 3121.6
         },
         "JP": {
-          "avg": 3458.0
+          "avg": 3598.29
         },
         "MY": {
           "avg": 2732.5
@@ -2308,7 +2308,7 @@
           "avg": 2859.5
         },
         "VN": {
-          "avg": 3214.43
+          "avg": 3214.36
         },
         "ZA": {
           "avg": 3635.27
