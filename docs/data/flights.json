@@ -1,28 +1,6 @@
 {
-  "last_updated": "2026-05-09T13:16:09.279861",
+  "last_updated": "2026-05-09T19:00:23.680241",
   "current_best": [
-    {
-      "id": "tp-cheap-VIE-YVR-2026-06-03T07:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "YVR",
-      "departure_date": "2026-06-03",
-      "return_date": "2026-06-30",
-      "airline": "DE",
-      "price": 3311.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20VIE%20on%202026-06-03%20through%202026-06-30&curr=PLN",
-      "score": 74.9,
-      "score_breakdown": {
-        "price_raw": 3311.0,
-        "days_off": 19,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 27,
-        "efficiency": 8
-      }
-    },
     {
       "id": "tp-cheap-VIE-BKK-2026-06-11T20:30:00+02:00",
       "source": "Travelpayouts-Cheap",
@@ -346,28 +324,6 @@
       "score": 61.0,
       "score_breakdown": {
         "price_raw": 708.0,
-        "days_off": 2,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 2
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-FMM-2026-06-03T09:05:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "FMM",
-      "departure_date": "2026-06-03",
-      "return_date": "2026-06-07",
-      "airline": "FR",
-      "price": 552.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FMM%20from%20KRK%20on%202026-06-03%20through%202026-06-07&curr=PLN",
-      "score": 61.0,
-      "score_breakdown": {
-        "price_raw": 552.0,
         "days_off": 2,
         "holiday_count": 1,
         "in_season": false,
@@ -816,6 +772,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-CHQ-2026-06-19T07:40:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CHQ",
+      "departure_date": "2026-06-19",
+      "return_date": "2026-06-22",
+      "airline": "FR",
+      "price": 511.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CHQ%20from%20KRK%20on%202026-06-19%20through%202026-06-22&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 511.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-EIN-2026-06-13T08:10:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -948,6 +926,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-LCA-2026-06-10T16:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "LCA",
+      "departure_date": "2026-06-10",
+      "return_date": "2026-06-14",
+      "airline": "W6",
+      "price": 309.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LCA%20from%20KRK%20on%202026-06-10%20through%202026-06-14&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 309.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-LON-2026-06-19T11:05:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1014,6 +1014,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-PFO-2026-06-19T09:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "PFO",
+      "departure_date": "2026-06-19",
+      "return_date": "2026-06-22",
+      "airline": "FR",
+      "price": 576.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20PFO%20from%20KRK%20on%202026-06-19%20through%202026-06-22&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 576.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-PUY-2026-06-19T17:20:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1032,28 +1054,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-RHO-2026-06-10T08:50:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "RHO",
-      "departure_date": "2026-06-10",
-      "return_date": "2026-06-14",
-      "airline": "W6",
-      "price": 396.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RHO%20from%20KRK%20on%202026-06-10%20through%202026-06-14&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 396.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -2281,22 +2281,22 @@
       "date": "2026-05-09",
       "stats": {
         "AU": {
-          "avg": 5409.0
+          "avg": 5532.22
         },
         "BW": {
           "avg": 5347.0
         },
         "CA": {
-          "avg": 2786.0
+          "avg": 2781.8
         },
         "JP": {
-          "avg": 3612.86
+          "avg": 3768.17
         },
         "MY": {
           "avg": 2732.5
         },
         "NA": {
-          "avg": 4016.0
+          "avg": 4112.6
         },
         "NZ": {
           "avg": 5861.86
@@ -2305,7 +2305,7 @@
           "avg": 4216.5
         },
         "PH": {
-          "avg": 3919.3
+          "avg": 3906.56
         },
         "TH": {
           "avg": 2903.08
@@ -2314,7 +2314,7 @@
           "avg": 3344.86
         },
         "ZA": {
-          "avg": 3357.8
+          "avg": 3359.55
         }
       }
     }
