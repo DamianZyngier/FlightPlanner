@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T03:27:51.005450",
+  "last_updated": "2026-05-11T09:37:54.741822",
   "current_best": [
     {
       "id": "tp-cheap-PRG-KUL-2026-06-14T11:20:00+02:00",
@@ -904,28 +904,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-LCA-2026-06-10T16:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "LCA",
-      "departure_date": "2026-06-10",
-      "return_date": "2026-06-14",
-      "airline": "W6",
-      "price": 309.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LCA%20from%20KRK%20on%202026-06-10%20through%202026-06-14&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 309.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-LON-2026-06-19T11:05:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -944,6 +922,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-LUX-2026-05-29T17:35:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "LUX",
+      "departure_date": "2026-05-29",
+      "return_date": "2026-05-31",
+      "airline": "RR",
+      "price": 841.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LUX%20from%20KRK%20on%202026-05-29%20through%202026-05-31&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 841.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
         "efficiency": 1
       }
     },
@@ -2287,7 +2287,7 @@
       "date": "2026-05-11",
       "stats": {
         "AU": {
-          "avg": 4777.1
+          "avg": 4767.3
         },
         "BW": {
           "avg": 4886.0
@@ -2296,22 +2296,22 @@
           "avg": 2795.67
         },
         "JP": {
-          "avg": 3568.71
+          "avg": 3621.88
         },
         "MY": {
           "avg": 2726.0
         },
         "NA": {
-          "avg": 4190.6
+          "avg": 4316.4
         },
         "NZ": {
           "avg": 5671.5
         },
         "PE": {
-          "avg": 4378.5
+          "avg": 4436.2
         },
         "PH": {
-          "avg": 3906.56
+          "avg": 3886.89
         },
         "TH": {
           "avg": 2754.09
@@ -2320,7 +2320,7 @@
           "avg": 3252.54
         },
         "ZA": {
-          "avg": 3311.64
+          "avg": 3304.73
         }
       }
     }
