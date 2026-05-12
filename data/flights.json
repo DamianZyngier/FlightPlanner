@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T02:52:56.151730",
+  "last_updated": "2026-05-12T08:38:49.866993",
   "current_best": [
     {
       "id": "tp-cheap-PRG-KUL-2026-06-14T11:20:00+02:00",
@@ -76,12 +76,12 @@
       "departure_date": "2026-05-26",
       "return_date": "2026-06-16",
       "airline": "1A",
-      "price": 2480.0,
+      "price": 2496.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20BUD%20on%202026-05-26%20through%202026-06-16&curr=PLN",
-      "score": 70.8,
+      "score": 70.7,
       "score_breakdown": {
-        "price_raw": 2480.0,
+        "price_raw": 2496.0,
         "days_off": 15,
         "holiday_count": 1,
         "in_season": false,
@@ -882,6 +882,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-FRA-2026-05-28T19:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "FRA",
+      "departure_date": "2026-05-28",
+      "return_date": "2026-06-01",
+      "airline": "W6",
+      "price": 503.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FRA%20from%20KRK%20on%202026-05-28%20through%202026-06-01&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 503.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-GRO-2026-05-23T16:10:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -926,24 +948,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-JTR-2026-07-25T19:05:00+02:00",
+      "id": "tp-cheap-KRK-HEL-2026-06-05T19:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
-      "destination": "JTR",
-      "departure_date": "2026-07-25",
-      "return_date": "2026-07-29",
-      "airline": "W6",
-      "price": 597.0,
+      "destination": "HEL",
+      "departure_date": "2026-06-05",
+      "return_date": "2026-06-08",
+      "airline": "FR",
+      "price": 693.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JTR%20from%20KRK%20on%202026-07-25%20through%202026-07-29&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HEL%20from%20KRK%20on%202026-06-05%20through%202026-06-08&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 597.0,
-        "days_off": 3,
+        "price_raw": 693.0,
+        "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 4,
+        "duration_days": 3,
         "efficiency": 1
       }
     },
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-MST-2026-06-19T06:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "MST",
-      "departure_date": "2026-06-19",
-      "return_date": "2026-06-22",
-      "airline": "RR",
-      "price": 743.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MST%20from%20KRK%20on%202026-06-19%20through%202026-06-22&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 743.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2293,7 +2293,7 @@
           "avg": 5767.0
         },
         "CA": {
-          "avg": 2763.0
+          "avg": 2765.67
         },
         "JP": {
           "avg": 3616.29
