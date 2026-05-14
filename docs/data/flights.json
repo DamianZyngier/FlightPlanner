@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T03:22:38.379519",
+  "last_updated": "2026-05-14T08:36:22.573245",
   "current_best": [
     {
       "id": "tp-cheap-PRG-KUL-2026-06-14T11:20:00+02:00",
@@ -406,12 +406,12 @@
       "departure_date": "2026-08-28",
       "return_date": "2026-09-14",
       "airline": "CA",
-      "price": 3308.0,
+      "price": 3310.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20VIE%20on%202026-08-28%20through%202026-09-14&curr=PLN",
       "score": 59.4,
       "score_breakdown": {
-        "price_raw": 3308.0,
+        "price_raw": 3310.0,
         "days_off": 12,
         "holiday_count": 0,
         "in_season": false,
@@ -904,28 +904,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-EIN-2026-06-13T08:10:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "EIN",
-      "departure_date": "2026-06-13",
-      "return_date": "2026-06-16",
-      "airline": "FR",
-      "price": 225.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20EIN%20from%20KRK%20on%202026-06-13%20through%202026-06-16&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 225.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-EVN-2026-06-18T18:35:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1094,6 +1072,28 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 434.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-LJU-2026-06-06T12:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "LJU",
+      "departure_date": "2026-06-06",
+      "return_date": "2026-06-09",
+      "airline": "RR",
+      "price": 680.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LJU%20from%20KRK%20on%202026-06-06%20through%202026-06-09&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 680.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2287,10 +2287,10 @@
       "date": "2026-05-14",
       "stats": {
         "AU": {
-          "avg": 5141.0
+          "avg": 5218.44
         },
         "BW": {
-          "avg": 5767.0
+          "avg": 6761.0
         },
         "CA": {
           "avg": 2829.57
@@ -2308,7 +2308,7 @@
           "avg": 6467.88
         },
         "PE": {
-          "avg": 4495.6
+          "avg": 4617.0
         },
         "PH": {
           "avg": 3639.88
@@ -2317,7 +2317,7 @@
           "avg": 2793.91
         },
         "VN": {
-          "avg": 3296.64
+          "avg": 3296.79
         },
         "ZA": {
           "avg": 3083.25
