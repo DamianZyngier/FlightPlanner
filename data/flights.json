@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-19T15:18:50.296925",
+  "last_updated": "2026-05-19T19:50:46.292798",
   "current_best": [
     {
       "id": "tp-cheap-KRK-BKK-2027-01-21T09:45:00+01:00",
@@ -120,12 +120,12 @@
       "departure_date": "2026-06-11",
       "return_date": "2026-07-01",
       "airline": "RR",
-      "price": 3004.0,
+      "price": 3012.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20BUD%20on%202026-06-11%20through%202026-07-01&curr=PLN",
-      "score": 70.0,
+      "score": 69.9,
       "score_breakdown": {
-        "price_raw": 3004.0,
+        "price_raw": 3012.0,
         "days_off": 15,
         "holiday_count": 0,
         "in_season": true,
@@ -252,12 +252,12 @@
       "departure_date": "2026-07-16",
       "return_date": "2026-08-07",
       "airline": "CA",
-      "price": 3109.0,
+      "price": 3118.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-07-16%20through%202026-08-07&curr=PLN",
-      "score": 61.1,
+      "score": 61.0,
       "score_breakdown": {
-        "price_raw": 3109.0,
+        "price_raw": 3118.0,
         "days_off": 17,
         "holiday_count": 0,
         "in_season": false,
@@ -574,28 +574,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-HAN-2026-11-30T13:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "HAN",
-      "departure_date": "2026-11-30",
-      "return_date": "2026-12-13",
-      "airline": "CA",
-      "price": 2571.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20VIE%20on%202026-11-30%20through%202026-12-13&curr=PLN",
-      "score": 56.6,
-      "score_breakdown": {
-        "price_raw": 2571.0,
-        "days_off": 10,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 13,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-KRK-BEG-2026-06-12T13:05:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -846,12 +824,12 @@
       "departure_date": "2026-05-23",
       "return_date": "2026-05-26",
       "airline": "RR",
-      "price": 689.0,
+      "price": 691.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20LUZ%20from%20KRK%20on%202026-05-23%20through%202026-05-26&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 689.0,
+        "price_raw": 691.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -1098,6 +1076,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 2,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-TKU-2026-06-25T07:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "TKU",
+      "departure_date": "2026-06-25",
+      "return_date": "2026-06-29",
+      "airline": "FR",
+      "price": 595.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TKU%20from%20KRK%20on%202026-06-25%20through%202026-06-29&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 595.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
         "efficiency": 1
       }
     }
@@ -2302,34 +2302,34 @@
           "avg": 6159.5
         },
         "CA": {
-          "avg": 3101.8
+          "avg": 3103.6
         },
         "JP": {
-          "avg": 3851.57
+          "avg": 3853.0
         },
         "MY": {
-          "avg": 3141.33
+          "avg": 2750.8
         },
         "NA": {
           "avg": 4300.6
         },
         "NZ": {
-          "avg": 6809.17
+          "avg": 5736.0
         },
         "PE": {
-          "avg": 4308.67
+          "avg": 4316.0
         },
         "PH": {
-          "avg": 3225.4
+          "avg": 3229.2
         },
         "TH": {
           "avg": 3057.69
         },
         "VN": {
-          "avg": 3226.08
+          "avg": 3226.62
         },
         "ZA": {
-          "avg": 3339.44
+          "avg": 3161.0
         }
       }
     }
