@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T19:08:20.200752",
+  "last_updated": "2026-05-24T03:32:11.810689",
   "current_best": [
     {
       "id": "tp-cheap-PRG-BKK-2026-11-01T10:55:00+01:00",
@@ -42,28 +42,6 @@
         "holiday_count": 2,
         "in_season": true,
         "duration_days": 30,
-        "efficiency": 8
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-YVR-2026-06-14T08:50:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "YVR",
-      "departure_date": "2026-06-14",
-      "return_date": "2026-07-12",
-      "airline": "DE",
-      "price": 3198.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20PRG%20on%202026-06-14%20through%202026-07-12&curr=PLN",
-      "score": 75.8,
-      "score_breakdown": {
-        "price_raw": 3198.0,
-        "days_off": 20,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 28,
         "efficiency": 8
       }
     },
@@ -373,6 +351,28 @@
         "in_season": false,
         "duration_days": 24,
         "efficiency": 7
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-TYO-2026-11-09T20:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "TYO",
+      "departure_date": "2026-11-09",
+      "return_date": "2026-11-23",
+      "airline": "SK",
+      "price": 3494.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20KRK%20on%202026-11-09%20through%202026-11-23&curr=PLN",
+      "score": 61.4,
+      "score_breakdown": {
+        "price_raw": 3494.0,
+        "days_off": 10,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -1058,6 +1058,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-SZZ-2026-06-12T13:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "SZZ",
+      "departure_date": "2026-06-12",
+      "return_date": "2026-06-15",
+      "airline": "FR",
+      "price": 172.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SZZ%20from%20KRK%20on%202026-06-12%20through%202026-06-15&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 172.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-TKU-2026-06-25T07:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1078,72 +1100,9 @@
         "duration_days": 4,
         "efficiency": 1
       }
-    },
-    {
-      "id": "tp-cheap-KRK-VXO-2026-07-10T11:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "VXO",
-      "departure_date": "2026-07-10",
-      "return_date": "2026-07-12",
-      "airline": "RR",
-      "price": 899.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20VXO%20from%20KRK%20on%202026-07-10%20through%202026-07-12&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 899.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
-        "efficiency": 1
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-04-24",
-      "stats": {
-        "AU": {
-          "avg": 5029.14
-        },
-        "BW": {
-          "avg": 5025.0
-        },
-        "CA": {
-          "avg": 2814.33
-        },
-        "JP": {
-          "avg": 3497.0
-        },
-        "MY": {
-          "avg": 2820.83
-        },
-        "NA": {
-          "avg": 4021.5
-        },
-        "NZ": {
-          "avg": 5649.0
-        },
-        "PE": {
-          "avg": 4528.67
-        },
-        "PH": {
-          "avg": 3798.88
-        },
-        "TH": {
-          "avg": 3002.27
-        },
-        "VN": {
-          "avg": 2947.64
-        },
-        "ZA": {
-          "avg": 3378.4
-        }
-      }
-    },
     {
       "date": "2026-04-25",
       "stats": {
@@ -2324,6 +2283,47 @@
         },
         "TH": {
           "avg": 3212.06
+        },
+        "VN": {
+          "avg": 3241.53
+        },
+        "ZA": {
+          "avg": 3067.4
+        }
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "stats": {
+        "AU": {
+          "avg": 5487.6
+        },
+        "BW": {
+          "avg": 6518.0
+        },
+        "CA": {
+          "avg": 3111.17
+        },
+        "JP": {
+          "avg": 3974.5
+        },
+        "MY": {
+          "avg": 3168.0
+        },
+        "NA": {
+          "avg": 3911.4
+        },
+        "NZ": {
+          "avg": 6523.6
+        },
+        "PE": {
+          "avg": 4850.25
+        },
+        "PH": {
+          "avg": 3144.14
+        },
+        "TH": {
+          "avg": 3224.0
         },
         "VN": {
           "avg": 3241.53
