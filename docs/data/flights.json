@@ -1,28 +1,6 @@
 {
-  "last_updated": "2026-05-25T19:28:44.646071",
+  "last_updated": "2026-05-26T03:28:33.279118",
   "current_best": [
-    {
-      "id": "tp-cheap-PRG-BKK-2026-11-01T10:55:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "BKK",
-      "departure_date": "2026-11-01",
-      "return_date": "2026-11-30",
-      "airline": "EY",
-      "price": 2551.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20PRG%20on%202026-11-01%20through%202026-11-30&curr=PLN",
-      "score": 81.2,
-      "score_breakdown": {
-        "price_raw": 2551.0,
-        "days_off": 20,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 29,
-        "efficiency": 9
-      }
-    },
     {
       "id": "tp-cheap-WAW-MNL-2027-03-01T13:10:00+01:00",
       "source": "Travelpayouts-Cheap",
@@ -504,6 +482,28 @@
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 15,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-BKK-2026-07-15T14:35:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "BKK",
+      "departure_date": "2026-07-15",
+      "return_date": "2026-07-29",
+      "airline": "LH",
+      "price": 2312.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20PRG%20on%202026-07-15%20through%202026-07-29&curr=PLN",
+      "score": 58.7,
+      "score_breakdown": {
+        "price_raw": 2312.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 14,
         "efficiency": 3
       }
     },
@@ -1103,47 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-04-26",
-      "stats": {
-        "AU": {
-          "avg": 5253.44
-        },
-        "BW": {
-          "avg": 5393.0
-        },
-        "CA": {
-          "avg": 2682.0
-        },
-        "JP": {
-          "avg": 3563.67
-        },
-        "MY": {
-          "avg": 2828.17
-        },
-        "NA": {
-          "avg": 4280.33
-        },
-        "NZ": {
-          "avg": 6021.33
-        },
-        "PE": {
-          "avg": 4636.6
-        },
-        "PH": {
-          "avg": 3724.38
-        },
-        "TH": {
-          "avg": 2830.08
-        },
-        "VN": {
-          "avg": 3038.5
-        },
-        "ZA": {
-          "avg": 3376.5
-        }
-      }
-    },
     {
       "date": "2026-04-27",
       "stats": {
@@ -2324,6 +2283,44 @@
         },
         "ZA": {
           "avg": 3291.0
+        }
+      }
+    },
+    {
+      "date": "2026-05-26",
+      "stats": {
+        "AU": {
+          "avg": 5140.0
+        },
+        "CA": {
+          "avg": 3073.75
+        },
+        "JP": {
+          "avg": 3185.0
+        },
+        "MY": {
+          "avg": 3119.67
+        },
+        "NA": {
+          "avg": 4006.2
+        },
+        "NZ": {
+          "avg": 6235.8
+        },
+        "PE": {
+          "avg": 4863.2
+        },
+        "PH": {
+          "avg": 3225.29
+        },
+        "TH": {
+          "avg": 2994.62
+        },
+        "VN": {
+          "avg": 3223.29
+        },
+        "ZA": {
+          "avg": 3290.8
         }
       }
     }
