@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T19:13:50.869321",
+  "last_updated": "2026-05-31T03:43:48.464127",
   "current_best": [
     {
       "id": "tp-cheap-VIE-HKT-2026-11-24T14:30:00+01:00",
@@ -706,42 +706,20 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-DUS-2026-06-26T23:20:00+02:00",
+      "id": "tp-cheap-KRK-DUS-2026-07-11T12:40:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "DUS",
-      "departure_date": "2026-06-26",
-      "return_date": "2026-06-28",
-      "airline": "FR",
-      "price": 422.0,
+      "departure_date": "2026-07-11",
+      "return_date": "2026-07-15",
+      "airline": "RR",
+      "price": 522.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DUS%20from%20KRK%20on%202026-06-26%20through%202026-06-28&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DUS%20from%20KRK%20on%202026-07-11%20through%202026-07-15&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 422.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-EFL-2026-07-22T18:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "EFL",
-      "departure_date": "2026-07-22",
-      "return_date": "2026-07-26",
-      "airline": "W6",
-      "price": 782.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20EFL%20from%20KRK%20on%202026-07-22%20through%202026-07-26&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 782.0,
+        "price_raw": 522.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
@@ -1100,50 +1078,31 @@
         "duration_days": 4,
         "efficiency": 1
       }
+    },
+    {
+      "id": "tp-cheap-KRK-RMO-2026-07-24T13:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "RMO",
+      "departure_date": "2026-07-24",
+      "return_date": "2026-07-26",
+      "airline": "W6",
+      "price": 627.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RMO%20from%20KRK%20on%202026-07-24%20through%202026-07-26&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 627.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
+        "efficiency": 1
+      }
     }
   ],
   "history": [
-    {
-      "date": "2026-05-01",
-      "stats": {
-        "AU": {
-          "avg": 5047.22
-        },
-        "BW": {
-          "avg": 6580.0
-        },
-        "CA": {
-          "avg": 2989.33
-        },
-        "JP": {
-          "avg": 3319.83
-        },
-        "MY": {
-          "avg": 3043.67
-        },
-        "NA": {
-          "avg": 4154.5
-        },
-        "NZ": {
-          "avg": 5620.57
-        },
-        "PE": {
-          "avg": 4988.67
-        },
-        "PH": {
-          "avg": 4316.75
-        },
-        "TH": {
-          "avg": 2790.09
-        },
-        "VN": {
-          "avg": 3267.47
-        },
-        "ZA": {
-          "avg": 3829.56
-        }
-      }
-    },
     {
       "date": "2026-05-02",
       "stats": {
@@ -2318,6 +2277,44 @@
         },
         "VN": {
           "avg": 3236.67
+        },
+        "ZA": {
+          "avg": 3232.12
+        }
+      }
+    },
+    {
+      "date": "2026-05-31",
+      "stats": {
+        "AU": {
+          "avg": 4869.38
+        },
+        "CA": {
+          "avg": 2962.5
+        },
+        "JP": {
+          "avg": 3117.8
+        },
+        "MY": {
+          "avg": 3055.0
+        },
+        "NA": {
+          "avg": 4181.8
+        },
+        "NZ": {
+          "avg": 6747.71
+        },
+        "PE": {
+          "avg": 5570.33
+        },
+        "PH": {
+          "avg": 3471.33
+        },
+        "TH": {
+          "avg": 2732.3
+        },
+        "VN": {
+          "avg": 3235.5
         },
         "ZA": {
           "avg": 3232.12
