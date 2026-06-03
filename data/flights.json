@@ -1,28 +1,6 @@
 {
-  "last_updated": "2026-06-03T10:57:11.647138",
+  "last_updated": "2026-06-03T16:46:45.005523",
   "current_best": [
-    {
-      "id": "tp-cheap-VIE-HKT-2026-11-24T14:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "HKT",
-      "departure_date": "2026-11-24",
-      "return_date": "2026-12-25",
-      "airline": "SV",
-      "price": 2274.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20VIE%20on%202026-11-24%20through%202026-12-25&curr=PLN",
-      "score": 83.5,
-      "score_breakdown": {
-        "price_raw": 2274.0,
-        "days_off": 23,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 31,
-        "efficiency": 8
-      }
-    },
     {
       "id": "tp-cheap-WAW-MNL-2027-03-01T13:10:00+01:00",
       "source": "Travelpayouts-Cheap",
@@ -186,12 +164,12 @@
       "departure_date": "2026-09-12",
       "return_date": "2026-10-07",
       "airline": "N7",
-      "price": 3185.0,
+      "price": 3190.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BER%20on%202026-09-12%20through%202026-10-07&curr=PLN",
-      "score": 68.0,
+      "score": 67.9,
       "score_breakdown": {
-        "price_raw": 3185.0,
+        "price_raw": 3190.0,
         "days_off": 18,
         "holiday_count": 0,
         "in_season": false,
@@ -508,28 +486,6 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-YYC-2026-06-03T17:05:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "YYC",
-      "departure_date": "2026-06-03",
-      "return_date": "2026-06-11",
-      "airline": "DE",
-      "price": 2641.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BUD%20on%202026-06-03%20through%202026-06-11&curr=PLN",
-      "score": 59.5,
-      "score_breakdown": {
-        "price_raw": 2641.0,
-        "days_off": 6,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 8,
-        "efficiency": 2
-      }
-    },
-    {
       "id": "tp-cheap-KRK-WDH-2026-08-22T19:10:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -549,6 +505,28 @@
         "in_season": true,
         "duration_days": 14,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-TYO-2026-11-20T20:05:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "TYO",
+      "departure_date": "2026-11-20",
+      "return_date": "2026-11-29",
+      "airline": "SK",
+      "price": 3250.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20VIE%20on%202026-11-20%20through%202026-11-29&curr=PLN",
+      "score": 58.9,
+      "score_breakdown": {
+        "price_raw": 3250.0,
+        "days_off": 6,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 9,
+        "efficiency": 3
       }
     },
     {
@@ -574,28 +552,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-SGN-2026-11-04T13:10:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "SGN",
-      "departure_date": "2026-11-04",
-      "return_date": "2026-11-20",
-      "airline": "CA",
-      "price": 2895.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20WAW%20on%202026-11-04%20through%202026-11-20&curr=PLN",
-      "score": 58.4,
-      "score_breakdown": {
-        "price_raw": 2895.0,
-        "days_off": 12,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 16,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-BUD-FUK-2027-03-08T11:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -615,6 +571,28 @@
         "in_season": true,
         "duration_days": 18,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-SGN-2026-11-04T13:10:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "SGN",
+      "departure_date": "2026-11-04",
+      "return_date": "2026-11-20",
+      "airline": "CA",
+      "price": 2899.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20WAW%20on%202026-11-04%20through%202026-11-20&curr=PLN",
+      "score": 58.3,
+      "score_breakdown": {
+        "price_raw": 2899.0,
+        "days_off": 12,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 16,
+        "efficiency": 4
       }
     },
     {
@@ -692,12 +670,12 @@
       "departure_date": "2026-11-16",
       "return_date": "2026-11-30",
       "airline": "SK",
-      "price": 3454.0,
+      "price": 3459.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20PRG%20on%202026-11-16%20through%202026-11-30&curr=PLN",
       "score": 57.2,
       "score_breakdown": {
-        "price_raw": 3454.0,
+        "price_raw": 3459.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -706,24 +684,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-BER-2026-07-15T08:50:00+02:00",
+      "id": "tp-cheap-KRK-BER-2026-09-04T14:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "BER",
-      "departure_date": "2026-07-15",
-      "return_date": "2026-07-19",
-      "airline": "W6",
-      "price": 601.0,
+      "departure_date": "2026-09-04",
+      "return_date": "2026-09-07",
+      "airline": "LO",
+      "price": 481.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BER%20from%20KRK%20on%202026-07-15%20through%202026-07-19&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BER%20from%20KRK%20on%202026-09-04%20through%202026-09-07&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 601.0,
-        "days_off": 3,
+        "price_raw": 481.0,
+        "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 4,
+        "duration_days": 3,
         "efficiency": 1
       }
     },
@@ -758,12 +736,12 @@
       "departure_date": "2026-07-24",
       "return_date": "2026-07-26",
       "airline": "FR",
-      "price": 359.0,
+      "price": 358.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BRI%20from%20KRK%20on%202026-07-24%20through%202026-07-26&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 359.0,
+        "price_raw": 358.0,
         "days_off": 1,
         "holiday_count": 0,
         "in_season": false,
@@ -904,28 +882,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-LJU-2026-07-24T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "LJU",
-      "departure_date": "2026-07-24",
-      "return_date": "2026-07-27",
-      "airline": "LH",
-      "price": 744.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20LJU%20from%20KRK%20on%202026-07-24%20through%202026-07-27&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 744.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-LPL-2026-06-18T05:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -988,28 +944,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-OPO-2026-10-07T18:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "OPO",
-      "departure_date": "2026-10-07",
-      "return_date": "2026-10-11",
-      "airline": "W6",
-      "price": 464.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20OPO%20from%20KRK%20on%202026-10-07%20through%202026-10-11&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 464.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -1080,24 +1014,90 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-PMF-2026-06-13T23:30:00+02:00",
+      "id": "tp-cheap-KRK-PRG-2026-06-06T05:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
-      "destination": "PMF",
-      "departure_date": "2026-06-13",
-      "return_date": "2026-06-15",
+      "destination": "PRG",
+      "departure_date": "2026-06-06",
+      "return_date": "2026-06-09",
       "airline": "FR",
-      "price": 325.0,
+      "price": 137.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20PMF%20from%20KRK%20on%202026-06-13%20through%202026-06-15&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20PRG%20from%20KRK%20on%202026-06-06%20through%202026-06-09&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 325.0,
-        "days_off": 1,
+        "price_raw": 137.0,
+        "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 2,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-RAK-2026-07-02T20:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "RAK",
+      "departure_date": "2026-07-02",
+      "return_date": "2026-07-05",
+      "airline": "FR",
+      "price": 595.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RAK%20from%20KRK%20on%202026-07-02%20through%202026-07-05&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 595.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-REG-2026-08-05T08:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "REG",
+      "departure_date": "2026-08-05",
+      "return_date": "2026-08-09",
+      "airline": "FR",
+      "price": 683.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20REG%20from%20KRK%20on%202026-08-05%20through%202026-08-09&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 683.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-RIX-2026-06-12T15:15:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "RIX",
+      "departure_date": "2026-06-12",
+      "return_date": "2026-06-15",
+      "airline": "FR",
+      "price": 236.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RIX%20from%20KRK%20on%202026-06-12%20through%202026-06-15&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 236.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2278,34 +2278,34 @@
       "date": "2026-06-03",
       "stats": {
         "AU": {
-          "avg": 4936.22
+          "avg": 4937.11
         },
         "CA": {
-          "avg": 2959.0
+          "avg": 3087.67
         },
         "JP": {
-          "avg": 3643.57
+          "avg": 3578.67
         },
         "MY": {
-          "avg": 3069.38
+          "avg": 3069.88
         },
         "NA": {
-          "avg": 3775.4
+          "avg": 3776.6
         },
         "NZ": {
-          "avg": 6585.83
+          "avg": 6914.38
         },
         "PE": {
-          "avg": 4449.83
+          "avg": 4613.67
         },
         "PH": {
           "avg": 3629.71
         },
         "TH": {
-          "avg": 3003.69
+          "avg": 2986.38
         },
         "VN": {
-          "avg": 3270.43
+          "avg": 3271.79
         },
         "ZA": {
           "avg": 3229.56
