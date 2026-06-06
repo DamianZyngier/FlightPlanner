@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-06T08:32:27.012503",
+  "last_updated": "2026-06-06T13:40:57.557912",
   "current_best": [
     {
       "id": "tp-cheap-WAW-MNL-2027-03-01T13:10:00+01:00",
@@ -131,6 +131,28 @@
         "in_season": true,
         "duration_days": 30,
         "efficiency": 8
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-BKK-2027-01-07T09:10:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "BKK",
+      "departure_date": "2027-01-07",
+      "return_date": "2027-01-25",
+      "airline": "LO",
+      "price": 2781.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20WAW%20on%202027-01-07%20through%202027-01-25&curr=PLN",
+      "score": 71.8,
+      "score_breakdown": {
+        "price_raw": 2781.0,
+        "days_off": 13,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 18,
+        "efficiency": 5
       }
     },
     {
@@ -288,6 +310,28 @@
       }
     },
     {
+      "id": "tp-cheap-BER-YVR-2026-10-15T07:10:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "YVR",
+      "departure_date": "2026-10-15",
+      "return_date": "2026-11-02",
+      "airline": "BA",
+      "price": 2637.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20BER%20on%202026-10-15%20through%202026-11-02&curr=PLN",
+      "score": 65.0,
+      "score_breakdown": {
+        "price_raw": 2637.0,
+        "days_off": 13,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 18,
+        "efficiency": 5
+      }
+    },
+    {
       "id": "tp-cheap-BUD-AKL-2027-03-13T11:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -372,28 +416,6 @@
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 16,
-        "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-SGN-2027-02-06T14:45:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "SGN",
-      "departure_date": "2027-02-06",
-      "return_date": "2027-02-21",
-      "airline": "EK",
-      "price": 3692.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20PRG%20on%202027-02-06%20through%202027-02-21&curr=PLN",
-      "score": 64.2,
-      "score_breakdown": {
-        "price_raw": 3692.0,
-        "days_off": 10,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 15,
         "efficiency": 5
       }
     },
@@ -681,28 +703,6 @@
         "in_season": false,
         "duration_days": 14,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-WAW-BKK-2026-11-29T09:10:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "BKK",
-      "departure_date": "2026-11-29",
-      "return_date": "2026-12-09",
-      "airline": "LO",
-      "price": 2808.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20WAW%20on%202026-11-29%20through%202026-12-09&curr=PLN",
-      "score": 58.1,
-      "score_breakdown": {
-        "price_raw": 2808.0,
-        "days_off": 8,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 10,
-        "efficiency": 2
       }
     },
     {
@@ -2272,13 +2272,13 @@
       "date": "2026-06-06",
       "stats": {
         "AU": {
-          "avg": 5193.33
+          "avg": 5168.9
         },
         "BW": {
           "avg": 5091.0
         },
         "CA": {
-          "avg": 2833.29
+          "avg": 2838.25
         },
         "JP": {
           "avg": 3799.14
@@ -2293,16 +2293,16 @@
           "avg": 5806.8
         },
         "PE": {
-          "avg": 4404.38
+          "avg": 4640.12
         },
         "PH": {
-          "avg": 3546.0
+          "avg": 3698.33
         },
         "TH": {
-          "avg": 2942.53
+          "avg": 2942.4
         },
         "VN": {
-          "avg": 3169.79
+          "avg": 3142.29
         },
         "ZA": {
           "avg": 3311.11
