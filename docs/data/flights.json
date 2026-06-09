@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T03:26:06.145803",
+  "last_updated": "2026-06-09T09:41:06.031431",
   "current_best": [
     {
       "id": "tp-cheap-VIE-MNL-2027-02-27T14:30:00+01:00",
@@ -21,28 +21,6 @@
         "in_season": true,
         "duration_days": 15,
         "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-WAW-TYO-2026-10-23T19:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "TYO",
-      "departure_date": "2026-10-23",
-      "return_date": "2026-11-20",
-      "airline": "CA",
-      "price": 3160.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-10-23%20through%202026-11-20&curr=PLN",
-      "score": 76.2,
-      "score_breakdown": {
-        "price_raw": 3160.0,
-        "days_off": 20,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 28,
-        "efficiency": 8
       }
     },
     {
@@ -442,6 +420,28 @@
       }
     },
     {
+      "id": "tp-cheap-VIE-YYC-2026-08-18T06:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "YYC",
+      "departure_date": "2026-08-18",
+      "return_date": "2026-09-05",
+      "airline": "LW",
+      "price": 3183.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20VIE%20on%202026-08-18%20through%202026-09-05&curr=PLN",
+      "score": 64.0,
+      "score_breakdown": {
+        "price_raw": 3183.0,
+        "days_off": 14,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 18,
+        "efficiency": 4
+      }
+    },
+    {
       "id": "tp-cheap-BUD-HKT-2026-11-15T11:25:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -464,20 +464,20 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-YVR-2026-09-22T06:20:00+02:00",
+      "id": "tp-cheap-PRG-YVR-2026-09-22T21:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "PRG",
       "destination": "YVR",
       "departure_date": "2026-09-22",
       "return_date": "2026-10-04",
-      "airline": "RR",
-      "price": 2687.0,
+      "airline": "VY",
+      "price": 2763.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20PRG%20on%202026-09-22%20through%202026-10-04&curr=PLN",
-      "score": 63.6,
+      "score": 63.0,
       "score_breakdown": {
-        "price_raw": 2687.0,
+        "price_raw": 2763.0,
         "days_off": 9,
         "holiday_count": 0,
         "in_season": true,
@@ -2275,10 +2275,10 @@
           "avg": 3990.0
         },
         "CA": {
-          "avg": 2813.0
+          "avg": 2839.5
         },
         "JP": {
-          "avg": 3734.0
+          "avg": 3680.12
         },
         "MY": {
           "avg": 2865.17
