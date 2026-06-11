@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T15:58:46.614299",
+  "last_updated": "2026-06-11T20:20:34.736160",
   "current_best": [
     {
       "id": "tp-cheap-WAW-HKT-2027-03-01T13:10:00+01:00",
@@ -32,12 +32,12 @@
       "departure_date": "2027-02-27",
       "return_date": "2027-03-14",
       "airline": "SV",
-      "price": 2248.0,
+      "price": 2246.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-02-27%20through%202027-03-14&curr=PLN",
       "score": 76.3,
       "score_breakdown": {
-        "price_raw": 2248.0,
+        "price_raw": 2246.0,
         "days_off": 10,
         "holiday_count": 0,
         "in_season": true,
@@ -296,12 +296,12 @@
       "departure_date": "2026-12-22",
       "return_date": "2027-01-08",
       "airline": "G9",
-      "price": 3134.0,
+      "price": 3132.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20WMI%20on%202026-12-22%20through%202027-01-08&curr=PLN",
       "score": 65.4,
       "score_breakdown": {
-        "price_raw": 3134.0,
+        "price_raw": 3132.0,
         "days_off": 11,
         "holiday_count": 4,
         "in_season": false,
@@ -626,12 +626,12 @@
       "departure_date": "2026-10-25",
       "return_date": "2026-11-07",
       "airline": "FM",
-      "price": 3162.0,
+      "price": 3160.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BUD%20on%202026-10-25%20through%202026-11-07&curr=PLN",
-      "score": 59.6,
+      "score": 59.7,
       "score_breakdown": {
-        "price_raw": 3162.0,
+        "price_raw": 3160.0,
         "days_off": 10,
         "holiday_count": 1,
         "in_season": true,
@@ -670,12 +670,12 @@
       "departure_date": "2026-11-06",
       "return_date": "2026-11-11",
       "airline": "AY",
-      "price": 2650.0,
+      "price": 2648.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BER%20on%202026-11-06%20through%202026-11-11&curr=PLN",
       "score": 59.4,
       "score_breakdown": {
-        "price_raw": 2650.0,
+        "price_raw": 2648.0,
         "days_off": 3,
         "holiday_count": 1,
         "in_season": true,
@@ -758,12 +758,12 @@
       "departure_date": "2026-11-06",
       "return_date": "2026-11-13",
       "airline": "IB",
-      "price": 2757.0,
+      "price": 2755.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20VIE%20on%202026-11-06%20through%202026-11-13&curr=PLN",
       "score": 58.5,
       "score_breakdown": {
-        "price_raw": 2757.0,
+        "price_raw": 2755.0,
         "days_off": 5,
         "holiday_count": 1,
         "in_season": true,
@@ -2269,40 +2269,40 @@
       "date": "2026-06-11",
       "stats": {
         "AU": {
-          "avg": 4679.44
+          "avg": 4678.67
         },
         "BW": {
-          "avg": 4463.0
+          "avg": 4461.5
         },
         "CA": {
           "avg": 2800.0
         },
         "JP": {
-          "avg": 3654.33
+          "avg": 3481.0
         },
         "MY": {
-          "avg": 2860.83
+          "avg": 2860.17
         },
         "NA": {
           "avg": 3929.5
         },
         "NZ": {
-          "avg": 6042.71
+          "avg": 6042.14
         },
         "PE": {
-          "avg": 5724.0
+          "avg": 5722.75
         },
         "PH": {
-          "avg": 3432.67
+          "avg": 3432.22
         },
         "TH": {
-          "avg": 2797.31
+          "avg": 2797.19
         },
         "VN": {
           "avg": 3300.42
         },
         "ZA": {
-          "avg": 3551.89
+          "avg": 3551.33
         }
       }
     }
