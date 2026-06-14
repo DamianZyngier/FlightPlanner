@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T03:59:13.758648",
+  "last_updated": "2026-06-14T09:32:55.037072",
   "current_best": [
     {
       "id": "tp-cheap-VIE-MNL-2027-02-27T14:30:00+01:00",
@@ -354,6 +354,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-YVR-2026-09-22T08:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "YVR",
+      "departure_date": "2026-09-22",
+      "return_date": "2026-10-04",
+      "airline": "DE",
+      "price": 2561.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20PRG%20on%202026-09-22%20through%202026-10-04&curr=PLN",
+      "score": 64.7,
+      "score_breakdown": {
+        "price_raw": 2561.0,
+        "days_off": 9,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 12,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-BUD-AKL-2026-12-24T11:45:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -395,28 +417,6 @@
         "in_season": false,
         "duration_days": 21,
         "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-YVR-2026-09-22T21:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "YVR",
-      "departure_date": "2026-09-22",
-      "return_date": "2026-10-04",
-      "airline": "VY",
-      "price": 2767.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20PRG%20on%202026-09-22%20through%202026-10-04&curr=PLN",
-      "score": 62.9,
-      "score_breakdown": {
-        "price_raw": 2767.0,
-        "days_off": 9,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 12,
-        "efficiency": 3
       }
     },
     {
@@ -570,6 +570,28 @@
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 14,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-YVR-2026-07-17T08:25:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "YVR",
+      "departure_date": "2026-07-17",
+      "return_date": "2026-07-27",
+      "airline": "W4",
+      "price": 3131.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20BUD%20on%202026-07-17%20through%202026-07-27&curr=PLN",
+      "score": 59.9,
+      "score_breakdown": {
+        "price_raw": 3131.0,
+        "days_off": 7,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 10,
         "efficiency": 3
       }
     },
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-IZM-2026-06-19T22:25:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "IZM",
-      "departure_date": "2026-06-19",
-      "return_date": "2026-06-22",
-      "airline": "FR",
-      "price": 952.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20IZM%20from%20KRK%20on%202026-06-19%20through%202026-06-22&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 952.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2275,10 +2275,10 @@
           "avg": 4452.0
         },
         "CA": {
-          "avg": 3208.29
+          "avg": 3168.0
         },
         "JP": {
-          "avg": 3436.14
+          "avg": 3425.57
         },
         "MY": {
           "avg": 2802.57
@@ -2296,7 +2296,7 @@
           "avg": 3290.25
         },
         "TH": {
-          "avg": 2855.67
+          "avg": 2848.47
         },
         "VN": {
           "avg": 3130.36
