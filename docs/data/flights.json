@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T04:11:49.819888",
+  "last_updated": "2026-06-15T12:11:20.410154",
   "current_best": [
     {
       "id": "tp-cheap-VIE-MNL-2027-02-27T14:30:00+01:00",
@@ -10,12 +10,12 @@
       "departure_date": "2027-02-27",
       "return_date": "2027-03-14",
       "airline": "SV",
-      "price": 2238.0,
+      "price": 2254.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-02-27%20through%202027-03-14&curr=PLN",
-      "score": 76.3,
+      "score": 76.2,
       "score_breakdown": {
-        "price_raw": 2238.0,
+        "price_raw": 2254.0,
         "days_off": 10,
         "holiday_count": 0,
         "in_season": true,
@@ -156,6 +156,28 @@
       }
     },
     {
+      "id": "tp-cheap-VIE-SYD-2027-02-28T09:35:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "SYD",
+      "departure_date": "2027-02-28",
+      "return_date": "2027-04-02",
+      "airline": "TR",
+      "price": 3980.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20VIE%20on%202027-02-28%20through%202027-04-02&curr=PLN",
+      "score": 69.3,
+      "score_breakdown": {
+        "price_raw": 3980.0,
+        "days_off": 24,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 33,
+        "efficiency": 9
+      }
+    },
+    {
       "id": "tp-cheap-BER-SGN-2026-09-12T20:05:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -244,6 +266,28 @@
       }
     },
     {
+      "id": "tp-cheap-VIE-DAD-2026-09-10T11:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "DAD",
+      "departure_date": "2026-09-10",
+      "return_date": "2026-10-10",
+      "airline": "EY",
+      "price": 3327.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20VIE%20on%202026-09-10%20through%202026-10-10&curr=PLN",
+      "score": 66.8,
+      "score_breakdown": {
+        "price_raw": 3327.0,
+        "days_off": 22,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 30,
+        "efficiency": 8
+      }
+    },
+    {
       "id": "tp-cheap-BER-DAD-2027-02-20T10:00:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -329,28 +373,6 @@
         "in_season": false,
         "duration_days": 17,
         "efficiency": 6
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-HKT-2027-02-12T14:50:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "HKT",
-      "departure_date": "2027-02-12",
-      "return_date": "2027-02-22",
-      "airline": "LX",
-      "price": 2526.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20PRG%20on%202027-02-12%20through%202027-02-22&curr=PLN",
-      "score": 65.0,
-      "score_breakdown": {
-        "price_raw": 2526.0,
-        "days_off": 7,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 10,
-        "efficiency": 3
       }
     },
     {
@@ -552,6 +574,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-SYD-2026-07-01T09:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "SYD",
+      "departure_date": "2026-07-01",
+      "return_date": "2026-07-31",
+      "airline": "U2",
+      "price": 4110.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20PRG%20on%202026-07-01%20through%202026-07-31&curr=PLN",
+      "score": 60.2,
+      "score_breakdown": {
+        "price_raw": 4110.0,
+        "days_off": 23,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 30,
+        "efficiency": 7
+      }
+    },
+    {
       "id": "tp-cheap-PRG-MNL-2027-03-01T10:55:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -596,28 +640,6 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-SYD-2026-07-01T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "SYD",
-      "departure_date": "2026-07-01",
-      "return_date": "2026-07-31",
-      "airline": "EY",
-      "price": 4215.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20PRG%20on%202026-07-01%20through%202026-07-31&curr=PLN",
-      "score": 59.4,
-      "score_breakdown": {
-        "price_raw": 4215.0,
-        "days_off": 23,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 30,
-        "efficiency": 7
-      }
-    },
-    {
       "id": "tp-cheap-WAW-WDH-2026-09-08T19:40:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -659,28 +681,6 @@
         "in_season": true,
         "duration_days": 16,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-DAD-2026-09-18T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "DAD",
-      "departure_date": "2026-09-18",
-      "return_date": "2026-10-09",
-      "airline": "EY",
-      "price": 3388.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202026-09-18%20through%202026-10-09&curr=PLN",
-      "score": 58.8,
-      "score_breakdown": {
-        "price_raw": 3388.0,
-        "days_off": 16,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 21,
-        "efficiency": 5
       }
     },
     {
@@ -2269,7 +2269,7 @@
       "date": "2026-06-15",
       "stats": {
         "AU": {
-          "avg": 4566.9
+          "avg": 4565.1
         },
         "BW": {
           "avg": 4452.0
@@ -2290,19 +2290,19 @@
           "avg": 5841.83
         },
         "PE": {
-          "avg": 5178.33
+          "avg": 4950.75
         },
         "PH": {
-          "avg": 3439.0
+          "avg": 3440.78
         },
         "TH": {
-          "avg": 2867.13
+          "avg": 2950.12
         },
         "VN": {
-          "avg": 3151.77
+          "avg": 3194.71
         },
         "ZA": {
-          "avg": 3233.62
+          "avg": 3183.56
         }
       }
     }
