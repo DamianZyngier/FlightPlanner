@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T04:13:29.850096",
+  "last_updated": "2026-06-19T10:24:42.377226",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HKT-2026-11-15T11:25:00+01:00",
@@ -24,24 +24,24 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-MNL-2027-02-27T14:30:00+01:00",
+      "id": "tp-cheap-VIE-MNL-2027-02-02T14:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "VIE",
       "destination": "MNL",
-      "departure_date": "2027-02-27",
-      "return_date": "2027-03-14",
+      "departure_date": "2027-02-02",
+      "return_date": "2027-02-21",
       "airline": "SV",
-      "price": 2261.0,
+      "price": 2234.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-02-27%20through%202027-03-14&curr=PLN",
-      "score": 76.2,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-02-02%20through%202027-02-21&curr=PLN",
+      "score": 76.4,
       "score_breakdown": {
-        "price_raw": 2261.0,
-        "days_off": 10,
+        "price_raw": 2234.0,
+        "days_off": 14,
         "holiday_count": 0,
         "in_season": true,
-        "duration_days": 15,
+        "duration_days": 19,
         "efficiency": 5
       }
     },
@@ -332,28 +332,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-DAD-2027-02-20T10:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "DAD",
-      "departure_date": "2027-02-20",
-      "return_date": "2027-03-13",
-      "airline": "EY",
-      "price": 3979.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20BER%20on%202027-02-20%20through%202027-03-13&curr=PLN",
-      "score": 66.3,
-      "score_breakdown": {
-        "price_raw": 3979.0,
-        "days_off": 15,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 21,
-        "efficiency": 6
-      }
-    },
-    {
       "id": "tp-cheap-BUD-YYC-2026-09-12T08:20:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -439,6 +417,28 @@
         "in_season": true,
         "duration_days": 29,
         "efficiency": 10
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-HAN-2026-08-25T11:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "HAN",
+      "departure_date": "2026-08-25",
+      "return_date": "2026-09-15",
+      "airline": "EY",
+      "price": 2761.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20VIE%20on%202026-08-25%20through%202026-09-15&curr=PLN",
+      "score": 64.0,
+      "score_breakdown": {
+        "price_raw": 2761.0,
+        "days_off": 16,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 21,
+        "efficiency": 5
       }
     },
     {
@@ -596,28 +596,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-MNL-2027-02-03T12:50:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "MNL",
-      "departure_date": "2027-02-03",
-      "return_date": "2027-02-19",
-      "airline": "WY",
-      "price": 3258.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20KRK%20on%202027-02-03%20through%202027-02-19&curr=PLN",
-      "score": 58.9,
-      "score_breakdown": {
-        "price_raw": 3258.0,
-        "days_off": 13,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 16,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-BER-BKK-2026-10-13T13:50:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -769,6 +747,28 @@
         "in_season": true,
         "duration_days": 14,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-BER-DAD-2026-09-25T06:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "DAD",
+      "departure_date": "2026-09-25",
+      "return_date": "2026-10-11",
+      "airline": "XQ",
+      "price": 3601.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20BER%20on%202026-09-25%20through%202026-10-11&curr=PLN",
+      "score": 57.0,
+      "score_breakdown": {
+        "price_raw": 3601.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 16,
+        "efficiency": 5
       }
     },
     {
@@ -2266,10 +2266,10 @@
       "date": "2026-06-19",
       "stats": {
         "AU": {
-          "avg": 4861.2
+          "avg": 4869.64
         },
         "CA": {
-          "avg": 2702.2
+          "avg": 2702.8
         },
         "JP": {
           "avg": 3637.5
@@ -2287,13 +2287,13 @@
           "avg": 5227.67
         },
         "PH": {
-          "avg": 3362.75
+          "avg": 3373.86
         },
         "TH": {
           "avg": 2951.5
         },
         "VN": {
-          "avg": 3250.38
+          "avg": 3223.88
         },
         "ZA": {
           "avg": 3196.1
