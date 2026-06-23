@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T03:29:19.823006",
+  "last_updated": "2026-06-23T09:36:36.886791",
   "current_best": [
     {
       "id": "tp-cheap-WAW-TYO-2026-10-19T11:50:00+02:00",
@@ -241,28 +241,6 @@
         "in_season": true,
         "duration_days": 14,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-KUL-2026-12-11T21:55:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "KUL",
-      "departure_date": "2026-12-11",
-      "return_date": "2027-01-11",
-      "airline": "G9",
-      "price": 3038.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20PRG%20on%202026-12-11%20through%202027-01-11&curr=PLN",
-      "score": 69.2,
-      "score_breakdown": {
-        "price_raw": 3038.0,
-        "days_off": 19,
-        "holiday_count": 4,
-        "in_season": false,
-        "duration_days": 31,
-        "efficiency": 12
       }
     },
     {
@@ -684,6 +662,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-KUL-2026-08-09T11:20:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "KUL",
+      "departure_date": "2026-08-09",
+      "return_date": "2026-08-21",
+      "airline": "EY",
+      "price": 2715.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20PRG%20on%202026-08-09%20through%202026-08-21&curr=PLN",
+      "score": 58.9,
+      "score_breakdown": {
+        "price_raw": 2715.0,
+        "days_off": 10,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 12,
+        "efficiency": 2
+      }
+    },
+    {
       "id": "tp-cheap-KRK-SYD-2026-12-25T11:55:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -948,6 +948,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-CTA-2026-08-21T11:40:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CTA",
+      "departure_date": "2026-08-21",
+      "return_date": "2026-08-24",
+      "airline": "FR",
+      "price": 425.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CTA%20from%20KRK%20on%202026-08-21%20through%202026-08-24&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 425.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-DUS-2026-07-03T23:20:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-JTR-2026-08-29T06:25:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "JTR",
-      "departure_date": "2026-08-29",
-      "return_date": "2026-09-02",
-      "airline": "FR",
-      "price": 595.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JTR%20from%20KRK%20on%202026-08-29%20through%202026-09-02&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 595.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     }
@@ -2266,7 +2266,7 @@
           "avg": 3657.88
         },
         "MY": {
-          "avg": 2791.57
+          "avg": 2745.43
         },
         "NA": {
           "avg": 3588.0
