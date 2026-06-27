@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T03:21:19.689906",
+  "last_updated": "2026-06-27T08:34:32.630145",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HAN-2027-01-04T10:55:00+01:00",
@@ -266,28 +266,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-HKT-2026-12-15T10:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "HKT",
-      "departure_date": "2026-12-15",
-      "return_date": "2026-12-30",
-      "airline": "EY",
-      "price": 2811.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BER%20on%202026-12-15%20through%202026-12-30&curr=PLN",
-      "score": 67.1,
-      "score_breakdown": {
-        "price_raw": 2811.0,
-        "days_off": 11,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 15,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-VIE-HKT-2026-11-04T13:00:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -417,6 +395,28 @@
         "in_season": true,
         "duration_days": 14,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-BER-HKT-2026-08-26T16:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "HKT",
+      "departure_date": "2026-08-26",
+      "return_date": "2026-09-16",
+      "airline": "QR",
+      "price": 2875.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BER%20on%202026-08-26%20through%202026-09-16&curr=PLN",
+      "score": 63.0,
+      "score_breakdown": {
+        "price_raw": 2875.0,
+        "days_off": 16,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 21,
+        "efficiency": 5
       }
     },
     {
@@ -571,6 +571,28 @@
         "in_season": false,
         "duration_days": 11,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-BER-GBE-2027-06-01T19:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "GBE",
+      "departure_date": "2027-06-01",
+      "return_date": "2027-06-15",
+      "airline": "AF",
+      "price": 2984.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GBE%20from%20BER%20on%202027-06-01%20through%202027-06-15&curr=PLN",
+      "score": 61.1,
+      "score_breakdown": {
+        "price_raw": 2984.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 3
       }
     },
     {
@@ -1072,28 +1094,6 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 388.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-GRO-2026-08-29T16:10:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "GRO",
-      "departure_date": "2026-08-29",
-      "return_date": "2026-09-02",
-      "airline": "FR",
-      "price": 331.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GRO%20from%20KRK%20on%202026-08-29%20through%202026-09-02&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 331.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
@@ -2250,6 +2250,9 @@
         "AU": {
           "avg": 4687.27
         },
+        "BW": {
+          "avg": 2984.0
+        },
         "CA": {
           "avg": 2977.5
         },
@@ -2272,10 +2275,10 @@
           "avg": 3261.25
         },
         "TH": {
-          "avg": 2681.83
+          "avg": 2670.0
         },
         "VN": {
-          "avg": 3152.4
+          "avg": 3116.1
         },
         "ZA": {
           "avg": 3306.86
