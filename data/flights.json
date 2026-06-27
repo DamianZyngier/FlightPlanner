@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T13:40:33.344011",
+  "last_updated": "2026-06-27T19:19:03.040891",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HAN-2027-01-04T10:55:00+01:00",
@@ -288,6 +288,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-HKT-2027-02-01T21:55:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "HKT",
+      "departure_date": "2027-02-01",
+      "return_date": "2027-02-14",
+      "airline": "G9",
+      "price": 2358.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20PRG%20on%202027-02-01%20through%202027-02-14&curr=PLN",
+      "score": 66.3,
+      "score_breakdown": {
+        "price_raw": 2358.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 13,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-VIE-MNL-2026-09-17T20:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -508,6 +530,28 @@
       }
     },
     {
+      "id": "tp-cheap-BER-MNL-2026-09-16T15:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "MNL",
+      "departure_date": "2026-09-16",
+      "return_date": "2026-10-06",
+      "airline": "LX",
+      "price": 3016.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BER%20on%202026-09-16%20through%202026-10-06&curr=PLN",
+      "score": 61.9,
+      "score_breakdown": {
+        "price_raw": 3016.0,
+        "days_off": 15,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 20,
+        "efficiency": 5
+      }
+    },
+    {
       "id": "tp-cheap-PRG-CPT-2027-01-15T06:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -706,28 +750,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-MEL-2026-06-27T20:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "MEL",
-      "departure_date": "2026-06-27",
-      "return_date": "2026-07-14",
-      "airline": "AI",
-      "price": 3534.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20VIE%20on%202026-06-27%20through%202026-07-14&curr=PLN",
-      "score": 57.5,
-      "score_breakdown": {
-        "price_raw": 3534.0,
-        "days_off": 12,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 17,
-        "efficiency": 5
-      }
-    },
-    {
       "id": "tp-cheap-BER-BNE-2026-10-01T06:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -812,28 +834,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BCN-2026-11-13T15:35:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BCN",
-      "departure_date": "2026-11-13",
-      "return_date": "2026-11-16",
-      "airline": "W6",
-      "price": 277.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BCN%20from%20KRK%20on%202026-11-13%20through%202026-11-16&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 277.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
         "efficiency": 1
       }
     },
@@ -2248,13 +2248,13 @@
       "date": "2026-06-27",
       "stats": {
         "AU": {
-          "avg": 4700.09
+          "avg": 4643.0
         },
         "BW": {
           "avg": 2984.0
         },
         "CA": {
-          "avg": 2977.5
+          "avg": 2903.0
         },
         "JP": {
           "avg": 3340.89
@@ -2275,10 +2275,10 @@
           "avg": 3261.25
         },
         "TH": {
-          "avg": 2707.83
+          "avg": 2703.42
         },
         "VN": {
-          "avg": 3092.82
+          "avg": 3177.45
         },
         "ZA": {
           "avg": 3306.43
