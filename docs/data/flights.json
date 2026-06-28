@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T19:19:03.040891",
+  "last_updated": "2026-06-28T03:42:05.703401",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HAN-2027-01-04T10:55:00+01:00",
@@ -351,28 +351,6 @@
         "in_season": true,
         "duration_days": 12,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-CEB-2026-12-12T12:20:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "CEB",
-      "departure_date": "2026-12-12",
-      "return_date": "2027-01-08",
-      "airline": "IB",
-      "price": 4675.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20VIE%20on%202026-12-12%20through%202027-01-08&curr=PLN",
-      "score": 63.5,
-      "score_breakdown": {
-        "price_raw": 4675.0,
-        "days_off": 17,
-        "holiday_count": 4,
-        "in_season": true,
-        "duration_days": 27,
-        "efficiency": 10
       }
     },
     {
@@ -992,28 +970,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-DUB-2026-07-10T18:25:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "DUB",
-      "departure_date": "2026-07-10",
-      "return_date": "2026-07-13",
-      "airline": "FR",
-      "price": 490.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DUB%20from%20KRK%20on%202026-07-10%20through%202026-07-13&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 490.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-DUS-2026-07-03T23:20:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1080,70 +1036,73 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-GDN-2026-08-01T18:25:00+02:00",
+      "id": "tp-cheap-KRK-FLR-2026-08-07T11:40:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
-      "destination": "GDN",
-      "departure_date": "2026-08-01",
-      "return_date": "2026-08-05",
-      "airline": "LO",
-      "price": 388.0,
+      "destination": "FLR",
+      "departure_date": "2026-08-07",
+      "return_date": "2026-08-10",
+      "airline": "RR",
+      "price": 815.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GDN%20from%20KRK%20on%202026-08-01%20through%202026-08-05&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FLR%20from%20KRK%20on%202026-08-07%20through%202026-08-10&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 388.0,
+        "price_raw": 815.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-GRO-2026-08-29T16:10:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "GRO",
+      "departure_date": "2026-08-29",
+      "return_date": "2026-09-02",
+      "airline": "FR",
+      "price": 331.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GRO%20from%20KRK%20on%202026-08-29%20through%202026-09-02&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 331.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 4,
         "efficiency": 1
       }
+    },
+    {
+      "id": "tp-cheap-KRK-HAU-2026-10-02T19:10:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "HAU",
+      "departure_date": "2026-10-02",
+      "return_date": "2026-10-05",
+      "airline": "RR",
+      "price": 594.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAU%20from%20KRK%20on%202026-10-02%20through%202026-10-05&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 594.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
     }
   ],
   "history": [
-    {
-      "date": "2026-05-29",
-      "stats": {
-        "AU": {
-          "avg": 4733.0
-        },
-        "BW": {
-          "avg": 5735.0
-        },
-        "CA": {
-          "avg": 2962.5
-        },
-        "JP": {
-          "avg": 3039.0
-        },
-        "MY": {
-          "avg": 3228.56
-        },
-        "NA": {
-          "avg": 4055.6
-        },
-        "NZ": {
-          "avg": 6959.83
-        },
-        "PE": {
-          "avg": 5838.8
-        },
-        "PH": {
-          "avg": 3668.57
-        },
-        "TH": {
-          "avg": 2762.58
-        },
-        "VN": {
-          "avg": 3204.75
-        },
-        "ZA": {
-          "avg": 3238.5
-        }
-      }
-    },
     {
       "date": "2026-05-30",
       "stats": {
@@ -2279,6 +2238,47 @@
         },
         "VN": {
           "avg": 3177.45
+        },
+        "ZA": {
+          "avg": 3306.43
+        }
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "stats": {
+        "AU": {
+          "avg": 4791.44
+        },
+        "BW": {
+          "avg": 2984.0
+        },
+        "CA": {
+          "avg": 2903.0
+        },
+        "JP": {
+          "avg": 3448.5
+        },
+        "MY": {
+          "avg": 2685.67
+        },
+        "NA": {
+          "avg": 4020.5
+        },
+        "NZ": {
+          "avg": 6746.6
+        },
+        "PE": {
+          "avg": 4432.8
+        },
+        "PH": {
+          "avg": 3059.29
+        },
+        "TH": {
+          "avg": 2703.42
+        },
+        "VN": {
+          "avg": 3113.09
         },
         "ZA": {
           "avg": 3306.43
