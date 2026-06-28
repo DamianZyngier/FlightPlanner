@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T08:49:53.848209",
+  "last_updated": "2026-06-28T13:43:57.681615",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HAN-2027-01-04T10:55:00+01:00",
@@ -552,28 +552,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-JNB-2026-08-04T11:50:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "JNB",
-      "departure_date": "2026-08-04",
-      "return_date": "2026-08-26",
-      "airline": "EY",
-      "price": 3045.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20WAW%20on%202026-08-04%20through%202026-08-26&curr=PLN",
-      "score": 61.6,
-      "score_breakdown": {
-        "price_raw": 3045.0,
-        "days_off": 17,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 22,
-        "efficiency": 5
-      }
-    },
-    {
       "id": "tp-cheap-BUD-HAN-2026-11-11T12:15:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -904,28 +882,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-BLQ-2026-07-11T17:15:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BLQ",
-      "departure_date": "2026-07-11",
-      "return_date": "2026-07-13",
-      "airline": "MW",
-      "price": 289.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BLQ%20from%20KRK%20on%202026-07-11%20through%202026-07-13&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 289.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-BRE-2026-07-11T09:35:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1014,6 +970,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-EAP-2026-08-21T13:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "EAP",
+      "departure_date": "2026-08-21",
+      "return_date": "2026-08-23",
+      "airline": "W6",
+      "price": 257.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20EAP%20from%20KRK%20on%202026-08-21%20through%202026-08-23&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 257.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-EIN-2027-01-15T12:40:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1044,12 +1022,12 @@
       "departure_date": "2026-08-07",
       "return_date": "2026-08-10",
       "airline": "RR",
-      "price": 815.0,
+      "price": 814.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20FLR%20from%20KRK%20on%202026-08-07%20through%202026-08-10&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 815.0,
+        "price_raw": 814.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -1076,6 +1054,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-HAM-2026-07-11T23:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "HAM",
+      "departure_date": "2026-07-11",
+      "return_date": "2026-07-13",
+      "airline": "FR",
+      "price": 937.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAM%20from%20KRK%20on%202026-07-11%20through%202026-07-13&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 937.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
         "efficiency": 1
       }
     },
@@ -2257,7 +2257,7 @@
           "avg": 2903.0
         },
         "JP": {
-          "avg": 3448.5
+          "avg": 3438.89
         },
         "MY": {
           "avg": 2685.67
@@ -2269,7 +2269,7 @@
           "avg": 6549.0
         },
         "PE": {
-          "avg": 4432.8
+          "avg": 4454.4
         },
         "PH": {
           "avg": 3059.29
@@ -2278,10 +2278,10 @@
           "avg": 2703.42
         },
         "VN": {
-          "avg": 3136.0
+          "avg": 3105.9
         },
         "ZA": {
-          "avg": 3306.43
+          "avg": 3289.29
         }
       }
     }
