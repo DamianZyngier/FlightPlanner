@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30T09:33:26.590639",
+  "last_updated": "2026-06-30T14:16:08.000142",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HAN-2027-01-04T10:55:00+01:00",
@@ -98,12 +98,12 @@
       "departure_date": "2026-12-06",
       "return_date": "2027-01-23",
       "airline": "EN",
-      "price": 3633.0,
+      "price": 3641.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20PRG%20on%202026-12-06%20through%202027-01-23&curr=PLN",
       "score": 72.2,
       "score_breakdown": {
-        "price_raw": 3633.0,
+        "price_raw": 3641.0,
         "days_off": 32,
         "holiday_count": 4,
         "in_season": true,
@@ -266,7 +266,7 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-BKK-2027-06-01T12:45:00+02:00",
+      "id": "tp-cheap-BUD-BKK-2027-06-01T09:45:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "BUD",
@@ -274,12 +274,12 @@
       "departure_date": "2027-06-01",
       "return_date": "2027-06-21",
       "airline": "LO",
-      "price": 2333.0,
+      "price": 2341.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202027-06-01%20through%202027-06-21&curr=PLN",
-      "score": 67.6,
+      "score": 67.5,
       "score_breakdown": {
-        "price_raw": 2333.0,
+        "price_raw": 2341.0,
         "days_off": 15,
         "holiday_count": 0,
         "in_season": false,
@@ -618,28 +618,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-TYO-2026-08-19T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "TYO",
-      "departure_date": "2026-08-19",
-      "return_date": "2026-09-01",
-      "airline": "EY",
-      "price": 2524.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20KRK%20on%202026-08-19%20through%202026-09-01&curr=PLN",
-      "score": 57.0,
-      "score_breakdown": {
-        "price_raw": 2524.0,
-        "days_off": 10,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 13,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-VIE-BNE-2026-12-01T09:00:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -926,24 +904,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-MAD-2026-10-23T17:35:00+02:00",
+      "id": "tp-cheap-KRK-MLA-2026-07-17T22:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
-      "destination": "MAD",
-      "departure_date": "2026-10-23",
-      "return_date": "2026-10-25",
-      "airline": "FR",
-      "price": 310.0,
+      "destination": "MLA",
+      "departure_date": "2026-07-17",
+      "return_date": "2026-07-21",
+      "airline": "MW",
+      "price": 418.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MAD%20from%20KRK%20on%202026-10-23%20through%202026-10-25&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MLA%20from%20KRK%20on%202026-07-17%20through%202026-07-21&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 310.0,
-        "days_off": 1,
+        "price_raw": 418.0,
+        "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 2,
+        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -1098,6 +1076,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 2,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-SNN-2026-07-24T05:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "SNN",
+      "departure_date": "2026-07-24",
+      "return_date": "2026-07-27",
+      "airline": "FR",
+      "price": 648.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SNN%20from%20KRK%20on%202026-07-24%20through%202026-07-27&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 648.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2263,7 +2263,7 @@
           "avg": 2836.2
         },
         "JP": {
-          "avg": 3578.4
+          "avg": 3603.8
         },
         "MY": {
           "avg": 2796.33
@@ -2278,16 +2278,16 @@
           "avg": 4565.0
         },
         "PH": {
-          "avg": 3259.86
+          "avg": 3261.0
         },
         "TH": {
-          "avg": 2567.89
+          "avg": 2571.0
         },
         "VN": {
           "avg": 3178.18
         },
         "ZA": {
-          "avg": 3311.67
+          "avg": 3317.67
         }
       }
     }
