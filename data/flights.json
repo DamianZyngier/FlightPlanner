@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30T19:55:42.592314",
+  "last_updated": "2026-07-01T03:43:35.177453",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HAN-2027-01-04T10:55:00+01:00",
@@ -68,6 +68,28 @@
       }
     },
     {
+      "id": "tp-cheap-BER-JNB-2026-12-09T10:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "JNB",
+      "departure_date": "2026-12-09",
+      "return_date": "2027-01-20",
+      "airline": "EY",
+      "price": 3232.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20BER%20on%202026-12-09%20through%202027-01-20&curr=PLN",
+      "score": 75.6,
+      "score_breakdown": {
+        "price_raw": 3232.0,
+        "days_off": 28,
+        "holiday_count": 4,
+        "in_season": true,
+        "duration_days": 42,
+        "efficiency": 14
+      }
+    },
+    {
       "id": "tp-cheap-PRG-LIM-2026-08-27T10:15:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -98,12 +120,12 @@
       "departure_date": "2026-12-06",
       "return_date": "2027-01-23",
       "airline": "EN",
-      "price": 3639.0,
+      "price": 3636.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20PRG%20on%202026-12-06%20through%202027-01-23&curr=PLN",
       "score": 72.2,
       "score_breakdown": {
-        "price_raw": 3639.0,
+        "price_raw": 3636.0,
         "days_off": 32,
         "holiday_count": 4,
         "in_season": true,
@@ -274,12 +296,12 @@
       "departure_date": "2027-06-01",
       "return_date": "2027-06-21",
       "airline": "LO",
-      "price": 2340.0,
+      "price": 2338.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202027-06-01%20through%202027-06-21&curr=PLN",
       "score": 67.5,
       "score_breakdown": {
-        "price_raw": 2340.0,
+        "price_raw": 2338.0,
         "days_off": 15,
         "holiday_count": 0,
         "in_season": false,
@@ -318,12 +340,12 @@
       "departure_date": "2027-02-03",
       "return_date": "2027-02-17",
       "airline": "G9",
-      "price": 2360.0,
+      "price": 2358.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20PRG%20on%202027-02-03%20through%202027-02-17&curr=PLN",
       "score": 66.3,
       "score_breakdown": {
-        "price_raw": 2360.0,
+        "price_raw": 2358.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -434,28 +456,6 @@
       "score": 62.5,
       "score_breakdown": {
         "price_raw": 2822.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-WAW-TYO-2026-11-17T19:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "TYO",
-      "departure_date": "2026-11-17",
-      "return_date": "2026-12-01",
-      "airline": "CA",
-      "price": 2831.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-11-17%20through%202026-12-01&curr=PLN",
-      "score": 62.4,
-      "score_breakdown": {
-        "price_raw": 2831.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -1036,20 +1036,20 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-REG-2026-07-02T14:10:00+02:00",
+      "id": "tp-cheap-KRK-PEG-2026-10-09T10:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
-      "destination": "REG",
-      "departure_date": "2026-07-02",
-      "return_date": "2026-07-06",
+      "destination": "PEG",
+      "departure_date": "2026-10-09",
+      "return_date": "2026-10-13",
       "airline": "FR",
-      "price": 628.0,
+      "price": 764.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20REG%20from%20KRK%20on%202026-07-02%20through%202026-07-06&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20PEG%20from%20KRK%20on%202026-10-09%20through%202026-10-13&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 628.0,
+        "price_raw": 764.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
@@ -1103,44 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-06-01",
-      "stats": {
-        "AU": {
-          "avg": 5013.33
-        },
-        "CA": {
-          "avg": 3070.17
-        },
-        "JP": {
-          "avg": 3230.4
-        },
-        "MY": {
-          "avg": 3071.75
-        },
-        "NA": {
-          "avg": 3916.0
-        },
-        "NZ": {
-          "avg": 6461.2
-        },
-        "PE": {
-          "avg": 4449.5
-        },
-        "PH": {
-          "avg": 3672.43
-        },
-        "TH": {
-          "avg": 2950.14
-        },
-        "VN": {
-          "avg": 3302.0
-        },
-        "ZA": {
-          "avg": 3219.0
-        }
-      }
-    },
     {
       "date": "2026-06-02",
       "stats": {
@@ -2288,6 +2250,47 @@
         },
         "ZA": {
           "avg": 3326.56
+        }
+      }
+    },
+    {
+      "date": "2026-07-01",
+      "stats": {
+        "AU": {
+          "avg": 4681.86
+        },
+        "BW": {
+          "avg": 2984.0
+        },
+        "CA": {
+          "avg": 3120.4
+        },
+        "JP": {
+          "avg": 3525.67
+        },
+        "MY": {
+          "avg": 2796.33
+        },
+        "NA": {
+          "avg": 4000.5
+        },
+        "NZ": {
+          "avg": 6386.0
+        },
+        "PE": {
+          "avg": 4565.0
+        },
+        "PH": {
+          "avg": 3260.29
+        },
+        "TH": {
+          "avg": 2571.73
+        },
+        "VN": {
+          "avg": 3027.4
+        },
+        "ZA": {
+          "avg": 3302.56
         }
       }
     }
