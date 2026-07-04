@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-04T02:48:40.817722",
+  "last_updated": "2026-07-04T08:35:00.117242",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HKT-2026-11-23T11:25:00+01:00",
@@ -153,6 +153,28 @@
         "in_season": true,
         "duration_days": 42,
         "efficiency": 14
+      }
+    },
+    {
+      "id": "tp-cheap-BER-HAN-2026-12-06T06:35:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "HAN",
+      "departure_date": "2026-12-06",
+      "return_date": "2026-12-27",
+      "airline": "TK",
+      "price": 3291.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BER%20on%202026-12-06%20through%202026-12-27&curr=PLN",
+      "score": 75.1,
+      "score_breakdown": {
+        "price_raw": 3291.0,
+        "days_off": 14,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 21,
+        "efficiency": 7
       }
     },
     {
@@ -417,28 +439,6 @@
         "in_season": false,
         "duration_days": 20,
         "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-BER-GBE-2027-06-01T19:55:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "GBE",
-      "departure_date": "2027-06-01",
-      "return_date": "2027-06-15",
-      "airline": "AF",
-      "price": 2984.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GBE%20from%20BER%20on%202027-06-01%20through%202027-06-15&curr=PLN",
-      "score": 61.1,
-      "score_breakdown": {
-        "price_raw": 2984.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
       }
     },
     {
@@ -2266,16 +2266,13 @@
       "date": "2026-07-04",
       "stats": {
         "AU": {
-          "avg": 4774.0
-        },
-        "BW": {
-          "avg": 2984.0
+          "avg": 4763.67
         },
         "CA": {
           "avg": 2843.5
         },
         "JP": {
-          "avg": 3508.22
+          "avg": 3623.6
         },
         "MY": {
           "avg": 3145.4
@@ -2296,7 +2293,7 @@
           "avg": 2693.0
         },
         "VN": {
-          "avg": 3132.71
+          "avg": 3060.38
         },
         "ZA": {
           "avg": 3096.25
