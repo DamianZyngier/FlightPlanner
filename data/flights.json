@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T02:35:39.238380",
+  "last_updated": "2026-07-19T08:14:48.782349",
   "current_best": [
     {
       "id": "tp-cheap-BUD-BKK-2026-09-17T06:55:00+02:00",
@@ -816,6 +816,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-CDT-2026-07-23T10:15:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CDT",
+      "departure_date": "2026-07-23",
+      "return_date": "2026-07-27",
+      "airline": "FR",
+      "price": 561.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CDT%20from%20KRK%20on%202026-07-23%20through%202026-07-27&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 561.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-CLJ-2026-08-21T21:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1072,28 +1094,6 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 363.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-MRS-2026-11-12T15:40:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "MRS",
-      "departure_date": "2026-11-12",
-      "return_date": "2026-11-15",
-      "airline": "FR",
-      "price": 626.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MRS%20from%20KRK%20on%202026-11-12%20through%202026-11-15&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 626.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
