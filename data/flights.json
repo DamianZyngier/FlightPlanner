@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T08:55:31.245659",
+  "last_updated": "2026-07-20T14:02:49.982587",
   "current_best": [
     {
       "id": "tp-cheap-BER-BKK-2026-10-01T18:35:00+02:00",
@@ -87,6 +87,50 @@
         "in_season": true,
         "duration_days": 48,
         "efficiency": 16
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-TYO-2026-11-02T06:05:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "TYO",
+      "departure_date": "2026-11-02",
+      "return_date": "2026-11-17",
+      "airline": "NH",
+      "price": 2098.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-11-02%20through%202026-11-17&curr=PLN",
+      "score": 73.0,
+      "score_breakdown": {
+        "price_raw": 2098.0,
+        "days_off": 11,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-FUK-2026-10-20T12:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "FUK",
+      "departure_date": "2026-10-20",
+      "return_date": "2026-11-13",
+      "airline": "FM",
+      "price": 3192.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FUK%20from%20BUD%20on%202026-10-20%20through%202026-11-13&curr=PLN",
+      "score": 72.9,
+      "score_breakdown": {
+        "price_raw": 3192.0,
+        "days_off": 18,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 24,
+        "efficiency": 6
       }
     },
     {
@@ -395,28 +439,6 @@
         "in_season": true,
         "duration_days": 10,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-FUK-2026-11-11T11:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "FUK",
-      "departure_date": "2026-11-11",
-      "return_date": "2026-11-25",
-      "airline": "FM",
-      "price": 3226.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FUK%20from%20BUD%20on%202026-11-11%20through%202026-11-25&curr=PLN",
-      "score": 63.6,
-      "score_breakdown": {
-        "price_raw": 3226.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 4
       }
     },
     {
@@ -802,12 +824,12 @@
       "departure_date": "2026-11-30",
       "return_date": "2026-12-10",
       "airline": "ET",
-      "price": 2255.0,
+      "price": 2254.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20VIE%20on%202026-11-30%20through%202026-12-10&curr=PLN",
       "score": 58.2,
       "score_breakdown": {
-        "price_raw": 2255.0,
+        "price_raw": 2254.0,
         "days_off": 9,
         "holiday_count": 0,
         "in_season": true,
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-GVA-2026-09-03T15:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "GVA",
-      "departure_date": "2026-09-03",
-      "return_date": "2026-09-06",
-      "airline": "DS",
-      "price": 631.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GVA%20from%20KRK%20on%202026-09-03%20through%202026-09-06&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 631.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
         "efficiency": 1
       }
     }
@@ -2230,13 +2230,13 @@
       "date": "2026-07-20",
       "stats": {
         "AU": {
-          "avg": 4543.42
+          "avg": 4424.73
         },
         "CA": {
           "avg": 3155.38
         },
         "JP": {
-          "avg": 3357.36
+          "avg": 3287.36
         },
         "MY": {
           "avg": 2608.0
@@ -2245,7 +2245,7 @@
           "avg": 3852.0
         },
         "NZ": {
-          "avg": 5975.0
+          "avg": 6161.43
         },
         "PE": {
           "avg": 4404.5
@@ -2257,10 +2257,10 @@
           "avg": 2583.62
         },
         "VN": {
-          "avg": 2760.87
+          "avg": 2760.8
         },
         "ZA": {
-          "avg": 3172.73
+          "avg": 3172.64
         }
       }
     }
