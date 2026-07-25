@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T02:32:23.052145",
+  "last_updated": "2026-07-25T08:04:07.706205",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2026-12-11T19:35:00+01:00",
@@ -197,28 +197,6 @@
         "in_season": true,
         "duration_days": 18,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-DAD-2026-08-15T11:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "DAD",
-      "departure_date": "2026-08-15",
-      "return_date": "2026-09-15",
-      "airline": "EY",
-      "price": 3198.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202026-08-15%20through%202026-09-15&curr=PLN",
-      "score": 67.8,
-      "score_breakdown": {
-        "price_raw": 3198.0,
-        "days_off": 22,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 31,
-        "efficiency": 9
       }
     },
     {
@@ -637,6 +615,28 @@
         "in_season": true,
         "duration_days": 14,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-CEB-2027-02-16T19:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "CEB",
+      "departure_date": "2027-02-16",
+      "return_date": "2027-03-05",
+      "airline": "CA",
+      "price": 3248.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20WAW%20on%202027-02-16%20through%202027-03-05&curr=PLN",
+      "score": 58.9,
+      "score_breakdown": {
+        "price_raw": 3248.0,
+        "days_off": 14,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 17,
+        "efficiency": 3
       }
     },
     {
@@ -2242,22 +2242,22 @@
           "avg": 2521.5
         },
         "NA": {
-          "avg": 4021.0
+          "avg": 3888.25
         },
         "NZ": {
           "avg": 6206.56
         },
         "PE": {
-          "avg": 4921.0
+          "avg": 4698.25
         },
         "PH": {
-          "avg": 2969.57
+          "avg": 3004.38
         },
         "TH": {
           "avg": 2509.38
         },
         "VN": {
-          "avg": 2702.67
+          "avg": 2731.69
         },
         "ZA": {
           "avg": 2839.0
