@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T02:30:58.258786",
+  "last_updated": "2026-07-29T08:38:25.054601",
   "current_best": [
     {
       "id": "tp-cheap-RZE-BKK-2027-02-01T16:45:00+01:00",
@@ -882,7 +882,7 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-EDI-2026-10-02T23:15:00+02:00",
+      "id": "tp-cheap-KRK-EDI-2026-10-02T22:25:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
@@ -890,12 +890,12 @@
       "departure_date": "2026-10-02",
       "return_date": "2026-10-05",
       "airline": "FR",
-      "price": 473.0,
+      "price": 436.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20EDI%20from%20KRK%20on%202026-10-02%20through%202026-10-05&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 473.0,
+        "price_raw": 436.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -1044,12 +1044,12 @@
       "departure_date": "2026-09-24",
       "return_date": "2026-09-27",
       "airline": "FR",
-      "price": 202.0,
+      "price": 205.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20LON%20from%20KRK%20on%202026-09-24%20through%202026-09-27&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 202.0,
+        "price_raw": 205.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2236,19 +2236,19 @@
           "avg": 3981.0
         },
         "NZ": {
-          "avg": 5432.75
+          "avg": 6554.0
         },
         "PE": {
           "avg": 4291.0
         },
         "PH": {
-          "avg": 3289.29
+          "avg": 3026.67
         },
         "TH": {
           "avg": 2504.0
         },
         "VN": {
-          "avg": 2710.07
+          "avg": 2834.27
         },
         "ZA": {
           "avg": 2642.43
