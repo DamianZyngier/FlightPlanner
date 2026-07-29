@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T08:38:25.054601",
+  "last_updated": "2026-07-29T14:07:06.101195",
   "current_best": [
     {
       "id": "tp-cheap-RZE-BKK-2027-02-01T16:45:00+01:00",
@@ -43,6 +43,28 @@
         "in_season": true,
         "duration_days": 14,
         "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-CNX-2026-11-29T19:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "CNX",
+      "departure_date": "2026-11-29",
+      "return_date": "2027-01-28",
+      "airline": "CA",
+      "price": 3195.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20WAW%20on%202026-11-29%20through%202027-01-28&curr=PLN",
+      "score": 75.9,
+      "score_breakdown": {
+        "price_raw": 3195.0,
+        "days_off": 41,
+        "holiday_count": 4,
+        "in_season": true,
+        "duration_days": 60,
+        "efficiency": 19
       }
     },
     {
@@ -318,12 +340,12 @@
       "departure_date": "2026-12-30",
       "return_date": "2027-01-22",
       "airline": "CA",
-      "price": 4706.0,
+      "price": 4726.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20PER%20from%20VIE%20on%202026-12-30%20through%202027-01-22&curr=PLN",
-      "score": 63.3,
+      "score": 63.1,
       "score_breakdown": {
-        "price_raw": 4706.0,
+        "price_raw": 4726.0,
         "days_off": 16,
         "holiday_count": 2,
         "in_season": true,
@@ -351,6 +373,28 @@
         "in_season": false,
         "duration_days": 22,
         "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-TYO-2026-11-24T19:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "TYO",
+      "departure_date": "2026-11-24",
+      "return_date": "2026-12-08",
+      "airline": "CA",
+      "price": 2886.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-11-24%20through%202026-12-08&curr=PLN",
+      "score": 62.0,
+      "score_breakdown": {
+        "price_raw": 2886.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 3
       }
     },
     {
@@ -772,28 +816,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-BHX-2026-10-14T17:55:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BHX",
-      "departure_date": "2026-10-14",
-      "return_date": "2026-10-18",
-      "airline": "FR",
-      "price": 386.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BHX%20from%20KRK%20on%202026-10-14%20through%202026-10-18&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 386.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-BJV-2026-09-18T20:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -852,28 +874,6 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 456.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-EAP-2027-06-05T13:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "EAP",
-      "departure_date": "2027-06-05",
-      "return_date": "2027-06-09",
-      "airline": "DS",
-      "price": 339.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20EAP%20from%20KRK%20on%202027-06-05%20through%202027-06-09&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 339.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
@@ -992,6 +992,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-HRG-2026-11-19T18:40:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "HRG",
+      "departure_date": "2026-11-19",
+      "return_date": "2026-11-23",
+      "airline": "W6",
+      "price": 926.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HRG%20from%20KRK%20on%202026-11-19%20through%202026-11-23&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 926.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-JMK-2026-08-21T09:05:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-MAD-2026-10-10T12:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "MAD",
-      "departure_date": "2026-10-10",
-      "return_date": "2026-10-14",
-      "airline": "FR",
-      "price": 351.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MAD%20from%20KRK%20on%202026-10-10%20through%202026-10-14&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 351.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     }
@@ -2221,34 +2221,34 @@
       "date": "2026-07-29",
       "stats": {
         "AU": {
-          "avg": 4157.27
+          "avg": 4159.09
         },
         "CA": {
           "avg": 2890.5
         },
         "JP": {
-          "avg": 3503.62
+          "avg": 3499.0
         },
         "MY": {
-          "avg": 2549.8
+          "avg": 2616.67
         },
         "NA": {
           "avg": 3981.0
         },
         "NZ": {
-          "avg": 6554.0
+          "avg": 6205.5
         },
         "PE": {
           "avg": 4291.0
         },
         "PH": {
-          "avg": 3026.67
+          "avg": 2968.71
         },
         "TH": {
-          "avg": 2504.0
+          "avg": 2576.0
         },
         "VN": {
-          "avg": 2834.27
+          "avg": 2834.73
         },
         "ZA": {
           "avg": 2642.43
