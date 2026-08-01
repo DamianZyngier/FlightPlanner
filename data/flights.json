@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01T02:41:27.194418",
+  "last_updated": "2026-08-01T08:18:10.929946",
   "current_best": [
     {
       "id": "tp-cheap-VIE-HKT-2026-09-16T22:25:00+02:00",
@@ -208,12 +208,12 @@
       "departure_date": "2026-11-16",
       "return_date": "2026-11-30",
       "airline": "CA",
-      "price": 1871.0,
+      "price": 1894.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-11-16%20through%202026-11-30&curr=PLN",
-      "score": 70.4,
+      "score": 70.2,
       "score_breakdown": {
-        "price_raw": 1871.0,
+        "price_raw": 1894.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -439,6 +439,28 @@
         "in_season": true,
         "duration_days": 21,
         "efficiency": 6
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-DAD-2026-11-07T20:35:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "DAD",
+      "departure_date": "2026-11-07",
+      "return_date": "2026-11-21",
+      "airline": "VJ",
+      "price": 2975.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202026-11-07%20through%202026-11-21&curr=PLN",
+      "score": 62.2,
+      "score_breakdown": {
+        "price_raw": 2975.0,
+        "days_off": 9,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 14,
+        "efficiency": 5
       }
     },
     {
@@ -772,7 +794,7 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-EDI-2026-10-02T22:25:00+02:00",
+      "id": "tp-cheap-KRK-EDI-2026-10-02T23:15:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
@@ -780,12 +802,12 @@
       "departure_date": "2026-10-02",
       "return_date": "2026-10-05",
       "airline": "FR",
-      "price": 465.0,
+      "price": 466.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20EDI%20from%20KRK%20on%202026-10-02%20through%202026-10-05&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 465.0,
+        "price_raw": 466.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -970,20 +992,20 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-PRG-2026-08-08T05:45:00+02:00",
+      "id": "tp-cheap-KRK-RAK-2026-11-26T05:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
-      "destination": "PRG",
-      "departure_date": "2026-08-08",
-      "return_date": "2026-08-11",
-      "airline": "FR",
-      "price": 320.0,
+      "destination": "RAK",
+      "departure_date": "2026-11-26",
+      "return_date": "2026-11-29",
+      "airline": "W6",
+      "price": 486.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20PRG%20from%20KRK%20on%202026-08-08%20through%202026-08-11&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20RAK%20from%20KRK%20on%202026-11-26%20through%202026-11-29&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 320.0,
+        "price_raw": 486.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -1077,28 +1099,6 @@
         "in_season": true,
         "duration_days": 8,
         "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-BER-HKT-2027-04-07T16:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "HKT",
-      "departure_date": "2027-04-07",
-      "return_date": "2027-04-21",
-      "airline": "EY",
-      "price": 2740.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BER%20on%202027-04-07%20through%202027-04-21&curr=PLN",
-      "score": 55.2,
-      "score_breakdown": {
-        "price_raw": 2740.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 14,
-        "efficiency": 3
       }
     }
   ],
@@ -2227,7 +2227,7 @@
           "avg": 3691.33
         },
         "NZ": {
-          "avg": 6451.0
+          "avg": 6704.6
         },
         "PE": {
           "avg": 4198.75
@@ -2236,10 +2236,10 @@
           "avg": 3215.67
         },
         "TH": {
-          "avg": 2503.92
+          "avg": 2505.83
         },
         "VN": {
-          "avg": 2885.07
+          "avg": 2886.07
         },
         "ZA": {
           "avg": 2704.0
