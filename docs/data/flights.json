@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01T19:05:45.363376",
+  "last_updated": "2026-08-02T02:39:24.194025",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2027-01-06T19:35:00+01:00",
@@ -398,6 +398,28 @@
       }
     },
     {
+      "id": "tp-cheap-BUD-HAN-2026-08-18T12:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "HAN",
+      "departure_date": "2026-08-18",
+      "return_date": "2026-09-07",
+      "airline": "MU",
+      "price": 2420.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BUD%20on%202026-08-18%20through%202026-09-07&curr=PLN",
+      "score": 66.8,
+      "score_breakdown": {
+        "price_raw": 2420.0,
+        "days_off": 15,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 20,
+        "efficiency": 5
+      }
+    },
+    {
       "id": "tp-cheap-PRG-BKK-2026-09-07T21:30:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -772,6 +794,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-ATH-2026-10-17T11:45:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "ATH",
+      "departure_date": "2026-10-17",
+      "return_date": "2026-10-20",
+      "airline": "RR",
+      "price": 505.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20ATH%20from%20KRK%20on%202026-10-17%20through%202026-10-20&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 505.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-BER-2026-10-17T15:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -834,28 +878,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BUD-2026-08-27T21:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BUD",
-      "departure_date": "2026-08-27",
-      "return_date": "2026-08-31",
-      "airline": "FR",
-      "price": 216.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BUD%20from%20KRK%20on%202026-08-27%20through%202026-08-31&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 216.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -1036,24 +1058,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-OSL-2026-09-17T19:15:00+02:00",
+      "id": "tp-cheap-KRK-OSL-2026-08-29T06:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "OSL",
-      "departure_date": "2026-09-17",
-      "return_date": "2026-09-21",
+      "departure_date": "2026-08-29",
+      "return_date": "2026-09-01",
       "airline": "FR",
-      "price": 228.0,
+      "price": 136.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20OSL%20from%20KRK%20on%202026-09-17%20through%202026-09-21&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20OSL%20from%20KRK%20on%202026-08-29%20through%202026-09-01&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 228.0,
-        "days_off": 3,
+        "price_raw": 136.0,
+        "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 4,
+        "duration_days": 3,
         "efficiency": 1
       }
     },
@@ -1078,72 +1100,9 @@
         "duration_days": 3,
         "efficiency": 1
       }
-    },
-    {
-      "id": "tp-cheap-KRK-STO-2026-10-17T20:25:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "STO",
-      "departure_date": "2026-10-17",
-      "return_date": "2026-10-19",
-      "airline": "FR",
-      "price": 208.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20STO%20from%20KRK%20on%202026-10-17%20through%202026-10-19&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 208.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
-        "efficiency": 1
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-07-03",
-      "stats": {
-        "AU": {
-          "avg": 4774.0
-        },
-        "BW": {
-          "avg": 2984.0
-        },
-        "CA": {
-          "avg": 2843.5
-        },
-        "JP": {
-          "avg": 3508.22
-        },
-        "MY": {
-          "avg": 2845.75
-        },
-        "NA": {
-          "avg": 3585.0
-        },
-        "NZ": {
-          "avg": 6415.0
-        },
-        "PE": {
-          "avg": 3985.0
-        },
-        "PH": {
-          "avg": 3192.43
-        },
-        "TH": {
-          "avg": 2728.53
-        },
-        "VN": {
-          "avg": 3132.71
-        },
-        "ZA": {
-          "avg": 3096.25
-        }
-      }
-    },
     {
       "date": "2026-07-04",
       "stats": {
@@ -2240,6 +2199,44 @@
         },
         "VN": {
           "avg": 2843.54
+        },
+        "ZA": {
+          "avg": 2774.12
+        }
+      }
+    },
+    {
+      "date": "2026-08-02",
+      "stats": {
+        "AU": {
+          "avg": 4080.73
+        },
+        "CA": {
+          "avg": 3014.2
+        },
+        "JP": {
+          "avg": 3541.0
+        },
+        "MY": {
+          "avg": 2991.0
+        },
+        "NA": {
+          "avg": 3691.33
+        },
+        "NZ": {
+          "avg": 6665.6
+        },
+        "PE": {
+          "avg": 4198.75
+        },
+        "PH": {
+          "avg": 3077.75
+        },
+        "TH": {
+          "avg": 2502.17
+        },
+        "VN": {
+          "avg": 2843.46
         },
         "ZA": {
           "avg": 2774.12
