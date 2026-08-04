@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04T02:25:02.980434",
+  "last_updated": "2026-08-04T08:33:55.330500",
   "current_best": [
     {
       "id": "tp-cheap-WAW-JNB-2026-12-13T09:35:00+01:00",
@@ -420,28 +420,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-YYC-2026-09-30T20:50:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "YYC",
-      "departure_date": "2026-09-30",
-      "return_date": "2026-10-12",
-      "airline": "W4",
-      "price": 2464.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20WAW%20on%202026-09-30%20through%202026-10-12&curr=PLN",
-      "score": 65.5,
-      "score_breakdown": {
-        "price_raw": 2464.0,
-        "days_off": 9,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 12,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-KRK-BKK-2026-11-16T06:50:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -684,28 +662,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-CEB-2027-02-15T19:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "CEB",
-      "departure_date": "2027-02-15",
-      "return_date": "2027-03-05",
-      "airline": "CA",
-      "price": 3257.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20WAW%20on%202027-02-15%20through%202027-03-05&curr=PLN",
-      "score": 58.9,
-      "score_breakdown": {
-        "price_raw": 3257.0,
-        "days_off": 15,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 18,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-VIE-CPT-2026-09-10T07:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -934,12 +890,12 @@
       "departure_date": "2026-10-02",
       "return_date": "2026-10-05",
       "airline": "FR",
-      "price": 434.0,
+      "price": 455.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20EDI%20from%20KRK%20on%202026-10-02%20through%202026-10-05&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 434.0,
+        "price_raw": 455.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -1098,6 +1054,50 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-STO-2026-10-17T20:25:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "STO",
+      "departure_date": "2026-10-17",
+      "return_date": "2026-10-19",
+      "airline": "FR",
+      "price": 208.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20STO%20from%20KRK%20on%202026-10-17%20through%202026-10-19&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 208.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-SVG-2026-09-04T13:35:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "SVG",
+      "departure_date": "2026-09-04",
+      "return_date": "2026-09-06",
+      "airline": "W6",
+      "price": 354.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SVG%20from%20KRK%20on%202026-09-04%20through%202026-09-06&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 354.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
         "efficiency": 1
       }
     }
@@ -2212,10 +2212,10 @@
           "avg": 4502.0
         },
         "CA": {
-          "avg": 2773.0
+          "avg": 2927.5
         },
         "JP": {
-          "avg": 3418.38
+          "avg": 3412.88
         },
         "MY": {
           "avg": 3024.12
@@ -2230,7 +2230,7 @@
           "avg": 4394.33
         },
         "PH": {
-          "avg": 3220.38
+          "avg": 3215.14
         },
         "TH": {
           "avg": 2433.0
