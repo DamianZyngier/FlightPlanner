@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-08T06:50:15.829669",
+  "last_updated": "2026-08-08T12:43:40.087364",
   "current_best": [
     {
       "id": "tp-cheap-WAW-JNB-2026-12-13T09:35:00+01:00",
@@ -398,28 +398,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-HKT-2026-10-17T22:10:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "HKT",
-      "departure_date": "2026-10-17",
-      "return_date": "2026-11-01",
-      "airline": "U2",
-      "price": 2764.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BER%20on%202026-10-17%20through%202026-11-01&curr=PLN",
-      "score": 64.0,
-      "score_breakdown": {
-        "price_raw": 2764.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 15,
-        "efficiency": 5
-      }
-    },
-    {
       "id": "tp-cheap-PRG-YVR-2026-10-05T21:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -538,12 +516,12 @@
       "departure_date": "2026-11-19",
       "return_date": "2026-11-28",
       "airline": "MU",
-      "price": 2464.0,
+      "price": 2462.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-11-19%20through%202026-11-28&curr=PLN",
       "score": 61.0,
       "score_breakdown": {
-        "price_raw": 2464.0,
+        "price_raw": 2462.0,
         "days_off": 7,
         "holiday_count": 0,
         "in_season": true,
@@ -838,28 +816,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-MNL-2026-11-30T19:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "MNL",
-      "departure_date": "2026-11-30",
-      "return_date": "2026-12-14",
-      "airline": "CA",
-      "price": 2569.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-11-30%20through%202026-12-14&curr=PLN",
-      "score": 56.6,
-      "score_breakdown": {
-        "price_raw": 2569.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 14,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-KRK-AGP-2026-09-25T18:40:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1014,28 +970,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-EIN-2026-09-10T12:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "EIN",
-      "departure_date": "2026-09-10",
-      "return_date": "2026-09-13",
-      "airline": "W6",
-      "price": 258.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20EIN%20from%20KRK%20on%202026-09-10%20through%202026-09-13&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 258.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-EVN-2026-11-27T19:40:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1094,6 +1028,72 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 643.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-HAM-2026-09-17T19:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "HAM",
+      "departure_date": "2026-09-17",
+      "return_date": "2026-09-20",
+      "airline": "W6",
+      "price": 613.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAM%20from%20KRK%20on%202026-09-17%20through%202026-09-20&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 613.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-IBZ-2026-10-07T16:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "IBZ",
+      "departure_date": "2026-10-07",
+      "return_date": "2026-10-11",
+      "airline": "W6",
+      "price": 644.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20IBZ%20from%20KRK%20on%202026-10-07%20through%202026-10-11&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 644.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-KUT-2026-10-16T21:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "KUT",
+      "departure_date": "2026-10-16",
+      "return_date": "2026-10-19",
+      "airline": "LO",
+      "price": 821.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUT%20from%20KRK%20on%202026-10-16%20through%202026-10-19&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 821.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2227,19 +2227,19 @@
           "avg": 5192.0
         },
         "PE": {
-          "avg": 3864.25
+          "avg": 3844.0
         },
         "PH": {
-          "avg": 3555.58
+          "avg": 3645.27
         },
         "TH": {
-          "avg": 2416.69
+          "avg": 2415.85
         },
         "VN": {
-          "avg": 2890.18
+          "avg": 2869.83
         },
         "ZA": {
-          "avg": 2957.5
+          "avg": 2899.56
         }
       }
     }
