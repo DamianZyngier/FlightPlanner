@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-08T01:25:49.053933",
+  "last_updated": "2026-08-08T06:50:15.829669",
   "current_best": [
     {
       "id": "tp-cheap-WAW-JNB-2026-12-13T09:35:00+01:00",
@@ -152,28 +152,6 @@
         "holiday_count": 2,
         "in_season": true,
         "duration_days": 14,
-        "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-HKT-2026-11-08T11:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "HKT",
-      "departure_date": "2026-11-08",
-      "return_date": "2026-11-23",
-      "airline": "FM",
-      "price": 2469.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-11-08%20through%202026-11-23&curr=PLN",
-      "score": 74.4,
-      "score_breakdown": {
-        "price_raw": 2469.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 15,
         "efficiency": 5
       }
     },
@@ -549,6 +527,28 @@
         "in_season": false,
         "duration_days": 13,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-HKT-2026-11-19T19:55:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "HKT",
+      "departure_date": "2026-11-19",
+      "return_date": "2026-11-28",
+      "airline": "MU",
+      "price": 2464.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-11-19%20through%202026-11-28&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 2464.0,
+        "days_off": 7,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 9,
+        "efficiency": 2
       }
     },
     {
@@ -2218,7 +2218,7 @@
           "avg": 3059.4
         },
         "MY": {
-          "avg": 3016.5
+          "avg": 2496.0
         },
         "NA": {
           "avg": 3192.5
@@ -2233,7 +2233,7 @@
           "avg": 3555.58
         },
         "TH": {
-          "avg": 2417.08
+          "avg": 2416.69
         },
         "VN": {
           "avg": 2890.18
