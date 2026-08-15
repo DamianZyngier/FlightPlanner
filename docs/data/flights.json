@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-15T01:08:29.296886",
+  "last_updated": "2026-08-15T06:35:02.470024",
   "current_best": [
     {
       "id": "tp-cheap-PRG-BKK-2026-10-07T21:30:00+02:00",
@@ -332,28 +332,6 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-HKT-2026-11-19T19:55:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "HKT",
-      "departure_date": "2026-11-19",
-      "return_date": "2026-11-28",
-      "airline": "MU",
-      "price": 2462.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-11-19%20through%202026-11-28&curr=PLN",
-      "score": 61.0,
-      "score_breakdown": {
-        "price_raw": 2462.0,
-        "days_off": 7,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 9,
-        "efficiency": 2
-      }
-    },
-    {
       "id": "tp-cheap-VIE-HKT-2026-09-03T13:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -548,6 +526,28 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 14,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-HKT-2026-09-10T05:55:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "HKT",
+      "departure_date": "2026-09-10",
+      "return_date": "2026-09-25",
+      "airline": "RR",
+      "price": 2486.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-09-10%20through%202026-09-25&curr=PLN",
+      "score": 57.3,
+      "score_breakdown": {
+        "price_raw": 2486.0,
+        "days_off": 12,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 15,
         "efficiency": 3
       }
     },
@@ -2254,7 +2254,7 @@
           "avg": 3288.5
         },
         "TH": {
-          "avg": 2616.93
+          "avg": 2618.53
         },
         "VN": {
           "avg": 2876.54
