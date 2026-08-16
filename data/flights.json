@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T06:36:48.453075",
+  "last_updated": "2026-08-16T12:35:37.649997",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HKT-2026-09-01T13:15:00+02:00",
@@ -87,28 +87,6 @@
         "in_season": true,
         "duration_days": 23,
         "efficiency": 8
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-BKK-2026-09-09T19:55:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "BKK",
-      "departure_date": "2026-09-09",
-      "return_date": "2026-10-08",
-      "airline": "RR",
-      "price": 2329.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202026-09-09%20through%202026-10-08&curr=PLN",
-      "score": 75.1,
-      "score_breakdown": {
-        "price_raw": 2329.0,
-        "days_off": 22,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 29,
-        "efficiency": 7
       }
     },
     {
@@ -263,6 +241,50 @@
         "in_season": false,
         "duration_days": 21,
         "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-KTW-HKT-2026-11-06T05:40:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KTW",
+      "destination": "HKT",
+      "departure_date": "2026-11-06",
+      "return_date": "2026-11-22",
+      "airline": "LO",
+      "price": 3880.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20KTW%20on%202026-11-06%20through%202026-11-22&curr=PLN",
+      "score": 67.2,
+      "score_breakdown": {
+        "price_raw": 3880.0,
+        "days_off": 10,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 16,
+        "efficiency": 6
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-BKK-2026-12-01T09:45:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "BKK",
+      "departure_date": "2026-12-01",
+      "return_date": "2026-12-15",
+      "airline": "LO",
+      "price": 2292.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202026-12-01%20through%202026-12-15&curr=PLN",
+      "score": 66.9,
+      "score_breakdown": {
+        "price_raw": 2292.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 3
       }
     },
     {
@@ -1077,28 +1099,6 @@
         "in_season": false,
         "duration_days": 14,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-YVR-2027-05-01T09:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "YVR",
-      "departure_date": "2027-05-01",
-      "return_date": "2027-05-13",
-      "airline": "LH",
-      "price": 3215.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20BUD%20on%202027-05-01%20through%202027-05-13&curr=PLN",
-      "score": 55.7,
-      "score_breakdown": {
-        "price_raw": 3215.0,
-        "days_off": 8,
-        "holiday_count": 2,
-        "in_season": false,
-        "duration_days": 12,
-        "efficiency": 4
       }
     }
   ],
@@ -2230,7 +2230,7 @@
       "date": "2026-08-16",
       "stats": {
         "AU": {
-          "avg": 4213.75
+          "avg": 4395.44
         },
         "BW": {
           "avg": 4312.0
@@ -2251,19 +2251,19 @@
           "avg": 5735.0
         },
         "PE": {
-          "avg": 4022.0
+          "avg": 3965.0
         },
         "PH": {
           "avg": 3288.5
         },
         "TH": {
-          "avg": 2732.07
+          "avg": 2806.13
         },
         "VN": {
           "avg": 2899.08
         },
         "ZA": {
-          "avg": 2966.89
+          "avg": 2944.0
         }
       }
     }
