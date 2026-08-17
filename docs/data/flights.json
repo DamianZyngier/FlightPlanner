@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T18:26:18.088557",
+  "last_updated": "2026-08-17T01:09:56.911805",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HKT-2026-09-01T13:15:00+02:00",
@@ -10,12 +10,12 @@
       "departure_date": "2026-09-01",
       "return_date": "2026-09-29",
       "airline": "G9",
-      "price": 1796.0,
+      "price": 1797.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20PRG%20on%202026-09-01%20through%202026-09-29&curr=PLN",
       "score": 79.5,
       "score_breakdown": {
-        "price_raw": 1796.0,
+        "price_raw": 1797.0,
         "days_off": 21,
         "holiday_count": 0,
         "in_season": false,
@@ -186,12 +186,12 @@
       "departure_date": "2026-10-25",
       "return_date": "2026-11-30",
       "airline": "PC",
-      "price": 2946.0,
+      "price": 2948.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BER%20on%202026-10-25%20through%202026-11-30&curr=PLN",
-      "score": 70.0,
+      "score": 69.9,
       "score_breakdown": {
-        "price_raw": 2946.0,
+        "price_raw": 2948.0,
         "days_off": 25,
         "holiday_count": 2,
         "in_season": false,
@@ -263,28 +263,6 @@
         "in_season": false,
         "duration_days": 21,
         "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-KTW-HKT-2026-11-06T05:40:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KTW",
-      "destination": "HKT",
-      "departure_date": "2026-11-06",
-      "return_date": "2026-11-22",
-      "airline": "LO",
-      "price": 3880.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20KTW%20on%202026-11-06%20through%202026-11-22&curr=PLN",
-      "score": 67.2,
-      "score_breakdown": {
-        "price_raw": 3880.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 16,
-        "efficiency": 6
       }
     },
     {
@@ -384,12 +362,12 @@
       "departure_date": "2026-11-18",
       "return_date": "2026-11-29",
       "airline": "MU",
-      "price": 2437.0,
+      "price": 2438.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20BUD%20on%202026-11-18%20through%202026-11-29&curr=PLN",
       "score": 65.7,
       "score_breakdown": {
-        "price_raw": 2437.0,
+        "price_raw": 2438.0,
         "days_off": 8,
         "holiday_count": 0,
         "in_season": true,
@@ -670,17 +648,39 @@
       "departure_date": "2026-10-28",
       "return_date": "2026-11-10",
       "airline": "AL",
-      "price": 3450.0,
+      "price": 3452.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BER%20on%202026-10-28%20through%202026-11-10&curr=PLN",
       "score": 57.2,
       "score_breakdown": {
-        "price_raw": 3450.0,
+        "price_raw": 3452.0,
         "days_off": 10,
         "holiday_count": 1,
         "in_season": true,
         "duration_days": 13,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BER-SYD-2026-08-28T06:05:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "SYD",
+      "departure_date": "2026-08-28",
+      "return_date": "2026-09-30",
+      "airline": "U2",
+      "price": 4549.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20BER%20on%202026-08-28%20through%202026-09-30&curr=PLN",
+      "score": 56.6,
+      "score_breakdown": {
+        "price_raw": 4549.0,
+        "days_off": 24,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 33,
+        "efficiency": 9
       }
     },
     {
@@ -692,12 +692,12 @@
       "departure_date": "2026-08-31",
       "return_date": "2026-09-13",
       "airline": "FM",
-      "price": 2582.0,
+      "price": 2583.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BUD%20on%202026-08-31%20through%202026-09-13&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 2582.0,
+        "price_raw": 2583.0,
         "days_off": 10,
         "holiday_count": 0,
         "in_season": false,
@@ -722,6 +722,28 @@
         "price_raw": 635.0,
         "days_off": 2,
         "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-ATH-2027-01-06T14:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "ATH",
+      "departure_date": "2027-01-06",
+      "return_date": "2027-01-09",
+      "airline": "W6",
+      "price": 425.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20ATH%20from%20KRK%20on%202027-01-06%20through%202027-01-09&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 425.0,
+        "days_off": 2,
+        "holiday_count": 1,
         "in_season": false,
         "duration_days": 3,
         "efficiency": 1
@@ -1078,69 +1100,9 @@
         "duration_days": 2,
         "efficiency": 1
       }
-    },
-    {
-      "id": "tp-cheap-KRK-TLL-2026-09-10T14:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "TLL",
-      "departure_date": "2026-09-10",
-      "return_date": "2026-09-13",
-      "airline": "W6",
-      "price": 301.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TLL%20from%20KRK%20on%202026-09-10%20through%202026-09-13&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 301.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-07-18",
-      "stats": {
-        "AU": {
-          "avg": 4563.38
-        },
-        "CA": {
-          "avg": 2960.33
-        },
-        "JP": {
-          "avg": 3399.42
-        },
-        "MY": {
-          "avg": 2601.5
-        },
-        "NA": {
-          "avg": 4165.25
-        },
-        "NZ": {
-          "avg": 5804.4
-        },
-        "PE": {
-          "avg": 4372.8
-        },
-        "PH": {
-          "avg": 2630.5
-        },
-        "TH": {
-          "avg": 2589.59
-        },
-        "VN": {
-          "avg": 2841.92
-        },
-        "ZA": {
-          "avg": 3340.64
-        }
-      }
-    },
     {
       "date": "2026-07-19",
       "stats": {
@@ -2261,6 +2223,44 @@
         },
         "ZA": {
           "avg": 2990.89
+        }
+      }
+    },
+    {
+      "date": "2026-08-17",
+      "stats": {
+        "AU": {
+          "avg": 4384.25
+        },
+        "CA": {
+          "avg": 3018.5
+        },
+        "JP": {
+          "avg": 3367.88
+        },
+        "MY": {
+          "avg": 2560.6
+        },
+        "NA": {
+          "avg": 4093.33
+        },
+        "NZ": {
+          "avg": 6361.6
+        },
+        "PE": {
+          "avg": 3965.67
+        },
+        "PH": {
+          "avg": 3099.86
+        },
+        "TH": {
+          "avg": 2716.06
+        },
+        "VN": {
+          "avg": 2759.23
+        },
+        "ZA": {
+          "avg": 2991.11
         }
       }
     }
