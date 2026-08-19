@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T06:40:19.282107",
+  "last_updated": "2026-08-19T12:42:12.470556",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HKT-2026-09-01T13:15:00+02:00",
@@ -175,6 +175,28 @@
         "in_season": false,
         "duration_days": 36,
         "efficiency": 11
+      }
+    },
+    {
+      "id": "tp-cheap-BER-MEL-2026-12-31T15:15:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "MEL",
+      "departure_date": "2026-12-31",
+      "return_date": "2027-01-23",
+      "airline": "IB",
+      "price": 3980.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20BER%20on%202026-12-31%20through%202027-01-23&curr=PLN",
+      "score": 69.3,
+      "score_breakdown": {
+        "price_raw": 3980.0,
+        "days_off": 15,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 23,
+        "efficiency": 8
       }
     },
     {
@@ -486,6 +508,28 @@
       }
     },
     {
+      "id": "tp-cheap-BER-TYO-2026-10-30T20:35:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "TYO",
+      "departure_date": "2026-10-30",
+      "return_date": "2026-11-13",
+      "airline": "AL",
+      "price": 3504.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BER%20on%202026-10-30%20through%202026-11-13&curr=PLN",
+      "score": 61.3,
+      "score_breakdown": {
+        "price_raw": 3504.0,
+        "days_off": 10,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 4
+      }
+    },
+    {
       "id": "tp-cheap-KRK-IBZ-2026-11-07T15:25:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -750,28 +794,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-TYO-2026-10-28T22:20:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "TYO",
-      "departure_date": "2026-10-28",
-      "return_date": "2026-11-10",
-      "airline": "AL",
-      "price": 3452.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BER%20on%202026-10-28%20through%202026-11-10&curr=PLN",
-      "score": 57.2,
-      "score_breakdown": {
-        "price_raw": 3452.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 13,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-WAW-JNB-2027-03-23T19:05:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -834,28 +856,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-ANK-2026-10-08T21:45:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "ANK",
-      "departure_date": "2026-10-08",
-      "return_date": "2026-10-12",
-      "airline": "RR",
-      "price": 790.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20ANK%20from%20KRK%20on%202026-10-08%20through%202026-10-12&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 790.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -970,24 +970,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-EIN-2026-09-18T14:05:00+02:00",
+      "id": "tp-cheap-KRK-EIN-2026-09-26T08:10:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "EIN",
-      "departure_date": "2026-09-18",
-      "return_date": "2026-09-20",
+      "departure_date": "2026-09-26",
+      "return_date": "2026-09-30",
       "airline": "FR",
-      "price": 476.0,
+      "price": 405.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20EIN%20from%20KRK%20on%202026-09-18%20through%202026-09-20&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20EIN%20from%20KRK%20on%202026-09-26%20through%202026-09-30&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 476.0,
-        "days_off": 1,
+        "price_raw": 405.0,
+        "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 2,
+        "duration_days": 4,
         "efficiency": 1
       }
     },
@@ -2230,16 +2230,16 @@
       "date": "2026-08-19",
       "stats": {
         "AU": {
-          "avg": 4390.0
+          "avg": 4327.9
         },
         "CA": {
-          "avg": 3230.5
+          "avg": 3094.2
         },
         "JP": {
-          "avg": 3188.5
+          "avg": 3197.17
         },
         "MY": {
-          "avg": 2606.17
+          "avg": 2586.17
         },
         "NA": {
           "avg": 3986.5
@@ -2248,7 +2248,7 @@
           "avg": 5198.0
         },
         "PE": {
-          "avg": 3818.0
+          "avg": 3986.75
         },
         "PH": {
           "avg": 2835.29
@@ -2257,7 +2257,7 @@
           "avg": 2641.5
         },
         "VN": {
-          "avg": 2758.73
+          "avg": 2772.13
         },
         "ZA": {
           "avg": 2938.5
