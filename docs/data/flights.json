@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20T01:08:18.409276",
+  "last_updated": "2026-08-20T06:41:55.231602",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HKT-2026-09-01T13:15:00+02:00",
@@ -90,28 +90,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-BKK-2026-11-02T18:20:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "BKK",
-      "departure_date": "2026-11-02",
-      "return_date": "2026-11-16",
-      "airline": "CA",
-      "price": 1902.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-11-02%20through%202026-11-16&curr=PLN",
-      "score": 74.7,
-      "score_breakdown": {
-        "price_raw": 1902.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-WAW-CNX-2026-12-11T10:10:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -153,28 +131,6 @@
         "in_season": false,
         "duration_days": 26,
         "efficiency": 8
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-CPT-2027-02-02T06:50:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "CPT",
-      "departure_date": "2027-02-02",
-      "return_date": "2027-02-23",
-      "airline": "TK",
-      "price": 2752.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20VIE%20on%202027-02-02%20through%202027-02-23&curr=PLN",
-      "score": 72.1,
-      "score_breakdown": {
-        "price_raw": 2752.0,
-        "days_off": 16,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 21,
-        "efficiency": 5
       }
     },
     {
@@ -552,7 +508,29 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-YVR-2026-09-18T12:10:00+02:00",
+      "id": "tp-cheap-VIE-BKK-2026-10-05T16:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "BKK",
+      "departure_date": "2026-10-05",
+      "return_date": "2026-10-19",
+      "airline": "SV",
+      "price": 1832.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-10-05%20through%202026-10-19&curr=PLN",
+      "score": 62.7,
+      "score_breakdown": {
+        "price_raw": 1832.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 14,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-YVR-2026-09-18T08:50:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "PRG",
@@ -560,12 +538,12 @@
       "departure_date": "2026-09-18",
       "return_date": "2026-09-28",
       "airline": "DE",
-      "price": 2936.0,
+      "price": 2853.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20PRG%20on%202026-09-18%20through%202026-09-28&curr=PLN",
-      "score": 61.5,
+      "score": 62.2,
       "score_breakdown": {
-        "price_raw": 2936.0,
+        "price_raw": 2853.0,
         "days_off": 7,
         "holiday_count": 0,
         "in_season": true,
@@ -791,6 +769,28 @@
         "in_season": true,
         "duration_days": 8,
         "efficiency": 2
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-KUL-2026-10-07T21:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "KUL",
+      "departure_date": "2026-10-07",
+      "return_date": "2026-10-21",
+      "airline": "G9",
+      "price": 2336.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20PRG%20on%202026-10-07%20through%202026-10-21&curr=PLN",
+      "score": 58.5,
+      "score_breakdown": {
+        "price_raw": 2336.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 14,
+        "efficiency": 3
       }
     },
     {
@@ -2233,13 +2233,13 @@
           "avg": 4263.44
         },
         "CA": {
-          "avg": 2994.4
+          "avg": 2977.8
         },
         "JP": {
           "avg": 3431.43
         },
         "MY": {
-          "avg": 2582.17
+          "avg": 2588.0
         },
         "NA": {
           "avg": 3986.5
@@ -2254,13 +2254,13 @@
           "avg": 2765.29
         },
         "TH": {
-          "avg": 2661.33
+          "avg": 2656.67
         },
         "VN": {
           "avg": 2759.21
         },
         "ZA": {
-          "avg": 2937.67
+          "avg": 2939.78
         }
       }
     }
