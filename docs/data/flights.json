@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22T06:36:49.185378",
+  "last_updated": "2026-08-22T12:35:08.570374",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2027-01-13T19:35:00+01:00",
@@ -46,28 +46,6 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-HAN-2026-09-06T13:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "HAN",
-      "departure_date": "2026-09-06",
-      "return_date": "2026-10-31",
-      "airline": "CA",
-      "price": 2146.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BUD%20on%202026-09-06%20through%202026-10-31&curr=PLN",
-      "score": 76.6,
-      "score_breakdown": {
-        "price_raw": 2146.0,
-        "days_off": 40,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 55,
-        "efficiency": 15
-      }
-    },
-    {
       "id": "tp-cheap-VIE-MNL-2026-11-09T15:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -76,12 +54,12 @@
       "departure_date": "2026-11-09",
       "return_date": "2026-12-07",
       "airline": "SV",
-      "price": 2231.0,
+      "price": 2227.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202026-11-09%20through%202026-12-07&curr=PLN",
       "score": 75.9,
       "score_breakdown": {
-        "price_raw": 2231.0,
+        "price_raw": 2227.0,
         "days_off": 20,
         "holiday_count": 1,
         "in_season": false,
@@ -318,39 +296,17 @@
       "departure_date": "2026-11-02",
       "return_date": "2026-11-12",
       "airline": "SV",
-      "price": 1839.0,
+      "price": 1837.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-11-02%20through%202026-11-12&curr=PLN",
       "score": 66.2,
       "score_breakdown": {
-        "price_raw": 1839.0,
+        "price_raw": 1837.0,
         "days_off": 8,
         "holiday_count": 1,
         "in_season": true,
         "duration_days": 10,
         "efficiency": 2
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-YVR-2026-11-01T08:45:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "YVR",
-      "departure_date": "2026-11-01",
-      "return_date": "2026-11-22",
-      "airline": "TO",
-      "price": 3412.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20VIE%20on%202026-11-01%20through%202026-11-22&curr=PLN",
-      "score": 66.1,
-      "score_breakdown": {
-        "price_raw": 3412.0,
-        "days_off": 14,
-        "holiday_count": 2,
-        "in_season": false,
-        "duration_days": 21,
-        "efficiency": 7
       }
     },
     {
@@ -626,12 +582,12 @@
       "departure_date": "2026-12-01",
       "return_date": "2026-12-18",
       "airline": "VJ",
-      "price": 3146.0,
+      "price": 3144.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202026-12-01%20through%202026-12-18&curr=PLN",
       "score": 59.8,
       "score_breakdown": {
-        "price_raw": 3146.0,
+        "price_raw": 3144.0,
         "days_off": 14,
         "holiday_count": 0,
         "in_season": true,
@@ -681,6 +637,28 @@
         "in_season": false,
         "duration_days": 9,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-YVR-2027-01-26T11:35:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "YVR",
+      "departure_date": "2027-01-26",
+      "return_date": "2027-02-16",
+      "airline": "BA",
+      "price": 3311.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YVR%20from%20VIE%20on%202027-01-26%20through%202027-02-16&curr=PLN",
+      "score": 59.4,
+      "score_breakdown": {
+        "price_raw": 3311.0,
+        "days_off": 16,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 21,
+        "efficiency": 5
       }
     },
     {
@@ -835,6 +813,28 @@
         "in_season": false,
         "duration_days": 10,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-TYO-2026-11-12T11:45:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "TYO",
+      "departure_date": "2026-11-12",
+      "return_date": "2026-11-16",
+      "airline": "CZ",
+      "price": 2389.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BUD%20on%202026-11-12%20through%202026-11-16&curr=PLN",
+      "score": 57.1,
+      "score_breakdown": {
+        "price_raw": 2389.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 4,
+        "efficiency": 1
       }
     },
     {
@@ -2230,19 +2230,19 @@
       "date": "2026-08-22",
       "stats": {
         "AU": {
-          "avg": 4325.8
+          "avg": 4325.4
         },
         "CA": {
-          "avg": 2958.8
+          "avg": 2938.6
         },
         "JP": {
-          "avg": 3302.83
+          "avg": 3191.0
         },
         "MY": {
           "avg": 2309.25
         },
         "NA": {
-          "avg": 4025.75
+          "avg": 4043.25
         },
         "NZ": {
           "avg": 5643.8
@@ -2251,13 +2251,13 @@
           "avg": 3929.25
         },
         "PH": {
-          "avg": 2754.0
+          "avg": 2753.33
         },
         "TH": {
-          "avg": 2463.08
+          "avg": 2462.92
         },
         "VN": {
-          "avg": 2744.64
+          "avg": 2773.36
         },
         "ZA": {
           "avg": 3002.0
