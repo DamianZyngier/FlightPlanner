@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22T01:08:13.916057",
+  "last_updated": "2026-08-22T06:36:49.185378",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2027-01-13T19:35:00+01:00",
@@ -241,28 +241,6 @@
         "in_season": false,
         "duration_days": 36,
         "efficiency": 11
-      }
-    },
-    {
-      "id": "tp-cheap-BER-MEL-2026-12-31T15:15:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "MEL",
-      "departure_date": "2026-12-31",
-      "return_date": "2027-01-23",
-      "airline": "IB",
-      "price": 3945.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20BER%20on%202026-12-31%20through%202027-01-23&curr=PLN",
-      "score": 69.6,
-      "score_breakdown": {
-        "price_raw": 3945.0,
-        "days_off": 15,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 23,
-        "efficiency": 8
       }
     },
     {
@@ -637,6 +615,28 @@
         "in_season": true,
         "duration_days": 21,
         "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-DAD-2026-12-01T18:25:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "DAD",
+      "departure_date": "2026-12-01",
+      "return_date": "2026-12-18",
+      "airline": "VJ",
+      "price": 3146.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202026-12-01%20through%202026-12-18&curr=PLN",
+      "score": 59.8,
+      "score_breakdown": {
+        "price_raw": 3146.0,
+        "days_off": 14,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 17,
+        "efficiency": 3
       }
     },
     {
@@ -2230,7 +2230,7 @@
       "date": "2026-08-22",
       "stats": {
         "AU": {
-          "avg": 4336.7
+          "avg": 4325.8
         },
         "CA": {
           "avg": 2958.8
@@ -2257,7 +2257,7 @@
           "avg": 2463.08
         },
         "VN": {
-          "avg": 2752.86
+          "avg": 2744.64
         },
         "ZA": {
           "avg": 3002.0
