@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T01:13:51.570842",
+  "last_updated": "2026-08-23T06:37:49.738421",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2027-01-13T19:35:00+01:00",
@@ -43,28 +43,6 @@
         "in_season": true,
         "duration_days": 40,
         "efficiency": 13
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-HKT-2026-09-01T13:15:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "HKT",
-      "departure_date": "2026-09-01",
-      "return_date": "2026-09-29",
-      "airline": "G9",
-      "price": 1797.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20PRG%20on%202026-09-01%20through%202026-09-29&curr=PLN",
-      "score": 79.5,
-      "score_breakdown": {
-        "price_raw": 1797.0,
-        "days_off": 21,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 28,
-        "efficiency": 7
       }
     },
     {
@@ -351,6 +329,28 @@
         "in_season": true,
         "duration_days": 14,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BER-JNB-2026-12-20T08:50:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "JNB",
+      "departure_date": "2026-12-20",
+      "return_date": "2027-01-05",
+      "airline": "AL",
+      "price": 4138.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20BER%20on%202026-12-20%20through%202027-01-05&curr=PLN",
+      "score": 65.0,
+      "score_breakdown": {
+        "price_raw": 4138.0,
+        "days_off": 10,
+        "holiday_count": 3,
+        "in_season": true,
+        "duration_days": 16,
+        "efficiency": 6
       }
     },
     {
@@ -2233,7 +2233,7 @@
           "avg": 4315.3
         },
         "CA": {
-          "avg": 3044.43
+          "avg": 3149.29
         },
         "JP": {
           "avg": 3192.29
@@ -2254,13 +2254,13 @@
           "avg": 2753.33
         },
         "TH": {
-          "avg": 2347.67
+          "avg": 2345.67
         },
         "VN": {
           "avg": 2768.54
         },
         "ZA": {
-          "avg": 2959.9
+          "avg": 3034.4
         }
       }
     }
