@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T01:10:16.839327",
+  "last_updated": "2026-08-25T06:42:58.388207",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2027-01-13T19:35:00+01:00",
@@ -200,28 +200,6 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-HAN-2026-12-17T11:45:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "HAN",
-      "departure_date": "2026-12-17",
-      "return_date": "2026-12-30",
-      "airline": "CZ",
-      "price": 2564.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BUD%20on%202026-12-17%20through%202026-12-30&curr=PLN",
-      "score": 69.1,
-      "score_breakdown": {
-        "price_raw": 2564.0,
-        "days_off": 9,
-        "holiday_count": 2,
-        "in_season": true,
-        "duration_days": 13,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-BER-YYC-2027-01-10T06:40:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -417,6 +395,28 @@
         "in_season": false,
         "duration_days": 21,
         "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-HAN-2026-11-21T19:35:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "HAN",
+      "departure_date": "2026-11-21",
+      "return_date": "2026-12-05",
+      "airline": "CA",
+      "price": 2230.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BUD%20on%202026-11-21%20through%202026-12-05&curr=PLN",
+      "score": 63.9,
+      "score_breakdown": {
+        "price_raw": 2230.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 14,
+        "efficiency": 4
       }
     },
     {
@@ -860,6 +860,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-AGP-2026-09-25T05:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "AGP",
+      "departure_date": "2026-09-25",
+      "return_date": "2026-09-29",
+      "airline": "FR",
+      "price": 427.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AGP%20from%20KRK%20on%202026-09-25%20through%202026-09-29&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 427.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-AYT-2026-10-17T09:55:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -868,12 +890,12 @@
       "departure_date": "2026-10-17",
       "return_date": "2026-10-21",
       "airline": "DY",
-      "price": 611.0,
+      "price": 588.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20AYT%20from%20KRK%20on%202026-10-17%20through%202026-10-21&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 611.0,
+        "price_raw": 588.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
@@ -1072,28 +1094,6 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 966.0,
-        "days_off": 1,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 2,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-GVA-2026-11-07T15:25:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "GVA",
-      "departure_date": "2026-11-07",
-      "return_date": "2026-11-09",
-      "airline": "W6",
-      "price": 535.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20GVA%20from%20KRK%20on%202026-11-07%20through%202026-11-09&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 535.0,
         "days_off": 1,
         "holiday_count": 0,
         "in_season": false,
@@ -2257,10 +2257,10 @@
           "avg": 2738.91
         },
         "VN": {
-          "avg": 2823.0
+          "avg": 2789.6
         },
         "ZA": {
-          "avg": 3057.44
+          "avg": 3077.78
         }
       }
     }
