@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-29T20:26:38.662092",
+  "last_updated": "2026-08-30T03:47:03.318837",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2026-12-15T11:45:00+01:00",
@@ -288,28 +288,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-YYC-2027-01-10T06:40:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "YYC",
-      "departure_date": "2027-01-10",
-      "return_date": "2027-01-31",
-      "airline": "LH",
-      "price": 2990.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20BER%20on%202027-01-10%20through%202027-01-31&curr=PLN",
-      "score": 66.6,
-      "score_breakdown": {
-        "price_raw": 2990.0,
-        "days_off": 15,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 21,
-        "efficiency": 6
-      }
-    },
-    {
       "id": "tp-cheap-PRG-FUK-2026-09-28T08:50:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -329,28 +307,6 @@
         "in_season": false,
         "duration_days": 36,
         "efficiency": 9
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-YYC-2027-01-10T23:10:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "YYC",
-      "departure_date": "2027-01-10",
-      "return_date": "2027-01-31",
-      "airline": "W9",
-      "price": 3069.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20PRG%20on%202027-01-10%20through%202027-01-31&curr=PLN",
-      "score": 65.9,
-      "score_breakdown": {
-        "price_raw": 3069.0,
-        "days_off": 15,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 21,
-        "efficiency": 6
       }
     },
     {
@@ -1100,47 +1056,53 @@
         "duration_days": 3,
         "efficiency": 1
       }
+    },
+    {
+      "id": "tp-cheap-KRK-CPH-2026-09-19T22:35:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CPH",
+      "departure_date": "2026-09-19",
+      "return_date": "2026-09-21",
+      "airline": "FR",
+      "price": 199.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPH%20from%20KRK%20on%202026-09-19%20through%202026-09-21&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 199.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-CTA-2026-12-19T11:20:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CTA",
+      "departure_date": "2026-12-19",
+      "return_date": "2026-12-23",
+      "airline": "FR",
+      "price": 341.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CTA%20from%20KRK%20on%202026-12-19%20through%202026-12-23&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 341.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
     }
   ],
   "history": [
-    {
-      "date": "2026-07-31",
-      "stats": {
-        "AU": {
-          "avg": 4093.73
-        },
-        "CA": {
-          "avg": 2910.0
-        },
-        "JP": {
-          "avg": 3517.6
-        },
-        "MY": {
-          "avg": 2663.38
-        },
-        "NA": {
-          "avg": 3692.33
-        },
-        "NZ": {
-          "avg": 6451.0
-        },
-        "PE": {
-          "avg": 4198.75
-        },
-        "PH": {
-          "avg": 3216.0
-        },
-        "TH": {
-          "avg": 2501.25
-        },
-        "VN": {
-          "avg": 2872.0
-        },
-        "ZA": {
-          "avg": 2642.71
-        }
-      }
-    },
     {
       "date": "2026-08-01",
       "stats": {
@@ -2264,6 +2226,47 @@
         },
         "VN": {
           "avg": 2786.5
+        },
+        "ZA": {
+          "avg": 2860.11
+        }
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "stats": {
+        "AU": {
+          "avg": 3875.44
+        },
+        "BW": {
+          "avg": 4948.0
+        },
+        "CA": {
+          "avg": 3485.6
+        },
+        "JP": {
+          "avg": 3222.22
+        },
+        "MY": {
+          "avg": 2280.25
+        },
+        "NA": {
+          "avg": 3620.75
+        },
+        "NZ": {
+          "avg": 6302.33
+        },
+        "PE": {
+          "avg": 4612.8
+        },
+        "PH": {
+          "avg": 2649.33
+        },
+        "TH": {
+          "avg": 2433.79
+        },
+        "VN": {
+          "avg": 2751.8
         },
         "ZA": {
           "avg": 2860.11
