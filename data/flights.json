@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01T20:35:10.730144",
+  "last_updated": "2026-09-02T03:00:25.098920",
   "current_best": [
     {
       "id": "tp-cheap-BER-YVR-2026-09-23T14:05:00+02:00",
@@ -54,12 +54,12 @@
       "departure_date": "2026-12-13",
       "return_date": "2026-12-27",
       "airline": "CA",
-      "price": 2493.0,
+      "price": 2492.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BUD%20on%202026-12-13%20through%202026-12-27&curr=PLN",
       "score": 74.2,
       "score_breakdown": {
-        "price_raw": 2493.0,
+        "price_raw": 2492.0,
         "days_off": 9,
         "holiday_count": 2,
         "in_season": true,
@@ -274,12 +274,12 @@
       "departure_date": "2027-02-01",
       "return_date": "2027-02-23",
       "airline": "BA",
-      "price": 3437.0,
+      "price": 3436.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20WAW%20on%202027-02-01%20through%202027-02-23&curr=PLN",
       "score": 66.4,
       "score_breakdown": {
-        "price_raw": 3437.0,
+        "price_raw": 3436.0,
         "days_off": 17,
         "holiday_count": 0,
         "in_season": true,
@@ -934,39 +934,17 @@
       "departure_date": "2027-01-14",
       "return_date": "2027-01-28",
       "airline": "KL",
-      "price": 3504.0,
+      "price": 3503.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20KRK%20on%202027-01-14%20through%202027-01-28&curr=PLN",
       "score": 56.8,
       "score_breakdown": {
-        "price_raw": 3504.0,
+        "price_raw": 3503.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 14,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-AGP-2026-09-25T23:20:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "AGP",
-      "departure_date": "2026-09-25",
-      "return_date": "2026-09-29",
-      "airline": "FR",
-      "price": 462.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AGP%20from%20KRK%20on%202026-09-25%20through%202026-09-29&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 462.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 1
       }
     },
     {
@@ -1100,47 +1078,31 @@
         "duration_days": 2,
         "efficiency": 1
       }
+    },
+    {
+      "id": "tp-cheap-KRK-CAI-2026-11-27T19:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CAI",
+      "departure_date": "2026-11-27",
+      "return_date": "2026-11-30",
+      "airline": "W6",
+      "price": 915.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CAI%20from%20KRK%20on%202026-11-27%20through%202026-11-30&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 915.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
     }
   ],
   "history": [
-    {
-      "date": "2026-08-03",
-      "stats": {
-        "AU": {
-          "avg": 4495.9
-        },
-        "CA": {
-          "avg": 2773.0
-        },
-        "JP": {
-          "avg": 3418.62
-        },
-        "MY": {
-          "avg": 3024.25
-        },
-        "NA": {
-          "avg": 3726.0
-        },
-        "NZ": {
-          "avg": 6141.67
-        },
-        "PE": {
-          "avg": 4394.33
-        },
-        "PH": {
-          "avg": 3220.5
-        },
-        "TH": {
-          "avg": 2486.5
-        },
-        "VN": {
-          "avg": 2736.7
-        },
-        "ZA": {
-          "avg": 2894.25
-        }
-      }
-    },
     {
       "date": "2026-08-04",
       "stats": {
@@ -2273,6 +2235,47 @@
         },
         "VN": {
           "avg": 2764.0
+        },
+        "ZA": {
+          "avg": 2906.4
+        }
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "stats": {
+        "AU": {
+          "avg": 3939.0
+        },
+        "BW": {
+          "avg": 5074.0
+        },
+        "CA": {
+          "avg": 4133.78
+        },
+        "JP": {
+          "avg": 3337.3
+        },
+        "MY": {
+          "avg": 2168.5
+        },
+        "NA": {
+          "avg": 3478.5
+        },
+        "NZ": {
+          "avg": 6322.0
+        },
+        "PE": {
+          "avg": 4581.5
+        },
+        "PH": {
+          "avg": 2717.2
+        },
+        "TH": {
+          "avg": 2314.87
+        },
+        "VN": {
+          "avg": 2763.85
         },
         "ZA": {
           "avg": 2906.4
