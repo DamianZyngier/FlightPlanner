@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T21:08:23.485589",
+  "last_updated": "2026-09-08T03:10:56.864031",
   "current_best": [
     {
       "id": "tp-cheap-VIE-MNL-2027-02-27T15:45:00+01:00",
@@ -538,12 +538,12 @@
       "departure_date": "2026-12-10",
       "return_date": "2026-12-17",
       "airline": "MU",
-      "price": 2274.0,
+      "price": 2275.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20VIE%20on%202026-12-10%20through%202026-12-17&curr=PLN",
       "score": 58.0,
       "score_breakdown": {
-        "price_raw": 2274.0,
+        "price_raw": 2275.0,
         "days_off": 6,
         "holiday_count": 0,
         "in_season": true,
@@ -626,12 +626,12 @@
       "departure_date": "2026-11-29",
       "return_date": "2026-12-09",
       "airline": "EC",
-      "price": 2956.0,
+      "price": 2957.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20PRG%20on%202026-11-29%20through%202026-12-09&curr=PLN",
       "score": 56.9,
       "score_breakdown": {
-        "price_raw": 2956.0,
+        "price_raw": 2957.0,
         "days_off": 8,
         "holiday_count": 0,
         "in_season": true,
@@ -1103,47 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-08-09",
-      "stats": {
-        "AU": {
-          "avg": 4610.5
-        },
-        "BW": {
-          "avg": 4310.0
-        },
-        "CA": {
-          "avg": 3240.0
-        },
-        "JP": {
-          "avg": 3227.67
-        },
-        "MY": {
-          "avg": 2485.4
-        },
-        "NA": {
-          "avg": 3192.5
-        },
-        "NZ": {
-          "avg": 4883.2
-        },
-        "PE": {
-          "avg": 3913.4
-        },
-        "PH": {
-          "avg": 3680.2
-        },
-        "TH": {
-          "avg": 2400.0
-        },
-        "VN": {
-          "avg": 2794.58
-        },
-        "ZA": {
-          "avg": 2897.2
-        }
-      }
-    },
     {
       "date": "2026-08-10",
       "stats": {
@@ -2294,6 +2253,47 @@
         },
         "ZA": {
           "avg": 3052.17
+        }
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "stats": {
+        "AU": {
+          "avg": 4318.7
+        },
+        "BW": {
+          "avg": 4431.0
+        },
+        "CA": {
+          "avg": 3033.0
+        },
+        "JP": {
+          "avg": 3261.67
+        },
+        "MY": {
+          "avg": 2258.0
+        },
+        "NA": {
+          "avg": 4272.0
+        },
+        "NZ": {
+          "avg": 6092.83
+        },
+        "PE": {
+          "avg": 3449.33
+        },
+        "PH": {
+          "avg": 2869.5
+        },
+        "TH": {
+          "avg": 2491.25
+        },
+        "VN": {
+          "avg": 2810.0
+        },
+        "ZA": {
+          "avg": 3069.38
         }
       }
     }
