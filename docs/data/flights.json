@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-12T20:12:37.900782",
+  "last_updated": "2026-09-13T03:18:34.365057",
   "current_best": [
     {
       "id": "tp-cheap-BUD-SGN-2026-12-12T18:00:00+01:00",
@@ -200,28 +200,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-SGN-2026-12-20T09:15:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "SGN",
-      "departure_date": "2026-12-20",
-      "return_date": "2027-01-24",
-      "airline": "TK",
-      "price": 3779.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20KRK%20on%202026-12-20%20through%202027-01-24&curr=PLN",
-      "score": 71.0,
-      "score_breakdown": {
-        "price_raw": 3779.0,
-        "days_off": 22,
-        "holiday_count": 4,
-        "in_season": true,
-        "duration_days": 35,
-        "efficiency": 13
-      }
-    },
-    {
       "id": "tp-cheap-VIE-YVR-2026-11-24T21:00:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -285,6 +263,28 @@
         "in_season": true,
         "duration_days": 30,
         "efficiency": 8
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-BNE-2026-12-22T11:45:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "BNE",
+      "departure_date": "2026-12-22",
+      "return_date": "2027-01-22",
+      "airline": "CZ",
+      "price": 4057.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BNE%20from%20BUD%20on%202026-12-22%20through%202027-01-22&curr=PLN",
+      "score": 68.7,
+      "score_breakdown": {
+        "price_raw": 4057.0,
+        "days_off": 21,
+        "holiday_count": 4,
+        "in_season": true,
+        "duration_days": 31,
+        "efficiency": 10
       }
     },
     {
@@ -505,6 +505,28 @@
         "in_season": false,
         "duration_days": 14,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-SGN-2026-12-02T09:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "SGN",
+      "departure_date": "2026-12-02",
+      "return_date": "2026-12-15",
+      "airline": "QR",
+      "price": 2941.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20PRG%20on%202026-12-02%20through%202026-12-15&curr=PLN",
+      "score": 61.5,
+      "score_breakdown": {
+        "price_raw": 2941.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 13,
+        "efficiency": 3
       }
     },
     {
@@ -1044,12 +1066,12 @@
       "departure_date": "2027-01-23",
       "return_date": "2027-01-24",
       "airline": "FR",
-      "price": 336.0,
+      "price": 404.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20NAP%20from%20KRK%20on%202027-01-23%20through%202027-01-24&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 336.0,
+        "price_raw": 404.0,
         "days_off": 0,
         "holiday_count": 0,
         "in_season": false,
@@ -1078,72 +1100,9 @@
         "duration_days": 3,
         "efficiency": 1
       }
-    },
-    {
-      "id": "tp-cheap-KRK-PEG-2026-09-25T10:30:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "PEG",
-      "departure_date": "2026-09-25",
-      "return_date": "2026-09-28",
-      "airline": "FR",
-      "price": 612.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20PEG%20from%20KRK%20on%202026-09-25%20through%202026-09-28&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 612.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-08-14",
-      "stats": {
-        "AU": {
-          "avg": 4364.67
-        },
-        "BW": {
-          "avg": 4312.0
-        },
-        "CA": {
-          "avg": 2988.0
-        },
-        "JP": {
-          "avg": 3411.5
-        },
-        "MY": {
-          "avg": 2559.6
-        },
-        "NA": {
-          "avg": 4107.33
-        },
-        "NZ": {
-          "avg": 5967.43
-        },
-        "PE": {
-          "avg": 3911.0
-        },
-        "PH": {
-          "avg": 3288.12
-        },
-        "TH": {
-          "avg": 2615.07
-        },
-        "VN": {
-          "avg": 2876.23
-        },
-        "ZA": {
-          "avg": 2863.29
-        }
-      }
-    },
     {
       "date": "2026-08-15",
       "stats": {
@@ -2291,6 +2250,47 @@
         },
         "VN": {
           "avg": 2666.85
+        },
+        "ZA": {
+          "avg": 2863.67
+        }
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "stats": {
+        "AU": {
+          "avg": 4071.15
+        },
+        "BW": {
+          "avg": 4282.0
+        },
+        "CA": {
+          "avg": 2753.0
+        },
+        "JP": {
+          "avg": 3424.56
+        },
+        "MY": {
+          "avg": 2203.0
+        },
+        "NA": {
+          "avg": 3655.0
+        },
+        "NZ": {
+          "avg": 5588.0
+        },
+        "PE": {
+          "avg": 3467.75
+        },
+        "PH": {
+          "avg": 3305.75
+        },
+        "TH": {
+          "avg": 2355.53
+        },
+        "VN": {
+          "avg": 2636.85
         },
         "ZA": {
           "avg": 2863.67
