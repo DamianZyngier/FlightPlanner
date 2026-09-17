@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17T03:32:57.506160",
+  "last_updated": "2026-09-17T11:00:25.337355",
   "current_best": [
     {
       "id": "tp-cheap-BUD-MNL-2026-12-10T11:45:00+01:00",
@@ -43,28 +43,6 @@
         "in_season": true,
         "duration_days": 37,
         "efficiency": 12
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-MNL-2027-02-27T15:45:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "MNL",
-      "departure_date": "2027-02-27",
-      "return_date": "2027-03-15",
-      "airline": "SV",
-      "price": 2123.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-02-27%20through%202027-03-15&curr=PLN",
-      "score": 77.3,
-      "score_breakdown": {
-        "price_raw": 2123.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 16,
-        "efficiency": 5
       }
     },
     {
@@ -288,6 +266,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-DAD-2027-04-01T15:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "DAD",
+      "departure_date": "2027-04-01",
+      "return_date": "2027-04-30",
+      "airline": "QR",
+      "price": 3869.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202027-04-01%20through%202027-04-30&curr=PLN",
+      "score": 70.3,
+      "score_breakdown": {
+        "price_raw": 3869.0,
+        "days_off": 22,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 29,
+        "efficiency": 7
+      }
+    },
+    {
       "id": "tp-cheap-VIE-JNB-2026-11-02T22:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -420,23 +420,23 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-TYO-2026-10-29T11:30:00+01:00",
+      "id": "tp-cheap-VIE-HKT-2026-09-20T13:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
-      "origin": "BUD",
-      "destination": "TYO",
-      "departure_date": "2026-10-29",
-      "return_date": "2026-11-12",
-      "airline": "FM",
-      "price": 2845.0,
+      "origin": "VIE",
+      "destination": "HKT",
+      "departure_date": "2026-09-20",
+      "return_date": "2026-10-04",
+      "airline": "G9",
+      "price": 1852.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BUD%20on%202026-10-29%20through%202026-11-12&curr=PLN",
-      "score": 66.8,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20VIE%20on%202026-09-20%20through%202026-10-04&curr=PLN",
+      "score": 67.1,
       "score_breakdown": {
-        "price_raw": 2845.0,
+        "price_raw": 1852.0,
         "days_off": 10,
-        "holiday_count": 2,
-        "in_season": true,
+        "holiday_count": 0,
+        "in_season": false,
         "duration_days": 14,
         "efficiency": 4
       }
@@ -552,28 +552,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-HKT-2026-10-13T13:00:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "HKT",
-      "departure_date": "2026-10-13",
-      "return_date": "2026-10-29",
-      "airline": "G9",
-      "price": 1848.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20VIE%20on%202026-10-13%20through%202026-10-29&curr=PLN",
-      "score": 62.6,
-      "score_breakdown": {
-        "price_raw": 1848.0,
-        "days_off": 13,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 16,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-VIE-SYD-2026-12-14T12:25:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -681,28 +659,6 @@
         "in_season": true,
         "duration_days": 10,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-HAM-2026-12-30T06:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "HAM",
-      "departure_date": "2026-12-30",
-      "return_date": "2027-01-03",
-      "airline": "LH",
-      "price": 977.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAM%20from%20KRK%20on%202026-12-30%20through%202027-01-03&curr=PLN",
-      "score": 61.0,
-      "score_breakdown": {
-        "price_raw": 977.0,
-        "days_off": 2,
-        "holiday_count": 1,
-        "in_season": false,
-        "duration_days": 4,
-        "efficiency": 2
       }
     },
     {
@@ -838,25 +794,25 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-DAD-2027-01-14T20:30:00+01:00",
+      "id": "tp-cheap-VIE-MNL-2027-02-02T15:45:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
-      "origin": "PRG",
-      "destination": "DAD",
-      "departure_date": "2027-01-14",
-      "return_date": "2027-01-28",
-      "airline": "JU",
-      "price": 3208.0,
+      "origin": "VIE",
+      "destination": "MNL",
+      "departure_date": "2027-02-02",
+      "return_date": "2027-02-10",
+      "airline": "SV",
+      "price": 2125.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202027-01-14%20through%202027-01-28&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-02-02%20through%202027-02-10&curr=PLN",
       "score": 59.3,
       "score_breakdown": {
-        "price_raw": 3208.0,
-        "days_off": 11,
+        "price_raw": 2125.0,
+        "days_off": 7,
         "holiday_count": 0,
         "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
+        "duration_days": 8,
+        "efficiency": 1
       }
     },
     {
@@ -904,25 +860,25 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-BNE-2026-10-14T21:15:00+02:00",
+      "id": "tp-cheap-BUD-TYO-2026-11-10T11:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
-      "origin": "WAW",
-      "destination": "BNE",
-      "departure_date": "2026-10-14",
-      "return_date": "2026-11-07",
-      "airline": "G9",
-      "price": 4963.0,
+      "origin": "BUD",
+      "destination": "TYO",
+      "departure_date": "2026-11-10",
+      "return_date": "2026-11-17",
+      "airline": "MU",
+      "price": 2887.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BNE%20from%20WAW%20on%202026-10-14%20through%202026-11-07&curr=PLN",
-      "score": 58.1,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BUD%20on%202026-11-10%20through%202026-11-17&curr=PLN",
+      "score": 57.4,
       "score_breakdown": {
-        "price_raw": 4963.0,
-        "days_off": 18,
+        "price_raw": 2887.0,
+        "days_off": 5,
         "holiday_count": 1,
         "in_season": true,
-        "duration_days": 24,
-        "efficiency": 6
+        "duration_days": 7,
+        "efficiency": 2
       }
     },
     {
@@ -1014,6 +970,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-BGO-2026-10-14T10:00:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "BGO",
+      "departure_date": "2026-10-14",
+      "return_date": "2026-10-18",
+      "airline": "DY",
+      "price": 365.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BGO%20from%20KRK%20on%202026-10-14%20through%202026-10-18&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 365.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-BHX-2026-11-05T19:20:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1094,6 +1072,28 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 226.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-BTS-2027-03-19T18:55:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "BTS",
+      "departure_date": "2027-03-19",
+      "return_date": "2027-03-22",
+      "airline": "FR",
+      "price": 584.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BTS%20from%20KRK%20on%202027-03-19%20through%202027-03-22&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 584.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2269,37 +2269,37 @@
       "date": "2026-09-17",
       "stats": {
         "AU": {
-          "avg": 4343.08
+          "avg": 4291.42
         },
         "BW": {
           "avg": 4614.0
         },
         "CA": {
-          "avg": 2700.67
+          "avg": 2941.75
         },
         "JP": {
-          "avg": 3344.3
+          "avg": 3334.44
         },
         "MY": {
-          "avg": 2259.33
+          "avg": 2265.0
         },
         "NA": {
           "avg": 3732.0
         },
         "NZ": {
-          "avg": 6082.4
+          "avg": 6145.0
         },
         "PE": {
-          "avg": 4290.2
+          "avg": 4388.25
         },
         "PH": {
-          "avg": 3282.25
+          "avg": 3282.5
         },
         "TH": {
-          "avg": 2388.93
+          "avg": 2386.79
         },
         "VN": {
-          "avg": 2984.21
+          "avg": 3031.43
         },
         "ZA": {
           "avg": 3046.91
