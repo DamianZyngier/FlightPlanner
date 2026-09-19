@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T20:25:53.820673",
+  "last_updated": "2026-09-19T03:15:15.651328",
   "current_best": [
     {
       "id": "tp-cheap-BUD-SGN-2026-12-10T11:30:00+01:00",
@@ -32,12 +32,12 @@
       "departure_date": "2027-01-25",
       "return_date": "2027-02-25",
       "airline": "MU",
-      "price": 2284.0,
+      "price": 2283.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20VIE%20on%202027-01-25%20through%202027-02-25&curr=PLN",
       "score": 83.5,
       "score_breakdown": {
-        "price_raw": 2284.0,
+        "price_raw": 2283.0,
         "days_off": 24,
         "holiday_count": 0,
         "in_season": true,
@@ -626,12 +626,12 @@
       "departure_date": "2026-11-05",
       "return_date": "2026-11-13",
       "airline": "G9",
-      "price": 2194.0,
+      "price": 2193.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20PRG%20on%202026-11-05%20through%202026-11-13&curr=PLN",
       "score": 63.2,
       "score_breakdown": {
-        "price_raw": 2194.0,
+        "price_raw": 2193.0,
         "days_off": 6,
         "holiday_count": 1,
         "in_season": true,
@@ -772,6 +772,28 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-SGN-2026-12-02T10:20:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "SGN",
+      "departure_date": "2026-12-02",
+      "return_date": "2026-12-15",
+      "airline": "EY",
+      "price": 2995.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20PRG%20on%202026-12-02%20through%202026-12-15&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 2995.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 13,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-VIE-DAD-2027-03-23T10:00:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -791,28 +813,6 @@
         "in_season": true,
         "duration_days": 16,
         "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-SGN-2026-12-02T09:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "SGN",
-      "departure_date": "2026-12-02",
-      "return_date": "2026-12-15",
-      "airline": "QR",
-      "price": 3038.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20PRG%20on%202026-12-02%20through%202026-12-15&curr=PLN",
-      "score": 60.7,
-      "score_breakdown": {
-        "price_raw": 3038.0,
-        "days_off": 10,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 13,
-        "efficiency": 3
       }
     },
     {
@@ -956,12 +956,12 @@
       "departure_date": "2026-10-27",
       "return_date": "2026-11-09",
       "airline": "VJ",
-      "price": 2439.0,
+      "price": 2438.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20PRG%20on%202026-10-27%20through%202026-11-09&curr=PLN",
       "score": 57.7,
       "score_breakdown": {
-        "price_raw": 2439.0,
+        "price_raw": 2438.0,
         "days_off": 10,
         "holiday_count": 1,
         "in_season": false,
@@ -1103,44 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-08-20",
-      "stats": {
-        "AU": {
-          "avg": 4251.67
-        },
-        "CA": {
-          "avg": 2978.2
-        },
-        "JP": {
-          "avg": 3315.4
-        },
-        "MY": {
-          "avg": 2371.25
-        },
-        "NA": {
-          "avg": 4072.5
-        },
-        "NZ": {
-          "avg": 5731.8
-        },
-        "PE": {
-          "avg": 3944.0
-        },
-        "PH": {
-          "avg": 2769.17
-        },
-        "TH": {
-          "avg": 2655.0
-        },
-        "VN": {
-          "avg": 2746.31
-        },
-        "ZA": {
-          "avg": 2922.56
-        }
-      }
-    },
     {
       "date": "2026-08-21",
       "stats": {
@@ -2303,6 +2265,47 @@
         },
         "VN": {
           "avg": 3080.88
+        },
+        "ZA": {
+          "avg": 2988.22
+        }
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "stats": {
+        "AU": {
+          "avg": 4403.0
+        },
+        "BW": {
+          "avg": 4485.5
+        },
+        "CA": {
+          "avg": 3157.5
+        },
+        "JP": {
+          "avg": 3346.88
+        },
+        "MY": {
+          "avg": 2471.0
+        },
+        "NA": {
+          "avg": 4262.5
+        },
+        "NZ": {
+          "avg": 6381.6
+        },
+        "PE": {
+          "avg": 4445.25
+        },
+        "PH": {
+          "avg": 3288.0
+        },
+        "TH": {
+          "avg": 2501.47
+        },
+        "VN": {
+          "avg": 3078.06
         },
         "ZA": {
           "avg": 2988.22
