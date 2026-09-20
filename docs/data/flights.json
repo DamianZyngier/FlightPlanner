@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T15:29:34.610052",
+  "last_updated": "2026-09-20T20:21:40.785465",
   "current_best": [
     {
       "id": "tp-cheap-BUD-SGN-2026-12-10T11:30:00+01:00",
@@ -552,20 +552,20 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-BKK-2026-09-23T22:25:00+02:00",
+      "id": "tp-cheap-VIE-BKK-2026-09-22T13:00:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "VIE",
       "destination": "BKK",
-      "departure_date": "2026-09-23",
-      "return_date": "2026-10-07",
+      "departure_date": "2026-09-22",
+      "return_date": "2026-10-06",
       "airline": "G9",
-      "price": 1872.0,
+      "price": 1879.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-09-23%20through%202026-10-07&curr=PLN",
-      "score": 62.4,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-09-22%20through%202026-10-06&curr=PLN",
+      "score": 62.3,
       "score_breakdown": {
-        "price_raw": 1872.0,
+        "price_raw": 1879.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": false,
@@ -2278,7 +2278,7 @@
       "date": "2026-09-20",
       "stats": {
         "AU": {
-          "avg": 4199.8
+          "avg": 3902.75
         },
         "BW": {
           "avg": 4114.0
@@ -2305,7 +2305,7 @@
           "avg": 2994.0
         },
         "TH": {
-          "avg": 2496.36
+          "avg": 2496.86
         },
         "VN": {
           "avg": 2730.69
