@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T16:26:35.522161",
+  "last_updated": "2026-09-27T20:54:55.013522",
   "current_best": [
     {
       "id": "tp-cheap-PRG-BKK-2026-11-17T12:40:00+01:00",
@@ -112,24 +112,24 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-BKK-2026-11-02T11:30:00+01:00",
+      "id": "tp-cheap-BUD-BKK-2026-11-06T11:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "BUD",
       "destination": "BKK",
-      "departure_date": "2026-11-02",
-      "return_date": "2026-11-15",
-      "airline": "MU",
-      "price": 2201.0,
+      "departure_date": "2026-11-06",
+      "return_date": "2026-11-17",
+      "airline": "FM",
+      "price": 2225.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202026-11-02%20through%202026-11-15&curr=PLN",
-      "score": 72.2,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202026-11-06%20through%202026-11-17&curr=PLN",
+      "score": 72.0,
       "score_breakdown": {
-        "price_raw": 2201.0,
-        "days_off": 9,
+        "price_raw": 2225.0,
+        "days_off": 7,
         "holiday_count": 1,
         "in_season": true,
-        "duration_days": 13,
+        "duration_days": 11,
         "efficiency": 4
       }
     },
@@ -398,28 +398,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-MNL-2026-11-18T10:15:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "MNL",
-      "departure_date": "2026-11-18",
-      "return_date": "2026-12-09",
-      "airline": "EY",
-      "price": 2447.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-11-18%20through%202026-12-09&curr=PLN",
-      "score": 66.6,
-      "score_breakdown": {
-        "price_raw": 2447.0,
-        "days_off": 16,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 21,
-        "efficiency": 5
-      }
-    },
-    {
       "id": "tp-cheap-VIE-MNL-2027-02-04T15:45:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -439,6 +417,28 @@
         "in_season": true,
         "duration_days": 15,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-MNL-2026-11-18T10:15:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "MNL",
+      "departure_date": "2026-11-18",
+      "return_date": "2026-12-09",
+      "airline": "EY",
+      "price": 2522.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-11-18%20through%202026-12-09&curr=PLN",
+      "score": 66.0,
+      "score_breakdown": {
+        "price_raw": 2522.0,
+        "days_off": 16,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 21,
+        "efficiency": 5
       }
     },
     {
@@ -948,6 +948,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-AMS-2026-11-21T12:10:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "AMS",
+      "departure_date": "2026-11-21",
+      "return_date": "2026-11-23",
+      "airline": "FR",
+      "price": 646.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AMS%20from%20KRK%20on%202026-11-21%20through%202026-11-23&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 646.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-BDS-2026-10-14T11:15:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1074,28 +1096,6 @@
         "price_raw": 299.0,
         "days_off": 2,
         "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BRE-2026-11-11T19:25:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BRE",
-      "departure_date": "2026-11-11",
-      "return_date": "2026-11-14",
-      "airline": "FR",
-      "price": 609.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BRE%20from%20KRK%20on%202026-11-11%20through%202026-11-14&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 609.0,
-        "days_off": 2,
-        "holiday_count": 1,
         "in_season": false,
         "duration_days": 3,
         "efficiency": 1
@@ -2314,22 +2314,22 @@
           "avg": 4087.0
         },
         "NZ": {
-          "avg": 6319.33
+          "avg": 6691.25
         },
         "PE": {
-          "avg": 4371.33
+          "avg": 4405.0
         },
         "PH": {
-          "avg": 3094.25
+          "avg": 3103.62
         },
         "TH": {
-          "avg": 2344.06
+          "avg": 2345.39
         },
         "VN": {
           "avg": 2932.62
         },
         "ZA": {
-          "avg": 3125.3
+          "avg": 3136.18
         }
       }
     }
