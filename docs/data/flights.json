@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29T21:54:02.566246",
+  "last_updated": "2026-09-30T04:06:19.891423",
   "current_best": [
     {
       "id": "tp-cheap-PRG-BKK-2026-11-17T12:40:00+01:00",
@@ -120,12 +120,12 @@
       "departure_date": "2027-03-08",
       "return_date": "2027-03-31",
       "airline": "U2",
-      "price": 3250.0,
+      "price": 3251.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BER%20on%202027-03-08%20through%202027-03-31&curr=PLN",
       "score": 72.4,
       "score_breakdown": {
-        "price_raw": 3250.0,
+        "price_raw": 3251.0,
         "days_off": 17,
         "holiday_count": 2,
         "in_season": true,
@@ -186,12 +186,12 @@
       "departure_date": "2027-01-11",
       "return_date": "2027-01-25",
       "airline": "G9",
-      "price": 1835.0,
+      "price": 1837.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20PRG%20on%202027-01-11%20through%202027-01-25&curr=PLN",
       "score": 70.7,
       "score_breakdown": {
-        "price_raw": 1835.0,
+        "price_raw": 1837.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -1103,47 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-08-31",
-      "stats": {
-        "AU": {
-          "avg": 3891.89
-        },
-        "BW": {
-          "avg": 5073.5
-        },
-        "CA": {
-          "avg": 3866.18
-        },
-        "JP": {
-          "avg": 3348.1
-        },
-        "MY": {
-          "avg": 2085.33
-        },
-        "NA": {
-          "avg": 3528.5
-        },
-        "NZ": {
-          "avg": 6302.33
-        },
-        "PE": {
-          "avg": 4651.4
-        },
-        "PH": {
-          "avg": 2711.2
-        },
-        "TH": {
-          "avg": 2349.25
-        },
-        "VN": {
-          "avg": 2741.5
-        },
-        "ZA": {
-          "avg": 2908.1
-        }
-      }
-    },
     {
       "date": "2026-09-01",
       "stats": {
@@ -2330,6 +2289,47 @@
         },
         "ZA": {
           "avg": 3135.78
+        }
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "stats": {
+        "AU": {
+          "avg": 4412.4
+        },
+        "BW": {
+          "avg": 4552.0
+        },
+        "CA": {
+          "avg": 3055.22
+        },
+        "JP": {
+          "avg": 3341.6
+        },
+        "MY": {
+          "avg": 2636.67
+        },
+        "NA": {
+          "avg": 4113.75
+        },
+        "NZ": {
+          "avg": 6161.2
+        },
+        "PE": {
+          "avg": 4239.0
+        },
+        "PH": {
+          "avg": 2766.43
+        },
+        "TH": {
+          "avg": 2337.88
+        },
+        "VN": {
+          "avg": 2850.77
+        },
+        "ZA": {
+          "avg": 3135.89
         }
       }
     }
