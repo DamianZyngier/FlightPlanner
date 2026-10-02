@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01T22:21:58.610537",
+  "last_updated": "2026-10-02T04:11:22.181013",
   "current_best": [
     {
       "id": "tp-cheap-PRG-BKK-2026-11-17T12:40:00+01:00",
@@ -816,28 +816,6 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-ATH-2026-12-04T07:05:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "ATH",
-      "departure_date": "2026-12-04",
-      "return_date": "2026-12-07",
-      "airline": "RR",
-      "price": 632.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20ATH%20from%20KRK%20on%202026-12-04%20through%202026-12-07&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 632.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-KRK-BER-2026-11-11T10:25:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1100,50 +1078,31 @@
         "duration_days": 3,
         "efficiency": 1
       }
+    },
+    {
+      "id": "tp-cheap-KRK-FLR-2026-12-23T14:50:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "FLR",
+      "departure_date": "2026-12-23",
+      "return_date": "2026-12-26",
+      "airline": "LX",
+      "price": 644.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20FLR%20from%20KRK%20on%202026-12-23%20through%202026-12-26&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 644.0,
+        "days_off": 2,
+        "holiday_count": 2,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
     }
   ],
   "history": [
-    {
-      "date": "2026-09-02",
-      "stats": {
-        "AU": {
-          "avg": 4061.3
-        },
-        "BW": {
-          "avg": 5074.0
-        },
-        "CA": {
-          "avg": 3714.6
-        },
-        "JP": {
-          "avg": 3334.56
-        },
-        "MY": {
-          "avg": 2195.0
-        },
-        "NA": {
-          "avg": 3114.5
-        },
-        "NZ": {
-          "avg": 6327.0
-        },
-        "PE": {
-          "avg": 4231.5
-        },
-        "PH": {
-          "avg": 2627.8
-        },
-        "TH": {
-          "avg": 2364.47
-        },
-        "VN": {
-          "avg": 2788.73
-        },
-        "ZA": {
-          "avg": 2893.78
-        }
-      }
-    },
     {
       "date": "2026-09-03",
       "stats": {
@@ -2327,6 +2286,47 @@
         },
         "VN": {
           "avg": 2950.57
+        },
+        "ZA": {
+          "avg": 3036.38
+        }
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "stats": {
+        "AU": {
+          "avg": 4337.29
+        },
+        "BW": {
+          "avg": 4132.0
+        },
+        "CA": {
+          "avg": 3167.29
+        },
+        "JP": {
+          "avg": 3357.67
+        },
+        "MY": {
+          "avg": 2648.0
+        },
+        "NA": {
+          "avg": 3995.75
+        },
+        "NZ": {
+          "avg": 5880.4
+        },
+        "PE": {
+          "avg": 4221.0
+        },
+        "PH": {
+          "avg": 2849.43
+        },
+        "TH": {
+          "avg": 2315.88
+        },
+        "VN": {
+          "avg": 3157.73
         },
         "ZA": {
           "avg": 3036.38
