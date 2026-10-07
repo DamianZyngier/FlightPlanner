@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06T22:21:21.518714",
+  "last_updated": "2026-10-07T04:27:18.176202",
   "current_best": [
     {
       "id": "tp-cheap-VIE-BKK-2027-01-27T22:10:00+01:00",
@@ -274,12 +274,12 @@
       "departure_date": "2027-03-01",
       "return_date": "2027-03-31",
       "airline": "QR",
-      "price": 4106.0,
+      "price": 4105.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20BER%20on%202027-03-01%20through%202027-03-31&curr=PLN",
       "score": 68.3,
       "score_breakdown": {
-        "price_raw": 4106.0,
+        "price_raw": 4105.0,
         "days_off": 22,
         "holiday_count": 2,
         "in_season": true,
@@ -296,12 +296,12 @@
       "departure_date": "2026-11-17",
       "return_date": "2026-11-30",
       "airline": "FM",
-      "price": 2176.0,
+      "price": 2175.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-11-17%20through%202026-11-30&curr=PLN",
       "score": 67.9,
       "score_breakdown": {
-        "price_raw": 2176.0,
+        "price_raw": 2175.0,
         "days_off": 10,
         "holiday_count": 0,
         "in_season": true,
@@ -340,12 +340,12 @@
       "departure_date": "2026-11-18",
       "return_date": "2026-12-09",
       "airline": "EY",
-      "price": 2408.0,
+      "price": 2407.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-11-18%20through%202026-12-09&curr=PLN",
       "score": 66.9,
       "score_breakdown": {
-        "price_raw": 2408.0,
+        "price_raw": 2407.0,
         "days_off": 16,
         "holiday_count": 0,
         "in_season": false,
@@ -406,12 +406,12 @@
       "departure_date": "2026-12-03",
       "return_date": "2026-12-13",
       "airline": "G9",
-      "price": 2361.0,
+      "price": 2360.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20WAW%20on%202026-12-03%20through%202026-12-13&curr=PLN",
       "score": 66.3,
       "score_breakdown": {
-        "price_raw": 2361.0,
+        "price_raw": 2360.0,
         "days_off": 7,
         "holiday_count": 0,
         "in_season": true,
@@ -450,12 +450,12 @@
       "departure_date": "2027-01-20",
       "return_date": "2027-01-31",
       "airline": "OS",
-      "price": 2454.0,
+      "price": 2453.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20VIE%20on%202027-01-20%20through%202027-01-31&curr=PLN",
-      "score": 65.5,
+      "score": 65.6,
       "score_breakdown": {
-        "price_raw": 2454.0,
+        "price_raw": 2453.0,
         "days_off": 8,
         "holiday_count": 0,
         "in_season": true,
@@ -494,12 +494,12 @@
       "departure_date": "2026-11-21",
       "return_date": "2026-12-05",
       "airline": "MU",
-      "price": 2179.0,
+      "price": 2178.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BUD%20on%202026-11-21%20through%202026-12-05&curr=PLN",
       "score": 64.3,
       "score_breakdown": {
-        "price_raw": 2179.0,
+        "price_raw": 2178.0,
         "days_off": 10,
         "holiday_count": 0,
         "in_season": false,
@@ -618,28 +618,6 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-BKK-2026-11-12T12:40:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "BKK",
-      "departure_date": "2026-11-12",
-      "return_date": "2026-11-18",
-      "airline": "G9",
-      "price": 1884.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20PRG%20on%202026-11-12%20through%202026-11-18&curr=PLN",
-      "score": 61.3,
-      "score_breakdown": {
-        "price_raw": 1884.0,
-        "days_off": 5,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 6,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-VIE-CNX-2026-11-24T12:10:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -681,6 +659,28 @@
         "in_season": true,
         "duration_days": 14,
         "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-BKK-2026-11-12T12:40:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "BKK",
+      "departure_date": "2026-11-12",
+      "return_date": "2026-11-18",
+      "airline": "G9",
+      "price": 1931.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20PRG%20on%202026-11-12%20through%202026-11-18&curr=PLN",
+      "score": 60.9,
+      "score_breakdown": {
+        "price_raw": 1931.0,
+        "days_off": 5,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 6,
+        "efficiency": 1
       }
     },
     {
@@ -1103,47 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-09-07",
-      "stats": {
-        "AU": {
-          "avg": 4106.44
-        },
-        "BW": {
-          "avg": 4431.0
-        },
-        "CA": {
-          "avg": 3033.0
-        },
-        "JP": {
-          "avg": 3261.5
-        },
-        "MY": {
-          "avg": 2258.0
-        },
-        "NA": {
-          "avg": 4271.67
-        },
-        "NZ": {
-          "avg": 6273.0
-        },
-        "PE": {
-          "avg": 3449.0
-        },
-        "PH": {
-          "avg": 2857.4
-        },
-        "TH": {
-          "avg": 2491.25
-        },
-        "VN": {
-          "avg": 2809.85
-        },
-        "ZA": {
-          "avg": 3052.17
-        }
-      }
-    },
     {
       "date": "2026-09-08",
       "stats": {
@@ -2318,6 +2277,44 @@
         },
         "ZA": {
           "avg": 2928.38
+        }
+      }
+    },
+    {
+      "date": "2026-10-07",
+      "stats": {
+        "AU": {
+          "avg": 4267.1
+        },
+        "CA": {
+          "avg": 3216.2
+        },
+        "JP": {
+          "avg": 3246.38
+        },
+        "MY": {
+          "avg": 2864.33
+        },
+        "NA": {
+          "avg": 4293.5
+        },
+        "NZ": {
+          "avg": 5524.67
+        },
+        "PE": {
+          "avg": 3816.0
+        },
+        "PH": {
+          "avg": 3061.12
+        },
+        "TH": {
+          "avg": 2276.83
+        },
+        "VN": {
+          "avg": 3065.25
+        },
+        "ZA": {
+          "avg": 2928.12
         }
       }
     }
