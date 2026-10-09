@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08T22:56:07.903876",
+  "last_updated": "2026-10-09T04:41:38.622400",
   "current_best": [
     {
       "id": "tp-cheap-BER-BKK-2026-12-05T15:10:00+01:00",
@@ -98,12 +98,12 @@
       "departure_date": "2026-11-23",
       "return_date": "2026-12-13",
       "airline": "G9",
-      "price": 1923.0,
+      "price": 1926.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20PRG%20on%202026-11-23%20through%202026-12-13&curr=PLN",
       "score": 79.0,
       "score_breakdown": {
-        "price_raw": 1923.0,
+        "price_raw": 1926.0,
         "days_off": 15,
         "holiday_count": 0,
         "in_season": true,
@@ -142,12 +142,12 @@
       "departure_date": "2027-01-18",
       "return_date": "2027-02-15",
       "airline": "AY",
-      "price": 3133.0,
+      "price": 3134.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BER%20on%202027-01-18%20through%202027-02-15&curr=PLN",
       "score": 76.4,
       "score_breakdown": {
-        "price_raw": 3133.0,
+        "price_raw": 3134.0,
         "days_off": 21,
         "holiday_count": 0,
         "in_season": true,
@@ -560,12 +560,12 @@
       "departure_date": "2026-11-18",
       "return_date": "2026-12-09",
       "airline": "EY",
-      "price": 2493.0,
+      "price": 2494.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202026-11-18%20through%202026-12-09&curr=PLN",
       "score": 66.2,
       "score_breakdown": {
-        "price_raw": 2493.0,
+        "price_raw": 2494.0,
         "days_off": 16,
         "holiday_count": 0,
         "in_season": false,
@@ -736,12 +736,12 @@
       "departure_date": "2026-11-12",
       "return_date": "2026-11-27",
       "airline": "MU",
-      "price": 1967.0,
+      "price": 1968.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20VIE%20on%202026-11-12%20through%202026-11-27&curr=PLN",
       "score": 61.6,
       "score_breakdown": {
-        "price_raw": 1967.0,
+        "price_raw": 1968.0,
         "days_off": 12,
         "holiday_count": 0,
         "in_season": false,
@@ -758,12 +758,12 @@
       "departure_date": "2026-11-17",
       "return_date": "2027-01-13",
       "airline": "RR",
-      "price": 3959.0,
+      "price": 3960.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20KTW%20on%202026-11-17%20through%202027-01-13&curr=PLN",
       "score": 61.5,
       "score_breakdown": {
-        "price_raw": 3959.0,
+        "price_raw": 3960.0,
         "days_off": 39,
         "holiday_count": 4,
         "in_season": false,
@@ -780,39 +780,17 @@
       "departure_date": "2027-02-17",
       "return_date": "2027-02-24",
       "airline": "G9",
-      "price": 1881.0,
+      "price": 1882.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202027-02-17%20through%202027-02-24&curr=PLN",
       "score": 61.3,
       "score_breakdown": {
-        "price_raw": 1881.0,
+        "price_raw": 1882.0,
         "days_off": 6,
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 7,
         "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-BER-HAN-2027-01-13T19:45:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "HAN",
-      "departure_date": "2027-01-13",
-      "return_date": "2027-01-27",
-      "airline": "IB",
-      "price": 2994.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BER%20on%202027-01-13%20through%202027-01-27&curr=PLN",
-      "score": 61.0,
-      "score_breakdown": {
-        "price_raw": 2994.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
       }
     },
     {
@@ -890,16 +868,38 @@
       "departure_date": "2027-01-07",
       "return_date": "2027-01-22",
       "airline": "2L",
-      "price": 3082.0,
+      "price": 3083.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20WAW%20on%202027-01-07%20through%202027-01-22&curr=PLN",
       "score": 60.3,
       "score_breakdown": {
-        "price_raw": 3082.0,
+        "price_raw": 3083.0,
         "days_off": 12,
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 15,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BER-HAN-2027-02-27T16:50:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "HAN",
+      "departure_date": "2027-02-27",
+      "return_date": "2027-03-07",
+      "airline": "DE",
+      "price": 3131.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BER%20on%202027-02-27%20through%202027-03-07&curr=PLN",
+      "score": 59.9,
+      "score_breakdown": {
+        "price_raw": 3131.0,
+        "days_off": 5,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 8,
         "efficiency": 3
       }
     },
@@ -978,12 +978,12 @@
       "departure_date": "2026-11-05",
       "return_date": "2026-11-19",
       "airline": "LO",
-      "price": 2951.0,
+      "price": 2952.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20WAW%20on%202026-11-05%20through%202026-11-19&curr=PLN",
       "score": 57.9,
       "score_breakdown": {
-        "price_raw": 2951.0,
+        "price_raw": 2952.0,
         "days_off": 10,
         "holiday_count": 1,
         "in_season": false,
@@ -1066,12 +1066,12 @@
       "departure_date": "2027-01-28",
       "return_date": "2027-02-07",
       "airline": "JU",
-      "price": 3418.0,
+      "price": 3419.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20VIE%20on%202027-01-28%20through%202027-02-07&curr=PLN",
       "score": 57.5,
       "score_breakdown": {
-        "price_raw": 3418.0,
+        "price_raw": 3419.0,
         "days_off": 7,
         "holiday_count": 0,
         "in_season": true,
@@ -1103,47 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-09-09",
-      "stats": {
-        "AU": {
-          "avg": 4155.0
-        },
-        "BW": {
-          "avg": 4431.0
-        },
-        "CA": {
-          "avg": 3356.83
-        },
-        "JP": {
-          "avg": 3340.57
-        },
-        "MY": {
-          "avg": 2296.0
-        },
-        "NA": {
-          "avg": 4097.25
-        },
-        "NZ": {
-          "avg": 5688.71
-        },
-        "PE": {
-          "avg": 3554.25
-        },
-        "PH": {
-          "avg": 2891.0
-        },
-        "TH": {
-          "avg": 2462.88
-        },
-        "VN": {
-          "avg": 2704.08
-        },
-        "ZA": {
-          "avg": 2947.11
-        }
-      }
-    },
     {
       "date": "2026-09-10",
       "stats": {
@@ -2312,6 +2271,47 @@
         },
         "ZA": {
           "avg": 2822.2
+        }
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "stats": {
+        "AU": {
+          "avg": 4130.09
+        },
+        "BW": {
+          "avg": 5256.0
+        },
+        "CA": {
+          "avg": 3018.0
+        },
+        "JP": {
+          "avg": 3361.33
+        },
+        "MY": {
+          "avg": 2864.33
+        },
+        "NA": {
+          "avg": 4306.33
+        },
+        "NZ": {
+          "avg": 5644.25
+        },
+        "PE": {
+          "avg": 4548.0
+        },
+        "PH": {
+          "avg": 3152.67
+        },
+        "TH": {
+          "avg": 2610.43
+        },
+        "VN": {
+          "avg": 3231.31
+        },
+        "ZA": {
+          "avg": 2822.3
         }
       }
     }
