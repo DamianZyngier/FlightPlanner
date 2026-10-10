@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09T22:17:25.554888",
+  "last_updated": "2026-10-10T04:27:22.792753",
   "current_best": [
     {
       "id": "tp-cheap-BER-BKK-2026-12-05T15:10:00+01:00",
@@ -794,6 +794,28 @@
       }
     },
     {
+      "id": "tp-cheap-BER-WDH-2027-03-01T18:55:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "WDH",
+      "departure_date": "2027-03-01",
+      "return_date": "2027-03-31",
+      "airline": "LH",
+      "price": 3953.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20BER%20on%202027-03-01%20through%202027-03-31&curr=PLN",
+      "score": 61.6,
+      "score_breakdown": {
+        "price_raw": 3953.0,
+        "days_off": 22,
+        "holiday_count": 2,
+        "in_season": false,
+        "duration_days": 30,
+        "efficiency": 8
+      }
+    },
+    {
       "id": "tp-cheap-VIE-HAN-2026-11-12T12:25:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1078,72 +1100,9 @@
         "duration_days": 18,
         "efficiency": 5
       }
-    },
-    {
-      "id": "tp-cheap-PRG-BNE-2027-04-03T15:50:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "BNE",
-      "departure_date": "2027-04-03",
-      "return_date": "2027-04-24",
-      "airline": "QR",
-      "price": 5038.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BNE%20from%20PRG%20on%202027-04-03%20through%202027-04-24&curr=PLN",
-      "score": 57.5,
-      "score_breakdown": {
-        "price_raw": 5038.0,
-        "days_off": 15,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 21,
-        "efficiency": 6
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-09-10",
-      "stats": {
-        "AU": {
-          "avg": 3935.78
-        },
-        "BW": {
-          "avg": 4431.0
-        },
-        "CA": {
-          "avg": 3356.83
-        },
-        "JP": {
-          "avg": 3536.25
-        },
-        "MY": {
-          "avg": 2256.25
-        },
-        "NA": {
-          "avg": 3811.33
-        },
-        "NZ": {
-          "avg": 5646.2
-        },
-        "PE": {
-          "avg": 3623.6
-        },
-        "PH": {
-          "avg": 2985.5
-        },
-        "TH": {
-          "avg": 2333.2
-        },
-        "VN": {
-          "avg": 2573.33
-        },
-        "ZA": {
-          "avg": 2906.7
-        }
-      }
-    },
     {
       "date": "2026-09-11",
       "stats": {
@@ -2294,6 +2253,47 @@
         },
         "NA": {
           "avg": 4306.33
+        },
+        "NZ": {
+          "avg": 5678.0
+        },
+        "PE": {
+          "avg": 4548.0
+        },
+        "PH": {
+          "avg": 3157.78
+        },
+        "TH": {
+          "avg": 2683.8
+        },
+        "VN": {
+          "avg": 3283.92
+        },
+        "ZA": {
+          "avg": 2833.64
+        }
+      }
+    },
+    {
+      "date": "2026-10-10",
+      "stats": {
+        "AU": {
+          "avg": 4180.8
+        },
+        "BW": {
+          "avg": 5280.0
+        },
+        "CA": {
+          "avg": 3018.0
+        },
+        "JP": {
+          "avg": 3355.56
+        },
+        "MY": {
+          "avg": 2719.67
+        },
+        "NA": {
+          "avg": 4068.67
         },
         "NZ": {
           "avg": 5678.0
