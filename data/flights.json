@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10T21:11:34.096874",
+  "last_updated": "2026-10-11T04:09:27.847084",
   "current_best": [
     {
       "id": "tp-cheap-PRG-CPT-2026-12-01T17:05:00+01:00",
@@ -156,28 +156,6 @@
       }
     },
     {
-      "id": "tp-cheap-BER-HAN-2026-12-03T10:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "HAN",
-      "departure_date": "2026-12-03",
-      "return_date": "2027-01-31",
-      "airline": "DE",
-      "price": 3195.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BER%20on%202026-12-03%20through%202027-01-31&curr=PLN",
-      "score": 75.9,
-      "score_breakdown": {
-        "price_raw": 3195.0,
-        "days_off": 39,
-        "holiday_count": 4,
-        "in_season": true,
-        "duration_days": 59,
-        "efficiency": 20
-      }
-    },
-    {
       "id": "tp-cheap-VIE-MNL-2027-02-27T20:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -244,6 +222,28 @@
       }
     },
     {
+      "id": "tp-cheap-BER-HAN-2027-03-08T21:40:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "HAN",
+      "departure_date": "2027-03-08",
+      "return_date": "2027-03-31",
+      "airline": "QR",
+      "price": 3265.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BER%20on%202027-03-08%20through%202027-03-31&curr=PLN",
+      "score": 72.3,
+      "score_breakdown": {
+        "price_raw": 3265.0,
+        "days_off": 17,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 23,
+        "efficiency": 6
+      }
+    },
+    {
       "id": "tp-cheap-BUD-CPT-2027-02-13T14:55:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -263,28 +263,6 @@
         "in_season": true,
         "duration_days": 23,
         "efficiency": 7
-      }
-    },
-    {
-      "id": "tp-cheap-BER-DAD-2026-12-05T10:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "DAD",
-      "departure_date": "2026-12-05",
-      "return_date": "2027-01-23",
-      "airline": "DE",
-      "price": 3647.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20BER%20on%202026-12-05%20through%202027-01-23&curr=PLN",
-      "score": 72.1,
-      "score_breakdown": {
-        "price_raw": 3647.0,
-        "days_off": 32,
-        "holiday_count": 4,
-        "in_season": true,
-        "duration_days": 49,
-        "efficiency": 17
       }
     },
     {
@@ -351,28 +329,6 @@
         "in_season": true,
         "duration_days": 21,
         "efficiency": 8
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-SGN-2026-12-09T11:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "SGN",
-      "departure_date": "2026-12-09",
-      "return_date": "2026-12-25",
-      "airline": "FM",
-      "price": 2243.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BUD%20on%202026-12-09%20through%202026-12-25&curr=PLN",
-      "score": 71.8,
-      "score_breakdown": {
-        "price_raw": 2243.0,
-        "days_off": 12,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 16,
-        "efficiency": 4
       }
     },
     {
@@ -548,6 +504,28 @@
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 13,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-SGN-2026-12-15T11:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "SGN",
+      "departure_date": "2026-12-15",
+      "return_date": "2026-12-26",
+      "airline": "MU",
+      "price": 2264.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BUD%20on%202026-12-15%20through%202026-12-26&curr=PLN",
+      "score": 67.1,
+      "score_breakdown": {
+        "price_raw": 2264.0,
+        "days_off": 8,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 11,
         "efficiency": 3
       }
     },
@@ -1100,50 +1078,31 @@
         "duration_days": 18,
         "efficiency": 5
       }
+    },
+    {
+      "id": "tp-cheap-PRG-BNE-2027-04-03T15:50:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "BNE",
+      "departure_date": "2027-04-03",
+      "return_date": "2027-04-24",
+      "airline": "QR",
+      "price": 5038.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BNE%20from%20PRG%20on%202027-04-03%20through%202027-04-24&curr=PLN",
+      "score": 57.5,
+      "score_breakdown": {
+        "price_raw": 5038.0,
+        "days_off": 15,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 21,
+        "efficiency": 6
+      }
     }
   ],
   "history": [
-    {
-      "date": "2026-09-11",
-      "stats": {
-        "AU": {
-          "avg": 4019.8
-        },
-        "BW": {
-          "avg": 4190.0
-        },
-        "CA": {
-          "avg": 2753.0
-        },
-        "JP": {
-          "avg": 3584.78
-        },
-        "MY": {
-          "avg": 2195.33
-        },
-        "NA": {
-          "avg": 3655.0
-        },
-        "NZ": {
-          "avg": 5634.83
-        },
-        "PE": {
-          "avg": 3621.6
-        },
-        "PH": {
-          "avg": 3033.71
-        },
-        "TH": {
-          "avg": 2355.87
-        },
-        "VN": {
-          "avg": 2580.33
-        },
-        "ZA": {
-          "avg": 2848.1
-        }
-      }
-    },
     {
       "date": "2026-09-12",
       "stats": {
@@ -2309,6 +2268,47 @@
         },
         "VN": {
           "avg": 3223.23
+        },
+        "ZA": {
+          "avg": 2845.36
+        }
+      }
+    },
+    {
+      "date": "2026-10-11",
+      "stats": {
+        "AU": {
+          "avg": 4182.1
+        },
+        "BW": {
+          "avg": 5280.0
+        },
+        "CA": {
+          "avg": 3018.0
+        },
+        "JP": {
+          "avg": 3371.62
+        },
+        "MY": {
+          "avg": 2750.5
+        },
+        "NA": {
+          "avg": 3812.67
+        },
+        "NZ": {
+          "avg": 5678.0
+        },
+        "PE": {
+          "avg": 4508.25
+        },
+        "PH": {
+          "avg": 3063.62
+        },
+        "TH": {
+          "avg": 2728.19
+        },
+        "VN": {
+          "avg": 3209.77
         },
         "ZA": {
           "avg": 2845.36
