@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T22:18:11.331305",
+  "last_updated": "2026-10-14T03:38:42.989322",
   "current_best": [
     {
       "id": "tp-cheap-PRG-HKT-2027-01-11T21:55:00+01:00",
@@ -222,28 +222,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-KUL-2027-01-12T12:10:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "KUL",
-      "departure_date": "2027-01-12",
-      "return_date": "2027-01-30",
-      "airline": "G9",
-      "price": 1930.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202027-01-12%20through%202027-01-30&curr=PLN",
-      "score": 74.4,
-      "score_breakdown": {
-        "price_raw": 1930.0,
-        "days_off": 14,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 18,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-KRK-HAN-2027-03-12T07:05:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -340,12 +318,12 @@
       "departure_date": "2026-11-03",
       "return_date": "2026-11-17",
       "airline": "TK",
-      "price": 2411.0,
+      "price": 2412.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20VIE%20on%202026-11-03%20through%202026-11-17&curr=PLN",
       "score": 70.4,
       "score_breakdown": {
-        "price_raw": 2411.0,
+        "price_raw": 2412.0,
         "days_off": 10,
         "holiday_count": 1,
         "in_season": true,
@@ -618,6 +596,28 @@
       }
     },
     {
+      "id": "tp-cheap-BUD-HAN-2026-11-21T18:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "HAN",
+      "departure_date": "2026-11-21",
+      "return_date": "2026-12-05",
+      "airline": "MU",
+      "price": 2109.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BUD%20on%202026-11-21%20through%202026-12-05&curr=PLN",
+      "score": 64.9,
+      "score_breakdown": {
+        "price_raw": 2109.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 14,
+        "efficiency": 4
+      }
+    },
+    {
       "id": "tp-cheap-VIE-DAD-2026-11-08T10:00:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -659,6 +659,28 @@
         "in_season": true,
         "duration_days": 27,
         "efficiency": 7
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-KUL-2026-10-27T16:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "KUL",
+      "departure_date": "2026-10-27",
+      "return_date": "2026-11-12",
+      "airline": "TK",
+      "price": 2228.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202026-10-27%20through%202026-11-12&curr=PLN",
+      "score": 63.9,
+      "score_breakdown": {
+        "price_raw": 2228.0,
+        "days_off": 12,
+        "holiday_count": 2,
+        "in_season": false,
+        "duration_days": 16,
+        "efficiency": 4
       }
     },
     {
@@ -802,12 +824,12 @@
       "departure_date": "2026-12-18",
       "return_date": "2027-01-08",
       "airline": "RR",
-      "price": 4936.0,
+      "price": 4937.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20KTW%20on%202026-12-18%20through%202027-01-08&curr=PLN",
       "score": 61.4,
       "score_breakdown": {
-        "price_raw": 4936.0,
+        "price_raw": 4937.0,
         "days_off": 13,
         "holiday_count": 4,
         "in_season": true,
@@ -1078,72 +1100,9 @@
         "duration_days": 7,
         "efficiency": 1
       }
-    },
-    {
-      "id": "tp-cheap-BER-CNX-2026-12-25T13:05:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BER",
-      "destination": "CNX",
-      "departure_date": "2026-12-25",
-      "return_date": "2027-01-11",
-      "airline": "TK",
-      "price": 5326.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CNX%20from%20BER%20on%202026-12-25%20through%202027-01-11&curr=PLN",
-      "score": 58.1,
-      "score_breakdown": {
-        "price_raw": 5326.0,
-        "days_off": 9,
-        "holiday_count": 4,
-        "in_season": true,
-        "duration_days": 17,
-        "efficiency": 8
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-09-14",
-      "stats": {
-        "AU": {
-          "avg": 4234.93
-        },
-        "BW": {
-          "avg": 4614.0
-        },
-        "CA": {
-          "avg": 2723.5
-        },
-        "JP": {
-          "avg": 3289.56
-        },
-        "MY": {
-          "avg": 2287.0
-        },
-        "NA": {
-          "avg": 3691.25
-        },
-        "NZ": {
-          "avg": 5437.0
-        },
-        "PE": {
-          "avg": 3752.6
-        },
-        "PH": {
-          "avg": 3362.29
-        },
-        "TH": {
-          "avg": 2392.07
-        },
-        "VN": {
-          "avg": 2823.54
-        },
-        "ZA": {
-          "avg": 2981.27
-        }
-      }
-    },
     {
       "date": "2026-09-15",
       "stats": {
@@ -2312,6 +2271,47 @@
         },
         "ZA": {
           "avg": 2729.5
+        }
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "stats": {
+        "AU": {
+          "avg": 4686.0
+        },
+        "BW": {
+          "avg": 5280.0
+        },
+        "CA": {
+          "avg": 3349.0
+        },
+        "JP": {
+          "avg": 3311.29
+        },
+        "MY": {
+          "avg": 2590.67
+        },
+        "NA": {
+          "avg": 4056.33
+        },
+        "NZ": {
+          "avg": 5704.75
+        },
+        "PE": {
+          "avg": 4716.2
+        },
+        "PH": {
+          "avg": 3067.89
+        },
+        "TH": {
+          "avg": 2800.65
+        },
+        "VN": {
+          "avg": 3080.12
+        },
+        "ZA": {
+          "avg": 2729.6
         }
       }
     }
