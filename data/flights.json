@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-17T10:11:08.945837",
+  "last_updated": "2026-10-17T14:59:55.251334",
   "current_best": [
     {
       "id": "tp-cheap-BER-JNB-2026-12-05T07:05:00+01:00",
@@ -90,20 +90,20 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-MNL-2027-02-27T20:30:00+01:00",
+      "id": "tp-cheap-VIE-BKK-2026-11-27T13:00:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "VIE",
-      "destination": "MNL",
-      "departure_date": "2027-02-27",
-      "return_date": "2027-03-15",
-      "airline": "AI",
-      "price": 2370.0,
+      "destination": "BKK",
+      "departure_date": "2026-11-27",
+      "return_date": "2026-12-13",
+      "airline": "CA",
+      "price": 2006.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-02-27%20through%202027-03-15&curr=PLN",
-      "score": 75.2,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-11-27%20through%202026-12-13&curr=PLN",
+      "score": 78.3,
       "score_breakdown": {
-        "price_raw": 2370.0,
+        "price_raw": 2006.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -219,50 +219,6 @@
         "in_season": false,
         "duration_days": 31,
         "efficiency": 7
-      }
-    },
-    {
-      "id": "tp-cheap-VIE-BKK-2026-11-23T22:10:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "BKK",
-      "departure_date": "2026-11-23",
-      "return_date": "2026-12-09",
-      "airline": "G9",
-      "price": 1947.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20VIE%20on%202026-11-23%20through%202026-12-09&curr=PLN",
-      "score": 69.8,
-      "score_breakdown": {
-        "price_raw": 1947.0,
-        "days_off": 13,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 16,
-        "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-JNB-2027-03-05T08:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "JNB",
-      "departure_date": "2027-03-05",
-      "return_date": "2027-03-21",
-      "airline": "DE",
-      "price": 3228.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20PRG%20on%202027-03-05%20through%202027-03-21&curr=PLN",
-      "score": 68.1,
-      "score_breakdown": {
-        "price_raw": 3228.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 16,
-        "efficiency": 5
       }
     },
     {
@@ -486,6 +442,50 @@
       }
     },
     {
+      "id": "tp-cheap-BUD-JNB-2026-11-11T06:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "JNB",
+      "departure_date": "2026-11-11",
+      "return_date": "2026-11-25",
+      "airline": "KL",
+      "price": 3122.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20BUD%20on%202026-11-11%20through%202026-11-25&curr=PLN",
+      "score": 64.5,
+      "score_breakdown": {
+        "price_raw": 3122.0,
+        "days_off": 10,
+        "holiday_count": 1,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-VIE-MNL-2027-03-02T10:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "MNL",
+      "departure_date": "2027-03-02",
+      "return_date": "2027-03-15",
+      "airline": "TR",
+      "price": 2591.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-03-02%20through%202027-03-15&curr=PLN",
+      "score": 64.4,
+      "score_breakdown": {
+        "price_raw": 2591.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 13,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-VIE-MEL-2027-03-01T18:20:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -516,12 +516,12 @@
       "departure_date": "2027-03-03",
       "return_date": "2027-03-17",
       "airline": "CA",
-      "price": 2600.0,
+      "price": 2608.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20VIE%20on%202027-03-03%20through%202027-03-17&curr=PLN",
       "score": 64.3,
       "score_breakdown": {
-        "price_raw": 2600.0,
+        "price_raw": 2608.0,
         "days_off": 11,
         "holiday_count": 0,
         "in_season": true,
@@ -596,47 +596,47 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-JNB-2026-10-31T06:50:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "JNB",
-      "departure_date": "2026-10-31",
-      "return_date": "2026-11-12",
-      "airline": "KL",
-      "price": 2265.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20VIE%20on%202026-10-31%20through%202026-11-12&curr=PLN",
-      "score": 63.6,
-      "score_breakdown": {
-        "price_raw": 2265.0,
-        "days_off": 8,
-        "holiday_count": 2,
-        "in_season": false,
-        "duration_days": 12,
-        "efficiency": 4
-      }
-    },
-    {
-      "id": "tp-cheap-WAW-HAN-2027-03-11T16:50:00+01:00",
+      "id": "tp-cheap-WAW-WDH-2027-05-01T14:20:00+02:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "WAW",
-      "destination": "HAN",
-      "departure_date": "2027-03-11",
-      "return_date": "2027-03-25",
-      "airline": "LO",
-      "price": 2742.0,
+      "destination": "WDH",
+      "departure_date": "2027-05-01",
+      "return_date": "2027-05-16",
+      "airline": "LH",
+      "price": 4310.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20WAW%20on%202027-03-11%20through%202027-03-25&curr=PLN",
-      "score": 63.1,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WDH%20from%20WAW%20on%202027-05-01%20through%202027-05-16&curr=PLN",
+      "score": 63.6,
       "score_breakdown": {
-        "price_raw": 2742.0,
-        "days_off": 11,
-        "holiday_count": 0,
+        "price_raw": 4310.0,
+        "days_off": 9,
+        "holiday_count": 2,
         "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
+        "duration_days": 15,
+        "efficiency": 6
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-SGN-2026-12-21T19:55:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "SGN",
+      "departure_date": "2026-12-21",
+      "return_date": "2026-12-30",
+      "airline": "FM",
+      "price": 2276.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BUD%20on%202026-12-21%20through%202026-12-30&curr=PLN",
+      "score": 62.5,
+      "score_breakdown": {
+        "price_raw": 2276.0,
+        "days_off": 7,
+        "holiday_count": 2,
+        "in_season": true,
+        "duration_days": 9,
+        "efficiency": 2
       }
     },
     {
@@ -2275,7 +2275,7 @@
       "date": "2026-10-17",
       "stats": {
         "AU": {
-          "avg": 4872.67
+          "avg": 4890.56
         },
         "CA": {
           "avg": 2865.38
@@ -2287,25 +2287,25 @@
           "avg": 2532.4
         },
         "NA": {
-          "avg": 3841.0
+          "avg": 4059.33
         },
         "NZ": {
           "avg": 5861.4
         },
         "PE": {
-          "avg": 4363.33
+          "avg": 4609.8
         },
         "PH": {
-          "avg": 3121.6
+          "avg": 3143.7
         },
         "TH": {
-          "avg": 2791.25
+          "avg": 2727.13
         },
         "VN": {
-          "avg": 2919.81
+          "avg": 2929.8
         },
         "ZA": {
-          "avg": 2851.9
+          "avg": 2903.17
         }
       }
     }
