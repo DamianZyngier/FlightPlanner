@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T20:08:21.352989",
+  "last_updated": "2026-10-19T03:22:05.409512",
   "current_best": [
     {
       "id": "tp-cheap-BER-JNB-2026-12-05T07:05:00+01:00",
@@ -200,6 +200,28 @@
       }
     },
     {
+      "id": "tp-cheap-BUD-BKK-2026-12-01T11:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "BKK",
+      "departure_date": "2026-12-01",
+      "return_date": "2026-12-15",
+      "airline": "MU",
+      "price": 2147.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202026-12-01%20through%202026-12-15&curr=PLN",
+      "score": 68.1,
+      "score_breakdown": {
+        "price_raw": 2147.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-KRK-YYC-2027-01-13T17:15:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -230,12 +252,12 @@
       "departure_date": "2026-12-01",
       "return_date": "2026-12-14",
       "airline": "CZ",
-      "price": 2217.0,
+      "price": 2218.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20SGN%20from%20BUD%20on%202026-12-01%20through%202026-12-14&curr=PLN",
       "score": 67.5,
       "score_breakdown": {
-        "price_raw": 2217.0,
+        "price_raw": 2218.0,
         "days_off": 10,
         "holiday_count": 0,
         "in_season": true,
@@ -494,12 +516,12 @@
       "departure_date": "2027-02-17",
       "return_date": "2027-03-02",
       "airline": "LO",
-      "price": 2657.0,
+      "price": 2658.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20WAW%20on%202027-02-17%20through%202027-03-02&curr=PLN",
       "score": 63.9,
       "score_breakdown": {
-        "price_raw": 2657.0,
+        "price_raw": 2658.0,
         "days_off": 10,
         "holiday_count": 0,
         "in_season": true,
@@ -527,6 +549,28 @@
         "in_season": true,
         "duration_days": 15,
         "efficiency": 6
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-SYD-2026-12-14T19:55:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "SYD",
+      "departure_date": "2026-12-14",
+      "return_date": "2027-01-04",
+      "airline": "FM",
+      "price": 4722.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20BUD%20on%202026-12-14%20through%202027-01-04&curr=PLN",
+      "score": 63.1,
+      "score_breakdown": {
+        "price_raw": 4722.0,
+        "days_off": 14,
+        "holiday_count": 3,
+        "in_season": true,
+        "duration_days": 21,
+        "efficiency": 7
       }
     },
     {
@@ -1036,28 +1080,6 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-BKK-2026-12-07T11:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "BKK",
-      "departure_date": "2026-12-07",
-      "return_date": "2026-12-13",
-      "airline": "MU",
-      "price": 2144.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202026-12-07%20through%202026-12-13&curr=PLN",
-      "score": 59.1,
-      "score_breakdown": {
-        "price_raw": 2144.0,
-        "days_off": 5,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 6,
-        "efficiency": 1
-      }
-    },
-    {
       "id": "tp-cheap-BUD-HKT-2026-12-03T11:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1078,72 +1100,9 @@
         "duration_days": 7,
         "efficiency": 1
       }
-    },
-    {
-      "id": "tp-cheap-PRG-CPT-2027-01-19T17:05:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "CPT",
-      "departure_date": "2027-01-19",
-      "return_date": "2027-02-02",
-      "airline": "DI",
-      "price": 3243.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CPT%20from%20PRG%20on%202027-01-19%20through%202027-02-02&curr=PLN",
-      "score": 59.0,
-      "score_breakdown": {
-        "price_raw": 3243.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-09-19",
-      "stats": {
-        "AU": {
-          "avg": 4301.29
-        },
-        "BW": {
-          "avg": 4114.0
-        },
-        "CA": {
-          "avg": 3157.5
-        },
-        "JP": {
-          "avg": 3501.89
-        },
-        "MY": {
-          "avg": 2441.67
-        },
-        "NA": {
-          "avg": 4262.5
-        },
-        "NZ": {
-          "avg": 5939.2
-        },
-        "PE": {
-          "avg": 4445.25
-        },
-        "PH": {
-          "avg": 2992.86
-        },
-        "TH": {
-          "avg": 2490.07
-        },
-        "VN": {
-          "avg": 2898.87
-        },
-        "ZA": {
-          "avg": 3051.0
-        }
-      }
-    },
     {
       "date": "2026-09-20",
       "stats": {
@@ -2300,6 +2259,44 @@
         },
         "VN": {
           "avg": 2966.75
+        },
+        "ZA": {
+          "avg": 2912.36
+        }
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "stats": {
+        "AU": {
+          "avg": 4888.29
+        },
+        "CA": {
+          "avg": 2556.5
+        },
+        "JP": {
+          "avg": 2959.43
+        },
+        "MY": {
+          "avg": 2727.0
+        },
+        "NA": {
+          "avg": 4593.0
+        },
+        "NZ": {
+          "avg": 6251.8
+        },
+        "PE": {
+          "avg": 4522.5
+        },
+        "PH": {
+          "avg": 3174.6
+        },
+        "TH": {
+          "avg": 2546.21
+        },
+        "VN": {
+          "avg": 2966.81
         },
         "ZA": {
           "avg": 2912.36
