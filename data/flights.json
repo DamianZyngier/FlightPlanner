@@ -1,6 +1,28 @@
 {
-  "last_updated": "2026-10-24T15:25:09.131537",
+  "last_updated": "2026-10-24T20:16:00.997211",
   "current_best": [
+    {
+      "id": "tp-cheap-BER-HAN-2027-02-18T19:15:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "HAN",
+      "departure_date": "2027-02-18",
+      "return_date": "2027-03-24",
+      "airline": "A3",
+      "price": 2704.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20BER%20on%202027-02-18%20through%202027-03-24&curr=PLN",
+      "score": 80.0,
+      "score_breakdown": {
+        "price_raw": 2704.0,
+        "days_off": 25,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 34,
+        "efficiency": 9
+      }
+    },
     {
       "id": "tp-cheap-BUD-HAN-2026-12-05T11:45:00+01:00",
       "source": "Travelpayouts-Cheap",
@@ -200,28 +222,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-YYC-2026-11-23T20:50:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "YYC",
-      "departure_date": "2026-11-23",
-      "return_date": "2027-01-10",
-      "airline": "JU",
-      "price": 2919.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20YYC%20from%20VIE%20on%202026-11-23%20through%202027-01-10&curr=PLN",
-      "score": 70.2,
-      "score_breakdown": {
-        "price_raw": 2919.0,
-        "days_off": 32,
-        "holiday_count": 4,
-        "in_season": false,
-        "duration_days": 48,
-        "efficiency": 16
-      }
-    },
-    {
       "id": "tp-cheap-BUD-CEB-2026-12-08T11:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -394,6 +394,28 @@
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 11,
+        "efficiency": 3
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-DAD-2026-12-05T10:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "DAD",
+      "departure_date": "2026-12-05",
+      "return_date": "2026-12-14",
+      "airline": "EY",
+      "price": 2596.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20WAW%20on%202026-12-05%20through%202026-12-14&curr=PLN",
+      "score": 64.4,
+      "score_breakdown": {
+        "price_raw": 2596.0,
+        "days_off": 6,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 9,
         "efficiency": 3
       }
     },
@@ -992,24 +1014,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-AMS-2026-11-21T20:10:00+01:00",
+      "id": "tp-cheap-KRK-AMS-2026-11-20T22:10:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "AMS",
-      "departure_date": "2026-11-21",
+      "departure_date": "2026-11-20",
       "return_date": "2026-11-23",
       "airline": "FR",
-      "price": 705.0,
+      "price": 687.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AMS%20from%20KRK%20on%202026-11-21%20through%202026-11-23&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AMS%20from%20KRK%20on%202026-11-20%20through%202026-11-23&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 705.0,
-        "days_off": 1,
+        "price_raw": 687.0,
+        "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 2,
+        "duration_days": 3,
         "efficiency": 1
       }
     },
@@ -1076,28 +1098,6 @@
         "holiday_count": 0,
         "in_season": false,
         "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BHX-2026-11-05T09:55:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BHX",
-      "departure_date": "2026-11-05",
-      "return_date": "2026-11-09",
-      "airline": "FR",
-      "price": 337.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BHX%20from%20KRK%20on%202026-11-05%20through%202026-11-09&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 337.0,
-        "days_off": 3,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 4,
         "efficiency": 1
       }
     }
@@ -2272,7 +2272,7 @@
           "avg": 3649.5
         },
         "CA": {
-          "avg": 3283.0
+          "avg": 3404.33
         },
         "JP": {
           "avg": 3020.57
@@ -2281,7 +2281,7 @@
           "avg": 2736.57
         },
         "NA": {
-          "avg": 5005.67
+          "avg": 4099.33
         },
         "NZ": {
           "avg": 6172.5
@@ -2296,7 +2296,7 @@
           "avg": 2657.4
         },
         "VN": {
-          "avg": 2860.69
+          "avg": 2843.38
         },
         "ZA": {
           "avg": 3376.08
