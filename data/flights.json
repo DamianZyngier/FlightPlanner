@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T10:19:27.930163",
+  "last_updated": "2026-10-24T15:25:09.131537",
   "current_best": [
     {
       "id": "tp-cheap-BUD-HAN-2026-12-05T11:45:00+01:00",
@@ -90,28 +90,6 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-HKT-2026-11-11T11:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "HKT",
-      "departure_date": "2026-11-11",
-      "return_date": "2026-11-25",
-      "airline": "FM",
-      "price": 2232.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-11-11%20through%202026-11-25&curr=PLN",
-      "score": 71.9,
-      "score_breakdown": {
-        "price_raw": 2232.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 4
-      }
-    },
-    {
       "id": "tp-cheap-BUD-DAD-2026-11-25T11:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -174,6 +152,28 @@
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 23,
+        "efficiency": 5
+      }
+    },
+    {
+      "id": "tp-cheap-BUD-TYO-2026-11-18T11:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "TYO",
+      "departure_date": "2026-11-18",
+      "return_date": "2026-12-10",
+      "airline": "MU",
+      "price": 2930.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20BUD%20on%202026-11-18%20through%202026-12-10&curr=PLN",
+      "score": 70.6,
+      "score_breakdown": {
+        "price_raw": 2930.0,
+        "days_off": 17,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 22,
         "efficiency": 5
       }
     },
@@ -332,6 +332,28 @@
       }
     },
     {
+      "id": "tp-cheap-BUD-HKT-2026-12-08T11:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BUD",
+      "destination": "HKT",
+      "departure_date": "2026-12-08",
+      "return_date": "2026-12-22",
+      "airline": "FM",
+      "price": 2247.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HKT%20from%20BUD%20on%202026-12-08%20through%202026-12-22&curr=PLN",
+      "score": 67.3,
+      "score_breakdown": {
+        "price_raw": 2247.0,
+        "days_off": 11,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 14,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-WAW-MNL-2026-11-18T10:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -354,28 +376,6 @@
       }
     },
     {
-      "id": "tp-cheap-PRG-HAN-2026-12-01T18:25:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "HAN",
-      "departure_date": "2026-12-01",
-      "return_date": "2026-12-15",
-      "airline": "VJ",
-      "price": 2433.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20PRG%20on%202026-12-01%20through%202026-12-15&curr=PLN",
-      "score": 65.7,
-      "score_breakdown": {
-        "price_raw": 2433.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-BER-JNB-2026-11-12T16:35:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -395,28 +395,6 @@
         "in_season": true,
         "duration_days": 11,
         "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-BUD-JNB-2026-11-11T06:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "BUD",
-      "destination": "JNB",
-      "departure_date": "2026-11-11",
-      "return_date": "2026-11-25",
-      "airline": "KL",
-      "price": 3122.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20JNB%20from%20BUD%20on%202026-11-11%20through%202026-11-25&curr=PLN",
-      "score": 64.5,
-      "score_breakdown": {
-        "price_raw": 3122.0,
-        "days_off": 10,
-        "holiday_count": 1,
-        "in_season": true,
-        "duration_days": 14,
-        "efficiency": 4
       }
     },
     {
@@ -549,6 +527,28 @@
         "in_season": true,
         "duration_days": 24,
         "efficiency": 7
+      }
+    },
+    {
+      "id": "tp-cheap-PRG-HAN-2026-11-24T18:25:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "HAN",
+      "departure_date": "2026-11-24",
+      "return_date": "2026-12-12",
+      "airline": "A1",
+      "price": 2400.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20HAN%20from%20PRG%20on%202026-11-24%20through%202026-12-12&curr=PLN",
+      "score": 62.5,
+      "score_breakdown": {
+        "price_raw": 2400.0,
+        "days_off": 14,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 18,
+        "efficiency": 4
       }
     },
     {
@@ -2266,7 +2266,7 @@
       "date": "2026-10-24",
       "stats": {
         "AU": {
-          "avg": 4493.33
+          "avg": 4485.0
         },
         "BW": {
           "avg": 3649.5
@@ -2275,10 +2275,10 @@
           "avg": 3283.0
         },
         "JP": {
-          "avg": 3022.0
+          "avg": 3020.57
         },
         "MY": {
-          "avg": 2640.5
+          "avg": 2736.57
         },
         "NA": {
           "avg": 5005.67
@@ -2287,19 +2287,19 @@
           "avg": 6172.5
         },
         "PE": {
-          "avg": 4627.5
+          "avg": 4300.0
         },
         "PH": {
-          "avg": 3041.33
+          "avg": 3042.0
         },
         "TH": {
-          "avg": 2656.4
+          "avg": 2657.4
         },
         "VN": {
-          "avg": 2892.69
+          "avg": 2860.69
         },
         "ZA": {
-          "avg": 3363.86
+          "avg": 3376.08
         }
       }
     }
