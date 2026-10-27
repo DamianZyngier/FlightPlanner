@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T22:18:47.519594",
+  "last_updated": "2026-10-27T03:48:47.764249",
   "current_best": [
     {
       "id": "tp-cheap-VIE-BKK-2026-11-12T12:25:00+01:00",
@@ -538,12 +538,12 @@
       "departure_date": "2027-03-13",
       "return_date": "2027-03-26",
       "airline": "VJ",
-      "price": 3053.0,
+      "price": 3054.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20PRG%20on%202027-03-13%20through%202027-03-26&curr=PLN",
-      "score": 60.6,
+      "score": 60.5,
       "score_breakdown": {
-        "price_raw": 3053.0,
+        "price_raw": 3054.0,
         "days_off": 10,
         "holiday_count": 0,
         "in_season": true,
@@ -1036,6 +1036,28 @@
       }
     },
     {
+      "id": "tp-cheap-KRK-BRI-2026-12-18T19:40:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "BRI",
+      "departure_date": "2026-12-18",
+      "return_date": "2026-12-20",
+      "airline": "FR",
+      "price": 389.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BRI%20from%20KRK%20on%202026-12-18%20through%202026-12-20&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 389.0,
+        "days_off": 1,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 2,
+        "efficiency": 1
+      }
+    },
+    {
       "id": "tp-cheap-KRK-BRU-2026-12-12T12:55:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -1078,72 +1100,9 @@
         "duration_days": 2,
         "efficiency": 1
       }
-    },
-    {
-      "id": "tp-cheap-KRK-CLJ-2026-11-14T19:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "CLJ",
-      "departure_date": "2026-11-14",
-      "return_date": "2026-11-15",
-      "airline": "W6",
-      "price": 879.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CLJ%20from%20KRK%20on%202026-11-14%20through%202026-11-15&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 879.0,
-        "days_off": 0,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 1,
-        "efficiency": 1
-      }
     }
   ],
   "history": [
-    {
-      "date": "2026-09-27",
-      "stats": {
-        "AU": {
-          "avg": 4420.62
-        },
-        "BW": {
-          "avg": 4552.0
-        },
-        "CA": {
-          "avg": 2984.88
-        },
-        "JP": {
-          "avg": 3285.0
-        },
-        "MY": {
-          "avg": 2316.0
-        },
-        "NA": {
-          "avg": 4087.0
-        },
-        "NZ": {
-          "avg": 6691.25
-        },
-        "PE": {
-          "avg": 4405.0
-        },
-        "PH": {
-          "avg": 3103.62
-        },
-        "TH": {
-          "avg": 2345.39
-        },
-        "VN": {
-          "avg": 2932.62
-        },
-        "ZA": {
-          "avg": 3136.18
-        }
-      }
-    },
     {
       "date": "2026-09-28",
       "stats": {
@@ -2300,6 +2259,47 @@
         },
         "ZA": {
           "avg": 3274.08
+        }
+      }
+    },
+    {
+      "date": "2026-10-27",
+      "stats": {
+        "AU": {
+          "avg": 4631.4
+        },
+        "BW": {
+          "avg": 3649.5
+        },
+        "CA": {
+          "avg": 2796.75
+        },
+        "JP": {
+          "avg": 3463.89
+        },
+        "MY": {
+          "avg": 2661.33
+        },
+        "NA": {
+          "avg": 4513.25
+        },
+        "NZ": {
+          "avg": 6675.6
+        },
+        "PE": {
+          "avg": 4605.0
+        },
+        "PH": {
+          "avg": 2949.38
+        },
+        "TH": {
+          "avg": 2556.36
+        },
+        "VN": {
+          "avg": 2794.47
+        },
+        "ZA": {
+          "avg": 3274.23
         }
       }
     }
