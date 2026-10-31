@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T04:11:19.872607",
+  "last_updated": "2026-10-31T11:43:01.289161",
   "current_best": [
     {
       "id": "tp-cheap-BER-DAD-2027-01-24T14:55:00+01:00",
@@ -526,28 +526,6 @@
         "holiday_count": 0,
         "in_season": true,
         "duration_days": 9,
-        "efficiency": 3
-      }
-    },
-    {
-      "id": "tp-cheap-WAW-MNL-2027-04-16T11:50:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "MNL",
-      "departure_date": "2027-04-16",
-      "return_date": "2027-04-30",
-      "airline": "EY",
-      "price": 2603.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20WAW%20on%202027-04-16%20through%202027-04-30&curr=PLN",
-      "score": 64.3,
-      "score_breakdown": {
-        "price_raw": 2603.0,
-        "days_off": 11,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 14,
         "efficiency": 3
       }
     },
@@ -1094,6 +1072,28 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 667.0,
+        "days_off": 2,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 3,
+        "efficiency": 1
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-BDS-2027-06-11T18:40:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "BDS",
+      "departure_date": "2027-06-11",
+      "return_date": "2027-06-14",
+      "airline": "W6",
+      "price": 813.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BDS%20from%20KRK%20on%202027-06-11%20through%202027-06-14&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 813.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2275,7 +2275,7 @@
           "avg": 2916.8
         },
         "JP": {
-          "avg": 3713.56
+          "avg": 3767.9
         },
         "MY": {
           "avg": 2659.5
@@ -2290,16 +2290,16 @@
           "avg": 3897.67
         },
         "PH": {
-          "avg": 2954.57
+          "avg": 2972.29
         },
         "TH": {
-          "avg": 2682.75
+          "avg": 2737.42
         },
         "VN": {
           "avg": 2687.36
         },
         "ZA": {
-          "avg": 3205.38
+          "avg": 3227.92
         }
       }
     }
