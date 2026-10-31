@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T16:50:55.182558",
+  "last_updated": "2026-10-31T21:00:06.753183",
   "current_best": [
     {
       "id": "tp-cheap-BER-DAD-2027-01-24T14:55:00+01:00",
@@ -131,6 +131,28 @@
         "in_season": true,
         "duration_days": 16,
         "efficiency": 4
+      }
+    },
+    {
+      "id": "tp-cheap-WAW-TYO-2026-11-28T10:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "TYO",
+      "departure_date": "2026-11-28",
+      "return_date": "2026-12-13",
+      "airline": "EY",
+      "price": 2680.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20TYO%20from%20WAW%20on%202026-11-28%20through%202026-12-13&curr=PLN",
+      "score": 72.7,
+      "score_breakdown": {
+        "price_raw": 2680.0,
+        "days_off": 10,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 15,
+        "efficiency": 5
       }
     },
     {
@@ -486,28 +508,6 @@
       }
     },
     {
-      "id": "tp-cheap-WAW-DAD-2026-12-05T10:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "WAW",
-      "destination": "DAD",
-      "departure_date": "2026-12-05",
-      "return_date": "2026-12-14",
-      "airline": "EY",
-      "price": 2596.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20WAW%20on%202026-12-05%20through%202026-12-14&curr=PLN",
-      "score": 64.4,
-      "score_breakdown": {
-        "price_raw": 2596.0,
-        "days_off": 6,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 9,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-PRG-YVR-2027-01-05T22:45:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -574,6 +574,50 @@
       }
     },
     {
+      "id": "tp-cheap-PRG-MEL-2026-12-25T10:30:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "PRG",
+      "destination": "MEL",
+      "departure_date": "2026-12-25",
+      "return_date": "2027-01-15",
+      "airline": "PC",
+      "price": 4725.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20MEL%20from%20PRG%20on%202026-12-25%20through%202027-01-15&curr=PLN",
+      "score": 63.1,
+      "score_breakdown": {
+        "price_raw": 4725.0,
+        "days_off": 13,
+        "holiday_count": 4,
+        "in_season": true,
+        "duration_days": 21,
+        "efficiency": 8
+      }
+    },
+    {
+      "id": "tp-cheap-BER-BKK-2027-02-13T17:05:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "BER",
+      "destination": "BKK",
+      "departure_date": "2027-02-13",
+      "return_date": "2027-02-20",
+      "airline": "VF",
+      "price": 2342.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BER%20on%202027-02-13%20through%202027-02-20&curr=PLN",
+      "score": 62.0,
+      "score_breakdown": {
+        "price_raw": 2342.0,
+        "days_off": 5,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 7,
+        "efficiency": 2
+      }
+    },
+    {
       "id": "tp-cheap-KRK-BTS-2026-11-11T20:50:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -614,6 +658,28 @@
         "holiday_count": 2,
         "in_season": false,
         "duration_days": 3,
+        "efficiency": 2
+      }
+    },
+    {
+      "id": "tp-cheap-KRK-DUS-2026-11-06T05:35:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "DUS",
+      "departure_date": "2026-11-06",
+      "return_date": "2026-11-11",
+      "airline": "LO",
+      "price": 893.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DUS%20from%20KRK%20on%202026-11-06%20through%202026-11-11&curr=PLN",
+      "score": 61.0,
+      "score_breakdown": {
+        "price_raw": 893.0,
+        "days_off": 3,
+        "holiday_count": 1,
+        "in_season": false,
+        "duration_days": 5,
         "efficiency": 2
       }
     },
@@ -904,20 +970,20 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-AGP-2027-02-11T15:05:00+01:00",
+      "id": "tp-cheap-KRK-AGP-2027-02-04T15:05:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "AGP",
-      "departure_date": "2027-02-11",
-      "return_date": "2027-02-15",
+      "departure_date": "2027-02-04",
+      "return_date": "2027-02-08",
       "airline": "W6",
-      "price": 374.0,
+      "price": 391.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AGP%20from%20KRK%20on%202027-02-11%20through%202027-02-15&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AGP%20from%20KRK%20on%202027-02-04%20through%202027-02-08&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 374.0,
+        "price_raw": 391.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
@@ -948,24 +1014,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-AMS-2026-11-20T22:10:00+01:00",
+      "id": "tp-cheap-KRK-AMS-2026-11-21T20:10:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "AMS",
-      "departure_date": "2026-11-20",
+      "departure_date": "2026-11-21",
       "return_date": "2026-11-23",
       "airline": "FR",
-      "price": 687.0,
+      "price": 712.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AMS%20from%20KRK%20on%202026-11-20%20through%202026-11-23&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20AMS%20from%20KRK%20on%202026-11-21%20through%202026-11-23&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 687.0,
-        "days_off": 2,
+        "price_raw": 712.0,
+        "days_off": 1,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 3,
+        "duration_days": 2,
         "efficiency": 1
       }
     },
@@ -1028,72 +1094,6 @@
       "score": 56.5,
       "score_breakdown": {
         "price_raw": 760.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BAK-2027-01-15T21:40:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BAK",
-      "departure_date": "2027-01-15",
-      "return_date": "2027-01-18",
-      "airline": "W6",
-      "price": 667.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BAK%20from%20KRK%20on%202027-01-15%20through%202027-01-18&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 667.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BDS-2027-06-11T18:40:00+02:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BDS",
-      "departure_date": "2027-06-11",
-      "return_date": "2027-06-14",
-      "airline": "W6",
-      "price": 813.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BDS%20from%20KRK%20on%202027-06-11%20through%202027-06-14&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 813.0,
-        "days_off": 2,
-        "holiday_count": 0,
-        "in_season": false,
-        "duration_days": 3,
-        "efficiency": 1
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-BEG-2027-02-19T09:15:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "BEG",
-      "departure_date": "2027-02-19",
-      "return_date": "2027-02-22",
-      "airline": "JU",
-      "price": 598.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BEG%20from%20KRK%20on%202027-02-19%20through%202027-02-22&curr=PLN",
-      "score": 56.5,
-      "score_breakdown": {
-        "price_raw": 598.0,
         "days_off": 2,
         "holiday_count": 0,
         "in_season": false,
@@ -2266,7 +2266,7 @@
       "date": "2026-10-31",
       "stats": {
         "AU": {
-          "avg": 4644.75
+          "avg": 4491.57
         },
         "BW": {
           "avg": 3979.0
@@ -2275,7 +2275,7 @@
           "avg": 2916.8
         },
         "JP": {
-          "avg": 3526.0
+          "avg": 3527.0
         },
         "MY": {
           "avg": 2560.0
@@ -2284,7 +2284,7 @@
           "avg": 3707.0
         },
         "NZ": {
-          "avg": 6411.2
+          "avg": 6072.17
         },
         "PE": {
           "avg": 3897.67
@@ -2293,10 +2293,10 @@
           "avg": 2972.29
         },
         "TH": {
-          "avg": 2779.42
+          "avg": 2642.75
         },
         "VN": {
-          "avg": 2687.36
+          "avg": 2703.73
         },
         "ZA": {
           "avg": 3227.92
