@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T21:27:55.840424",
+  "last_updated": "2026-11-08T04:35:13.122315",
   "current_best": [
     {
       "id": "tp-cheap-VIE-CPT-2026-12-01T17:10:00+01:00",
@@ -376,28 +376,6 @@
       }
     },
     {
-      "id": "tp-cheap-VIE-DAD-2027-03-02T10:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "VIE",
-      "destination": "DAD",
-      "departure_date": "2027-03-02",
-      "return_date": "2027-03-17",
-      "airline": "SQ",
-      "price": 2615.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20VIE%20on%202027-03-02%20through%202027-03-17&curr=PLN",
-      "score": 64.2,
-      "score_breakdown": {
-        "price_raw": 2615.0,
-        "days_off": 12,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 15,
-        "efficiency": 3
-      }
-    },
-    {
       "id": "tp-cheap-WAW-KUL-2027-01-12T14:40:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -472,12 +450,12 @@
       "departure_date": "2027-01-25",
       "return_date": "2027-02-10",
       "airline": "FM",
-      "price": 2693.0,
+      "price": 2675.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20BUD%20on%202027-01-25%20through%202027-02-10&curr=PLN",
-      "score": 63.6,
+      "score": 63.7,
       "score_breakdown": {
-        "price_raw": 2693.0,
+        "price_raw": 2675.0,
         "days_off": 13,
         "holiday_count": 0,
         "in_season": true,
@@ -530,6 +508,28 @@
       }
     },
     {
+      "id": "tp-cheap-VIE-DAD-2027-01-14T10:00:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "VIE",
+      "destination": "DAD",
+      "departure_date": "2027-01-14",
+      "return_date": "2027-01-24",
+      "airline": "TR",
+      "price": 2764.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20DAD%20from%20VIE%20on%202027-01-14%20through%202027-01-24&curr=PLN",
+      "score": 63.0,
+      "score_breakdown": {
+        "price_raw": 2764.0,
+        "days_off": 7,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 10,
+        "efficiency": 3
+      }
+    },
+    {
       "id": "tp-cheap-PRG-TYO-2027-02-24T18:30:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -549,28 +549,6 @@
         "in_season": false,
         "duration_days": 21,
         "efficiency": 5
-      }
-    },
-    {
-      "id": "tp-cheap-PRG-SYD-2027-01-13T10:30:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "PRG",
-      "destination": "SYD",
-      "departure_date": "2027-01-13",
-      "return_date": "2027-02-10",
-      "airline": "PC",
-      "price": 4937.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20SYD%20from%20PRG%20on%202027-01-13%20through%202027-02-10&curr=PLN",
-      "score": 61.4,
-      "score_breakdown": {
-        "price_raw": 4937.0,
-        "days_off": 21,
-        "holiday_count": 0,
-        "in_season": true,
-        "duration_days": 28,
-        "efficiency": 7
       }
     },
     {
@@ -1100,50 +1078,31 @@
         "duration_days": 2,
         "efficiency": 1
       }
+    },
+    {
+      "id": "tp-cheap-KRK-CFU-2027-04-22T12:30:00+02:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "KRK",
+      "destination": "CFU",
+      "departure_date": "2027-04-22",
+      "return_date": "2027-04-26",
+      "airline": "FR",
+      "price": 700.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CFU%20from%20KRK%20on%202027-04-22%20through%202027-04-26&curr=PLN",
+      "score": 56.5,
+      "score_breakdown": {
+        "price_raw": 700.0,
+        "days_off": 3,
+        "holiday_count": 0,
+        "in_season": false,
+        "duration_days": 4,
+        "efficiency": 1
+      }
     }
   ],
   "history": [
-    {
-      "date": "2026-10-09",
-      "stats": {
-        "AU": {
-          "avg": 4164.4
-        },
-        "BW": {
-          "avg": 5280.0
-        },
-        "CA": {
-          "avg": 3018.0
-        },
-        "JP": {
-          "avg": 3360.44
-        },
-        "MY": {
-          "avg": 2719.67
-        },
-        "NA": {
-          "avg": 4306.33
-        },
-        "NZ": {
-          "avg": 5678.0
-        },
-        "PE": {
-          "avg": 4548.0
-        },
-        "PH": {
-          "avg": 3157.78
-        },
-        "TH": {
-          "avg": 2683.8
-        },
-        "VN": {
-          "avg": 3283.92
-        },
-        "ZA": {
-          "avg": 2833.64
-        }
-      }
-    },
     {
       "date": "2026-10-10",
       "stats": {
@@ -2312,6 +2271,47 @@
         },
         "VN": {
           "avg": 2760.08
+        },
+        "ZA": {
+          "avg": 4016.36
+        }
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "stats": {
+        "AU": {
+          "avg": 4666.58
+        },
+        "BW": {
+          "avg": 3778.5
+        },
+        "CA": {
+          "avg": 3700.0
+        },
+        "JP": {
+          "avg": 3544.33
+        },
+        "MY": {
+          "avg": 2543.0
+        },
+        "NA": {
+          "avg": 4177.25
+        },
+        "NZ": {
+          "avg": 6116.4
+        },
+        "PE": {
+          "avg": 4661.33
+        },
+        "PH": {
+          "avg": 3272.3
+        },
+        "TH": {
+          "avg": 2833.08
+        },
+        "VN": {
+          "avg": 2771.54
         },
         "ZA": {
           "avg": 4016.36
