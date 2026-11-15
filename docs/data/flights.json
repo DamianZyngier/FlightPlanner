@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T21:59:06.618677",
+  "last_updated": "2026-11-15T04:55:09.902185",
   "current_best": [
     {
       "id": "tp-cheap-VIE-CPT-2026-11-29T11:10:00+01:00",
@@ -32,12 +32,12 @@
       "departure_date": "2027-04-10",
       "return_date": "2027-05-03",
       "airline": "TR",
-      "price": 2476.0,
+      "price": 2482.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20MNL%20from%20VIE%20on%202027-04-10%20through%202027-05-03&curr=PLN",
-      "score": 81.9,
+      "score": 81.8,
       "score_breakdown": {
-        "price_raw": 2476.0,
+        "price_raw": 2482.0,
         "days_off": 15,
         "holiday_count": 2,
         "in_season": true,
@@ -398,6 +398,28 @@
       }
     },
     {
+      "id": "tp-cheap-WAW-CEB-2027-01-28T18:20:00+01:00",
+      "source": "Travelpayouts-Cheap",
+      "is_mock": false,
+      "origin": "WAW",
+      "destination": "CEB",
+      "departure_date": "2027-01-28",
+      "return_date": "2027-02-16",
+      "airline": "A3",
+      "price": 3701.0,
+      "currency": "PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20CEB%20from%20WAW%20on%202027-01-28%20through%202027-02-16&curr=PLN",
+      "score": 64.2,
+      "score_breakdown": {
+        "price_raw": 3701.0,
+        "days_off": 14,
+        "holiday_count": 0,
+        "in_season": true,
+        "duration_days": 19,
+        "efficiency": 5
+      }
+    },
+    {
       "id": "tp-cheap-BUD-KUL-2027-03-08T19:35:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
@@ -614,28 +636,6 @@
         "holiday_count": 2,
         "in_season": false,
         "duration_days": 5,
-        "efficiency": 2
-      }
-    },
-    {
-      "id": "tp-cheap-KRK-WAW-2026-12-24T15:00:00+01:00",
-      "source": "Travelpayouts-Cheap",
-      "is_mock": false,
-      "origin": "KRK",
-      "destination": "WAW",
-      "departure_date": "2026-12-24",
-      "return_date": "2026-12-27",
-      "airline": "LO",
-      "price": 267.0,
-      "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20WAW%20from%20KRK%20on%202026-12-24%20through%202026-12-27&curr=PLN",
-      "score": 61.0,
-      "score_breakdown": {
-        "price_raw": 267.0,
-        "days_off": 1,
-        "holiday_count": 2,
-        "in_season": false,
-        "duration_days": 3,
         "efficiency": 2
       }
     },
@@ -978,12 +978,12 @@
       "departure_date": "2027-04-10",
       "return_date": "2027-04-21",
       "airline": "TR",
-      "price": 2394.0,
+      "price": 2392.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20KUL%20from%20VIE%20on%202027-04-10%20through%202027-04-21&curr=PLN",
-      "score": 58.0,
+      "score": 58.1,
       "score_breakdown": {
-        "price_raw": 2394.0,
+        "price_raw": 2392.0,
         "days_off": 8,
         "holiday_count": 0,
         "in_season": false,
@@ -1088,12 +1088,12 @@
       "departure_date": "2027-02-04",
       "return_date": "2027-02-08",
       "airline": "W6",
-      "price": 343.0,
+      "price": 342.0,
       "currency": "PLN",
       "link": "https://www.google.com/travel/flights?q=Flights%20to%20AGP%20from%20KRK%20on%202027-02-04%20through%202027-02-08&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 343.0,
+        "price_raw": 342.0,
         "days_off": 3,
         "holiday_count": 0,
         "in_season": false,
@@ -1103,44 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-10-16",
-      "stats": {
-        "AU": {
-          "avg": 5062.56
-        },
-        "CA": {
-          "avg": 2911.0
-        },
-        "JP": {
-          "avg": 3147.0
-        },
-        "MY": {
-          "avg": 2591.0
-        },
-        "NA": {
-          "avg": 3841.0
-        },
-        "NZ": {
-          "avg": 6004.0
-        },
-        "PE": {
-          "avg": 4364.67
-        },
-        "PH": {
-          "avg": 3121.4
-        },
-        "TH": {
-          "avg": 2811.69
-        },
-        "VN": {
-          "avg": 2921.44
-        },
-        "ZA": {
-          "avg": 2851.9
-        }
-      }
-    },
     {
       "date": "2026-10-17",
       "stats": {
@@ -2303,6 +2265,44 @@
         },
         "PH": {
           "avg": 3127.0
+        },
+        "TH": {
+          "avg": 2983.57
+        },
+        "VN": {
+          "avg": 2873.36
+        },
+        "ZA": {
+          "avg": 2818.67
+        }
+      }
+    },
+    {
+      "date": "2026-11-15",
+      "stats": {
+        "AU": {
+          "avg": 4397.75
+        },
+        "CA": {
+          "avg": 2759.5
+        },
+        "JP": {
+          "avg": 3315.0
+        },
+        "MY": {
+          "avg": 2971.8
+        },
+        "NA": {
+          "avg": 3702.33
+        },
+        "NZ": {
+          "avg": 6930.17
+        },
+        "PE": {
+          "avg": 4185.2
+        },
+        "PH": {
+          "avg": 3199.5
         },
         "TH": {
           "avg": 2983.57
