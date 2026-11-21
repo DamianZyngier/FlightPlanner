@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20T23:41:30.026972",
+  "last_updated": "2026-11-21T05:43:55.005039",
   "current_best": [
     {
       "id": "tp-cheap-VIE-CPT-2026-11-29T11:10:00+01:00",
@@ -24,20 +24,20 @@
       }
     },
     {
-      "id": "tp-cheap-BUD-BKK-2027-01-15T19:35:00+01:00",
+      "id": "tp-cheap-BUD-BKK-2027-01-07T19:35:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "BUD",
       "destination": "BKK",
-      "departure_date": "2027-01-15",
-      "return_date": "2027-03-15",
+      "departure_date": "2027-01-07",
+      "return_date": "2027-03-07",
       "airline": "CA",
-      "price": 2463.0,
+      "price": 2451.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202027-01-15%20through%202027-03-15&curr=PLN",
-      "score": 82.0,
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BKK%20from%20BUD%20on%202027-01-07%20through%202027-03-07&curr=PLN",
+      "score": 82.1,
       "score_breakdown": {
-        "price_raw": 2463.0,
+        "price_raw": 2451.0,
         "days_off": 42,
         "holiday_count": 0,
         "in_season": true,
@@ -992,24 +992,24 @@
       }
     },
     {
-      "id": "tp-cheap-KRK-BFS-2026-12-04T11:45:00+01:00",
+      "id": "tp-cheap-KRK-BFS-2026-11-28T18:35:00+01:00",
       "source": "Travelpayouts-Cheap",
       "is_mock": false,
       "origin": "KRK",
       "destination": "BFS",
-      "departure_date": "2026-12-04",
-      "return_date": "2026-12-07",
-      "airline": "LS",
-      "price": 375.0,
+      "departure_date": "2026-11-28",
+      "return_date": "2026-11-29",
+      "airline": "FR",
+      "price": 442.0,
       "currency": "PLN",
-      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BFS%20from%20KRK%20on%202026-12-04%20through%202026-12-07&curr=PLN",
+      "link": "https://www.google.com/travel/flights?q=Flights%20to%20BFS%20from%20KRK%20on%202026-11-28%20through%202026-11-29&curr=PLN",
       "score": 56.5,
       "score_breakdown": {
-        "price_raw": 375.0,
-        "days_off": 2,
+        "price_raw": 442.0,
+        "days_off": 0,
         "holiday_count": 0,
         "in_season": false,
-        "duration_days": 3,
+        "duration_days": 1,
         "efficiency": 1
       }
     },
@@ -1103,47 +1103,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-10-22",
-      "stats": {
-        "AU": {
-          "avg": 4601.12
-        },
-        "BW": {
-          "avg": 3649.5
-        },
-        "CA": {
-          "avg": 2827.43
-        },
-        "JP": {
-          "avg": 3044.86
-        },
-        "MY": {
-          "avg": 2640.5
-        },
-        "NA": {
-          "avg": 4995.0
-        },
-        "NZ": {
-          "avg": 6267.5
-        },
-        "PE": {
-          "avg": 4792.83
-        },
-        "PH": {
-          "avg": 3059.89
-        },
-        "TH": {
-          "avg": 2619.29
-        },
-        "VN": {
-          "avg": 2868.94
-        },
-        "ZA": {
-          "avg": 3356.71
-        }
-      }
-    },
     {
       "date": "2026-10-23",
       "stats": {
@@ -2306,6 +2265,47 @@
         },
         "VN": {
           "avg": 2660.91
+        },
+        "ZA": {
+          "avg": 2772.0
+        }
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "stats": {
+        "AU": {
+          "avg": 4763.7
+        },
+        "BW": {
+          "avg": 3613.0
+        },
+        "CA": {
+          "avg": 3149.67
+        },
+        "JP": {
+          "avg": 3457.56
+        },
+        "MY": {
+          "avg": 2876.78
+        },
+        "NA": {
+          "avg": 3867.2
+        },
+        "NZ": {
+          "avg": 6226.0
+        },
+        "PE": {
+          "avg": 4803.33
+        },
+        "PH": {
+          "avg": 3275.33
+        },
+        "TH": {
+          "avg": 3068.12
+        },
+        "VN": {
+          "avg": 2691.27
         },
         "ZA": {
           "avg": 2772.0
